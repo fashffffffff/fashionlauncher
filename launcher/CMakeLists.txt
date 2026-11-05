@@ -1164,6 +1164,23 @@ if (APPLE)
     )
 endif()
 
+# The QML shell (new UI)
+set(LAUNCHER_SOURCES
+    ${LAUNCHER_SOURCES}
+    qmlui/AccountsModel.cpp
+    qmlui/AccountsModel.h
+    qmlui/ImageProviders.cpp
+    qmlui/ImageProviders.h
+    qmlui/InstancesModel.cpp
+    qmlui/InstancesModel.h
+    qmlui/LauncherBridge.cpp
+    qmlui/LauncherBridge.h
+    qmlui/QmlShell.cpp
+    qmlui/QmlShell.h
+    qmlui/UiTheme.cpp
+    qmlui/UiTheme.h
+)
+
 if (NOT Apple)
     set(LAUNCHER_SOURCES
     ${LAUNCHER_SOURCES}
@@ -1203,6 +1220,7 @@ qt_add_resources(LAUNCHER_RESOURCES
     resources/flat_white/flat_white.qrc
     resources/documents/documents.qrc
     resources/shaders/shaders.qrc
+    qmlui/qmlui.qrc
     "${CMAKE_CURRENT_BINARY_DIR}/../${Launcher_Branding_LogoQRC}"
 )
 
@@ -1275,6 +1293,9 @@ target_link_libraries(Launcher_logic
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::NetworkAuth
     Qt${QT_VERSION_MAJOR}::OpenGL
+    Qt${QT_VERSION_MAJOR}::Qml
+    Qt${QT_VERSION_MAJOR}::Quick
+    Qt${QT_VERSION_MAJOR}::QuickControls2
     ${Launcher_QT_DBUS}
     ${Launcher_QT_LIBS}
 )

@@ -1,0 +1,22 @@
+{
+    "name": "Nether",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#1A1213",
+        "surface": "#25191A",
+        "surfaceHi": "#322122",
+        "line": "#4A2C2C",
+        "text": "#F5E7E0",
+        "textMuted": "#B59C94",
+        "accent": "#F2BA3A",
+        "onAccent": "#2A1903",
+        "danger": "#FF5E57",
+        "success": "#3FBBA6",
+        "scrim": "#1A1213"
+    },
+    "shape": {
+        "radius": 4,
+        "slotRadius": 2
+    }
+}

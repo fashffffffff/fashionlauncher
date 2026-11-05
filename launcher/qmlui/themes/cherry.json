@@ -1,0 +1,22 @@
+{
+    "name": "Cherry Grove",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#21151E",
+        "surface": "#2B1C28",
+        "surfaceHi": "#372533",
+        "line": "#4A3244",
+        "text": "#F7EBF2",
+        "textMuted": "#B89DAF",
+        "accent": "#F5A9CB",
+        "onAccent": "#3B0F25",
+        "danger": "#F2575C",
+        "success": "#62BA6E",
+        "scrim": "#21151E"
+    },
+    "shape": {
+        "radius": 12,
+        "slotRadius": 10
+    }
+}

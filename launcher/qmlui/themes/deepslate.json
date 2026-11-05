@@ -1,0 +1,9 @@
+{
+    "name": "Deepslate",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "accent": "#F5A524",
+        "onAccent": "#1F1606"
+    }
+}

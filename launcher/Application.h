@@ -63,6 +63,8 @@ class SettingsObject;
 class InstanceList;
 class AccountList;
 class IconList;
+class QmlShell;
+class LaunchController;
 class QNetworkAccessManager;
 class JavaInstallList;
 class ExternalUpdater;
@@ -184,7 +186,9 @@ class Application : public QApplication {
     bool openJsonEditor(const QString& filename);
 
     InstanceWindow* showInstanceWindow(MinecraftInstance* instance, const QString& page = QString());
+    /// Shows the QML shell, or the classic window when "UseClassicUI" is set. Returns the classic window if one is shown.
     MainWindow* showMainWindow(bool minimized = false);
+    MainWindow* showClassicWindow(bool minimized = false);
     ViewLogWindow* showLogWindow();
 
     void updateIsRunning(bool running);
@@ -204,6 +208,8 @@ class Application : public QApplication {
     int currentCatChanged(int index);
 
     void oauthReplyRecieved(QVariantMap);
+
+    void launchStarted(MinecraftInstance* instance, LaunchController* controller);
 
 #ifdef Q_OS_MACOS
     void clickedOnDock();
@@ -285,6 +291,7 @@ class Application : public QApplication {
 
     // main window, if any
     MainWindow* m_mainWindow = nullptr;
+    QmlShell* m_shell = nullptr;
 
     // log window, if any
     ViewLogWindow* m_viewLogWindow = nullptr;

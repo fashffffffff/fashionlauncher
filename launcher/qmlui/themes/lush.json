@@ -1,0 +1,22 @@
+{
+    "name": "Lush Caves",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#121B15",
+        "surface": "#1A261D",
+        "surfaceHi": "#233326",
+        "line": "#304434",
+        "text": "#E7F2E4",
+        "textMuted": "#97AE96",
+        "accent": "#E58CD6",
+        "onAccent": "#2B0B27",
+        "danger": "#EF5B55",
+        "success": "#7CC56A",
+        "scrim": "#121B15"
+    },
+    "shape": {
+        "radius": 12,
+        "slotRadius": 10
+    }
+}

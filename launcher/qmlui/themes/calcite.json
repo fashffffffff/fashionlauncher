@@ -1,0 +1,25 @@
+{
+    "name": "Calcite",
+    "author": "FFPrism",
+    "dark": false,
+    "colors": {
+        "bg": "#EDEFF2",
+        "surface": "#FAFBFC",
+        "surfaceHi": "#E2E6EC",
+        "line": "#CDD3DC",
+        "text": "#171B24",
+        "textMuted": "#555D6C",
+        "accent": "#2652C2",
+        "onAccent": "#FFFFFF",
+        "danger": "#C42B32",
+        "success": "#2B7F3A",
+        "scrim": "#EDEFF2"
+    },
+    "shape": {
+        "radius": 14,
+        "slotRadius": 12
+    },
+    "background": {
+        "dim": 0.35
+    }
+}

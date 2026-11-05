@@ -50,6 +50,7 @@
 #include "tools/GenericProfiler.h"
 #include "ui/InstanceWindow.h"
 #include "ui/MainWindow.h"
+#include "qmlui/QmlShell.h"
 #include "ui/ToolTipFilter.h"
 #include "ui/ViewLogWindow.h"
 
@@ -828,6 +829,11 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
         m_settings->registerSetting("MainWindowState", "");
         m_settings->registerSetting("MainWindowGeometry", "");
 
+        // QML shell
+        m_settings->registerSetting("UseClassicUI", false);
+        m_settings->registerSetting("QmlUiTheme", "");
+        m_settings->registerSetting("QmlShellGeometry", QVariantList());
+
         m_settings->registerSetting("ConsoleWindowState", "");
         m_settings->registerSetting("ConsoleWindowGeometry", "");
 
@@ -1269,7 +1275,9 @@ bool Application::createSetupWizard()
     bool pasteInterventionRequired = settings()->get("PastebinURL") != "";
     bool validWidgets = m_themeManager->isValidApplicationTheme(settings()->get("ApplicationTheme").toString());
     bool validIcons = m_themeManager->isValidIconTheme(settings()->get("IconTheme").toString());
-    bool login = !m_accounts->anyAccountIsValid() && (capabilities().testAnyFlags(Application::SupportsMSA));
+    // The QML shell has its own account panel (Microsoft or offline), so only the classic UI asks for a login up front.
+    bool login = settings()->get("UseClassicUI").toBool() && m_accounts->count() == 0 &&
+                 (capabilities().testAnyFlags(Application::SupportsMSA));
     bool themeInterventionRequired = !validWidgets || !validIcons;
     bool wizardRequired = javaRequired || languageRequired || pasteInterventionRequired || themeInterventionRequired || askjava || login;
     if (wizardRequired) {
@@ -1362,11 +1370,8 @@ bool Application::event(QEvent* event)
 #endif
 
     if (event->type() == QEvent::FileOpen) {
-        if (!m_mainWindow) {
-            showMainWindow(false);
-        }
         auto* ev = static_cast<QFileOpenEvent*>(event);
-        m_mainWindow->processURLs({ ev->url() });
+        showClassicWindow(false)->processURLs({ ev->url() });
     }
 
     return QApplication::event(event);
@@ -1414,7 +1419,7 @@ void Application::performMainStartupAction()
             return;
         }
     }
-    if (!m_mainWindow) {
+    if (!m_mainWindow && !m_shell) {
         // normal main window
         showMainWindow(false);
         qDebug() << "<> Main window shown.";
@@ -1441,7 +1446,7 @@ void Application::performMainStartupAction()
 
     if (!m_urlsToImport.isEmpty()) {
         qDebug() << "<> Importing from url:" << m_urlsToImport;
-        m_mainWindow->processURLs(m_urlsToImport);
+        showClassicWindow(false)->processURLs(m_urlsToImport);
     }
 }
 
@@ -1489,10 +1494,7 @@ void Application::messageReceived(const QByteArray& message)
             qWarning() << "Received" << command << "message without a zip path/URL.";
             return;
         }
-        if (!m_mainWindow) {
-            showMainWindow(false);
-        }
-        m_mainWindow->processURLs({ normalizeImportUrl(url) });
+        showClassicWindow(false)->processURLs({ normalizeImportUrl(url) });
     } else if (command == "launch") {
         QString id = received.args["id"];
         QString server = received.args["server"];
@@ -1594,6 +1596,7 @@ bool Application::launch(MinecraftInstance* instance,
             controller->setParentWidget(m_mainWindow);
         }
         connect(controller.get(), &LaunchController::finished, this, &Application::controllerFinished);
+        emit launchStarted(instance, controller.get());
         addRunningInstance();
         QMetaObject::invokeMethod(controller.get(), &Task::start, Qt::QueuedConnection);
         return true;
@@ -1710,6 +1713,28 @@ void Application::ShowGlobalSettings(class QWidget* parent, QString openPage)
 
 MainWindow* Application::showMainWindow(bool minimized)
 {
+    if (m_settings->get("UseClassicUI").toBool() || m_mainWindow) {
+        return showClassicWindow(minimized);
+    }
+    if (m_shell) {
+        m_shell->raise();
+        return nullptr;
+    }
+    m_shell = new QmlShell(this);
+    if (!m_shell->load()) {
+        // A broken QML install must not lock people out of their instances.
+        delete m_shell;
+        m_shell = nullptr;
+        return showClassicWindow(minimized);
+    }
+    connect(m_shell, &QmlShell::isClosing, this, &Application::on_windowClose);
+    m_shell->show(minimized);
+    m_openWindows++;
+    return nullptr;
+}
+
+MainWindow* Application::showClassicWindow(bool minimized)
+{
     if (m_mainWindow) {
         m_mainWindow->setWindowState(m_mainWindow->windowState() & ~Qt::WindowMinimized);
         m_mainWindow->raise();
@@ -1801,6 +1826,10 @@ void Application::on_windowClose()
     auto* mainWindow = qobject_cast<MainWindow*>(sender());
     if (mainWindow) {
         m_mainWindow = nullptr;
+    }
+    if (auto* shell = qobject_cast<QmlShell*>(sender()); shell && shell == m_shell) {
+        m_shell = nullptr;
+        shell->deleteLater();
     }
     auto* logWindow = qobject_cast<ViewLogWindow*>(sender());
     if (logWindow) {

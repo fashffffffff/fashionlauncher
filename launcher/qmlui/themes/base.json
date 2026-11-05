@@ -1,0 +1,37 @@
+{
+    "name": "Base",
+    "dark": true,
+    "colors": {
+        "bg": "#1E2128",
+        "surface": "#272B33",
+        "surfaceHi": "#323741",
+        "line": "#3B414D",
+        "text": "#ECEEF2",
+        "textMuted": "#959CAB",
+        "accent": "#F5A524",
+        "onAccent": "#1F1606",
+        "danger": "#E5484D",
+        "success": "#46A758",
+        "scrim": "#1E2128"
+    },
+    "shape": {
+        "radius": 10,
+        "slotRadius": 8,
+        "slotSize": 72
+    },
+    "type": {
+        "display": "Unbounded",
+        "ui": "Golos Text",
+        "scale": 1.0
+    },
+    "background": {
+        "mode": "screenshot",
+        "image": "",
+        "blur": 32,
+        "dim": 0.55
+    },
+    "motion": {
+        "enabled": true,
+        "speed": 1.0
+    }
+}
