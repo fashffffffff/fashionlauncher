@@ -138,12 +138,12 @@ QString writeIntoArchive(const QString& archivePath, const QJsonObject& settings
             return writer.addFile(f);
         });
         if (!copied) {
-            writer.close();
+            [[maybe_unused]] const auto _ = writer.close();
             QFile::remove(temp);
             return copied.error();
         }
         if (auto r = writer.addFile(FileName, QJsonDocument(settings).toJson(QJsonDocument::Indented)); !r) {
-            writer.close();
+            [[maybe_unused]] const auto _ = writer.close();
             QFile::remove(temp);
             return r.error();
         }
