@@ -1,4 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
 <TS version="2.1" language="ru_RU">
 <context>
     <name>AccountsModel</name>
@@ -11,7 +12,7 @@
         <translation>Офлайн-аккаунт с именем %1 уже есть.</translation>
     </message>
     <message>
-        <source>Couldn't create the account.</source>
+        <source>Couldn&apos;t create the account.</source>
         <translation>Не удалось создать аккаунт.</translation>
     </message>
     <message>
@@ -68,6 +69,10 @@
     <message>
         <source>Remove account</source>
         <translation>Удалить аккаунт</translation>
+    </message>
+    <message>
+        <source>Skins</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sign in with Microsoft</source>
@@ -241,7 +246,7 @@
         <translation>Показывается вместо фона темы, пока выбрана эта сборка.</translation>
     </message>
     <message>
-        <source>Couldn't add that file.</source>
+        <source>Couldn&apos;t add that file.</source>
         <translation>Не удалось добавить этот файл.</translation>
     </message>
     <message>
@@ -385,11 +390,11 @@
         <translation>У этого модпака нет версий.</translation>
     </message>
     <message>
-        <source>The author doesn't allow this modpack to be downloaded by launchers.</source>
+        <source>The author doesn&apos;t allow this modpack to be downloaded by launchers.</source>
         <translation>Автор запрещает скачивать этот модпак через лаунчеры.</translation>
     </message>
     <message>
-        <source>Couldn't load versions: %1</source>
+        <source>Couldn&apos;t load versions: %1</source>
         <translation>Не удалось загрузить версии: %1</translation>
     </message>
     <message>
@@ -413,11 +418,11 @@
         <translation>Ищем модпак…</translation>
     </message>
     <message>
-        <source>This link isn't a modpack.</source>
+        <source>This link isn&apos;t a modpack.</source>
         <translation>Эта ссылка не ведёт на модпак.</translation>
     </message>
     <message>
-        <source>The author of %1 doesn't allow launchers to download it. Download it in the browser and import the file.</source>
+        <source>The author of %1 doesn&apos;t allow launchers to download it. Download it in the browser and import the file.</source>
         <translation>Автор %1 запрещает скачивание через лаунчеры. Скачайте его в браузере и импортируйте файл.</translation>
     </message>
     <message>
@@ -444,7 +449,7 @@
         <translation>Изображения (*.png *.jpg *.jpeg *.svg *.ico *.gif *.webp)</translation>
     </message>
     <message>
-        <source>That image couldn't be added.</source>
+        <source>That image couldn&apos;t be added.</source>
         <translation>Не удалось добавить эту картинку.</translation>
     </message>
     <message>
@@ -463,7 +468,7 @@
         <translation>Выберите файл или вставьте ссылку.</translation>
     </message>
     <message>
-        <source>That isn't a .zip or .mrpack file or a download link.</source>
+        <source>That isn&apos;t a .zip or .mrpack file or a download link.</source>
         <translation>Это не файл .zip или .mrpack и не ссылка на скачивание.</translation>
     </message>
     <message>
@@ -522,7 +527,7 @@
 <context>
     <name>CreateModpack</name>
     <message>
-        <source>Use the modpack's logo</source>
+        <source>Use the modpack&apos;s logo</source>
         <translation>Взять логотип модпака</translation>
     </message>
     <message>
@@ -558,7 +563,7 @@
         <translation>Ищем…</translation>
     </message>
     <message>
-        <source>Couldn't search: %1</source>
+        <source>Couldn&apos;t search: %1</source>
         <translation>Поиск не удался: %1</translation>
     </message>
     <message>
@@ -625,7 +630,7 @@
         <translation>Загружаем версии…</translation>
     </message>
     <message>
-        <source>Couldn't load the list: %1</source>
+        <source>Couldn&apos;t load the list: %1</source>
         <translation>Не удалось загрузить список: %1</translation>
     </message>
     <message>
@@ -825,7 +830,7 @@
         <translation>Журнала игры пока нет. Сначала запустите игру.</translation>
     </message>
     <message>
-        <source>Couldn't read the log.</source>
+        <source>Couldn&apos;t read the log.</source>
         <translation>Не удалось прочитать журнал.</translation>
     </message>
     <message>
@@ -836,7 +841,7 @@
 <context>
     <name>Main</name>
     <message>
-        <source>%1 didn't start: %2</source>
+        <source>%1 didn&apos;t start: %2</source>
         <translation>%1 не запустилась: %2</translation>
     </message>
     <message>
@@ -953,6 +958,10 @@
         <translation>Сохранять мой фон</translation>
     </message>
     <message>
+        <source>Find more themes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open themes folder</source>
         <translation>Открыть папку тем</translation>
     </message>
@@ -961,7 +970,7 @@
         <translation>Чтобы установить тему, положите её .json-файл в эту папку. Правки в файле темы появляются здесь сразу после сохранения.</translation>
     </message>
     <message>
-        <source>Your theme couldn't be loaded, so the default is shown. %1</source>
+        <source>Your theme couldn&apos;t be loaded, so the default is shown. %1</source>
         <translation>Не удалось загрузить вашу тему, поэтому показана стандартная. %1</translation>
     </message>
     <message>
@@ -1252,6 +1261,36 @@
     </message>
 </context>
 <context>
+    <name>PageFriends</name>
+    <message>
+        <source>Friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add friends and play together without setting anything up.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back to Home</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PageGallery</name>
+    <message>
+        <source>Theme gallery</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Themes and backgrounds made by other players.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished">Назад</translation>
+    </message>
+</context>
+<context>
     <name>PageHome</name>
     <message>
         <source>Nothing to play yet</source>
@@ -1307,6 +1346,10 @@
     <message>
         <source>Screenshots</source>
         <translation>Скриншоты</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Settings</source>
@@ -1555,7 +1598,7 @@
         <translation>Имя пользователя</translation>
     </message>
     <message>
-        <source>Leave empty if the proxy doesn't ask for one.</source>
+        <source>Leave empty if the proxy doesn&apos;t ask for one.</source>
         <translation>Оставьте пустым, если прокси этого не требует.</translation>
     </message>
     <message>
@@ -1567,8 +1610,19 @@
         <translation>Пароль прокси</translation>
     </message>
     <message>
-        <source>The password is stored unencrypted in the launcher's settings file.</source>
+        <source>The password is stored unencrypted in the launcher&apos;s settings file.</source>
         <translation>Пароль хранится незашифрованным в файле настроек лаунчера.</translation>
+    </message>
+</context>
+<context>
+    <name>PageSkins</name>
+    <message>
+        <source>Skins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Preview, collect and change your skin.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1590,7 +1644,7 @@
         <translation>Сейчас: Minecraft %1 без загрузчика модов</translation>
     </message>
     <message>
-        <source>Mods made for the old version may stop working. Worlds opened in a newer version can't go back to an older one — make a copy first if unsure.</source>
+        <source>Mods made for the old version may stop working. Worlds opened in a newer version can&apos;t go back to an older one — make a copy first if unsure.</source>
         <translation>Моды для старой версии могут перестать работать. Мир, открытый в новой версии, нельзя вернуть в старую — если сомневаетесь, сначала сделайте копию.</translation>
     </message>
     <message>
@@ -1675,7 +1729,7 @@
         <translation>Загружаем версии…</translation>
     </message>
     <message>
-        <source>Couldn't load versions. Check your connection.</source>
+        <source>Couldn&apos;t load versions. Check your connection.</source>
         <translation>Не удалось загрузить версии. Проверьте подключение.</translation>
     </message>
     <message>
@@ -1738,7 +1792,7 @@
         <translation>Для Minecraft %1</translation>
     </message>
     <message>
-        <source>This instance has no mod loader, so mods won't run. Install Fabric, Quilt, Forge or NeoForge in the instance's version settings.</source>
+        <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>
         <translation>В этой сборке нет загрузчика модов, поэтому моды не заработают. Установите Fabric, Quilt, Forge или NeoForge в настройках версии сборки.</translation>
     </message>
     <message>
@@ -1911,7 +1965,7 @@
         <translation>Паки (*.zip)</translation>
     </message>
     <message>
-        <source>This instance has no mod loader, so mods won't run. Install Fabric, Quilt, Forge or NeoForge in the instance's version settings.</source>
+        <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>
         <translation>В этой сборке нет загрузчика модов, поэтому моды не заработают. Установите Fabric, Quilt, Forge или NeoForge в настройках версии сборки.</translation>
     </message>
     <message>
@@ -2055,7 +2109,7 @@
         <translation>Проверьте аргументы Java</translation>
     </message>
     <message>
-        <source>Can't test Java</source>
+        <source>Can&apos;t test Java</source>
         <translation>Не удалось проверить Java</translation>
     </message>
     <message>
@@ -2063,7 +2117,7 @@
         <translation>В этой установке нет проверки Java.</translation>
     </message>
     <message>
-        <source>This Java doesn't work</source>
+        <source>This Java doesn&apos;t work</source>
         <translation>Эта Java не работает</translation>
     </message>
     <message>
@@ -2083,7 +2137,7 @@
         <translation>Java работает</translation>
     </message>
     <message>
-        <source>Java doesn't accept these settings</source>
+        <source>Java doesn&apos;t accept these settings</source>
         <translation>Java не принимает эти настройки</translation>
     </message>
     <message>
@@ -2091,7 +2145,7 @@
         <translation>Она запускается, но падает с вашими настройками памяти или аргументов:</translation>
     </message>
     <message>
-        <source>This path contains a "!". Java has trouble with that, so your instances probably won't start.</source>
+        <source>This path contains a &quot;!&quot;. Java has trouble with that, so your instances probably won&apos;t start.</source>
         <translation>В этом пути есть «!». Java с этим плохо справляется, поэтому сборки, скорее всего, не запустятся.</translation>
     </message>
     <message>
@@ -2133,7 +2187,7 @@
         <translation>Каждая сборка использует установленную Java, подходящую к её версии Minecraft.</translation>
     </message>
     <message>
-        <source>Download Java automatically when it's missing</source>
+        <source>Download Java automatically when it&apos;s missing</source>
         <translation>Скачивать Java автоматически, если её нет</translation>
     </message>
     <message>
@@ -2145,7 +2199,7 @@
         <translation>Java для этой сборки</translation>
     </message>
     <message>
-        <source>Used by instances that don't choose their own.</source>
+        <source>Used by instances that don&apos;t choose their own.</source>
         <translation>Используется сборками, у которых нет своего выбора.</translation>
     </message>
     <message>
@@ -2249,7 +2303,7 @@
         <translation>Выберите исполняемый файл java</translation>
     </message>
     <message>
-        <source>That file isn't a program Java can run from.</source>
+        <source>That file isn&apos;t a program Java can run from.</source>
         <translation>Этот файл не является программой Java.</translation>
     </message>
 </context>
@@ -2288,7 +2342,7 @@
         <translation>Выделяется при запуске игры. Обычно меньше максимума.</translation>
     </message>
     <message>
-        <source>Recommended: %1 (based on this computer's memory%2).</source>
+        <source>Recommended: %1 (based on this computer&apos;s memory%2).</source>
         <translation>Рекомендуется: %1 (по памяти компьютера%2).</translation>
     </message>
     <message>
@@ -2308,7 +2362,7 @@
         <translation>Максимум больше, чем есть у компьютера. Игра может вылететь или подвесить компьютер.</translation>
     </message>
     <message>
-        <source>The maximum is close to all of this computer's memory. Other apps may slow down.</source>
+        <source>The maximum is close to all of this computer&apos;s memory. Other apps may slow down.</source>
         <translation>Максимум почти равен всей памяти компьютера. Другие программы могут тормозить.</translation>
     </message>
 </context>
@@ -2381,6 +2435,10 @@
         <translation>Найти моды</translation>
     </message>
     <message>
+        <source>Friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Appearance</source>
         <translation>Внешний вид</translation>
     </message>
@@ -2434,6 +2492,13 @@
     <message>
         <source>Open classic screen</source>
         <translation>Открыть классический экран</translation>
+    </message>
+</context>
+<context>
+    <name>TabHistory</name>
+    <message>
+        <source>Version history will appear here.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2596,7 +2661,7 @@
         <translation>Скриншотов пока нет. Нажмите F2 в игре, чтобы сделать.</translation>
     </message>
     <message>
-        <source>Use as this instance's background</source>
+        <source>Use as this instance&apos;s background</source>
         <translation>Сделать фоном этой сборки</translation>
     </message>
     <message>
@@ -2687,7 +2752,7 @@
         <translation>Удалить «%1»?</translation>
     </message>
     <message>
-        <source>The world and everything built in it will be deleted. This can't be undone.</source>
+        <source>The world and everything built in it will be deleted. This can&apos;t be undone.</source>
         <translation>Мир и всё построенное в нём будет удалено. Отменить это нельзя.</translation>
     </message>
     <message>
@@ -2702,7 +2767,7 @@
 <context>
     <name>UiTheme</name>
     <message>
-        <source>Can't open %1</source>
+        <source>Can&apos;t open %1</source>
         <translation>Не удалось открыть %1</translation>
     </message>
     <message>

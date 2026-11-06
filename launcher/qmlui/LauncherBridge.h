@@ -24,7 +24,7 @@ class LauncherBridge : public QObject {
     Q_PROPERTY(QString version READ version CONSTANT)
     Q_PROPERTY(QString appName READ appName CONSTANT)
     Q_PROPERTY(QString logo READ logo CONSTANT)
-    /// [{ key, name }] — every language Prism knows; the new UI itself ships English and Russian
+    /// [{ key, name }] — the 15 languages the new UI is translated into (key = Prism's language key)
     Q_PROPERTY(QVariantList languages READ languages NOTIFY languagesChanged)
     Q_PROPERTY(QString language READ language NOTIFY languageChanged)
     Q_PROPERTY(bool onboardingDone READ onboardingDone NOTIFY onboardingDoneChanged)
@@ -44,6 +44,10 @@ class LauncherBridge : public QObject {
     bool onboardingDone() const;
 
     Q_INVOKABLE void setLanguage(const QString& key);
+    /// Closest supported Prism language key for any saved key ("pt" -> "pt_BR", "zh_TW" -> "zh", "nl" -> "en_US")
+    static QString supportedLanguage(const QString& key);
+    /// Suffix of the QML shell's translation file (qmlui_<code>.qm) for a supported key, "" for English
+    static QString uiTranslationCode(const QString& key);
     QVariantMap logShare() const { return m_logShare; }
     /// The log that "Share game log" would upload (newest crash report, else latest.log); "" if none
     Q_INVOKABLE QString latestLogFile(const QString& id) const;
@@ -88,6 +92,8 @@ class LauncherBridge : public QObject {
     void logShareChanged();
 
    private:
+    /// Moves a saved language outside the supported list to the closest one and makes sure core translations load
+    void enforceSupportedLanguage();
     void trackController(const QString& id, LaunchController* controller);
     void setLaunch(const QString& id, const QVariantMap& state);
     void clearLaunch(const QString& id);
