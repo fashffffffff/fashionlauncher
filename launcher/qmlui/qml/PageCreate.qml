@@ -235,6 +235,7 @@ Item {
                         text: Creator.error.length ? Creator.error
                             : Creator.busy ? (Creator.status || qsTr("Working…"))
                                 + (Creator.progress >= 0 ? "  ·  " + Math.round(Creator.progress * 100) + "%" : "")
+                                + "\n" + qsTr("You can leave this page: the install keeps going and its progress stays at the bottom of the window.")
                             : page.current.blocker
                     }
                     QuietButton { visible: Creator.error.length > 0; plain: true; text: qsTr("Dismiss"); onClicked: Creator.clearError() }

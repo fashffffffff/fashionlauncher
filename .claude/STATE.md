@@ -1,4 +1,4 @@
-# Project State — ffprism (Prism Launcher fork)
+# Project State — Fashion Launcher (Prism Launcher fork, repo ffprism)
 
 ## Goal
 Fork of Prism Launcher (Minecraft launcher, C++/Qt6) with a brand-new QML UI.
@@ -6,18 +6,44 @@ Hard requirements: Microsoft login AND offline login both work; offline must NOT
 owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 
 ## Architecture
-- `launcher/` — core + legacy Qt Widgets UI (`launcher/ui/...`).
-- `launcher/qmlui/` — new QML shell: `QmlShell` (engine/window), `UiTheme` (JSON themes, base.json deep-merged,
-  user themes in `<data>/ui-themes`, live reload), `InstancesModel`/`AccountsModel` (QML models; MSA browser+device-code
-  sign-in, offline add), `LauncherBridge` (launch/kill/folders; unported features run classic dialogs via a hidden
-  `MainWindow` + `invokeMethod` on its slots), `ImageProviders`. QML in `qmlui/qml/` (singleton `Style.qml` = tokens),
-  themes in `qmlui/themes/`, fonts Unbounded + Golos Text, `i18n/qmlui_ru.ts` → `.qm`. All listed in `qmlui.qrc`
-  (regenerate when adding files); `Q_INIT_RESOURCE(qmlui)` in `main.cpp`.
-- `launcher/Application.cpp` — `showMainWindow()` opens the QML shell unless setting `UseClassicUI`; falls back to the
-  classic window if QML fails to load. URL/file imports use `showClassicWindow()`. Emits `launchStarted` for progress.
-- `launcher/LaunchController.cpp` — account selection (`decideAccount`), launch mode
-  (`decideLaunchMode`), session setup (`login`) and launch.
-- `launcher/minecraft/auth/` — `AccountList`, `MinecraftAccount` (`ownsMinecraft()` is false for Offline).
+- `launcher/` — Prism core + legacy Qt Widgets UI (`launcher/ui/...`), still used as fallback dialogs.
+- `launcher/qmlui/` — new QML shell. Sources and assets are GLOBBED by `launcher/CMakeLists.txt`
+  (qrc generated into the build dir), so adding files never needs build-file edits.
+  - C++: `QmlShell` (engine, translator reload on language change, context objects, registers QML type
+    `FFPrism.WorldsModel`), `UiTheme` (JSON themes deep-merged over `themes/base.json`; sections colors/shape/type/
+    background/motion/layout), `InstancesModel`, `AccountsModel` (MSA browser+device code, offline), `LauncherBridge`
+    (launch, languages/setLanguage, onboarding flag, classic-dialog fallbacks via hidden `MainWindow`),
+    feature bridges `settings/SettingsBridge` (`Settings`), `create/CreateBridge` (`Creator`),
+    `resources/ResourcesBridge` (`Resources`), `backgrounds/BackgroundsBridge` (`Backgrounds`), `worlds/WorldsModel`.
+  - QML (`qml/`, flat dir; singletons `Style` = tokens incl. `Style.panel()`, `Router` = navigation):
+    `Main.qml` (sidebar + StackView), `Sidebar`, `Page*` (Home, Instances, Instance, Browse, Appearance, Settings,
+    Create), instance tabs `Tab*` (each has `instanceId`, `instance`; resource tabs also `kind`), `Onboarding`.
+- Theme scope: `UiTheme` keeps personal sections in `ui-themes/_personal.json` when `QmlThemeKeepLayout`
+  (shape/type/layout/motion) or `QmlThemeKeepBackground` is on; `setToken` then writes there, not to the theme.
+  Why: users want a theme's colors without its layout. Files starting with `_` are not listed as themes.
+- Version/loader editing: `PageVersion.qml` (reuses `CreateVanilla.qml` picker) + `LauncherBridge::changeVersion`
+  (PackProfile: set net.minecraft, one loader at a time, drops stale intermediary/hashed, resolve Online).
+- Free memory while playing: `LauncherBridge` (game pid appears) → `Application::unloadShellForGame()` closes the
+  QML window when `QmlUnloadWhilePlaying` (default on) or `CloseAfterLaunch`; `controllerFinished` reopens it
+  unless `QuitAfterGameStop`. Why: QML shell costs ~100 MB more than classic.
+- Java presets live in `qml/JavaPresets.js` (balanced G1 default applied once via `QmlJvmPresetApplied`; smooth =
+  ZGC with IgnoreUnrecognizedVMOptions so Java 8/17 still start). `SettingsBridge::recommendedMaxMemory`.
+- Accent from background: `UiTheme::setAccentImage` (hue histogram) when `QmlAccentFromBackground`.
+- `CommandPalette.qml` (Ctrl/Cmd+K, `Router.openPalette()`); `themes/blocky.json` uses bundled Pixelify Sans.
+- Memory recommendation keeps a fixed system reserve (2/3/4 GB by RAM size), no 8 GB cap, ~3 GB + 32 MB per mod.
+  Why: user said heavy packs need 12 GB and 8 GB laptops should still get 6 GB.
+- `InstancesView` (QML type = InstancesModel with sortMode/group) for the Instances page so the shared `Instances`
+  (hotbar, sidebar "Recent") stays sorted by recent play. Window-level DropArea for .zip/.mrpack import is declared
+  under the pages so page drop zones win. Log sharing: `LauncherBridge::shareLatestLog` (PasteUpload, anonymized).
+- `launcher/Application.cpp` — QML shell by default (`UseClassicUI` = classic), falls back to classic if QML fails;
+  emits `launchStarted`; setup-wizard login page only in classic UI.
+
+- Global jobs: `qmlui/jobs/TaskCenter` (QML `Tasks`, singleton `TaskCenter::instance()->track(task, title, kind, instanceId)`)
+  — every long task must be tracked there; `TaskIndicator.qml` pill at the window bottom (StackView reserves a strip),
+  pending "create" cards on PageInstances, per-instance status line on tiles.
+- QML mode never shows the classic setup wizard: `createSetupWizard` applies quiet defaults (language = system locale,
+  auto Java). App icon: `setWindowIcon(logo())` at shell start, POST_BUILD copies .icns into the build-tree bundle,
+  `FashionLauncher.icon` (Icon Composer) rebuilt from our art (compiled only with Xcode 26 actool).
 
 ## Commands
 - Build (Ninja, Debug, already configured in `build/`):
@@ -28,6 +54,9 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   `FFPRISM_SNAPSHOT=/tmp/x.png FFPRISM_PAGE=play|library|appearance|accounts FFPRISM_SNAPSHOT_QUIT=1`
   (never full-screen screencapture — user's private apps are on screen).
 - Strings: `lupdate qml/*.qml qml/Fmt.js *.cpp -ts i18n/qmlui_ru.ts`, then `lrelease`.
+
+- Translations (after every UI change), in `launcher/qmlui`: `lupdate qml/*.qml qml/*.js $(find . -name "*.cpp")
+  -ts i18n/qmlui_ru.ts -locations none -no-obsolete`, fill unfinished entries (plurals: 3 Russian forms), `lrelease`.
 
 ## Decisions (what + why)
 - Offline gating removed (uncommitted, 2026-11-05):
@@ -45,10 +74,19 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   Release) is negligible next to Minecraft. Blur renders at 1/4 size to save memory.
 
 ## Current work + Next steps
-- Done: Play (hotbar, backdrop), Library, Appearance editor, accounts panel, 5 themes, RU translation. Uncommitted.
-- Next: runtime-test real launch (offline + MSA); port to QML: new/import instance, instance editor, settings,
-  launch progress dialog (`LaunchController::onProgressRequested`), console; CloseAfterLaunch for QML window;
-  unload QML while the game runs; rebrand (name, MSA client ID, CurseForge key) before any release.
+- Rebranded to Fashion Launcher (binary `fashionlauncher`, app id `io.github.fashffffffff.FashionLauncher`; build
+  output `build/fashionlauncher.app`; config `fashionlauncher.cfg` falls back to `prismlauncher.cfg`). Icon from
+  Gemini in `program_info/` (source `fashion-icon-source.png`). MSA client ID and CurseForge key are still Prism's —
+  must be replaced before any public release.
+- Branch `try-all` (local only): everything so far + stub bridges for the 7 running sessions. Not pushed; user hasn't
+  approved merging into main/pushing yet.
+- Running side sessions (worktrees `/Users/fash/projects/ffprism/wt/<branch>`, from try-all): qml-share (pack
+  manifests/links, API used by p2p), qml-p2p (Rust sidecar `tools/fashion-net`, friends, play together; host and
+  joiner choose server-only vs all mods + exclusions, reuse matching instance), qml-store (hardlink store + 5
+  snapshots + rollback), qml-tools (pre-launch checks, changelogs, import from launchers, pack settings), qml-visual
+  (panorama, shader backgrounds, pack covers), qml-gallery (community gallery + UI sounds), qml-skins (3D skins,
+  servers on Home/tab). Next: review & merge each into try-all, translate RU, build, verify, ask to push.
+- Pending: anime/extra wallpapers (Gemini 429); public gallery repo fashffffffff/fashion-gallery needs user OK.
 
 ## Gotchas
 - `anyAccountIsValid()` really means "some MS account owns Minecraft" — don't use it to mean "has accounts".

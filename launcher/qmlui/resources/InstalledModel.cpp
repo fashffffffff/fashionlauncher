@@ -9,6 +9,7 @@
 #include "DesktopServices.h"
 #include "ResourceCommon.h"
 #include "ResourceDownloadTask.h"
+#include "qmlui/jobs/TaskCenter.h"
 #include "minecraft/MinecraftInstance.h"
 #include "minecraft/PackProfile.h"
 #include "minecraft/mod/DataPack.h"
@@ -342,6 +343,7 @@ void InstalledModel::runTask(const Task::Ptr& task, std::function<void(bool ok, 
         m_task.reset();
         done(ok, err);
     });
+    TaskCenter::instance()->track(task, m_instance ? m_instance->name() : tr("Mods"), "resources", m_instanceId);
     task->start();
 }
 

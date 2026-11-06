@@ -9,6 +9,7 @@
 #include "Application.h"
 #include "ResourceCommon.h"
 #include "ResourceDownloadTask.h"
+#include "qmlui/jobs/TaskCenter.h"
 #include "minecraft/MinecraftInstance.h"
 #include "minecraft/PackProfile.h"
 #include "minecraft/mod/ModFolderModel.h"
@@ -556,7 +557,7 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
     m_installing.insert(id, -1);
     notifyProject(id);
 
-    auto download = [this, id, pack, version, indexed, folder](const QList<std::shared_ptr<GetModDependenciesTask::PackDependency>>& deps,
+    auto download = [this, id, pack, version, indexed, folder, inst](const QList<std::shared_ptr<GetModDependenciesTask::PackDependency>>& deps,
                                                                const QHash<QString, GetModDependenciesTask::PackDependencyExtraInfo>& extra) {
         if (!folder) {
             m_installing.remove(id);
@@ -600,6 +601,8 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
             }
             notifyProject(id);
         });
+        TaskCenter::instance()->track(tasks, tr("Installing %1").arg(pack->name), "resources", inst ? inst->id() : QString(),
+                                      pack->logoUrl);
         tasks->start();
     };
 

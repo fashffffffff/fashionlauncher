@@ -1361,6 +1361,16 @@ endif()
 
 target_link_libraries(${Launcher_Name} Launcher_logic)
 
+if(APPLE)
+    # Put the icon into the build-tree bundle too (install() only copies it on install), so dev builds
+    # show the Fashion Launcher icon in the Dock and Finder.
+    add_custom_command(TARGET ${Launcher_Name} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_BUNDLE_CONTENT_DIR:${Launcher_Name}>/Resources"
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_SOURCE_DIR}/${Launcher_Branding_ICNS}"
+                "$<TARGET_BUNDLE_CONTENT_DIR:${Launcher_Name}>/Resources/${Launcher_Name}.icns"
+        VERBATIM)
+endif()
+
 if(DEFINED Launcher_APP_BINARY_NAME)
     set_target_properties(${Launcher_Name} PROPERTIES OUTPUT_NAME "${Launcher_APP_BINARY_NAME}")
 endif()

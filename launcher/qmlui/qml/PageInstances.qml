@@ -64,6 +64,54 @@ Item {
             Item { Layout.fillWidth: true }
         }
 
+        // Instances that are still being created/imported: a placeholder card with live progress.
+        Flow {
+            id: pending
+            readonly property var items: Tasks.revision >= 0 ? Tasks.ofKind("create") : []
+            Layout.fillWidth: true
+            visible: items.length > 0
+            spacing: Style.px(12)
+            Repeater {
+                model: pending.items
+                delegate: Rectangle {
+                    required property var modelData
+                    width: grid.cellWidth - Style.px(12)
+                    height: grid.cellHeight - Style.px(12)
+                    radius: Style.radius
+                    color: Style.panel(0)
+                    border.width: 1
+                    border.color: Style.accent
+                    RowLayout {
+                        anchors { fill: parent; leftMargin: Style.px(14); rightMargin: Style.px(14) }
+                        spacing: Style.px(14)
+                        BusyIndicator { Layout.preferredWidth: Style.px(48); Layout.preferredHeight: Style.px(48); running: true }
+                        ColumnLayout {
+                            Layout.fillWidth: true
+                            spacing: Style.px(4)
+                            Txt { text: modelData.title; Layout.fillWidth: true; font.pixelSize: Style.fontLead; font.weight: Font.Medium }
+                            Txt {
+                                Layout.fillWidth: true
+                                muted: true
+                                text: (modelData.progress >= 0 ? Math.round(modelData.progress * 100) + "% · " : "")
+                                      + (modelData.status || qsTr("Installing…"))
+                            }
+                            ProgressBar {
+                                Layout.fillWidth: true
+                                from: 0; to: 1
+                                value: modelData.progress >= 0 ? modelData.progress : 0
+                                indeterminate: modelData.progress < 0
+                            }
+                        }
+                        QuietButton {
+                            iconName: "close"; plain: true; tip: qsTr("Cancel")
+                            visible: modelData.canCancel
+                            onClicked: Tasks.cancel(modelData.row)
+                        }
+                    }
+                }
+            }
+        }
+
         GridView {
             id: grid
             Layout.fillWidth: true
@@ -107,7 +155,13 @@ Item {
                             Layout.fillWidth: true
                             spacing: Style.px(4)
                             Txt { text: model.name; Layout.fillWidth: true; font.pixelSize: Style.fontLead; font.weight: Font.Medium }
-                            Txt { text: Fmt.versionLine(model) || Fmt.playTime(model.playTime); muted: true; Layout.fillWidth: true }
+                            Txt {
+                                readonly property real job: Tasks.revision >= 0 ? Tasks.instanceProgress(model.instanceId) : -2
+                                text: job > -2 ? (job >= 0 ? Math.round(job * 100) + "% · " : "") + Tasks.instanceStatus(model.instanceId)
+                                               : (Fmt.versionLine(model) || Fmt.playTime(model.playTime))
+                                color: job > -2 ? Style.accent : Style.textMuted
+                                Layout.fillWidth: true
+                            }
                         }
                         // Launch without opening the instance
                         AbstractButton {

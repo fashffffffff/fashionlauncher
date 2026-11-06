@@ -32,6 +32,7 @@
 #include "skins/SkinsBridge.h"
 #include "store/StoreBridge.h"
 #include "tools/ToolsBridge.h"
+#include "qmlui/jobs/TaskCenter.h"
 #include "settings/SettingsObject.h"
 
 QmlShell::QmlShell(QObject* parent) : QObject(parent)
@@ -87,6 +88,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Skins", new SkinsBridge(this));
     ctx->setContextProperty("Servers", new ServersBridge(this));
     ctx->setContextProperty("Gallery", new GalleryBridge(this));
+    ctx->setContextProperty("Tasks", TaskCenter::instance());
 }
 
 LaunchPrompts* QmlShell::prompts() const
