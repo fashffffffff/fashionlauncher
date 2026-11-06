@@ -80,9 +80,9 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   Release) is negligible next to Minecraft. Blur renders at 1/4 size to save memory.
 
 ## Current work + Next steps
-- 2026-11-06: all branches merged into try-all (builds, snapshots OK). Pending: Russian 747/1379 untranslated —
+- 2026-11-06: all branches merged into try-all (builds, snapshots OK). Pending: Russian 740/1379 untranslated —
   exported to `/Users/fash/projects/ffprism/translate-ru/ru_todo.json` for Gemini (Antigravity) → `ru_done.json`, apply with
-  `i18n/tsjson.py apply ru <file>`; other 13 languages in progress on branch qml-languages. Release dir `build-release`
+  `i18n/tsjson.py apply ru <file>`; other 13 languages merged (639/1379 each; the 740 new strings from feature branches still untranslated, hidden from the picker). Release dir `build-release`
   re-pointed to binary `fashionlauncher`. Still classic: URL import and modpack-import sub-dialogs.
 - Rebranded to Fashion Launcher (binary `fashionlauncher`, app id `io.github.fashffffffff.FashionLauncher`; build
   output `build/fashionlauncher.app`; config `fashionlauncher.cfg` falls back to `prismlauncher.cfg`). Icon from
