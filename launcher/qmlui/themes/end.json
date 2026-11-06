@@ -1,0 +1,34 @@
+{
+    "name": "The End",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#0E0A16",
+        "surface": "#171127",
+        "surfaceHi": "#241A3B",
+        "line": "#3A2A5C",
+        "text": "#EDE6D0",
+        "textMuted": "#A99FBF",
+        "accent": "#D946C8",
+        "onAccent": "#1A0517",
+        "danger": "#FF6B7A",
+        "success": "#6FD3A0",
+        "scrim": "#0E0A16"
+    },
+    "shape": {
+        "radius": 12,
+        "slotRadius": 10
+    },
+    "background": {
+        "dim": 0.6,
+        "blur": 24
+    },
+    "layout": {
+        "navPosition": "right",
+        "navStyle": "full",
+        "panelStyle": "outline",
+        "panelOpacity": 0.6,
+        "showHotbar": true,
+        "heroSize": 64
+    }
+}

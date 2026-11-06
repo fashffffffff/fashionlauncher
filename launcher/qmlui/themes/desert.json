@@ -1,0 +1,34 @@
+{
+    "name": "Desert Temple",
+    "author": "FFPrism",
+    "dark": false,
+    "colors": {
+        "bg": "#F1E6D0",
+        "surface": "#FAF3E3",
+        "surfaceHi": "#E7D8B8",
+        "line": "#D2BE96",
+        "text": "#2B1D12",
+        "textMuted": "#6B5640",
+        "accent": "#B8501E",
+        "onAccent": "#FFFFFF",
+        "danger": "#A8261E",
+        "success": "#4D7A2C",
+        "scrim": "#F1E6D0"
+    },
+    "shape": {
+        "radius": 6,
+        "slotRadius": 4
+    },
+    "background": {
+        "dim": 0.3,
+        "blur": 14
+    },
+    "layout": {
+        "navPosition": "right",
+        "navStyle": "full",
+        "panelStyle": "solid",
+        "panelOpacity": 0.95,
+        "showHotbar": true,
+        "heroSize": 60
+    }
+}

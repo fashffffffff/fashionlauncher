@@ -1,0 +1,34 @@
+{
+    "name": "Redstone",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#141010",
+        "surface": "#1E1717",
+        "surfaceHi": "#2B1F1F",
+        "line": "#4A2626",
+        "text": "#F0E6E4",
+        "textMuted": "#A8908D",
+        "accent": "#E0322B",
+        "onAccent": "#FFFFFF",
+        "danger": "#FF8A5C",
+        "success": "#58C26A",
+        "scrim": "#141010"
+    },
+    "shape": {
+        "radius": 4,
+        "slotRadius": 2
+    },
+    "background": {
+        "dim": 0.65,
+        "blur": 8
+    },
+    "layout": {
+        "navPosition": "left",
+        "navStyle": "compact",
+        "panelStyle": "solid",
+        "panelOpacity": 1.0,
+        "showHotbar": true,
+        "heroSize": 44
+    }
+}

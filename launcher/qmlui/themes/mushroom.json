@@ -1,0 +1,34 @@
+{
+    "name": "Mushroom Fields",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#1F1A24",
+        "surface": "#2A2330",
+        "surfaceHi": "#382E40",
+        "line": "#4F4258",
+        "text": "#EFE6EC",
+        "textMuted": "#B3A5B7",
+        "accent": "#E5484D",
+        "onAccent": "#1B0507",
+        "danger": "#FF7B7B",
+        "success": "#6CCB8A",
+        "scrim": "#1F1A24"
+    },
+    "shape": {
+        "radius": 14,
+        "slotRadius": 12
+    },
+    "background": {
+        "dim": 0.5,
+        "blur": 26
+    },
+    "layout": {
+        "navPosition": "right",
+        "navStyle": "full",
+        "panelStyle": "glass",
+        "panelOpacity": 0.7,
+        "showHotbar": true,
+        "heroSize": 52
+    }
+}

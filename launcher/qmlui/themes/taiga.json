@@ -1,0 +1,34 @@
+{
+    "name": "Snowy Taiga",
+    "author": "FFPrism",
+    "dark": false,
+    "colors": {
+        "bg": "#E8F0F6",
+        "surface": "#F6FAFD",
+        "surfaceHi": "#DAE6EF",
+        "line": "#BFD0DE",
+        "text": "#14202B",
+        "textMuted": "#4D6174",
+        "accent": "#2F6FA8",
+        "onAccent": "#FFFFFF",
+        "danger": "#C23A45",
+        "success": "#2E8049",
+        "scrim": "#E8F0F6"
+    },
+    "shape": {
+        "radius": 10,
+        "slotRadius": 8
+    },
+    "background": {
+        "dim": 0.3,
+        "blur": 20
+    },
+    "layout": {
+        "navPosition": "left",
+        "navStyle": "compact",
+        "panelStyle": "glass",
+        "panelOpacity": 0.85,
+        "showHotbar": true,
+        "heroSize": 48
+    }
+}
