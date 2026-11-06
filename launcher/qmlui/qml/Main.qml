@@ -16,12 +16,13 @@ ApplicationWindow {
     readonly property var pageFiles: ({
         home: "PageHome.qml", instances: "PageInstances.qml", browse: "PageBrowse.qml",
         appearance: "PageAppearance.qml", settings: "PageSettings.qml",
-        instance: "PageInstance.qml", create: "PageCreate.qml"
+        instance: "PageInstance.qml", create: "PageCreate.qml", version: "PageVersion.qml"
     })
 
     // Debug/automation entry (FFPRISM_PAGE): a section name, "create", "accounts", or "instance:<id>[:<tab>]"
     function showPage(name: var) {
         if (name === "accounts") accounts.open()
+        else if (name.startsWith("version:")) Router.open("version", { instanceId: name.slice(8) })
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
         else if (pageFiles[name]) Router.go(name)
     }

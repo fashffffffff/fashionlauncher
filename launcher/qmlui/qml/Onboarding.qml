@@ -65,13 +65,24 @@ Item {
             }
 
             // Step 1: language
+            Field {
+                id: langSearch
+                visible: ob.step === 0
+                Layout.fillWidth: true
+                iconName: "search"
+                placeholderText: qsTr("Search languages")
+            }
             ListView {
                 visible: ob.step === 0
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 clip: true
                 spacing: Style.px(4)
-                model: ob.languages
+                model: {
+                    const q = langSearch.text.trim().toLowerCase()
+                    return q ? ob.languages.filter(l => l.name.toLowerCase().indexOf(q) >= 0 || l.key.toLowerCase().indexOf(q) >= 0)
+                             : ob.languages
+                }
                 boundsBehavior: Flickable.StopAtBounds
                 ScrollBar.vertical: ScrollBar {}
                 delegate: AbstractButton {

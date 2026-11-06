@@ -56,7 +56,7 @@ Item {
             RowLayout {
                 spacing: Style.px(12)
                 Txt { text: Fmt.versionLine(tab.instance) || qsTr("Unknown version"); font.pixelSize: Style.fontLead }
-                QuietButton { text: qsTr("Change version or loader"); onClicked: Launcher.editInstance(tab.instanceId, "version") }
+                QuietButton { text: qsTr("Change version or loader"); onClicked: Router.open("version", { instanceId: tab.instanceId }) }
             }
 
             Txt {

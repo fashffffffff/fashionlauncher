@@ -668,7 +668,11 @@
     </message>
     <message numerus="yes">
         <source>Added %n file(s)</source>
-        <translation><numerusform>Добавлен %n файл</numerusform><numerusform>Добавлено %n файла</numerusform><numerusform>Добавлено %n файлов</numerusform></translation>
+        <translation>
+            <numerusform>Добавлен %n файл</numerusform>
+            <numerusform>Добавлено %n файла</numerusform>
+            <numerusform>Добавлено %n файлов</numerusform>
+        </translation>
     </message>
     <message>
         <source>These files could not be added</source>
@@ -708,7 +712,11 @@
     </message>
     <message numerus="yes">
         <source>Updated %n item(s)</source>
-        <translation><numerusform>Обновлён %n элемент</numerusform><numerusform>Обновлено %n элемента</numerusform><numerusform>Обновлено %n элементов</numerusform></translation>
+        <translation>
+            <numerusform>Обновлён %n элемент</numerusform>
+            <numerusform>Обновлено %n элемента</numerusform>
+            <numerusform>Обновлено %n элементов</numerusform>
+        </translation>
     </message>
     <message>
         <source>Some updates failed: %1</source>
@@ -724,6 +732,22 @@
     <message>
         <source>Playing</source>
         <translation>В игре</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Этой сборки больше нет.</translation>
+    </message>
+    <message>
+        <source>Close the game before changing its version.</source>
+        <translation>Закройте игру перед сменой версии.</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version.</source>
+        <translation>Выберите версию Minecraft.</translation>
+    </message>
+    <message>
+        <source>Pick a mod loader version.</source>
+        <translation>Выберите версию загрузчика модов.</translation>
     </message>
 </context>
 <context>
@@ -762,6 +786,10 @@
     <message>
         <source>An instance is a separate Minecraft installation with its own version, mods and worlds.</source>
         <translation>Сборка — это отдельная установка Minecraft со своей версией, модами и мирами.</translation>
+    </message>
+    <message>
+        <source>Search languages</source>
+        <translation>Поиск языка</translation>
     </message>
     <message>
         <source>Signed in as %1</source>
@@ -820,6 +848,22 @@
     <message>
         <source>Yours</source>
         <translation>Ваша</translation>
+    </message>
+    <message>
+        <source>When switching themes</source>
+        <translation>При смене темы</translation>
+    </message>
+    <message>
+        <source>Keep my layout and sizes</source>
+        <translation>Сохранять мою раскладку и размеры</translation>
+    </message>
+    <message>
+        <source>Themes only change colors.</source>
+        <translation>Темы меняют только цвета.</translation>
+    </message>
+    <message>
+        <source>Keep my background</source>
+        <translation>Сохранять мой фон</translation>
     </message>
     <message>
         <source>Open themes folder</source>
@@ -1405,6 +1449,41 @@
     </message>
 </context>
 <context>
+    <name>PageVersion</name>
+    <message>
+        <source>Back</source>
+        <translation>Назад</translation>
+    </message>
+    <message>
+        <source>Version and mod loader</source>
+        <translation>Версия и загрузчик модов</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2 %3</source>
+        <translation>Сейчас: Minecraft %1 с %2 %3</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader</source>
+        <translation>Сейчас: Minecraft %1 без загрузчика модов</translation>
+    </message>
+    <message>
+        <source>Mods made for the old version may stop working. Worlds opened in a newer version can't go back to an older one — make a copy first if unsure.</source>
+        <translation>Моды для старой версии могут перестать работать. Мир, открытый в новой версии, нельзя вернуть в старую — если сомневаетесь, сначала сделайте копию.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+    <message>
+        <source>Apply</source>
+        <translation>Применить</translation>
+    </message>
+    <message>
+        <source>Version changed</source>
+        <translation>Версия изменена</translation>
+    </message>
+</context>
+<context>
     <name>PlayButton</name>
     <message>
         <source>Stop</source>
@@ -1746,7 +1825,11 @@
     </message>
     <message numerus="yes">
         <source>%n update(s) available</source>
-        <translation><numerusform>Доступно %n обновление</numerusform><numerusform>Доступно %n обновления</numerusform><numerusform>Доступно %n обновлений</numerusform></translation>
+        <translation>
+            <numerusform>Доступно %n обновление</numerusform>
+            <numerusform>Доступно %n обновления</numerusform>
+            <numerusform>Доступно %n обновлений</numerusform>
+        </translation>
     </message>
     <message>
         <source>Nothing matches “%1”</source>
@@ -1890,6 +1973,14 @@
     <message>
         <source>Choose…</source>
         <translation>Выбрать…</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Nothing found</source>
+        <translation>Ничего не найдено</translation>
     </message>
 </context>
 <context>
@@ -2259,7 +2350,11 @@
     <name>TabScreenshots</name>
     <message numerus="yes">
         <source>%n screenshot(s)</source>
-        <translation><numerusform>%n скриншот</numerusform><numerusform>%n скриншота</numerusform><numerusform>%n скриншотов</numerusform></translation>
+        <translation>
+            <numerusform>%n скриншот</numerusform>
+            <numerusform>%n скриншота</numerusform>
+            <numerusform>%n скриншотов</numerusform>
+        </translation>
     </message>
     <message>
         <source>Open folder</source>
@@ -2290,7 +2385,11 @@
     </message>
     <message numerus="yes">
         <source>%n world(s)</source>
-        <translation><numerusform>%n мир</numerusform><numerusform>%n мира</numerusform><numerusform>%n миров</numerusform></translation>
+        <translation>
+            <numerusform>%n мир</numerusform>
+            <numerusform>%n мира</numerusform>
+            <numerusform>%n миров</numerusform>
+        </translation>
     </message>
     <message>
         <source>Refresh</source>

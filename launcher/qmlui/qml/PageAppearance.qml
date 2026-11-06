@@ -181,6 +181,34 @@ Item {
                     }
                 }
             }
+            // What a theme is allowed to change when you switch to it
+            Rectangle {
+                Layout.fillWidth: true
+                implicitHeight: keepCol.implicitHeight + Style.px(20)
+                radius: Style.radius
+                color: Style.panel(0)
+                border.width: 1
+                border.color: Style.panelBorder
+                ColumnLayout {
+                    id: keepCol
+                    anchors { fill: parent; margins: Style.px(10) }
+                    spacing: Style.px(2)
+                    Txt { text: qsTr("When switching themes"); font.weight: Font.DemiBold }
+                    SettingsSwitch {
+                        Layout.fillWidth: true
+                        label: qsTr("Keep my layout and sizes")
+                        description: qsTr("Themes only change colors.")
+                        checked: Theme.keepLayout
+                        onToggled: (on) => Theme.keepLayout = on
+                    }
+                    SettingsSwitch {
+                        Layout.fillWidth: true
+                        label: qsTr("Keep my background")
+                        checked: Theme.keepBackground
+                        onToggled: (on) => Theme.keepBackground = on
+                    }
+                }
+            }
             QuietButton {
                 Layout.fillWidth: true
                 iconName: "folder"

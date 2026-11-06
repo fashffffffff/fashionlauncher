@@ -51,7 +51,7 @@ Item {
                     wrapMode: Text.WordWrap
                     text: qsTr("This instance has no mod loader, so mods won't run. Install Fabric, Quilt, Forge or NeoForge in the instance's version settings.")
                 }
-                QuietButton { text: qsTr("Change version"); onClicked: Launcher.editInstance(view.instanceId, "version") }
+                QuietButton { text: qsTr("Change version"); onClicked: Router.open("version", { instanceId: view.instanceId }) }
             }
         }
 

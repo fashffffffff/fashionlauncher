@@ -18,6 +18,8 @@ const QString kBuiltinPrefix = QStringLiteral("builtin:");
 const QString kUserPrefix = QStringLiteral("user:");
 const QString kBuiltinDir = QStringLiteral(":/qmlui/themes");
 const QString kDefaultTheme = QStringLiteral("builtin:deepslate");
+const QString kPersonalFile = QStringLiteral("_personal.json");
+const QStringList kLayoutSections = { "shape", "type", "layout", "motion" };
 
 QJsonObject deepMerge(QJsonObject base, const QJsonObject& over)
 {
@@ -55,8 +57,64 @@ UiTheme::UiTheme(QObject* parent) : QObject(parent)
         }
     });
 
+    m_personal = readTheme(FS::PathCombine(m_userDir, kPersonalFile));
+
     reloadThemes();
     apply(APPLICATION->settings()->get("QmlUiTheme").toString());
+}
+
+bool UiTheme::keepLayout() const
+{
+    return APPLICATION->settings()->get("QmlThemeKeepLayout").toBool();
+}
+
+bool UiTheme::keepBackground() const
+{
+    return APPLICATION->settings()->get("QmlThemeKeepBackground").toBool();
+}
+
+bool UiTheme::isPersonal(const QString& group) const
+{
+    return (keepLayout() && kLayoutSections.contains(group)) || (keepBackground() && group == "background");
+}
+
+void UiTheme::setKeepLayout(bool keep)
+{
+    if (keep == keepLayout()) {
+        return;
+    }
+    if (keep) {
+        // Start from what is on screen now, so turning this on changes nothing visible.
+        for (const auto& sec : kLayoutSections) {
+            m_personal[sec] = m_merged.value(sec);
+        }
+        savePersonal();
+    }
+    APPLICATION->settings()->set("QmlThemeKeepLayout", keep);
+    rebuild();
+}
+
+void UiTheme::setKeepBackground(bool keep)
+{
+    if (keep == keepBackground()) {
+        return;
+    }
+    if (keep) {
+        m_personal["background"] = m_merged.value("background");
+        savePersonal();
+    }
+    APPLICATION->settings()->set("QmlThemeKeepBackground", keep);
+    rebuild();
+}
+
+void UiTheme::savePersonal()
+{
+    m_selfWrite = true;
+    QFile f(FS::PathCombine(m_userDir, kPersonalFile));
+    if (f.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
+        f.write(QJsonDocument(m_personal).toJson(QJsonDocument::Indented));
+    }
+    m_selfWrite = false;
 }
 
 QString UiTheme::name() const
@@ -114,7 +172,7 @@ void UiTheme::reloadThemes()
     auto addDir = [&](const QString& dir, const QString& prefix) {
         const auto entries = QDir(dir).entryInfoList({ "*.json" }, QDir::Files, QDir::Name);
         for (const auto& info : entries) {
-            if (info.baseName() == "base") {
+            if (info.baseName() == "base" || info.baseName().startsWith('_')) {
                 continue;
             }
             auto obj = deepMerge(m_base, readTheme(info.absoluteFilePath()));
@@ -168,6 +226,11 @@ void UiTheme::apply(const QString& requestedId)
 void UiTheme::rebuild()
 {
     m_merged = deepMerge(m_base, m_theme);
+    for (const auto& sec : kLayoutSections + QStringList{ "background" }) {
+        if (isPersonal(sec)) {
+            m_merged[sec] = deepMerge(m_base.value(sec).toObject(), m_personal.value(sec).toObject());
+        }
+    }
     emit changed();
 }
 
@@ -211,6 +274,15 @@ QString UiTheme::duplicate(const QString& newName)
 
 void UiTheme::setToken(const QString& group, const QString& key, const QVariant& value)
 {
+    if (isPersonal(group)) {
+        // Kept across themes: write to the personal file, leave the theme alone
+        auto obj = m_personal.value(group).toObject();
+        obj[key] = QJsonValue::fromVariant(value);
+        m_personal[group] = obj;
+        savePersonal();
+        rebuild();
+        return;
+    }
     forkIfBuiltin();
     auto obj = m_theme.value(group).toObject();
     obj[key] = QJsonValue::fromVariant(value);
@@ -247,6 +319,14 @@ void UiTheme::setBackgroundImage(const QUrl& file)
 {
     const QString source = file.toLocalFile();
     if (source.isEmpty()) {
+        return;
+    }
+    if (keepBackground()) {
+        const QString target = FS::PathCombine(m_userDir, "_personal-bg." + QFileInfo(source).suffix());
+        QFile::remove(target);
+        QFile::copy(source, target);
+        setToken("background", "image", QFileInfo(target).fileName());
+        setToken("background", "mode", "image");
         return;
     }
     forkIfBuiltin();

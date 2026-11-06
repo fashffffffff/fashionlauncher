@@ -51,6 +51,10 @@ class LauncherBridge : public QObject {
     Q_INVOKABLE void copyInstance(const QString& id);
     Q_INVOKABLE void deleteInstance(const QString& id);
     Q_INVOKABLE void exportInstance(const QString& id);
+    /// { mc, loader ("" | fabric | quilt | forge | neoforge), loaderVersion }
+    Q_INVOKABLE QVariantMap versionInfo(const QString& id) const;
+    /// Switch Minecraft version and/or mod loader; returns an error message or "" on success
+    Q_INVOKABLE QString changeVersion(const QString& id, const QString& mc, const QString& loader, const QString& loaderVersion);
     Q_INVOKABLE void renameInstance(const QString& id, const QString& name);
     Q_INVOKABLE void changeIcon(const QString& id);
 

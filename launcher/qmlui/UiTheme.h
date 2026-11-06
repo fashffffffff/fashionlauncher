@@ -32,6 +32,10 @@ class UiTheme : public QObject {
     Q_PROPERTY(QVariantList themes READ themes NOTIFY themesChanged)
     Q_PROPERTY(QString userThemesDir READ userThemesDir CONSTANT)
     Q_PROPERTY(QString lastError READ lastError NOTIFY changed)
+    /// Keep your own layout/sizes/fonts/motion when switching themes (themes then only bring colors)
+    Q_PROPERTY(bool keepLayout READ keepLayout WRITE setKeepLayout NOTIFY changed)
+    /// Keep your own background when switching themes
+    Q_PROPERTY(bool keepBackground READ keepBackground WRITE setKeepBackground NOTIFY changed)
 
    public:
     explicit UiTheme(QObject* parent = nullptr);
@@ -49,6 +53,10 @@ class UiTheme : public QObject {
     QVariantList themes() const { return m_themes; }
     QString userThemesDir() const { return m_userDir; }
     QString lastError() const { return m_lastError; }
+    bool keepLayout() const;
+    bool keepBackground() const;
+    void setKeepLayout(bool keep);
+    void setKeepBackground(bool keep);
 
     /// Switch to a theme by id ("builtin:deepslate" or "user:my-theme")
     Q_INVOKABLE void apply(const QString& id);
@@ -76,11 +84,14 @@ class UiTheme : public QObject {
     void scheduleSave();
     void saveNow();
     void rebuild();
+    bool isPersonal(const QString& group) const;
+    void savePersonal();
 
     QString m_userDir;
     QJsonObject m_base;     // built-in base theme, always fully specified
     QJsonObject m_theme;    // the theme file as written by the user (sparse)
-    QJsonObject m_merged;   // base + theme
+    QJsonObject m_merged;   // base + theme (+ personal sections)
+    QJsonObject m_personal; // sections the user keeps across themes (ui-themes/_personal.json)
     QString m_id;
     bool m_builtin = true;
     QString m_lastError;

@@ -12,6 +12,9 @@
 #include "LaunchController.h"
 #include "launch/LaunchTask.h"
 #include "minecraft/MinecraftInstance.h"
+#include "minecraft/PackProfile.h"
+#include "minecraft/Component.h"
+#include "net/Mode.h"
 #include "settings/SettingsObject.h"
 #include "translations/TranslationsModel.h"
 #include "ui/MainWindow.h"
@@ -47,7 +50,11 @@ QVariantList LauncherBridge::languages() const
     auto* tm = APPLICATION->translations();
     for (int i = 0; i < tm->rowCount(); i++) {
         auto idx = tm->index(i, 0);
-        list.append(QVariantMap{ { "key", idx.data(Qt::UserRole).toString() }, { "name", idx.data(Qt::DisplayRole).toString() } });
+        QString name = idx.data(Qt::DisplayRole).toString();
+        if (!name.isEmpty()) {
+            name[0] = name[0].toUpper();  // Qt gives "русский", people expect "Русский"
+        }
+        list.append(QVariantMap{ { "key", idx.data(Qt::UserRole).toString() }, { "name", name } });
     }
     return list;
 }
@@ -226,6 +233,82 @@ void LauncherBridge::exportInstance(const QString& id)
 void LauncherBridge::changeIcon(const QString& id)
 {
     runClassicAction(id, "on_actionChangeInstIcon_triggered");
+}
+
+namespace {
+const QList<QPair<QString, QString>> kLoaders = {
+    { "fabric", "net.fabricmc.fabric-loader" },
+    { "quilt", "org.quiltmc.quilt-loader" },
+    { "forge", "net.minecraftforge" },
+    { "neoforge", "net.neoforged" },
+};
+}  // namespace
+
+QVariantMap LauncherBridge::versionInfo(const QString& id) const
+{
+    auto* inst = findInstance(id);
+    if (!inst) {
+        return {};
+    }
+    auto* profile = inst->getPackProfile();
+    QVariantMap info{ { "mc", profile->getComponentVersion("net.minecraft") }, { "loader", "" }, { "loaderVersion", "" } };
+    for (const auto& [key, uid] : kLoaders) {
+        if (const auto v = profile->getComponentVersion(uid); !v.isEmpty()) {
+            info["loader"] = key;
+            info["loaderVersion"] = v;
+            break;
+        }
+    }
+    return info;
+}
+
+QString LauncherBridge::changeVersion(const QString& id, const QString& mc, const QString& loader, const QString& loaderVersion)
+{
+    auto* inst = findInstance(id);
+    if (!inst) {
+        return tr("This instance no longer exists.");
+    }
+    if (inst->isRunning()) {
+        return tr("Close the game before changing its version.");
+    }
+    if (mc.isEmpty()) {
+        return tr("Pick a Minecraft version.");
+    }
+    QString wantedUid;
+    for (const auto& [key, uid] : kLoaders) {
+        if (key == loader) {
+            wantedUid = uid;
+        }
+    }
+    if (!loader.isEmpty() && (wantedUid.isEmpty() || loaderVersion.isEmpty())) {
+        return tr("Pick a mod loader version.");
+    }
+
+    auto* profile = inst->getPackProfile();
+    if (profile->getComponentVersion("net.minecraft") != mc) {
+        profile->setComponentVersion("net.minecraft", mc, true);
+    }
+    // Only one mod loader at a time; their mappings go with them.
+    for (const auto& [key, uid] : kLoaders) {
+        if (uid != wantedUid && profile->getComponent(uid)) {
+            profile->remove(uid);
+        }
+    }
+    if (loader != "fabric" && profile->getComponent("net.fabricmc.intermediary")) {
+        profile->remove("net.fabricmc.intermediary");
+    }
+    if (loader != "quilt" && profile->getComponent("org.quiltmc.hashed")) {
+        profile->remove("org.quiltmc.hashed");
+    }
+    if (!wantedUid.isEmpty()) {
+        profile->setComponentVersion(wantedUid, loaderVersion);
+        if (auto component = profile->getComponent(wantedUid)) {
+            component->setEnabled(true);
+        }
+    }
+    profile->resolve(Net::Mode::Online);
+    profile->saveNow();
+    return {};
 }
 
 void LauncherBridge::renameInstance(const QString& id, const QString& name)
