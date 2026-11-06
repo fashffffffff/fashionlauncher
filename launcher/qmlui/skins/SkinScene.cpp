@@ -86,12 +86,12 @@ void SkinBox::rebuild()
     };
 
     // The player faces +Z (towards the camera); its right side is -X.
-    face({ -hx, hy, hz }, { hx, hy, hz }, { hx, -hy, hz }, { -hx, -hy, hz }, { 0, 0, 1 }, u + d, v + d, w, h);                   // front
-    face({ -hx, hy, -hz }, { -hx, hy, hz }, { -hx, -hy, hz }, { -hx, -hy, -hz }, { -1, 0, 0 }, u, v + d, d, h);                 // right
-    face({ hx, hy, hz }, { hx, hy, -hz }, { hx, -hy, -hz }, { hx, -hy, hz }, { 1, 0, 0 }, u + d + w, v + d, d, h);              // left
-    face({ hx, hy, -hz }, { -hx, hy, -hz }, { -hx, -hy, -hz }, { hx, -hy, -hz }, { 0, 0, -1 }, u + 2 * d + w, v + d, w, h);     // back
-    face({ -hx, hy, -hz }, { hx, hy, -hz }, { hx, hy, hz }, { -hx, hy, hz }, { 0, 1, 0 }, u + d, v, w, d);                      // top
-    face({ -hx, -hy, hz }, { hx, -hy, hz }, { hx, -hy, -hz }, { -hx, -hy, -hz }, { 0, -1, 0 }, u + d + w, v, w, d);             // bottom
+    face({ -hx, hy, hz }, { hx, hy, hz }, { hx, -hy, hz }, { -hx, -hy, hz }, { 0, 0, 1 }, u + depth, v + depth, w, h);                   // front
+    face({ -hx, hy, -hz }, { -hx, hy, hz }, { -hx, -hy, hz }, { -hx, -hy, -hz }, { -1, 0, 0 }, u, v + depth, depth, h);                 // right
+    face({ hx, hy, hz }, { hx, hy, -hz }, { hx, -hy, -hz }, { hx, -hy, hz }, { 1, 0, 0 }, u + depth + w, v + depth, depth, h);              // left
+    face({ hx, hy, -hz }, { -hx, hy, -hz }, { -hx, -hy, -hz }, { hx, -hy, -hz }, { 0, 0, -1 }, u + 2 * depth + w, v + depth, w, h);     // back
+    face({ -hx, hy, -hz }, { hx, hy, -hz }, { hx, hy, hz }, { -hx, hy, hz }, { 0, 1, 0 }, u + depth, v, w, depth);                      // top
+    face({ -hx, -hy, hz }, { hx, -hy, hz }, { hx, -hy, -hz }, { -hx, -hy, -hz }, { 0, -1, 0 }, u + depth + w, v, w, depth);             // bottom
 
     clear();
     setVertexData(vertices);
