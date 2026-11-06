@@ -12,7 +12,7 @@ set(Launcher_CommonName "FashionLauncher")
 set(Launcher_DisplayName "Fashion Launcher")
 set(Launcher_AppID "io.github.fashffffffff.FashionLauncher")
 set(Launcher_Domain "fashffffffff.github.io")
-set(Launcher_Git "https://github.com/fashffffffff/ffprism")
+set(Launcher_Git "https://github.com/fashffffffff/fashionlauncher")
 
 set(Launcher_Name "${Launcher_CommonName}" PARENT_SCOPE)
 set(Launcher_DisplayName "${Launcher_DisplayName}" PARENT_SCOPE)
