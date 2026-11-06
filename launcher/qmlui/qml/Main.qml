@@ -17,7 +17,8 @@ ApplicationWindow {
     readonly property var pageFiles: ({
         home: "PageHome.qml", instances: "PageInstances.qml", browse: "PageBrowse.qml",
         appearance: "PageAppearance.qml", settings: "PageSettings.qml",
-        instance: "PageInstance.qml", create: "PageCreate.qml", version: "PageVersion.qml"
+        instance: "PageInstance.qml", create: "PageCreate.qml", version: "PageVersion.qml",
+        friends: "PageFriends.qml", skins: "PageSkins.qml", gallery: "PageGallery.qml"
     })
 
     // Debug/automation entry (FFPRISM_PAGE): a section name, "create", "accounts", or "instance:<id>[:<tab>]"

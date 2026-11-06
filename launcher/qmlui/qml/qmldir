@@ -1,2 +1,3 @@
 singleton Style 1.0 Style.qml
 singleton Router 1.0 Router.qml
+singleton Sounds 1.0 Sounds.qml

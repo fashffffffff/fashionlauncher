@@ -17,6 +17,7 @@ Rectangle {
         { id: "home", icon: "home", label: qsTr("Home") },
         { id: "instances", icon: "grid", label: qsTr("Instances") },
         { id: "browse", icon: "compass", label: qsTr("Browse mods") },
+        { id: "friends", icon: "user", label: qsTr("Friends") },
         { id: "appearance", icon: "palette", label: qsTr("Appearance") },
         { id: "settings", icon: "gear", label: qsTr("Settings") }
     ]

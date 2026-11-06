@@ -22,6 +22,13 @@
 #include "resources/ResourcesBridge.h"
 #include "settings/SettingsBridge.h"
 #include "worlds/WorldsModel.h"
+#include "gallery/GalleryBridge.h"
+#include "network/FriendsBridge.h"
+#include "servers/ServersBridge.h"
+#include "sharing/SharingBridge.h"
+#include "skins/SkinsBridge.h"
+#include "store/StoreBridge.h"
+#include "tools/ToolsBridge.h"
 #include "settings/SettingsObject.h"
 
 QmlShell::QmlShell(QObject* parent) : QObject(parent)
@@ -65,6 +72,13 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Creator", new CreateBridge(this));
     ctx->setContextProperty("Resources", new ResourcesBridge(this));
     ctx->setContextProperty("Backgrounds", new BackgroundsBridge(this));
+    ctx->setContextProperty("Sharing", new SharingBridge(this));
+    ctx->setContextProperty("Friends", new FriendsBridge(this));
+    ctx->setContextProperty("Store", new StoreBridge(this));
+    ctx->setContextProperty("Tools", new ToolsBridge(this));
+    ctx->setContextProperty("Skins", new SkinsBridge(this));
+    ctx->setContextProperty("Servers", new ServersBridge(this));
+    ctx->setContextProperty("Gallery", new GalleryBridge(this));
 }
 
 QmlShell::~QmlShell()

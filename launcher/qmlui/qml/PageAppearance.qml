@@ -209,6 +209,13 @@ Item {
                     }
                 }
             }
+            PrimaryButton {
+                Layout.fillWidth: true
+                implicitHeight: Style.px(42)
+                iconName: "globe"
+                text: qsTr("Find more themes")
+                onClicked: Router.open("gallery")
+            }
             QuietButton {
                 Layout.fillWidth: true
                 iconName: "folder"

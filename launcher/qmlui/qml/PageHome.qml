@@ -117,6 +117,13 @@ Item {
         QuietButton { iconName: "sliders"; text: qsTr("Manage"); onClicked: Router.openInstance(page.current.instanceId, "overview") }
     }
 
+    // Servers of this instance (status, quick join), above the actions on the right
+    HomeServers {
+        instanceId: page.current ? page.current.instanceId : ""
+        anchors { right: parent.right; bottom: actions.bottom; rightMargin: Style.px(48) }
+        width: Math.min(parent.width * 0.38, Style.px(420))
+    }
+
     // Hotbar: quick switch between the 9 most recent instances
     Rectangle {
         id: hotbarRow

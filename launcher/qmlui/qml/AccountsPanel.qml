@@ -119,6 +119,12 @@ Drawer {
                     }
                 }
             }
+            QuietButton {
+                Layout.fillWidth: true
+                iconName: "user"
+                text: qsTr("Skins")
+                onClicked: { drawer.close(); Router.open("skins") }
+            }
             PrimaryButton {
                 Layout.fillWidth: true
                 text: qsTr("Sign in with Microsoft")
