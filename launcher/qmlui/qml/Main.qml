@@ -4,223 +4,104 @@ import QtQuick.Layouts
 
 ApplicationWindow {
     id: win
-    width: 1180
-    height: 720
-    minimumWidth: 900
-    minimumHeight: 580
+    width: 1240
+    height: 760
+    minimumWidth: 980
+    minimumHeight: 620
     visible: false
     title: Launcher.appName
     color: Style.bg
     font.family: Style.ui
 
-    // Selection is tracked by id, so sorting and filtering never jump it to another instance.
-    property string selectedId: ""
-    property var current: null
-    property int selectedIndex: -1
-    property string pageName: "play"
+    readonly property var pageFiles: ({
+        home: "PageHome.qml", instances: "PageInstances.qml", browse: "PageBrowse.qml",
+        appearance: "PageAppearance.qml", settings: "PageSettings.qml",
+        instance: "PageInstance.qml", create: "PageCreate.qml"
+    })
 
-    function refreshCurrent() {
-        let i = Instances.indexOf(selectedId)
-        if (i < 0 && Instances.count > 0 && Instances.filter === "") {
-            i = 0
-            selectedId = Instances.get(0).instanceId
-        }
-        selectedIndex = i
-        current = i >= 0 ? Instances.get(i) : null
-    }
-    function selectIndex(i) {
-        if (i < 0 || i >= Instances.count) return
-        selectedId = Instances.get(i).instanceId
-        refreshCurrent()
-    }
+    // Debug/automation entry (FFPRISM_PAGE): a section name, "accounts", or "instance:<id>"
     function showPage(name: var) {
-        if (name === "accounts") { accounts.open(); return }
-        if (name !== "library" && Instances.filter !== "") Instances.filter = ""
-        pageName = name
-        if (name === "library") library.focusSearch()
-        else stage.forceActiveFocus()
+        if (name === "accounts") accounts.open()
+        else if (name.startsWith("instance:")) Router.openInstance(name.slice(9))
+        else if (pageFiles[name]) Router.go(name)
     }
-    function toast(message, isError) { toastBox.show(message, isError) }
 
     Connections {
-        target: Instances
-        function onCountChanged() { win.refreshCurrent() }
-        function onDataChanged() { win.refreshCurrent() }
-        function onLayoutChanged() { win.refreshCurrent() }
-        function onModelReset() { win.refreshCurrent() }
+        target: Router
+        function onGoRequested(page) {
+            Router.section = page
+            stack.replace(null, win.pageFiles[page], { params: {} })
+        }
+        function onOpenRequested(page, params) { stack.push(win.pageFiles[page], { params: params }) }
+        function onBackRequested() { if (stack.depth > 1) stack.pop() }
+        function onToastRequested(message, isError) { toastBox.show(message, isError) }
+        function onAccountsRequested() { accounts.open() }
     }
     Connections {
         target: Launcher
-        function onLaunchFailed(name, reason) { win.toast(qsTr("%1 didn't start: %2").arg(name).arg(reason), true) }
-        function onNotify(message) { win.toast(message, false) }
+        function onLaunchFailed(name, reason) { Router.toast(qsTr("%1 didn't start: %2").arg(name).arg(reason), true) }
+        function onNotify(message) { Router.toast(message, false) }
     }
     Connections {
         target: Accounts
-        function onSignedIn(name) { win.toast(qsTr("Signed in as %1").arg(name), false) }
+        function onSignedIn(name) { Router.toast(qsTr("Signed in as %1").arg(name), false) }
     }
-    Component.onCompleted: refreshCurrent()
+
+    Shortcut { sequences: [StandardKey.Back, "Esc"]; enabled: stack.depth > 1; onActivated: Router.back() }
+    Shortcut { sequences: [StandardKey.Find]; onActivated: Router.go("instances") }
 
     Backdrop {
+        id: backdrop
         anchors.fill: parent
-        screenshot: win.current ? win.current.backdrop : ""
-        seed: win.current ? win.current.instanceId : "empty"
+        readonly property var cur: { Instances.count; const i = Instances.indexOf(Router.selectedId); return i >= 0 ? Instances.get(i) : null }
+        screenshot: cur ? cur.backdrop : ""
+        seed: cur ? cur.instanceId : "empty"
     }
 
-    // Calm the scene behind list-like pages; the Play page shows it in full.
+    // The scene shows fully on Home; every other page sits on a calmer, darker backdrop.
     Rectangle {
         anchors.fill: parent
         color: Style.bg
-        opacity: win.pageName === "play" ? 0 : 0.86
+        opacity: Router.section === "home" && stack.depth === 1 ? 0 : 0.8
         Behavior on opacity { NumberAnimation { duration: Style.dur(220); easing.type: Easing.OutCubic } }
     }
-    // Keep the top bar readable over bright screenshots.
-    Rectangle {
-        anchors { top: parent.top; left: parent.left; right: parent.right }
-        height: Style.px(140)
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: Style.alpha(Style.scrim, 0.6) }
-            GradientStop { position: 1.0; color: Style.alpha(Style.scrim, 0.0) }
-        }
-    }
 
-    // Keyboard: 1–9 pick a hotbar slot, Enter plays, arrows step through.
-    FocusScope {
-        id: stage
-        anchors.fill: parent
-        focus: true
-        Keys.onPressed: (event) => {
-            if (win.pageName !== "play") return
-            if (event.key >= Qt.Key_1 && event.key <= Qt.Key_9) { win.selectIndex(event.key - Qt.Key_1); event.accepted = true }
-            else if (event.key === Qt.Key_Right) { win.selectIndex(Math.min(Instances.count - 1, win.selectedIndex + 1)); event.accepted = true }
-            else if (event.key === Qt.Key_Left) { win.selectIndex(Math.max(0, win.selectedIndex - 1)); event.accepted = true }
-            else if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && win.current) {
-                Launcher.launch(win.current.instanceId); event.accepted = true
-            }
-        }
+    RowLayout {
+        anchors { fill: parent; margins: Style.px(12) }
+        spacing: Style.px(12)
+        layoutDirection: Style.navPosition === "right" ? Qt.RightToLeft : Qt.LeftToRight
 
-        StackLayout {
-            anchors { top: topBar.bottom; left: parent.left; right: parent.right; bottom: parent.bottom }
-            currentIndex: ["play", "library", "appearance"].indexOf(win.pageName)
-            PlayPage {
-                current: win.current
-                selectedIndex: win.selectedIndex
-                onSelect: (i) => win.selectIndex(i)
-                onOpenLibrary: win.showPage("library")
-            }
-            LibraryPage {
-                id: library
-                selectedIndex: win.selectedIndex
-                onPick: (i) => {
-                    win.selectedId = Instances.get(i).instanceId
-                    win.showPage("play")
+        Sidebar { Layout.fillHeight: true; Layout.preferredWidth: width }
+
+        StackView {
+            id: stack
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            clip: true
+            initialItem: "PageHome.qml"
+            // One quiet transition: content slides a little and fades, so you see where you went.
+            pushEnter: Transition {
+                ParallelAnimation {
+                    NumberAnimation { property: "opacity"; from: 0; to: 1; duration: Style.dur(200) }
+                    NumberAnimation { property: "x"; from: Style.px(24); to: 0; duration: Style.dur(240); easing.type: Easing.OutCubic }
                 }
             }
-            AppearancePage {}
-        }
-
-        // Top bar
-        Item {
-            id: topBar
-            anchors { top: parent.top; left: parent.left; right: parent.right }
-            height: Style.px(64)
-
-            Text {
-                anchors { left: parent.left; leftMargin: Style.px(56); verticalCenter: parent.verticalCenter }
-                text: Launcher.appName
-                color: Style.text
-                font.family: Style.display
-                font.pixelSize: Style.px(15)
-                font.weight: Font.DemiBold
-            }
-
-            Row {
-                anchors.centerIn: parent
-                spacing: Style.px(4)
-                Repeater {
-                    model: [{ id: "play", label: qsTr("Play") }, { id: "library", label: qsTr("Library") },
-                            { id: "appearance", label: qsTr("Appearance") }]
-                    delegate: AbstractButton {
-                        id: tab
-                        readonly property bool on: win.pageName === modelData.id
-                        implicitWidth: tabText.implicitWidth + Style.px(28)
-                        implicitHeight: Style.px(36)
-                        hoverEnabled: true
-                        Accessible.name: modelData.label
-                        onClicked: win.showPage(modelData.id)
-                        background: Rectangle {
-                            radius: height / 2
-                            color: tab.on ? Style.alpha(Style.text, 0.14) : tab.hovered ? Style.alpha(Style.text, 0.07) : "transparent"
-                            border.width: tab.visualFocus ? 2 : 0
-                            border.color: Style.accent
-                        }
-                        contentItem: Text {
-                            id: tabText
-                            text: modelData.label
-                            color: tab.on ? Style.text : Style.textMuted
-                            font.family: Style.ui
-                            font.pixelSize: Style.fontBody
-                            font.weight: tab.on ? Font.DemiBold : Font.Medium
-                            horizontalAlignment: Text.AlignHCenter
-                            verticalAlignment: Text.AlignVCenter
-                        }
-                    }
+            pushExit: Transition { NumberAnimation { property: "opacity"; from: 1; to: 0; duration: Style.dur(150) } }
+            popEnter: Transition { NumberAnimation { property: "opacity"; from: 0; to: 1; duration: Style.dur(200) } }
+            popExit: Transition {
+                ParallelAnimation {
+                    NumberAnimation { property: "opacity"; from: 1; to: 0; duration: Style.dur(150) }
+                    NumberAnimation { property: "x"; from: 0; to: Style.px(24); duration: Style.dur(180) }
                 }
             }
-
-            RowLayout {
-                anchors { right: parent.right; rightMargin: Style.px(56); verticalCenter: parent.verticalCenter }
-                spacing: Style.px(8)
-                AbstractButton {
-                    id: accountChip
-                    implicitHeight: Style.px(40)
-                    implicitWidth: chipRow.implicitWidth + Style.px(20)
-                    hoverEnabled: true
-                    Accessible.name: qsTr("Accounts")
-                    onClicked: accounts.open()
-                    background: Rectangle {
-                        radius: height / 2
-                        color: accountChip.hovered ? Style.alpha(Style.text, 0.12) : Style.alpha(Style.surface, 0.7)
-                        border.width: accountChip.visualFocus ? 2 : 1
-                        border.color: accountChip.visualFocus ? Style.accent : Style.alpha(Style.text, 0.08)
-                    }
-                    contentItem: Item {
-                        Row {
-                            id: chipRow
-                            anchors.centerIn: parent
-                            spacing: Style.px(8)
-                            Image {
-                                visible: !!Accounts.current.face
-                                source: Accounts.current.face || ""
-                                width: Style.px(24); height: width
-                                sourceSize: Qt.size(48, 48)
-                                smooth: false
-                                anchors.verticalCenter: parent.verticalCenter
-                            }
-                            Icon { visible: !Accounts.current.face; name: "user"; size: Style.px(18); anchors.verticalCenter: parent.verticalCenter }
-                            Txt {
-                                text: Accounts.current.name || qsTr("Add account")
-                                font.weight: Font.Medium
-                                anchors.verticalCenter: parent.verticalCenter
-                            }
-                        }
-                    }
-                }
-                QuietButton {
-                    iconName: "sliders"
-                    tip: qsTr("Launcher settings")
-                    onClicked: settingsMenu.popup()
-                    ThemedMenu {
-                        id: settingsMenu
-                        ThemedMenuItem { text: qsTr("Settings"); iconName: "sliders"; onTriggered: Launcher.openSettings("") }
-                        ThemedMenuItem { text: qsTr("Java"); iconName: "cube"; onTriggered: Launcher.openSettings("java-settings") }
-                        ThemedMenuItem { text: qsTr("Classic window"); iconName: "grid"; onTriggered: Launcher.openClassicWindow() }
-                    }
-                }
-            }
+            replaceEnter: Transition { NumberAnimation { property: "opacity"; from: 0; to: 1; duration: Style.dur(180) } }
+            replaceExit: Transition { NumberAnimation { property: "opacity"; from: 1; to: 0; duration: Style.dur(120) } }
         }
     }
 
     AccountsPanel { id: accounts }
+
+    Onboarding { id: onboarding; anchors.fill: parent }
 
     // Toasts
     Rectangle {
@@ -236,6 +117,7 @@ ApplicationWindow {
         border.color: isError ? Style.danger : Style.line
         opacity: 0
         visible: opacity > 0
+        z: 100
         Behavior on opacity { NumberAnimation { duration: Style.dur(180) } }
         Txt {
             id: toastText

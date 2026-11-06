@@ -33,5 +33,13 @@
     "motion": {
         "enabled": true,
         "speed": 1.0
+    },
+    "layout": {
+        "navPosition": "left",
+        "navStyle": "full",
+        "panelStyle": "glass",
+        "panelOpacity": 0.78,
+        "showHotbar": true,
+        "heroSize": 52
     }
 }

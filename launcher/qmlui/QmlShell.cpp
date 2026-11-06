@@ -16,6 +16,10 @@
 #include "InstancesModel.h"
 #include "LauncherBridge.h"
 #include "UiTheme.h"
+#include "backgrounds/BackgroundsBridge.h"
+#include "create/CreateBridge.h"
+#include "resources/ResourcesBridge.h"
+#include "settings/SettingsBridge.h"
 #include "settings/SettingsObject.h"
 
 QmlShell::QmlShell(QObject* parent) : QObject(parent)
@@ -27,15 +31,6 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
         // Basic is the only Controls style that is fully restyleable from QML on every platform
         QQuickStyle::setStyle("Basic");
         fontsLoaded = true;
-
-        // Strings of the QML shell ship with it (qmlui/i18n); the rest of the launcher uses Prism's translations.
-        const QString lang = APPLICATION->settings()->get("Language").toString().section('_', 0, 0);
-        auto* translator = new QTranslator(APPLICATION);
-        if (translator->load(QString(":/qmlui/i18n/qmlui_%1.qm").arg(lang))) {
-            QCoreApplication::installTranslator(translator);
-        } else {
-            delete translator;
-        }
     }
 
     m_theme = new UiTheme(this);
@@ -44,6 +39,8 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     m_launcher = new LauncherBridge(this);
 
     m_engine = new QQmlApplicationEngine(this);
+    loadTranslator();
+    connect(m_launcher, &LauncherBridge::languageChanged, this, &QmlShell::loadTranslator);
     m_engine->addImageProvider("instanceicon", new InstanceIconProvider);
     m_engine->addImageProvider("accountface", new AccountFaceProvider);
     auto* ctx = m_engine->rootContext();
@@ -51,6 +48,11 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Instances", m_instances);
     ctx->setContextProperty("Accounts", m_accounts);
     ctx->setContextProperty("Launcher", m_launcher);
+    // Feature bridges: each one backs its own screens (see the class comments).
+    ctx->setContextProperty("Settings", new SettingsBridge(this));
+    ctx->setContextProperty("Creator", new CreateBridge(this));
+    ctx->setContextProperty("Resources", new ResourcesBridge(this));
+    ctx->setContextProperty("Backgrounds", new BackgroundsBridge(this));
 }
 
 QmlShell::~QmlShell()
@@ -60,6 +62,25 @@ QmlShell::~QmlShell()
     }
     // Destroy QML before the C++ objects it references.
     delete m_engine;
+}
+
+void QmlShell::loadTranslator()
+{
+    // Strings of the QML shell ship with it (qmlui/i18n); the rest of the launcher uses Prism's translations.
+    if (m_translator) {
+        QCoreApplication::removeTranslator(m_translator);
+        delete m_translator;
+        m_translator = nullptr;
+    }
+    const QString lang = APPLICATION->settings()->get("Language").toString().section('_', 0, 0);
+    auto* translator = new QTranslator(this);
+    if (translator->load(QString(":/qmlui/i18n/qmlui_%1.qm").arg(lang))) {
+        QCoreApplication::installTranslator(translator);
+        m_translator = translator;
+    } else {
+        delete translator;
+    }
+    m_engine->retranslate();
 }
 
 bool QmlShell::load()

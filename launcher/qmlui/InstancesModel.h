@@ -28,6 +28,8 @@ class InstancesModel : public QSortFilterProxyModel {
         GroupRole,
         NotesRole,
         PackNameRole,
+        GameRootRole,
+        InstanceRootRole,
     };
 
     explicit InstancesModel(QObject* parent = nullptr);

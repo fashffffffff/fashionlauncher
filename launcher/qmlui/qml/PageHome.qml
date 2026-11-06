@@ -3,23 +3,47 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import "Fmt.js" as Fmt
 
-// The stage: selected instance title, its actions, and the hotbar.
+// Home: the selected instance on the full backdrop, with labeled actions and the quick-switch hotbar.
 Item {
     id: page
-    property var current: null              // map from Instances.get()
+    property var params: ({})
+    property var current: null
     property int selectedIndex: -1
-    signal select(int index)
-    signal openLibrary()
 
-    readonly property var launch: current ? Launcher.launches[current.instanceId] : undefined
-    readonly property bool busy: launch !== undefined
+    function refresh() {
+        let i = Instances.indexOf(Router.selectedId)
+        if (i < 0 && Instances.count > 0) { i = 0; Router.selectedId = Instances.get(0).instanceId }
+        selectedIndex = i
+        current = i >= 0 ? Instances.get(i) : null
+    }
+    function select(i) {
+        if (i < 0 || i >= Instances.count) return
+        Router.selectedId = Instances.get(i).instanceId
+        refresh()
+    }
+    Component.onCompleted: { if (Instances.filter !== "") Instances.filter = ""; refresh(); forceActiveFocus() }
+    Connections {
+        target: Instances
+        function onCountChanged() { page.refresh() }
+        function onDataChanged() { page.refresh() }
+        function onLayoutChanged() { page.refresh() }
+        function onModelReset() { page.refresh() }
+    }
+
+    focus: true
+    Keys.onPressed: (event) => {
+        if (event.key >= Qt.Key_1 && event.key <= Qt.Key_9) { select(event.key - Qt.Key_1); event.accepted = true }
+        else if (event.key === Qt.Key_Right) { select(Math.min(Instances.count - 1, selectedIndex + 1)); event.accepted = true }
+        else if (event.key === Qt.Key_Left) { select(Math.max(0, selectedIndex - 1)); event.accepted = true }
+        else if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && current) { Launcher.launch(current.instanceId); event.accepted = true }
+    }
 
     // Title block — the one orchestrated motion: it rises in when the selection changes.
     ColumnLayout {
         id: hero
         visible: page.current !== null
         anchors { left: parent.left; right: parent.right; bottom: actions.top
-                  leftMargin: Style.px(56); rightMargin: Style.px(56); bottomMargin: Style.px(24) }
+                  leftMargin: Style.px(48); rightMargin: Style.px(48); bottomMargin: Style.px(24) }
         spacing: Style.px(10)
 
         Txt {
@@ -29,7 +53,6 @@ Item {
             font.pixelSize: Style.fontLead
         }
         Text {
-            id: title
             Layout.fillWidth: true
             text: page.current ? page.current.name : ""
             color: Style.text
@@ -61,7 +84,7 @@ Item {
     // Empty state
     ColumnLayout {
         visible: page.current === null
-        anchors { left: parent.left; bottom: hotbarRow.top; leftMargin: Style.px(56); bottomMargin: Style.px(56) }
+        anchors { left: parent.left; verticalCenter: parent.verticalCenter; leftMargin: Style.px(48) }
         spacing: Style.px(16)
         Text {
             text: qsTr("Nothing to play yet")
@@ -77,56 +100,28 @@ Item {
             wrapMode: Text.WordWrap
             Layout.maximumWidth: Style.px(520)
         }
-        PrimaryButton { text: qsTr("Create instance"); iconName: "plus"; onClicked: Launcher.newInstance() }
+        PrimaryButton { text: qsTr("Create instance"); iconName: "plus"; onClicked: Router.open("create") }
     }
 
-    // Actions
+    // Actions — every button says what it does
     RowLayout {
         id: actions
         visible: page.current !== null
-        anchors { left: parent.left; bottom: hotbarRow.top; leftMargin: Style.px(56); bottomMargin: Style.px(44) }
+        anchors { left: parent.left; bottom: hotbarRow.visible ? hotbarRow.top : parent.bottom
+                  leftMargin: Style.px(48); bottomMargin: Style.px(hotbarRow.visible ? 36 : 48) }
         spacing: Style.px(10)
 
-        PrimaryButton {
-            id: playButton
-            objectName: "playButton"
-            Layout.preferredWidth: Style.px(220)
-            readonly property string phase: page.launch ? page.launch.phase : ""
-            text: phase === "running" ? qsTr("Stop") : phase === "launching" ? page.launch.status : qsTr("Play")
-            iconName: phase === "running" ? "stop" : phase === "launching" ? "" : "play"
-            progress: phase === "launching" ? page.launch.progress : undefined
-            fill: phase === "running" ? Style.surfaceHi : Style.accent
-            ink: phase === "running" ? Style.text : Style.onAccent
-            onClicked: {
-                if (!page.current) return
-                if (phase === "") Launcher.launch(page.current.instanceId)
-                else Launcher.kill(page.current.instanceId)
-            }
-        }
-        QuietButton { iconName: "cube"; text: qsTr("Mods"); onClicked: Launcher.editInstance(page.current.instanceId, "mods") }
-        QuietButton { iconName: "folder"; tip: qsTr("Open folder"); onClicked: Launcher.openInstanceFolder(page.current.instanceId) }
-        QuietButton { iconName: "sliders"; tip: qsTr("Edit instance"); onClicked: Launcher.editInstance(page.current.instanceId, "") }
-        QuietButton {
-            iconName: "more"
-            tip: qsTr("More actions")
-            onClicked: moreMenu.popup()
-            ThemedMenu {
-                id: moreMenu
-                ThemedMenuItem { text: qsTr("Console"); iconName: "terminal"; onTriggered: Launcher.showConsole(page.current.instanceId) }
-                ThemedMenuItem { text: qsTr("Launch offline"); iconName: "play"; onTriggered: Launcher.launch(page.current.instanceId, true) }
-                ThemedMenuItem { text: qsTr("Screenshots folder"); iconName: "image"; onTriggered: Launcher.openScreenshotsFolder(page.current.instanceId) }
-                ThemedMenuItem { text: qsTr("Change icon"); iconName: "pencil"; onTriggered: Launcher.changeIcon(page.current.instanceId) }
-                ThemedMenuItem { text: qsTr("Copy instance"); iconName: "copy"; onTriggered: Launcher.copyInstance(page.current.instanceId) }
-                ThemedMenuItem { text: qsTr("Export"); iconName: "export"; onTriggered: Launcher.exportInstance(page.current.instanceId) }
-                ThemedMenuItem { text: qsTr("Delete"); iconName: "trash"; danger: true; onTriggered: Launcher.deleteInstance(page.current.instanceId) }
-            }
-        }
+        PlayButton { instanceId: page.current ? page.current.instanceId : ""; Layout.preferredWidth: Style.px(220) }
+        QuietButton { iconName: "cube"; text: qsTr("Mods"); onClicked: Router.openInstance(page.current.instanceId, "mods") }
+        QuietButton { iconName: "folder"; text: qsTr("Folder"); onClicked: Launcher.openInstanceFolder(page.current.instanceId) }
+        QuietButton { iconName: "sliders"; text: qsTr("Manage"); onClicked: Router.openInstance(page.current.instanceId, "overview") }
     }
 
-    // Hotbar
+    // Hotbar: quick switch between the 9 most recent instances
     Rectangle {
         id: hotbarRow
-        anchors { horizontalCenter: parent.horizontalCenter; bottom: parent.bottom; bottomMargin: Style.px(28) }
+        visible: Style.showHotbar && Instances.count > 0
+        anchors { horizontalCenter: parent.horizontalCenter; bottom: parent.bottom; bottomMargin: Style.px(24) }
         width: slots.implicitWidth + Style.px(12)
         height: slots.implicitHeight + Style.px(12)
         radius: Style.slotRadius + Style.px(6)
@@ -152,15 +147,9 @@ Item {
                 }
             }
             HotbarSlot {
-                visible: Instances.count < 9
-                glyph: "plus"
-                tip: qsTr("Create instance")
-                onClicked: Launcher.newInstance()
-            }
-            HotbarSlot {
                 glyph: "grid"
                 tip: qsTr("All instances")
-                onClicked: page.openLibrary()
+                onClicked: Router.go("instances")
             }
         }
     }

@@ -12,10 +12,15 @@
 #include "LaunchController.h"
 #include "launch/LaunchTask.h"
 #include "minecraft/MinecraftInstance.h"
+#include "settings/SettingsObject.h"
+#include "translations/TranslationsModel.h"
 #include "ui/MainWindow.h"
 
 LauncherBridge::LauncherBridge(QObject* parent) : QObject(parent)
 {
+    auto* tm = APPLICATION->translations();
+    connect(tm, &QAbstractItemModel::modelReset, this, &LauncherBridge::languagesChanged);
+    connect(tm, &QAbstractItemModel::rowsInserted, this, &LauncherBridge::languagesChanged);
     connect(APPLICATION, &Application::launchStarted, this, [this](MinecraftInstance* inst, LaunchController* controller) {
         trackController(inst->id(), controller);
     });
@@ -34,6 +39,43 @@ QString LauncherBridge::version() const
 QString LauncherBridge::appName() const
 {
     return BuildConfig.LAUNCHER_DISPLAYNAME;
+}
+
+QVariantList LauncherBridge::languages() const
+{
+    QVariantList list;
+    auto* tm = APPLICATION->translations();
+    for (int i = 0; i < tm->rowCount(); i++) {
+        auto idx = tm->index(i, 0);
+        list.append(QVariantMap{ { "key", idx.data(Qt::UserRole).toString() }, { "name", idx.data(Qt::DisplayRole).toString() } });
+    }
+    return list;
+}
+
+QString LauncherBridge::language() const
+{
+    return APPLICATION->settings()->get("Language").toString();
+}
+
+void LauncherBridge::setLanguage(const QString& key)
+{
+    if (key.isEmpty() || key == language()) {
+        return;
+    }
+    APPLICATION->settings()->set("Language", key);
+    APPLICATION->translations()->selectLanguage(key);
+    emit languageChanged();  // QmlShell swaps its own translator and retranslates the QML
+}
+
+bool LauncherBridge::onboardingDone() const
+{
+    return APPLICATION->settings()->get("QmlOnboardingDone").toBool();
+}
+
+void LauncherBridge::finishOnboarding()
+{
+    APPLICATION->settings()->set("QmlOnboardingDone", true);
+    emit onboardingDoneChanged();
 }
 
 static MinecraftInstance* findInstance(const QString& id)

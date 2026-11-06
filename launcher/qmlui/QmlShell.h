@@ -29,6 +29,9 @@ class QmlShell : public QObject {
    signals:
     void isClosing();
 
+   private slots:
+    void loadTranslator();
+
    protected:
     bool eventFilter(QObject* watched, QEvent* event) override;
 
@@ -39,4 +42,5 @@ class QmlShell : public QObject {
     InstancesModel* m_instances = nullptr;
     AccountsModel* m_accounts = nullptr;
     LauncherBridge* m_launcher = nullptr;
+    class QTranslator* m_translator = nullptr;
 };

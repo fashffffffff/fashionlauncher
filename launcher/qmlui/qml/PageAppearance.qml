@@ -6,6 +6,7 @@ import QtQuick.Dialogs
 // Theme picker and live editor. Every change is written to the theme's JSON file.
 Item {
     id: page
+    property var params: ({})
 
     component Heading: Text {
         color: Style.text
@@ -117,7 +118,7 @@ Item {
     }
 
     RowLayout {
-        anchors { fill: parent; leftMargin: Style.px(56); rightMargin: Style.px(56); topMargin: Style.px(24); bottomMargin: Style.px(24) }
+        anchors { fill: parent; margins: Style.px(32) }
         spacing: Style.px(40)
 
         // Theme list

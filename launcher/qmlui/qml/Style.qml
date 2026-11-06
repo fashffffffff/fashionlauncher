@@ -9,6 +9,7 @@ QtObject {
     readonly property var ty: Theme.type
     readonly property var bgCfg: Theme.background
     readonly property var mo: Theme.motion
+    readonly property var lay: Theme.layout
 
     readonly property color bg: c.bg
     readonly property color surface: c.surface
@@ -30,6 +31,21 @@ QtObject {
     readonly property string ui: ty.ui
     readonly property real scale: ty.scale > 0 ? ty.scale : 1
 
+    // Layout tokens: where navigation sits and how panels are drawn
+    readonly property string navPosition: lay.navPosition === "right" ? "right" : "left"
+    readonly property bool navCompact: lay.navStyle === "compact"
+    readonly property string panelStyle: lay.panelStyle || "glass"     // glass | solid | outline
+    readonly property real panelOpacity: lay.panelOpacity > 0 ? lay.panelOpacity : 0.78
+    readonly property bool showHotbar: lay.showHotbar !== false
+    // Fill color of a panel/card in the current panel style
+    function panel(level) {
+        const base = level > 0 ? surfaceHi : surface
+        if (panelStyle === "solid") return base
+        if (panelStyle === "outline") return alpha(bg, 0.35)
+        return alpha(base, panelOpacity)
+    }
+    readonly property color panelBorder: panelStyle === "outline" ? alpha(text, 0.28) : alpha(text, 0.08)
+
     readonly property bool motion: mo.enabled !== false
     readonly property real speed: mo.speed > 0 ? mo.speed : 1
 
@@ -39,7 +55,7 @@ QtObject {
     readonly property int fontBody: px(14)
     readonly property int fontLead: px(17)
     readonly property int fontTitle: px(22)
-    readonly property int fontHero: px(52)
+    readonly property int fontHero: px(lay.heroSize > 0 ? lay.heroSize : 52)
 
     function dur(ms) { return motion ? ms / speed : 0 }
     function alpha(col, a) { const q = Qt.lighter(col, 1.0); return Qt.rgba(q.r, q.g, q.b, a) }

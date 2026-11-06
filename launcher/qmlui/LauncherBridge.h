@@ -21,6 +21,10 @@ class LauncherBridge : public QObject {
     Q_PROPERTY(QVariantMap launches READ launches NOTIFY launchesChanged)
     Q_PROPERTY(QString version READ version CONSTANT)
     Q_PROPERTY(QString appName READ appName CONSTANT)
+    /// [{ key, name }] — every language Prism knows; the new UI itself ships English and Russian
+    Q_PROPERTY(QVariantList languages READ languages NOTIFY languagesChanged)
+    Q_PROPERTY(QString language READ language NOTIFY languageChanged)
+    Q_PROPERTY(bool onboardingDone READ onboardingDone NOTIFY onboardingDoneChanged)
 
    public:
     explicit LauncherBridge(QObject* parent = nullptr);
@@ -29,6 +33,12 @@ class LauncherBridge : public QObject {
     QVariantMap launches() const { return m_launches; }
     QString version() const;
     QString appName() const;
+    QVariantList languages() const;
+    QString language() const;
+    bool onboardingDone() const;
+
+    Q_INVOKABLE void setLanguage(const QString& key);
+    Q_INVOKABLE void finishOnboarding();
 
     Q_INVOKABLE bool launch(const QString& id, bool offline = false);
     Q_INVOKABLE void kill(const QString& id);
@@ -52,6 +62,9 @@ class LauncherBridge : public QObject {
     void launchesChanged();
     void launchFailed(const QString& instanceName, const QString& reason);
     void notify(const QString& message);
+    void languagesChanged();
+    void languageChanged();
+    void onboardingDoneChanged();
 
    private:
     void trackController(const QString& id, LaunchController* controller);

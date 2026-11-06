@@ -38,6 +38,7 @@ QHash<int, QByteArray> InstancesModel::roleNames() const
         { IdRole, "instanceId" },     { NameRole, "name" },         { IconRole, "icon" },         { GameVersionRole, "gameVersion" },
         { LoaderRole, "loader" },     { LastPlayedRole, "lastPlayed" }, { PlayTimeRole, "playTime" }, { RunningRole, "running" },
         { BackdropRole, "backdrop" }, { GroupRole, "group" },       { NotesRole, "notes" },       { PackNameRole, "packName" },
+        { GameRootRole, "gameRoot" }, { InstanceRootRole, "instanceRoot" },
     };
 }
 
@@ -119,6 +120,10 @@ QVariant InstancesModel::data(const QModelIndex& index, int role) const
             return inst->notes();
         case PackNameRole:
             return inst->isManagedPack() ? inst->getManagedPackName() : QString();
+        case GameRootRole:
+            return QDir(inst->gameRoot()).absolutePath();
+        case InstanceRootRole:
+            return QDir(inst->instanceRoot()).absolutePath();
         default:
             return QSortFilterProxyModel::data(index, role);
     }

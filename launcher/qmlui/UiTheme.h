@@ -28,6 +28,7 @@ class UiTheme : public QObject {
     Q_PROPERTY(QVariantMap type READ type NOTIFY changed)
     Q_PROPERTY(QVariantMap background READ background NOTIFY changed)
     Q_PROPERTY(QVariantMap motion READ motion NOTIFY changed)
+    Q_PROPERTY(QVariantMap layout READ layout NOTIFY changed)
     Q_PROPERTY(QVariantList themes READ themes NOTIFY themesChanged)
     Q_PROPERTY(QString userThemesDir READ userThemesDir CONSTANT)
     Q_PROPERTY(QString lastError READ lastError NOTIFY changed)
@@ -44,6 +45,7 @@ class UiTheme : public QObject {
     QVariantMap type() const { return section("type"); }
     QVariantMap background() const { return section("background"); }
     QVariantMap motion() const { return section("motion"); }
+    QVariantMap layout() const { return section("layout"); }
     QVariantList themes() const { return m_themes; }
     QString userThemesDir() const { return m_userDir; }
     QString lastError() const { return m_lastError; }

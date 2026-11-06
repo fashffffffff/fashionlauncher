@@ -833,6 +833,7 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
         m_settings->registerSetting("UseClassicUI", false);
         m_settings->registerSetting("QmlUiTheme", "");
         m_settings->registerSetting("QmlShellGeometry", QVariantList());
+        m_settings->registerSetting("QmlOnboardingDone", false);
 
         m_settings->registerSetting("ConsoleWindowState", "");
         m_settings->registerSetting("ConsoleWindowGeometry", "");

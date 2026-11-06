@@ -1164,7 +1164,24 @@ if (APPLE)
     )
 endif()
 
-# The QML shell (new UI)
+# The QML shell (new UI). Everything under qmlui/ is picked up automatically, so new screens
+# and bridges only add files and never touch this list.
+file(GLOB_RECURSE QMLUI_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/*.h")
+set(LAUNCHER_SOURCES ${LAUNCHER_SOURCES} ${QMLUI_SOURCES})
+
+file(GLOB_RECURSE QMLUI_ASSETS CONFIGURE_DEPENDS RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/qmlui"
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/qml/*"
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/themes/*.json"
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/fonts/*.ttf"
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/i18n/*.qm"
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/wallpapers/*")
+set(QMLUI_QRC_BODY "<RCC>\n    <qresource prefix=\"/qmlui\">\n")
+foreach(asset ${QMLUI_ASSETS})
+    string(APPEND QMLUI_QRC_BODY "        <file alias=\"${asset}\">${CMAKE_CURRENT_SOURCE_DIR}/qmlui/${asset}</file>\n")
+endforeach()
+string(APPEND QMLUI_QRC_BODY "    </qresource>\n</RCC>\n")
+file(CONFIGURE OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/qmlui.qrc" CONTENT "${QMLUI_QRC_BODY}")
 set(LAUNCHER_SOURCES
     ${LAUNCHER_SOURCES}
     qmlui/AccountsModel.cpp
@@ -1220,7 +1237,7 @@ qt_add_resources(LAUNCHER_RESOURCES
     resources/flat_white/flat_white.qrc
     resources/documents/documents.qrc
     resources/shaders/shaders.qrc
-    qmlui/qmlui.qrc
+    ${CMAKE_CURRENT_BINARY_DIR}/qmlui.qrc
     "${CMAKE_CURRENT_BINARY_DIR}/../${Launcher_Branding_LogoQRC}"
 )
 
