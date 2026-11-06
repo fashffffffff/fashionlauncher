@@ -10,6 +10,8 @@ class UiTheme;
 class InstancesModel;
 class AccountsModel;
 class LauncherBridge;
+class PromptsBridge;
+class LaunchPrompts;
 
 /**
  * The QML main window. Owns the engine and the objects exposed to QML.
@@ -25,6 +27,8 @@ class QmlShell : public QObject {
     void show(bool minimized = false);
     void raise();
     QQuickWindow* window() const { return m_window; }
+    /// Answers launch questions inside this window
+    LaunchPrompts* prompts() const;
 
    signals:
     void isClosing();
@@ -42,5 +46,6 @@ class QmlShell : public QObject {
     InstancesModel* m_instances = nullptr;
     AccountsModel* m_accounts = nullptr;
     LauncherBridge* m_launcher = nullptr;
+    PromptsBridge* m_prompts = nullptr;
     class QTranslator* m_translator = nullptr;
 };

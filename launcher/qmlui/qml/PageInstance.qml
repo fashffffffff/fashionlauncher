@@ -35,6 +35,7 @@ Item {
         { id: "servers", label: qsTr("Servers"), source: "TabServers.qml" },
         { id: "screenshots", label: qsTr("Screenshots"), source: "TabScreenshots.qml" },
         { id: "history", label: qsTr("History"), source: "TabHistory.qml" },
+        { id: "log", label: qsTr("Game log"), source: "TabLog.qml" },
         { id: "settings", label: qsTr("Settings"), source: "TabInstanceSettings.qml" }
     ]
     readonly property var currentTab: tabs.find(t => t.id === tab) || tabs[0]

@@ -192,6 +192,9 @@ class Application : public QApplication {
     /// Close the QML window while a game runs (frees its memory); it comes back when the game exits
     void unloadShellForGame();
     ViewLogWindow* showLogWindow();
+    /// The QML shell's answers to launch questions, or null when the classic interface is in use.
+    /// Brings the QML window back if it was unloaded for a game.
+    class LaunchPrompts* qmlPrompts();
 
     void updateIsRunning(bool running);
     bool updatesAreAllowed() const;

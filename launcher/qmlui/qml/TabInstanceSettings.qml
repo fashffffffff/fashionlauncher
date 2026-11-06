@@ -30,13 +30,6 @@ Item {
                 }
                 QuietButton {
                     plain: true
-                    iconName: "link"
-                    text: qsTr("Advanced (classic)")
-                    tip: qsTr("Opens the classic instance settings with every option, including ones not shown here.")
-                    onClicked: Launcher.editInstance(tab.instanceId, "settings")
-                }
-                QuietButton {
-                    plain: true
                     iconName: "gear"
                     text: qsTr("Launcher-wide settings")
                     onClicked: Router.go("settings")
@@ -74,6 +67,7 @@ Item {
             SettingsJava { instanceId: tab.instanceId }
             SettingsWindow { instanceId: tab.instanceId }
             SettingsBehaviour { instanceId: tab.instanceId }
+            SettingsAdvanced { instanceId: tab.instanceId; Layout.fillWidth: true }
             Item { implicitHeight: Style.px(8) }
         }
     }

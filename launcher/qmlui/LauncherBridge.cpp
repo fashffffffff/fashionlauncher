@@ -19,7 +19,6 @@
 #include "net/Mode.h"
 #include "settings/SettingsObject.h"
 #include "translations/TranslationsModel.h"
-#include "ui/MainWindow.h"
 #include "ui/GuiUtil.h"
 #include "FileSystem.h"
 #include "net/NetJob.h"
@@ -36,10 +35,7 @@ LauncherBridge::LauncherBridge(QObject* parent) : QObject(parent)
     });
 }
 
-LauncherBridge::~LauncherBridge()
-{
-    delete m_classic;
-}
+LauncherBridge::~LauncherBridge() = default;
 
 QString LauncherBridge::version() const
 {
@@ -204,57 +200,69 @@ void LauncherBridge::openScreenshotsFolder(const QString& id) const
 
 void LauncherBridge::editInstance(const QString& id, const QString& page)
 {
-    if (auto* inst = findInstance(id)) {
-        APPLICATION->showInstanceWindow(inst, page);
+    if (!findInstance(id)) {
+        return;
     }
+    // Classic page names map onto the instance page's tabs.
+    static const QHash<QString, QString> tabs = {
+        { "console", "log" }, { "log", "log" }, { "settings", "settings" }, { "worlds", "worlds" },
+        { "mods", "mods" }, { "resourcepacks", "resourcepacks" }, { "shaderpacks", "shaderpacks" }, { "screenshots", "screenshots" },
+    };
+    emit instancePageRequested(id, tabs.value(page, "overview"));
 }
 
 void LauncherBridge::showConsole(const QString& id)
 {
-    editInstance(id, "console");
-}
-
-MainWindow* LauncherBridge::classic()
-{
-    if (!m_classic) {
-        // Never shown: it only hosts the classic dialogs and the logic attached to them.
-        m_classic = new MainWindow();
-    }
-    return m_classic;
-}
-
-void LauncherBridge::runClassicAction(const QString& id, const char* slot)
-{
-    auto* window = classic();
-    if (!id.isEmpty()) {
-        QMetaObject::invokeMethod(window, "instanceSelectRequest", Q_ARG(QString, id));
-    }
-    QMetaObject::invokeMethod(window, slot);
+    editInstance(id, "log");
 }
 
 void LauncherBridge::newInstance()
 {
-    runClassicAction({}, "on_actionAddInstance_triggered");
+    emit createRequested();
 }
 
 void LauncherBridge::copyInstance(const QString& id)
 {
-    runClassicAction(id, "on_actionCopyInstance_triggered");
+    emit dialogRequested("copy", id);
 }
 
 void LauncherBridge::deleteInstance(const QString& id)
 {
-    runClassicAction(id, "on_actionDeleteInstance_triggered");
+    emit dialogRequested("delete", id);
 }
 
 void LauncherBridge::exportInstance(const QString& id)
 {
-    runClassicAction(id, "on_actionExportInstanceZip_triggered");
+    emit dialogRequested("export", id);
 }
 
 void LauncherBridge::changeIcon(const QString& id)
 {
-    runClassicAction(id, "on_actionChangeInstIcon_triggered");
+    emit dialogRequested("icon", id);
+}
+
+void LauncherBridge::trackStep(const QString& id, Task* task)
+{
+    if (!task) {
+        return;
+    }
+    auto update = [this, id](const QString& status, double progress) {
+        auto state = m_launches.value(id).toMap();
+        if (state.value("phase") != "launching") {
+            return;
+        }
+        if (!status.isEmpty()) {
+            state["status"] = status;
+        }
+        if (progress >= -1) {
+            state["progress"] = progress;
+        }
+        setLaunch(id, state);
+    };
+    update(task->getStatus(), -1);
+    connect(task, &Task::status, this, [update](const QString& status) { update(status, -2); });
+    connect(task, &Task::progress, this,
+            [update](qint64 current, qint64 total) { update({}, total > 0 ? double(current) / double(total) : -1.0); });
 }
 
 namespace {
@@ -343,12 +351,7 @@ void LauncherBridge::renameInstance(const QString& id, const QString& name)
 
 void LauncherBridge::openSettings(const QString& page)
 {
-    APPLICATION->ShowGlobalSettings(nullptr, page);
-}
-
-void LauncherBridge::openClassicWindow()
-{
-    APPLICATION->showClassicWindow();
+    emit settingsRequested(page);
 }
 
 void LauncherBridge::openUrl(const QString& url) const

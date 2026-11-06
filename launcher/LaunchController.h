@@ -41,6 +41,7 @@
 #include "minecraft/launch/MinecraftTarget.h"
 
 class InstanceWindow;
+class LaunchPrompts;
 
 enum class LaunchDecision { Undecided, Continue, Abort };
 
@@ -75,7 +76,10 @@ class LaunchController : public Task {
    private:
     void login();
     void launchInstance();
-    void decideAccount();
+    /// false: stop here quietly (the player cancelled or went to add an account)
+    bool decideAccount();
+    /// The QML shell's prompts, or null to use the classic widget dialogs
+    LaunchPrompts* prompts() const;
     LaunchDecision decideLaunchMode();
     bool askPlayDemo() const;
     QString askOfflineName(const QString& playerName, bool* ok = nullptr);

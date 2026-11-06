@@ -74,8 +74,10 @@ class SettingsBridge : public QObject {
     Q_INVOKABLE QString jvmArgsProblem(const QString& args) const;
     /// Runs the Java checker; ends with javaTestFinished()
     Q_INVOKABLE void testJava(const QString& path, const QString& jvmArgs, int minMem, int maxMem, int permGen);
-    /// Classic Java download dialog (no QML replacement yet). instanceId may be empty.
+    /// Ask the QML shell to show its Java download dialog. instanceId may be empty.
     Q_INVOKABLE void downloadJava(const QString& instanceId = QString());
+    /// Look for Java installs again (e.g. after a download)
+    Q_INVOKABLE void rescanJava();
 
     // Folders
     Q_INVOKABLE QString folderFromUrl(const QUrl& url) const;
@@ -84,6 +86,8 @@ class SettingsBridge : public QObject {
     Q_INVOKABLE void openFolder(const QString& path) const;
 
    signals:
+    /// Opens the QML Java download dialog
+    void javaDownloadRequested(const QString& instanceId);
     void revisionChanged();
     void javaInstallsChanged();
     void javaTestingChanged();

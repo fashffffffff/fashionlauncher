@@ -10,10 +10,11 @@ Item {
     property string section: params.section || "launcher"
 
     readonly property var sections: [
-        { id: "launcher", icon: "gear", label: qsTr("Launcher"), classic: "launcher-settings" },
-        { id: "java", icon: "cube", label: qsTr("Java and memory"), classic: "java-settings" },
-        { id: "game", icon: "play", label: qsTr("Game"), classic: "minecraft-settings" },
-        { id: "network", icon: "globe", label: qsTr("Network"), classic: "proxy-settings" }
+        { id: "launcher", icon: "gear", label: qsTr("Launcher") },
+        { id: "java", icon: "cube", label: qsTr("Java and memory") },
+        { id: "game", icon: "play", label: qsTr("Game") },
+        { id: "network", icon: "globe", label: qsTr("Network") },
+        { id: "advanced", icon: "sliders", label: qsTr("Advanced") }
     ]
     readonly property var current: sections.find(s => s.id === section) || sections[0]
 
@@ -77,14 +78,6 @@ Item {
                 wrapMode: Text.WordWrap
                 font.pixelSize: Style.fontSmall
             }
-            QuietButton {
-                Layout.fillWidth: true
-                plain: true
-                iconName: "link"
-                text: qsTr("Advanced (classic)")
-                tip: qsTr("Opens the classic settings window with every option, including ones not shown here.")
-                onClicked: Launcher.openSettings(page.current.classic)
-            }
         }
 
         // Settings of the chosen section
@@ -97,7 +90,7 @@ Item {
 
             Loader {
                 width: Math.min(scroll.availableWidth, Style.px(760))
-                sourceComponent: ({ launcher: launcherPane, java: javaPane, game: gamePane, network: networkPane })[page.current.id]
+                sourceComponent: ({ launcher: launcherPane, java: javaPane, game: gamePane, network: networkPane, advanced: advancedPane })[page.current.id]
             }
         }
     }
@@ -221,6 +214,16 @@ Item {
                     onToggled: (on) => logSec.put("LogPrePostOutput", on)
                 }
             }
+            Item { implicitHeight: Style.px(16) }
+        }
+    }
+
+    // ---- Advanced ----
+    Component {
+        id: advancedPane
+        ColumnLayout {
+            spacing: Style.px(16)
+            SettingsAdvanced {}
             Item { implicitHeight: Style.px(16) }
         }
     }
