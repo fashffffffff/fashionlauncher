@@ -1,13 +1,14 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import FFPrism
 import "Fmt.js" as Fmt
 
 // All instances. Click a card to open it; the play button on the card launches right away.
 Item {
     id: page
     property var params: ({})
-    Component.onDestruction: Instances.filter = ""
+    InstancesView { id: view; filter: search.text; sortMode: Settings.get("QmlInstanceSort") || "recent" }
 
     ColumnLayout {
         anchors { fill: parent; margins: Style.px(32) }
@@ -29,7 +30,6 @@ Item {
                 iconName: "search"
                 placeholderText: qsTr("Search instances")
                 Layout.preferredWidth: Style.px(280)
-                onTextChanged: Instances.filter = text
                 Keys.onEscapePressed: text = ""
             }
             PrimaryButton {
@@ -40,12 +40,36 @@ Item {
             }
         }
 
+        // Sort and group filter
+        RowLayout {
+            Layout.fillWidth: true
+            spacing: Style.px(10)
+            Txt { text: qsTr("Sort"); muted: true }
+            SettingsSegmented {
+                value: view.sortMode
+                options: [{ value: "recent", label: qsTr("Recently played") }, { value: "name", label: qsTr("Name") },
+                          { value: "playtime", label: qsTr("Most played") }]
+                onPicked: (v) => { view.sortMode = v; Settings.set("QmlInstanceSort", v) }
+            }
+            Item { Layout.preferredWidth: Style.px(12) }
+            Txt { visible: view.groups.length > 0; text: qsTr("Group"); muted: true }
+            SettingsDropdown {
+                visible: view.groups.length > 0
+                implicitWidth: Style.px(200)
+                value: view.group
+                options: [{ value: "", label: qsTr("All groups") }, { value: "-", label: qsTr("Without a group") }]
+                         .concat(view.groups.map(g => ({ value: g, label: g })))
+                onPicked: (v) => view.group = v
+            }
+            Item { Layout.fillWidth: true }
+        }
+
         GridView {
             id: grid
             Layout.fillWidth: true
             Layout.fillHeight: true
             clip: true
-            model: Instances
+            model: view
             readonly property int columns: Math.max(1, Math.floor(width / Style.px(280)))
             cellWidth: width / columns
             cellHeight: Style.px(112)

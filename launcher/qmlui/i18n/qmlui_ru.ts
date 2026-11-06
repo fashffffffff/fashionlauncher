@@ -820,6 +820,18 @@
         <source>Pick a mod loader version.</source>
         <translation>Выберите версию загрузчика модов.</translation>
     </message>
+    <message>
+        <source>There is no game log yet. Play once first.</source>
+        <translation>Журнала игры пока нет. Сначала запустите игру.</translation>
+    </message>
+    <message>
+        <source>Couldn't read the log.</source>
+        <translation>Не удалось прочитать журнал.</translation>
+    </message>
+    <message>
+        <source>The upload link is empty.</source>
+        <translation>Ссылка на загрузку пустая.</translation>
+    </message>
 </context>
 <context>
     <name>Main</name>
@@ -830,6 +842,10 @@
     <message>
         <source>Signed in as %1</source>
         <translation>Вы вошли как %1</translation>
+    </message>
+    <message>
+        <source>Drop to import this modpack</source>
+        <translation>Отпустите, чтобы импортировать модпак</translation>
     </message>
 </context>
 <context>
@@ -1314,6 +1330,34 @@
     <message>
         <source>Create instance</source>
         <translation>Создать сборку</translation>
+    </message>
+    <message>
+        <source>Sort</source>
+        <translation>Сортировка</translation>
+    </message>
+    <message>
+        <source>Recently played</source>
+        <translation>Недавние</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Название</translation>
+    </message>
+    <message>
+        <source>Most played</source>
+        <translation>Чаще всего</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Группа</translation>
+    </message>
+    <message>
+        <source>All groups</source>
+        <translation>Все группы</translation>
+    </message>
+    <message>
+        <source>Without a group</source>
+        <translation>Без группы</translation>
     </message>
     <message>
         <source>Stop</source>
@@ -2353,6 +2397,18 @@
         <translation>Поиск (%1)</translation>
     </message>
     <message>
+        <source>Recent</source>
+        <translation>Недавние</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Остановить</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>Играть</translation>
+    </message>
+    <message>
         <source>Create instance</source>
         <translation>Создать сборку</translation>
     </message>
@@ -2442,6 +2498,10 @@
         <translation>Журнал игры</translation>
     </message>
     <message>
+        <source>Share game log</source>
+        <translation>Поделиться журналом</translation>
+    </message>
+    <message>
         <source>Play offline</source>
         <translation>Играть офлайн</translation>
     </message>
@@ -2473,6 +2533,42 @@
         <source>Notes</source>
         <translation>Заметки</translation>
     </message>
+    <message>
+        <source>Share the game log?</source>
+        <translation>Поделиться журналом игры?</translation>
+    </message>
+    <message>
+        <source>“%1” will be uploaded to %2 and the link copied, so you can send it to someone who helps you. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>«%1» будет загружен на %2, а ссылка скопирована — её можно отправить тому, кто помогает разобраться. Пути с вашим именем пользователя и токены входа скрываются.</translation>
+    </message>
+    <message>
+        <source>There is no game log yet. Play once first.</source>
+        <translation>Журнала игры пока нет. Сначала запустите игру.</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>Ссылка скопирована: %1</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+    <message>
+        <source>Open link</source>
+        <translation>Открыть ссылку</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>Загружаем…</translation>
+    </message>
+    <message>
+        <source>Upload and copy link</source>
+        <translation>Загрузить и скопировать ссылку</translation>
+    </message>
 </context>
 <context>
     <name>TabResources</name>
@@ -2498,6 +2594,18 @@
     <message>
         <source>No screenshots yet. Press F2 in game to take one.</source>
         <translation>Скриншотов пока нет. Нажмите F2 в игре, чтобы сделать.</translation>
+    </message>
+    <message>
+        <source>Use as this instance's background</source>
+        <translation>Сделать фоном этой сборки</translation>
+    </message>
+    <message>
+        <source>Background set for %1</source>
+        <translation>Фон для «%1» установлен</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>

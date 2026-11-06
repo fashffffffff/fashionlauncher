@@ -79,6 +79,16 @@ ApplicationWindow {
         Behavior on opacity { NumberAnimation { duration: Style.dur(220); easing.type: Easing.OutCubic } }
     }
 
+    // Drop a modpack or exported instance anywhere to import it. Declared under the pages so their own drop
+    // zones (e.g. resource packs on the mods tab) win; this one only catches drops nobody else takes.
+    DropArea {
+        id: drop
+        anchors.fill: parent
+        keys: ["text/uri-list"]
+        onEntered: (d) => d.accepted = d.urls.length === 1 && /\.(zip|mrpack)$/i.test(String(d.urls[0]))
+        onDropped: (d) => { if (d.urls.length) Router.open("create", { source: "import", url: String(d.urls[0]) }) }
+    }
+
     RowLayout {
         anchors { fill: parent; margins: Style.px(12) }
         spacing: Style.px(12)
@@ -109,6 +119,27 @@ ApplicationWindow {
             }
             replaceEnter: Transition { NumberAnimation { property: "opacity"; from: 0; to: 1; duration: Style.dur(180) } }
             replaceExit: Transition { NumberAnimation { property: "opacity"; from: 1; to: 0; duration: Style.dur(120) } }
+        }
+    }
+
+    Rectangle {
+        anchors { fill: parent; margins: Style.px(12) }
+        visible: drop.containsDrag
+        z: 50
+        radius: Style.radius + Style.px(6)
+        color: Style.alpha(Style.scrim, 0.6)
+        border.width: 3
+        border.color: Style.accent
+        Column {
+            anchors.centerIn: parent
+            spacing: Style.px(10)
+            Icon { anchors.horizontalCenter: parent.horizontalCenter; name: "export"; size: Style.px(40); color: Style.accent; rotation: 180 }
+            Text {
+                text: qsTr("Drop to import this modpack")
+                color: Style.text
+                font.family: Style.display
+                font.pixelSize: Style.fontTitle
+            }
         }
     }
 

@@ -72,7 +72,26 @@ Item {
         modal: true
         background: Rectangle { color: "transparent" }
         Overlay.modal: Rectangle { color: Style.alpha(Style.scrim, 0.85) }
-        contentItem: Image { source: viewer.src; fillMode: Image.PreserveAspectFit; asynchronous: true }
-        TapHandler { onTapped: viewer.close() }
+        contentItem: Item {
+            Image { anchors.fill: parent; source: viewer.src; fillMode: Image.PreserveAspectFit; asynchronous: true }
+            TapHandler { onTapped: viewer.close() }
+            RowLayout {
+                anchors { horizontalCenter: parent.horizontalCenter; bottom: parent.bottom; bottomMargin: Style.px(12) }
+                spacing: Style.px(10)
+                PrimaryButton {
+                    iconName: "image"
+                    text: qsTr("Use as this instance's background")
+                    onClicked: {
+                        const file = Backgrounds.importFile(viewer.src)
+                        if (file) {
+                            Backgrounds.setInstanceBackground(tab.instanceId, "image", file)
+                            Router.toast(qsTr("Background set for %1").arg(tab.instance ? tab.instance.name : ""))
+                        }
+                        viewer.close()
+                    }
+                }
+                QuietButton { text: qsTr("Close"); onClicked: viewer.close() }
+            }
+        }
     }
 }

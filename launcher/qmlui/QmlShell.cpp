@@ -40,6 +40,8 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     if (!typesRegistered) {
         // Creatable models: `import FFPrism` then e.g. `WorldsModel { instanceId: ... }`
         qmlRegisterType<WorldsModel>("FFPrism", 1, 0, "WorldsModel");
+        // A private, separately sorted/filtered list (the shared `Instances` stays sorted by recent play)
+        qmlRegisterType<InstancesModel>("FFPrism", 1, 0, "InstancesView");
         typesRegistered = true;
     }
 

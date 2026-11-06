@@ -5,6 +5,8 @@
 #include <QPointer>
 #include <QVariantMap>
 
+#include "QObjectPtr.h"
+
 class MainWindow;
 class LaunchController;
 
@@ -25,6 +27,8 @@ class LauncherBridge : public QObject {
     Q_PROPERTY(QVariantList languages READ languages NOTIFY languagesChanged)
     Q_PROPERTY(QString language READ language NOTIFY languageChanged)
     Q_PROPERTY(bool onboardingDone READ onboardingDone NOTIFY onboardingDoneChanged)
+    /// { state: "" | "uploading" | "done" | "failed", url, error }
+    Q_PROPERTY(QVariantMap logShare READ logShare NOTIFY logShareChanged)
 
    public:
     explicit LauncherBridge(QObject* parent = nullptr);
@@ -38,6 +42,16 @@ class LauncherBridge : public QObject {
     bool onboardingDone() const;
 
     Q_INVOKABLE void setLanguage(const QString& key);
+    QVariantMap logShare() const { return m_logShare; }
+    /// The log that "Share game log" would upload (newest crash report, else latest.log); "" if none
+    Q_INVOKABLE QString latestLogFile(const QString& id) const;
+    Q_INVOKABLE QString pasteHost() const;
+    Q_INVOKABLE void shareLatestLog(const QString& id);
+    Q_INVOKABLE void resetLogShare()
+    {
+        m_logShare.clear();
+        emit logShareChanged();
+    }
     Q_INVOKABLE void finishOnboarding();
 
     Q_INVOKABLE bool launch(const QString& id, bool offline = false);
@@ -69,6 +83,7 @@ class LauncherBridge : public QObject {
     void languagesChanged();
     void languageChanged();
     void onboardingDoneChanged();
+    void logShareChanged();
 
    private:
     void trackController(const QString& id, LaunchController* controller);
@@ -78,5 +93,7 @@ class LauncherBridge : public QObject {
     void runClassicAction(const QString& id, const char* slot);
 
     QVariantMap m_launches;
+    QVariantMap m_logShare;
+    shared_qobject_ptr<class NetJob> m_logJob;
     QPointer<MainWindow> m_classic;
 };

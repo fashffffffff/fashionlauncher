@@ -127,6 +127,59 @@ Rectangle {
             }
         }
 
+        // Recently played: one click opens, the small button plays
+        Txt {
+            visible: Instances.count > 0 && Instances.filter === ""
+            Layout.topMargin: Style.px(18)
+            Layout.leftMargin: bar.compact ? 0 : Style.px(12)
+            Layout.alignment: bar.compact ? Qt.AlignHCenter : Qt.AlignLeft
+            text: bar.compact ? "" : qsTr("Recent")
+            muted: true
+            font.pixelSize: Style.fontSmall
+        }
+        Repeater {
+            model: Instances.filter === "" ? Instances : null
+            delegate: AbstractButton {
+                id: recent
+                visible: index < 3
+                Layout.fillWidth: true
+                implicitHeight: Style.px(40)
+                hoverEnabled: true
+                Accessible.name: model.name
+                ToolTip.visible: bar.compact && hovered
+                ToolTip.text: model.name
+                onClicked: Router.openInstance(model.instanceId)
+                background: Rectangle {
+                    radius: Style.radius
+                    color: recent.hovered ? Style.alpha(Style.text, 0.07) : "transparent"
+                }
+                contentItem: RowLayout {
+                    anchors { fill: parent; leftMargin: bar.compact ? 0 : Style.px(10); rightMargin: Style.px(6) }
+                    spacing: Style.px(10)
+                    Item { visible: bar.compact; Layout.fillWidth: true }
+                    Image {
+                        source: model.icon
+                        Layout.preferredWidth: Style.px(24); Layout.preferredHeight: Style.px(24)
+                        sourceSize: Qt.size(48, 48)
+                        smooth: false
+                    }
+                    Txt { visible: !bar.compact; text: model.name; Layout.fillWidth: true }
+                    AbstractButton {
+                        id: rp
+                        visible: !bar.compact && (recent.hovered || st !== undefined)
+                        readonly property var st: Launcher.launches[model.instanceId]
+                        Layout.preferredWidth: Style.px(28); Layout.preferredHeight: Style.px(28)
+                        hoverEnabled: true
+                        Accessible.name: st ? qsTr("Stop") : qsTr("Play")
+                        onClicked: st ? Launcher.kill(model.instanceId) : Launcher.launch(model.instanceId)
+                        background: Rectangle { radius: width / 2; color: rp.st ? Style.success : Style.accent }
+                        contentItem: Item { Icon { anchors.centerIn: parent; name: rp.st ? "stop" : "play"; size: Style.px(12); color: Style.onAccent } }
+                    }
+                    Item { visible: bar.compact; Layout.fillWidth: true }
+                }
+            }
+        }
+
         Item { Layout.fillHeight: true }
 
         PrimaryButton {

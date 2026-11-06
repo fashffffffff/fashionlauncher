@@ -22,6 +22,7 @@ InstancesModel::InstancesModel(QObject* parent) : QSortFilterProxyModel(parent)
     connect(this, &QAbstractItemModel::rowsInserted, this, emitCount);
     connect(this, &QAbstractItemModel::rowsRemoved, this, emitCount);
     connect(this, &QAbstractItemModel::modelReset, this, emitCount);
+    connect(APPLICATION->instances(), &InstanceList::groupsChanged, this, &InstancesModel::groupsChanged);
     // Version/loader can change when the instance is edited; drop its cache entry.
     connect(APPLICATION->instances(), &QAbstractItemModel::dataChanged, this, [this](const QModelIndex& tl, const QModelIndex& br) {
         for (int r = tl.row(); r <= br.row(); r++) {
@@ -140,12 +141,47 @@ void InstancesModel::setFilter(const QString& filter)
     emit countChanged();
 }
 
+void InstancesModel::setSortMode(const QString& mode)
+{
+    if (mode == m_sortMode) {
+        return;
+    }
+    m_sortMode = mode;
+    invalidate();
+    emit sortModeChanged();
+}
+
+void InstancesModel::setGroup(const QString& group)
+{
+    if (group == m_group) {
+        return;
+    }
+    m_group = group;
+    invalidateFilter();
+    emit groupChanged();
+    emit countChanged();
+}
+
+QStringList InstancesModel::groups() const
+{
+    auto list = APPLICATION->instances()->getGroups();
+    list.removeAll(QString());
+    list.sort(Qt::CaseInsensitive);
+    return list;
+}
+
 bool InstancesModel::filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const
 {
+    auto idx = sourceModel()->index(sourceRow, 0, sourceParent);
+    if (!m_group.isEmpty()) {
+        const QString g = idx.data(InstanceList::GroupRole).toString();
+        if (m_group == "-" ? !g.isEmpty() : g != m_group) {
+            return false;
+        }
+    }
     if (m_filter.isEmpty()) {
         return true;
     }
-    auto idx = sourceModel()->index(sourceRow, 0, sourceParent);
     return idx.data(Qt::DisplayRole).toString().contains(m_filter, Qt::CaseInsensitive) ||
            idx.data(InstanceList::GroupRole).toString().contains(m_filter, Qt::CaseInsensitive);
 }
@@ -156,6 +192,12 @@ bool InstancesModel::lessThan(const QModelIndex& left, const QModelIndex& right)
     auto* b = static_cast<MinecraftInstance*>(right.data(InstanceList::InstancePointerRole).value<void*>());
     if (!a || !b) {
         return false;
+    }
+    if (m_sortMode == "name") {
+        return a->name().localeAwareCompare(b->name()) < 0;
+    }
+    if (m_sortMode == "playtime" && a->totalTimePlayed() != b->totalTimePlayed()) {
+        return a->totalTimePlayed() > b->totalTimePlayed();
     }
     // Most recently played first; never-played instances fall back to name order.
     if (a->lastLaunch() != b->lastLaunch()) {

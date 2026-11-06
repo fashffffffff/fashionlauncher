@@ -18,6 +18,11 @@
 #include "settings/SettingsObject.h"
 #include "translations/TranslationsModel.h"
 #include "ui/MainWindow.h"
+#include "ui/GuiUtil.h"
+#include "FileSystem.h"
+#include "net/NetJob.h"
+#include "net/PasteUpload.h"
+#include <QFileInfo>
 
 LauncherBridge::LauncherBridge(QObject* parent) : QObject(parent)
 {
@@ -337,4 +342,78 @@ void LauncherBridge::openClassicWindow()
 void LauncherBridge::openUrl(const QString& url) const
 {
     DesktopServices::openUrl(QUrl(url));
+}
+
+QString LauncherBridge::latestLogFile(const QString& id) const
+{
+    auto* inst = findInstance(id);
+    if (!inst) {
+        return {};
+    }
+    QFileInfo best;
+    const auto crashes = QDir(FS::PathCombine(inst->gameRoot(), "crash-reports")).entryInfoList({ "*.txt" }, QDir::Files, QDir::Time);
+    if (!crashes.isEmpty()) {
+        best = crashes.first();
+    }
+    const QFileInfo latest(FS::PathCombine(inst->gameRoot(), "logs/latest.log"));
+    if (latest.exists() && (!best.exists() || latest.lastModified() > best.lastModified())) {
+        best = latest;
+    }
+    return best.exists() ? best.absoluteFilePath() : QString();
+}
+
+QString LauncherBridge::pasteHost() const
+{
+    auto type = static_cast<PasteUpload::Type>(APPLICATION->settings()->get("PastebinType").toInt());
+    QString base = APPLICATION->settings()->get("PastebinCustomAPIBase").toString();
+    return QUrl(base.isEmpty() ? type.defaultBase() : base).host();
+}
+
+void LauncherBridge::shareLatestLog(const QString& id)
+{
+    const QString file = latestLogFile(id);
+    auto fail = [this](const QString& reason) {
+        m_logShare = { { "state", "failed" }, { "error", reason } };
+        emit logShareChanged();
+    };
+    if (file.isEmpty()) {
+        fail(tr("There is no game log yet. Play once first."));
+        return;
+    }
+    auto data = FS::read(file);
+    if (!data) {
+        fail(tr("Couldn't read the log."));
+        return;
+    }
+    QString text = *data;
+    auto type = static_cast<PasteUpload::Type>(APPLICATION->settings()->get("PastebinType").toInt());
+    QString base = APPLICATION->settings()->get("PastebinCustomAPIBase").toString();
+    if (base.isEmpty()) {
+        base = type.defaultBase();
+    }
+    // mclo.gs keeps at most 25000 lines: keep the start and the end, where crashes are.
+    if (type == PasteUpload::Type::Mclogs) {
+        const QStringList lines = text.split('\n');
+        if (lines.size() > 25000) {
+            text = lines.mid(0, 10000).join('\n') + "\n\n----- Log truncated -----\n\n" + lines.mid(lines.size() - 14900).join('\n');
+        }
+    }
+    m_logShare = { { "state", "uploading" } };
+    emit logShareChanged();
+
+    auto job = NetJob::Ptr(new NetJob("Log Upload", APPLICATION->network()));
+    auto [pasteJob, pasteLink] = type.make(std::move(text), base);
+    job->addNetAction(pasteJob);
+    connect(job.get(), &Task::failed, this, [fail](const QString& reason) { fail(reason); });
+    connect(job.get(), &Task::succeeded, this, [this, link = pasteLink, fail] {
+        if (link->isEmpty()) {
+            fail(tr("The upload link is empty."));
+            return;
+        }
+        GuiUtil::setClipboardText(*link);
+        m_logShare = { { "state", "done" }, { "url", *link } };
+        emit logShareChanged();
+    });
+    m_logJob = job;  // kept until the next upload
+    job->start();
 }

@@ -839,6 +839,7 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
         m_settings->registerSetting("QmlJvmPresetApplied", false);
         m_settings->registerSetting("QmlUnloadWhilePlaying", true);
         m_settings->registerSetting("QmlAccentFromBackground", false);
+        m_settings->registerSetting("QmlInstanceSort", "recent");
 
         m_settings->registerSetting("ConsoleWindowState", "");
         m_settings->registerSetting("ConsoleWindowGeometry", "");

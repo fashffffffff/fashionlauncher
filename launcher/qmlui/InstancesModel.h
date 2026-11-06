@@ -13,6 +13,11 @@ class InstancesModel : public QSortFilterProxyModel {
     Q_OBJECT
     Q_PROPERTY(QString filter READ filter WRITE setFilter NOTIFY filterChanged)
     Q_PROPERTY(int count READ count NOTIFY countChanged)
+    /// "recent" (default) | "name" | "playtime"
+    Q_PROPERTY(QString sortMode READ sortMode WRITE setSortMode NOTIFY sortModeChanged)
+    /// "" = all groups; otherwise a group name ("" group = instances without a group is selected with "-")
+    Q_PROPERTY(QString group READ group WRITE setGroup NOTIFY groupChanged)
+    Q_PROPERTY(QStringList groups READ groups NOTIFY groupsChanged)
 
    public:
     enum Roles {
@@ -40,6 +45,11 @@ class InstancesModel : public QSortFilterProxyModel {
     QString filter() const { return m_filter; }
     void setFilter(const QString& filter);
     int count() const { return rowCount(); }
+    QString sortMode() const { return m_sortMode; }
+    void setSortMode(const QString& mode);
+    QString group() const { return m_group; }
+    void setGroup(const QString& group);
+    QStringList groups() const;
 
     Q_INVOKABLE QVariantMap get(int row) const;
     Q_INVOKABLE int indexOf(const QString& id) const;
@@ -49,6 +59,9 @@ class InstancesModel : public QSortFilterProxyModel {
    signals:
     void filterChanged();
     void countChanged();
+    void sortModeChanged();
+    void groupChanged();
+    void groupsChanged();
 
    protected:
     bool filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const override;
@@ -64,5 +77,7 @@ class InstancesModel : public QSortFilterProxyModel {
     const Meta& meta(MinecraftInstance* inst) const;
 
     QString m_filter;
+    QString m_sortMode = "recent";
+    QString m_group;
     mutable QHash<QString, Meta> m_meta;
 };
