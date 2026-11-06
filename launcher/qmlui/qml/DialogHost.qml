@@ -4,7 +4,7 @@ import QtQuick.Layouts
 
 // Every dialog the launcher itself asks for: launch questions (Prompts), the progress of waits and
 // jobs, and the instance dialogs Launcher.copyInstance()/exportInstance()/deleteInstance()/changeIcon()
-// request. Lives once in Main.qml, so no classic window is ever needed for these.
+// request, and the Java download (Settings.downloadJava). Lives once in Main.qml, so no classic window is ever needed for these.
 Item {
     id: host
     anchors.fill: parent
@@ -72,6 +72,11 @@ Item {
     }
 
     CopyInstanceDialog { id: copyDlg }
+    JavaInstallDialog { id: javaDlg }
+    Connections {
+        target: Settings
+        function onJavaDownloadRequested(instanceId) { host.raiseWindow(); javaDlg.openFor(instanceId) }
+    }
     ExportDialog { id: exportDlg }
 
     // ---- generic question, also used for Prompts "ask"

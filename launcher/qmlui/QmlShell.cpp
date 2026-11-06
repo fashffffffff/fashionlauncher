@@ -24,6 +24,7 @@
 #include "worlds/WorldsModel.h"
 #include "dialogs/GameLog.h"
 #include "dialogs/InstanceActions.h"
+#include "dialogs/JavaInstaller.h"
 #include "dialogs/PromptsBridge.h"
 #include "gallery/GalleryBridge.h"
 #include "network/FriendsBridge.h"
@@ -76,6 +77,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Launcher", m_launcher);
     ctx->setContextProperty("Prompts", m_prompts);
     ctx->setContextProperty("InstanceActions", new InstanceActions(this));
+    ctx->setContextProperty("JavaInstaller", new JavaInstaller(this));
     // Feature bridges: each one backs its own screens (see the class comments).
     ctx->setContextProperty("Settings", new SettingsBridge(this));
     ctx->setContextProperty("Creator", new CreateBridge(this));

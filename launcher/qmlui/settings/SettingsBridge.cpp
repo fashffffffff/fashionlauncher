@@ -21,7 +21,6 @@
 #include "minecraft/auth/AccountList.h"
 #include "settings/Setting.h"
 #include "settings/SettingsObject.h"
-#include "ui/java/InstallJavaDialog.h"
 
 namespace {
 struct Group {
@@ -355,14 +354,14 @@ void SettingsBridge::testJava(const QString& path, const QString& jvmArgs, int m
 
 void SettingsBridge::downloadJava(const QString& instanceId)
 {
-    MinecraftInstance* inst = instanceId.isEmpty() ? nullptr : APPLICATION->instances()->getInstanceById(instanceId);
-    auto* dialog = new Java::InstallDialog({}, inst, nullptr);
-    dialog->setAttribute(Qt::WA_DeleteOnClose);
-    connect(dialog, &QDialog::finished, this, [this] {
-        m_javaScanning = false;
-        scanJava();
-    });
-    dialog->open();
+    // The QML Java dialog (DialogHost) answers this; no classic window.
+    emit javaDownloadRequested(instanceId);
+}
+
+void SettingsBridge::rescanJava()
+{
+    m_javaScanning = false;
+    scanJava();
 }
 
 // ---- folders ----
