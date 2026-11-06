@@ -32,6 +32,7 @@ Item {
         { id: "resourcepacks", label: qsTr("Resource packs"), source: "TabResources.qml", kind: "resourcepacks" },
         { id: "shaderpacks", label: qsTr("Shaders"), source: "TabResources.qml", kind: "shaderpacks" },
         { id: "worlds", label: qsTr("Worlds"), source: "TabWorlds.qml" },
+        { id: "servers", label: qsTr("Servers"), source: "TabServers.qml" },
         { id: "screenshots", label: qsTr("Screenshots"), source: "TabScreenshots.qml" },
         { id: "history", label: qsTr("History"), source: "TabHistory.qml" },
         { id: "settings", label: qsTr("Settings"), source: "TabInstanceSettings.qml" }
