@@ -1384,6 +1384,30 @@ if(DEFINED Launcher_APP_BINARY_DEFS)
     target_compile_definitions(Launcher_logic PRIVATE ${Launcher_APP_BINARY_DEFS})
 endif()
 
+# fashion-net: Rust sidecar for serverless multiplayer (tools/fashion-net), shipped next to the launcher binary.
+find_program(CARGO_EXECUTABLE cargo HINTS "$ENV{HOME}/.cargo/bin")
+if(CARGO_EXECUTABLE)
+    set(FASHION_NET_DIR "${CMAKE_SOURCE_DIR}/tools/fashion-net")
+    set(FASHION_NET_TARGET_DIR "${CMAKE_BINARY_DIR}/fashion-net")
+    set(FASHION_NET_BIN "${FASHION_NET_TARGET_DIR}/release/fashion-net${CMAKE_EXECUTABLE_SUFFIX}")
+    file(GLOB_RECURSE FASHION_NET_SOURCES CONFIGURE_DEPENDS "${FASHION_NET_DIR}/src/*.rs")
+    add_custom_command(
+        OUTPUT "${FASHION_NET_BIN}"
+        COMMAND "${CARGO_EXECUTABLE}" build --release --locked --manifest-path "${FASHION_NET_DIR}/Cargo.toml" --target-dir "${FASHION_NET_TARGET_DIR}"
+        DEPENDS ${FASHION_NET_SOURCES} "${FASHION_NET_DIR}/Cargo.toml" "${FASHION_NET_DIR}/Cargo.lock"
+        COMMENT "Building fashion-net (cargo)"
+        USES_TERMINAL
+    )
+    add_custom_target(fashion_net DEPENDS "${FASHION_NET_BIN}")
+    add_dependencies(${Launcher_Name} fashion_net)
+    add_custom_command(TARGET ${Launcher_Name} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different "${FASHION_NET_BIN}" "$<TARGET_FILE_DIR:${Launcher_Name}>/"
+    )
+    install(PROGRAMS "${FASHION_NET_BIN}" DESTINATION ${BINARY_DEST_DIR} COMPONENT Runtime)
+else()
+    message(WARNING "cargo not found: the fashion-net sidecar (Friends / play together) will not be built")
+endif()
+
 install(TARGETS ${Launcher_Name}
     RUNTIME_DEPENDENCY_SET LAUNCHER_DEPENDENCY_SET
     BUNDLE DESTINATION "." COMPONENT Runtime
@@ -1513,6 +1537,7 @@ endif()
 
 # Set basic compiler warning/error flags for all targets
 get_directory_property(Launcher_TARGETS BUILDSYSTEM_TARGETS)
+list(REMOVE_ITEM Launcher_TARGETS fashion_net)
 foreach(target ${Launcher_TARGETS})
     # TODO: Fix unused parameter warnings (/wd4100, -Wno-unused-parameter, etc)
     target_compile_options(${target} PRIVATE
