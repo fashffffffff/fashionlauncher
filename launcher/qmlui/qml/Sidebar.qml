@@ -89,6 +89,34 @@ Rectangle {
             elide: Text.ElideRight
         }
 
+        // Search: opens the command palette
+        AbstractButton {
+            id: searchBtn
+            Layout.fillWidth: true
+            Layout.bottomMargin: Style.px(10)
+            implicitHeight: Style.px(38)
+            hoverEnabled: true
+            Accessible.name: qsTr("Search")
+            ToolTip.visible: bar.compact && hovered
+            ToolTip.text: qsTr("Search (%1)").arg(Qt.platform.os === "osx" ? "⌘K" : "Ctrl+K")
+            onClicked: Router.openPalette()
+            background: Rectangle {
+                radius: Style.radius
+                color: searchBtn.hovered ? Style.alpha(Style.text, 0.10) : Style.alpha(Style.text, 0.05)
+                border.width: searchBtn.visualFocus ? 2 : 1
+                border.color: searchBtn.visualFocus ? Style.accent : Style.alpha(Style.text, 0.06)
+            }
+            contentItem: RowLayout {
+                anchors { fill: parent; leftMargin: bar.compact ? 0 : Style.px(12); rightMargin: Style.px(10) }
+                spacing: Style.px(10)
+                Item { visible: bar.compact; Layout.fillWidth: true }
+                Icon { name: "search"; size: Style.px(17); color: Style.textMuted }
+                Txt { visible: !bar.compact; text: qsTr("Search"); muted: true; Layout.fillWidth: true }
+                Txt { visible: !bar.compact; text: Qt.platform.os === "osx" ? "⌘K" : "Ctrl+K"; muted: true; font.pixelSize: Style.fontSmall }
+                Item { visible: bar.compact; Layout.fillWidth: true }
+            }
+        }
+
         Repeater {
             model: bar.items
             delegate: NavButton {

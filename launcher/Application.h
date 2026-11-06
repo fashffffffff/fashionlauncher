@@ -189,6 +189,8 @@ class Application : public QApplication {
     /// Shows the QML shell, or the classic window when "UseClassicUI" is set. Returns the classic window if one is shown.
     MainWindow* showMainWindow(bool minimized = false);
     MainWindow* showClassicWindow(bool minimized = false);
+    /// Close the QML window while a game runs (frees its memory); it comes back when the game exits
+    void unloadShellForGame();
     ViewLogWindow* showLogWindow();
 
     void updateIsRunning(bool running);
@@ -292,6 +294,7 @@ class Application : public QApplication {
     // main window, if any
     MainWindow* m_mainWindow = nullptr;
     QmlShell* m_shell = nullptr;
+    bool m_shellUnloadedForGame = false;
 
     // log window, if any
     ViewLogWindow* m_viewLogWindow = nullptr;

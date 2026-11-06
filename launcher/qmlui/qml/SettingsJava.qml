@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import "JavaPresets.js" as JP
 import QtQuick.Dialogs
 
 // Which Java runs the game, and with which extra arguments. Global or per instance.
@@ -177,6 +178,21 @@ SettingsSection {
     ColumnLayout {
         Layout.fillWidth: true
         spacing: Style.px(6)
+        Txt { text: qsTr("Performance preset") }
+        Txt {
+            Layout.fillWidth: true
+            text: qsTr("Ready-made Java settings. “Balanced” suits most players; “Smooth” cuts stutters on strong computers with Java 21 or newer.")
+            muted: true; wrapMode: Text.WordWrap; font.pixelSize: Style.fontSmall
+        }
+        SettingsSegmented {
+            readonly property string current: JP.idFor(js.val("JvmArgs"))
+            value: current
+            options: [{ value: "balanced", label: qsTr("Balanced") }, { value: "smooth", label: qsTr("Smooth") },
+                      { value: "lowend", label: qsTr("Weak computer") }, { value: "none", label: qsTr("Java defaults") }]
+                     .concat(current === "custom" ? [{ value: "custom", label: qsTr("Custom") }] : [])
+            onPicked: (v) => { if (v !== "custom") { js.put("JvmArgs", JP.argsFor(v)); argsField.text = JP.argsFor(v) } }
+        }
+        Item { Layout.preferredHeight: Style.px(6) }
         Txt { text: qsTr("Extra Java arguments") }
         Txt {
             Layout.fillWidth: true

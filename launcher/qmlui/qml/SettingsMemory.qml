@@ -31,6 +31,26 @@ SettingsSection {
         hint: ms.gb(value)
         onCommitted: (v) => { ms.put("MinMemAlloc", Math.round(v)); if (v > ms.maxMem) ms.put("MaxMemAlloc", Math.round(v)) }
     }
+    RowLayout {
+        Layout.fillWidth: true
+        spacing: Style.px(12)
+        Txt {
+            Layout.fillWidth: true
+            wrapMode: Text.WordWrap
+            muted: true
+            readonly property int rec: { Settings.revision; return Settings.recommendedMaxMemory(ms.instanceId) }
+            text: qsTr("Recommended: %1 (based on this computer's memory%2).").arg(ms.gb(rec)).arg(ms.instanceId ? qsTr(" and the number of mods") : "")
+        }
+        QuietButton {
+            iconName: "check"
+            text: qsTr("Use recommended")
+            onClicked: {
+                const rec = Settings.recommendedMaxMemory(ms.instanceId)
+                ms.put("MaxMemAlloc", rec)
+                ms.put("MinMemAlloc", Math.min(1024, rec))
+            }
+        }
+    }
     Txt {
         text: qsTr("This computer has %1 of memory.").arg(ms.gb(ms.ram))
         muted: true

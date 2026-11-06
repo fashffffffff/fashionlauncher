@@ -300,6 +300,77 @@
     </message>
 </context>
 <context>
+    <name>CommandPalette</name>
+    <message>
+        <source>Play %1</source>
+        <translation>Играть: %1</translation>
+    </message>
+    <message>
+        <source>Instance</source>
+        <translation>Сборка</translation>
+    </message>
+    <message>
+        <source>Open %1</source>
+        <translation>Открыть: %1</translation>
+    </message>
+    <message>
+        <source>Mods of %1</source>
+        <translation>Моды: %1</translation>
+    </message>
+    <message>
+        <source>Create instance</source>
+        <translation>Создать сборку</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Действие</translation>
+    </message>
+    <message>
+        <source>Accounts</source>
+        <translation>Аккаунты</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation>Главная</translation>
+    </message>
+    <message>
+        <source>Screen</source>
+        <translation>Экран</translation>
+    </message>
+    <message>
+        <source>Instances</source>
+        <translation>Сборки</translation>
+    </message>
+    <message>
+        <source>Browse mods</source>
+        <translation>Найти моды</translation>
+    </message>
+    <message>
+        <source>Appearance</source>
+        <translation>Внешний вид</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Настройки</translation>
+    </message>
+    <message>
+        <source>Theme: %1</source>
+        <translation>Тема: %1</translation>
+    </message>
+    <message>
+        <source>Search instances, screens and actions</source>
+        <translation>Поиск сборок, экранов и действий</translation>
+    </message>
+    <message>
+        <source>Nothing found</source>
+        <translation>Ничего не найдено</translation>
+    </message>
+    <message>
+        <source>↑↓ to move, Enter to run, Esc to close</source>
+        <translation>↑↓ — выбор, Enter — выполнить, Esc — закрыть</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -888,6 +959,14 @@
     <message>
         <source>Accent</source>
         <translation>Акцент</translation>
+    </message>
+    <message>
+        <source>Take the accent from the background</source>
+        <translation>Брать акцент из фона</translation>
+    </message>
+    <message>
+        <source>The main color of the current picture becomes the accent. Changes with each instance.</source>
+        <translation>Главный цвет текущей картинки становится акцентом. Меняется вместе со сборкой.</translation>
     </message>
     <message>
         <source>Shape and size</source>
@@ -1893,6 +1972,14 @@
         <translation>Закрывать лаунчер, когда игра откроется</translation>
     </message>
     <message>
+        <source>Free memory while playing</source>
+        <translation>Освобождать память во время игры</translation>
+    </message>
+    <message>
+        <source>Hides the launcher window while the game runs and brings it back when you exit. Saves about 100 MB.</source>
+        <translation>Скрывает окно лаунчера, пока идёт игра, и возвращает его после выхода. Экономит около 100 МБ.</translation>
+    </message>
+    <message>
         <source>Quit the launcher when the game closes</source>
         <translation>Закрывать лаунчер, когда игра закроется</translation>
     </message>
@@ -2074,6 +2161,34 @@
         <translation>Запускать, даже если эта Java не подходит к версии Minecraft. Только для поиска проблем.</translation>
     </message>
     <message>
+        <source>Performance preset</source>
+        <translation>Пресет производительности</translation>
+    </message>
+    <message>
+        <source>Ready-made Java settings. “Balanced” suits most players; “Smooth” cuts stutters on strong computers with Java 21 or newer.</source>
+        <translation>Готовые настройки Java. «Сбалансированный» подходит большинству; «Плавный» убирает подлагивания на мощных компьютерах с Java 21 и новее.</translation>
+    </message>
+    <message>
+        <source>Balanced</source>
+        <translation>Сбалансированный</translation>
+    </message>
+    <message>
+        <source>Smooth</source>
+        <translation>Плавный</translation>
+    </message>
+    <message>
+        <source>Weak computer</source>
+        <translation>Слабый ПК</translation>
+    </message>
+    <message>
+        <source>Java defaults</source>
+        <translation>Как в Java</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>Свой</translation>
+    </message>
+    <message>
         <source>Extra Java arguments</source>
         <translation>Дополнительные аргументы Java</translation>
     </message>
@@ -2127,6 +2242,18 @@
     <message>
         <source>Reserved when the game starts. Usually lower than the maximum.</source>
         <translation>Выделяется при запуске игры. Обычно меньше максимума.</translation>
+    </message>
+    <message>
+        <source>Recommended: %1 (based on this computer's memory%2).</source>
+        <translation>Рекомендуется: %1 (по памяти компьютера%2).</translation>
+    </message>
+    <message>
+        <source> and the number of mods</source>
+        <translation> и числу модов</translation>
+    </message>
+    <message>
+        <source>Use recommended</source>
+        <translation>Применить рекомендуемое</translation>
     </message>
     <message>
         <source>This computer has %1 of memory.</source>
@@ -2216,6 +2343,14 @@
     <message>
         <source>Settings</source>
         <translation>Настройки</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Search (%1)</source>
+        <translation>Поиск (%1)</translation>
     </message>
     <message>
         <source>Create instance</source>

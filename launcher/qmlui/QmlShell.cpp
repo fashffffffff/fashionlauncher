@@ -30,6 +30,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     if (!fontsLoaded) {
         QFontDatabase::addApplicationFont(":/qmlui/fonts/Unbounded.ttf");
         QFontDatabase::addApplicationFont(":/qmlui/fonts/GolosText.ttf");
+        QFontDatabase::addApplicationFont(":/qmlui/fonts/PixelifySans.ttf");
         // Basic is the only Controls style that is fully restyleable from QML on every platform
         QQuickStyle::setStyle("Basic");
         fontsLoaded = true;

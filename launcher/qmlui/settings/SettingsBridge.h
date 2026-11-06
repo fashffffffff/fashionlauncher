@@ -63,6 +63,8 @@ class SettingsBridge : public QObject {
 
     /// [{ profileId, name, kind }]
     Q_INVOKABLE QVariantList accounts() const;
+    /// Suggested maximum memory in MiB: depends on this computer's RAM and, for an instance, its number of mods
+    Q_INVOKABLE int recommendedMaxMemory(const QString& instanceId = QString()) const;
 
     // Java
     Q_INVOKABLE void scanJava();

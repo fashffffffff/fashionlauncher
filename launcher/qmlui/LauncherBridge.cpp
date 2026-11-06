@@ -138,6 +138,11 @@ void LauncherBridge::trackController(const QString& id, LaunchController* contro
                 if (task->pid() > 0) {
                     poll->stop();
                     setLaunch(id, { { "phase", "running" }, { "status", tr("Playing") }, { "progress", -1 } });
+                    // The game window is up: free the launcher's memory until it closes.
+                    auto* settings = APPLICATION->settings();
+                    if (settings->get("QmlUnloadWhilePlaying").toBool() || settings->get("CloseAfterLaunch").toBool()) {
+                        QTimer::singleShot(1500, APPLICATION, [] { APPLICATION->unloadShellForGame(); });
+                    }
                 }
             });
             poll->start();

@@ -36,6 +36,8 @@ class UiTheme : public QObject {
     Q_PROPERTY(bool keepLayout READ keepLayout WRITE setKeepLayout NOTIFY changed)
     /// Keep your own background when switching themes
     Q_PROPERTY(bool keepBackground READ keepBackground WRITE setKeepBackground NOTIFY changed)
+    /// Use the dominant color of the current background picture as accent
+    Q_PROPERTY(bool accentFromBackground READ accentFromBackground WRITE setAccentFromBackground NOTIFY changed)
 
    public:
     explicit UiTheme(QObject* parent = nullptr);
@@ -44,7 +46,7 @@ class UiTheme : public QObject {
     QString name() const;
     bool builtin() const { return m_builtin; }
     bool dark() const;
-    QVariantMap colors() const { return section("colors"); }
+    QVariantMap colors() const;
     QVariantMap shape() const { return section("shape"); }
     QVariantMap type() const { return section("type"); }
     QVariantMap background() const { return section("background"); }
@@ -57,6 +59,10 @@ class UiTheme : public QObject {
     bool keepBackground() const;
     void setKeepLayout(bool keep);
     void setKeepBackground(bool keep);
+    bool accentFromBackground() const;
+    void setAccentFromBackground(bool on);
+    /// Backdrop reports the picture it shows (file:, qrc: or empty)
+    Q_INVOKABLE void setAccentImage(const QString& url);
 
     /// Switch to a theme by id ("builtin:deepslate" or "user:my-theme")
     Q_INVOKABLE void apply(const QString& id);
@@ -91,7 +97,10 @@ class UiTheme : public QObject {
     QJsonObject m_base;     // built-in base theme, always fully specified
     QJsonObject m_theme;    // the theme file as written by the user (sparse)
     QJsonObject m_merged;   // base + theme (+ personal sections)
-    QJsonObject m_personal; // sections the user keeps across themes (ui-themes/_personal.json)
+    QJsonObject m_personal;
+    QString m_accentImage;
+    QString m_imageAccent;    // computed from m_accentImage, empty if none
+    QString m_imageOnAccent; // sections the user keeps across themes (ui-themes/_personal.json)
     QString m_id;
     bool m_builtin = true;
     QString m_lastError;

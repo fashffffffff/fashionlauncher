@@ -290,6 +290,14 @@ Item {
                     }
                 }
 
+                SettingsSwitch {
+                    Layout.fillWidth: true
+                    label: qsTr("Take the accent from the background")
+                    description: qsTr("The main color of the current picture becomes the accent. Changes with each instance.")
+                    checked: Theme.accentFromBackground
+                    onToggled: (on) => Theme.accentFromBackground = on
+                }
+
                 AppearanceBackground { Layout.fillWidth: true }
 
                 Heading { text: qsTr("Shape and size") }

@@ -386,3 +386,22 @@ void SettingsBridge::openFolder(const QString& path) const
 {
     DesktopServices::openPath(path, true);
 }
+
+int SettingsBridge::recommendedMaxMemory(const QString& instanceId) const
+{
+    const int ram = totalRamMiB();
+    // Leave at least half of the computer for the system; past ~8 GB more heap mostly means longer GC pauses.
+    int cap = qBound(1024, ram / 2, 8192);
+    int want = 4096;  // vanilla and light packs
+    if (!instanceId.isEmpty()) {
+        if (auto* inst = APPLICATION->instances()->getInstanceById(instanceId)) {
+            const int mods = QDir(QDir(inst->gameRoot()).filePath("mods")).entryList({ "*.jar" }, QDir::Files).size();
+            // about 3 GB base plus ~25 MB per mod: 100 mods → ~5.5 GB, 250 mods → ~9 GB (capped)
+            want = 3072 + mods * 25;
+        }
+    } else if (ram >= 16384) {
+        want = 6144;
+    }
+    const int result = qMin(want, cap);
+    return result - result % 256;
+}

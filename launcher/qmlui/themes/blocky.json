@@ -1,0 +1,23 @@
+{
+    "name": "Blocky",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#1F1A17",
+        "surface": "#3C3C3C",
+        "surfaceHi": "#555555",
+        "line": "#0E0E0E",
+        "text": "#FFFFFF",
+        "textMuted": "#B4B4B4",
+        "accent": "#7FB238",
+        "onAccent": "#10180A",
+        "danger": "#FF5555",
+        "success": "#55FF55",
+        "scrim": "#1F1A17"
+    },
+    "shape": { "radius": 0, "slotRadius": 0, "slotSize": 68 },
+    "type": { "display": "Pixelify Sans", "ui": "Pixelify Sans", "scale": 1.05 },
+    "background": { "blur": 0, "dim": 0.45 },
+    "layout": { "panelStyle": "solid", "heroSize": 56 },
+    "motion": { "speed": 1.4 }
+}

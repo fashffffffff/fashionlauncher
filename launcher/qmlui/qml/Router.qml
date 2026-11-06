@@ -12,11 +12,13 @@ QtObject {
     signal backRequested()
     signal toastRequested(string message, bool isError)
     signal accountsRequested()
+    signal paletteRequested()
 
     function go(page) { goRequested(page) }
     function open(page, params) { openRequested(page, params || {}) }
     function back() { backRequested() }
     function toast(message, isError) { toastRequested(message, !!isError) }
     function openAccounts() { accountsRequested() }
+    function openPalette() { paletteRequested() }
     function openInstance(id, tab) { open("instance", { instanceId: id, tab: tab || "overview" }) }
 }

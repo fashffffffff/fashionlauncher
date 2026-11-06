@@ -2,11 +2,15 @@
 #include "UiTheme.h"
 
 #include <QDir>
+#include <cmath>
 #include <QFile>
 #include <QFileInfo>
 #include <QJsonDocument>
 #include <QRegularExpression>
 #include <QUrl>
+#include <QColor>
+#include <QImage>
+#include <QImageReader>
 
 #include "Application.h"
 #include "DesktopServices.h"
@@ -115,6 +119,93 @@ void UiTheme::savePersonal()
         f.write(QJsonDocument(m_personal).toJson(QJsonDocument::Indented));
     }
     m_selfWrite = false;
+}
+
+QVariantMap UiTheme::colors() const
+{
+    auto map = section("colors");
+    if (accentFromBackground() && !m_imageAccent.isEmpty()) {
+        map["accent"] = m_imageAccent;
+        map["onAccent"] = m_imageOnAccent;
+    }
+    return map;
+}
+
+bool UiTheme::accentFromBackground() const
+{
+    return APPLICATION->settings()->get("QmlAccentFromBackground").toBool();
+}
+
+void UiTheme::setAccentFromBackground(bool on)
+{
+    APPLICATION->settings()->set("QmlAccentFromBackground", on);
+    setAccentImage(m_accentImage);
+    emit changed();
+}
+
+namespace {
+double luminance(const QColor& c)
+{
+    auto ch = [](double v) { return v <= 0.03928 ? v / 12.92 : std::pow((v + 0.055) / 1.055, 2.4); };
+    return 0.2126 * ch(c.redF()) + 0.7152 * ch(c.greenF()) + 0.0722 * ch(c.blueF());
+}
+}  // namespace
+
+void UiTheme::setAccentImage(const QString& url)
+{
+    m_accentImage = url;
+    if (!accentFromBackground()) {
+        return;
+    }
+    QString path = url;
+    if (path.startsWith("qrc:")) {
+        path = path.mid(3);  // "qrc:/x" -> ":/x"
+    } else if (path.startsWith("file:")) {
+        path = QUrl(path).toLocalFile();
+    }
+    QImageReader reader(path);
+    reader.setScaledSize(QSize(64, 36));
+    const QImage img = reader.read();
+    QString accent, onAccent;
+    if (!img.isNull()) {
+        // Hue histogram weighted by colourfulness: the most present vivid hue wins, greys don't count.
+        double weight[12] = {};
+        double r[12] = {}, g[12] = {}, b[12] = {};
+        for (int y = 0; y < img.height(); y++) {
+            for (int x = 0; x < img.width(); x++) {
+                const QColor c = img.pixelColor(x, y);
+                const double sat = c.hsvSaturationF(), val = c.valueF();
+                if (sat < 0.25 || val < 0.2) {
+                    continue;
+                }
+                const int bin = qBound(0, int(c.hsvHueF() * 12), 11);
+                const double w = sat * val;
+                weight[bin] += w;
+                r[bin] += c.redF() * w;
+                g[bin] += c.greenF() * w;
+                b[bin] += c.blueF() * w;
+            }
+        }
+        int best = 0;
+        for (int i = 1; i < 12; i++) {
+            if (weight[i] > weight[best]) {
+                best = i;
+            }
+        }
+        if (weight[best] > 0) {
+            QColor c = QColor::fromRgbF(r[best] / weight[best], g[best] / weight[best], b[best] / weight[best]);
+            // Make it usable as an accent: vivid enough, bright on dark themes, deeper on light ones.
+            const double h = c.hsvHueF();
+            c = QColor::fromHsvF(h < 0 ? 0 : h, qMax(c.hsvSaturationF(), 0.55), dark() ? 0.92 : 0.62);
+            accent = c.name();
+            onAccent = luminance(c) > 0.35 ? "#15171C" : "#FFFFFF";
+        }
+    }
+    if (accent != m_imageAccent) {
+        m_imageAccent = accent;
+        m_imageOnAccent = onAccent;
+        emit changed();
+    }
 }
 
 QString UiTheme::name() const

@@ -14,6 +14,13 @@ SettingsSection {
         onToggled: (on) => bs.put("CloseAfterLaunch", on)
     }
     SettingsSwitch {
+        visible: bs.instanceId.length === 0
+        label: qsTr("Free memory while playing")
+        description: qsTr("Hides the launcher window while the game runs and brings it back when you exit. Saves about 100 MB.")
+        checked: Settings.get("QmlUnloadWhilePlaying") === true
+        onToggled: (on) => Settings.set("QmlUnloadWhilePlaying", on)
+    }
+    SettingsSwitch {
         label: qsTr("Quit the launcher when the game closes")
         checked: bs.val("QuitAfterGameStop") === true
         onToggled: (on) => bs.put("QuitAfterGameStop", on)

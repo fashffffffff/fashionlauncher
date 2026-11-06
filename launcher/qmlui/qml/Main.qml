@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import "JavaPresets.js" as JP
 
 ApplicationWindow {
     id: win
@@ -22,6 +23,7 @@ ApplicationWindow {
     // Debug/automation entry (FFPRISM_PAGE): a section name, "create", "accounts", or "instance:<id>[:<tab>]"
     function showPage(name: var) {
         if (name === "accounts") accounts.open()
+        else if (name === "palette") cmdPalette.open()
         else if (name.startsWith("version:")) Router.open("version", { instanceId: name.slice(8) })
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
         else if (pageFiles[name]) Router.go(name)
@@ -48,6 +50,14 @@ ApplicationWindow {
         function onSignedIn(name) { Router.toast(qsTr("Signed in as %1").arg(name), false) }
     }
 
+    // New players get the balanced Java preset once; anyone who already set arguments keeps them.
+    Component.onCompleted: {
+        if (!Settings.get("QmlJvmPresetApplied")) {
+            if (!Settings.get("JvmArgs")) Settings.set("JvmArgs", JP.argsFor("balanced"))
+            Settings.set("QmlJvmPresetApplied", true)
+        }
+    }
+
     Shortcut { sequences: [StandardKey.Back, "Esc"]; enabled: stack.depth > 1; onActivated: Router.back() }
     Shortcut { sequences: [StandardKey.Find]; onActivated: Router.go("instances") }
 
@@ -57,6 +67,8 @@ ApplicationWindow {
         readonly property var cur: { Instances.count; const i = Instances.indexOf(Router.selectedId); return i >= 0 ? Instances.get(i) : null }
         screenshot: cur ? cur.backdrop : ""
         seed: cur ? cur.instanceId : "empty"
+        onImageSourceChanged: Theme.setAccentImage(imageSource)
+        Component.onCompleted: Theme.setAccentImage(imageSource)
     }
 
     // The scene shows fully on Home; every other page sits on a calmer, darker backdrop.
@@ -101,6 +113,9 @@ ApplicationWindow {
     }
 
     AccountsPanel { id: accounts }
+    CommandPalette { id: cmdPalette }
+    Shortcut { sequences: ["Ctrl+K"]; onActivated: cmdPalette.opened ? cmdPalette.close() : cmdPalette.open() }
+    Connections { target: Router; function onPaletteRequested() { cmdPalette.open() } }
 
     Onboarding { id: onboarding; anchors.fill: parent }
 

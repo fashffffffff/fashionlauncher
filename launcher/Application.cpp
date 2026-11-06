@@ -836,6 +836,9 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
         m_settings->registerSetting("QmlOnboardingDone", false);
         m_settings->registerSetting("QmlThemeKeepLayout", false);
         m_settings->registerSetting("QmlThemeKeepBackground", false);
+        m_settings->registerSetting("QmlJvmPresetApplied", false);
+        m_settings->registerSetting("QmlUnloadWhilePlaying", true);
+        m_settings->registerSetting("QmlAccentFromBackground", false);
 
         m_settings->registerSetting("ConsoleWindowState", "");
         m_settings->registerSetting("ConsoleWindowGeometry", "");
@@ -1691,6 +1694,14 @@ void Application::controllerFinished()
         }
     }
     extras.controller.reset();
+
+    // Bring the QML window back once the last game closes, unless the player asked to quit then.
+    if (m_shellUnloadedForGame && m_runningInstances <= 1 && !m_settings->get("QuitAfterGameStop").toBool()) {
+        m_shellUnloadedForGame = false;
+        QMetaObject::invokeMethod(this, [this] { showMainWindow(); }, Qt::QueuedConnection);
+        m_openWindows++;  // keeps the app alive until the queued call opens the window
+        QMetaObject::invokeMethod(this, [this] { m_openWindows--; }, Qt::QueuedConnection);
+    }
     subRunningInstance();
 
     // quit when there are no more windows.
@@ -1734,6 +1745,14 @@ MainWindow* Application::showMainWindow(bool minimized)
     m_shell->show(minimized);
     m_openWindows++;
     return nullptr;
+}
+
+void Application::unloadShellForGame()
+{
+    if (m_shell && m_shell->window()) {
+        m_shellUnloadedForGame = true;
+        m_shell->window()->close();
+    }
 }
 
 MainWindow* Application::showClassicWindow(bool minimized)
