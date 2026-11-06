@@ -12,6 +12,7 @@
 
 #include "Application.h"
 #include "InstanceImportTask.h"
+#include "qmlui/jobs/TaskCenter.h"
 #include "InstanceList.h"
 #include "Json.h"
 #include "MetaVersionModel.h"
@@ -367,6 +368,7 @@ bool CreateBridge::createImport(const QString& source, const QString& name, cons
         m_progress = -1;
         emit busyChanged();
         emit progressChanged();
+        TaskCenter::instance()->track(job, tr("Looking up the modpack…"), "create");
         connect(job.get(), &Task::finished, this, [this, t = job.get(), array, addonId, fileId, name, icon, group] {
             if (m_task.get() != t) {
                 return;
@@ -478,6 +480,7 @@ bool CreateBridge::run(InstanceTask* raw, const QString& name, const QString& or
     });
     emit busyChanged();
     emit progressChanged();
+    TaskCenter::instance()->track(task, tr("Installing %1").arg(finalName), "create", QString(), icon);
     task->start();
     return true;
 }

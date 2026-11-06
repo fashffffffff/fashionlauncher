@@ -1287,6 +1287,31 @@ bool Application::createSetupWizard()
                  (capabilities().testAnyFlags(Application::SupportsMSA));
     bool themeInterventionRequired = !validWidgets || !validIcons;
     bool wizardRequired = javaRequired || languageRequired || pasteInterventionRequired || themeInterventionRequired || askjava || login;
+    // The QML shell never shows the classic setup wizard: language is picked in its onboarding and Java is
+    // handled automatically, so apply quiet defaults for whatever the wizard would have asked.
+    if (wizardRequired && !settings()->get("UseClassicUI").toBool()) {
+        auto* s = settings();
+        if (languageRequired) {
+            s->set("Language", QLocale::system().name());
+        }
+        if (javaRequired || askjava) {
+            s->set("AutomaticJavaSwitch", true);
+            s->set("AutomaticJavaDownload", BuildConfig.JAVA_DOWNLOADER_ENABLED);
+            s->set("UserAskedAboutAutomaticJavaDownload", true);
+            s->set("IgnoreJavaWizard", true);
+        }
+        if (pasteInterventionRequired) {
+            s->reset("PastebinURL");
+        }
+        const bool darkMode = QGuiApplication::styleHints()->colorScheme() == Qt::ColorScheme::Dark;
+        if (!validIcons) {
+            s->set("IconTheme", darkMode ? "flat_white" : "flat");
+        }
+        if (!validWidgets) {
+            s->set("ApplicationTheme", darkMode ? QStringLiteral("dark") : QStringLiteral("bright"));
+        }
+        return false;
+    }
     if (wizardRequired) {
         const bool darkMode = QGuiApplication::styleHints()->colorScheme() == Qt::ColorScheme::Dark;
         // set default theme after going into theme wizard
@@ -1735,6 +1760,8 @@ MainWindow* Application::showMainWindow(bool minimized)
         m_shell->raise();
         return nullptr;
     }
+    // The classic MainWindow used to set the app icon; the QML shell has to do it itself (Dock, taskbar, alt-tab).
+    QGuiApplication::setWindowIcon(logo());
     m_shell = new QmlShell(this);
     if (!m_shell->load()) {
         // A broken QML install must not lock people out of their instances.

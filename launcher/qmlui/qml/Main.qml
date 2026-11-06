@@ -101,6 +101,9 @@ ApplicationWindow {
             id: stack
             Layout.fillWidth: true
             Layout.fillHeight: true
+            // leave a strip for the running-tasks pill so it never covers page controls
+            Layout.bottomMargin: Tasks.busy ? Style.px(60) : 0
+            Behavior on Layout.bottomMargin { NumberAnimation { duration: Style.dur(200) } }
             clip: true
             initialItem: "PageHome.qml"
             // One quiet transition: content slides a little and fades, so you see where you went.
@@ -148,6 +151,13 @@ ApplicationWindow {
     CommandPalette { id: cmdPalette }
     Shortcut { sequences: ["Ctrl+K"]; onActivated: cmdPalette.opened ? cmdPalette.close() : cmdPalette.open() }
     Connections { target: Router; function onPaletteRequested() { cmdPalette.open() } }
+
+    // Installs, mod downloads and updates stay visible on every page.
+    TaskIndicator {
+        anchors { horizontalCenter: parent.horizontalCenter; bottom: parent.bottom; bottomMargin: Style.px(14) }
+        z: 60
+        onFinished: (message, error) => toastBox.show(message, error)
+    }
 
     Onboarding { id: onboarding; anchors.fill: parent }
 
