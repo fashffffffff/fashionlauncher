@@ -1,0 +1,12 @@
+{
+    "name": "Snowfield",
+    "author": "Fashion Launcher",
+    "dark": false,
+    "colors": {
+        "bg": "#EEF2F6", "surface": "#FFFFFF", "surfaceHi": "#E3E9F0", "line": "#C9D3DE",
+        "text": "#1A2330", "textMuted": "#566273", "accent": "#2F6FD6", "onAccent": "#FFFFFF",
+        "danger": "#C9343A", "success": "#2E8A4C", "scrim": "#EEF2F6"
+    },
+    "shape": { "radius": 14, "slotRadius": 12 },
+    "background": { "dim": 0.2, "blur": 24 }
+}

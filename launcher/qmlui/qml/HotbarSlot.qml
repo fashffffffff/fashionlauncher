@@ -10,6 +10,7 @@ AbstractButton {
     property bool selected: false
     property bool running: false
     property string tip
+    onClicked: Sounds.play("click")
 
     width: Style.slotSize * Style.scale
     height: width

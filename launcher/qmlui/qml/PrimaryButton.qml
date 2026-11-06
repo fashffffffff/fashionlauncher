@@ -9,6 +9,9 @@ Button {
     property var progress: undefined
     property color fill: Style.accent
     property color ink: Style.onAccent
+    /// UI sound on click ("" = none)
+    property string sound: "click"
+    onClicked: if (sound.length) Sounds.play(sound)
 
     implicitHeight: Style.px(48)
     implicitWidth: Math.max(Style.px(160), row.implicitWidth + Style.px(40))

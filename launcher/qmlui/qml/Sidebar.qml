@@ -26,6 +26,7 @@ Rectangle {
         id: nb
         property string iconName
         property bool active: false
+        onClicked: Sounds.play("click")
         Layout.fillWidth: true
         implicitHeight: Style.px(44)
         hoverEnabled: true
@@ -172,7 +173,7 @@ Rectangle {
                         Layout.preferredWidth: Style.px(28); Layout.preferredHeight: Style.px(28)
                         hoverEnabled: true
                         Accessible.name: st ? qsTr("Stop") : qsTr("Play")
-                        onClicked: st ? Launcher.kill(model.instanceId) : Launcher.launch(model.instanceId)
+                        onClicked: { Sounds.play(st ? "click" : "launch"); st ? Launcher.kill(model.instanceId) : Launcher.launch(model.instanceId) }
                         background: Rectangle { radius: width / 2; color: rp.st ? Style.success : Style.accent }
                         contentItem: Item { Icon { anchors.centerIn: parent; name: rp.st ? "stop" : "play"; size: Style.px(12); color: Style.onAccent } }
                     }

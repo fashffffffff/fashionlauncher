@@ -1175,7 +1175,8 @@ file(GLOB_RECURSE QMLUI_ASSETS CONFIGURE_DEPENDS RELATIVE "${CMAKE_CURRENT_SOURC
     "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/themes/*.json"
     "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/fonts/*.ttf"
     "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/i18n/*.qm"
-    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/wallpapers/*")
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/wallpapers/*"
+    "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/sounds/*.wav")
 set(QMLUI_QRC_BODY "<RCC>\n    <qresource prefix=\"/qmlui\">\n")
 foreach(asset ${QMLUI_ASSETS})
     string(APPEND QMLUI_QRC_BODY "        <file alias=\"${asset}\">${CMAKE_CURRENT_SOURCE_DIR}/qmlui/${asset}</file>\n")
