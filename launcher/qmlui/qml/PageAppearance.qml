@@ -262,38 +262,7 @@ Item {
                     }
                 }
 
-                Heading { text: qsTr("Background") }
-                Segmented {
-                    value: Style.bgCfg.mode || "screenshot"
-                    options: [{ value: "screenshot", label: qsTr("Screenshot") }, { value: "image", label: qsTr("Image") },
-                              { value: "pattern", label: qsTr("Blocks") }, { value: "solid", label: qsTr("Solid") }]
-                    onPicked: (v) => { if (v === "image" && !Style.bgCfg.image) imageDialog.open(); else Theme.setToken("background", "mode", v) }
-                }
-                Txt {
-                    Layout.fillWidth: true
-                    wrapMode: Text.WordWrap
-                    muted: true
-                    text: (Style.bgCfg.mode || "screenshot") === "screenshot"
-                        ? qsTr("Shows the newest screenshot of the selected instance. Instances without screenshots get a block pattern.")
-                        : (Style.bgCfg.mode === "image" ? qsTr("The same picture behind every instance.") : "")
-                    visible: text.length > 0
-                }
-                QuietButton {
-                    visible: Style.bgCfg.mode === "image"
-                    iconName: "image"
-                    text: Style.bgCfg.image ? qsTr("Change image") : qsTr("Choose image")
-                    onClicked: imageDialog.open()
-                }
-                TokenSlider {
-                    label: qsTr("Blur"); from: 0; to: 64; stepSize: 1; decimals: 0
-                    value: Style.bgCfg.blur || 0
-                    onMoved: (v) => Theme.setToken("background", "blur", Math.round(v))
-                }
-                TokenSlider {
-                    label: qsTr("Darken"); from: 0; to: 0.9
-                    value: Style.bgCfg.dim || 0
-                    onMoved: (v) => Theme.setToken("background", "dim", Math.round(v * 100) / 100)
-                }
+                AppearanceBackground { Layout.fillWidth: true }
 
                 Heading { text: qsTr("Shape and size") }
                 TokenSlider {
