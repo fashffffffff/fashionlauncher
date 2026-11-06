@@ -12,6 +12,7 @@
 
 #include "Application.h"
 #include "FileSystem.h"
+#include "settings/SettingsObject.h"
 
 namespace {
 const QString kWallpaperDir = QStringLiteral(":/qmlui/wallpapers");
@@ -25,9 +26,23 @@ BackgroundsBridge::BackgroundsBridge(QObject* parent) : QObject(parent)
     QDir().mkpath(m_userDir);
     m_overridesPath = FS::PathCombine(APPLICATION->dataRoot(), "ui-backgrounds.json");
 
+    m_panoramaDir = FS::PathCombine(APPLICATION->dataRoot(), "ui-panoramas");
+    m_cacheDir = FS::PathCombine(APPLICATION->dataRoot(), "cache", "qmlui");
+    m_net = APPLICATION->network();
+
+    auto s = APPLICATION->settings();
+    if (!s->contains("QmlPanoramaSource")) {
+        s->registerSetting("QmlPanoramaSource", "auto");
+    }
+    if (!s->contains("QmlPackCovers")) {
+        s->registerSetting("QmlPackCovers", true);
+    }
+    m_panoramaSource = s->get("QmlPanoramaSource").toString();
+
     loadWallpapers();
     scanUserMedia();
     loadOverrides();
+    scanCustomPanoramas();
 
     // Files dropped into the themes folder by hand show up in the gallery right away.
     m_watcher.addPath(m_userDir);
