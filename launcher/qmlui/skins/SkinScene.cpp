@@ -57,8 +57,8 @@ void SkinBox::setInflate(qreal v)
 
 void SkinBox::rebuild()
 {
-    const float w = m_size.x(), h = m_size.y(), d = m_size.z();
-    const float hx = w / 2 + m_inflate, hy = h / 2 + m_inflate, hz = d / 2 + m_inflate;
+    const float w = m_size.x(), h = m_size.y(), depth = m_size.z();
+    const float hx = w / 2 + m_inflate, hy = h / 2 + m_inflate, hz = depth / 2 + m_inflate;
     const float u = m_uv.x(), v = m_uv.y();
     const float tw = m_textureSize.width(), th = m_textureSize.height();
     // A hair inside each pixel rect, so nearest sampling never picks the neighbouring face

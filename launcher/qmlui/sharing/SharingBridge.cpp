@@ -357,7 +357,7 @@ QVariantMap SharingBridge::scanInstance(const QString& instanceId, bool hashAll,
     if (versionInfo) {
         auto* profile = inst->getPackProfile();
         if (!profile->getComponent("net.minecraft")) {
-            profile->reload(Net::Mode::Offline);  // components load lazily; versions read "" until then
+            [[maybe_unused]] const auto _ = profile->reload(Net::Mode::Offline);  // components load lazily; versions read "" until then
         }
         (*versionInfo)["mc"] = profile->getComponentVersion("net.minecraft");
         (*versionInfo)["loader"] = QString();
@@ -972,7 +972,7 @@ void SharingBridge::downloadStep()
     }
     auto* profile = inst->getPackProfile();
     if (!profile->getComponent("net.minecraft")) {
-        profile->reload(Net::Mode::Offline);
+        [[maybe_unused]] const auto _ = profile->reload(Net::Mode::Offline);
     }
     const auto existing = scanInstance(m_targetId, false);
 
