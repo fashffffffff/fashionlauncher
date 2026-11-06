@@ -54,8 +54,10 @@ const QJsonObject& baseTheme()
 {
     static const QJsonObject base = [] {
         QFile f(":/qmlui/themes/base.json");
-        f.open(QIODevice::ReadOnly);
-        return QJsonDocument::fromJson(f.readAll()).object();
+        if (f.open(QIODevice::ReadOnly)) {
+            return QJsonDocument::fromJson(f.readAll()).object();
+        }
+        return QJsonObject{};
     }();
     return base;
 }

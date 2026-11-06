@@ -25,6 +25,25 @@ runs:
       with:
         arch: ${{ inputs.vcvars-arch }}
 
+    - name: Remove Git link.exe shadowing MSVC linker
+      if: ${{ runner.os == 'Windows' }}
+      shell: pwsh
+      run: |
+        $gitLinks = @(
+          "C:\Program Files\Git\usr\bin\link.exe",
+          "C:\Program Files (x86)\Git\usr\bin\link.exe"
+        )
+        foreach ($l in $gitLinks) {
+          if (Test-Path $l) {
+            Write-Host "Removing $l"
+            Remove-Item -Force $l
+          }
+        }
+        Get-Command link.exe -All -ErrorAction SilentlyContinue | Where-Object { $_.Source -like "*Git*" } | ForEach-Object {
+          Write-Host "Removing $($_.Source)"
+          Remove-Item -Force $_.Source
+        }
+
     - name: Setup Java (MSVC)
       uses: actions/setup-java@v6
       with:
