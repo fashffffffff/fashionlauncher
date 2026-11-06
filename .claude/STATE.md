@@ -11,7 +11,7 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   user themes in `<data>/ui-themes`, live reload), `InstancesModel`/`AccountsModel` (QML models; MSA browser+device-code
   sign-in, offline add), `LauncherBridge` (launch/kill/folders; unported features run classic dialogs via a hidden
   `MainWindow` + `invokeMethod` on its slots), `ImageProviders`. QML in `qmlui/qml/` (singleton `Style.qml` = tokens),
-  themes in `qmlui/themes/`, fonts Unbounded + Golos Text, `i18n/qmlui_ru.ts` → `.qm`. All listed in `qmlui.qrc`
+  themes in `qmlui/themes/`, fonts Unbounded + Golos Text, `i18n/qmlui_<code>.ts` → `.qm` (15 languages). All listed in `qmlui.qrc`
   (regenerate when adding files); `Q_INIT_RESOURCE(qmlui)` in `main.cpp`.
 - `launcher/Application.cpp` — `showMainWindow()` opens the QML shell unless setting `UseClassicUI`; falls back to the
   classic window if QML fails to load. URL/file imports use `showClassicWindow()`. Emits `launchStarted` for progress.
@@ -27,7 +27,9 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 - Run with test data only: `-d /Users/fash/projects/ffprism/devdata`. Window snapshot:
   `FFPRISM_SNAPSHOT=/tmp/x.png FFPRISM_PAGE=play|library|appearance|accounts FFPRISM_SNAPSHOT_QUIT=1`
   (never full-screen screencapture — user's private apps are on screen).
-- Strings: `lupdate qml/*.qml qml/Fmt.js *.cpp -ts i18n/qmlui_ru.ts`, then `lrelease`.
+- Strings: `launcher/qmlui/i18n/update.sh` (lupdate+lrelease for all 14 .ts, prints todo per language; `--report` only).
+  Fill gaps: `i18n/tsjson.py export <lang> out.json` → translate → `tsjson.py apply <lang> in.json` (validates
+  placeholders/HTML/plural count), then update.sh again. .qm files are globbed into the qrc by CMake.
 
 ## Decisions (what + why)
 - Offline gating removed (uncommitted, 2026-11-05):
@@ -49,6 +51,11 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 - Next: runtime-test real launch (offline + MSA); port to QML: new/import instance, instance editor, settings,
   launch progress dialog (`LaunchController::onProgressRequested`), console; CloseAfterLaunch for QML window;
   unload QML while the game runs; rebrand (name, MSA client ID, CurseForge key) before any release.
+
+- Languages (2026-11-06): new UI offers exactly 15 (table `g_uiLanguages` in LauncherBridge.cpp: Prism key, qm code,
+  native name). Setting "Language" stores Prism's key (Simplified Chinese = `zh`, file `qmlui_zh_CN`); other saved keys
+  are mapped to the closest (`supportedLanguage`) on start and when the translations index arrives. setLanguage also
+  calls `updateLanguage` so Prism's core .po downloads.
 
 ## Gotchas
 - `anyAccountIsValid()` really means "some MS account owns Minecraft" — don't use it to mean "has accounts".

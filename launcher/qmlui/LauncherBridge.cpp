@@ -2,6 +2,7 @@
 #include "LauncherBridge.h"
 
 #include <QDir>
+#include <QHash>
 #include <QTimer>
 #include <QUrl>
 
@@ -27,8 +28,10 @@
 LauncherBridge::LauncherBridge(QObject* parent) : QObject(parent)
 {
     auto* tm = APPLICATION->translations();
-    connect(tm, &QAbstractItemModel::modelReset, this, &LauncherBridge::languagesChanged);
-    connect(tm, &QAbstractItemModel::rowsInserted, this, &LauncherBridge::languagesChanged);
+    // The index arrives asynchronously (first run picks the system language then): re-check once it's here.
+    // Queued: indexReceived() stores the system language only after it has reloaded the rows.
+    connect(tm, &QAbstractItemModel::rowsInserted, this, &LauncherBridge::enforceSupportedLanguage, Qt::QueuedConnection);
+    enforceSupportedLanguage();
     connect(APPLICATION, &Application::launchStarted, this, [this](MinecraftInstance* inst, LaunchController* controller) {
         trackController(inst->id(), controller);
     });
@@ -54,24 +57,91 @@ QString LauncherBridge::appName() const
     return BuildConfig.LAUNCHER_DISPLAYNAME;
 }
 
+namespace {
+struct UiLanguage {
+    const char* key;   // Prism's translation key (what the "Language" setting stores)
+    const char* code;  // suffix of qmlui_<code>.qm
+    const char* name;  // native name
+};
+// The new UI is fully translated into exactly these. Order = order in the pickers.
+const UiLanguage g_uiLanguages[] = {
+    { "en_US", "", "English" },          { "ru", "ru", "Русский" },        { "es", "es", "Español" },
+    { "pt_BR", "pt_BR", "Português (Brasil)" }, { "de", "de", "Deutsch" }, { "fr", "fr", "Français" },
+    { "it", "it", "Italiano" },          { "pl", "pl", "Polski" },         { "uk", "uk", "Українська" },
+    { "tr", "tr", "Türkçe" },            { "zh", "zh_CN", "简体中文" },     { "ja", "ja", "日本語" },
+    { "ko", "ko", "한국어" },            { "cs", "cs", "Čeština" },        { "id", "id", "Bahasa Indonesia" },
+};
+}  // namespace
+
+QString LauncherBridge::supportedLanguage(const QString& key)
+{
+    static const QHash<QString, QString> aliases = {
+        { "pt", "pt_BR" }, { "pt_PT", "pt_BR" }, { "zh_CN", "zh" },    { "zh_TW", "zh" }, { "zh_Hant_HK", "zh" },
+        { "zh_HK", "zh" }, { "lzh", "zh" },      { "nan", "zh" },      { "en", "en_US" }, { "be", "ru" },
+        { "rue", "uk" },   { "sk", "cs" },       { "ms", "id" },       { "szl", "pl" },   { "ca@valencia", "es" },
+    };
+    if (aliases.contains(key)) {
+        return aliases.value(key);
+    }
+    for (const auto& l : g_uiLanguages) {
+        if (key == l.key) {
+            return key;
+        }
+    }
+    // Regional variants (es_AR, de_CH, fr_CA, en_GB...) fall back to their base language
+    const QString base = key.section('_', 0, 0).section('@', 0, 0);
+    for (const auto& l : g_uiLanguages) {
+        if (base == QString(l.key).section('_', 0, 0)) {
+            return l.key;
+        }
+    }
+    return "en_US";
+}
+
+QString LauncherBridge::uiTranslationCode(const QString& key)
+{
+    const QString supported = supportedLanguage(key);
+    for (const auto& l : g_uiLanguages) {
+        if (supported == l.key) {
+            return l.code;
+        }
+    }
+    return {};
+}
+
 QVariantList LauncherBridge::languages() const
 {
     QVariantList list;
-    auto* tm = APPLICATION->translations();
-    for (int i = 0; i < tm->rowCount(); i++) {
-        auto idx = tm->index(i, 0);
-        QString name = idx.data(Qt::DisplayRole).toString();
-        if (!name.isEmpty()) {
-            name[0] = name[0].toUpper();  // Qt gives "русский", people expect "Русский"
-        }
-        list.append(QVariantMap{ { "key", idx.data(Qt::UserRole).toString() }, { "name", name } });
+    for (const auto& l : g_uiLanguages) {
+        list.append(QVariantMap{ { "key", l.key }, { "name", QString::fromUtf8(l.name) } });
     }
     return list;
 }
 
 QString LauncherBridge::language() const
 {
-    return APPLICATION->settings()->get("Language").toString();
+    return supportedLanguage(APPLICATION->settings()->get("Language").toString());
+}
+
+void LauncherBridge::enforceSupportedLanguage()
+{
+    const QString saved = APPLICATION->settings()->get("Language").toString();
+    if (saved.isEmpty()) {
+        return;  // not chosen yet; Prism picks the system language once its index arrives, then we come back here
+    }
+    const QString key = supportedLanguage(saved);
+    auto* tm = APPLICATION->translations();
+    if (key != saved) {
+        APPLICATION->settings()->set("Language", key);
+    }
+    if (tm->selectedLanguage() != key) {
+        // Also covers a language picked before the index arrived (selectLanguage then fell back to English)
+        tm->selectLanguage(key);
+        tm->updateLanguage(key);
+    }
+    if (key != saved) {
+        emit languageChanged();
+    }
 }
 
 void LauncherBridge::setLanguage(const QString& key)
@@ -79,9 +149,12 @@ void LauncherBridge::setLanguage(const QString& key)
     if (key.isEmpty() || key == language()) {
         return;
     }
-    APPLICATION->settings()->set("Language", key);
-    APPLICATION->translations()->selectLanguage(key);
-    emit languageChanged();  // QmlShell swaps its own translator and retranslates the QML
+    const QString supported = supportedLanguage(key);
+    APPLICATION->settings()->set("Language", supported);
+    auto* tm = APPLICATION->translations();
+    tm->selectLanguage(supported);
+    tm->updateLanguage(supported);  // downloads Prism's core translation if it isn't on disk yet
+    emit languageChanged();         // QmlShell swaps its own translator and retranslates the QML
 }
 
 bool LauncherBridge::onboardingDone() const
