@@ -11,6 +11,7 @@
 #include "InstanceList.h"
 #include "LaunchController.h"
 #include "launch/LaunchTask.h"
+#include "store/StoreBridge.h"
 #include "minecraft/MinecraftInstance.h"
 #include "minecraft/PackProfile.h"
 #include "minecraft/Component.h"
@@ -106,6 +107,7 @@ bool LauncherBridge::launch(const QString& id, bool offline)
     if (!inst) {
         return false;
     }
+    StoreBridge::beforeLaunch(inst);
     return APPLICATION->launch(inst, offline ? LaunchMode::Offline : LaunchMode::Normal);
 }
 
