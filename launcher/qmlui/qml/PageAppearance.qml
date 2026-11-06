@@ -449,6 +449,21 @@ Item {
                         onClicked: Theme.remove(Theme.themeId)
                     }
                 }
+
+                Heading { text: qsTr("Sounds") }
+                SettingsToggle {
+                    label: qsTr("Play sounds on clicks and launches")
+                    checked: Gallery.soundsOn
+                    onToggled: (on) => { Gallery.soundsOn = on; if (on) Sounds.play("toggle") }
+                }
+                TokenSlider {
+                    enabled: Gallery.soundsOn
+                    opacity: enabled ? 1 : 0.5
+                    label: qsTr("Volume")
+                    from: 5; to: 100; stepSize: 5; decimals: 0; suffix: "%"
+                    value: Math.round(Gallery.soundVolume * 100)
+                    onMoved: (v) => { Gallery.soundVolume = v / 100; Sounds.play("click") }
+                }
                 Item { Layout.preferredHeight: Style.px(24) }
             }
         }

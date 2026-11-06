@@ -1,0 +1,68 @@
+{
+    "version": 1,
+    "items": [
+        {
+            "id": "copper-age",
+            "type": "theme",
+            "name": "Copper Age",
+            "author": "Fashion Launcher",
+            "description": "Warm oxidised copper on dark wood. Solid panels and tight corners.",
+            "file": "themes/copper-age.json",
+            "tags": ["dark", "warm"],
+            "downloads": 1280
+        },
+        {
+            "id": "snowfield",
+            "type": "theme",
+            "name": "Snowfield",
+            "author": "Fashion Launcher",
+            "description": "A bright, airy light theme with blue highlights.",
+            "file": "themes/snowfield.json",
+            "tags": ["light", "cool"],
+            "downloads": 640
+        },
+        {
+            "id": "glowberry",
+            "type": "theme",
+            "name": "Glow Berry",
+            "author": "Fashion Launcher",
+            "description": "Deep moss greens lit by glowing berries.",
+            "file": "themes/glowberry.json",
+            "tags": ["dark", "green"],
+            "downloads": 910
+        },
+        {
+            "id": "dusk-dunes",
+            "type": "background",
+            "name": "Dusk Dunes",
+            "author": "Fashion Launcher",
+            "description": "Layered hills under a setting sun.",
+            "preview": "previews/dusk-dunes.jpg",
+            "file": "backgrounds/dusk-dunes.jpg",
+            "tags": ["warm", "calm"],
+            "downloads": 2100
+        },
+        {
+            "id": "pixel-meadow",
+            "type": "background",
+            "name": "Pixel Meadow",
+            "author": "Fashion Launcher",
+            "description": "Blocky grass, dirt and stone on a clear day.",
+            "preview": "previews/pixel-meadow.jpg",
+            "file": "backgrounds/pixel-meadow.jpg",
+            "tags": ["blocky", "day"],
+            "downloads": 3400
+        },
+        {
+            "id": "starfall",
+            "type": "background",
+            "name": "Starfall",
+            "author": "Fashion Launcher",
+            "description": "A quiet night sky with a faint aurora.",
+            "preview": "previews/starfall.jpg",
+            "file": "backgrounds/starfall.jpg",
+            "tags": ["night", "calm"],
+            "downloads": 1750
+        }
+    ]
+}

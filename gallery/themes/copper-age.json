@@ -1,0 +1,12 @@
+{
+    "name": "Copper Age",
+    "author": "Fashion Launcher",
+    "dark": true,
+    "colors": {
+        "bg": "#1C1714", "surface": "#29211C", "surfaceHi": "#352B24", "line": "#4A3B30",
+        "text": "#F3E9E0", "textMuted": "#B39E8E", "accent": "#E07B4C", "onAccent": "#25110A",
+        "danger": "#E5574D", "success": "#5FB88F", "scrim": "#1C1714"
+    },
+    "shape": { "radius": 8, "slotRadius": 6 },
+    "layout": { "panelStyle": "solid" }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Glow Berry",
+    "author": "Fashion Launcher",
+    "dark": true,
+    "colors": {
+        "bg": "#141A12", "surface": "#1D2619", "surfaceHi": "#273321", "line": "#36452E",
+        "text": "#EEF3E6", "textMuted": "#A3B096", "accent": "#F2B33D", "onAccent": "#241703",
+        "danger": "#E25C4F", "success": "#7CC55E", "scrim": "#141A12"
+    },
+    "shape": { "radius": 18, "slotRadius": 16 },
+    "background": { "mode": "wallpaper", "dim": 0.5, "blur": 28 },
+    "layout": { "panelOpacity": 0.6 }
+}

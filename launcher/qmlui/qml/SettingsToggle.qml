@@ -19,7 +19,7 @@ RowLayout {
         id: sw
         checked: tg.checked
         padding: 0
-        onToggled: tg.toggled(checked)
+        onToggled: { Sounds.play("toggle"); tg.toggled(checked) }
         Accessible.name: tg.label
         indicator: Rectangle {
             implicitWidth: Style.px(42); implicitHeight: Style.px(24); radius: height / 2

@@ -8,6 +8,9 @@ Button {
     property string tip
     property bool danger: false
     property bool plain: false
+    /// UI sound on click ("" = none)
+    property string sound: "click"
+    onClicked: if (sound.length) Sounds.play(sound)
     readonly property color ink: danger ? Style.danger : Style.text
 
     implicitHeight: Style.px(40)

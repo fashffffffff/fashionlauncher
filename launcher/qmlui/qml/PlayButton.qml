@@ -11,6 +11,7 @@ PrimaryButton {
     progress: phase === "launching" ? state.progress : undefined
     fill: phase === "running" ? Style.surfaceHi : Style.accent
     ink: phase === "running" ? Style.text : Style.onAccent
+    sound: phase === "" ? "launch" : "click"
     onClicked: {
         if (!instanceId) return
         if (phase === "") Launcher.launch(instanceId)
