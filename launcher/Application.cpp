@@ -1492,6 +1492,8 @@ void Application::showFatalErrorMessage(const QString& title, const QString& con
 
 Application::~Application()
 {
+    delete m_shell;
+    m_shell = nullptr;
     // Shut down logger by setting the logger function to nothing
     qInstallMessageHandler(nullptr);
 }

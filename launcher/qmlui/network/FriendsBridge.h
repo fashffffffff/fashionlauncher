@@ -15,6 +15,7 @@ class FriendsService : public QObject {
     Q_OBJECT
    public:
     static FriendsService* instance();
+    ~FriendsService() override;
 
     void send(const QVariantMap& cmd);
     bool running() const { return m_proc && m_proc->state() != QProcess::NotRunning; }

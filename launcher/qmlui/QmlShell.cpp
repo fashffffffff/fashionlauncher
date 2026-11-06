@@ -100,7 +100,7 @@ LaunchPrompts* QmlShell::prompts() const
 
 QmlShell::~QmlShell()
 {
-    if (m_window) {
+    if (m_window && APPLICATION && APPLICATION->settings()) {
         APPLICATION->settings()->set("QmlShellGeometry", QVariantList{ m_window->x(), m_window->y(), m_window->width(), m_window->height() });
     }
     // Destroy QML before the C++ objects it references.

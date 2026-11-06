@@ -85,6 +85,14 @@ FriendsService::FriendsService(QObject* parent) : QObject(parent)
     start();
 }
 
+FriendsService::~FriendsService()
+{
+    if (m_proc && m_proc->state() != QProcess::NotRunning) {
+        m_proc->kill();
+        m_proc->waitForFinished(500);
+    }
+}
+
 void FriendsService::start()
 {
     const QString exe = sidecarPath();

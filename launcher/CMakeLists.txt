@@ -1582,6 +1582,8 @@ endif()
 if(WIN32 OR (UNIX AND APPLE))
     if(WIN32)
         set(QT_DEPLOY_TOOL_OPTIONS "--no-opengl-sw --no-quick-import --no-system-d3d-compiler --no-system-dxc-compiler --skip-plugin-types generic,networkinformation")
+    elseif(APPLE)
+        set(QT_DEPLOY_TOOL_OPTIONS "-no-codesign -qmldir=${CMAKE_CURRENT_SOURCE_DIR}/qmlui/qml")
     endif()
 
     qt_generate_deploy_script(
@@ -1635,7 +1637,7 @@ if(WIN32 OR (UNIX AND APPLE))
     # Add qtlogging.ini as a config file
     install(
         FILES "qtlogging.ini"
-        DESTINATION ${CMAKE_INSTALL_PREFIX}/${RESOURCES_DEST_DIR}
+        DESTINATION ${RESOURCES_DEST_DIR}
         COMPONENT bundle
     )
 endif()
