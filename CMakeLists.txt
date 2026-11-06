@@ -309,6 +309,7 @@ if(Launcher_QT_VERSION_MAJOR EQUAL 6)
             Concurrent
             Core
             CoreTools
+            Multimedia
             Network
             NetworkAuth
             OpenGL

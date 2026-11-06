@@ -1,0 +1,28 @@
+{
+  "wallpapers": [
+    {
+      "id": "cherry-grove",
+      "title": "Cherry grove",
+      "file": "cherry-grove.jpg",
+      "tags": [
+        "minecraft"
+      ]
+    },
+    {
+      "id": "aurora-peaks",
+      "title": "Aurora peaks",
+      "file": "aurora-peaks.jpg",
+      "tags": [
+        "minecraft"
+      ]
+    },
+    {
+      "id": "desert-temple",
+      "title": "Desert temple",
+      "file": "desert-temple.jpg",
+      "tags": [
+        "minecraft"
+      ]
+    }
+  ]
+}

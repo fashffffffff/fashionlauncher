@@ -1,33 +1,107 @@
 import QtQuick
 import QtQuick.Effects
 
-// Full-bleed scene behind the Play screen: the instance's newest screenshot,
-// a custom image, a generated block horizon, or a flat color — chosen by the theme.
+// Full-bleed scene behind everything. What it shows comes from the theme's "background" section
+// (mode: wallpaper | image | video | slideshow | screenshot | pattern | solid), unless the selected
+// instance has its own background (Backgrounds.overrides). Anything that can't be shown — an
+// instance without screenshots, a missing file, a paused video — falls back to a wallpaper,
+// never to an empty block.
 Item {
     id: root
     property string screenshot
     property string seed: "world"
 
-    readonly property string mode: Style.bgCfg.mode || "screenshot"
-    readonly property string customImage: Style.bgCfg.image
-        ? "file://" + Theme.userThemesDir + "/" + Style.bgCfg.image : ""
-    readonly property string imageSource: mode === "screenshot" ? screenshot
-                                        : mode === "image" ? customImage : ""
-    readonly property bool showPattern: mode === "pattern" || (imageSource === "" && mode !== "solid")
+    readonly property var cfg: Style.bgCfg
+    readonly property var instanceBg: Backgrounds.overrides[seed] || null
+    readonly property string mode: instanceBg ? instanceBg.kind : (cfg.mode || "screenshot")
 
-    Rectangle { anchors.fill: parent; color: Style.bg }
+    readonly property string fallbackImage: Backgrounds.wallpaperUrl(cfg.wallpaper || "")
+                                            || Backgrounds.wallpaperUrl(Backgrounds.defaultWallpaper)
+
+    // Slideshow: wallpaper ids or the user's own image files, switched every `interval` seconds.
+    readonly property var slides: {
+        const raw = cfg.slideshow
+        const list = raw && typeof raw === "object" ? Array.from(raw) : []
+        const urls = []
+        for (const s of list) {
+            const u = Backgrounds.wallpaperUrl(s) || Backgrounds.userFileUrl(s)
+            if (u) urls.push(u)
+        }
+        return urls.length > 0 ? urls : Backgrounds.wallpapers.map(w => w.url)
+    }
+    property int slide: 0
+    Timer {
+        interval: Math.max(5, Number(root.cfg.interval) || 60) * 1000
+        repeat: true
+        running: root.mode === "slideshow" && root.slides.length > 1 && root.windowShown && !root.gameRunning
+        onTriggered: root.slide = (root.slide + 1) % root.slides.length
+    }
+
+    // Video
+    readonly property string videoUrl: mode !== "video" ? ""
+        : instanceBg ? Backgrounds.resolve("video", instanceBg.value) : Backgrounds.userFileUrl(cfg.video || "")
+    readonly property bool windowShown: Window.window !== null && Window.window.visible
+                                        && Window.window.visibility !== Window.Minimized
+                                        && Window.window.visibility !== Window.Hidden
+    readonly property bool gameRunning: {
+        const l = Launcher.launches
+        for (const id in l) if (l[id].phase === "running") return true
+        return false
+    }
+    // Unloaded (decoder freed) while nobody can see it; paused on pages where it sits under a dark veil.
+    readonly property bool videoLoaded: videoUrl !== "" && windowShown && !gameRunning
+    readonly property bool videoPaused: Router.section !== "home" && Router.section !== "appearance"
+    readonly property bool videoShowing: videoLoaded && video.item !== null && video.item.showing && !video.item.failed
+
+    readonly property string imageSource: {
+        switch (mode) {
+        case "wallpaper": return (instanceBg ? Backgrounds.wallpaperUrl(instanceBg.value) : Backgrounds.wallpaperUrl(cfg.wallpaper || "")) || fallbackImage
+        case "image": return (instanceBg ? Backgrounds.userFileUrl(instanceBg.value) : Backgrounds.userFileUrl(cfg.image || "")) || fallbackImage
+        case "slideshow": return slides.length > 0 ? slides[slide % slides.length] : fallbackImage
+        case "screenshot": return screenshot || fallbackImage
+        case "video": return videoShowing ? "" : fallbackImage
+        default: return ""   // pattern, solid
+        }
+    }
+    readonly property bool showPattern: mode === "pattern" || (mode !== "solid" && imageSource === "" && !videoShowing)
+
+    Rectangle { anchors.fill: parent; color: root.mode === "solid" && root.cfg.color ? root.cfg.color : Style.bg }
 
     // Blurred backgrounds are rendered at a quarter of the size and scaled up: after a strong blur
     // the difference is invisible, and it needs 16x less memory than full-resolution blur buffers.
-    readonly property bool blurOn: (Style.bgCfg.blur || 0) > 0
+    readonly property bool blurOn: (cfg.blur || 0) > 0
     readonly property int down: blurOn ? 4 : 1
 
-    // Two images cross-fade so switching instances never flashes.
+    // Two images cross-fade so switching instances never flashes; a video sits underneath them.
     Item {
         id: photo
         width: Math.ceil(root.width / root.down)
         height: Math.ceil(root.height / root.down)
-        visible: false
+        // Rendered into a layer of its own (quarter size when blurred), then scaled up with the effect.
+        // A layer instead of a hidden MultiEffect source: hidden items don't receive new video frames.
+        scale: root.down
+        transformOrigin: Item.TopLeft
+        visible: root.imageSource !== "" || root.videoShowing || imgA.source != "" || imgB.source != ""
+        layer.enabled: true
+        layer.smooth: true
+        layer.effect: MultiEffect {
+            blurEnabled: root.blurOn
+            blurMax: 16
+            blur: Math.min(1, (root.cfg.blur || 0) / 64)
+            saturation: -0.1
+            autoPaddingEnabled: false
+        }
+
+        Loader {
+            id: video
+            anchors.fill: parent
+            active: root.videoLoaded
+            sourceComponent: BgVideo {
+                source: root.videoUrl
+                paused: root.videoPaused
+            }
+        }
+
         property bool flip: false
         Image {
             id: imgA
@@ -35,7 +109,8 @@ Item {
             fillMode: Image.PreserveAspectCrop
             asynchronous: true
             cache: false
-            sourceSize.width: root.blurOn ? 480 : 1920
+            // Never decode more pixels than the screen shows.
+            sourceSize.width: Math.min(1920, Math.max(320, photo.width))
             opacity: photo.flip ? 0 : 1
             Behavior on opacity { NumberAnimation { duration: Style.dur(450); easing.type: Easing.OutCubic } }
         }
@@ -45,7 +120,7 @@ Item {
             fillMode: Image.PreserveAspectCrop
             asynchronous: true
             cache: false
-            sourceSize.width: root.blurOn ? 480 : 1920
+            sourceSize.width: imgA.sourceSize.width
             opacity: photo.flip ? 1 : 0
             Behavior on opacity { NumberAnimation { duration: Style.dur(450); easing.type: Easing.OutCubic } }
         }
@@ -63,90 +138,25 @@ Item {
     }
     Component.onCompleted: { imgA.source = imageSource }
 
-    MultiEffect {
-        width: photo.width
-        height: photo.height
-        scale: root.down
-        transformOrigin: Item.TopLeft
-        source: photo
-        visible: root.imageSource !== ""
-        blurEnabled: root.blurOn
-        blurMax: 16
-        blur: Math.min(1, (Style.bgCfg.blur || 0) / 64)
-        saturation: -0.1
-        autoPaddingEnabled: false
-    }
-
-    // Generated block horizon: a skyline of square blocks, seeded by the instance id.
     Loader {
         anchors.fill: parent
         active: root.showPattern
-        sourceComponent: blocksComponent
-    }
-    Component {
-      id: blocksComponent
-      Canvas {
-        id: blocks
-        renderStrategy: Canvas.Cooperative
-        property color topColor: Style.mix(Style.surfaceHi, Style.accent, 0.55)
-        property color midColor: Style.surfaceHi
-        property color deepColor: Style.surface
-        onTopColorChanged: requestPaint()
-        onDeepColorChanged: requestPaint()
-        onWidthChanged: requestPaint()
-        onHeightChanged: requestPaint()
-        Connections { target: root; function onSeedChanged() { blocks.requestPaint() } }
-
-        function hash(s) {
-            let h = 2166136261
-            for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) }
-            return h >>> 0
-        }
-        onPaint: {
-            const ctx = getContext("2d")
-            ctx.reset()
-            const size = Math.max(18, Math.round(width / 56))
-            const gap = Math.max(1, Math.round(size / 14))
-            const cols = Math.ceil(width / size) + 1
-            let rnd = hash(root.seed)
-            const next = () => { rnd = (Math.imul(rnd, 1664525) + 1013904223) >>> 0; return rnd / 4294967296 }
-            const baseRows = Math.max(3, Math.round(height * 0.2 / size))
-            let h = baseRows
-            for (let x = 0; x < cols; x++) {
-                // random walk with plateaus, like terrain
-                const r = next()
-                if (r < 0.18) h = Math.max(2, h - 1)
-                else if (r > 0.82) h = Math.min(Math.round(baseRows * 1.8), h + 1)
-                for (let y = 0; y < h; y++) {
-                    const depth = h - 1 - y
-                    const px = x * size, py = height - (y + 1) * size
-                    if (depth === 0) {
-                        ctx.fillStyle = topColor
-                        ctx.globalAlpha = 0.55 + next() * 0.2
-                    } else {
-                        ctx.fillStyle = depth < 3 ? midColor : deepColor
-                        // fade into the ground the deeper it goes
-                        ctx.globalAlpha = Math.max(0.12, 0.5 - depth * 0.07) * (0.8 + next() * 0.4)
-                    }
-                    ctx.fillRect(px, py, size - gap, size - gap)
-                }
-            }
-        }
-    }
-
+        sourceComponent: BgBlocks { seed: root.seed }
     }
 
     // Legibility: darken toward the bottom-left where the title and controls sit.
     Rectangle {
         anchors.fill: parent
+        visible: root.mode !== "solid"
         gradient: Gradient {
-            GradientStop { position: 0.0; color: Style.alpha(Style.scrim, (Style.bgCfg.dim || 0) * 0.35) }
-            GradientStop { position: 0.55; color: Style.alpha(Style.scrim, (Style.bgCfg.dim || 0) * 0.7) }
-            GradientStop { position: 1.0; color: Style.alpha(Style.scrim, Math.min(1, (Style.bgCfg.dim || 0) + 0.3)) }
+            GradientStop { position: 0.0; color: Style.alpha(Style.scrim, (root.cfg.dim || 0) * 0.35) }
+            GradientStop { position: 0.55; color: Style.alpha(Style.scrim, (root.cfg.dim || 0) * 0.7) }
+            GradientStop { position: 1.0; color: Style.alpha(Style.scrim, Math.min(1, (root.cfg.dim || 0) + 0.3)) }
         }
     }
     Rectangle {
         anchors.fill: parent
+        visible: root.mode !== "solid"
         gradient: Gradient {
             orientation: Gradient.Horizontal
             GradientStop { position: 0.0; color: Style.alpha(Style.scrim, 0.55) }
