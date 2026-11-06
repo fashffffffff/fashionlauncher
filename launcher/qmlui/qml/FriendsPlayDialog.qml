@@ -21,12 +21,23 @@ Popup {
         refreshManifest()
         open()
     }
+    property bool analyzing: false
     function refreshManifest() {
         fullManifest = null
-        if (sharing && instanceId.length) {
-            const m = Sharing.createManifest(instanceId, { includeClient: true, exclude: [] })
-            fullManifest = m && typeof m === "object" ? m : null
-        }
+        if (!sharing || !instanceId.length) return
+        // mod sides/platforms are only known after analyze(); the manifest is built when it reports back
+        if (typeof Sharing.analyze === "function") { analyzing = true; Sharing.analyze(instanceId) }
+        else buildManifest()
+    }
+    function buildManifest() {
+        analyzing = false
+        const m = Sharing.createManifest(instanceId, { includeClient: true, exclude: [] })
+        fullManifest = m && typeof m === "object" ? m : null
+    }
+    Connections {
+        target: dlg.sharing ? Sharing : null
+        ignoreUnknownSignals: true
+        function onAnalyzed(id) { if (dlg.analyzing && id === dlg.instanceId) dlg.buildManifest() }
     }
     function send() {
         let manifest = null
@@ -78,6 +89,7 @@ Popup {
             }
 
             Txt { text: qsTr("2. What do friends get?"); font.weight: Font.DemiBold }
+            Txt { visible: dlg.analyzing; muted: true; text: qsTr("Checking the mods…") }
             FriendsPackOptions {
                 id: packOpts
                 Layout.fillWidth: true
@@ -127,7 +139,7 @@ Popup {
                 PrimaryButton {
                     text: dlg.picked.length > 1 ? qsTr("Invite %n friends", "", dlg.picked.length) : qsTr("Send invite")
                     iconName: "play"
-                    enabled: !!dlg.inst && dlg.picked.length > 0
+                    enabled: !!dlg.inst && dlg.picked.length > 0 && !dlg.analyzing
                     onClicked: dlg.send()
                 }
             }

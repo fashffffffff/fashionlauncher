@@ -19,7 +19,9 @@ Popup {
         let m = []
         if (sharing && typeof Sharing.matchInstances === "function" && inv.manifest) {
             const r = Sharing.matchInstances(inv.manifest)
-            if (Array.isArray(r)) m = r
+            if (Array.isArray(r)) m = r.map(x => ({ instanceId: x.instanceId, name: x.name,
+                                                    missing: typeof x.missingCount === "number" ? x.missingCount
+                                                           : Array.isArray(x.missing) ? x.missing.length : -1 }))
         } else {
             for (let i = 0; i < Instances.count; i++) {
                 const it = Instances.get(i)
