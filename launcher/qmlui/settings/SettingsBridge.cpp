@@ -41,6 +41,11 @@ const QHash<QString, Group>& groups()
         { "behaviour",
           { { "OverrideMiscellaneous", "OverrideConsole" },
             { "CloseAfterLaunch", "QuitAfterGameStop", "ShowConsole", "AutoCloseConsole", "ShowConsoleOnError", "LogPrePostOutput" } } },
+        // Advanced: what used to need the classic settings window.
+        { "commands", { { "OverrideCommands" }, { "PreLaunchCommand", "WrapperCommand", "PostExitCommand" } } },
+        { "env", { { "OverrideEnv" }, { "Env" } } },
+        { "performance", { { "OverridePerformance" }, { "UseDiscreteGpu", "EnableFeralGamemode", "EnableMangoHud", "UseZink" } } },
+        { "legacy", { { "OverrideLegacySettings" }, { "OnlineFixes" } } },
     };
     return s_groups;
 }
