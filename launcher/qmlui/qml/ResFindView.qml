@@ -36,7 +36,10 @@ Item {
                 Layout.fillWidth: true
                 Keys.onEscapePressed: text = ""
                 Keys.onReturnPressed: results.search()
-                Component.onCompleted: forceActiveFocus()
+                Component.onCompleted: {
+                    if (Tools.hasPendingFind(view.instanceId)) text = Tools.takePendingFind(view.instanceId)
+                    forceActiveFocus()
+                }
             }
             ResSegmented {
                 options: [{ value: "modrinth", label: "Modrinth" }, { value: "curseforge", label: "CurseForge" }]

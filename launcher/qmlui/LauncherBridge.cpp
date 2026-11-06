@@ -11,6 +11,7 @@
 #include "InstanceList.h"
 #include "LaunchController.h"
 #include "launch/LaunchTask.h"
+#include "tools/ToolsBridge.h"
 #include "minecraft/MinecraftInstance.h"
 #include "minecraft/PackProfile.h"
 #include "minecraft/Component.h"
@@ -99,6 +100,10 @@ bool LauncherBridge::launch(const QString& id, bool offline)
 {
     auto* inst = findInstance(id);
     if (!inst) {
+        return false;
+    }
+    // Pre-launch checks: certain problems pause the launch and ask the user first
+    if (auto* tools = ToolsBridge::instance(); tools && tools->holdLaunch(id, offline)) {
         return false;
     }
     return APPLICATION->launch(inst, offline ? LaunchMode::Offline : LaunchMode::Normal);

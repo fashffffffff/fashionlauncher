@@ -20,6 +20,11 @@ Item {
         onMessage: (text, isError) => Router.toast(text, isError)
     }
 
+    ResUpdatesDialog { id: updatesDialog; model: installed }
+
+    // Opened from the pre-launch check ("Install Fabric API"): go straight to Find
+    Component.onCompleted: if (view.kind === "mods" && Tools.hasPendingFind(view.instanceId)) Qt.callLater(view.findRequested)
+
     FileDialog {
         id: fileDialog
         title: qsTr("Add files")
@@ -85,7 +90,7 @@ Item {
                 iconName: "export"
                 enabled: installed.busy === ""
                 progress: installed.busy === "updating" ? installed.progress : undefined
-                onClicked: installed.updateAll()
+                onClicked: updatesDialog.show()   // review versions and changelogs first
             }
             PrimaryButton {
                 visible: installed.totalCount > 0
@@ -109,10 +114,19 @@ Item {
             }
             QuietButton { plain: true; text: qsTr("Cancel"); onClicked: installed.cancel() }
         }
-        Txt {
+        RowLayout {
             visible: installed.busy === "" && installed.checked && installed.updateCount > 0
-            muted: true
-            text: qsTr("%n update(s) available", "", installed.updateCount)
+            spacing: Style.px(8)
+            Txt { muted: true; text: qsTr("%n update(s) available", "", installed.updateCount) }
+            QuietButton { plain: true; text: qsTr("See what's new"); onClicked: updatesDialog.show() }
+        }
+
+        // Pre-launch checks were turned off from the launch dialog: offer them back here
+        RowLayout {
+            visible: view.kind === "mods" && !Tools.checksEnabled
+            spacing: Style.px(8)
+            Txt { muted: true; text: qsTr("Mods aren't checked before playing.") }
+            QuietButton { plain: true; text: qsTr("Turn checks on"); onClicked: Tools.checksEnabled = true }
         }
 
         // The list

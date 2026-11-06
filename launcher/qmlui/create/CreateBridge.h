@@ -2,6 +2,7 @@
 #pragma once
 
 #include <QObject>
+#include <QUrl>
 #include <QVariant>
 
 #include "modplatform/ModIndex.h"
@@ -87,6 +88,10 @@ class CreateBridge : public QObject {
     /// icon "" uses the pack's own logo.
     Q_INVOKABLE bool createModpack(int versionIndex, const QString& name, const QString& icon, const QString& group);
     Q_INVOKABLE bool createImport(const QString& source, const QString& name, const QString& icon, const QString& group);
+    /// Instances found in other launchers (keys from Tools.launchers). link = share their game folder instead of copying.
+    /// With one key the name applies to it; with several each keeps its own name.
+    Q_INVOKABLE bool createFromLaunchers(const QVariantList& keys, bool link, const QString& name, const QString& icon,
+                                         const QString& group);
     Q_INVOKABLE void cancel();
     Q_INVOKABLE void clearError();
     /// Automation (FFPRISM_CREATE): quits the app when FFPRISM_CREATE_QUIT=1.
@@ -103,6 +108,8 @@ class CreateBridge : public QObject {
    private:
     bool run(InstanceTask* task, const QString& name, const QString& originalName, const QString& version, const QString& icon,
              const QString& group);
+    bool start(const Task::Ptr& task);
+    void applyPackSettings(const QUrl& source);
     void setError(const QString& e);
     void fetchPackLogo();
 
@@ -127,4 +134,5 @@ class CreateBridge : public QObject {
     QString m_error;
     QString m_createdId;
     QString m_createdName;
+    QUrl m_packSource;  // modpack being imported, for its fashion-launcher.json
 };
