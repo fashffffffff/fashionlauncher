@@ -312,12 +312,80 @@ Item {
                     onMoved: (v) => Theme.setToken("type", "scale", Math.round(v * 100) / 100)
                 }
 
-                Heading { text: qsTr("Title font") }
-                Segmented {
+                Heading { text: qsTr("Layout") }
+                RowLayout {
+                    spacing: Style.px(14)
+                    Txt { text: qsTr("Menu position"); Layout.preferredWidth: Style.px(150) }
+                    Segmented {
+                        value: Style.navPosition
+                        options: [{ value: "left", label: qsTr("Left") }, { value: "right", label: qsTr("Right") }]
+                        onPicked: (v) => Theme.setToken("layout", "navPosition", v)
+                    }
+                }
+                RowLayout {
+                    spacing: Style.px(14)
+                    Txt { text: qsTr("Menu style"); Layout.preferredWidth: Style.px(150) }
+                    Segmented {
+                        value: Style.navCompact ? "compact" : "full"
+                        options: [{ value: "full", label: qsTr("Icons and names") }, { value: "compact", label: qsTr("Icons only") }]
+                        onPicked: (v) => Theme.setToken("layout", "navStyle", v)
+                    }
+                }
+                RowLayout {
+                    spacing: Style.px(14)
+                    Txt { text: qsTr("Panels"); Layout.preferredWidth: Style.px(150) }
+                    Segmented {
+                        value: Style.panelStyle
+                        options: [{ value: "glass", label: qsTr("Glass") }, { value: "solid", label: qsTr("Solid") },
+                                  { value: "outline", label: qsTr("Outline") }]
+                        onPicked: (v) => Theme.setToken("layout", "panelStyle", v)
+                    }
+                }
+                TokenSlider {
+                    visible: Style.panelStyle === "glass"
+                    label: qsTr("Panel opacity"); from: 0.4; to: 1
+                    value: Style.panelOpacity
+                    onMoved: (v) => Theme.setToken("layout", "panelOpacity", Math.round(v * 100) / 100)
+                }
+                TokenSlider {
+                    label: qsTr("Title size"); from: 36; to: 76; stepSize: 2; decimals: 0; suffix: " px"
+                    value: Theme.layout.heroSize || 52
+                    onMoved: (v) => Theme.setToken("layout", "heroSize", Math.round(v))
+                }
+                RowLayout {
+                    spacing: Style.px(12)
+                    Switch {
+                        id: hotbarSwitch
+                        checked: Style.showHotbar
+                        onToggled: Theme.setToken("layout", "showHotbar", checked)
+                        Accessible.name: qsTr("Show hotbar on Home")
+                        indicator: Rectangle {
+                            implicitWidth: Style.px(42); implicitHeight: Style.px(24); radius: height / 2
+                            color: hotbarSwitch.checked ? Style.accent : Style.line
+                            border.width: hotbarSwitch.visualFocus ? 2 : 0
+                            border.color: Style.text
+                            Rectangle {
+                                width: Style.px(18); height: width; radius: width / 2
+                                y: (parent.height - height) / 2
+                                x: hotbarSwitch.checked ? parent.width - width - 3 : 3
+                                color: hotbarSwitch.checked ? Style.onAccent : Style.text
+                                Behavior on x { NumberAnimation { duration: Style.dur(120) } }
+                            }
+                        }
+                    }
+                    Txt { text: qsTr("Show hotbar on Home") }
+                }
+
+                Heading { text: qsTr("Fonts") }
+                FontPicker {
+                    label: qsTr("Titles")
                     value: Style.display
-                    options: [{ value: "Unbounded", label: "Unbounded" }, { value: "Golos Text", label: "Golos Text" },
-                              { value: Qt.application.font.family, label: qsTr("System") }]
-                    onPicked: (v) => Theme.setToken("type", "display", v)
+                    onPicked: (f) => Theme.setToken("type", "display", f)
+                }
+                FontPicker {
+                    label: qsTr("Interface")
+                    value: Style.ui
+                    onPicked: (f) => Theme.setToken("type", "ui", f)
                 }
 
                 Heading { text: qsTr("Motion") }

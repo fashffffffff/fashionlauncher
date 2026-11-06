@@ -19,10 +19,10 @@ ApplicationWindow {
         instance: "PageInstance.qml", create: "PageCreate.qml"
     })
 
-    // Debug/automation entry (FFPRISM_PAGE): a section name, "accounts", or "instance:<id>"
+    // Debug/automation entry (FFPRISM_PAGE): a section name, "create", "accounts", or "instance:<id>[:<tab>]"
     function showPage(name: var) {
         if (name === "accounts") accounts.open()
-        else if (name.startsWith("instance:")) Router.openInstance(name.slice(9))
+        else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
         else if (pageFiles[name]) Router.go(name)
     }
 

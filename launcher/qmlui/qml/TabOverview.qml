@@ -41,6 +41,7 @@ Item {
             GridLayout {
                 Layout.fillWidth: true
                 columns: 3
+                uniformCellWidths: true
                 columnSpacing: Style.px(10)
                 rowSpacing: Style.px(10)
                 Action { iconName: "folder"; text: qsTr("Open folder"); onClicked: Launcher.openInstanceFolder(tab.instanceId) }

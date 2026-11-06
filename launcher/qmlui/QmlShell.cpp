@@ -5,6 +5,7 @@
 #include <QFontDatabase>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QtQml>
 #include <QQuickStyle>
 #include <QQuickWindow>
 #include <QTimer>
@@ -20,6 +21,7 @@
 #include "create/CreateBridge.h"
 #include "resources/ResourcesBridge.h"
 #include "settings/SettingsBridge.h"
+#include "worlds/WorldsModel.h"
 #include "settings/SettingsObject.h"
 
 QmlShell::QmlShell(QObject* parent) : QObject(parent)
@@ -31,6 +33,13 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
         // Basic is the only Controls style that is fully restyleable from QML on every platform
         QQuickStyle::setStyle("Basic");
         fontsLoaded = true;
+    }
+
+    static bool typesRegistered = false;
+    if (!typesRegistered) {
+        // Creatable models: `import FFPrism` then e.g. `WorldsModel { instanceId: ... }`
+        qmlRegisterType<WorldsModel>("FFPrism", 1, 0, "WorldsModel");
+        typesRegistered = true;
     }
 
     m_theme = new UiTheme(this);
