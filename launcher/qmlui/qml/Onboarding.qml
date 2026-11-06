@@ -10,13 +10,8 @@ Item {
     readonly property int steps: Instances.count === 0 ? 3 : 2
     function next() { if (step + 1 >= steps) Launcher.finishOnboarding(); else step++ }
 
-    // The interface is fully translated into these; the rest come from Prism's translations.
-    readonly property var languages: {
-        const all = Launcher.languages
-        const first = ["en_US", "ru"]
-        const top = first.map(k => all.find(l => l.key === k)).filter(l => l)
-        return top.concat(all.filter(l => first.indexOf(l.key) < 0))
-    }
+    // The languages the interface is fully translated into, already in display order.
+    readonly property var languages: Launcher.languages
 
     Rectangle { anchors.fill: parent; color: Style.alpha(Style.scrim, 0.78) }
     MouseArea { anchors.fill: parent }   // block the app underneath

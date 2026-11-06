@@ -44,6 +44,8 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 - QML mode never shows the classic setup wizard: `createSetupWizard` applies quiet defaults (language = system locale,
   auto Java). App icon: `setWindowIcon(logo())` at shell start, POST_BUILD copies .icns into the build-tree bundle,
   `FashionLauncher.icon` (Icon Composer) rebuilt from our art (compiled only with Xcode 26 actool).
+- UI languages: exactly 15 (en ru es pt_BR de fr it pl uk tr zh_CN ja ko cs id), `i18n/qmlui_<code>.ts`; script
+  `launcher/qmlui/i18n/update.sh` re-runs lupdate for all and reports unfinished counts.
 
 ## Commands
 - Build (Ninja, Debug, already configured in `build/`):
@@ -53,7 +55,9 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 - Run with test data only: `-d /Users/fash/projects/ffprism/devdata`. Window snapshot:
   `FFPRISM_SNAPSHOT=/tmp/x.png FFPRISM_PAGE=play|library|appearance|accounts FFPRISM_SNAPSHOT_QUIT=1`
   (never full-screen screencapture — user's private apps are on screen).
-- Strings: `lupdate qml/*.qml qml/Fmt.js *.cpp -ts i18n/qmlui_ru.ts`, then `lrelease`.
+- Strings: `launcher/qmlui/i18n/update.sh` (lupdate+lrelease for all 14 .ts, prints todo per language; `--report` only).
+  Fill gaps: `i18n/tsjson.py export <lang> out.json` → translate → `tsjson.py apply <lang> in.json` (validates
+  placeholders/HTML/plural count), then update.sh again. .qm files are globbed into the qrc by CMake.
 
 - Translations (after every UI change), in `launcher/qmlui`: `lupdate qml/*.qml qml/*.js $(find . -name "*.cpp")
   -ts i18n/qmlui_ru.ts -locations none -no-obsolete`, fill unfinished entries (plurals: 3 Russian forms), `lrelease`.
@@ -87,6 +91,11 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   (panorama, shader backgrounds, pack covers), qml-gallery (community gallery + UI sounds), qml-skins (3D skins,
   servers on Home/tab). Next: review & merge each into try-all, translate RU, build, verify, ask to push.
 - Pending: anime/extra wallpapers (Gemini 429); public gallery repo fashffffffff/fashion-gallery needs user OK.
+
+- Languages (2026-11-06): new UI offers exactly 15 (table `g_uiLanguages` in LauncherBridge.cpp: Prism key, qm code,
+  native name). Setting "Language" stores Prism's key (Simplified Chinese = `zh`, file `qmlui_zh_CN`); other saved keys
+  are mapped to the closest (`supportedLanguage`) on start and when the translations index arrives. setLanguage also
+  calls `updateLanguage` so Prism's core .po downloads.
 
 ## Gotchas
 - `anyAccountIsValid()` really means "some MS account owns Minecraft" — don't use it to mean "has accounts".

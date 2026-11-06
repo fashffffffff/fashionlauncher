@@ -115,9 +115,9 @@ void QmlShell::loadTranslator()
         delete m_translator;
         m_translator = nullptr;
     }
-    const QString lang = APPLICATION->settings()->get("Language").toString().section('_', 0, 0);
+    const QString code = LauncherBridge::uiTranslationCode(APPLICATION->settings()->get("Language").toString());
     auto* translator = new QTranslator(this);
-    if (translator->load(QString(":/qmlui/i18n/qmlui_%1.qm").arg(lang))) {
+    if (!code.isEmpty() && translator->load(QString(":/qmlui/i18n/qmlui_%1.qm").arg(code))) {
         QCoreApplication::installTranslator(translator);
         m_translator = translator;
     } else {
