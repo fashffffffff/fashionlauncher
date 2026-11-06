@@ -23,6 +23,7 @@ class LauncherBridge : public QObject {
     Q_PROPERTY(QVariantMap launches READ launches NOTIFY launchesChanged)
     Q_PROPERTY(QString version READ version CONSTANT)
     Q_PROPERTY(QString appName READ appName CONSTANT)
+    Q_PROPERTY(QString logo READ logo CONSTANT)
     /// [{ key, name }] — every language Prism knows; the new UI itself ships English and Russian
     Q_PROPERTY(QVariantList languages READ languages NOTIFY languagesChanged)
     Q_PROPERTY(QString language READ language NOTIFY languageChanged)
@@ -37,6 +38,7 @@ class LauncherBridge : public QObject {
     QVariantMap launches() const { return m_launches; }
     QString version() const;
     QString appName() const;
+    QString logo() const;
     QVariantList languages() const;
     QString language() const;
     bool onboardingDone() const;

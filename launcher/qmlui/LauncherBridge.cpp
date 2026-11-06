@@ -44,6 +44,11 @@ QString LauncherBridge::version() const
     return BuildConfig.printableVersionString();
 }
 
+QString LauncherBridge::logo() const
+{
+    return "qrc:/" + BuildConfig.LAUNCHER_SVGFILENAME;
+}
+
 QString LauncherBridge::appName() const
 {
     return BuildConfig.LAUNCHER_DISPLAYNAME;

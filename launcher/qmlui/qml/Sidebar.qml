@@ -76,18 +76,30 @@ Rectangle {
         anchors { fill: parent; margins: Style.px(12) }
         spacing: Style.px(4)
 
-        Text {
+        RowLayout {
             Layout.fillWidth: true
-            Layout.topMargin: Style.px(8)
-            Layout.bottomMargin: Style.px(18)
-            Layout.leftMargin: bar.compact ? 0 : Style.px(10)
-            horizontalAlignment: bar.compact ? Text.AlignHCenter : Text.AlignLeft
-            text: bar.compact ? Launcher.appName.charAt(0) : Launcher.appName
-            color: Style.text
-            font.family: Style.display
-            font.pixelSize: Style.px(bar.compact ? 22 : 16)
-            font.weight: Font.DemiBold
-            elide: Text.ElideRight
+            Layout.topMargin: Style.px(6)
+            Layout.bottomMargin: Style.px(16)
+            Layout.leftMargin: bar.compact ? 0 : Style.px(6)
+            spacing: Style.px(10)
+            Item { visible: bar.compact; Layout.fillWidth: true }
+            Image {
+                source: Launcher.logo
+                Layout.preferredWidth: Style.px(30); Layout.preferredHeight: Style.px(30)
+                sourceSize: Qt.size(96, 96)
+                smooth: true
+            }
+            Text {
+                visible: !bar.compact
+                Layout.fillWidth: true
+                text: Launcher.appName
+                color: Style.text
+                font.family: Style.display
+                font.pixelSize: Style.px(15)
+                font.weight: Font.DemiBold
+                elide: Text.ElideRight
+            }
+            Item { visible: bar.compact; Layout.fillWidth: true }
         }
 
         // Search: opens the command palette
