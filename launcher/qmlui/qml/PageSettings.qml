@@ -27,11 +27,15 @@ Item {
         // Section list
         ColumnLayout {
             Layout.preferredWidth: Style.px(240)
+            Layout.maximumWidth: Style.px(240)   // long translations must not push into the panes
             Layout.fillHeight: true
             spacing: Style.px(6)
             Text {
                 text: qsTr("Settings")
                 color: Style.text
+                Layout.fillWidth: true
+                fontSizeMode: Text.HorizontalFit   // "Einstellungen", "Налаштування" shrink to fit
+                minimumPixelSize: Style.px(20)
                 font.family: Style.display
                 font.pixelSize: Style.px(34)
                 font.weight: Font.DemiBold

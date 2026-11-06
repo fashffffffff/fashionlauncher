@@ -5,145 +5,145 @@
     <name>AccountsModel</name>
     <message>
         <source>Use 3–16 characters: Latin letters, digits and underscores.</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilisez de 3 à 16 caractères : lettres latines, chiffres et tirets du bas.</translation>
     </message>
     <message>
         <source>You already have an offline account named %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vous avez déjà un compte hors ligne nommé %1.</translation>
     </message>
     <message>
         <source>Couldn&apos;t create the account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de créer le compte.</translation>
     </message>
     <message>
         <source>Contacting Microsoft…</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion à Microsoft…</translation>
     </message>
 </context>
 <context>
     <name>AccountsPanel</name>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <source>Microsoft account</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte Microsoft</translation>
     </message>
     <message>
         <source>Offline account</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte hors ligne</translation>
     </message>
     <message>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Comptes</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer</translation>
     </message>
     <message>
         <source>Add an account to play. Sign in with Microsoft to play online, or add an offline account with any name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajoutez un compte pour jouer. Connectez-vous avec Microsoft pour jouer en ligne, ou ajoutez un compte hors ligne avec le nom de votre choix.</translation>
     </message>
     <message>
         <source>Needs signing in again</source>
-        <translation type="unfinished"></translation>
+        <translation>Reconnexion requise</translation>
     </message>
     <message>
         <source>Checking…</source>
-        <translation type="unfinished"></translation>
+        <translation>Vérification…</translation>
     </message>
     <message>
         <source>Microsoft</source>
-        <translation type="unfinished"></translation>
+        <translation>Microsoft</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation>Hors ligne</translation>
     </message>
     <message>
         <source>Sign in again</source>
-        <translation type="unfinished"></translation>
+        <translation>Se reconnecter</translation>
     </message>
     <message>
         <source>Remove account</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer le compte</translation>
     </message>
     <message>
         <source>Skins</source>
-        <translation type="unfinished"></translation>
+        <translation>Skins</translation>
     </message>
     <message>
         <source>Sign in with Microsoft</source>
-        <translation type="unfinished"></translation>
+        <translation>Se connecter avec Microsoft</translation>
     </message>
     <message>
         <source>Add offline account</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter un compte hors ligne</translation>
     </message>
     <message>
         <source>Signed in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Connecté.</translation>
     </message>
     <message>
         <source>Sign in in the browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Se connecter dans le navigateur</translation>
     </message>
     <message>
         <source>Or open %1 on any device and enter this code:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ou ouvrez %1 sur n&apos;importe quel appareil et saisissez ce code :</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier le code</translation>
     </message>
     <message>
         <source>Open page</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir la page</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Réessayer</translation>
     </message>
     <message>
         <source>Offline accounts play singleplayer and on servers with online mode turned off. The name is what other players see.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les comptes hors ligne permettent de jouer en solo et sur les serveurs où le mode en ligne est désactivé. Le nom est celui visible par les autres joueurs.</translation>
     </message>
     <message>
         <source>Player name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom du joueur</translation>
     </message>
     <message>
         <source>Add account</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter le compte</translation>
     </message>
 </context>
 <context>
     <name>AppearanceBackground</name>
     <message>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrière-plan</translation>
     </message>
     <message>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Fond d&apos;écran</translation>
     </message>
     <message>
         <source>Slideshow</source>
-        <translation type="unfinished"></translation>
+        <translation>Diaporama</translation>
     </message>
     <message>
         <source>Screenshot</source>
-        <translation type="unfinished"></translation>
+        <translation>Capture d&apos;écran</translation>
     </message>
     <message>
         <source>My image</source>
-        <translation type="unfinished"></translation>
+        <translation>Mon image</translation>
     </message>
     <message>
         <source>Video</source>
-        <translation type="unfinished"></translation>
+        <translation>Vidéo</translation>
     </message>
     <message>
         <source>Panorama</source>
@@ -151,7 +151,7 @@
     </message>
     <message>
         <source>Blocks</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocs</translation>
     </message>
     <message>
         <source>Animated</source>
@@ -159,27 +159,27 @@
     </message>
     <message>
         <source>Solid</source>
-        <translation type="unfinished"></translation>
+        <translation>Couleur unie</translation>
     </message>
     <message>
         <source>One picture behind everything. Pick it below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Une seule image en arrière-plan. Choisissez-la ci-dessous.</translation>
     </message>
     <message>
         <source>Wallpapers take turns. Tick the ones you want below; none ticked means all of them.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les fonds d&apos;écran défilent à tour de rôle. Cochez ceux souhaités ci-dessous ; si aucun n&apos;est coché, ils seront tous utilisés.</translation>
     </message>
     <message>
         <source>Shows the newest screenshot of the selected instance. Instances without screenshots show the wallpaper selected below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Affiche la capture d&apos;écran la plus récente de l&apos;instance sélectionnée. Les instances sans capture d&apos;écran affichent le fond d&apos;écran choisi ci-dessous.</translation>
     </message>
     <message>
         <source>Your own picture behind everything.</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre propre image en arrière-plan.</translation>
     </message>
     <message>
         <source>A muted, looping video. It pauses on other pages and stops while the window is hidden or a game is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Une vidéo muette en boucle. Elle se met en pause sur les autres pages et s&apos;arrête lorsque la fenêtre est masquée ou qu&apos;un jeu est en cours.</translation>
     </message>
     <message>
         <source>The slowly turning view from the Minecraft title screen. It pauses on other pages and stops while the window is hidden or a game is running.</source>
@@ -191,27 +191,27 @@
     </message>
     <message>
         <source>Blocks in your accent color, different for every instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Des blocs aux couleurs de votre thème d&apos;accentuation, différents pour chaque instance.</translation>
     </message>
     <message>
         <source>A calm single color.</source>
-        <translation type="unfinished"></translation>
+        <translation>Une couleur unie sobre.</translation>
     </message>
     <message>
         <source>Change every</source>
-        <translation type="unfinished"></translation>
+        <translation>Changer toutes les</translation>
     </message>
     <message>
         <source>%1 s</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 s</translation>
     </message>
     <message>
         <source>%1 min</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 min</translation>
     </message>
     <message>
         <source>Theme background</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrière-plan du thème</translation>
     </message>
     <message>
         <source>Aurora</source>
@@ -247,51 +247,51 @@
     </message>
     <message>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>Tous</translation>
     </message>
     <message>
         <source>Landscapes</source>
-        <translation type="unfinished"></translation>
+        <translation>Paysages</translation>
     </message>
     <message>
         <source>Anime</source>
-        <translation type="unfinished"></translation>
+        <translation>Anime</translation>
     </message>
     <message>
         <source>Mine</source>
-        <translation type="unfinished"></translation>
+        <translation>Les miens</translation>
     </message>
     <message>
         <source>Add image…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter une image…</translation>
     </message>
     <message>
         <source>Add video…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter une vidéo…</translation>
     </message>
     <message>
         <source>Open folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier</translation>
     </message>
     <message>
         <source>No pictures yet. Add your own image or video.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune image pour le moment. Ajoutez votre propre image ou vidéo.</translation>
     </message>
     <message>
         <source>Blur</source>
-        <translation type="unfinished"></translation>
+        <translation>Flou</translation>
     </message>
     <message>
         <source>Darken</source>
-        <translation type="unfinished"></translation>
+        <translation>Assombrir</translation>
     </message>
     <message>
         <source>Background for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrière-plan pour %1</translation>
     </message>
     <message>
         <source>Shown instead of the theme background while this instance is selected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Affiché à la place de l&apos;arrière-plan du thème lorsque cette instance est sélectionnée.</translation>
     </message>
     <message>
         <source>Instance pictures</source>
@@ -307,23 +307,23 @@
     </message>
     <message>
         <source>Couldn&apos;t add that file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;ajouter ce fichier.</translation>
     </message>
     <message>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir une image d&apos;arrière-plan</translation>
     </message>
     <message>
         <source>Images (*.png *.jpg *.jpeg *.webp)</source>
-        <translation type="unfinished"></translation>
+        <translation>Images (*.png *.jpg *.jpeg *.webp)</translation>
     </message>
     <message>
         <source>Choose a background video</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir une vidéo d&apos;arrière-plan</translation>
     </message>
     <message>
         <source>Videos (*.mp4 *.webm *.mov *.m4v)</source>
-        <translation type="unfinished"></translation>
+        <translation>Vidéos (*.mp4 *.webm *.mov *.m4v)</translation>
     </message>
 </context>
 <context>
@@ -413,7 +413,7 @@
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Minecraft %1</translation>
     </message>
     <message>
         <source>Minecraft</source>
@@ -476,109 +476,109 @@
     <name>BgInstancePicker</name>
     <message>
         <source>Follow theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Suivre le thème</translation>
     </message>
     <message>
         <source>Add image…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter une image…</translation>
     </message>
     <message>
         <source>Add video…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter une vidéo…</translation>
     </message>
     <message>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir une image d&apos;arrière-plan</translation>
     </message>
     <message>
         <source>Images (*.png *.jpg *.jpeg *.webp)</source>
-        <translation type="unfinished"></translation>
+        <translation>Images (*.png *.jpg *.jpeg *.webp)</translation>
     </message>
     <message>
         <source>Choose a background video</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir une vidéo d&apos;arrière-plan</translation>
     </message>
     <message>
         <source>Videos (*.mp4 *.webm *.mov *.m4v)</source>
-        <translation type="unfinished"></translation>
+        <translation>Vidéos (*.mp4 *.webm *.mov *.m4v)</translation>
     </message>
 </context>
 <context>
     <name>BgThumb</name>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer</translation>
     </message>
 </context>
 <context>
     <name>CommandPalette</name>
     <message>
         <source>Play %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer à %1</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instance</translation>
     </message>
     <message>
         <source>Open %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir %1</translation>
     </message>
     <message>
         <source>Mods of %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mods de %1</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une instance</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Action</translation>
     </message>
     <message>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Comptes</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Accueil</translation>
     </message>
     <message>
         <source>Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Écran</translation>
     </message>
     <message>
         <source>Instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Instances</translation>
     </message>
     <message>
         <source>Browse mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcourir les mods</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Apparence</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Theme: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Thème : %1</translation>
     </message>
     <message>
         <source>Search instances, screens and actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des instances, des écrans et des actions</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun résultat</translation>
     </message>
     <message>
         <source>↑↓ to move, Enter to run, Esc to close</source>
-        <translation type="unfinished"></translation>
+        <translation>↑↓ pour se déplacer, Enter pour exécuter, Esc pour fermer</translation>
     </message>
 </context>
 <context>
@@ -592,7 +592,7 @@
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Copier l&apos;instance</translation>
     </message>
     <message>
         <source>%1 (copy)</source>
@@ -600,19 +600,19 @@
     </message>
     <message>
         <source>Icon</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Icône</translation>
     </message>
     <message>
         <source>Change icon</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Changer l&apos;icône</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nom</translation>
     </message>
     <message>
         <source>No group</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Aucun groupe</translation>
     </message>
     <message>
         <source>Bring along</source>
@@ -620,19 +620,19 @@
     </message>
     <message>
         <source>Worlds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mondes</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mods</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Packs de ressources</translation>
     </message>
     <message>
         <source>Shaders</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Shaders</translation>
     </message>
     <message>
         <source>Game options</source>
@@ -644,7 +644,7 @@
     </message>
     <message>
         <source>Screenshots</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Captures d&apos;écran</translation>
     </message>
     <message>
         <source>Play time</source>
@@ -656,7 +656,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -667,67 +667,67 @@
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez d&apos;abord une version de Minecraft.</translation>
     </message>
     <message>
         <source>%1 is not available for Minecraft %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 n&apos;est pas disponible pour Minecraft %2.</translation>
     </message>
     <message>
         <source>This modpack has no versions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce modpack n&apos;a aucune version.</translation>
     </message>
     <message>
         <source>The author doesn&apos;t allow this modpack to be downloaded by launchers.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;auteur n&apos;autorise pas le téléchargement de ce modpack par des lanceurs.</translation>
     </message>
     <message>
         <source>Couldn&apos;t load versions: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de charger les versions : %1</translation>
     </message>
     <message>
         <source>Pick a Minecraft version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez une version de Minecraft.</translation>
     </message>
     <message>
         <source>Pick a %1 version, or choose “None” as the mod loader.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez une version de %1, ou choisissez « Aucun » comme chargeur de mods.</translation>
     </message>
     <message>
         <source>Pick a modpack version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez une version du modpack.</translation>
     </message>
     <message>
         <source>This CurseForge link is incomplete.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce lien CurseForge est incomplet.</translation>
     </message>
     <message>
         <source>Looking up the modpack…</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche du modpack…</translation>
     </message>
     <message>
         <source>This link isn&apos;t a modpack.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce lien ne correspond pas à un modpack.</translation>
     </message>
     <message>
         <source>The author of %1 doesn&apos;t allow launchers to download it. Download it in the browser and import the file.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;auteur de %1 n&apos;autorise pas son téléchargement par des lanceurs. Téléchargez-le dans votre navigateur et importez le fichier.</translation>
     </message>
     <message>
         <source>Choose a .zip or .mrpack file, or paste a link to one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez un fichier .zip ou .mrpack, ou collez un lien vers l&apos;un d&apos;eux.</translation>
     </message>
     <message>
         <source>Preparing…</source>
-        <translation type="unfinished"></translation>
+        <translation>Préparation…</translation>
     </message>
     <message>
         <source>Creating the instance failed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec de la création de l&apos;instance.</translation>
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installation de %1</translation>
     </message>
     <message>
         <source>“%1” is ready. %2</source>
@@ -753,23 +753,23 @@
     <name>CreateIconPicker</name>
     <message>
         <source>Choose an image</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir une image</translation>
     </message>
     <message>
         <source>Images (*.png *.jpg *.jpeg *.svg *.ico *.gif *.webp)</source>
-        <translation type="unfinished"></translation>
+        <translation>Images (*.png *.jpg *.jpeg *.svg *.ico *.gif *.webp)</translation>
     </message>
     <message>
         <source>That image couldn&apos;t be added.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;ajouter cette image.</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Icône</translation>
     </message>
     <message>
         <source>Add image…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter une image…</translation>
     </message>
 </context>
 <context>
@@ -795,11 +795,11 @@
     </message>
     <message>
         <source>Choose a file or paste a link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez un fichier ou collez un lien.</translation>
     </message>
     <message>
         <source>That isn&apos;t a .zip or .mrpack file or a download link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce n&apos;est ni un fichier .zip ou .mrpack, ni un lien de téléchargement.</translation>
     </message>
     <message>
         <source>Choose a launcher or instance folder</source>
@@ -807,19 +807,19 @@
     </message>
     <message>
         <source>Choose a modpack file</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir un fichier de modpack</translation>
     </message>
     <message>
         <source>Modpacks (*.zip *.mrpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Modpacks (*.zip *.mrpack)</translation>
     </message>
     <message>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tous les fichiers (*)</translation>
     </message>
     <message>
         <source>Choose what to import</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir quoi importer</translation>
     </message>
     <message>
         <source>Instances from CurseForge, Modrinth App, ATLauncher, MultiMC, Prism and the official Minecraft launcher on this computer.</source>
@@ -827,7 +827,7 @@
     </message>
     <message>
         <source>Modrinth packs (.mrpack), CurseForge packs and instances exported from this or other launchers (.zip).</source>
-        <translation type="unfinished"></translation>
+        <translation>Packs Modrinth (.mrpack), packs CurseForge et instances exportées depuis ce lanceur ou d&apos;autres (.zip).</translation>
     </message>
     <message>
         <source>File or link</source>
@@ -839,201 +839,201 @@
     </message>
     <message>
         <source>Drop a file here</source>
-        <translation type="unfinished"></translation>
+        <translation>Déposez un fichier ici</translation>
     </message>
     <message>
         <source>Ready to import.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prêt à importer.</translation>
     </message>
     <message>
         <source>or</source>
-        <translation type="unfinished"></translation>
+        <translation>ou</translation>
     </message>
     <message>
         <source>Choose another file…</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir un autre fichier…</translation>
     </message>
     <message>
         <source>Choose file…</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir un fichier…</translation>
     </message>
     <message>
         <source>Or paste a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Ou collez un lien</translation>
     </message>
     <message>
         <source>https://… or curseforge://…</source>
-        <translation type="unfinished"></translation>
+        <translation>https://… ou curseforge://…</translation>
     </message>
     <message>
         <source>Link to a modpack</source>
-        <translation type="unfinished"></translation>
+        <translation>Lien vers un modpack</translation>
     </message>
 </context>
 <context>
     <name>CreateModpack</name>
     <message>
         <source>Use the modpack&apos;s logo</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser le logo du modpack</translation>
     </message>
     <message>
         <source>Pick a modpack.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez un modpack.</translation>
     </message>
     <message>
         <source>Loading versions…</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargement des versions…</translation>
     </message>
     <message>
         <source>Pick a version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez une version.</translation>
     </message>
     <message>
         <source>Find a modpack</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouver un modpack</translation>
     </message>
     <message>
         <source>Search modpacks</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des modpacks</translation>
     </message>
     <message>
         <source>%1 downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 téléchargements</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished"></translation>
+        <translation>par %1</translation>
     </message>
     <message>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche…</translation>
     </message>
     <message>
         <source>Couldn&apos;t search: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;effectuer la recherche : %1</translation>
     </message>
     <message>
         <source>No modpacks found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun modpack trouvé.</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Réessayer</translation>
     </message>
     <message>
         <source>Pick a modpack from the list to see its versions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez un modpack dans la liste pour voir ses versions.</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version</translation>
     </message>
     <message>
         <source>The newest stable version is picked for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>La version stable la plus récente est sélectionnée pour vous.</translation>
     </message>
     <message>
         <source>Beta</source>
-        <translation type="unfinished"></translation>
+        <translation>Bêta</translation>
     </message>
     <message>
         <source>Alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Alpha</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft %1</translation>
     </message>
 </context>
 <context>
     <name>CreateVanilla</name>
     <message>
         <source>Pick a Minecraft version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez une version de Minecraft.</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun</translation>
     </message>
     <message>
         <source>Snapshot</source>
-        <translation type="unfinished"></translation>
+        <translation>Snapshot</translation>
     </message>
     <message>
         <source>Experiment</source>
-        <translation type="unfinished"></translation>
+        <translation>Expérimentale</translation>
     </message>
     <message>
         <source>Beta</source>
-        <translation type="unfinished"></translation>
+        <translation>Bêta</translation>
     </message>
     <message>
         <source>Alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Alpha</translation>
     </message>
     <message>
         <source>Loading versions…</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargement des versions…</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the list: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de charger la liste : %1</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Réessayer</translation>
     </message>
     <message>
         <source>Minecraft version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version de Minecraft</translation>
     </message>
     <message>
         <source>Search versions</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des versions</translation>
     </message>
     <message>
         <source>Search Minecraft versions</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des versions de Minecraft</translation>
     </message>
     <message>
         <source>Snapshots</source>
-        <translation type="unfinished"></translation>
+        <translation>Snapshots</translation>
     </message>
     <message>
         <source>Old versions</source>
-        <translation type="unfinished"></translation>
+        <translation>Anciennes versions</translation>
     </message>
     <message>
         <source>Reload the version list</source>
-        <translation type="unfinished"></translation>
+        <translation>Actualiser la liste des versions</translation>
     </message>
     <message>
         <source>Recommended</source>
-        <translation type="unfinished"></translation>
+        <translation>Recommandé</translation>
     </message>
     <message>
         <source>No versions match “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune version ne correspond à « %1 ».</translation>
     </message>
     <message>
         <source>No versions to show.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune version à afficher.</translation>
     </message>
     <message>
         <source>Mod loader</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargeur de mods</translation>
     </message>
     <message>
         <source>Needed to play with mods. Pick “None” for the plain game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Requis pour jouer avec des mods. Choisissez « Aucun » pour le jeu de base.</translation>
     </message>
     <message>
         <source>%1 version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version de %1</translation>
     </message>
     <message>
         <source>The game as Mojang ships it. You can add a mod loader later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le jeu tel que fourni par Mojang. Vous pourrez ajouter un chargeur de mods plus tard.</translation>
     </message>
 </context>
 <context>
@@ -1052,15 +1052,15 @@
     </message>
     <message>
         <source>Delete “%1”?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Supprimer « %1 » ?</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Supprimer</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>“%1” was moved to the Trash.</source>
@@ -1076,11 +1076,11 @@
     </message>
     <message>
         <source>Microsoft</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Microsoft</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hors ligne</translation>
     </message>
     <message>
         <source>Always use this account</source>
@@ -1088,7 +1088,7 @@
     </message>
     <message>
         <source>Player name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nom du joueur</translation>
     </message>
     <message>
         <source>Letters, digits and _ only, up to 16 characters.</source>
@@ -1096,7 +1096,7 @@
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Jouer</translation>
     </message>
     <message>
         <source>Working…</source>
@@ -1171,7 +1171,7 @@
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 Mo</translation>
     </message>
     <message>
         <source>Include</source>
@@ -1183,11 +1183,11 @@
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Aucun</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Export…</source>
@@ -1198,42 +1198,42 @@
     <name>Fmt</name>
     <message>
         <source>Not played yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Jamais joué</translation>
     </message>
     <message>
         <source>%1 min played</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 min de jeu</translation>
     </message>
     <message>
         <source>%1 h %2 min played</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 h %2 min de jeu</translation>
     </message>
     <message>
         <source>%1 h played</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 h de jeu</translation>
     </message>
     <message>
         <source>Last played today</source>
-        <translation type="unfinished"></translation>
+        <translation>Dernière partie aujourd&apos;hui</translation>
     </message>
     <message>
         <source>Last played yesterday</source>
-        <translation type="unfinished"></translation>
+        <translation>Dernière partie hier</translation>
     </message>
     <message>
         <source>Last played %1 days ago</source>
-        <translation type="unfinished"></translation>
+        <translation>Dernière partie il y a %1 jours</translation>
     </message>
     <message>
         <source>Last played %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Dernière partie le %1</translation>
     </message>
 </context>
 <context>
     <name>FontPicker</name>
     <message>
         <source>Search fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des polices</translation>
     </message>
 </context>
 <context>
@@ -1244,7 +1244,7 @@
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hors ligne</translation>
     </message>
     <message>
         <source>Hosting %1</source>
@@ -1260,7 +1260,7 @@
     </message>
     <message>
         <source>Playing</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">En jeu</translation>
     </message>
     <message>
         <source>Online</source>
@@ -1280,7 +1280,7 @@
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Réessayer</translation>
     </message>
     <message>
         <source>Invite</source>
@@ -1288,7 +1288,7 @@
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Plus</translation>
     </message>
     <message>
         <source>Copy friend code</source>
@@ -1460,7 +1460,7 @@
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Minecraft %1</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
@@ -1581,7 +1581,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Join</source>
@@ -1734,7 +1734,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message numerus="yes">
         <source>Invite %n friends</source>
@@ -1847,7 +1847,7 @@
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">par %1</translation>
     </message>
     <message>
         <source>1 download</source>
@@ -1862,11 +1862,11 @@
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installation…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installer</translation>
     </message>
 </context>
 <context>
@@ -1881,11 +1881,11 @@
     </message>
     <message>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Arrière-plan</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">par %1</translation>
     </message>
     <message>
         <source>1 download</source>
@@ -1900,19 +1900,19 @@
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fermer</translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installation…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installer</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Appliquer</translation>
     </message>
     <message>
         <source>Use as background</source>
@@ -1958,7 +1958,7 @@
     </message>
     <message>
         <source>Manage</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gérer</translation>
     </message>
     <message>
         <source>Join</source>
@@ -1969,69 +1969,69 @@
     <name>InstalledModel</name>
     <message>
         <source>Removed “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>« %1 » supprimé</translation>
     </message>
     <message>
         <source>Could not remove “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de supprimer « %1 »</translation>
     </message>
     <message numerus="yes">
         <source>Added %n file(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n fichier ajouté</numerusform>
+            <numerusform>%n fichiers ajoutés</numerusform>
         </translation>
     </message>
     <message>
         <source>These files could not be added</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;ajouter ces fichiers</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mods</translation>
     </message>
     <message>
         <source>Install a mod loader for this instance first</source>
-        <translation type="unfinished"></translation>
+        <translation>Installez d&apos;abord un chargeur de mods pour cette instance</translation>
     </message>
     <message>
         <source>Updates are unavailable because mod metadata is turned off in Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Les mises à jour sont indisponibles car les métadonnées des mods sont désactivées dans les Paramètres</translation>
     </message>
     <message>
         <source>Looking for metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche des métadonnées</translation>
     </message>
     <message>
         <source>Checking for updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Vérification des mises à jour</translation>
     </message>
     <message>
         <source>Not installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Non installé</translation>
     </message>
     <message>
         <source>Everything is up to date</source>
-        <translation type="unfinished"></translation>
+        <translation>Tout est à jour</translation>
     </message>
     <message>
         <source>Close the game before updating</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermez le jeu avant de mettre à jour</translation>
     </message>
     <message>
         <source>Updating</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise à jour en cours</translation>
     </message>
     <message numerus="yes">
         <source>Updated %n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n élément mis à jour</numerusform>
+            <numerusform>%n éléments mis à jour</numerusform>
         </translation>
     </message>
     <message>
         <source>Some updates failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Certaines mises à jour ont échoué : %1</translation>
     </message>
     <message>
         <source>Updated %1</source>
@@ -2054,7 +2054,7 @@
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cette instance n&apos;existe plus.</translation>
     </message>
     <message>
         <source>The game is running. Close it before deleting this instance.</source>
@@ -2113,7 +2113,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Download</source>
@@ -2168,7 +2168,7 @@
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installation de %1</translation>
     </message>
     <message>
         <source>%1 is installed.</source>
@@ -2266,39 +2266,39 @@
     <name>LauncherBridge</name>
     <message>
         <source>Getting ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Préparation</translation>
     </message>
     <message>
         <source>Playing</source>
-        <translation type="unfinished"></translation>
+        <translation>En jeu</translation>
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cette instance n&apos;existe plus.</translation>
     </message>
     <message>
         <source>Close the game before changing its version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermez le jeu avant de modifier sa version.</translation>
     </message>
     <message>
         <source>Pick a Minecraft version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez une version de Minecraft.</translation>
     </message>
     <message>
         <source>Pick a mod loader version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez une version de chargeur de mods.</translation>
     </message>
     <message>
         <source>There is no game log yet. Play once first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il n&apos;y a pas encore de journal de jeu. Lancez le jeu une première fois.</translation>
     </message>
     <message>
         <source>Couldn&apos;t read the log.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de lire le journal.</translation>
     </message>
     <message>
         <source>The upload link is empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le lien de téléversement est vide.</translation>
     </message>
 </context>
 <context>
@@ -2351,100 +2351,100 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>%1 didn&apos;t start: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 n&apos;a pas démarré : %2</translation>
     </message>
     <message>
         <source>Signed in as %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Connecté en tant que %1</translation>
     </message>
     <message>
         <source>Drop to import this modpack</source>
-        <translation type="unfinished"></translation>
+        <translation>Déposez pour importer ce modpack</translation>
     </message>
 </context>
 <context>
     <name>Onboarding</name>
     <message>
         <source>Choose your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez votre langue</translation>
     </message>
     <message>
         <source>Add an account</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter un compte</translation>
     </message>
     <message>
         <source>Create your first instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créez votre première instance</translation>
     </message>
     <message>
         <source>You can change it later in Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vous pouvez la modifier plus tard dans les Paramètres.</translation>
     </message>
     <message>
         <source>Sign in with Microsoft to play online, or create an offline account with any name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Connectez-vous avec Microsoft pour jouer en ligne, ou créez un compte hors-ligne avec le nom de votre choix.</translation>
     </message>
     <message>
         <source>An instance is a separate Minecraft installation with its own version, mods and worlds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Une instance est une installation distincte de Minecraft avec sa propre version, ses mods et ses mondes.</translation>
     </message>
     <message>
         <source>Search languages</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher une langue</translation>
     </message>
     <message>
         <source>Signed in as %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Connecté en tant que %1</translation>
     </message>
     <message>
         <source>Sign in with Microsoft</source>
-        <translation type="unfinished"></translation>
+        <translation>Se connecter avec Microsoft</translation>
     </message>
     <message>
         <source>Add offline account</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter un compte hors-ligne</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une instance</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <source>Skip</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorer</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminé</translation>
     </message>
     <message>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Continuer</translation>
     </message>
 </context>
 <context>
     <name>PackSearchModel</name>
     <message>
         <source>Could not reach the server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de joindre le serveur.</translation>
     </message>
 </context>
 <context>
     <name>PackSettings</name>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 Mo</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 Go</translation>
     </message>
     <message>
         <source>This modpack asked for more memory than this computer has, so it got %1.</source>
@@ -2479,215 +2479,215 @@
     <name>PageAppearance</name>
     <message>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Apparence</translation>
     </message>
     <message>
         <source>Built-in</source>
-        <translation type="unfinished"></translation>
+        <translation>Intégrés</translation>
     </message>
     <message>
         <source>By %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Par %1</translation>
     </message>
     <message>
         <source>Yours</source>
-        <translation type="unfinished"></translation>
+        <translation>Les vôtres</translation>
     </message>
     <message>
         <source>When switching themes</source>
-        <translation type="unfinished"></translation>
+        <translation>Lors du changement de thème</translation>
     </message>
     <message>
         <source>Keep my layout and sizes</source>
-        <translation type="unfinished"></translation>
+        <translation>Conserver ma disposition et mes tailles</translation>
     </message>
     <message>
         <source>Themes only change colors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les thèmes ne modifient que les couleurs.</translation>
     </message>
     <message>
         <source>Keep my background</source>
-        <translation type="unfinished"></translation>
+        <translation>Conserver mon arrière-plan</translation>
     </message>
     <message>
         <source>Find more themes</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouver d&apos;autres thèmes</translation>
     </message>
     <message>
         <source>Open themes folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier des thèmes</translation>
     </message>
     <message>
         <source>Put .json theme files in this folder to install them. Edits to a theme file show up here as soon as you save it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez les fichiers de thème .json dans ce dossier pour les installer. Les modifications apportées à un fichier de thème s&apos;affichent ici dès que vous l&apos;enregistrez.</translation>
     </message>
     <message>
         <source>Your theme couldn&apos;t be loaded, so the default is shown. %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Votre thème n&apos;a pas pu être chargé, le thème par défaut est donc affiché. %1</translation>
     </message>
     <message>
         <source>Theme name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom du thème</translation>
     </message>
     <message>
         <source>Built-in themes stay as they are. Your first change saves a copy you can edit freely.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les thèmes intégrés restent inchangés. Votre première modification enregistre une copie que vous pouvez modifier librement.</translation>
     </message>
     <message>
         <source>Accent</source>
-        <translation type="unfinished"></translation>
+        <translation>Couleur d&apos;accentuation</translation>
     </message>
     <message>
         <source>Take the accent from the background</source>
-        <translation type="unfinished"></translation>
+        <translation>Extraire la couleur d&apos;accentuation de l&apos;arrière-plan</translation>
     </message>
     <message>
         <source>The main color of the current picture becomes the accent. Changes with each instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>La couleur principale de l&apos;image actuelle devient la couleur d&apos;accentuation. Change avec chaque instance.</translation>
     </message>
     <message>
         <source>Shape and size</source>
-        <translation type="unfinished"></translation>
+        <translation>Forme et taille</translation>
     </message>
     <message>
         <source>Corner radius</source>
-        <translation type="unfinished"></translation>
+        <translation>Rayon des coins</translation>
     </message>
     <message>
         <source>Hotbar slots</source>
-        <translation type="unfinished"></translation>
+        <translation>Emplacements de la hotbar</translation>
     </message>
     <message>
         <source>Interface scale</source>
-        <translation type="unfinished"></translation>
+        <translation>Échelle de l&apos;interface</translation>
     </message>
     <message>
         <source>Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Disposition</translation>
     </message>
     <message>
         <source>Menu position</source>
-        <translation type="unfinished"></translation>
+        <translation>Position du menu</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Gauche</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Droite</translation>
     </message>
     <message>
         <source>Menu style</source>
-        <translation type="unfinished"></translation>
+        <translation>Style du menu</translation>
     </message>
     <message>
         <source>Icons and names</source>
-        <translation type="unfinished"></translation>
+        <translation>Icônes et noms</translation>
     </message>
     <message>
         <source>Icons only</source>
-        <translation type="unfinished"></translation>
+        <translation>Icônes uniquement</translation>
     </message>
     <message>
         <source>Panels</source>
-        <translation type="unfinished"></translation>
+        <translation>Panneaux</translation>
     </message>
     <message>
         <source>Glass</source>
-        <translation type="unfinished"></translation>
+        <translation>Verre</translation>
     </message>
     <message>
         <source>Solid</source>
-        <translation type="unfinished"></translation>
+        <translation>Plein</translation>
     </message>
     <message>
         <source>Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Contour</translation>
     </message>
     <message>
         <source>Panel opacity</source>
-        <translation type="unfinished"></translation>
+        <translation>Opacité des panneaux</translation>
     </message>
     <message>
         <source>Title size</source>
-        <translation type="unfinished"></translation>
+        <translation>Taille des titres</translation>
     </message>
     <message>
         <source>Show hotbar on Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher la hotbar sur l&apos;accueil</translation>
     </message>
     <message>
         <source>Fonts</source>
-        <translation type="unfinished"></translation>
+        <translation>Polices</translation>
     </message>
     <message>
         <source>Titles</source>
-        <translation type="unfinished"></translation>
+        <translation>Titres</translation>
     </message>
     <message>
         <source>Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interface</translation>
     </message>
     <message>
         <source>Motion</source>
-        <translation type="unfinished"></translation>
+        <translation>Mouvement</translation>
     </message>
     <message>
         <source>Animations</source>
-        <translation type="unfinished"></translation>
+        <translation>Animations</translation>
     </message>
     <message>
         <source>All colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Toutes les couleurs</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrière-plan</translation>
     </message>
     <message>
         <source>Raised panels</source>
-        <translation type="unfinished"></translation>
+        <translation>Panneaux surélevés</translation>
     </message>
     <message>
         <source>Borders</source>
-        <translation type="unfinished"></translation>
+        <translation>Bordures</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Texte</translation>
     </message>
     <message>
         <source>Secondary text</source>
-        <translation type="unfinished"></translation>
+        <translation>Texte secondaire</translation>
     </message>
     <message>
         <source>Text on accent</source>
-        <translation type="unfinished"></translation>
+        <translation>Texte sur couleur d&apos;accentuation</translation>
     </message>
     <message>
         <source>Danger</source>
-        <translation type="unfinished"></translation>
+        <translation>Danger</translation>
     </message>
     <message>
         <source>Success</source>
-        <translation type="unfinished"></translation>
+        <translation>Succès</translation>
     </message>
     <message>
         <source>Background shade</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuance d&apos;arrière-plan</translation>
     </message>
     <message>
         <source>Duplicate theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Dupliquer le thème</translation>
     </message>
     <message>
         <source>%1 copy</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (copie)</translation>
     </message>
     <message>
         <source>Delete theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer le thème</translation>
     </message>
     <message>
         <source>Sounds</source>
@@ -2703,121 +2703,121 @@
     </message>
     <message>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir une image d&apos;arrière-plan</translation>
     </message>
     <message>
         <source>Images (*.png *.jpg *.jpeg *.webp)</source>
-        <translation type="unfinished"></translation>
+        <translation>Images (*.png *.jpg *.jpeg *.webp)</translation>
     </message>
 </context>
 <context>
     <name>PageBrowse</name>
     <message>
         <source>Browse mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcourir les mods</translation>
     </message>
     <message>
         <source>Install into</source>
-        <translation type="unfinished"></translation>
+        <translation>Installer dans</translation>
     </message>
     <message>
         <source>Open instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir l&apos;instance</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Mods</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation>Packs de ressources</translation>
     </message>
     <message>
         <source>Shaders</source>
-        <translation type="unfinished"></translation>
+        <translation>Shaders</translation>
     </message>
     <message>
         <source>Create an instance first</source>
-        <translation type="unfinished"></translation>
+        <translation>Créez d&apos;abord une instance</translation>
     </message>
     <message>
         <source>Mods are installed into an instance, so the right Minecraft version and loader are picked for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les mods sont installés dans une instance afin que la bonne version de Minecraft et le bon chargeur soient choisis pour vous.</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une instance</translation>
     </message>
 </context>
 <context>
     <name>PageCreate</name>
     <message>
         <source>“%1” is ready</source>
-        <translation type="unfinished"></translation>
+        <translation>« %1 » est prêt</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une instance</translation>
     </message>
     <message>
         <source>Minecraft version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version de Minecraft</translation>
     </message>
     <message>
         <source>Modpack</source>
-        <translation type="unfinished"></translation>
+        <translation>Modpack</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Importer</translation>
     </message>
     <message>
         <source>Change icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Changer l&apos;icône</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <source>Instance name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom de l&apos;instance</translation>
     </message>
     <message>
         <source>Group (optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>Groupe (facultatif)</translation>
     </message>
     <message>
         <source>No group</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun groupe</translation>
     </message>
     <message>
         <source>Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Groupe</translation>
     </message>
     <message>
         <source>Existing groups</source>
-        <translation type="unfinished"></translation>
+        <translation>Groupes existants</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuler</translation>
     </message>
     <message>
         <source>Creating…</source>
-        <translation type="unfinished"></translation>
+        <translation>Création…</translation>
     </message>
     <message>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished"></translation>
+        <translation>Traitement…</translation>
     </message>
     <message>
         <source>You can leave this page: the install keeps going and its progress stays at the bottom of the window.</source>
@@ -2825,14 +2825,14 @@
     </message>
     <message>
         <source>Dismiss</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer</translation>
     </message>
 </context>
 <context>
     <name>PageFriends</name>
     <message>
         <source>Friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Amis</translation>
     </message>
     <message>
         <source>Play together without a server or any setup. Your computers connect directly.</source>
@@ -2899,7 +2899,7 @@
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <source>Gallery</source>
@@ -2919,7 +2919,7 @@
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Actualiser</translation>
     </message>
     <message>
         <source>Search themes</source>
@@ -2935,7 +2935,7 @@
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Réessayer</translation>
     </message>
     <message>
         <source>Loading the gallery…</source>
@@ -2967,7 +2967,7 @@
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fermer</translation>
     </message>
     <message>
         <source>The gallery is a public list on GitHub. Anyone can suggest a theme or a background there; once it&apos;s accepted, it shows up here for everyone.</source>
@@ -2987,7 +2987,7 @@
     </message>
     <message>
         <source>Open themes folder</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ouvrir le dossier des thèmes</translation>
     </message>
     <message>
         <source>Open gallery page</source>
@@ -3003,61 +3003,61 @@
     </message>
     <message>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Réinitialiser</translation>
     </message>
 </context>
 <context>
     <name>PageHome</name>
     <message>
         <source>Nothing to play yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Rien à jouer pour le moment</translation>
     </message>
     <message>
         <source>Create an instance: pick a Minecraft version, or install a modpack from Modrinth or CurseForge.</source>
-        <translation type="unfinished"></translation>
+        <translation>Créez une instance : choisissez une version de Minecraft ou installez un modpack depuis Modrinth ou CurseForge.</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une instance</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Mods</translation>
     </message>
     <message>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Dossier</translation>
     </message>
     <message>
         <source>Manage</source>
-        <translation type="unfinished"></translation>
+        <translation>Gérer</translation>
     </message>
     <message>
         <source>All instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Toutes les instances</translation>
     </message>
 </context>
 <context>
     <name>PageInstance</name>
     <message>
         <source>Overview</source>
-        <translation type="unfinished"></translation>
+        <translation>Vue d&apos;ensemble</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Mods</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation>Packs de ressources</translation>
     </message>
     <message>
         <source>Shaders</source>
-        <translation type="unfinished"></translation>
+        <translation>Shaders</translation>
     </message>
     <message>
         <source>Worlds</source>
-        <translation type="unfinished"></translation>
+        <translation>Mondes</translation>
     </message>
     <message>
         <source>Servers</source>
@@ -3065,106 +3065,106 @@
     </message>
     <message>
         <source>Screenshots</source>
-        <translation type="unfinished"></translation>
+        <translation>Captures d&apos;écran</translation>
     </message>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historique</translation>
     </message>
     <message>
         <source>Game log</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Journal du jeu</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
 </context>
 <context>
     <name>PageInstances</name>
     <message>
         <source>Instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Instances</translation>
     </message>
     <message>
         <source>Search instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des instances</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une instance</translation>
     </message>
     <message>
         <source>Sort</source>
-        <translation type="unfinished"></translation>
+        <translation>Trier</translation>
     </message>
     <message>
         <source>Recently played</source>
-        <translation type="unfinished"></translation>
+        <translation>Récemment jouées</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <source>Most played</source>
-        <translation type="unfinished"></translation>
+        <translation>Les plus jouées</translation>
     </message>
     <message>
         <source>Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Groupe</translation>
     </message>
     <message>
         <source>All groups</source>
-        <translation type="unfinished"></translation>
+        <translation>Tous les groupes</translation>
     </message>
     <message>
         <source>Without a group</source>
-        <translation type="unfinished"></translation>
+        <translation>Sans groupe</translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installation…</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrêter</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <source>Open folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier</translation>
     </message>
     <message>
         <source>Copy instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier l&apos;instance</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>No instances match “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune instance ne correspond à « %1 »</translation>
     </message>
     <message>
         <source>No instances yet. Create one to start playing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune instance pour l&apos;instant. Créez-en une pour commencer à jouer.</translation>
     </message>
 </context>
 <context>
@@ -3175,7 +3175,7 @@
     </message>
     <message>
         <source>“%1” is ready</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">« %1 » est prêt</translation>
     </message>
     <message numerus="yes">
         <source>Added %n item(s) to “%1”</source>
@@ -3193,7 +3193,7 @@
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Retour</translation>
     </message>
     <message>
         <source>Shared pack</source>
@@ -3205,7 +3205,7 @@
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Minecraft %1</translation>
     </message>
     <message>
         <source>no mod loader</source>
@@ -3232,7 +3232,7 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ouvrir</translation>
     </message>
     <message>
         <source>Open a .fashpack file</source>
@@ -3299,7 +3299,7 @@
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nom</translation>
     </message>
     <message>
         <source>Use my own instance without changes</source>
@@ -3326,7 +3326,7 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Arrêter</translation>
     </message>
     <message>
         <source>Working…</source>
@@ -3338,7 +3338,7 @@
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Créer une instance</translation>
     </message>
     <message>
         <source>Add mods</source>
@@ -3346,26 +3346,26 @@
     </message>
     <message>
         <source>Open instance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ouvrir l&apos;instance</translation>
     </message>
 </context>
 <context>
     <name>PageSettings</name>
     <message>
         <source>Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanceur</translation>
     </message>
     <message>
         <source>Java and memory</source>
-        <translation type="unfinished"></translation>
+        <translation>Java et mémoire</translation>
     </message>
     <message>
         <source>Game</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeu</translation>
     </message>
     <message>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Réseau</translation>
     </message>
     <message>
         <source>Advanced</source>
@@ -3373,166 +3373,166 @@
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Changes are saved as you make them.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les modifications sont enregistrées au fur et à mesure.</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="unfinished"></translation>
+        <translation>Langue</translation>
     </message>
     <message>
         <source>Changes the language right away.</source>
-        <translation type="unfinished"></translation>
+        <translation>Change la langue immédiatement.</translation>
     </message>
     <message>
         <source>Interface language</source>
-        <translation type="unfinished"></translation>
+        <translation>Langue de l&apos;interface</translation>
     </message>
     <message>
         <source>Instances folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Dossier des instances</translation>
     </message>
     <message>
         <source>Where your instances (game installs) are stored. Instances already in the old folder stay there.</source>
-        <translation type="unfinished"></translation>
+        <translation>Emplacement où sont stockées vos instances (installations du jeu). Les instances déjà présentes dans l&apos;ancien dossier y restent.</translation>
     </message>
     <message>
         <source>Browse…</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcourir…</translation>
     </message>
     <message>
         <source>Open folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier</translation>
     </message>
     <message>
         <source>Choose the instances folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir le dossier des instances</translation>
     </message>
     <message>
         <source>Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interface</translation>
     </message>
     <message>
         <source>Use the classic interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser l&apos;interface classique</translation>
     </message>
     <message>
         <source>Switch back to the old Prism Launcher window. Takes effect after you restart %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Revenir à l&apos;ancienne fenêtre de Prism Launcher. Prend effet après avoir redémarré %1.</translation>
     </message>
     <message>
         <source>Restart %1 to use the classic interface.</source>
-        <translation type="unfinished"></translation>
+        <translation>Redémarrez %1 pour utiliser l&apos;interface classique.</translation>
     </message>
     <message>
         <source>The new interface stays on.</source>
-        <translation type="unfinished"></translation>
+        <translation>La nouvelle interface reste activée.</translation>
     </message>
     <message>
         <source>Check for game updates when starting</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher les mises à jour du jeu au démarrage</translation>
     </message>
     <message>
         <source>Refresh version information each time you press Play.</source>
-        <translation type="unfinished"></translation>
+        <translation>Actualise les informations de version à chaque fois que vous appuyez sur Jouer.</translation>
     </message>
     <message>
         <source>Game log</source>
-        <translation type="unfinished"></translation>
+        <translation>Journal du jeu</translation>
     </message>
     <message>
         <source>The log window shows what the game prints while it runs. It helps find out why a game crashed.</source>
-        <translation type="unfinished"></translation>
+        <translation>La fenêtre du journal affiche ce que le jeu génère pendant son exécution. Elle aide à comprendre pourquoi le jeu a planté.</translation>
     </message>
     <message>
         <source>Lines to keep</source>
-        <translation type="unfinished"></translation>
+        <translation>Lignes à conserver</translation>
     </message>
     <message>
         <source>Older lines are dropped once the log is this long.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les anciennes lignes sont supprimées lorsque le journal atteint cette taille.</translation>
     </message>
     <message>
         <source>Stop logging at the limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrêter la journalisation à la limite</translation>
     </message>
     <message>
         <source>Pause the log instead of dropping old lines. Useful when a game floods it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Met en pause le journal au lieu de supprimer les anciennes lignes. Utile quand un jeu le sature.</translation>
     </message>
     <message>
         <source>Include output of custom commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Inclure la sortie des commandes personnalisées</translation>
     </message>
     <message>
         <source>Also log what pre-launch and post-exit commands print.</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistre aussi ce qu&apos;affichent les commandes de pré-lancement et de post-fermeture.</translation>
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxy</translation>
     </message>
     <message>
         <source>Only needed if your network requires one. Applies to downloads and sign-in right away.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nécessaire uniquement si votre réseau l&apos;exige. S&apos;applique immédiatement aux téléchargements et à la connexion.</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion</translation>
     </message>
     <message>
         <source>System settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres système</translation>
     </message>
     <message>
         <source>No proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun proxy</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresse</translation>
     </message>
     <message>
         <source>Host name or IP address of the proxy.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom d&apos;hôte ou adresse IP du proxy.</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
     <message>
         <source>User name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom d&apos;utilisateur</translation>
     </message>
     <message>
         <source>Leave empty if the proxy doesn&apos;t ask for one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Laissez vide si le proxy n&apos;en demande pas.</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Mot de passe</translation>
     </message>
     <message>
         <source>Proxy password</source>
-        <translation type="unfinished"></translation>
+        <translation>Mot de passe du proxy</translation>
     </message>
     <message>
         <source>The password is stored unencrypted in the launcher&apos;s settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le mot de passe est enregistré en clair dans le fichier de paramètres du lanceur.</translation>
     </message>
 </context>
 <context>
     <name>PageSkins</name>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Retour</translation>
     </message>
     <message>
         <source>Skins</source>
-        <translation type="unfinished"></translation>
+        <translation>Skins</translation>
     </message>
     <message>
         <source>Turn your player around, collect skins and choose what you wear.</source>
@@ -3540,7 +3540,7 @@
     </message>
     <message>
         <source>Account</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Compte</translation>
     </message>
     <message>
         <source>%1 (offline)</source>
@@ -3592,7 +3592,7 @@
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Plus</translation>
     </message>
     <message>
         <source>Go back to the default skin</source>
@@ -3620,15 +3620,15 @@
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Plus d&apos;actions</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Renommer</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Supprimer</translation>
     </message>
     <message>
         <source>Your skin library is empty. Drop PNG skins anywhere on this page, add a file, or type a player name above.</source>
@@ -3651,46 +3651,46 @@
     <name>PageVersion</name>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <source>Version and mod loader</source>
-        <translation type="unfinished"></translation>
+        <translation>Version et chargeur de mods</translation>
     </message>
     <message>
         <source>Now: Minecraft %1 with %2 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>Actuellement : Minecraft %1 avec %2 %3</translation>
     </message>
     <message>
         <source>Now: Minecraft %1 without a mod loader</source>
-        <translation type="unfinished"></translation>
+        <translation>Actuellement : Minecraft %1 sans chargeur de mods</translation>
     </message>
     <message>
         <source>Mods made for the old version may stop working. Worlds opened in a newer version can&apos;t go back to an older one — make a copy first if unsure.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les mods conçus pour l&apos;ancienne version peuvent cesser de fonctionner. Les mondes ouverts dans une version plus récente ne peuvent pas revenir à une version antérieure — faites d&apos;abord une copie en cas de doute.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuler</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Appliquer</translation>
     </message>
     <message>
         <source>Version changed</source>
-        <translation type="unfinished"></translation>
+        <translation>Version modifiée</translation>
     </message>
 </context>
 <context>
     <name>PlayButton</name>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrêter</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer</translation>
     </message>
 </context>
 <context>
@@ -3732,336 +3732,336 @@
     <name>ResCard</name>
     <message>
         <source>by %1</source>
-        <translation type="unfinished"></translation>
+        <translation>par %1</translation>
     </message>
     <message>
         <source>%1 downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 téléchargements</translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished"></translation>
+        <translation>Installation…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installer</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Installé</translation>
     </message>
 </context>
 <context>
     <name>ResDetails</name>
     <message>
         <source>by %1</source>
-        <translation type="unfinished"></translation>
+        <translation>par %1</translation>
     </message>
     <message>
         <source>%1 downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 téléchargements</translation>
     </message>
     <message>
         <source>Close details</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer les détails</translation>
     </message>
     <message>
         <source>Open website</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le site web</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version</translation>
     </message>
     <message>
         <source>Beta</source>
-        <translation type="unfinished"></translation>
+        <translation>Bêta</translation>
     </message>
     <message>
         <source>Alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Alpha</translation>
     </message>
     <message>
         <source>Loading versions…</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargement des versions…</translation>
     </message>
     <message>
         <source>Couldn&apos;t load versions. Check your connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de charger les versions. Vérifiez votre connexion.</translation>
     </message>
     <message>
         <source>No version works with this instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune version n&apos;est compatible avec cette instance.</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Installé</translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished"></translation>
+        <translation>Installation…</translation>
     </message>
     <message>
         <source>Install this version</source>
-        <translation type="unfinished"></translation>
+        <translation>Installer cette version</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installer</translation>
     </message>
 </context>
 <context>
     <name>ResFindView</name>
     <message>
         <source>Search resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des packs de ressources</translation>
     </message>
     <message>
         <source>Search shaders</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des shaders</translation>
     </message>
     <message>
         <source>Search mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des mods</translation>
     </message>
     <message>
         <source>Where to search</source>
-        <translation type="unfinished"></translation>
+        <translation>Où chercher</translation>
     </message>
     <message>
         <source>Category</source>
-        <translation type="unfinished"></translation>
+        <translation>Catégorie</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>Tout</translation>
     </message>
     <message>
         <source>Sort</source>
-        <translation type="unfinished"></translation>
+        <translation>Trier</translation>
     </message>
     <message>
         <source>For Minecraft %1 with %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Pour Minecraft %1 avec %2</translation>
     </message>
     <message>
         <source>For Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Pour Minecraft %1</translation>
     </message>
     <message>
         <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cette instance n&apos;a pas de chargeur de mods, les mods ne peuvent donc pas fonctionner. Installez Fabric, Quilt, Forge ou NeoForge dans les paramètres de version de l&apos;instance.</translation>
     </message>
     <message>
         <source>Loading…</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargement…</translation>
     </message>
     <message>
         <source>Show more</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher plus</translation>
     </message>
     <message>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche…</translation>
     </message>
     <message>
         <source>Search failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec de la recherche : %1</translation>
     </message>
     <message>
         <source>Pick an instance first</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez d&apos;abord une instance</translation>
     </message>
     <message>
         <source>Nothing found for “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun résultat pour « %1 »</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun résultat</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished"></translation>
+        <translation>Réessayer</translation>
     </message>
 </context>
 <context>
     <name>ResFmt</name>
     <message>
         <source>resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation>packs de ressources</translation>
     </message>
     <message>
         <source>shaders</source>
-        <translation type="unfinished"></translation>
+        <translation>shaders</translation>
     </message>
     <message>
         <source>mods</source>
-        <translation type="unfinished"></translation>
+        <translation>mods</translation>
     </message>
     <message>
         <source>Find resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouver des packs de ressources</translation>
     </message>
     <message>
         <source>Find shaders</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouver des shaders</translation>
     </message>
     <message>
         <source>Find mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouver des mods</translation>
     </message>
     <message>
         <source>No resource packs yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun pack de ressources pour l&apos;instant</translation>
     </message>
     <message>
         <source>No shaders yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun shader pour l&apos;instant</translation>
     </message>
     <message>
         <source>No mods yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun mod pour l&apos;instant</translation>
     </message>
     <message>
         <source>Find resource packs on Modrinth and CurseForge, or drop .zip files here.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouvez des packs de ressources sur Modrinth et CurseForge, ou déposez des fichiers .zip ici.</translation>
     </message>
     <message>
         <source>Find shaders on Modrinth and CurseForge, or drop .zip files here. Shaders need Iris or OptiFine.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouvez des shaders sur Modrinth et CurseForge, ou déposez des fichiers .zip ici. Les shaders nécessitent Iris ou OptiFine.</translation>
     </message>
     <message>
         <source>Find mods on Modrinth and CurseForge, or drop .jar files here.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouvez des mods sur Modrinth et CurseForge, ou déposez des fichiers .jar ici.</translation>
     </message>
     <message>
         <source>Search installed resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher dans les packs de ressources installés</translation>
     </message>
     <message>
         <source>Search installed shaders</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher dans les shaders installés</translation>
     </message>
     <message>
         <source>Search installed mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher dans les mods installés</translation>
     </message>
 </context>
 <context>
     <name>ResInstalledRow</name>
     <message>
         <source>Turned off</source>
-        <translation type="unfinished"></translation>
+        <translation>Désactivé</translation>
     </message>
     <message>
         <source>Update: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise à jour : %1</translation>
     </message>
     <message>
         <source>May not work</source>
-        <translation type="unfinished"></translation>
+        <translation>Peut ne pas fonctionner</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished"></translation>
+        <translation>par %1</translation>
     </message>
     <message>
         <source>Turn off %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Désactiver %1</translation>
     </message>
     <message>
         <source>Turn on %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Activer %1</translation>
     </message>
     <message>
         <source>On — click to turn off</source>
-        <translation type="unfinished"></translation>
+        <translation>Activé — cliquer pour désactiver</translation>
     </message>
     <message>
         <source>Off — click to turn on</source>
-        <translation type="unfinished"></translation>
+        <translation>Désactivé — cliquer pour activer</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation>Plus</translation>
     </message>
     <message>
         <source>Turn off</source>
-        <translation type="unfinished"></translation>
+        <translation>Désactiver</translation>
     </message>
     <message>
         <source>Turn on</source>
-        <translation type="unfinished"></translation>
+        <translation>Activer</translation>
     </message>
     <message>
         <source>Open website</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le site web</translation>
     </message>
 </context>
 <context>
     <name>ResInstalledView</name>
     <message>
         <source>Add files</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter des fichiers</translation>
     </message>
     <message>
         <source>Mods (*.jar *.zip *.litemod)</source>
-        <translation type="unfinished"></translation>
+        <translation>Mods (*.jar *.zip *.litemod)</translation>
     </message>
     <message>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tous les fichiers (*)</translation>
     </message>
     <message>
         <source>Packs (*.zip)</source>
-        <translation type="unfinished"></translation>
+        <translation>Packs (*.zip)</translation>
     </message>
     <message>
         <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cette instance n&apos;a pas de chargeur de mods, les mods ne peuvent donc pas fonctionner. Installez Fabric, Quilt, Forge ou NeoForge dans les paramètres de version de l&apos;instance.</translation>
     </message>
     <message>
         <source>Change version</source>
-        <translation type="unfinished"></translation>
+        <translation>Changer de version</translation>
     </message>
     <message>
         <source>Open folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier</translation>
     </message>
     <message>
         <source>Checking…</source>
-        <translation type="unfinished"></translation>
+        <translation>Vérification…</translation>
     </message>
     <message>
         <source>Check for updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Vérifier les mises à jour</translation>
     </message>
     <message>
         <source>Updating…</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise à jour…</translation>
     </message>
     <message>
         <source>Update all (%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tout mettre à jour (%1)</translation>
     </message>
     <message>
         <source>Checking for updates…</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche de mises à jour…</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuler</translation>
     </message>
     <message numerus="yes">
         <source>%n update(s) available</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n mise à jour disponible</numerusform>
+            <numerusform>%n mises à jour disponibles</numerusform>
         </translation>
     </message>
     <message>
@@ -4078,22 +4078,22 @@
     </message>
     <message>
         <source>Nothing matches “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>Rien ne correspond à « %1 »</translation>
     </message>
     <message>
         <source>Loading…</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargement…</translation>
     </message>
     <message>
         <source>Drop to add to this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Déposez pour ajouter à cette instance</translation>
     </message>
 </context>
 <context>
     <name>ResPicker</name>
     <message>
         <source>Choose</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir</translation>
     </message>
 </context>
 <context>
@@ -4101,13 +4101,13 @@
     <message numerus="yes">
         <source>%n update(s) available</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+            <numerusform>%n mise à jour disponible</numerusform>
+            <numerusform>%n mises à jour disponibles</numerusform>
         </translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fermer</translation>
     </message>
     <message>
         <source>See what changed before you update. Open a mod to read its changelog.</source>
@@ -4123,7 +4123,7 @@
     </message>
     <message>
         <source>Updating…</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mise à jour…</translation>
     </message>
     <message>
         <source>Not now</source>
@@ -4131,34 +4131,34 @@
     </message>
     <message>
         <source>Update all (%1)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tout mettre à jour (%1)</translation>
     </message>
 </context>
 <context>
     <name>SearchModel</name>
     <message>
         <source>Could not reach the server</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de joindre le serveur</translation>
     </message>
     <message>
         <source>“%1” has no version for this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>« %1 » n&apos;a aucune version pour cette instance</translation>
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Installation de %1</translation>
     </message>
     <message>
         <source>Installed “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>« %1 » installé</translation>
     </message>
     <message>
         <source>Installed “%1” with %2</source>
-        <translation type="unfinished"></translation>
+        <translation>« %1 » installé avec %2</translation>
     </message>
     <message>
         <source>Could not install “%1”: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;installer « %1 » : %2</translation>
     </message>
 </context>
 <context>
@@ -4197,7 +4197,7 @@
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cette instance n&apos;existe plus.</translation>
     </message>
     <message>
         <source>The game is already running. Join the server from the in-game Multiplayer menu.</source>
@@ -4208,11 +4208,11 @@
     <name>ServerStatus</name>
     <message>
         <source>Checking…</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vérification…</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hors ligne</translation>
     </message>
     <message>
         <source>Not checked</source>
@@ -4302,7 +4302,7 @@
     </message>
     <message>
         <source>Old versions</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Anciennes versions</translation>
     </message>
     <message>
         <source>Fixes for Minecraft versions from before 1.6.</source>
@@ -4321,365 +4321,365 @@
     <name>SettingsBehaviour</name>
     <message>
         <source>When you play</source>
-        <translation type="unfinished"></translation>
+        <translation>Lorsque vous jouez</translation>
     </message>
     <message>
         <source>What the launcher and the game log window do while a game runs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce que font le lanceur et la fenêtre du journal lorsqu&apos;un jeu est lancé.</translation>
     </message>
     <message>
         <source>Close the launcher when the game opens</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer le lanceur au lancement du jeu</translation>
     </message>
     <message>
         <source>Free memory while playing</source>
-        <translation type="unfinished"></translation>
+        <translation>Libérer de la mémoire pendant le jeu</translation>
     </message>
     <message>
         <source>Hides the launcher window while the game runs and brings it back when you exit. Saves about 100 MB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Masque la fenêtre du lanceur pendant l&apos;exécution du jeu et la réaffiche lorsque vous le quittez. Économise environ 100 Mo.</translation>
     </message>
     <message>
         <source>Quit the launcher when the game closes</source>
-        <translation type="unfinished"></translation>
+        <translation>Quitter le lanceur à la fermeture du jeu</translation>
     </message>
     <message>
         <source>Show the game log when the game starts</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher le journal du jeu au démarrage du jeu</translation>
     </message>
     <message>
         <source>Show the game log if the game crashes</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher le journal du jeu si le jeu plante</translation>
     </message>
     <message>
         <source>Close the game log when the game exits normally</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer le journal du jeu lorsque le jeu se ferme normalement</translation>
     </message>
 </context>
 <context>
     <name>SettingsBridge</name>
     <message>
         <source>Set memory with the sliders above instead of -Xmx, -Xms or heap size arguments. Remove them from this field.</source>
-        <translation type="unfinished"></translation>
+        <translation>Définissez la mémoire avec les curseurs ci-dessus plutôt qu&apos;avec -Xmx, -Xms ou des arguments de taille de tas. Retirez-les de ce champ.</translation>
     </message>
     <message>
         <source>Passing a required Java version (-version:…) is not allowed. Remove it from this field.</source>
-        <translation type="unfinished"></translation>
+        <translation>Spécifier une version requise de Java (-version:…) n&apos;est pas autorisé. Retirez-la de ce champ.</translation>
     </message>
     <message>
         <source>Check your Java arguments</source>
-        <translation type="unfinished"></translation>
+        <translation>Vérifiez vos arguments Java</translation>
     </message>
     <message>
         <source>Can&apos;t test Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de tester Java</translation>
     </message>
     <message>
         <source>The Java checker is missing from this installation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le vérificateur Java est manquant dans cette installation.</translation>
     </message>
     <message>
         <source>This Java doesn&apos;t work</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce Java ne fonctionne pas</translation>
     </message>
     <message>
         <source>It could not be started. Pick another one from the list or choose the java executable yourself.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il n&apos;a pas pu être démarré. Choisissez-en un autre dans la liste ou sélectionnez vous-même l&apos;exécutable java.</translation>
     </message>
     <message>
         <source>Java %1 by %2 (%3).</source>
-        <translation type="unfinished"></translation>
+        <translation>Java %1 par %2 (%3).</translation>
     </message>
     <message>
         <source>Warnings:</source>
-        <translation type="unfinished"></translation>
+        <translation>Avertissements :</translation>
     </message>
     <message>
         <source>Java works</source>
-        <translation type="unfinished"></translation>
+        <translation>Java fonctionne</translation>
     </message>
     <message>
         <source>Java doesn&apos;t accept these settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Java n&apos;accepte pas ces paramètres</translation>
     </message>
     <message>
         <source>It starts, but fails with your memory or argument settings:</source>
-        <translation type="unfinished"></translation>
+        <translation>Il démarre, mais échoue avec vos paramètres de mémoire ou d&apos;arguments :</translation>
     </message>
     <message>
         <source>This path contains a &quot;!&quot;. Java has trouble with that, so your instances probably won&apos;t start.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce chemin contient un « ! ». Java a du mal avec cela, vos instances ne démarreront donc probablement pas.</translation>
     </message>
     <message>
         <source>This folder was only granted temporarily by Flatpak and may stop working after a restart. Grant access to it with Flatseal instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce dossier n&apos;a été accordé que temporairement par Flatpak et peut cesser de fonctionner après un redémarrage. Accordez-y plutôt l&apos;accès avec Flatseal.</translation>
     </message>
 </context>
 <context>
     <name>SettingsDropdown</name>
     <message>
         <source>Choose…</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir…</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun résultat</translation>
     </message>
 </context>
 <context>
     <name>SettingsJava</name>
     <message>
         <source>Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Java</translation>
     </message>
     <message>
         <source>Minecraft runs on Java. Newer game versions need newer Java.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft fonctionne avec Java. Les versions plus récentes du jeu nécessitent une version de Java plus récente.</translation>
     </message>
     <message>
         <source>Pick the right Java automatically</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir automatiquement le bon Java</translation>
     </message>
     <message>
         <source>Each instance uses an installed Java that matches its Minecraft version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Chaque instance utilise un Java installé correspondant à sa version de Minecraft.</translation>
     </message>
     <message>
         <source>Download Java automatically when it&apos;s missing</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger automatiquement Java s&apos;il est manquant</translation>
     </message>
     <message>
         <source>Default Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Java par défaut</translation>
     </message>
     <message>
         <source>Java for this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Java pour cette instance</translation>
     </message>
     <message>
         <source>Used by instances that don&apos;t choose their own.</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilisé par les instances qui n&apos;en choisissent pas.</translation>
     </message>
     <message>
         <source>Path to the java executable</source>
-        <translation type="unfinished"></translation>
+        <translation>Chemin vers l&apos;exécutable java</translation>
     </message>
     <message>
         <source>Java path</source>
-        <translation type="unfinished"></translation>
+        <translation>Chemin de Java</translation>
     </message>
     <message>
         <source>Browse…</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcourir…</translation>
     </message>
     <message>
         <source>Testing…</source>
-        <translation type="unfinished"></translation>
+        <translation>Test en cours…</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Tester</translation>
     </message>
     <message>
         <source>Java found on this computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Versions de Java trouvées sur cet ordinateur</translation>
     </message>
     <message>
         <source>Searching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche en cours…</translation>
     </message>
     <message>
         <source>Search again</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher à nouveau</translation>
     </message>
     <message>
         <source>Download Java…</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger Java…</translation>
     </message>
     <message>
         <source>No Java installations were found. Download one or choose the java executable yourself.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune installation de Java n&apos;a été trouvée. Téléchargez-en une ou choisissez vous-même l&apos;exécutable java.</translation>
     </message>
     <message>
         <source>Use Java %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser Java %1</translation>
     </message>
     <message>
         <source>Java %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Java %1</translation>
     </message>
     <message>
         <source>Skip the Java compatibility check</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorer la vérification de compatibilité de Java</translation>
     </message>
     <message>
         <source>Launch even if this Java looks wrong for the Minecraft version. Only for troubleshooting.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lancer même si cette version de Java semble incorrecte pour la version de Minecraft. Uniquement pour le dépannage.</translation>
     </message>
     <message>
         <source>Performance preset</source>
-        <translation type="unfinished"></translation>
+        <translation>Préréglage de performances</translation>
     </message>
     <message>
         <source>Ready-made Java settings. “Balanced” suits most players; “Smooth” cuts stutters on strong computers with Java 21 or newer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres Java prêts à l&apos;emploi. « Équilibré » convient à la plupart des joueurs ; « Fluide » réduit les saccades sur les ordinateurs puissants avec Java 21 ou plus récent.</translation>
     </message>
     <message>
         <source>Balanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Équilibré</translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation type="unfinished"></translation>
+        <translation>Fluide</translation>
     </message>
     <message>
         <source>Weak computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuration modeste</translation>
     </message>
     <message>
         <source>Java defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres Java par défaut</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Personnalisé</translation>
     </message>
     <message>
         <source>Extra Java arguments</source>
-        <translation type="unfinished"></translation>
+        <translation>Arguments Java supplémentaires</translation>
     </message>
     <message>
         <source>Advanced. Passed to Java when the game starts, separated by spaces.</source>
-        <translation type="unfinished"></translation>
+        <translation>Avancé. Transmis à Java au démarrage du jeu, séparés par des espaces.</translation>
     </message>
     <message>
         <source>For example: -XX:+UseG1GC</source>
-        <translation type="unfinished"></translation>
+        <translation>Par exemple : -XX:+UseG1GC</translation>
     </message>
     <message>
         <source>Choose the java executable</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir l&apos;exécutable java</translation>
     </message>
     <message>
         <source>That file isn&apos;t a program Java can run from.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ce fichier n&apos;est pas un programme permettant de lancer Java.</translation>
     </message>
 </context>
 <context>
     <name>SettingsMemory</name>
     <message>
         <source>Memory</source>
-        <translation type="unfinished"></translation>
+        <translation>Mémoire</translation>
     </message>
     <message>
         <source>More memory helps big modpacks. Leave some for your computer: about half of it is a safe maximum.</source>
-        <translation type="unfinished"></translation>
+        <translation>Plus de mémoire aide les gros modpacks. Laissez-en pour votre ordinateur : environ la moitié est un maximum sûr.</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Go</translation>
     </message>
     <message>
         <source>Maximum memory</source>
-        <translation type="unfinished"></translation>
+        <translation>Mémoire maximale</translation>
     </message>
     <message>
         <source>The most the game can use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le maximum que le jeu peut utiliser.</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation type="unfinished"></translation>
+        <translation>Mio</translation>
     </message>
     <message>
         <source>Memory at start</source>
-        <translation type="unfinished"></translation>
+        <translation>Mémoire au démarrage</translation>
     </message>
     <message>
         <source>Reserved when the game starts. Usually lower than the maximum.</source>
-        <translation type="unfinished"></translation>
+        <translation>Réservée au démarrage du jeu. Généralement inférieure au maximum.</translation>
     </message>
     <message>
         <source>Recommended: %1 (based on this computer&apos;s memory%2).</source>
-        <translation type="unfinished"></translation>
+        <translation>Recommandé : %1 (selon la mémoire de cet ordinateur%2).</translation>
     </message>
     <message>
         <source> and the number of mods</source>
-        <translation type="unfinished"></translation>
+        <translation> et le nombre de mods</translation>
     </message>
     <message>
         <source>Use recommended</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser la valeur recommandée</translation>
     </message>
     <message>
         <source>This computer has %1 of memory.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cet ordinateur dispose de %1 de mémoire.</translation>
     </message>
     <message>
         <source>The maximum is more than this computer has. The game may crash or freeze your computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le maximum dépasse la mémoire de cet ordinateur. Le jeu risque de planter ou de bloquer votre ordinateur.</translation>
     </message>
     <message>
         <source>The maximum is close to all of this computer&apos;s memory. Other apps may slow down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le maximum est proche de la totalité de la mémoire de cet ordinateur. D&apos;autres applications risquent de ralentir.</translation>
     </message>
 </context>
 <context>
     <name>SettingsSection</name>
     <message>
         <source>Uses the launcher-wide settings. Turn on “Override” to set something different for this instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilise les paramètres généraux du lanceur. Activez « Remplacer » pour définir des paramètres différents pour cette instance.</translation>
     </message>
     <message>
         <source>Override</source>
-        <translation type="unfinished"></translation>
+        <translation>Remplacer</translation>
     </message>
 </context>
 <context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenêtre du jeu</translation>
     </message>
     <message>
         <source>The size of the Minecraft window when it opens.</source>
-        <translation type="unfinished"></translation>
+        <translation>La taille de la fenêtre de Minecraft lorsqu&apos;elle s&apos;ouvre.</translation>
     </message>
     <message>
         <source>Start maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>Démarrer agrandie</translation>
     </message>
     <message>
         <source>Open the game filling the whole screen area.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le jeu en occupant tout l&apos;écran.</translation>
     </message>
     <message>
         <source>Window size</source>
-        <translation type="unfinished"></translation>
+        <translation>Taille de la fenêtre</translation>
     </message>
     <message>
         <source>Width × height in pixels.</source>
-        <translation type="unfinished"></translation>
+        <translation>Largeur × hauteur en pixels.</translation>
     </message>
     <message>
         <source>Window width</source>
-        <translation type="unfinished"></translation>
+        <translation>Largeur de la fenêtre</translation>
     </message>
     <message>
         <source>Window height</source>
-        <translation type="unfinished"></translation>
+        <translation>Hauteur de la fenêtre</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Réinitialiser</translation>
     </message>
     <message>
         <source>Back to 854 × 480</source>
-        <translation type="unfinished"></translation>
+        <translation>Revenir à 854 × 480</translation>
     </message>
 </context>
 <context>
@@ -4690,7 +4690,7 @@
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fermer</translation>
     </message>
     <message>
         <source>Friends paste the link in Fashion Launcher and get Minecraft %1%2 with the same mods, downloaded from Modrinth and CurseForge. Worlds and settings aren&apos;t sent.</source>
@@ -4759,11 +4759,11 @@
     <name>ShareModList</name>
     <message>
         <source>Mods</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mods</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Packs de ressources</translation>
     </message>
     <message>
         <source>Shader packs</source>
@@ -4799,7 +4799,7 @@
     </message>
     <message>
         <source>Nothing matches “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Rien ne correspond à « %1 »</translation>
     </message>
     <message>
         <source>No mods here — only the Minecraft version and loader will be shared.</source>
@@ -4892,7 +4892,7 @@
     </message>
     <message>
         <source>Creating the instance failed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Échec de la création de l&apos;instance.</translation>
     </message>
     <message>
         <source>Downloading mods</source>
@@ -4918,67 +4918,67 @@
     <name>Sidebar</name>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Accueil</translation>
     </message>
     <message>
         <source>Instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Instances</translation>
     </message>
     <message>
         <source>Browse mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcourir les mods</translation>
     </message>
     <message>
         <source>Friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Amis</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Apparence</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher</translation>
     </message>
     <message>
         <source>Search (%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher (%1)</translation>
     </message>
     <message>
         <source>Recent</source>
-        <translation type="unfinished"></translation>
+        <translation>Récents</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrêter</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une instance</translation>
     </message>
     <message>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Comptes</translation>
     </message>
     <message>
         <source>Add account</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter un compte</translation>
     </message>
     <message>
         <source>Microsoft</source>
-        <translation type="unfinished"></translation>
+        <translation>Microsoft</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation>Hors ligne</translation>
     </message>
 </context>
 <context>
@@ -5095,7 +5095,7 @@
     <name>StubNotice</name>
     <message>
         <source>Open classic screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir l&apos;écran classique</translation>
     </message>
 </context>
 <context>
@@ -5110,11 +5110,11 @@
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 Go</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 Mo</translation>
     </message>
     <message numerus="yes">
         <source>Saved %1 across %n instance(s)</source>
@@ -5149,11 +5149,11 @@
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Minecraft %1</translation>
     </message>
     <message>
         <source>Unknown version</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Version inconnue</translation>
     </message>
     <message numerus="yes">
         <source>+%n mod(s)</source>
@@ -5247,7 +5247,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Restore</source>
@@ -5267,7 +5267,7 @@
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fermer</translation>
     </message>
     <message>
         <source>Restoring…</source>
@@ -5278,27 +5278,27 @@
     <name>TabInstanceSettings</name>
     <message>
         <source>Settings for this instance only. Changes are saved as you make them.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres pour cette instance uniquement. Les modifications sont enregistrées au fur et à mesure.</translation>
     </message>
     <message>
         <source>Launcher-wide settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres généraux du lanceur</translation>
     </message>
     <message>
         <source>Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte</translation>
     </message>
     <message>
         <source>Play this instance with a specific account instead of your default one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer à cette instance avec un compte spécifique plutôt que votre compte par défaut.</translation>
     </message>
     <message>
         <source>Play as</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer en tant que</translation>
     </message>
     <message>
         <source>Default account</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte par défaut</translation>
     </message>
 </context>
 <context>
@@ -5321,7 +5321,7 @@
     </message>
     <message>
         <source>Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lanceur</translation>
     </message>
     <message>
         <source>Info</source>
@@ -5349,7 +5349,7 @@
     </message>
     <message>
         <source>Upload and copy link</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Téléverser et copier le lien</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -5404,15 +5404,15 @@
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Jouer</translation>
     </message>
     <message>
         <source>Share the game log?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Partager le journal du jeu ?</translation>
     </message>
     <message>
         <source>“%1” will be uploaded to %2 and the link copied, so you can send it to someone who helps you. Folder paths with your user name and login tokens are hidden.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">« %1 » sera téléversé sur %2 et le lien sera copié pour que vous puissiez l&apos;envoyer à quelqu&apos;un qui vous aide. Les chemins de dossiers contenant votre nom d&apos;utilisateur et vos jetons de connexion sont masqués.</translation>
     </message>
     <message>
         <source>There is no game log yet. Play once first.</source>
@@ -5420,54 +5420,54 @@
     </message>
     <message>
         <source>Link copied: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lien copié : %1</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fermer</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Open link</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ouvrir le lien</translation>
     </message>
     <message>
         <source>Uploading…</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Téléversement en cours…</translation>
     </message>
 </context>
 <context>
     <name>TabOverview</name>
     <message>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renommer</translation>
     </message>
     <message>
         <source>Change icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Changer l&apos;icône</translation>
     </message>
     <message>
         <source>Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Actions</translation>
     </message>
     <message>
         <source>Open folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier</translation>
     </message>
     <message>
         <source>Game log</source>
-        <translation type="unfinished"></translation>
+        <translation>Journal du jeu</translation>
     </message>
     <message>
         <source>Share game log</source>
-        <translation type="unfinished"></translation>
+        <translation>Partager le journal du jeu</translation>
     </message>
     <message>
         <source>Share instance</source>
@@ -5475,108 +5475,108 @@
     </message>
     <message>
         <source>Play offline</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer hors ligne</translation>
     </message>
     <message>
         <source>Copy instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier l&apos;instance</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporter</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version</translation>
     </message>
     <message>
         <source>Unknown version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version inconnue</translation>
     </message>
     <message>
         <source>Change version or loader</source>
-        <translation type="unfinished"></translation>
+        <translation>Changer de version ou de chargeur</translation>
     </message>
     <message>
         <source>Notes</source>
-        <translation type="unfinished"></translation>
+        <translation>Notes</translation>
     </message>
     <message>
         <source>Share the game log?</source>
-        <translation type="unfinished"></translation>
+        <translation>Partager le journal du jeu ?</translation>
     </message>
     <message>
         <source>“%1” will be uploaded to %2 and the link copied, so you can send it to someone who helps you. Folder paths with your user name and login tokens are hidden.</source>
-        <translation type="unfinished"></translation>
+        <translation>« %1 » sera téléversé sur %2 et le lien sera copié pour que vous puissiez l&apos;envoyer à quelqu&apos;un qui vous aide. Les chemins de dossiers contenant votre nom d&apos;utilisateur et vos jetons de connexion sont masqués.</translation>
     </message>
     <message>
         <source>There is no game log yet. Play once first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il n&apos;y a pas encore de journal du jeu. Jouez d&apos;abord une fois.</translation>
     </message>
     <message>
         <source>Link copied: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lien copié : %1</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuler</translation>
     </message>
     <message>
         <source>Open link</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le lien</translation>
     </message>
     <message>
         <source>Uploading…</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléversement en cours…</translation>
     </message>
     <message>
         <source>Upload and copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléverser et copier le lien</translation>
     </message>
 </context>
 <context>
     <name>TabResources</name>
     <message>
         <source>Installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Installés</translation>
     </message>
 </context>
 <context>
     <name>TabScreenshots</name>
     <message numerus="yes">
         <source>%n screenshot(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n capture d&apos;écran</numerusform>
+            <numerusform>%n captures d&apos;écran</numerusform>
         </translation>
     </message>
     <message>
         <source>Open folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier</translation>
     </message>
     <message>
         <source>No screenshots yet. Press F2 in game to take one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune capture d&apos;écran pour l&apos;instant. Appuyez sur F2 en jeu pour en prendre une.</translation>
     </message>
     <message>
         <source>Use as this instance&apos;s background</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser comme arrière-plan de cette instance</translation>
     </message>
     <message>
         <source>Background set for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrière-plan défini pour %1</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer</translation>
     </message>
 </context>
 <context>
@@ -5606,7 +5606,7 @@
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Plus d&apos;actions</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -5634,7 +5634,7 @@
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Supprimer</translation>
     </message>
     <message>
         <source>No servers yet. Add one with its address — it also shows up in the game&apos;s Multiplayer list.</source>
@@ -5650,7 +5650,7 @@
     </message>
     <message>
         <source>Address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Adresse</translation>
     </message>
     <message>
         <source>play.example.com</source>
@@ -5666,7 +5666,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
         <source>Save</source>
@@ -5685,90 +5685,90 @@
     <name>TabWorlds</name>
     <message>
         <source>%1 KB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Ko</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Mo</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Go</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished"></translation>
+        <translation>Traitement en cours…</translation>
     </message>
     <message numerus="yes">
         <source>%n world(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n monde</numerusform>
+            <numerusform>%n mondes</numerusform>
         </translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Actualiser</translation>
     </message>
     <message>
         <source>Open saves folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier des sauvegardes</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Jouer</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Plus d&apos;actions</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renommer</translation>
     </message>
     <message>
         <source>Make a copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer une copie</translation>
     </message>
     <message>
         <source>%1 copy</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 copie</translation>
     </message>
     <message>
         <source>Copy seed</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier la graine</translation>
     </message>
     <message>
         <source>Seed copied</source>
-        <translation type="unfinished"></translation>
+        <translation>Graine copiée</translation>
     </message>
     <message>
         <source>Open folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le dossier</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>No worlds yet. Play once and create a world in the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun monde pour l&apos;instant. Jouez une première fois et créez un monde dans le jeu.</translation>
     </message>
     <message>
         <source>Delete “%1”?</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer « %1 » ?</translation>
     </message>
     <message>
         <source>The world and everything built in it will be deleted. This can&apos;t be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le monde et tout ce qui y a été construit seront supprimés. Cette action est irréversible.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuler</translation>
     </message>
     <message>
         <source>Delete world</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer le monde</translation>
     </message>
 </context>
 <context>
@@ -5794,14 +5794,14 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
 </context>
 <context>
     <name>ToolsBridge</name>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cette instance n&apos;existe plus.</translation>
     </message>
     <message>
         <source>Couldn&apos;t write %1.</source>
@@ -5857,7 +5857,7 @@
     <name>ToolsLauncherList</name>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Minecraft %1</translation>
     </message>
     <message>
         <source>Looking…</source>
@@ -5884,7 +5884,7 @@
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Aucun résultat</translation>
     </message>
     <message>
         <source>No other launchers in their usual places. If yours keeps its files somewhere else, show us the folder.</source>
@@ -5911,15 +5911,15 @@
     <name>UiTheme</name>
     <message>
         <source>Can&apos;t open %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;ouvrir %1</translation>
     </message>
     <message>
         <source>%1 has a JSON error at character %2: %3</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 contient une erreur JSON au caractère %2 : %3</translation>
     </message>
     <message>
         <source>My %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mon %1</translation>
     </message>
 </context>
 </TS>

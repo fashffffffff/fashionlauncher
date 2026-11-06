@@ -50,6 +50,7 @@ Button {
             anchors.centerIn: parent
             spacing: Style.px(10)
             Icon {
+                id: icon
                 visible: control.iconName.length > 0
                 name: control.iconName
                 color: control.ink
@@ -59,6 +60,10 @@ Button {
             Text {
                 text: control.text
                 color: control.ink
+                // Long translations shrink a little before eliding instead of touching the edges
+                width: Math.min(implicitWidth, control.width - Style.px(28) - (icon.visible ? icon.width + row.spacing : 0))
+                fontSizeMode: Text.HorizontalFit
+                minimumPixelSize: Math.round(Style.fontLead * 0.8)
                 font.family: Style.ui
                 font.pixelSize: Style.fontLead
                 font.weight: Font.DemiBold

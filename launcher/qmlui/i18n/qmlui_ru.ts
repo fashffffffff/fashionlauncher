@@ -72,7 +72,7 @@
     </message>
     <message>
         <source>Skins</source>
-        <translation type="unfinished"></translation>
+        <translation>Скины</translation>
     </message>
     <message>
         <source>Sign in with Microsoft</source>
@@ -2520,7 +2520,7 @@
     </message>
     <message>
         <source>Find more themes</source>
-        <translation type="unfinished"></translation>
+        <translation>Найти ещё темы</translation>
     </message>
     <message>
         <source>Open themes folder</source>
@@ -2841,7 +2841,7 @@
     <name>PageFriends</name>
     <message>
         <source>Friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Друзья</translation>
     </message>
     <message>
         <source>Play together without a server or any setup. Your computers connect directly.</source>
@@ -2908,7 +2908,7 @@
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished">Назад</translation>
+        <translation>Назад</translation>
     </message>
     <message>
         <source>Gallery</source>
@@ -3078,7 +3078,7 @@
     </message>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>История</translation>
     </message>
     <message>
         <source>Game log</source>
@@ -3546,7 +3546,7 @@
     </message>
     <message>
         <source>Skins</source>
-        <translation type="unfinished"></translation>
+        <translation>Скины</translation>
     </message>
     <message>
         <source>Turn your player around, collect skins and choose what you wear.</source>
@@ -4951,7 +4951,7 @@
     </message>
     <message>
         <source>Friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Друзья</translation>
     </message>
     <message>
         <source>Appearance</source>
