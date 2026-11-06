@@ -19,8 +19,8 @@ Button {
     hoverEnabled: true
     focusPolicy: Qt.StrongFocus
 
-    ToolTip.visible: tip.length > 0 && hovered
-    ToolTip.text: tip
+    ToolTip.visible: (tip.length > 0 || (btnText.truncated && control.text.length > 0)) && hovered
+    ToolTip.text: tip.length > 0 ? tip : control.text
     ToolTip.delay: 500
     Accessible.name: text.length ? text : tip
 
@@ -36,11 +36,14 @@ Button {
     contentItem: Item {
       implicitWidth: row.implicitWidth
       implicitHeight: row.implicitHeight
+      clip: true
       Row {
         id: row
         spacing: Style.px(8)
         anchors.centerIn: parent
+        width: Math.min(implicitWidth, Math.max(0, parent.width - Style.px(16)))
         Icon {
+            id: btnIcon
             visible: control.iconName.length > 0
             name: control.iconName
             color: control.ink
@@ -48,6 +51,7 @@ Button {
             anchors.verticalCenter: parent.verticalCenter
         }
         Text {
+            id: btnText
             visible: control.text.length > 0
             text: control.text
             color: control.ink
@@ -55,7 +59,9 @@ Button {
             font.pixelSize: Style.fontBody
             font.weight: Font.Medium
             anchors.verticalCenter: parent.verticalCenter
+            width: Math.min(implicitWidth, Math.max(0, row.width - (btnIcon.visible ? btnIcon.width + row.spacing : 0)))
+            elide: Text.ElideRight
         }
+      }
     }
-  }
 }

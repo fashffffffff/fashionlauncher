@@ -1337,7 +1337,7 @@
     </message>
     <message>
         <source>Copy invite link</source>
-        <translation>Скопировать ссылку-приглашение</translation>
+        <translation>Скопировать ссылку</translation>
     </message>
     <message>
         <source>Invite link copied</source>

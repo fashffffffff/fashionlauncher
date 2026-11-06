@@ -1,10 +1,12 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 TextField {
     id: control
     property string iconName
     implicitHeight: Style.px(40)
+    Layout.minimumWidth: Style.px(60)
     leftPadding: iconName.length ? Style.px(38) : Style.px(12)
     rightPadding: Style.px(12)
     color: Style.text

@@ -7,5 +7,5 @@ Text {
     font.family: Style.ui
     font.pixelSize: Style.fontBody
     wrapMode: Text.NoWrap
-    elide: Text.ElideRight
+    elide: wrapMode === Text.NoWrap ? Text.ElideRight : Text.ElideNone
 }

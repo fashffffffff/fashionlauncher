@@ -45,6 +45,7 @@ Button {
         }
     }
     contentItem: Item {
+        clip: true
         Row {
             id: row
             anchors.centerIn: parent

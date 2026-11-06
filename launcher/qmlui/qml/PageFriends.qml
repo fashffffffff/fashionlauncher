@@ -159,7 +159,8 @@ Item {
 
             // ---- side column ----
             FriendsCodeCard {
-                Layout.preferredWidth: Math.min(Style.px(400), scroll.availableWidth * 0.4)
+                Layout.preferredWidth: Math.max(Style.px(350), Math.min(Style.px(420), scroll.availableWidth * 0.4))
+                Layout.minimumWidth: Style.px(320)
                 Layout.alignment: Qt.AlignTop
             }
         }

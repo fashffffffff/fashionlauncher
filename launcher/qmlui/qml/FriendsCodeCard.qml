@@ -9,6 +9,7 @@ Rectangle {
     color: Style.panel(0)
     border.width: 1
     border.color: Style.panelBorder
+    clip: true
 
     function addFromField() {
         const t = addField.text.trim()
@@ -46,7 +47,8 @@ Rectangle {
                 verticalAlignment: Text.AlignVCenter
             }
         }
-        RowLayout {
+        Flow {
+            Layout.fillWidth: true
             spacing: Style.px(8)
             QuietButton {
                 text: qsTr("Copy"); iconName: "copy"
@@ -67,6 +69,7 @@ Rectangle {
             Field {
                 id: nameField
                 Layout.fillWidth: true
+                Layout.minimumWidth: Style.px(80)
                 text: Friends.displayName
                 placeholderText: qsTr("Your name")
                 maximumLength: 32
@@ -83,6 +86,7 @@ Rectangle {
             Field {
                 id: addField
                 Layout.fillWidth: true
+                Layout.minimumWidth: Style.px(80)
                 iconName: "user"
                 placeholderText: qsTr("Paste a friend code or invite link")
                 onAccepted: card.addFromField()
@@ -90,6 +94,7 @@ Rectangle {
             PrimaryButton {
                 text: qsTr("Add")
                 implicitWidth: Style.px(90); implicitHeight: Style.px(40)
+                Layout.preferredWidth: Style.px(90)
                 enabled: addField.text.trim().length > 0 && Friends.available
                 onClicked: card.addFromField()
             }
