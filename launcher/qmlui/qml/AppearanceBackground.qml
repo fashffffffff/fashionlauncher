@@ -2,14 +2,17 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Dialogs
+import QtQuick.Effects
 
 // Appearance → Background: where the picture comes from, the gallery, blur/darken, and the
 // selected instance's own background. Everything is stored in the theme's "background" section:
-//   mode       wallpaper | slideshow | screenshot | image | video | pattern | solid
+//   mode       wallpaper | slideshow | screenshot | image | video | panorama | shader | pattern | solid
 //   wallpaper  built-in wallpaper id (also the fallback for screenshot mode and missing files)
 //   image      / video   file name inside the user themes folder
 //   slideshow  [wallpaper ids or image file names], interval  seconds between slides
+//   shader     aurora | starfield | clouds | plasma | blocks, speed  0..3 for panorama and shader
 //   color      solid color, blur 0..64, dim 0..0.9
+// The panorama's source (automatic or one of the user's own) is a launcher setting, see Backgrounds.panoramaSource.
 ColumnLayout {
     id: bg
     spacing: Style.px(14)
@@ -118,7 +121,8 @@ ColumnLayout {
         value: bg.mode
         options: [{ value: "wallpaper", label: qsTr("Wallpaper") }, { value: "slideshow", label: qsTr("Slideshow") },
                   { value: "screenshot", label: qsTr("Screenshot") }, { value: "image", label: qsTr("My image") },
-                  { value: "video", label: qsTr("Video") }, { value: "pattern", label: qsTr("Blocks") },
+                  { value: "video", label: qsTr("Video") }, { value: "panorama", label: qsTr("Panorama") },
+                  { value: "shader", label: qsTr("Animated") }, { value: "pattern", label: qsTr("Blocks") },
                   { value: "solid", label: qsTr("Solid") }]
         onPicked: (v) => {
             if (v === "image" && !Backgrounds.userFileUrl(bg.cfg.image || "")) imageDialog.open()
@@ -136,6 +140,8 @@ ColumnLayout {
             screenshot: qsTr("Shows the newest screenshot of the selected instance. Instances without screenshots show the wallpaper selected below."),
             image: qsTr("Your own picture behind everything."),
             video: qsTr("A muted, looping video. It pauses on other pages and stops while the window is hidden or a game is running."),
+            panorama: qsTr("The slowly turning view from the Minecraft title screen. It pauses on other pages and stops while the window is hidden or a game is running."),
+            shader: qsTr("A calm moving pattern in your theme colors. It pauses on other pages and stops while the window is hidden or a game is running."),
             pattern: qsTr("Blocks in your accent color, different for every instance."),
             solid: qsTr("A calm single color.")
         })[bg.mode] || ""
@@ -174,10 +180,88 @@ ColumnLayout {
         }
     }
 
+    AppearancePanorama { Layout.fillWidth: true; visible: bg.mode === "panorama" }
+
+    // Animated: preset tiles that move while you point at them.
+    Flow {
+        id: shaders
+        visible: bg.mode === "shader"
+        Layout.fillWidth: true
+        spacing: Style.px(10)
+        readonly property int columns: bg.width > Style.px(420) ? 3 : 2
+        readonly property real tileWidth: Math.floor((bg.width - (columns - 1) * spacing) / columns)
+        Repeater {
+            model: bg.mode === "shader" ? [{ id: "aurora", title: qsTr("Aurora") }, { id: "starfield", title: qsTr("Starfield") },
+                    { id: "clouds", title: qsTr("Drifting clouds") }, { id: "plasma", title: qsTr("Soft glow") },
+                    { id: "blocks", title: qsTr("Falling blocks") }] : []
+            delegate: AbstractButton {
+                id: sTile
+                readonly property bool on: (bg.cfg.shader || "aurora") === modelData.id
+                width: shaders.tileWidth
+                height: Math.round(width * 9 / 16)
+                hoverEnabled: true
+                focusPolicy: Qt.StrongFocus
+                Accessible.name: modelData.title
+                Accessible.checkable: true
+                Accessible.checked: on
+                onClicked: bg.set("shader", modelData.id)
+                background: Item {
+                    Rectangle { id: sMask; anchors.fill: parent; radius: Style.radius; visible: false; layer.enabled: true }
+                    ShaderBackground {
+                        anchors.fill: parent
+                        preset: modelData.id
+                        running: sTile.hovered
+                        seed: modelData.id
+                        layer.enabled: true
+                        layer.effect: MultiEffect {
+                            maskEnabled: true
+                            maskSource: sMask
+                            maskThresholdMin: 0.5
+                            maskSpreadAtMin: 1.0
+                        }
+                    }
+                    Rectangle {
+                        anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
+                        height: sCap.implicitHeight + Style.px(14)
+                        radius: Style.radius
+                        gradient: Gradient {
+                            GradientStop { position: 0; color: "transparent" }
+                            GradientStop { position: 1; color: Style.alpha(Style.scrim, 0.7) }
+                        }
+                        Txt {
+                            id: sCap
+                            anchors { left: parent.left; right: parent.right; bottom: parent.bottom; margins: Style.px(8) }
+                            text: modelData.title
+                            color: "white"
+                            font.pixelSize: Style.fontSmall
+                        }
+                    }
+                    Rectangle {
+                        anchors.fill: parent
+                        color: "transparent"
+                        radius: Style.radius
+                        border.width: sTile.on ? Style.px(3) : sTile.visualFocus ? 2 : 1
+                        border.color: sTile.on || sTile.visualFocus ? Style.accent : Style.alpha(Style.text, sTile.hovered ? 0.3 : 0.1)
+                    }
+                }
+            }
+        }
+    }
+
+    // How fast the panorama turns / the pattern moves.
+    TokenSlider {
+        visible: bg.mode === "panorama" || bg.mode === "shader"
+        label: qsTr("Speed")
+        from: 0; to: 3; stepSize: 0.1
+        value: bg.cfg.speed !== undefined ? Number(bg.cfg.speed) : 1
+        valueText: value === 0 ? qsTr("Still") : qsTr("%1×").arg(value.toFixed(1))
+        onMoved: (v) => bg.set("speed", Math.round(v * 10) / 10)
+    }
+
     // Gallery — shown for every mode that uses a picture.
     ColumnLayout {
         Layout.fillWidth: true
-        visible: bg.mode !== "pattern" && bg.mode !== "solid"
+        visible: bg.mode !== "pattern" && bg.mode !== "solid" && bg.mode !== "panorama" && bg.mode !== "shader"
         spacing: Style.px(10)
 
         RowLayout {
@@ -264,6 +348,21 @@ ColumnLayout {
             text: qsTr("Shown instead of the theme background while this instance is selected.")
         }
         BgInstancePicker { Layout.fillWidth: true; instanceId: Router.selectedId }
+    }
+
+    // Pictures on instance cards and the instance page header.
+    Heading { text: qsTr("Instance pictures") }
+    SettingsToggle {
+        Layout.fillWidth: true
+        label: qsTr("Show pictures on instance cards")
+        checked: Backgrounds.coversEnabled
+        onToggled: (on) => Backgrounds.coversEnabled = on
+    }
+    Txt {
+        Layout.fillWidth: true
+        wrapMode: Text.WordWrap
+        muted: true
+        text: qsTr("Modpacks show their own picture from Modrinth or CurseForge; other instances show their newest screenshot.")
     }
 
     function isSelected(t) {

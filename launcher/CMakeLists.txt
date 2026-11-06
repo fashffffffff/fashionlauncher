@@ -1315,10 +1315,24 @@ target_link_libraries(Launcher_logic
     Qt${QT_VERSION_MAJOR}::Quick
     Qt${QT_VERSION_MAJOR}::QuickControls2
     Qt${QT_VERSION_MAJOR}::Multimedia
+    Qt${QT_VERSION_MAJOR}::Quick3D
     ${Launcher_QT_DBUS}
     ${Launcher_QT_LIBS}
 )
+# Live background shaders (qmlui/shaders/*.frag), compiled to .qsb at build time and served from
+# qrc:/qmlui/shaders/<name>.frag.qsb. They live in a tiny library of their own: qt_add_shaders uses the keyword
+# form of target_link_libraries, which Launcher_logic (plain form) can't mix.
+file(GLOB QMLUI_SHADERS CONFIGURE_DEPENDS RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/qmlui/shaders/*.frag")
+file(CONFIGURE OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/qmlui_shaders_anchor.cpp" CONTENT "namespace qmlui_shaders { int anchor = 0; }\n")
+add_library(Launcher_qmlui_shaders STATIC "${CMAKE_CURRENT_BINARY_DIR}/qmlui_shaders_anchor.cpp")
+target_link_libraries(Launcher_qmlui_shaders PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+qt_add_shaders(Launcher_qmlui_shaders "qmlui_shaders"
+    PREFIX "/"
+    FILES ${QMLUI_SHADERS}
+)
+
 target_link_libraries(Launcher_logic
+    Launcher_qmlui_shaders
     cmark::cmark
     LocalPeer
     Launcher_rainbow
@@ -1539,6 +1553,11 @@ endif()
 get_directory_property(Launcher_TARGETS BUILDSYSTEM_TARGETS)
 list(REMOVE_ITEM Launcher_TARGETS fashion_net)
 foreach(target ${Launcher_TARGETS})
+    # Skip helper targets (e.g. the shader compile steps from qt_add_shaders)
+    get_target_property(target_type ${target} TYPE)
+    if(target_type STREQUAL "UTILITY" OR target_type STREQUAL "INTERFACE_LIBRARY")
+        continue()
+    endif()
     # TODO: Fix unused parameter warnings (/wd4100, -Wno-unused-parameter, etc)
     target_compile_options(${target} PRIVATE
         $<IF:$<STREQUAL:${CMAKE_CXX_COMPILER_FRONTEND_VARIANT},MSVC>,/W4 /permissive- /wd4100,-Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-missing-field-initializers>

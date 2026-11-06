@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Effects
 
 // Full-bleed scene behind everything. What it shows comes from the theme's "background" section
-// (mode: wallpaper | image | video | slideshow | screenshot | pattern | solid), unless the selected
+// (mode: wallpaper | image | video | slideshow | screenshot | panorama | shader | pattern | solid), unless the selected
 // instance has its own background (Backgrounds.overrides). Anything that can't be shown — an
 // instance without screenshots, a missing file, a paused video — falls back to a wallpaper,
 // never to an empty block.
@@ -53,6 +53,24 @@ Item {
     readonly property bool videoPaused: Router.section !== "home" && Router.section !== "appearance"
     readonly property bool videoShowing: videoLoaded && video.item !== null && video.item.showing && !video.item.failed
 
+    // Moving backgrounds (panorama, shader) only move where they can be seen clearly.
+    readonly property bool animate: windowShown && !gameRunning && !videoPaused
+    readonly property real speed: cfg.speed !== undefined ? Number(cfg.speed) : 1
+
+    // Panorama: six cube faces found by Backgrounds for the selected instance (or the user's own).
+    readonly property var panoramaFaces: mode === "panorama" && Backgrounds.panorama.faces ? Backgrounds.panorama.faces : []
+    readonly property bool panoramaShowing: panorama.item !== null && panorama.item.ready
+    function reloadPanorama() { if (mode === "panorama") Backgrounds.loadPanorama(seed) }
+    onModeChanged: reloadPanorama()
+    onSeedChanged: reloadPanorama()
+    // A game that just closed may have captured a new panorama.
+    onGameRunningChanged: if (!gameRunning) reloadPanorama()
+    Connections {
+        target: Backgrounds
+        function onPanoramaSourceChanged() { root.reloadPanorama() }
+        function onCustomPanoramasChanged() { root.reloadPanorama() }
+    }
+
     readonly property string imageSource: {
         switch (mode) {
         case "wallpaper": return (instanceBg ? Backgrounds.wallpaperUrl(instanceBg.value) : Backgrounds.wallpaperUrl(cfg.wallpaper || "")) || fallbackImage
@@ -60,10 +78,13 @@ Item {
         case "slideshow": return slides.length > 0 ? slides[slide % slides.length] : fallbackImage
         case "screenshot": return screenshot || fallbackImage
         case "video": return videoShowing ? "" : fallbackImage
-        default: return ""   // pattern, solid
+        // The front face stays underneath (hidden once the cube shows) so the accent can follow it.
+        case "panorama": return panoramaFaces.length === 6 ? panoramaFaces[0] : (Backgrounds.panorama.busy ? "" : fallbackImage)
+        default: return ""   // shader, pattern, solid
         }
     }
-    readonly property bool showPattern: mode === "pattern" || (mode !== "solid" && imageSource === "" && !videoShowing)
+    readonly property bool showPattern: mode === "pattern"
+        || (mode !== "solid" && mode !== "shader" && mode !== "panorama" && imageSource === "" && !videoShowing)
 
     Rectangle { anchors.fill: parent; color: root.mode === "solid" && root.cfg.color ? root.cfg.color : Style.bg }
 
@@ -82,7 +103,10 @@ Item {
         scale: root.down
         transformOrigin: Item.TopLeft
         visible: root.imageSource !== "" || root.videoShowing || imgA.source != "" || imgB.source != ""
-        layer.enabled: true
+                 || root.mode === "shader" || root.mode === "panorama"
+        // Moving backgrounds without blur skip the window-sized effect layer: re-rendering it every frame
+        // is the most expensive part of an animated background.
+        layer.enabled: root.blurOn || (root.mode !== "shader" && root.mode !== "panorama")
         layer.smooth: true
         layer.effect: MultiEffect {
             blurEnabled: root.blurOn
@@ -102,6 +126,27 @@ Item {
             }
         }
 
+        Loader {
+            id: panorama
+            anchors.fill: parent
+            active: root.mode === "panorama" && root.panoramaFaces.length === 6 && root.windowShown && !root.gameRunning
+            sourceComponent: PanoramaView {
+                faces: root.panoramaFaces
+                running: root.animate
+                speed: root.speed
+            }
+        }
+        Loader {
+            anchors.fill: parent
+            active: root.mode === "shader" && root.windowShown && !root.gameRunning
+            sourceComponent: ShaderBackground {
+                preset: root.cfg.shader || "aurora"
+                running: root.animate
+                speed: root.speed
+                seed: root.seed
+            }
+        }
+
         property bool flip: false
         Image {
             id: imgA
@@ -112,6 +157,7 @@ Item {
             // Never decode more pixels than the screen shows.
             sourceSize.width: Math.min(1920, Math.max(320, photo.width))
             opacity: photo.flip ? 0 : 1
+            visible: !root.panoramaShowing
             Behavior on opacity { NumberAnimation { duration: Style.dur(450); easing.type: Easing.OutCubic } }
         }
         Image {
@@ -122,6 +168,7 @@ Item {
             cache: false
             sourceSize.width: imgA.sourceSize.width
             opacity: photo.flip ? 1 : 0
+            visible: !root.panoramaShowing
             Behavior on opacity { NumberAnimation { duration: Style.dur(450); easing.type: Easing.OutCubic } }
         }
     }
@@ -136,7 +183,7 @@ Item {
         interval: Style.dur(450) + 100
         onTriggered: { if (photo.flip) imgA.source = ""; else imgB.source = "" }
     }
-    Component.onCompleted: { imgA.source = imageSource }
+    Component.onCompleted: { imgA.source = imageSource; reloadPanorama() }
 
     Loader {
         anchors.fill: parent

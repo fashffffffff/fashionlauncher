@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Effects
 import FFPrism
 import "Fmt.js" as Fmt
 
@@ -120,7 +121,9 @@ Item {
             model: view
             readonly property int columns: Math.max(1, Math.floor(width / Style.px(280)))
             cellWidth: width / columns
-            cellHeight: Style.px(112)
+            readonly property bool covers: Backgrounds.coversEnabled
+            readonly property real coverHeight: covers ? Style.px(78) : 0
+            cellHeight: Style.px(112) + coverHeight
             boundsBehavior: Flickable.StopAtBounds
             ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
 
@@ -135,15 +138,70 @@ Item {
                     onClicked: Router.openInstance(model.instanceId)
                     TapHandler { acceptedButtons: Qt.RightButton; onTapped: tileMenu.popup() }
 
+                    readonly property string cover: grid.covers ? (Backgrounds.covers[model.instanceId] || model.backdrop || "") : ""
+                    Component.onCompleted: if (grid.covers) Backgrounds.requestCover(model.instanceId)
+
                     background: Rectangle {
                         radius: Style.radius
                         color: tile.hovered ? Style.panel(1) : Style.panel(0)
                         border.width: tile.visualFocus ? 2 : 1
                         border.color: tile.visualFocus ? Style.accent : Style.panelBorder
+
+                        // Cover strip: the pack's picture or the newest screenshot, cropped and darkened a little.
+                        // Pictures are decoded at card size; the strip is clipped to the card's rounded top.
+                        Item {
+                            id: strip
+                            visible: grid.covers
+                            anchors { left: parent.left; right: parent.right; top: parent.top; margins: 1 }
+                            height: grid.coverHeight
+                            layer.enabled: visible
+                            layer.effect: MultiEffect {
+                                maskEnabled: true
+                                maskSource: stripMask
+                                maskThresholdMin: 0.5
+                                maskSpreadAtMin: 1.0
+                            }
+                            Rectangle {
+                                anchors.fill: parent
+                                gradient: Gradient {
+                                    orientation: Gradient.Horizontal
+                                    GradientStop { position: 0; color: Style.mix(Style.surfaceHi, Style.accent, 0.35) }
+                                    GradientStop { position: 1; color: Style.mix(Style.surface, Style.accent, 0.12) }
+                                }
+                            }
+                            Image {
+                                id: coverImg
+                                anchors.fill: parent
+                                source: tile.cover
+                                sourceSize.width: 640
+                                fillMode: Image.PreserveAspectCrop
+                                verticalAlignment: Image.AlignVCenter
+                                asynchronous: true
+                                opacity: status === Image.Ready ? 1 : 0
+                                scale: tile.hovered ? 1.04 : 1
+                                Behavior on opacity { NumberAnimation { duration: Style.dur(250) } }
+                                Behavior on scale { NumberAnimation { duration: Style.dur(300); easing.type: Easing.OutCubic } }
+                            }
+                            Rectangle {
+                                anchors.fill: parent
+                                gradient: Gradient {
+                                    GradientStop { position: 0; color: Style.alpha(Style.scrim, 0.08) }
+                                    GradientStop { position: 1; color: Style.alpha(Style.scrim, 0.45) }
+                                }
+                            }
+                        }
+                        Item {
+                            id: stripMask
+                            anchors.fill: strip
+                            visible: false
+                            layer.enabled: grid.covers
+                            // Rounded on top, square at the bottom.
+                            Rectangle { anchors.fill: parent; anchors.bottomMargin: -Style.radius; radius: Style.radius - 1 }
+                        }
                     }
                     contentItem: RowLayout {
                         spacing: Style.px(14)
-                        anchors { fill: parent; leftMargin: Style.px(14); rightMargin: Style.px(14) }
+                        anchors { fill: parent; topMargin: grid.coverHeight; leftMargin: Style.px(14); rightMargin: Style.px(14) }
                         Image {
                             source: model.icon
                             Layout.preferredWidth: Style.px(48)
