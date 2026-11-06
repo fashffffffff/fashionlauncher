@@ -115,6 +115,7 @@ Item {
         QuietButton { iconName: "cube"; text: qsTr("Mods"); onClicked: Router.openInstance(page.current.instanceId, "mods") }
         QuietButton { iconName: "folder"; text: qsTr("Folder"); onClicked: Launcher.openInstanceFolder(page.current.instanceId) }
         QuietButton { iconName: "sliders"; text: qsTr("Manage"); onClicked: Router.openInstance(page.current.instanceId, "overview") }
+        FriendsHomeButton {}
     }
 
     // Servers of this instance (status, quick join), above the actions on the right
