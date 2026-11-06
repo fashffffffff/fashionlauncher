@@ -495,7 +495,7 @@ bool CreateBridge::start(const Task::Ptr& task)
     });
     emit busyChanged();
     emit progressChanged();
-    TaskCenter::instance()->track(task, tr("Installing %1").arg(finalName), "create", QString(), icon);
+    TaskCenter::instance()->track(task, tr("Installing %1").arg(m_createdName), "create");
     task->start();
     return true;
 }
