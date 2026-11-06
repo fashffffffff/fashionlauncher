@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>Panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>全景图</translation>
     </message>
     <message>
         <source>Blocks</source>
@@ -155,7 +155,7 @@
     </message>
     <message>
         <source>Animated</source>
-        <translation type="unfinished"></translation>
+        <translation>动态</translation>
     </message>
     <message>
         <source>Solid</source>
@@ -183,11 +183,11 @@
     </message>
     <message>
         <source>The slowly turning view from the Minecraft title screen. It pauses on other pages and stops while the window is hidden or a game is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft标题界面缓缓转动的视角。在其他页面会暂停，窗口隐藏或游戏运行时停止。</translation>
     </message>
     <message>
         <source>A calm moving pattern in your theme colors. It pauses on other pages and stops while the window is hidden or a game is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>以主题色调呈现的舒缓动态图案。在其他页面会暂停，窗口隐藏或游戏运行时停止。</translation>
     </message>
     <message>
         <source>Blocks in your accent color, different for every instance.</source>
@@ -215,35 +215,35 @@
     </message>
     <message>
         <source>Aurora</source>
-        <translation type="unfinished"></translation>
+        <translation>极光</translation>
     </message>
     <message>
         <source>Starfield</source>
-        <translation type="unfinished"></translation>
+        <translation>星空</translation>
     </message>
     <message>
         <source>Drifting clouds</source>
-        <translation type="unfinished"></translation>
+        <translation>流云</translation>
     </message>
     <message>
         <source>Soft glow</source>
-        <translation type="unfinished"></translation>
+        <translation>柔光</translation>
     </message>
     <message>
         <source>Falling blocks</source>
-        <translation type="unfinished"></translation>
+        <translation>方块飘落</translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>速度</translation>
     </message>
     <message>
         <source>Still</source>
-        <translation type="unfinished"></translation>
+        <translation>静止</translation>
     </message>
     <message>
         <source>%1×</source>
-        <translation type="unfinished"></translation>
+        <translation>%1×</translation>
     </message>
     <message>
         <source>All</source>
@@ -295,15 +295,15 @@
     </message>
     <message>
         <source>Instance pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>实例图片</translation>
     </message>
     <message>
         <source>Show pictures on instance cards</source>
-        <translation type="unfinished"></translation>
+        <translation>在实例卡片上显示图片</translation>
     </message>
     <message>
         <source>Modpacks show their own picture from Modrinth or CurseForge; other instances show their newest screenshot.</source>
-        <translation type="unfinished"></translation>
+        <translation>整合包会显示来自Modrinth或CurseForge的官方图片；其他实例则显示最新截图。</translation>
     </message>
     <message>
         <source>Couldn&apos;t add that file.</source>
@@ -330,146 +330,146 @@
     <name>AppearancePanorama</name>
     <message>
         <source>Panorama added.</source>
-        <translation type="unfinished"></translation>
+        <translation>全景图已添加。</translation>
     </message>
     <message>
         <source>Looking for a panorama…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在寻找全景图…</translation>
     </message>
     <message>
         <source>Showing: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>当前显示：%1</translation>
     </message>
     <message>
         <source>No panorama found for %1 yet. Start it once so Minecraft is downloaded, or add your own below.</source>
-        <translation type="unfinished"></translation>
+        <translation>还没有找到%1的全景图。先启动一次以下载Minecraft，或在下方添加你自己的全景图。</translation>
     </message>
     <message>
         <source>No panorama found yet. Start any instance once, or add your own below.</source>
-        <translation type="unfinished"></translation>
+        <translation>还没有找到全景图。先启动任意实例一次，或在下方添加你自己的全景图。</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation>自动</translation>
     </message>
     <message>
         <source>Add a panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>添加全景图</translation>
     </message>
     <message>
         <source>Making the cube…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在生成立方体…</translation>
     </message>
     <message>
         <source>Add or drop here</source>
-        <translation type="unfinished"></translation>
+        <translation>在此添加或拖入</translation>
     </message>
     <message>
         <source>Works with a resource pack (.zip) that has a panorama, six pictures named panorama_0 to panorama_5, or one 360° picture twice as wide as it is tall.</source>
-        <translation type="unfinished"></translation>
+        <translation>支持带全景图的资源包（.zip）、六张名为panorama_0至panorama_5的图片，或一张宽为高两倍的360°图片。</translation>
     </message>
     <message>
         <source>Capture from my world</source>
-        <translation type="unfinished"></translation>
+        <translation>从我的世界捕捉</translation>
     </message>
     <message>
         <source>Adds a small panorama mod to %1. In the game, press one key and it takes six pictures around you; the next time you open the launcher with this instance selected, they turn into your panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>会为%1添加一个小型全景模组。在游戏中按一个键，它就会环绕你拍下六张照片；下次选中该实例打开启动器时，它们就会变成你的全景图。</translation>
     </message>
     <message>
         <source>Select an instance first, then come back here.</source>
-        <translation type="unfinished"></translation>
+        <translation>请先选择一个实例，再回到这里。</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished">已安装</translation>
+        <translation>已安装</translation>
     </message>
     <message>
         <source>Install panorama mod</source>
-        <translation type="unfinished"></translation>
+        <translation>安装全景模组</translation>
     </message>
     <message>
         <source>Choose a panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>选择全景图</translation>
     </message>
     <message>
         <source>Panoramas (*.zip *.png *.jpg *.jpeg *.webp)</source>
-        <translation type="unfinished"></translation>
+        <translation>全景图 (*.zip *.png *.jpg *.jpeg *.webp)</translation>
     </message>
 </context>
 <context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>你的全景图</translation>
     </message>
     <message>
         <source>Captured in this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>在此实例中拍摄</translation>
     </message>
     <message>
         <source>From the resource pack “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>来自资源包“%1”</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Minecraft</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft</translation>
     </message>
     <message>
         <source>Pick a resource pack, six face pictures or one 360° picture (twice as wide as it is tall).</source>
-        <translation type="unfinished"></translation>
+        <translation>选择一个资源包、六张面图片，或一张宽为高两倍的360°图片。</translation>
     </message>
     <message>
         <source>That resource pack has no panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>该资源包中没有全景图。</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法保存全景图。</translation>
     </message>
     <message>
         <source>Pick a Minecraft instance first.</source>
-        <translation type="unfinished"></translation>
+        <translation>请先选择一个Minecraft实例。</translation>
     </message>
     <message>
         <source>Panorama mods need a mod loader. Add Fabric to this instance (Instance → Version), then try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>全景模组需要模组加载器。请先为该实例添加Fabric（实例 → 版本），然后重试。</translation>
     </message>
     <message>
         <source>Looking for a panorama mod for %1 %2…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在为%1 %2寻找全景模组…</translation>
     </message>
     <message>
         <source>No panorama mod works with %1 %2 yet. You can still add your own panorama above.</source>
-        <translation type="unfinished"></translation>
+        <translation>目前还没有适配%1 %2的全景模组。你仍可在上方添加自己的全景图。</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach Modrinth. Check your connection and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法连接Modrinth，请检查网络后重试。</translation>
     </message>
     <message>
         <source>The download failed. Try again in a moment.</source>
-        <translation type="unfinished"></translation>
+        <translation>下载失败，请稍后重试。</translation>
     </message>
     <message>
         <source>press the panorama key (Options → Controls → Panoramica)</source>
-        <translation type="unfinished"></translation>
+        <translation>按下全景键（选项 → 控制 → Panoramica）</translation>
     </message>
     <message>
         <source>press F4 (you can change the key in Options → Controls)</source>
-        <translation type="unfinished"></translation>
+        <translation>按下F4（可在选项 → 控制中更改按键）</translation>
     </message>
     <message>
         <source>Panorama mod installed. Start the game, go to a nice spot, look straight ahead and %1. Keep still for a second while it takes six pictures. After you close the game, the panorama shows up here on its own.</source>
-        <translation type="unfinished"></translation>
+        <translation>全景模组已安装。启动游戏，找一个风景不错的地方，正视前方，然后%1。拍摄六张照片期间请保持静止。关闭游戏后，全景图会自动显示在这里。</translation>
     </message>
     <message>
         <source>Installing %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在安装%1…</translation>
     </message>
 </context>
 <context>
@@ -585,82 +585,82 @@
     <name>ConfirmDialog</name>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
-        <translation type="unfinished">复制实例</translation>
+        <translation>复制实例</translation>
     </message>
     <message>
         <source>%1 (copy)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1（副本）</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="unfinished">图标</translation>
+        <translation>图标</translation>
     </message>
     <message>
         <source>Change icon</source>
-        <translation type="unfinished">更改图标</translation>
+        <translation>更换图标</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>No group</source>
-        <translation type="unfinished">无分组</translation>
+        <translation>无分组</translation>
     </message>
     <message>
         <source>Bring along</source>
-        <translation type="unfinished"></translation>
+        <translation>一并复制</translation>
     </message>
     <message>
         <source>Worlds</source>
-        <translation type="unfinished">世界</translation>
+        <translation>世界</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">模组</translation>
+        <translation>模组</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished">资源包</translation>
+        <translation>资源包</translation>
     </message>
     <message>
         <source>Shaders</source>
-        <translation type="unfinished">光影</translation>
+        <translation>光影</translation>
     </message>
     <message>
         <source>Game options</source>
-        <translation type="unfinished"></translation>
+        <translation>游戏选项</translation>
     </message>
     <message>
         <source>Server list</source>
-        <translation type="unfinished"></translation>
+        <translation>服务器列表</translation>
     </message>
     <message>
         <source>Screenshots</source>
-        <translation type="unfinished">截图</translation>
+        <translation>截图</translation>
     </message>
     <message>
         <source>Play time</source>
-        <translation type="unfinished"></translation>
+        <translation>游戏时长</translation>
     </message>
     <message>
         <source>Share files with the original instead of copying (saves disk space)</source>
-        <translation type="unfinished"></translation>
+        <translation>与原实例共享文件而非复制（节省磁盘空间）</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>复制</translation>
     </message>
 </context>
 <context>
@@ -727,24 +727,24 @@
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished">正在安装 %1</translation>
+        <translation>正在安装%1</translation>
     </message>
     <message>
         <source>“%1” is ready. %2</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”已就绪。%2</translation>
     </message>
     <message>
         <source>Pick at least one instance to import.</source>
-        <translation type="unfinished"></translation>
+        <translation>请至少选择一个要导入的实例。</translation>
     </message>
     <message>
         <source>Importing instances</source>
-        <translation type="unfinished"></translation>
+        <translation>正在导入实例</translation>
     </message>
     <message numerus="yes">
         <source>%n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个实例</numerusform>
         </translation>
     </message>
 </context>
@@ -775,21 +775,21 @@
     <name>CreateImport</name>
     <message numerus="yes">
         <source>%n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个实例</numerusform>
         </translation>
     </message>
     <message>
         <source>Looking for other launchers…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在查找其他启动器…</translation>
     </message>
     <message>
         <source>Each instance keeps its own name.</source>
-        <translation type="unfinished"></translation>
+        <translation>每个实例都保留原有名称。</translation>
     </message>
     <message>
         <source>Pick the instances to bring over.</source>
-        <translation type="unfinished"></translation>
+        <translation>选择要迁移的实例。</translation>
     </message>
     <message>
         <source>Choose a file or paste a link.</source>
@@ -801,7 +801,7 @@
     </message>
     <message>
         <source>Choose a launcher or instance folder</source>
-        <translation type="unfinished"></translation>
+        <translation>选择启动器或实例文件夹</translation>
     </message>
     <message>
         <source>Choose a modpack file</source>
@@ -821,7 +821,7 @@
     </message>
     <message>
         <source>Instances from CurseForge, Modrinth App, ATLauncher, MultiMC, Prism and the official Minecraft launcher on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>这台电脑上来自CurseForge、Modrinth App、ATLauncher、MultiMC、Prism和官方Minecraft启动器的实例。</translation>
     </message>
     <message>
         <source>Modrinth packs (.mrpack), CurseForge packs and instances exported from this or other launchers (.zip).</source>
@@ -829,11 +829,11 @@
     </message>
     <message>
         <source>File or link</source>
-        <translation type="unfinished"></translation>
+        <translation>文件或链接</translation>
     </message>
     <message>
         <source>From another launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>从其他启动器</translation>
     </message>
     <message>
         <source>Drop a file here</source>
@@ -1038,158 +1038,158 @@
     <name>DialogHost</name>
     <message>
         <source>Can&apos;t delete this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>无法删除此实例</translation>
     </message>
     <message>
         <source>“%1” and everything in it — worlds, mods, screenshots — will be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”及其中的所有内容——世界、模组、截图——都将被移到回收站。</translation>
     </message>
     <message>
         <source>These instances share files with it and may break: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>以下实例与它共享文件，删除后可能无法正常运行：%1</translation>
     </message>
     <message>
         <source>Delete “%1”?</source>
-        <translation type="unfinished">删除“%1”？</translation>
+        <translation>删除“%1”？</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>“%1” was moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”已移入回收站。</translation>
     </message>
     <message>
         <source>“%1” was deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”已删除。</translation>
     </message>
     <message>
         <source>You can change the account for every launch in the accounts panel.</source>
-        <translation type="unfinished"></translation>
+        <translation>每次启动都可以在账户面板中更改账户。</translation>
     </message>
     <message>
         <source>Microsoft</source>
-        <translation type="unfinished">Microsoft</translation>
+        <translation>Microsoft</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">离线</translation>
+        <translation>离线</translation>
     </message>
     <message>
         <source>Always use this account</source>
-        <translation type="unfinished"></translation>
+        <translation>始终使用此账户</translation>
     </message>
     <message>
         <source>Player name</source>
-        <translation type="unfinished">玩家名称</translation>
+        <translation>玩家名</translation>
     </message>
     <message>
         <source>Letters, digits and _ only, up to 16 characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>只能使用字母、数字和_，最多16个字符。</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>启动</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished">正在处理…</translation>
+        <translation>处理中…</translation>
     </message>
 </context>
 <context>
     <name>ExportDialog</name>
     <message>
         <source>Export instance</source>
-        <translation type="unfinished"></translation>
+        <translation>导出实例</translation>
     </message>
     <message>
         <source>Export to</source>
-        <translation type="unfinished"></translation>
+        <translation>导出到</translation>
     </message>
     <message>
         <source>Modrinth pack (*.mrpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth整合包 (*.mrpack)</translation>
     </message>
     <message>
         <source>Zip archive (*.zip)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zip压缩包 (*.zip)</translation>
     </message>
     <message>
         <source>Zip</source>
-        <translation type="unfinished"></translation>
+        <translation>Zip</translation>
     </message>
     <message>
         <source>Modrinth</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth</translation>
     </message>
     <message>
         <source>CurseForge</source>
-        <translation type="unfinished"></translation>
+        <translation>CurseForge</translation>
     </message>
     <message>
         <source>The whole instance in one file. Import it in this or any Prism-based launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>整个实例打包成一个文件，可在本启动器或任何基于Prism的启动器中导入。</translation>
     </message>
     <message>
         <source>A .mrpack modpack: mods from Modrinth are linked, not copied, so the file stays small.</source>
-        <translation type="unfinished"></translation>
+        <translation>一种.mrpack整合包：来自Modrinth的模组以链接形式记录而非复制，因此文件保持很小。</translation>
     </message>
     <message>
         <source>A CurseForge modpack zip: mods from CurseForge are linked, the rest is packed in.</source>
-        <translation type="unfinished"></translation>
+        <translation>CurseForge整合包zip：来自CurseForge的模组以链接形式记录，其余文件直接打包。</translation>
     </message>
     <message>
         <source>Pack name (instance name)</source>
-        <translation type="unfinished"></translation>
+        <translation>整合包名称（实例名称）</translation>
     </message>
     <message>
         <source>Version, e.g. 1.0</source>
-        <translation type="unfinished"></translation>
+        <translation>版本，例如1.0</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>作者</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>简介</translation>
     </message>
     <message>
         <source>Mark disabled mods as optional</source>
-        <translation type="unfinished"></translation>
+        <translation>将已禁用的模组标记为可选</translation>
     </message>
     <message>
         <source>Recommended memory</source>
-        <translation type="unfinished"></translation>
+        <translation>推荐内存</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 MB</translation>
+        <translation>%1 MB</translation>
     </message>
     <message>
         <source>Include</source>
-        <translation type="unfinished"></translation>
+        <translation>包含内容</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="unfinished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished">无</translation>
+        <translation>全不选</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Export…</source>
-        <translation type="unfinished"></translation>
+        <translation>导出…</translation>
     </message>
 </context>
 <context>
@@ -1238,724 +1238,724 @@
     <name>FriendRow</name>
     <message>
         <source>Waiting for them to accept your request</source>
-        <translation type="unfinished"></translation>
+        <translation>等待对方接受你的请求</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">离线</translation>
+        <translation>离线</translation>
     </message>
     <message>
         <source>Hosting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>正在开放%1</translation>
     </message>
     <message>
         <source>Hosting a world</source>
-        <translation type="unfinished"></translation>
+        <translation>正在开放世界</translation>
     </message>
     <message>
         <source>Playing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>正在玩%1</translation>
     </message>
     <message>
         <source>Playing</source>
-        <translation type="unfinished">游戏中</translation>
+        <translation>游戏中</translation>
     </message>
     <message>
         <source>Online</source>
-        <translation type="unfinished"></translation>
+        <translation>在线</translation>
     </message>
     <message>
         <source>Direct connection</source>
-        <translation type="unfinished"></translation>
+        <translation>直接连接</translation>
     </message>
     <message>
         <source>Connecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在连接…</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach — ask your friend to host</source>
-        <translation type="unfinished"></translation>
+        <translation>无法连接——请让好友开放世界</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished">重试</translation>
+        <translation>重试</translation>
     </message>
     <message>
         <source>Invite</source>
-        <translation type="unfinished"></translation>
+        <translation>邀请</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished">更多</translation>
+        <translation>更多</translation>
     </message>
     <message>
         <source>Copy friend code</source>
-        <translation type="unfinished"></translation>
+        <translation>复制好友码</translation>
     </message>
     <message>
         <source>Code copied</source>
-        <translation type="unfinished"></translation>
+        <translation>好友码已复制</translation>
     </message>
     <message>
         <source>Cancel request</source>
-        <translation type="unfinished"></translation>
+        <translation>取消请求</translation>
     </message>
     <message>
         <source>Remove friend</source>
-        <translation type="unfinished"></translation>
+        <translation>删除好友</translation>
     </message>
 </context>
 <context>
     <name>FriendsCodeCard</name>
     <message>
         <source>That doesn&apos;t look like a friend code.</source>
-        <translation type="unfinished"></translation>
+        <translation>这看起来不像好友码。</translation>
     </message>
     <message>
         <source>Your friend code</source>
-        <translation type="unfinished"></translation>
+        <translation>你的好友码</translation>
     </message>
     <message>
         <source>Send it to a friend. When they add it, you&apos;ll get a request here.</source>
-        <translation type="unfinished"></translation>
+        <translation>把它发给好友。对方添加后，你会在这里收到请求。</translation>
     </message>
     <message>
         <source>Getting your code…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在获取你的好友码…</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Code copied</source>
-        <translation type="unfinished"></translation>
+        <translation>好友码已复制</translation>
     </message>
     <message>
         <source>Copy invite link</source>
-        <translation type="unfinished"></translation>
+        <translation>复制邀请链接</translation>
     </message>
     <message>
         <source>Invite link copied</source>
-        <translation type="unfinished"></translation>
+        <translation>邀请链接已复制</translation>
     </message>
     <message>
         <source>Name friends see</source>
-        <translation type="unfinished"></translation>
+        <translation>好友看到的名字</translation>
     </message>
     <message>
         <source>Your name</source>
-        <translation type="unfinished"></translation>
+        <translation>你的名字</translation>
     </message>
     <message>
         <source>Add a friend</source>
-        <translation type="unfinished"></translation>
+        <translation>添加好友</translation>
     </message>
     <message>
         <source>Paste a friend code or invite link</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴好友码或邀请链接</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>The networking helper is missing from this install, so Friends can&apos;t work.</source>
-        <translation type="unfinished"></translation>
+        <translation>当前安装缺少联网组件，好友功能无法使用。</translation>
     </message>
     <message>
         <source>Starting…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在启动…</translation>
     </message>
     <message>
         <source>Looking for the network…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在寻找网络…</translation>
     </message>
     <message>
         <source>Online. Your network is strict: some friends may not be able to connect directly.</source>
-        <translation type="unfinished"></translation>
+        <translation>在线。你的网络限制较严：部分好友可能无法直接连接。</translation>
     </message>
     <message>
         <source>Online. Couldn&apos;t check your network yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>在线。暂时无法检测你的网络。</translation>
     </message>
     <message>
         <source>Online. Your network allows direct connections.</source>
-        <translation type="unfinished"></translation>
+        <translation>在线。你的网络允许直接连接。</translation>
     </message>
 </context>
 <context>
     <name>FriendsHomeButton</name>
     <message>
         <source>Play with friends (%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>和好友一起玩（%1）</translation>
     </message>
     <message>
         <source>Play with friends · %1 online</source>
-        <translation type="unfinished"></translation>
+        <translation>和好友一起玩 · %1人在线</translation>
     </message>
     <message>
         <source>Play with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>和好友一起玩</translation>
     </message>
     <message>
         <source>Play together without a server</source>
-        <translation type="unfinished"></translation>
+        <translation>无需服务器即可一起玩</translation>
     </message>
 </context>
 <context>
     <name>FriendsHostCard</name>
     <message>
         <source>In your world</source>
-        <translation type="unfinished"></translation>
+        <translation>在你的世界里</translation>
     </message>
     <message>
         <source>Joining</source>
-        <translation type="unfinished"></translation>
+        <translation>正在加入</translation>
     </message>
     <message>
         <source>Can&apos;t join</source>
-        <translation type="unfinished"></translation>
+        <translation>无法加入</translation>
     </message>
     <message>
         <source>Invited</source>
-        <translation type="unfinished"></translation>
+        <translation>已邀请</translation>
     </message>
     <message>
         <source>You&apos;re hosting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>你正在开放%1</translation>
     </message>
     <message>
         <source>Your world “%1” is open. Friends who joined can see it now.</source>
-        <translation type="unfinished"></translation>
+        <translation>你的世界“%1”已开放，加入的好友现在就能看到。</translation>
     </message>
     <message>
         <source>Start the game, load a world, then press Esc → Open to LAN. Friends get it automatically.</source>
-        <translation type="unfinished"></translation>
+        <translation>启动游戏并进入一个世界，然后按Esc → 对局域网开放。好友会自动看到。</translation>
     </message>
     <message>
         <source>Game is running</source>
-        <translation type="unfinished"></translation>
+        <translation>游戏运行中</translation>
     </message>
     <message>
         <source>Start %1</source>
-        <translation type="unfinished"></translation>
+        <translation>启动%1</translation>
     </message>
     <message>
         <source>Stop hosting</source>
-        <translation type="unfinished"></translation>
+        <translation>停止开放</translation>
     </message>
 </context>
 <context>
     <name>FriendsInviteCard</name>
     <message>
         <source>Playing with %1</source>
-        <translation type="unfinished"></translation>
+        <translation>正在和%1一起玩</translation>
     </message>
     <message>
         <source>%1 invites you to play</source>
-        <translation type="unfinished"></translation>
+        <translation>%1邀请你一起玩</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个模组</numerusform>
         </translation>
     </message>
     <message>
         <source>Reconnecting to %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在重新连接%1…</translation>
     </message>
     <message>
         <source>Waiting for %1 to open the world. In the game: Esc → Open to LAN.</source>
-        <translation type="unfinished"></translation>
+        <translation>正在等待%1开放世界。在游戏中：Esc → 对局域网开放。</translation>
     </message>
     <message>
         <source>Ready! Open Multiplayer in Minecraft — “%1” is in the LAN list. Or connect right away.</source>
-        <translation type="unfinished"></translation>
+        <translation>准备好了！在Minecraft中打开“多人游戏”——“%1”就在局域网列表里。也可以直接连接。</translation>
     </message>
     <message>
         <source>Join…</source>
-        <translation type="unfinished"></translation>
+        <translation>加入…</translation>
     </message>
     <message>
         <source>Decline</source>
-        <translation type="unfinished"></translation>
+        <translation>拒绝</translation>
     </message>
     <message>
         <source>Connecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在连接…</translation>
     </message>
     <message>
         <source>Instance to play with</source>
-        <translation type="unfinished"></translation>
+        <translation>用于联机的实例</translation>
     </message>
     <message>
         <source>Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>连接</translation>
     </message>
     <message>
         <source>Starting %1 and joining %2&apos;s world</source>
-        <translation type="unfinished"></translation>
+        <translation>正在启动%1并加入%2的世界</translation>
     </message>
     <message>
         <source>Couldn&apos;t start that instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法启动该实例。</translation>
     </message>
     <message>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>离开</translation>
     </message>
     <message>
         <source>Getting the pack ready…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在准备整合包…</translation>
     </message>
 </context>
 <context>
     <name>FriendsJoinDialog</name>
     <message>
         <source>%1 (with %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1（与%2）</translation>
     </message>
     <message>
         <source>Installing the pack… You can connect once it&apos;s ready.</source>
-        <translation type="unfinished"></translation>
+        <translation>正在安装整合包…就绪后即可连接。</translation>
     </message>
     <message>
         <source>The pack is ready. Press Connect when the world is open.</source>
-        <translation type="unfinished"></translation>
+        <translation>整合包已就绪。世界开放后按“连接”。</translation>
     </message>
     <message>
         <source>Join %1</source>
-        <translation type="unfinished"></translation>
+        <translation>加入%1</translation>
     </message>
     <message>
         <source>%1 is playing %2%3.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1正在玩%2%3。</translation>
     </message>
     <message>
         <source> on Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation>（Minecraft %1）</translation>
     </message>
     <message>
         <source>Use %1</source>
-        <translation type="unfinished"></translation>
+        <translation>使用%1</translation>
     </message>
     <message numerus="yes">
         <source>Adds %n missing server mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>会补装%n个缺失的服务端模组</numerusform>
         </translation>
     </message>
     <message>
         <source>Has everything needed</source>
-        <translation type="unfinished"></translation>
+        <translation>已具备所需的一切</translation>
     </message>
     <message>
         <source>Same Minecraft version</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft版本相同</translation>
     </message>
     <message>
         <source>Install the pack as a new instance</source>
-        <translation type="unfinished"></translation>
+        <translation>将整合包安装为新实例</translation>
     </message>
     <message>
         <source>Gets the mods from your friend&apos;s pack. Choose how much below.</source>
-        <translation type="unfinished"></translation>
+        <translation>从好友的整合包获取模组。在下方选择获取范围。</translation>
     </message>
     <message>
         <source>Join with an instance I pick</source>
-        <translation type="unfinished"></translation>
+        <translation>用我自己选择的实例加入</translation>
     </message>
     <message>
         <source>Nothing gets installed. It needs the same Minecraft version and mods.</source>
-        <translation type="unfinished"></translation>
+        <translation>不会安装任何内容。需要相同的Minecraft版本和模组。</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>加入</translation>
     </message>
 </context>
 <context>
     <name>FriendsNotices</name>
     <message>
         <source>Both of your networks block direct connections. One of you can try another network, like a phone hotspot.</source>
-        <translation type="unfinished"></translation>
+        <translation>你们双方的网络都阻止直接连接。其中一人可以换个网络试试，比如手机热点。</translation>
     </message>
     <message>
         <source>A strict network is in the way. Try again, or one of you can switch networks (a phone hotspot works).</source>
-        <translation type="unfinished"></translation>
+        <translation>有严格的网络挡在中间。请重试，或者其中一人换个网络（手机热点就行）。</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach them. Ask your friend to host instead, or try again in a minute.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法连接到对方。请让好友改为开放世界，或稍后再试。</translation>
     </message>
     <message>
         <source>Your friend</source>
-        <translation type="unfinished"></translation>
+        <translation>你的好友</translation>
     </message>
     <message>
         <source>%1 wants to be friends</source>
-        <translation type="unfinished"></translation>
+        <translation>%1想加你为好友</translation>
     </message>
     <message>
         <source>Friend request sent. It goes through when they&apos;re online.</source>
-        <translation type="unfinished"></translation>
+        <translation>好友请求已发送，对方上线后就会送达。</translation>
     </message>
     <message>
         <source>You and %1 are now friends</source>
-        <translation type="unfinished"></translation>
+        <translation>你和%1已成为好友</translation>
     </message>
     <message>
         <source>%1 declined the friend request</source>
-        <translation type="unfinished"></translation>
+        <translation>%1拒绝了好友请求</translation>
     </message>
     <message>
         <source>%1 removed you from friends</source>
-        <translation type="unfinished"></translation>
+        <translation>%1将你从好友中移除</translation>
     </message>
     <message>
         <source>%1 is already your friend</source>
-        <translation type="unfinished"></translation>
+        <translation>%1已经是你的好友了</translation>
     </message>
     <message>
         <source>That doesn&apos;t look like a friend code.</source>
-        <translation type="unfinished"></translation>
+        <translation>这看起来不像好友码。</translation>
     </message>
     <message>
         <source>That&apos;s your own code. Send it to a friend instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>这是你自己的好友码，请发给好友。</translation>
     </message>
     <message>
         <source>%1 invites you to play %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1邀请你一起玩%2</translation>
     </message>
     <message>
         <source>%1 stopped the game session</source>
-        <translation type="unfinished"></translation>
+        <translation>%1结束了游戏会话</translation>
     </message>
     <message>
         <source>%1 is joining</source>
-        <translation type="unfinished"></translation>
+        <translation>%1正在加入</translation>
     </message>
     <message>
         <source>%1 can&apos;t join right now</source>
-        <translation type="unfinished"></translation>
+        <translation>%1暂时无法加入</translation>
     </message>
     <message>
         <source>%1&apos;s world is open. Join from Multiplayer or press Connect.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1的世界已开放。从“多人游戏”加入，或按“连接”。</translation>
     </message>
     <message>
         <source>%1 joined your world</source>
-        <translation type="unfinished"></translation>
+        <translation>%1加入了你的世界</translation>
     </message>
     <message>
         <source>Lost the connection to %1. Reconnecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>与%1的连接已断开，正在重新连接…</translation>
     </message>
     <message>
         <source>%1: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1：%2</translation>
     </message>
 </context>
 <context>
     <name>FriendsPackOptions</name>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>仅服务端模组</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>全部内容</translation>
     </message>
     <message>
         <source>Only what&apos;s needed to join. Your own client mods (shaders, minimaps, performance) stay as they are.</source>
-        <translation type="unfinished"></translation>
+        <translation>只安装加入所需的内容。你自己的客户端模组（光影、小地图、性能优化）保持不变。</translation>
     </message>
     <message>
         <source>The whole pack, including client-side mods like minimaps and shaders.</source>
-        <translation type="unfinished"></translation>
+        <translation>整个整合包，包括小地图、光影等客户端模组。</translation>
     </message>
     <message>
         <source>Mods (tap to leave one out)</source>
-        <translation type="unfinished"></translation>
+        <translation>模组（点击可排除）</translation>
     </message>
 </context>
 <context>
     <name>FriendsPlayDialog</name>
     <message>
         <source>Invite sent. Start the game and open your world to LAN.</source>
-        <translation type="unfinished"></translation>
+        <translation>邀请已发送。启动游戏并对局域网开放你的世界。</translation>
     </message>
     <message>
         <source>Play together</source>
-        <translation type="unfinished"></translation>
+        <translation>一起玩</translation>
     </message>
     <message>
         <source>1. What do you want to play?</source>
-        <translation type="unfinished"></translation>
+        <translation>1. 想玩什么？</translation>
     </message>
     <message>
         <source>2. What do friends get?</source>
-        <translation type="unfinished"></translation>
+        <translation>2. 好友会获得什么？</translation>
     </message>
     <message>
         <source>Checking the mods…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在检查模组…</translation>
     </message>
     <message>
         <source>Pack sharing isn&apos;t available in this build yet, so friends join with an instance of their own (same Minecraft version and mods).</source>
-        <translation type="unfinished"></translation>
+        <translation>当前构建暂不支持整合包共享，好友需用自己的实例加入（Minecraft版本和模组需相同）。</translation>
     </message>
     <message>
         <source>3. Who&apos;s invited?</source>
-        <translation type="unfinished"></translation>
+        <translation>3. 邀请谁？</translation>
     </message>
     <message>
         <source>Add a friend first: send them your code.</source>
-        <translation type="unfinished"></translation>
+        <translation>请先添加好友：把你的好友码发给对方。</translation>
     </message>
     <message>
         <source>None of your friends are connected right now. Invites need both of you online.</source>
-        <translation type="unfinished"></translation>
+        <translation>你的好友目前都不在线。发送邀请需要双方都在线。</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message numerus="yes">
         <source>Invite %n friends</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>邀请%n位好友</numerusform>
         </translation>
     </message>
     <message>
         <source>Send invite</source>
-        <translation type="unfinished"></translation>
+        <translation>发送邀请</translation>
     </message>
 </context>
 <context>
     <name>GalleryBridge</name>
     <message>
         <source>File not found: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>未找到文件：%1</translation>
     </message>
     <message>
         <source>The file is too big.</source>
-        <translation type="unfinished"></translation>
+        <translation>文件过大。</translation>
     </message>
     <message>
         <source>Unsupported address: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>不支持的地址：%1</translation>
     </message>
     <message>
         <source>The gallery list is damaged: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>画廊列表已损坏：%1</translation>
     </message>
     <message>
         <source>The gallery list is empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>画廊列表为空。</translation>
     </message>
     <message>
         <source>The theme file is too big.</source>
-        <translation type="unfinished"></translation>
+        <translation>主题文件过大。</translation>
     </message>
     <message>
         <source>The theme file is not valid JSON.</source>
-        <translation type="unfinished"></translation>
+        <translation>主题文件不是有效的JSON。</translation>
     </message>
     <message>
         <source>“%1” must be a short text.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”必须是简短文本。</translation>
     </message>
     <message>
         <source>“dark” must be true or false.</source>
-        <translation type="unfinished"></translation>
+        <translation>“dark”必须是true或false。</translation>
     </message>
     <message>
         <source>Unknown setting “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>未知设置“%1”。</translation>
     </message>
     <message>
         <source>“%1” must be a group of settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”必须是一组设置。</translation>
     </message>
     <message>
         <source>“%1” must be a color like #1E2128.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”必须是类似#1E2128的颜色。</translation>
     </message>
     <message>
         <source>“%1” has a wrong value.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”的值有误。</translation>
     </message>
     <message>
         <source>“%1” must be a plain file name.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”必须是纯文件名。</translation>
     </message>
     <message>
         <source>Couldn&apos;t download the theme: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法下载主题：%1</translation>
     </message>
     <message>
         <source>This theme can&apos;t be installed. %1</source>
-        <translation type="unfinished"></translation>
+        <translation>此主题无法安装。%1</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the theme.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法保存主题。</translation>
     </message>
     <message>
         <source>Couldn&apos;t download the background: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法下载背景：%1</translation>
     </message>
     <message>
         <source>This file isn&apos;t a picture the launcher can show.</source>
-        <translation type="unfinished"></translation>
+        <translation>此文件不是启动器能显示的图片。</translation>
     </message>
     <message>
         <source>This kind of file can&apos;t be used as a background.</source>
-        <translation type="unfinished"></translation>
+        <translation>此类文件不能用作背景。</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the background.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法保存背景。</translation>
     </message>
 </context>
 <context>
     <name>GalleryCard</name>
     <message>
         <source>In use</source>
-        <translation type="unfinished"></translation>
+        <translation>使用中</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished">已安装</translation>
+        <translation>已安装</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished">作者：%1</translation>
+        <translation>作者：%1</translation>
     </message>
     <message>
         <source>1 download</source>
-        <translation type="unfinished"></translation>
+        <translation>1次下载</translation>
     </message>
     <message numerus="yes">
         <source>%n downloads</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n次下载</numerusform>
         </translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">正在安装…</translation>
+        <translation>正在安装…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">安装</translation>
+        <translation>安装</translation>
     </message>
 </context>
 <context>
     <name>GalleryDetails</name>
     <message>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>主题</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation type="unfinished"></translation>
+        <translation>视频背景</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation type="unfinished">背景</translation>
+        <translation>背景</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished">作者：%1</translation>
+        <translation>作者：%1</translation>
     </message>
     <message>
         <source>1 download</source>
-        <translation type="unfinished"></translation>
+        <translation>1次下载</translation>
     </message>
     <message numerus="yes">
         <source>%n downloads</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n次下载</numerusform>
         </translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">正在安装…</translation>
+        <translation>正在安装…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">安装</translation>
+        <translation>安装</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="unfinished">应用</translation>
+        <translation>应用</translation>
     </message>
     <message>
         <source>Use as background</source>
-        <translation type="unfinished"></translation>
+        <translation>设为背景</translation>
     </message>
     <message>
         <source>This theme is in use.</source>
-        <translation type="unfinished"></translation>
+        <translation>此主题正在使用中。</translation>
     </message>
     <message>
         <source>This is your background now.</source>
-        <translation type="unfinished"></translation>
+        <translation>这现在是你的背景了。</translation>
     </message>
     <message>
         <source>Install again</source>
-        <translation type="unfinished"></translation>
+        <translation>重新安装</translation>
     </message>
 </context>
 <context>
     <name>GameLog</name>
     <message>
         <source>No file chosen.</source>
-        <translation type="unfinished"></translation>
+        <translation>未选择文件。</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the log to %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法将日志保存到%1。</translation>
     </message>
 </context>
 <context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
-        <translation type="unfinished"></translation>
+        <translation>服务器</translation>
     </message>
     <message>
         <source>Check again</source>
-        <translation type="unfinished"></translation>
+        <translation>重新检测</translation>
     </message>
     <message>
         <source>All %1</source>
-        <translation type="unfinished"></translation>
+        <translation>全部（%1）</translation>
     </message>
     <message>
         <source>Manage</source>
-        <translation type="unfinished">管理</translation>
+        <translation>管理</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>加入</translation>
     </message>
 </context>
 <context>
@@ -1980,7 +1980,7 @@
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">模组</translation>
+        <translation>模组</translation>
     </message>
     <message>
         <source>Install a mod loader for this instance first</source>
@@ -2026,231 +2026,231 @@
     </message>
     <message>
         <source>Updated %1</source>
-        <translation type="unfinished"></translation>
+        <translation>已更新%1</translation>
     </message>
     <message>
         <source>Couldn&apos;t update %1: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>无法更新%1：%2</translation>
     </message>
 </context>
 <context>
     <name>InstanceActions</name>
     <message>
         <source>Copying %1</source>
-        <translation type="unfinished"></translation>
+        <translation>正在复制%1</translation>
     </message>
     <message>
         <source>Copied as “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>已复制为“%1”。</translation>
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">此实例已不存在。</translation>
+        <translation>此实例已不存在。</translation>
     </message>
     <message>
         <source>The game is running. Close it before deleting this instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>游戏正在运行，请先关闭再删除此实例。</translation>
     </message>
     <message>
         <source>Only Minecraft instances can be exported as modpacks.</source>
-        <translation type="unfinished"></translation>
+        <translation>只有Minecraft实例才能导出为整合包。</translation>
     </message>
     <message>
         <source>Snapshots are currently not supported by CurseForge modpacks.</source>
-        <translation type="unfinished"></translation>
+        <translation>CurseForge整合包目前不支持快照版本。</translation>
     </message>
     <message>
         <source>Unable to export instance</source>
-        <translation type="unfinished"></translation>
+        <translation>无法导出实例</translation>
     </message>
     <message>
         <source>Exporting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>正在导出%1</translation>
     </message>
     <message>
         <source>Exported to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>已导出到%1</translation>
     </message>
     <message>
         <source>Cancelled.</source>
-        <translation type="unfinished"></translation>
+        <translation>已取消。</translation>
     </message>
 </context>
 <context>
     <name>JavaInstallDialog</name>
     <message>
         <source>Download Java</source>
-        <translation type="unfinished"></translation>
+        <translation>下载Java</translation>
     </message>
     <message>
         <source>Minecraft needs Java to run. Recommended versions fit this game; the newest build is picked for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft需要Java才能运行。推荐版本与本游戏适配，并会自动为你选择最新构建。</translation>
     </message>
     <message>
         <source>fits</source>
-        <translation type="unfinished"></translation>
+        <translation>适配</translation>
     </message>
     <message>
         <source>Loading the version list…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在加载版本列表…</translation>
     </message>
     <message>
         <source>Pick a Java version on the left.</source>
-        <translation type="unfinished"></translation>
+        <translation>请在左侧选择Java版本。</translation>
     </message>
     <message>
         <source>Downloading Java. You can keep using the launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>正在下载Java，期间可以继续使用启动器。</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>下载</translation>
     </message>
 </context>
 <context>
     <name>JavaInstaller</name>
     <message>
         <source>Mojang</source>
-        <translation type="unfinished"></translation>
+        <translation>Mojang</translation>
     </message>
     <message>
         <source>Adoptium</source>
-        <translation type="unfinished"></translation>
+        <translation>Adoptium</translation>
     </message>
     <message>
         <source>Azul Zulu</source>
-        <translation type="unfinished"></translation>
+        <translation>Azul Zulu</translation>
     </message>
     <message>
         <source>IBM Semeru</source>
-        <translation type="unfinished"></translation>
+        <translation>IBM Semeru</translation>
     </message>
     <message>
         <source>No Java versions are currently available in the meta.</source>
-        <translation type="unfinished"></translation>
+        <translation>元数据中目前没有可用的Java版本。</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the Java version list: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法加载Java版本列表：%1</translation>
     </message>
     <message>
         <source>This Java version is no longer available.</source>
-        <translation type="unfinished"></translation>
+        <translation>此Java版本已不再可用。</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the builds: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法加载构建：%1</translation>
     </message>
     <message>
         <source>No builds of this Java for your computer (%1).</source>
-        <translation type="unfinished"></translation>
+        <translation>没有适用于你电脑（%1）的此Java构建。</translation>
     </message>
     <message>
         <source>Could not determine Java download type!</source>
-        <translation type="unfinished"></translation>
+        <translation>无法确定Java下载类型！</translation>
     </message>
     <message>
         <source>Install Java</source>
-        <translation type="unfinished"></translation>
+        <translation>安装Java</translation>
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished">正在安装 %1</translation>
+        <translation>正在安装%1</translation>
     </message>
     <message>
         <source>%1 is installed.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1已安装。</translation>
     </message>
     <message>
         <source>Java download cancelled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Java下载已取消。</translation>
     </message>
     <message>
         <source>Java download failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Java下载失败：%1</translation>
     </message>
 </context>
 <context>
     <name>LaunchCheck</name>
     <message>
         <source>Minecraft %1 needs Java %2 or newer</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft %1需要Java %2或更新版本</translation>
     </message>
     <message>
         <source>This instance is set to use Java %1, which is too old to start the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>此实例被设置为使用Java %1，版本过旧，无法启动游戏。</translation>
     </message>
     <message>
         <source>Choose Java</source>
-        <translation type="unfinished"></translation>
+        <translation>选择Java</translation>
     </message>
     <message>
         <source>This instance uses %1, so these won&apos;t load: %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>此实例使用的是%1，因此以下模组无法加载：%2。</translation>
     </message>
     <message>
         <source>Turn them off</source>
-        <translation type="unfinished"></translation>
+        <translation>全部禁用</translation>
     </message>
     <message>
         <source>%1 is a %2 mod</source>
-        <translation type="unfinished"></translation>
+        <translation>%1是%2模组</translation>
     </message>
     <message>
         <source>This instance uses %1, so it won&apos;t load.</source>
-        <translation type="unfinished"></translation>
+        <translation>此实例使用的是%1，因此它无法加载。</translation>
     </message>
     <message>
         <source>Turn it off</source>
-        <translation type="unfinished"></translation>
+        <translation>禁用</translation>
     </message>
     <message>
         <source>Files: %1. The game stops when a mod is there twice.</source>
-        <translation type="unfinished"></translation>
+        <translation>文件：%1。同一模组重复出现会导致游戏停止。</translation>
     </message>
     <message>
         <source>Turn off the older copy</source>
-        <translation type="unfinished"></translation>
+        <translation>禁用较旧的副本</translation>
     </message>
     <message>
         <source>Turn off the older copies</source>
-        <translation type="unfinished"></translation>
+        <translation>禁用所有较旧副本</translation>
     </message>
     <message>
         <source>%1 needs %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1需要%2</translation>
     </message>
     <message>
         <source>%1 isn&apos;t installed, so the game will stop while loading.</source>
-        <translation type="unfinished"></translation>
+        <translation>未安装%1，游戏会在加载时停止。</translation>
     </message>
     <message>
         <source>Install %1</source>
-        <translation type="unfinished"></translation>
+        <translation>安装%1</translation>
     </message>
     <message>
         <source>This instance runs Minecraft %1. These won&apos;t load: %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>此实例运行的是Minecraft %1，因此以下模组无法加载：%2。</translation>
     </message>
     <message>
         <source>Find versions for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>查找适配%1的版本</translation>
     </message>
     <message>
         <source>%1 is made for Minecraft %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1是为Minecraft %2制作的</translation>
     </message>
     <message>
         <source>This instance runs Minecraft %1, so it won&apos;t load.</source>
-        <translation type="unfinished"></translation>
+        <translation>此实例运行的是Minecraft %1，因此它无法加载。</translation>
     </message>
     <message>
         <source>Find a version for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>为%1查找适配版本</translation>
     </message>
 </context>
 <context>
@@ -2296,53 +2296,53 @@
     <name>LauncherImport</name>
     <message>
         <source>Can&apos;t tell which Minecraft version it uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法识别它使用的Minecraft版本。</translation>
     </message>
     <message>
         <source>Can&apos;t tell which mod loader version it uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法识别它使用的模组加载器版本。</translation>
     </message>
     <message>
         <source>Latest release</source>
-        <translation type="unfinished"></translation>
+        <translation>最新正式版</translation>
     </message>
     <message>
         <source>Minecraft Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft Launcher</translation>
     </message>
     <message>
         <source>Couldn&apos;t create %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法创建%1</translation>
     </message>
     <message>
         <source>Couldn&apos;t copy %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法复制%1</translation>
     </message>
     <message>
         <source>Prism / MultiMC</source>
-        <translation type="unfinished"></translation>
+        <translation>Prism / MultiMC</translation>
     </message>
 </context>
 <context>
     <name>LauncherImport::ForeignImportTask</name>
     <message>
         <source>Linking %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在链接%1…</translation>
     </message>
     <message>
         <source>Copying %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在复制%1…</translation>
     </message>
 </context>
 <context>
     <name>Main</name>
     <message>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>强制退出</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>%1 didn&apos;t start: %2</source>
@@ -2431,39 +2431,39 @@
     <name>PackSettings</name>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 MB</translation>
+        <translation>%1 MB</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished">%1 GB</translation>
+        <translation>%1 GB</translation>
     </message>
     <message>
         <source>This modpack asked for more memory than this computer has, so it got %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>此整合包请求的内存超过这台电脑的物理内存，因此已分配%1。</translation>
     </message>
     <message>
         <source>This modpack set %1 of memory.</source>
-        <translation type="unfinished"></translation>
+        <translation>此整合包将内存设置为%1。</translation>
     </message>
     <message>
         <source>Memory: %1 (set by the modpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>内存：%1（由整合包设置）</translation>
     </message>
     <message>
         <source>It also added its own Java arguments.</source>
-        <translation type="unfinished"></translation>
+        <translation>它还添加了自己的Java参数。</translation>
     </message>
     <message>
         <source>Java arguments: %1 (set by the modpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Java参数：%1（由整合包设置）</translation>
     </message>
     <message>
         <source>The file %1 doesn&apos;t exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>文件%1不存在。</translation>
     </message>
     <message>
         <source>Couldn&apos;t replace %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法替换%1。</translation>
     </message>
 </context>
 <context>
@@ -2682,15 +2682,15 @@
     </message>
     <message>
         <source>Sounds</source>
-        <translation type="unfinished"></translation>
+        <translation>音效</translation>
     </message>
     <message>
         <source>Play sounds on clicks and launches</source>
-        <translation type="unfinished"></translation>
+        <translation>点击和启动时播放音效</translation>
     </message>
     <message>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>音量</translation>
     </message>
     <message>
         <source>Choose a background image</source>
@@ -2812,7 +2812,7 @@
     </message>
     <message>
         <source>You can leave this page: the install keeps going and its progress stays at the bottom of the window.</source>
-        <translation type="unfinished"></translation>
+        <translation>可以离开此页面：安装会继续进行，进度会显示在窗口底部。</translation>
     </message>
     <message>
         <source>Dismiss</source>
@@ -2827,66 +2827,66 @@
     </message>
     <message>
         <source>Play together without a server or any setup. Your computers connect directly.</source>
-        <translation type="unfinished"></translation>
+        <translation>无需服务器或任何设置即可一起玩。你们的电脑直接互联。</translation>
     </message>
     <message>
         <source>Play together</source>
-        <translation type="unfinished"></translation>
+        <translation>一起玩</translation>
     </message>
     <message>
         <source>Friend requests</source>
-        <translation type="unfinished"></translation>
+        <translation>好友请求</translation>
     </message>
     <message>
         <source>Someone</source>
-        <translation type="unfinished"></translation>
+        <translation>有人</translation>
     </message>
     <message>
         <source>wants to be friends</source>
-        <translation type="unfinished"></translation>
+        <translation>想加你为好友</translation>
     </message>
     <message>
         <source>Accept</source>
-        <translation type="unfinished"></translation>
+        <translation>接受</translation>
     </message>
     <message>
         <source>Decline</source>
-        <translation type="unfinished"></translation>
+        <translation>拒绝</translation>
     </message>
     <message>
         <source>Your friends</source>
-        <translation type="unfinished"></translation>
+        <translation>你的好友</translation>
     </message>
     <message>
         <source>%1 online</source>
-        <translation type="unfinished"></translation>
+        <translation>%1人在线</translation>
     </message>
     <message>
         <source>No friends yet. Copy your code and send it to a friend, or paste theirs on the right.</source>
-        <translation type="unfinished"></translation>
+        <translation>还没有好友。复制你的好友码发给好友，或在右侧粘贴对方的好友码。</translation>
     </message>
 </context>
 <context>
     <name>PageGallery</name>
     <message>
         <source>“%1” applied</source>
-        <translation type="unfinished"></translation>
+        <translation>已应用“%1”</translation>
     </message>
     <message>
         <source>“%1” is your background now</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”现在是你的背景了</translation>
     </message>
     <message>
         <source>Couldn&apos;t add “%1” to your backgrounds.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法将“%1”添加到你的背景。</translation>
     </message>
     <message>
         <source>“%1” installed. Press Apply to use it.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”已安装，点击“应用”即可使用。</translation>
     </message>
     <message>
         <source>“%1” added to your backgrounds.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”已添加到你的背景。</translation>
     </message>
     <message>
         <source>Back</source>
@@ -2894,107 +2894,107 @@
     </message>
     <message>
         <source>Gallery</source>
-        <translation type="unfinished"></translation>
+        <translation>画廊</translation>
     </message>
     <message>
         <source>Themes</source>
-        <translation type="unfinished"></translation>
+        <translation>主题</translation>
     </message>
     <message>
         <source>Backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>背景</translation>
     </message>
     <message>
         <source>Share yours</source>
-        <translation type="unfinished"></translation>
+        <translation>分享你的作品</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished">刷新</translation>
+        <translation>刷新</translation>
     </message>
     <message>
         <source>Search themes</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索主题</translation>
     </message>
     <message>
         <source>Search backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索背景</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach the online gallery, so you&apos;re seeing the examples that come with the launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法连接在线画廊，当前显示的是启动器自带的示例。</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished">重试</translation>
+        <translation>重试</translation>
     </message>
     <message>
         <source>Loading the gallery…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在加载画廊…</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the gallery: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法加载画廊：%1</translation>
     </message>
     <message>
         <source>Nothing matches your search.</source>
-        <translation type="unfinished"></translation>
+        <translation>没有符合搜索条件的结果。</translation>
     </message>
     <message>
         <source>No themes here yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>这里还没有主题。</translation>
     </message>
     <message>
         <source>No backgrounds here yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>这里还没有背景。</translation>
     </message>
     <message>
         <source>Clear search</source>
-        <translation type="unfinished"></translation>
+        <translation>清除搜索</translation>
     </message>
     <message>
         <source>Share your theme</source>
-        <translation type="unfinished"></translation>
+        <translation>分享你的主题</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>The gallery is a public list on GitHub. Anyone can suggest a theme or a background there; once it&apos;s accepted, it shows up here for everyone.</source>
-        <translation type="unfinished"></translation>
+        <translation>画廊是GitHub上的一个公开列表，任何人都可以在那里投稿主题或背景；通过收录后就会展示给所有人。</translation>
     </message>
     <message>
         <source>Open your themes folder and find your theme&apos;s .json file.</source>
-        <translation type="unfinished"></translation>
+        <translation>打开你的主题文件夹，找到主题的.json文件。</translation>
     </message>
     <message>
         <source>Open the gallery page on GitHub and follow the steps there to add your file and a short description.</source>
-        <translation type="unfinished"></translation>
+        <translation>在GitHub上打开画廊页面，按页面上的步骤添加你的文件和一段简短介绍。</translation>
     </message>
     <message>
         <source>Only share things you made yourself or are allowed to share.</source>
-        <translation type="unfinished"></translation>
+        <translation>只分享你自己制作或有权分享的内容。</translation>
     </message>
     <message>
         <source>Open themes folder</source>
-        <translation type="unfinished">打开主题文件夹</translation>
+        <translation>打开主题文件夹</translation>
     </message>
     <message>
         <source>Open gallery page</source>
-        <translation type="unfinished"></translation>
+        <translation>打开画廊页面</translation>
     </message>
     <message>
         <source>Gallery address</source>
-        <translation type="unfinished"></translation>
+        <translation>画廊地址</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation type="unfinished"></translation>
+        <translation>使用</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="unfinished">重置</translation>
+        <translation>重置</translation>
     </message>
 </context>
 <context>
@@ -3052,7 +3052,7 @@
     </message>
     <message>
         <source>Servers</source>
-        <translation type="unfinished"></translation>
+        <translation>服务器</translation>
     </message>
     <message>
         <source>Screenshots</source>
@@ -3064,7 +3064,7 @@
     </message>
     <message>
         <source>Game log</source>
-        <translation type="unfinished">游戏日志</translation>
+        <translation>游戏日志</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3119,11 +3119,11 @@
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">正在安装…</translation>
+        <translation>正在安装…</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Stop</source>
@@ -3162,177 +3162,177 @@
     <name>PageReceivePack</name>
     <message>
         <source>Using “%1” as it is</source>
-        <translation type="unfinished"></translation>
+        <translation>直接使用“%1”</translation>
     </message>
     <message>
         <source>“%1” is ready</source>
-        <translation type="unfinished">“%1”已就绪</translation>
+        <translation>“%1”已就绪</translation>
     </message>
     <message numerus="yes">
         <source>Added %n item(s) to “%1”</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>已向“%1”添加%n个项目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n couldn&apos;t be downloaded</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>有%n项无法下载</numerusform>
         </translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Shared pack</source>
-        <translation type="unfinished"></translation>
+        <translation>共享整合包</translation>
     </message>
     <message>
         <source>Open a shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>打开共享实例</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>no mod loader</source>
-        <translation type="unfinished"></translation>
+        <translation>无模组加载器</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个模组</numerusform>
         </translation>
     </message>
     <message>
         <source>Open another</source>
-        <translation type="unfinished"></translation>
+        <translation>打开另一个</translation>
     </message>
     <message>
         <source>Paste the link a friend sent you, or open the .fashpack file. You&apos;ll see what&apos;s inside before anything is downloaded.</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴好友发给你的链接，或打开.fashpack文件。下载任何内容之前，你可以先看看里面有什么。</translation>
     </message>
     <message>
         <source>Paste a share link (fashion://pack/…)</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴共享链接（fashion://pack/…）</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">打开</translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>Open a .fashpack file</source>
-        <translation type="unfinished"></translation>
+        <translation>打开.fashpack文件</translation>
     </message>
     <message>
         <source>What to install</source>
-        <translation type="unfinished"></translation>
+        <translation>安装内容</translation>
     </message>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>仅服务端模组</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>全部内容</translation>
     </message>
     <message>
         <source>Your friend shared only the server-side mods — enough to join or host the same server.</source>
-        <translation type="unfinished"></translation>
+        <translation>好友只共享了服务端模组——足够加入或开放同一服务器。</translation>
     </message>
     <message>
         <source>Everything your friend uses, including client-only extras and packs.</source>
-        <translation type="unfinished"></translation>
+        <translation>好友使用的全部内容，包括仅客户端的附加内容和资源包。</translation>
     </message>
     <message>
         <source>Just what&apos;s needed to play on the same server. Client-only extras like minimaps and shaders are skipped.</source>
-        <translation type="unfinished"></translation>
+        <translation>只包含在同一服务器游玩所需的内容。小地图、光影等仅客户端的附加内容会被跳过。</translation>
     </message>
     <message>
         <source>Ask your friend for these files — they aren&apos;t on Modrinth or CurseForge: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>请向好友索要这些文件——它们不在Modrinth或CurseForge上：%1</translation>
     </message>
     <message>
         <source>Where to put it</source>
-        <translation type="unfinished"></translation>
+        <translation>安装到哪里</translation>
     </message>
     <message>
         <source>Add to “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>添加到“%1”</translation>
     </message>
     <message>
         <source>Add to one of your instances</source>
-        <translation type="unfinished"></translation>
+        <translation>添加到你的某个实例</translation>
     </message>
     <message>
         <source>You already have a similar instance with all of these mods.</source>
-        <translation type="unfinished"></translation>
+        <translation>你已有一个包含所有这些模组的相似实例。</translation>
     </message>
     <message numerus="yes">
         <source>You already have a similar instance — use it and add %n missing mod(s). Your own mods stay.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>你已有一个相似实例——直接使用它并补装%n个缺失的模组。你自己的模组会保留。</numerusform>
         </translation>
     </message>
     <message>
         <source>Create a new instance</source>
-        <translation type="unfinished"></translation>
+        <translation>创建新实例</translation>
     </message>
     <message>
         <source>Minecraft %1%2 with these mods, kept apart from your other games.</source>
-        <translation type="unfinished"></translation>
+        <translation>带有这些模组的Minecraft %1%2，与你的其他游戏相互独立。</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Use my own instance without changes</source>
-        <translation type="unfinished"></translation>
+        <translation>使用我自己的实例，不做更改</translation>
     </message>
     <message>
         <source>Nothing is downloaded. Pick this if you already set it up yourself.</source>
-        <translation type="unfinished"></translation>
+        <translation>不会下载任何内容。如果你已经自己配置好了，就选这个。</translation>
     </message>
     <message>
         <source>“%1” has some of these mods but runs a different Minecraft version or loader, so a new instance is safer.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”包含其中部分模组，但使用不同的Minecraft版本或加载器，所以新建实例更稳妥。</translation>
     </message>
     <message>
         <source>Your instance stays exactly as it is.</source>
-        <translation type="unfinished"></translation>
+        <translation>你的实例将保持原样。</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s) selected. Files come from Modrinth and CurseForge.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>已选择%n个项目。文件来自Modrinth和CurseForge。</numerusform>
         </translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished">正在处理…</translation>
+        <translation>处理中…</translation>
     </message>
     <message>
         <source>Use this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>使用此实例</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished">创建实例</translation>
+        <translation>创建实例</translation>
     </message>
     <message>
         <source>Add mods</source>
-        <translation type="unfinished"></translation>
+        <translation>添加模组</translation>
     </message>
     <message>
         <source>Open instance</source>
-        <translation type="unfinished">打开实例</translation>
+        <translation>打开实例</translation>
     </message>
 </context>
 <context>
@@ -3355,7 +3355,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>高级</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3514,7 +3514,7 @@
     <name>PageSkins</name>
     <message>
         <source>Back</source>
-        <translation type="unfinished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Skins</source>
@@ -3522,115 +3522,115 @@
     </message>
     <message>
         <source>Turn your player around, collect skins and choose what you wear.</source>
-        <translation type="unfinished"></translation>
+        <translation>旋转你的角色，收集皮肤，挑选你想穿的那一件。</translation>
     </message>
     <message>
         <source>Account</source>
-        <translation type="unfinished">账号</translation>
+        <translation>账户</translation>
     </message>
     <message>
         <source>%1 (offline)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1（离线）</translation>
     </message>
     <message>
         <source>No skins yet. Drop a skin PNG here or get one by player name.</source>
-        <translation type="unfinished"></translation>
+        <translation>还没有皮肤。把皮肤PNG拖到这里，或按玩家名获取。</translation>
     </message>
     <message>
         <source>Drag to turn · double-click to face front</source>
-        <translation type="unfinished"></translation>
+        <translation>拖动旋转 · 双击回正</translation>
     </message>
     <message>
         <source>Classic arms</source>
-        <translation type="unfinished"></translation>
+        <translation>经典手臂</translation>
     </message>
     <message>
         <source>Slim arms</source>
-        <translation type="unfinished"></translation>
+        <translation>纤细手臂</translation>
     </message>
     <message>
         <source>Cape</source>
-        <translation type="unfinished"></translation>
+        <translation>披风</translation>
     </message>
     <message>
         <source>No cape</source>
-        <translation type="unfinished"></translation>
+        <translation>无披风</translation>
     </message>
     <message>
         <source>This is an offline account, so the game can&apos;t download a skin for it — in game you&apos;ll look like Steve or Alex. You can still keep and preview skins here. To wear one in game, install a skin mod (for example CustomSkinLoader) and give it this skin file. Only people with the same mod will see it.</source>
-        <translation type="unfinished"></translation>
+        <translation>这是离线账户，游戏无法为其下载皮肤——在游戏中你会显示为Steve或Alex。你仍可以在这里保存和预览皮肤。想在游戏中穿上皮肤，可以安装皮肤模组（例如CustomSkinLoader）并加载这个皮肤文件。只有安装了相同模组的玩家才能看到。</translation>
     </message>
     <message>
         <source>This Microsoft account can&apos;t change its skin right now. Sign in again in Accounts, and make sure it owns Minecraft.</source>
-        <translation type="unfinished"></translation>
+        <translation>此Microsoft账户暂时无法更改皮肤。请在“账户”中重新登录，并确认它拥有Minecraft。</translation>
     </message>
     <message>
         <source>You&apos;re wearing this</source>
-        <translation type="unfinished"></translation>
+        <translation>正在使用此皮肤</translation>
     </message>
     <message>
         <source>Update cape</source>
-        <translation type="unfinished"></translation>
+        <translation>更新披风</translation>
     </message>
     <message>
         <source>Use this skin</source>
-        <translation type="unfinished"></translation>
+        <translation>使用此皮肤</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished">更多</translation>
+        <translation>更多</translation>
     </message>
     <message>
         <source>Go back to the default skin</source>
-        <translation type="unfinished"></translation>
+        <translation>恢复默认皮肤</translation>
     </message>
     <message>
         <source>Player name, to copy their skin</source>
-        <translation type="unfinished"></translation>
+        <translation>输入玩家名以复制其皮肤</translation>
     </message>
     <message>
         <source>Get skin</source>
-        <translation type="unfinished"></translation>
+        <translation>获取皮肤</translation>
     </message>
     <message>
         <source>Add file</source>
-        <translation type="unfinished"></translation>
+        <translation>添加文件</translation>
     </message>
     <message>
         <source>Open skins folder</source>
-        <translation type="unfinished"></translation>
+        <translation>打开皮肤文件夹</translation>
     </message>
     <message>
         <source>Wearing</source>
-        <translation type="unfinished"></translation>
+        <translation>使用中</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished">更多操作</translation>
+        <translation>更多操作</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="unfinished">重命名</translation>
+        <translation>重命名</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Your skin library is empty. Drop PNG skins anywhere on this page, add a file, or type a player name above.</source>
-        <translation type="unfinished"></translation>
+        <translation>你的皮肤库还是空的。把PNG皮肤拖到本页任意位置、添加文件，或在上方输入玩家名。</translation>
     </message>
     <message>
         <source>Choose skin images</source>
-        <translation type="unfinished"></translation>
+        <translation>选择皮肤图片</translation>
     </message>
     <message>
         <source>Skin images (*.png)</source>
-        <translation type="unfinished"></translation>
+        <translation>皮肤图片 (*.png)</translation>
     </message>
     <message>
         <source>Drop to add to your skins</source>
-        <translation type="unfinished"></translation>
+        <translation>松开即可添加到你的皮肤</translation>
     </message>
 </context>
 <context>
@@ -3683,35 +3683,35 @@
     <name>QObject</name>
     <message>
         <source>any version</source>
-        <translation type="unfinished"></translation>
+        <translation>任意版本</translation>
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1至%2</translation>
     </message>
     <message>
         <source>%1 up to (not including) %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1至（不含）%2</translation>
     </message>
     <message>
         <source>%1 or newer</source>
-        <translation type="unfinished"></translation>
+        <translation>%1或更新</translation>
     </message>
     <message>
         <source>newer than %1</source>
-        <translation type="unfinished"></translation>
+        <translation>高于%1</translation>
     </message>
     <message>
         <source>%1 or older</source>
-        <translation type="unfinished"></translation>
+        <translation>%1或更旧</translation>
     </message>
     <message>
         <source>older than %1</source>
-        <translation type="unfinished"></translation>
+        <translation>低于%1</translation>
     </message>
     <message>
         <source> or </source>
-        <translation type="unfinished"></translation>
+        <translation>或</translation>
     </message>
 </context>
 <context>
@@ -4051,15 +4051,15 @@
     </message>
     <message>
         <source>See what&apos;s new</source>
-        <translation type="unfinished"></translation>
+        <translation>查看新变化</translation>
     </message>
     <message>
         <source>Mods aren&apos;t checked before playing.</source>
-        <translation type="unfinished"></translation>
+        <translation>启动前不检查模组。</translation>
     </message>
     <message>
         <source>Turn checks on</source>
-        <translation type="unfinished"></translation>
+        <translation>开启检查</translation>
     </message>
     <message>
         <source>Nothing matches “%1”</source>
@@ -4085,37 +4085,37 @@
     <name>ResUpdatesDialog</name>
     <message numerus="yes">
         <source>%n update(s) available</source>
-        <translation type="unfinished">
-            <numerusform>有 %n 个可用更新</numerusform>
+        <translation>
+            <numerusform>%n项可用更新</numerusform>
         </translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>See what changed before you update. Open a mod to read its changelog.</source>
-        <translation type="unfinished"></translation>
+        <translation>更新前先看看改了什么。点开模组可查看更新日志。</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>更新</translation>
     </message>
     <message>
         <source>The author didn&apos;t write a changelog for this version.</source>
-        <translation type="unfinished"></translation>
+        <translation>作者没有为该版本编写更新日志。</translation>
     </message>
     <message>
         <source>Updating…</source>
-        <translation type="unfinished">正在更新…</translation>
+        <translation>正在更新…</translation>
     </message>
     <message>
         <source>Not now</source>
-        <translation type="unfinished"></translation>
+        <translation>暂不</translation>
     </message>
     <message>
         <source>Update all (%1)</source>
-        <translation type="unfinished">全部更新 (%1)</translation>
+        <translation>全部更新（%1）</translation>
     </message>
 </context>
 <context>
@@ -4149,155 +4149,155 @@
     <name>ServerListModel</name>
     <message>
         <source>Couldn&apos;t save the server list.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法保存服务器列表。</translation>
     </message>
     <message>
         <source>Type the server address, for example play.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation>输入服务器地址，例如play.example.com</translation>
     </message>
     <message>
         <source>A server address can&apos;t contain spaces.</source>
-        <translation type="unfinished"></translation>
+        <translation>服务器地址不能包含空格。</translation>
     </message>
     <message>
         <source>The port after the colon must be between 1 and 65535.</source>
-        <translation type="unfinished"></translation>
+        <translation>冒号后的端口必须在1到65535之间。</translation>
     </message>
     <message>
         <source>Minecraft Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft服务器</translation>
     </message>
     <message>
         <source>The server didn&apos;t answer in time.</source>
-        <translation type="unfinished"></translation>
+        <translation>服务器未及时响应。</translation>
     </message>
     <message>
         <source>Couldn&apos;t find a server at this address.</source>
-        <translation type="unfinished"></translation>
+        <translation>在此地址找不到服务器。</translation>
     </message>
     <message>
         <source>The server is offline or not reachable.</source>
-        <translation type="unfinished"></translation>
+        <translation>服务器离线或无法访问。</translation>
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">此实例已不存在。</translation>
+        <translation>此实例已不存在。</translation>
     </message>
     <message>
         <source>The game is already running. Join the server from the in-game Multiplayer menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>游戏已在运行，请在游戏内的“多人游戏”菜单中加入服务器。</translation>
     </message>
 </context>
 <context>
     <name>ServerStatus</name>
     <message>
         <source>Checking…</source>
-        <translation type="unfinished">正在检查…</translation>
+        <translation>检测中…</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">离线</translation>
+        <translation>离线</translation>
     </message>
     <message>
         <source>Not checked</source>
-        <translation type="unfinished"></translation>
+        <translation>未检测</translation>
     </message>
     <message>
         <source>%1 / %2 players</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2名玩家</translation>
     </message>
     <message numerus="yes">
         <source>%n player(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n名玩家</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 ms</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ms</translation>
     </message>
     <message>
         <source>Online</source>
-        <translation type="unfinished"></translation>
+        <translation>在线</translation>
     </message>
 </context>
 <context>
     <name>SettingsAdvanced</name>
     <message>
         <source>Custom commands</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义命令</translation>
     </message>
     <message>
         <source>Run your own commands around the game. $INST_DIR, $INST_MC_DIR, $INST_JAVA and similar variables are filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>在游戏前后运行你自己的命令。$INST_DIR、$INST_MC_DIR、$INST_JAVA等变量会自动填入。</translation>
     </message>
     <message>
         <source>Before launch</source>
-        <translation type="unfinished"></translation>
+        <translation>启动前</translation>
     </message>
     <message>
         <source>e.g. a backup script</source>
-        <translation type="unfinished"></translation>
+        <translation>例如备份脚本</translation>
     </message>
     <message>
         <source>Wrapper</source>
-        <translation type="unfinished"></translation>
+        <translation>包装器</translation>
     </message>
     <message>
         <source>Starts Java through this program, like “prime-run”.</source>
-        <translation type="unfinished"></translation>
+        <translation>通过此程序启动Java，例如“prime-run”。</translation>
     </message>
     <message>
         <source>After exit</source>
-        <translation type="unfinished"></translation>
+        <translation>退出后</translation>
     </message>
     <message>
         <source>Environment variables</source>
-        <translation type="unfinished"></translation>
+        <translation>环境变量</translation>
     </message>
     <message>
         <source>Extra variables for the game process, one NAME=value per line.</source>
-        <translation type="unfinished"></translation>
+        <translation>为游戏进程添加额外变量，每行一个NAME=value。</translation>
     </message>
     <message>
         <source>Graphics</source>
-        <translation type="unfinished"></translation>
+        <translation>图形</translation>
     </message>
     <message>
         <source>Which graphics card and drivers the game uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>游戏使用哪个显卡和驱动。</translation>
     </message>
     <message>
         <source>Use the discrete graphics card</source>
-        <translation type="unfinished"></translation>
+        <translation>使用独立显卡</translation>
     </message>
     <message>
         <source>On laptops with two graphics cards, run the game on the faster one.</source>
-        <translation type="unfinished"></translation>
+        <translation>在有两块显卡的笔记本上，让游戏运行在更快的那块上。</translation>
     </message>
     <message>
         <source>Use Zink (OpenGL over Vulkan)</source>
-        <translation type="unfinished"></translation>
+        <translation>使用Zink（基于Vulkan的OpenGL）</translation>
     </message>
     <message>
         <source>Can help where the OpenGL driver is broken. Usually slower.</source>
-        <translation type="unfinished"></translation>
+        <translation>在OpenGL驱动有问题时可能有帮助，但通常更慢。</translation>
     </message>
     <message>
         <source>Old versions</source>
-        <translation type="unfinished">历史版本</translation>
+        <translation>旧版本</translation>
     </message>
     <message>
         <source>Fixes for Minecraft versions from before 1.6.</source>
-        <translation type="unfinished"></translation>
+        <translation>针对Minecraft 1.6之前版本的修复。</translation>
     </message>
     <message>
         <source>Fix skins, sounds and logins</source>
-        <translation type="unfinished"></translation>
+        <translation>修复皮肤、音效和登录</translation>
     </message>
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>重定向旧版游戏依赖但已不复存在的服务。</translation>
     </message>
 </context>
 <context>
@@ -4669,228 +4669,228 @@
     <name>ShareDialog</name>
     <message>
         <source>Share “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>分享“%1”</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Friends paste the link in Fashion Launcher and get Minecraft %1%2 with the same mods, downloaded from Modrinth and CurseForge. Worlds and settings aren&apos;t sent.</source>
-        <translation type="unfinished"></translation>
+        <translation>好友在Fashion Launcher中粘贴该链接，即可获得带有相同模组的Minecraft %1%2，模组从Modrinth和CurseForge下载。世界和设置不会被发送。</translation>
     </message>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>仅服务端模组</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>全部内容</translation>
     </message>
     <message>
         <source>All your mods, resource packs and shader packs — a full copy of how you play.</source>
-        <translation type="unfinished"></translation>
+        <translation>你的全部模组、资源包和光影包——完整复刻你的游戏配置。</translation>
     </message>
     <message>
         <source>Only what a server needs, so friends can join or host it. Client-only extras like minimaps, shaders and resource packs stay with you.</source>
-        <translation type="unfinished"></translation>
+        <translation>只包含服务器所需的内容，好友即可加入或开放该服务器。小地图、光影、资源包等仅客户端的内容会保留在你这里。</translation>
     </message>
     <message>
         <source>Looking your mods up on Modrinth…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在Modrinth上查找你的模组…</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s) will be shared.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>将共享%n个项目。</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n of them can&apos;t be downloaded by others — send those files separately or untick them.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>其中%n项无法被他人下载——请单独发送这些文件，或取消勾选。</numerusform>
         </translation>
     </message>
     <message>
         <source>The link is long and some chats cut it off; the file is safer.</source>
-        <translation type="unfinished"></translation>
+        <translation>链接较长，部分聊天工具可能会把它截断；发送文件更稳妥。</translation>
     </message>
     <message>
         <source>Link copied</source>
-        <translation type="unfinished"></translation>
+        <translation>链接已复制</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="unfinished"></translation>
+        <translation>保存文件</translation>
     </message>
     <message>
         <source>Saved %1</source>
-        <translation type="unfinished"></translation>
+        <translation>已保存：%1</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>复制链接</translation>
     </message>
     <message>
         <source>Share link copied — send it to your friends</source>
-        <translation type="unfinished"></translation>
+        <translation>共享链接已复制——发给你的好友吧</translation>
     </message>
 </context>
 <context>
     <name>ShareModList</name>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">模组</translation>
+        <translation>模组</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished">资源包</translation>
+        <translation>资源包</translation>
     </message>
     <message>
         <source>Shader packs</source>
-        <translation type="unfinished"></translation>
+        <translation>光影包</translation>
     </message>
     <message>
         <source>Client only</source>
-        <translation type="unfinished"></translation>
+        <translation>仅客户端</translation>
     </message>
     <message>
         <source>Server only</source>
-        <translation type="unfinished"></translation>
+        <translation>仅服务端</translation>
     </message>
     <message>
         <source>Client and server</source>
-        <translation type="unfinished"></translation>
+        <translation>客户端和服务端</translation>
     </message>
     <message>
         <source>Not sure</source>
-        <translation type="unfinished"></translation>
+        <translation>不确定</translation>
     </message>
     <message>
         <source>Find a mod</source>
-        <translation type="unfinished"></translation>
+        <translation>查找模组</translation>
     </message>
     <message>
         <source>Tick all</source>
-        <translation type="unfinished"></translation>
+        <translation>全选</translation>
     </message>
     <message>
         <source>Checking your mods…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在检查你的模组…</translation>
     </message>
     <message>
         <source>Nothing matches “%1”</source>
-        <translation type="unfinished">没有与“%1”匹配的内容</translation>
+        <translation>没有匹配“%1”的结果</translation>
     </message>
     <message>
         <source>No mods here — only the Minecraft version and loader will be shared.</source>
-        <translation type="unfinished"></translation>
+        <translation>这里没有模组——只会共享Minecraft版本和加载器。</translation>
     </message>
 </context>
 <context>
     <name>ShareModRow</name>
     <message>
         <source>Not on Modrinth or CurseForge — only the sender has this file</source>
-        <translation type="unfinished"></translation>
+        <translation>不在Modrinth或CurseForge上——只有发送者拥有此文件</translation>
     </message>
 </context>
 <context>
     <name>SharingBridge</name>
     <message>
         <source>Paste a share link first.</source>
-        <translation type="unfinished"></translation>
+        <translation>请先粘贴共享链接。</translation>
     </message>
     <message>
         <source>This doesn&apos;t look like a shared instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>这看起来不像共享实例。</translation>
     </message>
     <message>
         <source>This isn&apos;t a share link. Links start with fashion://pack/</source>
-        <translation type="unfinished"></translation>
+        <translation>这不是共享链接。共享链接以fashion://pack/开头</translation>
     </message>
     <message>
         <source>This link is broken or cut off. Ask for it again, or for the file instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>链接已损坏或不完整。请让对方重新发送，或改为发送文件。</translation>
     </message>
     <message>
         <source>Save shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>保存共享实例</translation>
     </message>
     <message>
         <source>Fashion pack (*.fashpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fashion 整合包 (*.fashpack)</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>无法保存文件：%1</translation>
     </message>
     <message>
         <source>Open shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>打开共享实例</translation>
     </message>
     <message>
         <source>Fashion pack (*.fashpack);;All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fashion 整合包 (*.fashpack);;所有文件 (*)</translation>
     </message>
     <message>
         <source>Couldn&apos;t open “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法打开“%1”。</translation>
     </message>
     <message>
         <source>Pick one of your instances.</source>
-        <translation type="unfinished"></translation>
+        <translation>请选择你的一个实例。</translation>
     </message>
     <message>
         <source>The pack doesn&apos;t say which Minecraft version it needs.</source>
-        <translation type="unfinished"></translation>
+        <translation>该整合包未说明需要哪个Minecraft版本。</translation>
     </message>
     <message>
         <source>The pack uses a mod loader this launcher doesn&apos;t know: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>该整合包使用了本启动器不认识的模组加载器：%1</translation>
     </message>
     <message>
         <source>That instance no longer exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>该实例已不存在。</translation>
     </message>
     <message>
         <source>Close the game before adding mods to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>请先关闭游戏，再向其中添加模组。</translation>
     </message>
     <message numerus="yes">
         <source>Looking up %n file(s)…</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>正在查找%n个文件…</numerusform>
         </translation>
     </message>
     <message>
         <source>Shared pack</source>
-        <translation type="unfinished"></translation>
+        <translation>共享整合包</translation>
     </message>
     <message>
         <source>Creating “%1”…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在创建“%1”…</translation>
     </message>
     <message>
         <source>Creating the instance failed.</source>
-        <translation type="unfinished">创建实例失败。</translation>
+        <translation>创建实例失败。</translation>
     </message>
     <message>
         <source>Downloading mods</source>
-        <translation type="unfinished"></translation>
+        <translation>正在下载模组</translation>
     </message>
     <message>
         <source>%1 (the author doesn&apos;t allow automatic downloads)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1（作者不允许自动下载）</translation>
     </message>
     <message numerus="yes">
         <source>Downloading %n file(s)…</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>正在下载%n个文件…</numerusform>
         </translation>
     </message>
     <message>
         <source>Stopped. Files downloaded so far were kept.</source>
-        <translation type="unfinished"></translation>
+        <translation>已停止，已下载的文件会保留。</translation>
     </message>
 </context>
 <context>
@@ -4964,109 +4964,109 @@
     <name>SkinsBridge</name>
     <message>
         <source>Download capes</source>
-        <translation type="unfinished"></translation>
+        <translation>下载披风</translation>
     </message>
     <message>
         <source>Cape</source>
-        <translation type="unfinished"></translation>
+        <translation>披风</translation>
     </message>
     <message>
         <source>“%1” isn&apos;t a Minecraft skin. Skins are 64×64 (or old 64×32) PNG images.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”不是Minecraft皮肤。皮肤应为64×64（或旧版64×32）的PNG图片。</translation>
     </message>
     <message>
         <source>Couldn&apos;t add “%1”: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>无法添加“%1”：%2</translation>
     </message>
     <message numerus="yes">
         <source>Added %n skin(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>已添加%n个皮肤</numerusform>
         </translation>
     </message>
     <message>
         <source>Player names are 1–16 letters, digits or underscores.</source>
-        <translation type="unfinished"></translation>
+        <translation>玩家名可包含1–16个字母、数字或下划线。</translation>
     </message>
     <message>
         <source>Download player skin</source>
-        <translation type="unfinished"></translation>
+        <translation>下载玩家皮肤</translation>
     </message>
     <message>
         <source>Looking up %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在查找%1…</translation>
     </message>
     <message>
         <source>There&apos;s no Minecraft player called “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>没有叫“%1”的Minecraft玩家。</translation>
     </message>
     <message>
         <source>%1 uses a default skin, so there&apos;s nothing to download.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1使用的是默认皮肤，没有可下载的内容。</translation>
     </message>
     <message>
         <source>Couldn&apos;t get %1&apos;s skin. Check your internet connection and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法获取%1的皮肤。请检查网络连接后重试。</translation>
     </message>
     <message>
         <source>Added %1&apos;s skin</source>
-        <translation type="unfinished"></translation>
+        <translation>已添加%1的皮肤</translation>
     </message>
     <message>
         <source>This is the skin you&apos;re wearing right now. Switch to another one first.</source>
-        <translation type="unfinished"></translation>
+        <translation>这是你当前正在使用的皮肤，请先换一个。</translation>
     </message>
     <message>
         <source>Couldn&apos;t delete the skin file.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法删除皮肤文件。</translation>
     </message>
     <message>
         <source>Use a name without / \ : * ? &quot; &lt; &gt; |</source>
-        <translation type="unfinished"></translation>
+        <translation>请使用不含 / \ : * ? &quot; &lt; &gt; | 的名称</translation>
     </message>
     <message>
         <source>A skin called “%1” already exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>已存在名为“%1”的皮肤。</translation>
     </message>
     <message>
         <source>Only a Microsoft account that owns Minecraft can change its skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>只有拥有Minecraft的Microsoft账户才能更改皮肤。</translation>
     </message>
     <message>
         <source>The skin file is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>皮肤文件缺失。</translation>
     </message>
     <message>
         <source>Change skin</source>
-        <translation type="unfinished"></translation>
+        <translation>更换皮肤</translation>
     </message>
     <message>
         <source>Changing your skin…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在更换皮肤…</translation>
     </message>
     <message>
         <source>Couldn&apos;t change the skin. Sign in again in Accounts if this keeps happening.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法更改皮肤。如果反复出现，请在“账户”中重新登录。</translation>
     </message>
     <message>
         <source>Skin changed. You&apos;ll see it the next time you join a world.</source>
-        <translation type="unfinished"></translation>
+        <translation>皮肤已更改，下次进入世界时就能看到。</translation>
     </message>
     <message>
         <source>Reset skin</source>
-        <translation type="unfinished"></translation>
+        <translation>重置皮肤</translation>
     </message>
     <message>
         <source>Resetting your skin…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在重置皮肤…</translation>
     </message>
     <message>
         <source>Back to the default skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>已恢复默认皮肤。</translation>
     </message>
     <message>
         <source>Couldn&apos;t reset the skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法重置皮肤。</translation>
     </message>
 </context>
 <context>
@@ -5080,169 +5080,169 @@
     <name>TabHistory</name>
     <message>
         <source>Restored. Your worlds and settings were not touched.</source>
-        <translation type="unfinished"></translation>
+        <translation>已回滚。你的世界和设置未受影响。</translation>
     </message>
     <message>
         <source>No identical files to share yet</source>
-        <translation type="unfinished"></translation>
+        <translation>暂无可共享的相同文件</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished">%1 GB</translation>
+        <translation>%1 GB</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 MB</translation>
+        <translation>%1 MB</translation>
     </message>
     <message numerus="yes">
         <source>Saved %1 across %n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>在%n个实例间共享，节省了%1</numerusform>
         </translation>
     </message>
     <message>
         <source>Before restoring, today at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>回滚前，今天%1</translation>
     </message>
     <message>
         <source>Launched today at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>今天%1启动</translation>
     </message>
     <message>
         <source>Before restoring, yesterday at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>回滚前，昨天%1</translation>
     </message>
     <message>
         <source>Launched yesterday at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>昨天%1启动</translation>
     </message>
     <message>
         <source>Before restoring, %1 at %2</source>
-        <translation type="unfinished"></translation>
+        <translation>回滚前，%1 %2</translation>
     </message>
     <message>
         <source>Launched %1 at %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 %2启动</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Unknown version</source>
-        <translation type="unfinished">未知版本</translation>
+        <translation>未知版本</translation>
     </message>
     <message numerus="yes">
         <source>+%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>+%n个模组</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>−%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>−%n个模组</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n updated</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>已更新%n项</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n pack(s) differ</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个资源包有差异</numerusform>
         </translation>
     </message>
     <message>
         <source>other game version</source>
-        <translation type="unfinished"></translation>
+        <translation>其他游戏版本</translation>
     </message>
     <message>
         <source>Same as now</source>
-        <translation type="unfinished"></translation>
+        <translation>与当前相同</translation>
     </message>
     <message>
         <source>Version history</source>
-        <translation type="unfinished"></translation>
+        <translation>版本历史</translation>
     </message>
     <message>
         <source>The last %1 launches are remembered. You can go back to any of them; worlds and settings stay as they are.</source>
-        <translation type="unfinished"></translation>
+        <translation>会记录最近%1次启动，你可以回滚到其中任意一次；世界和设置保持不变。</translation>
     </message>
     <message>
         <source>Share identical files between instances</source>
-        <translation type="unfinished"></translation>
+        <translation>在实例之间共享相同文件</translation>
     </message>
     <message>
         <source>A mod used in several instances takes disk space once. Deleting it in one instance never affects the others.</source>
-        <translation type="unfinished"></translation>
+        <translation>同一模组在多个实例中使用时只占用一份磁盘空间。在某个实例中删除它绝不会影响其他实例。</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个模组</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n file(s) from this launch can&apos;t be brought back</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>此次启动中有%n个文件无法恢复</numerusform>
         </translation>
     </message>
     <message>
         <source>Current</source>
-        <translation type="unfinished"></translation>
+        <translation>当前</translation>
     </message>
     <message>
         <source>Restore this version</source>
-        <translation type="unfinished"></translation>
+        <translation>回滚到此版本</translation>
     </message>
     <message>
         <source>Close the game first</source>
-        <translation type="unfinished"></translation>
+        <translation>请先关闭游戏</translation>
     </message>
     <message>
         <source>Nothing here yet. Each time you play, the mods and game version are remembered so you can come back to them.</source>
-        <translation type="unfinished"></translation>
+        <translation>这里还没有记录。每次游玩时都会记录当时的模组和游戏版本，方便你随时回来。</translation>
     </message>
     <message>
         <source>Restore this version?</source>
-        <translation type="unfinished"></translation>
+        <translation>要回滚到此版本吗？</translation>
     </message>
     <message>
         <source>Mods, resource packs, shader packs and the game version go back to how they were: %1 (%2). Worlds and settings are not touched. The current state is remembered first, so you can come back to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>模组、资源包、光影包和游戏版本将恢复到原来的样子：%1（%2）。世界和设置不受影响。当前状态会先被记录，方便你之后切回来。</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>回滚</translation>
     </message>
     <message>
         <source>Couldn&apos;t restore. Close the game and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法回滚。请关闭游戏后重试。</translation>
     </message>
     <message>
         <source>Restored, except for some files</source>
-        <translation type="unfinished"></translation>
+        <translation>已回滚，部分文件除外</translation>
     </message>
     <message>
         <source>These files were no longer on this computer and couldn&apos;t be downloaded again. Add them yourself if you need them:</source>
-        <translation type="unfinished"></translation>
+        <translation>这些文件已不在这台电脑上，也无法重新下载。如有需要，请自行添加：</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Restoring…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在回滚…</translation>
     </message>
 </context>
 <context>
@@ -5276,137 +5276,137 @@
     <name>TabLog</name>
     <message>
         <source>Save game log</source>
-        <translation type="unfinished"></translation>
+        <translation>保存游戏日志</translation>
     </message>
     <message>
         <source>Log files (*.log *.txt)</source>
-        <translation type="unfinished"></translation>
+        <translation>日志文件 (*.log *.txt)</translation>
     </message>
     <message>
         <source>Log saved.</source>
-        <translation type="unfinished"></translation>
+        <translation>日志已保存。</translation>
     </message>
     <message>
         <source>Search the log</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索日志</translation>
     </message>
     <message>
         <source>Launcher</source>
-        <translation type="unfinished">启动器</translation>
+        <translation>启动器</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Warnings</source>
-        <translation type="unfinished"></translation>
+        <translation>警告</translation>
     </message>
     <message>
         <source>Errors</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Copy the log</source>
-        <translation type="unfinished"></translation>
+        <translation>复制日志</translation>
     </message>
     <message>
         <source>Log copied.</source>
-        <translation type="unfinished"></translation>
+        <translation>日志已复制。</translation>
     </message>
     <message>
         <source>Save to a file</source>
-        <translation type="unfinished"></translation>
+        <translation>保存到文件</translation>
     </message>
     <message>
         <source>Upload and copy link</source>
-        <translation type="unfinished">上传并复制链接</translation>
+        <translation>上传并复制链接</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>清空</translation>
     </message>
     <message>
         <source>No lines match the filter.</source>
-        <translation type="unfinished"></translation>
+        <translation>没有符合筛选条件的行。</translation>
     </message>
     <message>
         <source>Waiting for the game to say something…</source>
-        <translation type="unfinished"></translation>
+        <translation>等待游戏输出内容…</translation>
     </message>
     <message>
         <source>No game log yet. Play once and the output shows up here.</source>
-        <translation type="unfinished"></translation>
+        <translation>还没有游戏日志。启动一次后，输出就会显示在这里。</translation>
     </message>
     <message>
         <source>Jump to the end</source>
-        <translation type="unfinished"></translation>
+        <translation>跳到末尾</translation>
     </message>
     <message>
         <source>Live output</source>
-        <translation type="unfinished"></translation>
+        <translation>实时输出</translation>
     </message>
     <message>
         <source>Output of the last launch</source>
-        <translation type="unfinished"></translation>
+        <translation>上次启动的输出</translation>
     </message>
     <message>
         <source>From %1</source>
-        <translation type="unfinished"></translation>
+        <translation>来自%1</translation>
     </message>
     <message numerus="yes">
         <source>%n line(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n行</numerusform>
         </translation>
     </message>
     <message>
         <source>Auto-scroll</source>
-        <translation type="unfinished"></translation>
+        <translation>自动滚动</translation>
     </message>
     <message>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>强制退出</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>重启</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>启动</translation>
     </message>
     <message>
         <source>Share the game log?</source>
-        <translation type="unfinished">分享游戏日志？</translation>
+        <translation>要分享游戏日志吗？</translation>
     </message>
     <message>
         <source>“%1” will be uploaded to %2 and the link copied, so you can send it to someone who helps you. Folder paths with your user name and login tokens are hidden.</source>
-        <translation type="unfinished">“%1”将上传至 %2 并复制链接，方便您发送给协助排错的人。包含您用户名和登录令牌的文件夹路径已被隐藏。</translation>
+        <translation>“%1”将被上传到%2并复制链接，方便你发给帮助你的人。包含你用户名的文件夹路径和登录令牌会被隐藏。</translation>
     </message>
     <message>
         <source>There is no game log yet. Play once first.</source>
-        <translation type="unfinished"></translation>
+        <translation>还没有游戏日志，请先启动一次。</translation>
     </message>
     <message>
         <source>Link copied: %1</source>
-        <translation type="unfinished">链接已复制：%1</translation>
+        <translation>链接已复制：%1</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Open link</source>
-        <translation type="unfinished">打开链接</translation>
+        <translation>打开链接</translation>
     </message>
     <message>
         <source>Uploading…</source>
-        <translation type="unfinished">正在上传…</translation>
+        <translation>正在上传…</translation>
     </message>
 </context>
 <context>
@@ -5441,7 +5441,7 @@
     </message>
     <message>
         <source>Share instance</source>
-        <translation type="unfinished"></translation>
+        <translation>分享实例</translation>
     </message>
     <message>
         <source>Play offline</source>
@@ -5552,101 +5552,101 @@
     <name>TabServers</name>
     <message>
         <source>Checking servers…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在检测服务器…</translation>
     </message>
     <message numerus="yes">
         <source>%n server(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个服务器</numerusform>
         </translation>
     </message>
     <message>
         <source>Check all</source>
-        <translation type="unfinished"></translation>
+        <translation>全部检测</translation>
     </message>
     <message>
         <source>Add server</source>
-        <translation type="unfinished"></translation>
+        <translation>添加服务器</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>加入</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished">更多操作</translation>
+        <translation>更多操作</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Check again</source>
-        <translation type="unfinished"></translation>
+        <translation>重新检测</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation type="unfinished"></translation>
+        <translation>复制地址</translation>
     </message>
     <message>
         <source>Address copied</source>
-        <translation type="unfinished"></translation>
+        <translation>地址已复制</translation>
     </message>
     <message>
         <source>Move up</source>
-        <translation type="unfinished"></translation>
+        <translation>上移</translation>
     </message>
     <message>
         <source>Move down</source>
-        <translation type="unfinished"></translation>
+        <translation>下移</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>No servers yet. Add one with its address — it also shows up in the game&apos;s Multiplayer list.</source>
-        <translation type="unfinished"></translation>
+        <translation>还没有服务器。添加一个并填入地址——它也会显示在游戏内的“多人游戏”列表中。</translation>
     </message>
     <message>
         <source>Add a server</source>
-        <translation type="unfinished"></translation>
+        <translation>添加服务器</translation>
     </message>
     <message>
         <source>Edit server</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑服务器</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="unfinished">地址</translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>play.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation>play.example.com</translation>
     </message>
     <message>
         <source>Name (optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>名称（可选）</translation>
     </message>
     <message>
         <source>Minecraft Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft服务器</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Remove “%1”?</source>
-        <translation type="unfinished"></translation>
+        <translation>要移除“%1”吗？</translation>
     </message>
     <message>
         <source>It disappears from this instance&apos;s server list, in the launcher and in the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>它将从启动器和游戏内该实例的服务器列表中消失。</translation>
     </message>
 </context>
 <context>
@@ -5742,132 +5742,132 @@
     <name>TaskIndicator</name>
     <message>
         <source>Done: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>已完成：%1</translation>
     </message>
     <message>
         <source>Failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>失败：%1</translation>
     </message>
     <message numerus="yes">
         <source>%1 (+%n more)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1（还有%n项）</numerusform>
         </translation>
     </message>
     <message>
         <source>Running tasks</source>
-        <translation type="unfinished"></translation>
+        <translation>正在运行的任务</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>ToolsBridge</name>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">此实例已不存在。</translation>
+        <translation>此实例已不存在。</translation>
     </message>
     <message>
         <source>Couldn&apos;t write %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法写入%1。</translation>
     </message>
 </context>
 <context>
     <name>ToolsLaunchCheck</name>
     <message>
         <source>All fixed</source>
-        <translation type="unfinished"></translation>
+        <translation>全部修复</translation>
     </message>
     <message numerus="yes">
         <source>Turned off %n file(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>已禁用%n个文件</numerusform>
         </translation>
     </message>
     <message>
         <source>“%1” won&apos;t start like this</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”这样无法启动</translation>
     </message>
     <message numerus="yes">
         <source>%n problem(s) will stop the game while it loads.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n个问题会导致游戏在加载时停止。</numerusform>
         </translation>
     </message>
     <message>
         <source>Check mods before playing</source>
-        <translation type="unfinished"></translation>
+        <translation>启动前检查模组</translation>
     </message>
     <message>
         <source>Won&apos;t check again. You can turn it back on in the Mods tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>以后不再检查。你可以在“模组”标签页中重新开启。</translation>
     </message>
     <message>
         <source>Play anyway</source>
-        <translation type="unfinished"></translation>
+        <translation>仍要启动</translation>
     </message>
     <message>
         <source>Fix and play</source>
-        <translation type="unfinished"></translation>
+        <translation>修复并启动</translation>
     </message>
     <message>
         <source>Fix</source>
-        <translation type="unfinished"></translation>
+        <translation>修复</translation>
     </message>
 </context>
 <context>
     <name>ToolsLauncherList</name>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Looking…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在查找…</translation>
     </message>
     <message>
         <source>In %1</source>
-        <translation type="unfinished"></translation>
+        <translation>位于%1</translation>
     </message>
     <message numerus="yes">
         <source>%n instance(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>找到%n个实例</numerusform>
         </translation>
     </message>
     <message>
         <source>Look again</source>
-        <translation type="unfinished"></translation>
+        <translation>重新查找</translation>
     </message>
     <message>
         <source>Choose folder…</source>
-        <translation type="unfinished"></translation>
+        <translation>选择文件夹…</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="unfinished"></translation>
+        <translation>未找到任何内容</translation>
     </message>
     <message>
         <source>No other launchers in their usual places. If yours keeps its files somewhere else, show us the folder.</source>
-        <translation type="unfinished"></translation>
+        <translation>在常见位置没有找到其他启动器。如果你的启动器存放在其他位置，请把文件夹指给我们。</translation>
     </message>
     <message>
         <source>Looking for other launchers…</source>
-        <translation type="unfinished"></translation>
+        <translation>正在查找其他启动器…</translation>
     </message>
     <message>
         <source>Share files instead of copying</source>
-        <translation type="unfinished"></translation>
+        <translation>共享文件而非复制</translation>
     </message>
     <message>
         <source>Worlds, mods and settings stay shared with the other launcher: changes show up in both.</source>
-        <translation type="unfinished"></translation>
+        <translation>世界、模组和设置与其他启动器保持共享：任何一方的改动都会在两边显示。</translation>
     </message>
     <message>
         <source>Share files instead of copying (saves space, both launchers see the same worlds)</source>
-        <translation type="unfinished"></translation>
+        <translation>共享文件而非复制（节省空间，两个启动器看到相同的世界）</translation>
     </message>
 </context>
 <context>

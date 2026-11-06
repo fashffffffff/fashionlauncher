@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>Panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마</translation>
     </message>
     <message>
         <source>Blocks</source>
@@ -155,7 +155,7 @@
     </message>
     <message>
         <source>Animated</source>
-        <translation type="unfinished"></translation>
+        <translation>애니메이션</translation>
     </message>
     <message>
         <source>Solid</source>
@@ -183,11 +183,11 @@
     </message>
     <message>
         <source>The slowly turning view from the Minecraft title screen. It pauses on other pages and stops while the window is hidden or a game is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft 타이틀 화면의 천천히 회전하는 풍경이에요. 다른 페이지에서는 잠시 멈추고, 창이 가려져 있거나 게임이 실행 중이면 정지해요.</translation>
     </message>
     <message>
         <source>A calm moving pattern in your theme colors. It pauses on other pages and stops while the window is hidden or a game is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>테마 색상으로 만든 차분하게 움직이는 패턴이에요. 다른 페이지에서는 잠시 멈추고, 창이 가려져 있거나 게임이 실행 중이면 정지해요.</translation>
     </message>
     <message>
         <source>Blocks in your accent color, different for every instance.</source>
@@ -215,35 +215,35 @@
     </message>
     <message>
         <source>Aurora</source>
-        <translation type="unfinished"></translation>
+        <translation>오로라</translation>
     </message>
     <message>
         <source>Starfield</source>
-        <translation type="unfinished"></translation>
+        <translation>별하늘</translation>
     </message>
     <message>
         <source>Drifting clouds</source>
-        <translation type="unfinished"></translation>
+        <translation>흐르는 구름</translation>
     </message>
     <message>
         <source>Soft glow</source>
-        <translation type="unfinished"></translation>
+        <translation>부드러운 빛</translation>
     </message>
     <message>
         <source>Falling blocks</source>
-        <translation type="unfinished"></translation>
+        <translation>떨어지는 블록</translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>속도</translation>
     </message>
     <message>
         <source>Still</source>
-        <translation type="unfinished"></translation>
+        <translation>정지</translation>
     </message>
     <message>
         <source>%1×</source>
-        <translation type="unfinished"></translation>
+        <translation>%1×</translation>
     </message>
     <message>
         <source>All</source>
@@ -295,15 +295,15 @@
     </message>
     <message>
         <source>Instance pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 사진</translation>
     </message>
     <message>
         <source>Show pictures on instance cards</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 카드에 사진 표시</translation>
     </message>
     <message>
         <source>Modpacks show their own picture from Modrinth or CurseForge; other instances show their newest screenshot.</source>
-        <translation type="unfinished"></translation>
+        <translation>모드팩은 Modrinth나 CurseForge의 대표 사진을 보여주고, 다른 인스턴스는 가장 최근 스크린샷을 보여줘요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t add that file.</source>
@@ -330,146 +330,146 @@
     <name>AppearancePanorama</name>
     <message>
         <source>Panorama added.</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마를 추가했어요.</translation>
     </message>
     <message>
         <source>Looking for a panorama…</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마를 찾는 중…</translation>
     </message>
     <message>
         <source>Showing: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>표시 중: %1</translation>
     </message>
     <message>
         <source>No panorama found for %1 yet. Start it once so Minecraft is downloaded, or add your own below.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에 대한 파노라마가 아직 없어요. 한 번 실행해서 Minecraft을 다운로드하거나, 아래에서 직접 추가해 보세요.</translation>
     </message>
     <message>
         <source>No panorama found yet. Start any instance once, or add your own below.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 파노라마가 없어요. 아무 인스턴스나 한 번 실행하거나, 아래에서 직접 추가해 보세요.</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation>자동</translation>
     </message>
     <message>
         <source>Add a panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마 추가</translation>
     </message>
     <message>
         <source>Making the cube…</source>
-        <translation type="unfinished"></translation>
+        <translation>큐브를 만드는 중…</translation>
     </message>
     <message>
         <source>Add or drop here</source>
-        <translation type="unfinished"></translation>
+        <translation>여기서 추가하거나 끌어다 놓기</translation>
     </message>
     <message>
         <source>Works with a resource pack (.zip) that has a panorama, six pictures named panorama_0 to panorama_5, or one 360° picture twice as wide as it is tall.</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마가 포함된 리소스 팩(.zip), panorama_0~panorama_5로 이름 붙인 사진 6장, 또는 가로가 세로의 2배인 360° 사진 1장을 사용할 수 있어요.</translation>
     </message>
     <message>
         <source>Capture from my world</source>
-        <translation type="unfinished"></translation>
+        <translation>내 월드에서 촬영</translation>
     </message>
     <message>
         <source>Adds a small panorama mod to %1. In the game, press one key and it takes six pictures around you; the next time you open the launcher with this instance selected, they turn into your panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>작은 파노라마 모드를 %1에 추가해요. 게임에서 키 하나만 누르면 주변 사진 6장을 찍고, 이 인스턴스를 선택한 채 런처를 다시 열면 그 사진들이 내 파노라마로 바뀌어요.</translation>
     </message>
     <message>
         <source>Select an instance first, then come back here.</source>
-        <translation type="unfinished"></translation>
+        <translation>먼저 인스턴스를 선택한 뒤 다시 돌아와 주세요.</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished">설치됨</translation>
+        <translation>설치됨</translation>
     </message>
     <message>
         <source>Install panorama mod</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마 모드 설치</translation>
     </message>
     <message>
         <source>Choose a panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마 선택</translation>
     </message>
     <message>
         <source>Panoramas (*.zip *.png *.jpg *.jpeg *.webp)</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마 (*.zip *.png *.jpg *.jpeg *.webp)</translation>
     </message>
 </context>
 <context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>내 파노라마</translation>
     </message>
     <message>
         <source>Captured in this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스에서 촬영함</translation>
     </message>
     <message>
         <source>From the resource pack “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>리소스 팩 “%1”에서 가져옴</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Minecraft</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft</translation>
     </message>
     <message>
         <source>Pick a resource pack, six face pictures or one 360° picture (twice as wide as it is tall).</source>
-        <translation type="unfinished"></translation>
+        <translation>리소스 팩, 큐브 면용 사진 6장, 또는 가로가 세로의 2배인 360° 사진 1장을 골라 주세요.</translation>
     </message>
     <message>
         <source>That resource pack has no panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 리소스 팩에는 파노라마가 없어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마를 저장하지 못했어요.</translation>
     </message>
     <message>
         <source>Pick a Minecraft instance first.</source>
-        <translation type="unfinished"></translation>
+        <translation>먼저 Minecraft 인스턴스를 선택해 주세요.</translation>
     </message>
     <message>
         <source>Panorama mods need a mod loader. Add Fabric to this instance (Instance → Version), then try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마 모드에는 모드 로더가 필요해요. 이 인스턴스에 Fabric을 추가한 뒤(인스턴스 → 버전) 다시 시도해 주세요.</translation>
     </message>
     <message>
         <source>Looking for a panorama mod for %1 %2…</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 %2에서 쓸 수 있는 파노라마 모드를 찾는 중…</translation>
     </message>
     <message>
         <source>No panorama mod works with %1 %2 yet. You can still add your own panorama above.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 %1 %2에서 쓸 수 있는 파노라마 모드가 없어요. 대신 위에서 직접 파노라마를 추가할 수 있어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach Modrinth. Check your connection and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth에 연결할 수 없어요. 인터넷 연결을 확인하고 다시 시도해 주세요.</translation>
     </message>
     <message>
         <source>The download failed. Try again in a moment.</source>
-        <translation type="unfinished"></translation>
+        <translation>다운로드에 실패했어요. 잠시 후 다시 시도해 주세요.</translation>
     </message>
     <message>
         <source>press the panorama key (Options → Controls → Panoramica)</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마 키를 눌러요(설정 → 조작 → Panoramica)</translation>
     </message>
     <message>
         <source>press F4 (you can change the key in Options → Controls)</source>
-        <translation type="unfinished"></translation>
+        <translation>F4 키를 눌러요(키는 설정 → 조작에서 바꿀 수 있어요)</translation>
     </message>
     <message>
         <source>Panorama mod installed. Start the game, go to a nice spot, look straight ahead and %1. Keep still for a second while it takes six pictures. After you close the game, the panorama shows up here on its own.</source>
-        <translation type="unfinished"></translation>
+        <translation>파노라마 모드를 설치했어요. 게임을 실행해 마음에 드는 장소로 가서 정면을 바라본 뒤 %1. 사진 6장을 찍는 동안 잠깐 가만히 있어 주세요. 게임을 닫으면 파노라마가 이곳에 저절로 나타나요.</translation>
     </message>
     <message>
         <source>Installing %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 설치 중…</translation>
     </message>
 </context>
 <context>
@@ -585,82 +585,82 @@
     <name>ConfirmDialog</name>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>확인</translation>
     </message>
 </context>
 <context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
-        <translation type="unfinished">인스턴스 복사</translation>
+        <translation>인스턴스 복사</translation>
     </message>
     <message>
         <source>%1 (copy)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (복사본)</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="unfinished">아이콘</translation>
+        <translation>아이콘</translation>
     </message>
     <message>
         <source>Change icon</source>
-        <translation type="unfinished">아이콘 변경</translation>
+        <translation>아이콘 변경</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">이름</translation>
+        <translation>이름</translation>
     </message>
     <message>
         <source>No group</source>
-        <translation type="unfinished">그룹 없음</translation>
+        <translation>그룹 없음</translation>
     </message>
     <message>
         <source>Bring along</source>
-        <translation type="unfinished"></translation>
+        <translation>가져올 항목</translation>
     </message>
     <message>
         <source>Worlds</source>
-        <translation type="unfinished">월드</translation>
+        <translation>월드</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">모드</translation>
+        <translation>모드</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished">리소스 팩</translation>
+        <translation>리소스 팩</translation>
     </message>
     <message>
         <source>Shaders</source>
-        <translation type="unfinished">셰이더</translation>
+        <translation>셰이더</translation>
     </message>
     <message>
         <source>Game options</source>
-        <translation type="unfinished"></translation>
+        <translation>게임 설정</translation>
     </message>
     <message>
         <source>Server list</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 목록</translation>
     </message>
     <message>
         <source>Screenshots</source>
-        <translation type="unfinished">스크린샷</translation>
+        <translation>스크린샷</translation>
     </message>
     <message>
         <source>Play time</source>
-        <translation type="unfinished"></translation>
+        <translation>플레이 시간</translation>
     </message>
     <message>
         <source>Share files with the original instead of copying (saves disk space)</source>
-        <translation type="unfinished"></translation>
+        <translation>복사 대신 원본과 파일 공유(디스크 공간 절약)</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>복사</translation>
     </message>
 </context>
 <context>
@@ -727,24 +727,24 @@
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished">%1 설치 중</translation>
+        <translation>%1 설치 중</translation>
     </message>
     <message>
         <source>“%1” is ready. %2</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1” 준비 완료. %2</translation>
     </message>
     <message>
         <source>Pick at least one instance to import.</source>
-        <translation type="unfinished"></translation>
+        <translation>가져올 인스턴스를 하나 이상 선택해 주세요.</translation>
     </message>
     <message>
         <source>Importing instances</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 가져오는 중</translation>
     </message>
     <message numerus="yes">
         <source>%n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n개의 인스턴스</numerusform>
         </translation>
     </message>
 </context>
@@ -775,21 +775,21 @@
     <name>CreateImport</name>
     <message numerus="yes">
         <source>%n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n개의 인스턴스</numerusform>
         </translation>
     </message>
     <message>
         <source>Looking for other launchers…</source>
-        <translation type="unfinished"></translation>
+        <translation>다른 런처를 찾는 중…</translation>
     </message>
     <message>
         <source>Each instance keeps its own name.</source>
-        <translation type="unfinished"></translation>
+        <translation>각 인스턴스는 원래 이름을 그대로 유지해요.</translation>
     </message>
     <message>
         <source>Pick the instances to bring over.</source>
-        <translation type="unfinished"></translation>
+        <translation>가져올 인스턴스를 골라 주세요.</translation>
     </message>
     <message>
         <source>Choose a file or paste a link.</source>
@@ -801,7 +801,7 @@
     </message>
     <message>
         <source>Choose a launcher or instance folder</source>
-        <translation type="unfinished"></translation>
+        <translation>런처 또는 인스턴스 폴더 선택</translation>
     </message>
     <message>
         <source>Choose a modpack file</source>
@@ -821,7 +821,7 @@
     </message>
     <message>
         <source>Instances from CurseForge, Modrinth App, ATLauncher, MultiMC, Prism and the official Minecraft launcher on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 컴퓨터에 있는 CurseForge, Modrinth App, ATLauncher, MultiMC, Prism, 공식 Minecraft 런처의 인스턴스를 가져올 수 있어요.</translation>
     </message>
     <message>
         <source>Modrinth packs (.mrpack), CurseForge packs and instances exported from this or other launchers (.zip).</source>
@@ -829,11 +829,11 @@
     </message>
     <message>
         <source>File or link</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 또는 링크</translation>
     </message>
     <message>
         <source>From another launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>다른 런처에서 가져오기</translation>
     </message>
     <message>
         <source>Drop a file here</source>
@@ -1038,158 +1038,158 @@
     <name>DialogHost</name>
     <message>
         <source>Can&apos;t delete this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스를 삭제할 수 없어요</translation>
     </message>
     <message>
         <source>“%1” and everything in it — worlds, mods, screenshots — will be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”과(와) 그 안의 모든 내용(월드, 모드, 스크린샷)이 휴지통으로 이동해요.</translation>
     </message>
     <message>
         <source>These instances share files with it and may break: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 인스턴스들은 파일을 공유 중이라 문제가 생길 수 있어요: %1</translation>
     </message>
     <message>
         <source>Delete “%1”?</source>
-        <translation type="unfinished">“%1”을(를) 삭제하시겠습니까?</translation>
+        <translation>“%1”을(를) 삭제할까요?</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">삭제</translation>
+        <translation>삭제</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>“%1” was moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 휴지통으로 이동했어요.</translation>
     </message>
     <message>
         <source>“%1” was deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 삭제했어요.</translation>
     </message>
     <message>
         <source>You can change the account for every launch in the accounts panel.</source>
-        <translation type="unfinished"></translation>
+        <translation>계정 패널에서 실행할 때마다 사용할 계정을 바꿀 수 있어요.</translation>
     </message>
     <message>
         <source>Microsoft</source>
-        <translation type="unfinished">Microsoft</translation>
+        <translation>Microsoft</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">오프라인</translation>
+        <translation>오프라인</translation>
     </message>
     <message>
         <source>Always use this account</source>
-        <translation type="unfinished"></translation>
+        <translation>항상 이 계정 사용</translation>
     </message>
     <message>
         <source>Player name</source>
-        <translation type="unfinished">플레이어 이름</translation>
+        <translation>플레이어 이름</translation>
     </message>
     <message>
         <source>Letters, digits and _ only, up to 16 characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>영문자, 숫자, _만 사용하고 최대 16자까지 가능해요.</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">플레이</translation>
+        <translation>플레이</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished"></translation>
+        <translation>처리 중…</translation>
     </message>
 </context>
 <context>
     <name>ExportDialog</name>
     <message>
         <source>Export instance</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 내보내기</translation>
     </message>
     <message>
         <source>Export to</source>
-        <translation type="unfinished"></translation>
+        <translation>내보낼 형식</translation>
     </message>
     <message>
         <source>Modrinth pack (*.mrpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth 팩 (*.mrpack)</translation>
     </message>
     <message>
         <source>Zip archive (*.zip)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zip 압축 파일 (*.zip)</translation>
     </message>
     <message>
         <source>Zip</source>
-        <translation type="unfinished"></translation>
+        <translation>Zip</translation>
     </message>
     <message>
         <source>Modrinth</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth</translation>
     </message>
     <message>
         <source>CurseForge</source>
-        <translation type="unfinished"></translation>
+        <translation>CurseForge</translation>
     </message>
     <message>
         <source>The whole instance in one file. Import it in this or any Prism-based launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 전체를 한 파일에 담아요. 이 런처나 Prism 기반 런처에서 가져올 수 있어요.</translation>
     </message>
     <message>
         <source>A .mrpack modpack: mods from Modrinth are linked, not copied, so the file stays small.</source>
-        <translation type="unfinished"></translation>
+        <translation>.mrpack 모드팩이에요. Modrinth의 모드는 복사하지 않고 연결만 해서 파일이 작게 유지돼요.</translation>
     </message>
     <message>
         <source>A CurseForge modpack zip: mods from CurseForge are linked, the rest is packed in.</source>
-        <translation type="unfinished"></translation>
+        <translation>CurseForge 모드팩 zip이에요. CurseForge의 모드는 연결로 처리하고 나머지는 파일에 함께 담아요.</translation>
     </message>
     <message>
         <source>Pack name (instance name)</source>
-        <translation type="unfinished"></translation>
+        <translation>팩 이름 (인스턴스 이름)</translation>
     </message>
     <message>
         <source>Version, e.g. 1.0</source>
-        <translation type="unfinished"></translation>
+        <translation>버전, 예: 1.0</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>제작자</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>요약</translation>
     </message>
     <message>
         <source>Mark disabled mods as optional</source>
-        <translation type="unfinished"></translation>
+        <translation>비활성화한 모드를 선택 사항으로 표시</translation>
     </message>
     <message>
         <source>Recommended memory</source>
-        <translation type="unfinished"></translation>
+        <translation>권장 메모리</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 MB</translation>
+        <translation>%1 MB</translation>
     </message>
     <message>
         <source>Include</source>
-        <translation type="unfinished"></translation>
+        <translation>포함 항목</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="unfinished">전체</translation>
+        <translation>전체</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished">없음</translation>
+        <translation>없음</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Export…</source>
-        <translation type="unfinished"></translation>
+        <translation>내보내기…</translation>
     </message>
 </context>
 <context>
@@ -1238,724 +1238,724 @@
     <name>FriendRow</name>
     <message>
         <source>Waiting for them to accept your request</source>
-        <translation type="unfinished"></translation>
+        <translation>상대가 요청을 수락하길 기다리는 중</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">오프라인</translation>
+        <translation>오프라인</translation>
     </message>
     <message>
         <source>Hosting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 호스팅 중</translation>
     </message>
     <message>
         <source>Hosting a world</source>
-        <translation type="unfinished"></translation>
+        <translation>월드 호스팅 중</translation>
     </message>
     <message>
         <source>Playing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 플레이 중</translation>
     </message>
     <message>
         <source>Playing</source>
-        <translation type="unfinished">플레이 중</translation>
+        <translation>플레이 중</translation>
     </message>
     <message>
         <source>Online</source>
-        <translation type="unfinished"></translation>
+        <translation>온라인</translation>
     </message>
     <message>
         <source>Direct connection</source>
-        <translation type="unfinished"></translation>
+        <translation>직접 연결</translation>
     </message>
     <message>
         <source>Connecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>연결 중…</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach — ask your friend to host</source>
-        <translation type="unfinished"></translation>
+        <translation>연결할 수 없어요 — 친구에게 호스팅을 부탁해 보세요</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished">다시 시도</translation>
+        <translation>다시 시도</translation>
     </message>
     <message>
         <source>Invite</source>
-        <translation type="unfinished"></translation>
+        <translation>초대</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished">더 보기</translation>
+        <translation>더 보기</translation>
     </message>
     <message>
         <source>Copy friend code</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 코드 복사</translation>
     </message>
     <message>
         <source>Code copied</source>
-        <translation type="unfinished"></translation>
+        <translation>코드 복사됨</translation>
     </message>
     <message>
         <source>Cancel request</source>
-        <translation type="unfinished"></translation>
+        <translation>요청 취소</translation>
     </message>
     <message>
         <source>Remove friend</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 삭제</translation>
     </message>
 </context>
 <context>
     <name>FriendsCodeCard</name>
     <message>
         <source>That doesn&apos;t look like a friend code.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 코드 형식이 올바르지 않은 것 같아요.</translation>
     </message>
     <message>
         <source>Your friend code</source>
-        <translation type="unfinished"></translation>
+        <translation>내 친구 코드</translation>
     </message>
     <message>
         <source>Send it to a friend. When they add it, you&apos;ll get a request here.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구에게 이 코드를 보내세요. 친구가 추가하면 여기에 요청이 와요.</translation>
     </message>
     <message>
         <source>Getting your code…</source>
-        <translation type="unfinished"></translation>
+        <translation>코드를 가져오는 중…</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>복사</translation>
     </message>
     <message>
         <source>Code copied</source>
-        <translation type="unfinished"></translation>
+        <translation>코드 복사됨</translation>
     </message>
     <message>
         <source>Copy invite link</source>
-        <translation type="unfinished"></translation>
+        <translation>초대 링크 복사</translation>
     </message>
     <message>
         <source>Invite link copied</source>
-        <translation type="unfinished"></translation>
+        <translation>초대 링크 복사됨</translation>
     </message>
     <message>
         <source>Name friends see</source>
-        <translation type="unfinished"></translation>
+        <translation>친구에게 보이는 이름</translation>
     </message>
     <message>
         <source>Your name</source>
-        <translation type="unfinished"></translation>
+        <translation>내 이름</translation>
     </message>
     <message>
         <source>Add a friend</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 추가</translation>
     </message>
     <message>
         <source>Paste a friend code or invite link</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 코드나 초대 링크를 붙여넣으세요</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>추가</translation>
     </message>
     <message>
         <source>The networking helper is missing from this install, so Friends can&apos;t work.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 설치에는 네트워킹 도우미가 없어서 같이 플레이 기능을 쓸 수 없어요.</translation>
     </message>
     <message>
         <source>Starting…</source>
-        <translation type="unfinished"></translation>
+        <translation>시작하는 중…</translation>
     </message>
     <message>
         <source>Looking for the network…</source>
-        <translation type="unfinished"></translation>
+        <translation>네트워크를 찾는 중…</translation>
     </message>
     <message>
         <source>Online. Your network is strict: some friends may not be able to connect directly.</source>
-        <translation type="unfinished"></translation>
+        <translation>온라인이에요. 네트워크가 엄격해서 일부 친구는 직접 연결이 어려울 수 있어요.</translation>
     </message>
     <message>
         <source>Online. Couldn&apos;t check your network yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>온라인이에요. 네트워크 상태를 아직 확인하지 못했어요.</translation>
     </message>
     <message>
         <source>Online. Your network allows direct connections.</source>
-        <translation type="unfinished"></translation>
+        <translation>온라인이에요. 네트워크가 직접 연결을 허용해요.</translation>
     </message>
 </context>
 <context>
     <name>FriendsHomeButton</name>
     <message>
         <source>Play with friends (%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>친구와 함께 플레이 (%1)</translation>
     </message>
     <message>
         <source>Play with friends · %1 online</source>
-        <translation type="unfinished"></translation>
+        <translation>친구와 함께 플레이 · %1명 온라인</translation>
     </message>
     <message>
         <source>Play with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>친구와 함께 플레이</translation>
     </message>
     <message>
         <source>Play together without a server</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 없이 같이 플레이</translation>
     </message>
 </context>
 <context>
     <name>FriendsHostCard</name>
     <message>
         <source>In your world</source>
-        <translation type="unfinished"></translation>
+        <translation>내 월드에 접속</translation>
     </message>
     <message>
         <source>Joining</source>
-        <translation type="unfinished"></translation>
+        <translation>접속 중</translation>
     </message>
     <message>
         <source>Can&apos;t join</source>
-        <translation type="unfinished"></translation>
+        <translation>접속 불가</translation>
     </message>
     <message>
         <source>Invited</source>
-        <translation type="unfinished"></translation>
+        <translation>초대됨</translation>
     </message>
     <message>
         <source>You&apos;re hosting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 호스팅 중이에요</translation>
     </message>
     <message>
         <source>Your world “%1” is open. Friends who joined can see it now.</source>
-        <translation type="unfinished"></translation>
+        <translation>월드 “%1”이(가) 열렸어요. 참여한 친구들이 지금 볼 수 있어요.</translation>
     </message>
     <message>
         <source>Start the game, load a world, then press Esc → Open to LAN. Friends get it automatically.</source>
-        <translation type="unfinished"></translation>
+        <translation>게임을 실행해 월드를 불러온 뒤 Esc → LAN에 공개를 누르세요. 친구에게는 자동으로 보여요.</translation>
     </message>
     <message>
         <source>Game is running</source>
-        <translation type="unfinished"></translation>
+        <translation>게임 실행 중</translation>
     </message>
     <message>
         <source>Start %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 실행</translation>
     </message>
     <message>
         <source>Stop hosting</source>
-        <translation type="unfinished"></translation>
+        <translation>호스팅 중지</translation>
     </message>
 </context>
 <context>
     <name>FriendsInviteCard</name>
     <message>
         <source>Playing with %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1과(와) 함께 플레이 중</translation>
     </message>
     <message>
         <source>%1 invites you to play</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 플레이에 초대했어요</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>모드 %n개</numerusform>
         </translation>
     </message>
     <message>
         <source>Reconnecting to %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에게 다시 연결하는 중…</translation>
     </message>
     <message>
         <source>Waiting for %1 to open the world. In the game: Esc → Open to LAN.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 월드를 여는 걸 기다리는 중. 게임에서: Esc → LAN에 공개.</translation>
     </message>
     <message>
         <source>Ready! Open Multiplayer in Minecraft — “%1” is in the LAN list. Or connect right away.</source>
-        <translation type="unfinished"></translation>
+        <translation>준비 완료! Minecraft에서 멀티 플레이를 열어 보세요 — LAN 목록에 “%1”이(가) 있어요. 아니면 바로 연결할 수도 있어요.</translation>
     </message>
     <message>
         <source>Join…</source>
-        <translation type="unfinished"></translation>
+        <translation>참여…</translation>
     </message>
     <message>
         <source>Decline</source>
-        <translation type="unfinished"></translation>
+        <translation>거절</translation>
     </message>
     <message>
         <source>Connecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>연결 중…</translation>
     </message>
     <message>
         <source>Instance to play with</source>
-        <translation type="unfinished"></translation>
+        <translation>함께 플레이할 인스턴스</translation>
     </message>
     <message>
         <source>Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>연결</translation>
     </message>
     <message>
         <source>Starting %1 and joining %2&apos;s world</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 실행해 %2님의 월드에 참여하는 중</translation>
     </message>
     <message>
         <source>Couldn&apos;t start that instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>그 인스턴스를 실행하지 못했어요.</translation>
     </message>
     <message>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>나가기</translation>
     </message>
     <message>
         <source>Getting the pack ready…</source>
-        <translation type="unfinished"></translation>
+        <translation>팩을 준비하는 중…</translation>
     </message>
 </context>
 <context>
     <name>FriendsJoinDialog</name>
     <message>
         <source>%1 (with %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (%2와 함께)</translation>
     </message>
     <message>
         <source>Installing the pack… You can connect once it&apos;s ready.</source>
-        <translation type="unfinished"></translation>
+        <translation>팩을 설치하는 중… 준비되면 연결할 수 있어요.</translation>
     </message>
     <message>
         <source>The pack is ready. Press Connect when the world is open.</source>
-        <translation type="unfinished"></translation>
+        <translation>팩이 준비됐어요. 월드가 열리면 연결을 눌러 주세요.</translation>
     </message>
     <message>
         <source>Join %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 참여</translation>
     </message>
     <message>
         <source>%1 is playing %2%3.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 %2%3 플레이 중이에요.</translation>
     </message>
     <message>
         <source> on Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation> (Minecraft %1)</translation>
     </message>
     <message>
         <source>Use %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 사용</translation>
     </message>
     <message numerus="yes">
         <source>Adds %n missing server mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>누락된 서버 모드 %n개를 추가해요</numerusform>
         </translation>
     </message>
     <message>
         <source>Has everything needed</source>
-        <translation type="unfinished"></translation>
+        <translation>필요한 것을 모두 갖췄어요</translation>
     </message>
     <message>
         <source>Same Minecraft version</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft 버전 같음</translation>
     </message>
     <message>
         <source>Install the pack as a new instance</source>
-        <translation type="unfinished"></translation>
+        <translation>팩을 새 인스턴스로 설치</translation>
     </message>
     <message>
         <source>Gets the mods from your friend&apos;s pack. Choose how much below.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 팩에서 모드를 가져와요. 아래에서 범위를 선택하세요.</translation>
     </message>
     <message>
         <source>Join with an instance I pick</source>
-        <translation type="unfinished"></translation>
+        <translation>내가 고른 인스턴스로 참여</translation>
     </message>
     <message>
         <source>Nothing gets installed. It needs the same Minecraft version and mods.</source>
-        <translation type="unfinished"></translation>
+        <translation>아무것도 설치하지 않아요. 같은 Minecraft 버전과 모드가 필요해요.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>참여</translation>
     </message>
 </context>
 <context>
     <name>FriendsNotices</name>
     <message>
         <source>Both of your networks block direct connections. One of you can try another network, like a phone hotspot.</source>
-        <translation type="unfinished"></translation>
+        <translation>두 네트워크 모두 직접 연결을 막고 있어요. 둘 중 한 명이 휴대폰 핫스팟 같은 다른 네트워크로 바꿔 보세요.</translation>
     </message>
     <message>
         <source>A strict network is in the way. Try again, or one of you can switch networks (a phone hotspot works).</source>
-        <translation type="unfinished"></translation>
+        <translation>엄격한 네트워크가 걸리적거려요. 다시 시도하거나 둘 중 한 명이 네트워크를 바꿔 보세요(휴대폰 핫스팟도 돼요).</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach them. Ask your friend to host instead, or try again in a minute.</source>
-        <translation type="unfinished"></translation>
+        <translation>상대에게 연결할 수 없어요. 친구에게 호스팅을 부탁하거나 잠시 후 다시 시도해 보세요.</translation>
     </message>
     <message>
         <source>Your friend</source>
-        <translation type="unfinished"></translation>
+        <translation>내 친구</translation>
     </message>
     <message>
         <source>%1 wants to be friends</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 친구 요청을 보냈어요</translation>
     </message>
     <message>
         <source>Friend request sent. It goes through when they&apos;re online.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 요청을 보냈어요. 상대가 온라인이 되면 전달돼요.</translation>
     </message>
     <message>
         <source>You and %1 are now friends</source>
-        <translation type="unfinished"></translation>
+        <translation>나와 %1님이 이제 친구가 됐어요</translation>
     </message>
     <message>
         <source>%1 declined the friend request</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 친구 요청을 거절했어요</translation>
     </message>
     <message>
         <source>%1 removed you from friends</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 친구에서 나를 삭제했어요</translation>
     </message>
     <message>
         <source>%1 is already your friend</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님은 이미 친구예요</translation>
     </message>
     <message>
         <source>That doesn&apos;t look like a friend code.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 코드 형식이 올바르지 않은 것 같아요.</translation>
     </message>
     <message>
         <source>That&apos;s your own code. Send it to a friend instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>이건 내 코드예요. 친구에게 보내 주세요.</translation>
     </message>
     <message>
         <source>%1 invites you to play %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 %2 플레이에 초대했어요</translation>
     </message>
     <message>
         <source>%1 stopped the game session</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 게임 세션을 종료했어요</translation>
     </message>
     <message>
         <source>%1 is joining</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 접속하는 중</translation>
     </message>
     <message>
         <source>%1 can&apos;t join right now</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 지금은 접속할 수 없어요</translation>
     </message>
     <message>
         <source>%1&apos;s world is open. Join from Multiplayer or press Connect.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님의 월드가 열렸어요. 멀티 플레이에서 참여하거나 연결을 누르세요.</translation>
     </message>
     <message>
         <source>%1 joined your world</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님이 내 월드에 접속했어요</translation>
     </message>
     <message>
         <source>Lost the connection to %1. Reconnecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>%1과(와)의 연결이 끊겼어요. 다시 연결하는 중…</translation>
     </message>
     <message>
         <source>%1: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1: %2</translation>
     </message>
 </context>
 <context>
     <name>FriendsPackOptions</name>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 측 모드만</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>모두</translation>
     </message>
     <message>
         <source>Only what&apos;s needed to join. Your own client mods (shaders, minimaps, performance) stay as they are.</source>
-        <translation type="unfinished"></translation>
+        <translation>참여에 필요한 것만 가져와요. 내 클라이언트 모드(셰이더, 미니맵, 성능 개선)는 그대로 유지돼요.</translation>
     </message>
     <message>
         <source>The whole pack, including client-side mods like minimaps and shaders.</source>
-        <translation type="unfinished"></translation>
+        <translation>미니맵, 셰이더 같은 클라이언트 측 모드까지 팩 전체를 가져와요.</translation>
     </message>
     <message>
         <source>Mods (tap to leave one out)</source>
-        <translation type="unfinished"></translation>
+        <translation>모드 (눌러서 제외)</translation>
     </message>
 </context>
 <context>
     <name>FriendsPlayDialog</name>
     <message>
         <source>Invite sent. Start the game and open your world to LAN.</source>
-        <translation type="unfinished"></translation>
+        <translation>초대를 보냈어요. 게임을 실행해 내 월드를 LAN에 공개하세요.</translation>
     </message>
     <message>
         <source>Play together</source>
-        <translation type="unfinished"></translation>
+        <translation>같이 플레이</translation>
     </message>
     <message>
         <source>1. What do you want to play?</source>
-        <translation type="unfinished"></translation>
+        <translation>1. 무엇으로 플레이할까요?</translation>
     </message>
     <message>
         <source>2. What do friends get?</source>
-        <translation type="unfinished"></translation>
+        <translation>2. 친구에게 무엇을 줄까요?</translation>
     </message>
     <message>
         <source>Checking the mods…</source>
-        <translation type="unfinished"></translation>
+        <translation>모드를 확인하는 중…</translation>
     </message>
     <message>
         <source>Pack sharing isn&apos;t available in this build yet, so friends join with an instance of their own (same Minecraft version and mods).</source>
-        <translation type="unfinished"></translation>
+        <translation>이 빌드에서는 아직 팩 공유를 지원하지 않아요. 친구는 각자의 인스턴스로 접속해요(같은 Minecraft 버전과 모드 필요).</translation>
     </message>
     <message>
         <source>3. Who&apos;s invited?</source>
-        <translation type="unfinished"></translation>
+        <translation>3. 누구를 초대할까요?</translation>
     </message>
     <message>
         <source>Add a friend first: send them your code.</source>
-        <translation type="unfinished"></translation>
+        <translation>먼저 친구를 추가하세요. 내 코드를 보내면 돼요.</translation>
     </message>
     <message>
         <source>None of your friends are connected right now. Invites need both of you online.</source>
-        <translation type="unfinished"></translation>
+        <translation>지금 접속 중인 친구가 없어요. 초대하려면 두 사람 모두 온라인이어야 해요.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message numerus="yes">
         <source>Invite %n friends</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>친구 %n명 초대</numerusform>
         </translation>
     </message>
     <message>
         <source>Send invite</source>
-        <translation type="unfinished"></translation>
+        <translation>초대 보내기</translation>
     </message>
 </context>
 <context>
     <name>GalleryBridge</name>
     <message>
         <source>File not found: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>파일을 찾을 수 없어요: %1</translation>
     </message>
     <message>
         <source>The file is too big.</source>
-        <translation type="unfinished"></translation>
+        <translation>파일이 너무 커요.</translation>
     </message>
     <message>
         <source>Unsupported address: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>지원하지 않는 주소예요: %1</translation>
     </message>
     <message>
         <source>The gallery list is damaged: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리 목록이 손상됐어요: %1</translation>
     </message>
     <message>
         <source>The gallery list is empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리 목록이 비어 있어요.</translation>
     </message>
     <message>
         <source>The theme file is too big.</source>
-        <translation type="unfinished"></translation>
+        <translation>테마 파일이 너무 커요.</translation>
     </message>
     <message>
         <source>The theme file is not valid JSON.</source>
-        <translation type="unfinished"></translation>
+        <translation>테마 파일이 올바른 JSON이 아니에요.</translation>
     </message>
     <message>
         <source>“%1” must be a short text.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”은(는) 짧은 텍스트여야 해요.</translation>
     </message>
     <message>
         <source>“dark” must be true or false.</source>
-        <translation type="unfinished"></translation>
+        <translation>“dark”는 true 또는 false여야 해요.</translation>
     </message>
     <message>
         <source>Unknown setting “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>알 수 없는 설정 “%1”이에요.</translation>
     </message>
     <message>
         <source>“%1” must be a group of settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”은(는) 설정 묶음이어야 해요.</translation>
     </message>
     <message>
         <source>“%1” must be a color like #1E2128.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”은(는) #1E2128 같은 색상이어야 해요.</translation>
     </message>
     <message>
         <source>“%1” has a wrong value.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”의 값이 잘못됐어요.</translation>
     </message>
     <message>
         <source>“%1” must be a plain file name.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”은(는) 단순한 파일 이름이어야 해요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t download the theme: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>테마를 다운로드하지 못했어요: %1</translation>
     </message>
     <message>
         <source>This theme can&apos;t be installed. %1</source>
-        <translation type="unfinished"></translation>
+        <translation>이 테마는 설치할 수 없어요. %1</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the theme.</source>
-        <translation type="unfinished"></translation>
+        <translation>테마를 저장하지 못했어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t download the background: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>배경을 다운로드하지 못했어요: %1</translation>
     </message>
     <message>
         <source>This file isn&apos;t a picture the launcher can show.</source>
-        <translation type="unfinished"></translation>
+        <translation>런처에서 표시할 수 있는 이미지가 아니에요.</translation>
     </message>
     <message>
         <source>This kind of file can&apos;t be used as a background.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 형식의 파일은 배경으로 쓸 수 없어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the background.</source>
-        <translation type="unfinished"></translation>
+        <translation>배경을 저장하지 못했어요.</translation>
     </message>
 </context>
 <context>
     <name>GalleryCard</name>
     <message>
         <source>In use</source>
-        <translation type="unfinished"></translation>
+        <translation>사용 중</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished">설치됨</translation>
+        <translation>설치됨</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished">제작: %1</translation>
+        <translation>%1 제작</translation>
     </message>
     <message>
         <source>1 download</source>
-        <translation type="unfinished"></translation>
+        <translation>다운로드 1</translation>
     </message>
     <message numerus="yes">
         <source>%n downloads</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>다운로드 %n</numerusform>
         </translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">설치 중…</translation>
+        <translation>설치 중…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">설치</translation>
+        <translation>설치</translation>
     </message>
 </context>
 <context>
     <name>GalleryDetails</name>
     <message>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>테마</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation type="unfinished"></translation>
+        <translation>영상 배경</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation type="unfinished">배경</translation>
+        <translation>배경</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished">제작: %1</translation>
+        <translation>%1 제작</translation>
     </message>
     <message>
         <source>1 download</source>
-        <translation type="unfinished"></translation>
+        <translation>다운로드 1</translation>
     </message>
     <message numerus="yes">
         <source>%n downloads</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>다운로드 %n</numerusform>
         </translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">닫기</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">설치 중…</translation>
+        <translation>설치 중…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">설치</translation>
+        <translation>설치</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="unfinished">적용</translation>
+        <translation>적용</translation>
     </message>
     <message>
         <source>Use as background</source>
-        <translation type="unfinished"></translation>
+        <translation>배경으로 사용</translation>
     </message>
     <message>
         <source>This theme is in use.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 테마를 사용 중이에요.</translation>
     </message>
     <message>
         <source>This is your background now.</source>
-        <translation type="unfinished"></translation>
+        <translation>지금 내 배경이에요.</translation>
     </message>
     <message>
         <source>Install again</source>
-        <translation type="unfinished"></translation>
+        <translation>다시 설치</translation>
     </message>
 </context>
 <context>
     <name>GameLog</name>
     <message>
         <source>No file chosen.</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 파일이 없어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the log to %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>로그를 %1에 저장하지 못했어요.</translation>
     </message>
 </context>
 <context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
-        <translation type="unfinished"></translation>
+        <translation>서버</translation>
     </message>
     <message>
         <source>Check again</source>
-        <translation type="unfinished"></translation>
+        <translation>다시 확인</translation>
     </message>
     <message>
         <source>All %1</source>
-        <translation type="unfinished"></translation>
+        <translation>전체 (%1)</translation>
     </message>
     <message>
         <source>Manage</source>
-        <translation type="unfinished">관리</translation>
+        <translation>관리</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>접속</translation>
     </message>
 </context>
 <context>
@@ -1980,7 +1980,7 @@
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">모드</translation>
+        <translation>모드</translation>
     </message>
     <message>
         <source>Install a mod loader for this instance first</source>
@@ -2026,231 +2026,231 @@
     </message>
     <message>
         <source>Updated %1</source>
-        <translation type="unfinished"></translation>
+        <translation>업데이트 완료: %1</translation>
     </message>
     <message>
         <source>Couldn&apos;t update %1: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 업데이트하지 못했어요: %2</translation>
     </message>
 </context>
 <context>
     <name>InstanceActions</name>
     <message>
         <source>Copying %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 복사 중</translation>
     </message>
     <message>
         <source>Copied as “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1” 이름으로 복사했어요.</translation>
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">이 인스턴스가 더 이상 존재하지 않습니다.</translation>
+        <translation>이 인스턴스는 더 이상 존재하지 않아요.</translation>
     </message>
     <message>
         <source>The game is running. Close it before deleting this instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>게임이 실행 중이에요. 이 인스턴스를 삭제하려면 먼저 게임을 종료하세요.</translation>
     </message>
     <message>
         <source>Only Minecraft instances can be exported as modpacks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft 인스턴스만 모드팩으로 내보낼 수 있어요.</translation>
     </message>
     <message>
         <source>Snapshots are currently not supported by CurseForge modpacks.</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 CurseForge 모드팩은 스냅샷을 지원하지 않아요.</translation>
     </message>
     <message>
         <source>Unable to export instance</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스를 내보낼 수 없어요</translation>
     </message>
     <message>
         <source>Exporting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 내보내는 중</translation>
     </message>
     <message>
         <source>Exported to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에 내보냈어요</translation>
     </message>
     <message>
         <source>Cancelled.</source>
-        <translation type="unfinished"></translation>
+        <translation>취소했어요.</translation>
     </message>
 </context>
 <context>
     <name>JavaInstallDialog</name>
     <message>
         <source>Download Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 다운로드</translation>
     </message>
     <message>
         <source>Minecraft needs Java to run. Recommended versions fit this game; the newest build is picked for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft 실행에는 Java가 필요해요. 추천 버전은 이 게임에 맞고, 최신 빌드를 자동으로 골라 줘요.</translation>
     </message>
     <message>
         <source>fits</source>
-        <translation type="unfinished"></translation>
+        <translation>적합</translation>
     </message>
     <message>
         <source>Loading the version list…</source>
-        <translation type="unfinished"></translation>
+        <translation>버전 목록을 불러오는 중…</translation>
     </message>
     <message>
         <source>Pick a Java version on the left.</source>
-        <translation type="unfinished"></translation>
+        <translation>왼쪽에서 Java 버전을 선택하세요.</translation>
     </message>
     <message>
         <source>Downloading Java. You can keep using the launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Java를 다운로드하는 중이에요. 런처는 계속 쓸 수 있어요.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>다운로드</translation>
     </message>
 </context>
 <context>
     <name>JavaInstaller</name>
     <message>
         <source>Mojang</source>
-        <translation type="unfinished"></translation>
+        <translation>Mojang</translation>
     </message>
     <message>
         <source>Adoptium</source>
-        <translation type="unfinished"></translation>
+        <translation>Adoptium</translation>
     </message>
     <message>
         <source>Azul Zulu</source>
-        <translation type="unfinished"></translation>
+        <translation>Azul Zulu</translation>
     </message>
     <message>
         <source>IBM Semeru</source>
-        <translation type="unfinished"></translation>
+        <translation>IBM Semeru</translation>
     </message>
     <message>
         <source>No Java versions are currently available in the meta.</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 메타에서 사용 가능한 Java 버전이 없어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the Java version list: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 버전 목록을 불러오지 못했어요: %1</translation>
     </message>
     <message>
         <source>This Java version is no longer available.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 Java 버전은 더 이상 사용할 수 없어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the builds: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>빌드를 불러오지 못했어요: %1</translation>
     </message>
     <message>
         <source>No builds of this Java for your computer (%1).</source>
-        <translation type="unfinished"></translation>
+        <translation>이 컴퓨터(%1)에서 쓸 수 있는 이 Java의 빌드가 없어요.</translation>
     </message>
     <message>
         <source>Could not determine Java download type!</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 다운로드 형식을 확인할 수 없어요!</translation>
     </message>
     <message>
         <source>Install Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 설치</translation>
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished">%1 설치 중</translation>
+        <translation>%1 설치 중</translation>
     </message>
     <message>
         <source>%1 is installed.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 설치했어요.</translation>
     </message>
     <message>
         <source>Java download cancelled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 다운로드가 취소됐어요.</translation>
     </message>
     <message>
         <source>Java download failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 다운로드 실패: %1</translation>
     </message>
 </context>
 <context>
     <name>LaunchCheck</name>
     <message>
         <source>Minecraft %1 needs Java %2 or newer</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft %1에는 Java %2 이상이 필요해요</translation>
     </message>
     <message>
         <source>This instance is set to use Java %1, which is too old to start the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스는 Java %1을(를) 쓰도록 설정돼 있는데, 버전이 너무 낮아 게임을 시작할 수 없어요.</translation>
     </message>
     <message>
         <source>Choose Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 선택</translation>
     </message>
     <message>
         <source>This instance uses %1, so these won&apos;t load: %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스는 %1을(를) 사용해서 다음은 불러올 수 없어요: %2.</translation>
     </message>
     <message>
         <source>Turn them off</source>
-        <translation type="unfinished"></translation>
+        <translation>끄기</translation>
     </message>
     <message>
         <source>%1 is a %2 mod</source>
-        <translation type="unfinished"></translation>
+        <translation>%1은(는) %2 모드예요</translation>
     </message>
     <message>
         <source>This instance uses %1, so it won&apos;t load.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스는 %1을(를) 사용해서 불러올 수 없어요.</translation>
     </message>
     <message>
         <source>Turn it off</source>
-        <translation type="unfinished"></translation>
+        <translation>끄기</translation>
     </message>
     <message>
         <source>Files: %1. The game stops when a mod is there twice.</source>
-        <translation type="unfinished"></translation>
+        <translation>파일: %1. 같은 모드가 두 개 있으면 게임이 멈춰요.</translation>
     </message>
     <message>
         <source>Turn off the older copy</source>
-        <translation type="unfinished"></translation>
+        <translation>오래된 복사본 끄기</translation>
     </message>
     <message>
         <source>Turn off the older copies</source>
-        <translation type="unfinished"></translation>
+        <translation>오래된 복사본 모두 끄기</translation>
     </message>
     <message>
         <source>%1 needs %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에 %2 필요</translation>
     </message>
     <message>
         <source>%1 isn&apos;t installed, so the game will stop while loading.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1이(가) 설치되어 있지 않아 게임이 불러오는 중에 멈출 거예요.</translation>
     </message>
     <message>
         <source>Install %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 설치</translation>
     </message>
     <message>
         <source>This instance runs Minecraft %1. These won&apos;t load: %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스는 Minecraft %1을(를) 실행해요. 다음은 불러올 수 없어요: %2.</translation>
     </message>
     <message>
         <source>Find versions for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1용 버전 찾기</translation>
     </message>
     <message>
         <source>%1 is made for Minecraft %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1은(는) Minecraft %2용이에요</translation>
     </message>
     <message>
         <source>This instance runs Minecraft %1, so it won&apos;t load.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스는 Minecraft %1을(를) 실행해서 불러올 수 없어요.</translation>
     </message>
     <message>
         <source>Find a version for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1용 버전 찾기</translation>
     </message>
 </context>
 <context>
@@ -2296,53 +2296,53 @@
     <name>LauncherImport</name>
     <message>
         <source>Can&apos;t tell which Minecraft version it uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>어떤 Minecraft 버전을 쓰는지 알 수 없어요.</translation>
     </message>
     <message>
         <source>Can&apos;t tell which mod loader version it uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>어떤 모드 로더 버전을 쓰는지 알 수 없어요.</translation>
     </message>
     <message>
         <source>Latest release</source>
-        <translation type="unfinished"></translation>
+        <translation>최신 정식 버전</translation>
     </message>
     <message>
         <source>Minecraft Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft Launcher</translation>
     </message>
     <message>
         <source>Couldn&apos;t create %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 만들지 못했어요</translation>
     </message>
     <message>
         <source>Couldn&apos;t copy %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 복사하지 못했어요</translation>
     </message>
     <message>
         <source>Prism / MultiMC</source>
-        <translation type="unfinished"></translation>
+        <translation>Prism / MultiMC</translation>
     </message>
 </context>
 <context>
     <name>LauncherImport::ForeignImportTask</name>
     <message>
         <source>Linking %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 연결하는 중…</translation>
     </message>
     <message>
         <source>Copying %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 복사하는 중…</translation>
     </message>
 </context>
 <context>
     <name>Main</name>
     <message>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>강제 종료</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>%1 didn&apos;t start: %2</source>
@@ -2431,39 +2431,39 @@
     <name>PackSettings</name>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 MB</translation>
+        <translation>%1 MB</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished">%1 GB</translation>
+        <translation>%1 GB</translation>
     </message>
     <message>
         <source>This modpack asked for more memory than this computer has, so it got %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 모드팩이 요청한 메모리가 컴퓨터에 있는 것보다 많아서 %1로 설정했어요.</translation>
     </message>
     <message>
         <source>This modpack set %1 of memory.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 모드팩이 메모리를 %1로 설정했어요.</translation>
     </message>
     <message>
         <source>Memory: %1 (set by the modpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>메모리: %1 (모드팩이 설정함)</translation>
     </message>
     <message>
         <source>It also added its own Java arguments.</source>
-        <translation type="unfinished"></translation>
+        <translation>모드팩이 자체 Java 인자도 추가했어요.</translation>
     </message>
     <message>
         <source>Java arguments: %1 (set by the modpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Java 인자: %1 (모드팩이 설정함)</translation>
     </message>
     <message>
         <source>The file %1 doesn&apos;t exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 파일이 없어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t replace %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 바꾸지 못했어요.</translation>
     </message>
 </context>
 <context>
@@ -2682,15 +2682,15 @@
     </message>
     <message>
         <source>Sounds</source>
-        <translation type="unfinished"></translation>
+        <translation>소리</translation>
     </message>
     <message>
         <source>Play sounds on clicks and launches</source>
-        <translation type="unfinished"></translation>
+        <translation>클릭과 게임 실행 시 소리 재생</translation>
     </message>
     <message>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>볼륨</translation>
     </message>
     <message>
         <source>Choose a background image</source>
@@ -2812,7 +2812,7 @@
     </message>
     <message>
         <source>You can leave this page: the install keeps going and its progress stays at the bottom of the window.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 페이지를 벗어나도 괜찮아요. 설치는 계속 진행되고 진행 상황은 창 하단에 표시돼요.</translation>
     </message>
     <message>
         <source>Dismiss</source>
@@ -2827,66 +2827,66 @@
     </message>
     <message>
         <source>Play together without a server or any setup. Your computers connect directly.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버나 복잡한 설정 없이 같이 플레이해요. 컴퓨터끼리 직접 연결돼요.</translation>
     </message>
     <message>
         <source>Play together</source>
-        <translation type="unfinished"></translation>
+        <translation>같이 플레이</translation>
     </message>
     <message>
         <source>Friend requests</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 요청</translation>
     </message>
     <message>
         <source>Someone</source>
-        <translation type="unfinished"></translation>
+        <translation>누군가</translation>
     </message>
     <message>
         <source>wants to be friends</source>
-        <translation type="unfinished"></translation>
+        <translation>친구 요청을 보냈어요</translation>
     </message>
     <message>
         <source>Accept</source>
-        <translation type="unfinished"></translation>
+        <translation>수락</translation>
     </message>
     <message>
         <source>Decline</source>
-        <translation type="unfinished"></translation>
+        <translation>거절</translation>
     </message>
     <message>
         <source>Your friends</source>
-        <translation type="unfinished"></translation>
+        <translation>내 친구</translation>
     </message>
     <message>
         <source>%1 online</source>
-        <translation type="unfinished"></translation>
+        <translation>%1명 온라인</translation>
     </message>
     <message>
         <source>No friends yet. Copy your code and send it to a friend, or paste theirs on the right.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 친구가 없어요. 내 코드를 복사해 친구에게 보내거나, 오른쪽에 친구의 코드를 붙여넣어 보세요.</translation>
     </message>
 </context>
 <context>
     <name>PageGallery</name>
     <message>
         <source>“%1” applied</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 적용했어요</translation>
     </message>
     <message>
         <source>“%1” is your background now</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”이(가) 새 배경이 됐어요</translation>
     </message>
     <message>
         <source>Couldn&apos;t add “%1” to your backgrounds.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 배경에 추가하지 못했어요.</translation>
     </message>
     <message>
         <source>“%1” installed. Press Apply to use it.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 설치했어요. 적용을 눌러 사용해 보세요.</translation>
     </message>
     <message>
         <source>“%1” added to your backgrounds.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 배경에 추가했어요.</translation>
     </message>
     <message>
         <source>Back</source>
@@ -2894,107 +2894,107 @@
     </message>
     <message>
         <source>Gallery</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리</translation>
     </message>
     <message>
         <source>Themes</source>
-        <translation type="unfinished"></translation>
+        <translation>테마</translation>
     </message>
     <message>
         <source>Backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>배경</translation>
     </message>
     <message>
         <source>Share yours</source>
-        <translation type="unfinished"></translation>
+        <translation>내 것 공유</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished">새로고침</translation>
+        <translation>새로 고침</translation>
     </message>
     <message>
         <source>Search themes</source>
-        <translation type="unfinished"></translation>
+        <translation>테마 검색</translation>
     </message>
     <message>
         <source>Search backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>배경 검색</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach the online gallery, so you&apos;re seeing the examples that come with the launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>온라인 갤러리에 연결할 수 없어서 런처에 기본으로 들어 있는 예시를 보여 드리고 있어요.</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished">다시 시도</translation>
+        <translation>다시 시도</translation>
     </message>
     <message>
         <source>Loading the gallery…</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리를 불러오는 중…</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the gallery: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리를 불러오지 못했어요: %1</translation>
     </message>
     <message>
         <source>Nothing matches your search.</source>
-        <translation type="unfinished"></translation>
+        <translation>검색 결과가 없어요.</translation>
     </message>
     <message>
         <source>No themes here yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 테마가 없어요.</translation>
     </message>
     <message>
         <source>No backgrounds here yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 배경이 없어요.</translation>
     </message>
     <message>
         <source>Clear search</source>
-        <translation type="unfinished"></translation>
+        <translation>검색 지우기</translation>
     </message>
     <message>
         <source>Share your theme</source>
-        <translation type="unfinished"></translation>
+        <translation>내 테마 공유</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">닫기</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <source>The gallery is a public list on GitHub. Anyone can suggest a theme or a background there; once it&apos;s accepted, it shows up here for everyone.</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리는 GitHub의 공개 목록이에요. 누구나 테마나 배경을 제안할 수 있고, 승인되면 모두에게 여기에 표시돼요.</translation>
     </message>
     <message>
         <source>Open your themes folder and find your theme&apos;s .json file.</source>
-        <translation type="unfinished"></translation>
+        <translation>테마 폴더를 열어 내 테마의 .json 파일을 찾으세요.</translation>
     </message>
     <message>
         <source>Open the gallery page on GitHub and follow the steps there to add your file and a short description.</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub의 갤러리 페이지를 열어 안내에 따라 파일과 짧은 설명을 추가하세요.</translation>
     </message>
     <message>
         <source>Only share things you made yourself or are allowed to share.</source>
-        <translation type="unfinished"></translation>
+        <translation>직접 만들었거나 공유가 허락된 것만 올려 주세요.</translation>
     </message>
     <message>
         <source>Open themes folder</source>
-        <translation type="unfinished">테마 폴더 열기</translation>
+        <translation>테마 폴더 열기</translation>
     </message>
     <message>
         <source>Open gallery page</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리 페이지 열기</translation>
     </message>
     <message>
         <source>Gallery address</source>
-        <translation type="unfinished"></translation>
+        <translation>갤러리 주소</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation type="unfinished"></translation>
+        <translation>사용</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="unfinished">초기화</translation>
+        <translation>초기화</translation>
     </message>
 </context>
 <context>
@@ -3052,7 +3052,7 @@
     </message>
     <message>
         <source>Servers</source>
-        <translation type="unfinished"></translation>
+        <translation>서버</translation>
     </message>
     <message>
         <source>Screenshots</source>
@@ -3064,7 +3064,7 @@
     </message>
     <message>
         <source>Game log</source>
-        <translation type="unfinished">게임 로그</translation>
+        <translation>게임 로그</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3119,11 +3119,11 @@
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">설치 중…</translation>
+        <translation>설치 중…</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Stop</source>
@@ -3162,177 +3162,177 @@
     <name>PageReceivePack</name>
     <message>
         <source>Using “%1” as it is</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 그대로 사용</translation>
     </message>
     <message>
         <source>“%1” is ready</source>
-        <translation type="unfinished">“%1” 준비 완료</translation>
+        <translation>“%1” 준비 완료</translation>
     </message>
     <message numerus="yes">
         <source>Added %n item(s) to “%1”</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>“%1”에 항목 %n개를 추가했어요</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n couldn&apos;t be downloaded</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n개를 다운로드하지 못했어요</numerusform>
         </translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished">뒤로</translation>
+        <translation>뒤로</translation>
     </message>
     <message>
         <source>Shared pack</source>
-        <translation type="unfinished"></translation>
+        <translation>공유된 팩</translation>
     </message>
     <message>
         <source>Open a shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>공유 인스턴스 열기</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>no mod loader</source>
-        <translation type="unfinished"></translation>
+        <translation>모드 로더 없음</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>모드 %n개</numerusform>
         </translation>
     </message>
     <message>
         <source>Open another</source>
-        <translation type="unfinished"></translation>
+        <translation>다른 팩 열기</translation>
     </message>
     <message>
         <source>Paste the link a friend sent you, or open the .fashpack file. You&apos;ll see what&apos;s inside before anything is downloaded.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구에게 받은 링크를 붙여넣거나 .fashpack 파일을 여세요. 다운로드 전에 내용을 먼저 확인할 수 있어요.</translation>
     </message>
     <message>
         <source>Paste a share link (fashion://pack/…)</source>
-        <translation type="unfinished"></translation>
+        <translation>공유 링크 붙여넣기 (fashion://pack/…)</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">열기</translation>
+        <translation>열기</translation>
     </message>
     <message>
         <source>Open a .fashpack file</source>
-        <translation type="unfinished"></translation>
+        <translation>.fashpack 파일 열기</translation>
     </message>
     <message>
         <source>What to install</source>
-        <translation type="unfinished"></translation>
+        <translation>설치할 항목</translation>
     </message>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 측 모드만</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>모두</translation>
     </message>
     <message>
         <source>Your friend shared only the server-side mods — enough to join or host the same server.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구가 서버 측 모드만 공유했어요. 같은 서버에 참여하거나 호스팅하기에 충분해요.</translation>
     </message>
     <message>
         <source>Everything your friend uses, including client-only extras and packs.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구가 쓰는 모든 것 — 클라이언트 전용 모드와 팩까지 포함해요.</translation>
     </message>
     <message>
         <source>Just what&apos;s needed to play on the same server. Client-only extras like minimaps and shaders are skipped.</source>
-        <translation type="unfinished"></translation>
+        <translation>같은 서버에서 플레이할 때 필요한 것만 가져와요. 미니맵, 셰이더 같은 클라이언트 전용 요소는 건너뛰어요.</translation>
     </message>
     <message>
         <source>Ask your friend for these files — they aren&apos;t on Modrinth or CurseForge: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>이 파일들은 Modrinth나 CurseForge에 없으니 친구에게 직접 받으세요: %1</translation>
     </message>
     <message>
         <source>Where to put it</source>
-        <translation type="unfinished"></translation>
+        <translation>설치 위치</translation>
     </message>
     <message>
         <source>Add to “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”에 추가</translation>
     </message>
     <message>
         <source>Add to one of your instances</source>
-        <translation type="unfinished"></translation>
+        <translation>내 인스턴스에 추가</translation>
     </message>
     <message>
         <source>You already have a similar instance with all of these mods.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 모드를 모두 갖춘 비슷한 인스턴스가 이미 있어요.</translation>
     </message>
     <message numerus="yes">
         <source>You already have a similar instance — use it and add %n missing mod(s). Your own mods stay.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>비슷한 인스턴스가 이미 있어요 — 이걸 쓰고 없는 모드 %n개를 추가해요. 내 모드는 그대로 유지돼요.</numerusform>
         </translation>
     </message>
     <message>
         <source>Create a new instance</source>
-        <translation type="unfinished"></translation>
+        <translation>새 인스턴스 만들기</translation>
     </message>
     <message>
         <source>Minecraft %1%2 with these mods, kept apart from your other games.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 모드들을 담은 Minecraft %1%2. 다른 게임과는 별도로 관리돼요.</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">이름</translation>
+        <translation>이름</translation>
     </message>
     <message>
         <source>Use my own instance without changes</source>
-        <translation type="unfinished"></translation>
+        <translation>내 인스턴스를 그대로 사용</translation>
     </message>
     <message>
         <source>Nothing is downloaded. Pick this if you already set it up yourself.</source>
-        <translation type="unfinished"></translation>
+        <translation>아무것도 다운로드하지 않아요. 이미 직접 설정했다면 이걸 고르세요.</translation>
     </message>
     <message>
         <source>“%1” has some of these mods but runs a different Minecraft version or loader, so a new instance is safer.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”에 이 모드가 일부 있지만 Minecraft 버전이나 로더가 달라서 새 인스턴스로 만드는 게 안전해요.</translation>
     </message>
     <message>
         <source>Your instance stays exactly as it is.</source>
-        <translation type="unfinished"></translation>
+        <translation>내 인스턴스는 그대로 유지돼요.</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s) selected. Files come from Modrinth and CurseForge.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>항목 %n개 선택. 파일은 Modrinth와 CurseForge에서 가져와요.</numerusform>
         </translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished">중지</translation>
+        <translation>중지</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished"></translation>
+        <translation>처리 중…</translation>
     </message>
     <message>
         <source>Use this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>이 인스턴스 사용</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 만들기</translation>
     </message>
     <message>
         <source>Add mods</source>
-        <translation type="unfinished"></translation>
+        <translation>모드 추가</translation>
     </message>
     <message>
         <source>Open instance</source>
-        <translation type="unfinished">인스턴스 열기</translation>
+        <translation>인스턴스 열기</translation>
     </message>
 </context>
 <context>
@@ -3355,7 +3355,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>고급</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3514,7 +3514,7 @@
     <name>PageSkins</name>
     <message>
         <source>Back</source>
-        <translation type="unfinished">뒤로</translation>
+        <translation>뒤로</translation>
     </message>
     <message>
         <source>Skins</source>
@@ -3522,115 +3522,115 @@
     </message>
     <message>
         <source>Turn your player around, collect skins and choose what you wear.</source>
-        <translation type="unfinished"></translation>
+        <translation>캐릭터를 돌려 보고, 스킨을 모아, 입고 싶은 스킨을 골라 보세요.</translation>
     </message>
     <message>
         <source>Account</source>
-        <translation type="unfinished">계정</translation>
+        <translation>계정</translation>
     </message>
     <message>
         <source>%1 (offline)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (오프라인)</translation>
     </message>
     <message>
         <source>No skins yet. Drop a skin PNG here or get one by player name.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 스킨이 없어요. 스킨 PNG를 여기에 끌어다 놓거나 플레이어 이름으로 가져와 보세요.</translation>
     </message>
     <message>
         <source>Drag to turn · double-click to face front</source>
-        <translation type="unfinished"></translation>
+        <translation>드래그해서 돌리기 · 더블클릭으로 정면 보기</translation>
     </message>
     <message>
         <source>Classic arms</source>
-        <translation type="unfinished"></translation>
+        <translation>클래식 팔</translation>
     </message>
     <message>
         <source>Slim arms</source>
-        <translation type="unfinished"></translation>
+        <translation>슬림 팔</translation>
     </message>
     <message>
         <source>Cape</source>
-        <translation type="unfinished"></translation>
+        <translation>망토</translation>
     </message>
     <message>
         <source>No cape</source>
-        <translation type="unfinished"></translation>
+        <translation>망토 없음</translation>
     </message>
     <message>
         <source>This is an offline account, so the game can&apos;t download a skin for it — in game you&apos;ll look like Steve or Alex. You can still keep and preview skins here. To wear one in game, install a skin mod (for example CustomSkinLoader) and give it this skin file. Only people with the same mod will see it.</source>
-        <translation type="unfinished"></translation>
+        <translation>오프라인 계정이라 게임이 스킨을 받아올 수 없어요 — 게임 안에서는 Steve나 Alex로 보여요. 그래도 여기서 스킨을 보관하고 미리 볼 수 있어요. 게임에서 스킨을 입으려면 스킨 모드(예: CustomSkinLoader)를 설치하고 이 스킨 파일을 지정하세요. 같은 모드를 쓰는 사람만 볼 수 있어요.</translation>
     </message>
     <message>
         <source>This Microsoft account can&apos;t change its skin right now. Sign in again in Accounts, and make sure it owns Minecraft.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 Microsoft 계정은 지금 스킨을 바꿀 수 없어요. 계정에서 다시 로그인하고 Minecraft를 보유하고 있는지 확인하세요.</translation>
     </message>
     <message>
         <source>You&apos;re wearing this</source>
-        <translation type="unfinished"></translation>
+        <translation>지금 착용 중</translation>
     </message>
     <message>
         <source>Update cape</source>
-        <translation type="unfinished"></translation>
+        <translation>망토 업데이트</translation>
     </message>
     <message>
         <source>Use this skin</source>
-        <translation type="unfinished"></translation>
+        <translation>이 스킨 사용</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished">더 보기</translation>
+        <translation>더 보기</translation>
     </message>
     <message>
         <source>Go back to the default skin</source>
-        <translation type="unfinished"></translation>
+        <translation>기본 스킨으로 되돌리기</translation>
     </message>
     <message>
         <source>Player name, to copy their skin</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨을 가져올 플레이어 이름</translation>
     </message>
     <message>
         <source>Get skin</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 가져오기</translation>
     </message>
     <message>
         <source>Add file</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 추가</translation>
     </message>
     <message>
         <source>Open skins folder</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 폴더 열기</translation>
     </message>
     <message>
         <source>Wearing</source>
-        <translation type="unfinished"></translation>
+        <translation>착용 중</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished">추가 작업</translation>
+        <translation>추가 작업</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="unfinished">이름 바꾸기</translation>
+        <translation>이름 바꾸기</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">삭제</translation>
+        <translation>삭제</translation>
     </message>
     <message>
         <source>Your skin library is empty. Drop PNG skins anywhere on this page, add a file, or type a player name above.</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 라이브러리가 비어 있어요. 이 페이지 아무 곳에나 PNG 스킨을 끌어다 놓거나, 파일을 추가하거나, 위에 플레이어 이름을 입력해 보세요.</translation>
     </message>
     <message>
         <source>Choose skin images</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 이미지 선택</translation>
     </message>
     <message>
         <source>Skin images (*.png)</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 이미지 (*.png)</translation>
     </message>
     <message>
         <source>Drop to add to your skins</source>
-        <translation type="unfinished"></translation>
+        <translation>놓으면 스킨에 추가돼요</translation>
     </message>
 </context>
 <context>
@@ -3683,35 +3683,35 @@
     <name>QObject</name>
     <message>
         <source>any version</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 버전</translation>
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1부터 %2까지</translation>
     </message>
     <message>
         <source>%1 up to (not including) %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 이상 %2 미만</translation>
     </message>
     <message>
         <source>%1 or newer</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 이상</translation>
     </message>
     <message>
         <source>newer than %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1보다 높은 버전</translation>
     </message>
     <message>
         <source>%1 or older</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 이하</translation>
     </message>
     <message>
         <source>older than %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1보다 낮은 버전</translation>
     </message>
     <message>
         <source> or </source>
-        <translation type="unfinished"></translation>
+        <translation> 또는 </translation>
     </message>
 </context>
 <context>
@@ -4051,15 +4051,15 @@
     </message>
     <message>
         <source>See what&apos;s new</source>
-        <translation type="unfinished"></translation>
+        <translation>새 소식 보기</translation>
     </message>
     <message>
         <source>Mods aren&apos;t checked before playing.</source>
-        <translation type="unfinished"></translation>
+        <translation>플레이 전에 모드를 확인하지 않아요.</translation>
     </message>
     <message>
         <source>Turn checks on</source>
-        <translation type="unfinished"></translation>
+        <translation>검사 켜기</translation>
     </message>
     <message>
         <source>Nothing matches “%1”</source>
@@ -4085,37 +4085,37 @@
     <name>ResUpdatesDialog</name>
     <message numerus="yes">
         <source>%n update(s) available</source>
-        <translation type="unfinished">
-            <numerusform>업데이트 %n개 사용 가능</numerusform>
+        <translation>
+            <numerusform>업데이트 %n개 있음</numerusform>
         </translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">닫기</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <source>See what changed before you update. Open a mod to read its changelog.</source>
-        <translation type="unfinished"></translation>
+        <translation>업데이트 전에 바뀐 내용을 확인하세요. 모드를 열면 변경 로그를 볼 수 있어요.</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>업데이트</translation>
     </message>
     <message>
         <source>The author didn&apos;t write a changelog for this version.</source>
-        <translation type="unfinished"></translation>
+        <translation>제작자가 이 버전의 변경 로그를 작성하지 않았어요.</translation>
     </message>
     <message>
         <source>Updating…</source>
-        <translation type="unfinished">업데이트 중…</translation>
+        <translation>업데이트 중…</translation>
     </message>
     <message>
         <source>Not now</source>
-        <translation type="unfinished"></translation>
+        <translation>나중에</translation>
     </message>
     <message>
         <source>Update all (%1)</source>
-        <translation type="unfinished">모두 업데이트 (%1)</translation>
+        <translation>모두 업데이트 (%1)</translation>
     </message>
 </context>
 <context>
@@ -4149,155 +4149,155 @@
     <name>ServerListModel</name>
     <message>
         <source>Couldn&apos;t save the server list.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 목록을 저장하지 못했어요.</translation>
     </message>
     <message>
         <source>Type the server address, for example play.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 주소를 입력하세요. 예: play.example.com</translation>
     </message>
     <message>
         <source>A server address can&apos;t contain spaces.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 주소에는 공백을 쓸 수 없어요.</translation>
     </message>
     <message>
         <source>The port after the colon must be between 1 and 65535.</source>
-        <translation type="unfinished"></translation>
+        <translation>콜론 뒤 포트는 1부터 65535 사이여야 해요.</translation>
     </message>
     <message>
         <source>Minecraft Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft 서버</translation>
     </message>
     <message>
         <source>The server didn&apos;t answer in time.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버가 제시간에 응답하지 않았어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t find a server at this address.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 주소에서 서버를 찾을 수 없어요.</translation>
     </message>
     <message>
         <source>The server is offline or not reachable.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버가 오프라인이거나 접근할 수 없어요.</translation>
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">이 인스턴스가 더 이상 존재하지 않습니다.</translation>
+        <translation>이 인스턴스는 더 이상 존재하지 않아요.</translation>
     </message>
     <message>
         <source>The game is already running. Join the server from the in-game Multiplayer menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>게임이 이미 실행 중이에요. 게임 안의 멀티 플레이 메뉴에서 서버에 접속하세요.</translation>
     </message>
 </context>
 <context>
     <name>ServerStatus</name>
     <message>
         <source>Checking…</source>
-        <translation type="unfinished">확인 중…</translation>
+        <translation>확인 중…</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">오프라인</translation>
+        <translation>오프라인</translation>
     </message>
     <message>
         <source>Not checked</source>
-        <translation type="unfinished"></translation>
+        <translation>확인 안 됨</translation>
     </message>
     <message>
         <source>%1 / %2 players</source>
-        <translation type="unfinished"></translation>
+        <translation>플레이어 %1 / %2</translation>
     </message>
     <message numerus="yes">
         <source>%n player(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>플레이어 %n명</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 ms</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ms</translation>
     </message>
     <message>
         <source>Online</source>
-        <translation type="unfinished"></translation>
+        <translation>온라인</translation>
     </message>
 </context>
 <context>
     <name>SettingsAdvanced</name>
     <message>
         <source>Custom commands</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 지정 명령어</translation>
     </message>
     <message>
         <source>Run your own commands around the game. $INST_DIR, $INST_MC_DIR, $INST_JAVA and similar variables are filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>게임 실행 전후에 내 명령어를 실행해요. $INST_DIR, $INST_MC_DIR, $INST_JAVA 같은 변수는 자동으로 채워져요.</translation>
     </message>
     <message>
         <source>Before launch</source>
-        <translation type="unfinished"></translation>
+        <translation>실행 전</translation>
     </message>
     <message>
         <source>e.g. a backup script</source>
-        <translation type="unfinished"></translation>
+        <translation>예: 백업 스크립트</translation>
     </message>
     <message>
         <source>Wrapper</source>
-        <translation type="unfinished"></translation>
+        <translation>래퍼 (wrapper)</translation>
     </message>
     <message>
         <source>Starts Java through this program, like “prime-run”.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 프로그램을 통해 Java를 실행해요. 예: “prime-run”.</translation>
     </message>
     <message>
         <source>After exit</source>
-        <translation type="unfinished"></translation>
+        <translation>종료 후</translation>
     </message>
     <message>
         <source>Environment variables</source>
-        <translation type="unfinished"></translation>
+        <translation>환경 변수</translation>
     </message>
     <message>
         <source>Extra variables for the game process, one NAME=value per line.</source>
-        <translation type="unfinished"></translation>
+        <translation>게임 프로세스에 추가할 변수예요. 한 줄에 NAME=value 하나씩 적으세요.</translation>
     </message>
     <message>
         <source>Graphics</source>
-        <translation type="unfinished"></translation>
+        <translation>그래픽</translation>
     </message>
     <message>
         <source>Which graphics card and drivers the game uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>게임이 사용할 그래픽 카드와 드라이버를 정해요.</translation>
     </message>
     <message>
         <source>Use the discrete graphics card</source>
-        <translation type="unfinished"></translation>
+        <translation>외장 그래픽 카드 사용</translation>
     </message>
     <message>
         <source>On laptops with two graphics cards, run the game on the faster one.</source>
-        <translation type="unfinished"></translation>
+        <translation>그래픽 카드가 두 개인 노트북에서 게임을 더 빠른 카드로 실행해요.</translation>
     </message>
     <message>
         <source>Use Zink (OpenGL over Vulkan)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zink 사용 (Vulkan 위의 OpenGL)</translation>
     </message>
     <message>
         <source>Can help where the OpenGL driver is broken. Usually slower.</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenGL 드라이버에 문제가 있을 때 도움이 돼요. 보통은 더 느려요.</translation>
     </message>
     <message>
         <source>Old versions</source>
-        <translation type="unfinished">이전 버전</translation>
+        <translation>구버전</translation>
     </message>
     <message>
         <source>Fixes for Minecraft versions from before 1.6.</source>
-        <translation type="unfinished"></translation>
+        <translation>1.6 이전 Minecraft 버전을 위한 수정이에요.</translation>
     </message>
     <message>
         <source>Fix skins, sounds and logins</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨, 소리, 로그인 문제 해결</translation>
     </message>
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>구버전 게임이 찾지만 이제는 없어진 서비스를 다른 곳으로 연결해요.</translation>
     </message>
 </context>
 <context>
@@ -4669,228 +4669,228 @@
     <name>ShareDialog</name>
     <message>
         <source>Share “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1” 공유</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">닫기</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <source>Friends paste the link in Fashion Launcher and get Minecraft %1%2 with the same mods, downloaded from Modrinth and CurseForge. Worlds and settings aren&apos;t sent.</source>
-        <translation type="unfinished"></translation>
+        <translation>친구가 Fashion Launcher에 링크를 붙여넣으면 같은 모드를 갖춘 Minecraft %1%2를 받아요. 모드는 Modrinth와 CurseForge에서 다운로드돼요. 월드와 설정은 전송되지 않아요.</translation>
     </message>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 측 모드만</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>모두</translation>
     </message>
     <message>
         <source>All your mods, resource packs and shader packs — a full copy of how you play.</source>
-        <translation type="unfinished"></translation>
+        <translation>내 모드, 리소스 팩, 셰이더 팩 전부 — 내 플레이 환경을 그대로 담아요.</translation>
     </message>
     <message>
         <source>Only what a server needs, so friends can join or host it. Client-only extras like minimaps, shaders and resource packs stay with you.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버에 필요한 것만 보내요. 친구가 그 서버에 참여하거나 호스팅할 수 있어요. 미니맵, 셰이더, 리소스 팩 같은 클라이언트 전용 요소는 내게만 남아 있어요.</translation>
     </message>
     <message>
         <source>Looking your mods up on Modrinth…</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth에서 모드를 찾아보는 중…</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s) will be shared.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>항목 %n개를 공유해요.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n of them can&apos;t be downloaded by others — send those files separately or untick them.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>이 중 %n개는 다른 사람이 자동으로 받을 수 없어요 — 따로 보내거나 선택을 해제하세요.</numerusform>
         </translation>
     </message>
     <message>
         <source>The link is long and some chats cut it off; the file is safer.</source>
-        <translation type="unfinished"></translation>
+        <translation>링크가 길어서 일부 채팅에서 잘릴 수 있어요. 파일로 공유하는 게 더 안전해요.</translation>
     </message>
     <message>
         <source>Link copied</source>
-        <translation type="unfinished"></translation>
+        <translation>링크 복사됨</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 저장</translation>
     </message>
     <message>
         <source>Saved %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에 저장했어요</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>링크 복사</translation>
     </message>
     <message>
         <source>Share link copied — send it to your friends</source>
-        <translation type="unfinished"></translation>
+        <translation>공유 링크를 복사했어요 — 친구에게 보내 주세요</translation>
     </message>
 </context>
 <context>
     <name>ShareModList</name>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">모드</translation>
+        <translation>모드</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished">리소스 팩</translation>
+        <translation>리소스 팩</translation>
     </message>
     <message>
         <source>Shader packs</source>
-        <translation type="unfinished"></translation>
+        <translation>셰이더 팩</translation>
     </message>
     <message>
         <source>Client only</source>
-        <translation type="unfinished"></translation>
+        <translation>클라이언트 전용</translation>
     </message>
     <message>
         <source>Server only</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 전용</translation>
     </message>
     <message>
         <source>Client and server</source>
-        <translation type="unfinished"></translation>
+        <translation>클라이언트와 서버</translation>
     </message>
     <message>
         <source>Not sure</source>
-        <translation type="unfinished"></translation>
+        <translation>잘 모름</translation>
     </message>
     <message>
         <source>Find a mod</source>
-        <translation type="unfinished"></translation>
+        <translation>모드 찾기</translation>
     </message>
     <message>
         <source>Tick all</source>
-        <translation type="unfinished"></translation>
+        <translation>모두 선택</translation>
     </message>
     <message>
         <source>Checking your mods…</source>
-        <translation type="unfinished"></translation>
+        <translation>모드를 확인하는 중…</translation>
     </message>
     <message>
         <source>Nothing matches “%1”</source>
-        <translation type="unfinished">“%1”와(과) 일치하는 항목 없음</translation>
+        <translation>“%1”과(와) 일치하는 게 없어요</translation>
     </message>
     <message>
         <source>No mods here — only the Minecraft version and loader will be shared.</source>
-        <translation type="unfinished"></translation>
+        <translation>여기엔 모드가 없어요 — Minecraft 버전과 로더만 공유돼요.</translation>
     </message>
 </context>
 <context>
     <name>ShareModRow</name>
     <message>
         <source>Not on Modrinth or CurseForge — only the sender has this file</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth나 CurseForge에 없는 파일이에요 — 보낸 사람만 가지고 있어요</translation>
     </message>
 </context>
 <context>
     <name>SharingBridge</name>
     <message>
         <source>Paste a share link first.</source>
-        <translation type="unfinished"></translation>
+        <translation>먼저 공유 링크를 붙여넣으세요.</translation>
     </message>
     <message>
         <source>This doesn&apos;t look like a shared instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>공유된 인스턴스가 아닌 것 같아요.</translation>
     </message>
     <message>
         <source>This isn&apos;t a share link. Links start with fashion://pack/</source>
-        <translation type="unfinished"></translation>
+        <translation>공유 링크가 아니에요. 링크는 fashion://pack/로 시작해요</translation>
     </message>
     <message>
         <source>This link is broken or cut off. Ask for it again, or for the file instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>링크가 깨졌거나 잘렸어요. 다시 요청하거나 파일로 받아 보세요.</translation>
     </message>
     <message>
         <source>Save shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>공유 인스턴스 저장</translation>
     </message>
     <message>
         <source>Fashion pack (*.fashpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fashion 팩 (*.fashpack)</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>파일을 저장하지 못했어요: %1</translation>
     </message>
     <message>
         <source>Open shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>공유 인스턴스 열기</translation>
     </message>
     <message>
         <source>Fashion pack (*.fashpack);;All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fashion 팩 (*.fashpack);;모든 파일 (*)</translation>
     </message>
     <message>
         <source>Couldn&apos;t open “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 열지 못했어요.</translation>
     </message>
     <message>
         <source>Pick one of your instances.</source>
-        <translation type="unfinished"></translation>
+        <translation>내 인스턴스 중 하나를 선택하세요.</translation>
     </message>
     <message>
         <source>The pack doesn&apos;t say which Minecraft version it needs.</source>
-        <translation type="unfinished"></translation>
+        <translation>팩에 필요한 Minecraft 버전이 적혀 있지 않아요.</translation>
     </message>
     <message>
         <source>The pack uses a mod loader this launcher doesn&apos;t know: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>이 런처가 모르는 모드 로더를 팩이 사용해요: %1</translation>
     </message>
     <message>
         <source>That instance no longer exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>그 인스턴스는 더 이상 존재하지 않아요.</translation>
     </message>
     <message>
         <source>Close the game before adding mods to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>모드를 추가하기 전에 게임을 먼저 종료하세요.</translation>
     </message>
     <message numerus="yes">
         <source>Looking up %n file(s)…</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>파일 %n개를 찾아보는 중…</numerusform>
         </translation>
     </message>
     <message>
         <source>Shared pack</source>
-        <translation type="unfinished"></translation>
+        <translation>공유된 팩</translation>
     </message>
     <message>
         <source>Creating “%1”…</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 만드는 중…</translation>
     </message>
     <message>
         <source>Creating the instance failed.</source>
-        <translation type="unfinished">인스턴스 생성에 실패했습니다.</translation>
+        <translation>인스턴스 만들기에 실패했어요.</translation>
     </message>
     <message>
         <source>Downloading mods</source>
-        <translation type="unfinished"></translation>
+        <translation>모드 다운로드 중</translation>
     </message>
     <message>
         <source>%1 (the author doesn&apos;t allow automatic downloads)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (제작자가 자동 다운로드를 허용하지 않아요)</translation>
     </message>
     <message numerus="yes">
         <source>Downloading %n file(s)…</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>파일 %n개를 다운로드하는 중…</numerusform>
         </translation>
     </message>
     <message>
         <source>Stopped. Files downloaded so far were kept.</source>
-        <translation type="unfinished"></translation>
+        <translation>중지했어요. 지금까지 다운로드한 파일은 그대로 남아 있어요.</translation>
     </message>
 </context>
 <context>
@@ -4964,109 +4964,109 @@
     <name>SkinsBridge</name>
     <message>
         <source>Download capes</source>
-        <translation type="unfinished"></translation>
+        <translation>망토 다운로드</translation>
     </message>
     <message>
         <source>Cape</source>
-        <translation type="unfinished"></translation>
+        <translation>망토</translation>
     </message>
     <message>
         <source>“%1” isn&apos;t a Minecraft skin. Skins are 64×64 (or old 64×32) PNG images.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”은(는) Minecraft 스킨이 아니에요. 스킨은 64×64(또는 옛날 방식 64×32) PNG 이미지예요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t add “%1”: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 추가하지 못했어요: %2</translation>
     </message>
     <message numerus="yes">
         <source>Added %n skin(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>스킨 %n개를 추가했어요</numerusform>
         </translation>
     </message>
     <message>
         <source>Player names are 1–16 letters, digits or underscores.</source>
-        <translation type="unfinished"></translation>
+        <translation>플레이어 이름은 영문자, 숫자, 밑줄(_)로 된 1~16자예요.</translation>
     </message>
     <message>
         <source>Download player skin</source>
-        <translation type="unfinished"></translation>
+        <translation>플레이어 스킨 다운로드</translation>
     </message>
     <message>
         <source>Looking up %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 찾아보는 중…</translation>
     </message>
     <message>
         <source>There&apos;s no Minecraft player called “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”이라는 Minecraft 플레이어가 없어요.</translation>
     </message>
     <message>
         <source>%1 uses a default skin, so there&apos;s nothing to download.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1은(는) 기본 스킨을 쓰고 있어서 받아올 스킨이 없어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t get %1&apos;s skin. Check your internet connection and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님의 스킨을 가져오지 못했어요. 인터넷 연결을 확인하고 다시 시도해 주세요.</translation>
     </message>
     <message>
         <source>Added %1&apos;s skin</source>
-        <translation type="unfinished"></translation>
+        <translation>%1님의 스킨을 추가했어요</translation>
     </message>
     <message>
         <source>This is the skin you&apos;re wearing right now. Switch to another one first.</source>
-        <translation type="unfinished"></translation>
+        <translation>지금 착용 중인 스킨이에요. 먼저 다른 스킨으로 바꿔 주세요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t delete the skin file.</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 파일을 삭제하지 못했어요.</translation>
     </message>
     <message>
         <source>Use a name without / \ : * ? &quot; &lt; &gt; |</source>
-        <translation type="unfinished"></translation>
+        <translation>이름에는 / \ : * ? &quot; &lt; &gt; |를 쓰지 마세요</translation>
     </message>
     <message>
         <source>A skin called “%1” already exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1” 이름의 스킨이 이미 있어요.</translation>
     </message>
     <message>
         <source>Only a Microsoft account that owns Minecraft can change its skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft를 보유한 Microsoft 계정만 스킨을 바꿀 수 있어요.</translation>
     </message>
     <message>
         <source>The skin file is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 파일이 없어요.</translation>
     </message>
     <message>
         <source>Change skin</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 변경</translation>
     </message>
     <message>
         <source>Changing your skin…</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨을 바꾸는 중…</translation>
     </message>
     <message>
         <source>Couldn&apos;t change the skin. Sign in again in Accounts if this keeps happening.</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨을 바꾸지 못했어요. 계속되면 계정에서 다시 로그인해 보세요.</translation>
     </message>
     <message>
         <source>Skin changed. You&apos;ll see it the next time you join a world.</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨을 바꿨어요. 다음에 월드에 접속하면 보여요.</translation>
     </message>
     <message>
         <source>Reset skin</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨 초기화</translation>
     </message>
     <message>
         <source>Resetting your skin…</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨을 초기화하는 중…</translation>
     </message>
     <message>
         <source>Back to the default skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>기본 스킨으로 돌아갔어요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t reset the skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>스킨을 초기화하지 못했어요.</translation>
     </message>
 </context>
 <context>
@@ -5080,169 +5080,169 @@
     <name>TabHistory</name>
     <message>
         <source>Restored. Your worlds and settings were not touched.</source>
-        <translation type="unfinished"></translation>
+        <translation>복원했어요. 월드와 설정은 그대로예요.</translation>
     </message>
     <message>
         <source>No identical files to share yet</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 공유할 동일 파일이 없어요</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished">%1 GB</translation>
+        <translation>%1 GB</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 MB</translation>
+        <translation>%1 MB</translation>
     </message>
     <message numerus="yes">
         <source>Saved %1 across %n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n개의 인스턴스에서 %1을(를) 절약했어요</numerusform>
         </translation>
     </message>
     <message>
         <source>Before restoring, today at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>복원 전 — 오늘 %1</translation>
     </message>
     <message>
         <source>Launched today at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>오늘 %1에 실행</translation>
     </message>
     <message>
         <source>Before restoring, yesterday at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>복원 전 — 어제 %1</translation>
     </message>
     <message>
         <source>Launched yesterday at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>어제 %1에 실행</translation>
     </message>
     <message>
         <source>Before restoring, %1 at %2</source>
-        <translation type="unfinished"></translation>
+        <translation>복원 전 — %1 %2</translation>
     </message>
     <message>
         <source>Launched %1 at %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 %2에 실행</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Unknown version</source>
-        <translation type="unfinished">알 수 없는 버전</translation>
+        <translation>알 수 없는 버전</translation>
     </message>
     <message numerus="yes">
         <source>+%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>모드 +%n</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>−%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>모드 −%n</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n updated</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n개 업데이트됨</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n pack(s) differ</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>팩 %n개 다름</numerusform>
         </translation>
     </message>
     <message>
         <source>other game version</source>
-        <translation type="unfinished"></translation>
+        <translation>다른 게임 버전</translation>
     </message>
     <message>
         <source>Same as now</source>
-        <translation type="unfinished"></translation>
+        <translation>지금과 같음</translation>
     </message>
     <message>
         <source>Version history</source>
-        <translation type="unfinished"></translation>
+        <translation>버전 기록</translation>
     </message>
     <message>
         <source>The last %1 launches are remembered. You can go back to any of them; worlds and settings stay as they are.</source>
-        <translation type="unfinished"></translation>
+        <translation>최근 %1번의 실행을 기억해요. 언제든 그때로 되돌아갈 수 있고, 월드와 설정은 그대로 유지돼요.</translation>
     </message>
     <message>
         <source>Share identical files between instances</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 간 동일 파일 공유</translation>
     </message>
     <message>
         <source>A mod used in several instances takes disk space once. Deleting it in one instance never affects the others.</source>
-        <translation type="unfinished"></translation>
+        <translation>여러 인스턴스에서 쓰는 모드는 디스크에 한 번만 저장돼요. 한 인스턴스에서 삭제해도 다른 인스턴스에는 영향이 없어요.</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>모드 %n개</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n file(s) from this launch can&apos;t be brought back</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>이 실행의 파일 %n개는 되돌릴 수 없어요</numerusform>
         </translation>
     </message>
     <message>
         <source>Current</source>
-        <translation type="unfinished"></translation>
+        <translation>현재</translation>
     </message>
     <message>
         <source>Restore this version</source>
-        <translation type="unfinished"></translation>
+        <translation>이 버전 복원</translation>
     </message>
     <message>
         <source>Close the game first</source>
-        <translation type="unfinished"></translation>
+        <translation>먼저 게임을 종료하세요</translation>
     </message>
     <message>
         <source>Nothing here yet. Each time you play, the mods and game version are remembered so you can come back to them.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 기록이 없어요. 플레이할 때마다 모드와 게임 버전이 저장되니 나중에 되돌아올 수 있어요.</translation>
     </message>
     <message>
         <source>Restore this version?</source>
-        <translation type="unfinished"></translation>
+        <translation>이 버전을 복원할까요?</translation>
     </message>
     <message>
         <source>Mods, resource packs, shader packs and the game version go back to how they were: %1 (%2). Worlds and settings are not touched. The current state is remembered first, so you can come back to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>모드, 리소스 팩, 셰이더 팩, 게임 버전이 원래대로 돌아가요: %1 (%2). 월드와 설정은 그대로예요. 현재 상태를 먼저 저장해 두니 언제든 되돌아올 수 있어요.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>복원</translation>
     </message>
     <message>
         <source>Couldn&apos;t restore. Close the game and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>복원하지 못했어요. 게임을 종료하고 다시 시도해 주세요.</translation>
     </message>
     <message>
         <source>Restored, except for some files</source>
-        <translation type="unfinished"></translation>
+        <translation>일부 파일을 제외하고 복원했어요</translation>
     </message>
     <message>
         <source>These files were no longer on this computer and couldn&apos;t be downloaded again. Add them yourself if you need them:</source>
-        <translation type="unfinished"></translation>
+        <translation>이 파일들은 더 이상 컴퓨터에 없어서 다시 받지 못했어요. 필요하면 직접 추가하세요:</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">닫기</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <source>Restoring…</source>
-        <translation type="unfinished"></translation>
+        <translation>복원하는 중…</translation>
     </message>
 </context>
 <context>
@@ -5276,137 +5276,137 @@
     <name>TabLog</name>
     <message>
         <source>Save game log</source>
-        <translation type="unfinished"></translation>
+        <translation>게임 로그 저장</translation>
     </message>
     <message>
         <source>Log files (*.log *.txt)</source>
-        <translation type="unfinished"></translation>
+        <translation>로그 파일 (*.log *.txt)</translation>
     </message>
     <message>
         <source>Log saved.</source>
-        <translation type="unfinished"></translation>
+        <translation>로그를 저장했어요.</translation>
     </message>
     <message>
         <source>Search the log</source>
-        <translation type="unfinished"></translation>
+        <translation>로그 검색</translation>
     </message>
     <message>
         <source>Launcher</source>
-        <translation type="unfinished">런처</translation>
+        <translation>런처</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>정보</translation>
     </message>
     <message>
         <source>Warnings</source>
-        <translation type="unfinished"></translation>
+        <translation>경고</translation>
     </message>
     <message>
         <source>Errors</source>
-        <translation type="unfinished"></translation>
+        <translation>오류</translation>
     </message>
     <message>
         <source>Copy the log</source>
-        <translation type="unfinished"></translation>
+        <translation>로그 복사</translation>
     </message>
     <message>
         <source>Log copied.</source>
-        <translation type="unfinished"></translation>
+        <translation>로그를 복사했어요.</translation>
     </message>
     <message>
         <source>Save to a file</source>
-        <translation type="unfinished"></translation>
+        <translation>파일로 저장</translation>
     </message>
     <message>
         <source>Upload and copy link</source>
-        <translation type="unfinished">업로드 및 링크 복사</translation>
+        <translation>업로드 후 링크 복사</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>지우기</translation>
     </message>
     <message>
         <source>No lines match the filter.</source>
-        <translation type="unfinished"></translation>
+        <translation>필터와 일치하는 줄이 없어요.</translation>
     </message>
     <message>
         <source>Waiting for the game to say something…</source>
-        <translation type="unfinished"></translation>
+        <translation>게임의 출력을 기다리는 중…</translation>
     </message>
     <message>
         <source>No game log yet. Play once and the output shows up here.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 게임 로그가 없어요. 한 번 플레이하면 출력이 여기에 표시돼요.</translation>
     </message>
     <message>
         <source>Jump to the end</source>
-        <translation type="unfinished"></translation>
+        <translation>맨 아래로</translation>
     </message>
     <message>
         <source>Live output</source>
-        <translation type="unfinished"></translation>
+        <translation>실시간 출력</translation>
     </message>
     <message>
         <source>Output of the last launch</source>
-        <translation type="unfinished"></translation>
+        <translation>마지막 실행의 출력</translation>
     </message>
     <message>
         <source>From %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에서</translation>
     </message>
     <message numerus="yes">
         <source>%n line(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>줄 %n개</numerusform>
         </translation>
     </message>
     <message>
         <source>Auto-scroll</source>
-        <translation type="unfinished"></translation>
+        <translation>자동 스크롤</translation>
     </message>
     <message>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>강제 종료</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>다시 시작</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">플레이</translation>
+        <translation>플레이</translation>
     </message>
     <message>
         <source>Share the game log?</source>
-        <translation type="unfinished">게임 로그를 공유하시겠습니까?</translation>
+        <translation>게임 로그를 공유할까요?</translation>
     </message>
     <message>
         <source>“%1” will be uploaded to %2 and the link copied, so you can send it to someone who helps you. Folder paths with your user name and login tokens are hidden.</source>
-        <translation type="unfinished">“%1”이(가) %2에 업로드되고 링크가 복사되어 도움을 줄 사람에게 보낼 수 있습니다. 사용자 이름이 포함된 폴더 경로와 로그인 토큰은 숨겨집니다.</translation>
+        <translation>“%1”을(를) %2에 업로드하고 링크를 복사해요. 도와줄 사람에게 보내면 돼요. 사용자 이름이 들어간 폴더 경로와 로그인 토큰은 가려져요.</translation>
     </message>
     <message>
         <source>There is no game log yet. Play once first.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 게임 로그가 없어요. 먼저 한 번 플레이해 주세요.</translation>
     </message>
     <message>
         <source>Link copied: %1</source>
-        <translation type="unfinished">링크 복사됨: %1</translation>
+        <translation>링크 복사됨: %1</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">닫기</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Open link</source>
-        <translation type="unfinished">링크 열기</translation>
+        <translation>링크 열기</translation>
     </message>
     <message>
         <source>Uploading…</source>
-        <translation type="unfinished">업로드 중…</translation>
+        <translation>업로드 중…</translation>
     </message>
 </context>
 <context>
@@ -5441,7 +5441,7 @@
     </message>
     <message>
         <source>Share instance</source>
-        <translation type="unfinished"></translation>
+        <translation>인스턴스 공유</translation>
     </message>
     <message>
         <source>Play offline</source>
@@ -5552,101 +5552,101 @@
     <name>TabServers</name>
     <message>
         <source>Checking servers…</source>
-        <translation type="unfinished"></translation>
+        <translation>서버를 확인하는 중…</translation>
     </message>
     <message numerus="yes">
         <source>%n server(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>서버 %n개</numerusform>
         </translation>
     </message>
     <message>
         <source>Check all</source>
-        <translation type="unfinished"></translation>
+        <translation>모두 확인</translation>
     </message>
     <message>
         <source>Add server</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 추가</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>접속</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished">추가 작업</translation>
+        <translation>추가 작업</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>편집</translation>
     </message>
     <message>
         <source>Check again</source>
-        <translation type="unfinished"></translation>
+        <translation>다시 확인</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation type="unfinished"></translation>
+        <translation>주소 복사</translation>
     </message>
     <message>
         <source>Address copied</source>
-        <translation type="unfinished"></translation>
+        <translation>주소 복사됨</translation>
     </message>
     <message>
         <source>Move up</source>
-        <translation type="unfinished"></translation>
+        <translation>위로 이동</translation>
     </message>
     <message>
         <source>Move down</source>
-        <translation type="unfinished"></translation>
+        <translation>아래로 이동</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">제거</translation>
+        <translation>삭제</translation>
     </message>
     <message>
         <source>No servers yet. Add one with its address — it also shows up in the game&apos;s Multiplayer list.</source>
-        <translation type="unfinished"></translation>
+        <translation>아직 서버가 없어요. 주소를 입력해 추가하세요 — 게임의 멀티 플레이 목록에도 표시돼요.</translation>
     </message>
     <message>
         <source>Add a server</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 추가</translation>
     </message>
     <message>
         <source>Edit server</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 편집</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="unfinished">주소</translation>
+        <translation>주소</translation>
     </message>
     <message>
         <source>play.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation>play.example.com</translation>
     </message>
     <message>
         <source>Name (optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>이름 (선택)</translation>
     </message>
     <message>
         <source>Minecraft Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft 서버</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>저장</translation>
     </message>
     <message>
         <source>Remove “%1”?</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”을(를) 삭제할까요?</translation>
     </message>
     <message>
         <source>It disappears from this instance&apos;s server list, in the launcher and in the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>런처와 게임에서 이 인스턴스의 서버 목록에서 사라져요.</translation>
     </message>
 </context>
 <context>
@@ -5742,132 +5742,132 @@
     <name>TaskIndicator</name>
     <message>
         <source>Done: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>완료: %1</translation>
     </message>
     <message>
         <source>Failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>실패: %1</translation>
     </message>
     <message numerus="yes">
         <source>%1 (+%n more)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 (+%n개 더)</numerusform>
         </translation>
     </message>
     <message>
         <source>Running tasks</source>
-        <translation type="unfinished"></translation>
+        <translation>실행 중인 작업</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
 </context>
 <context>
     <name>ToolsBridge</name>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">이 인스턴스가 더 이상 존재하지 않습니다.</translation>
+        <translation>이 인스턴스는 더 이상 존재하지 않아요.</translation>
     </message>
     <message>
         <source>Couldn&apos;t write %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1을(를) 쓰지 못했어요.</translation>
     </message>
 </context>
 <context>
     <name>ToolsLaunchCheck</name>
     <message>
         <source>All fixed</source>
-        <translation type="unfinished"></translation>
+        <translation>모두 해결했어요</translation>
     </message>
     <message numerus="yes">
         <source>Turned off %n file(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>파일 %n개를 껐어요</numerusform>
         </translation>
     </message>
     <message>
         <source>“%1” won&apos;t start like this</source>
-        <translation type="unfinished"></translation>
+        <translation>“%1”은(는) 이 상태로는 실행되지 않아요</translation>
     </message>
     <message numerus="yes">
         <source>%n problem(s) will stop the game while it loads.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>문제 %n개가 있어 게임이 불러오는 중에 멈출 거예요.</numerusform>
         </translation>
     </message>
     <message>
         <source>Check mods before playing</source>
-        <translation type="unfinished"></translation>
+        <translation>플레이 전에 모드 검사</translation>
     </message>
     <message>
         <source>Won&apos;t check again. You can turn it back on in the Mods tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>다시 검사하지 않아요. 모드 탭에서 다시 켤 수 있어요.</translation>
     </message>
     <message>
         <source>Play anyway</source>
-        <translation type="unfinished"></translation>
+        <translation>그래도 플레이</translation>
     </message>
     <message>
         <source>Fix and play</source>
-        <translation type="unfinished"></translation>
+        <translation>수정 후 플레이</translation>
     </message>
     <message>
         <source>Fix</source>
-        <translation type="unfinished"></translation>
+        <translation>수정</translation>
     </message>
 </context>
 <context>
     <name>ToolsLauncherList</name>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Looking…</source>
-        <translation type="unfinished"></translation>
+        <translation>찾는 중…</translation>
     </message>
     <message>
         <source>In %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에서</translation>
     </message>
     <message numerus="yes">
         <source>%n instance(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>인스턴스 %n개를 찾았어요</numerusform>
         </translation>
     </message>
     <message>
         <source>Look again</source>
-        <translation type="unfinished"></translation>
+        <translation>다시 찾기</translation>
     </message>
     <message>
         <source>Choose folder…</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더 선택…</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="unfinished">검색 결과 없음</translation>
+        <translation>찾은 게 없어요</translation>
     </message>
     <message>
         <source>No other launchers in their usual places. If yours keeps its files somewhere else, show us the folder.</source>
-        <translation type="unfinished"></translation>
+        <translation>평소 위치에서는 다른 런처를 찾지 못했어요. 다른 곳에 저장해 둔다면 폴더를 알려 주세요.</translation>
     </message>
     <message>
         <source>Looking for other launchers…</source>
-        <translation type="unfinished"></translation>
+        <translation>다른 런처를 찾는 중…</translation>
     </message>
     <message>
         <source>Share files instead of copying</source>
-        <translation type="unfinished"></translation>
+        <translation>복사 대신 파일 공유</translation>
     </message>
     <message>
         <source>Worlds, mods and settings stay shared with the other launcher: changes show up in both.</source>
-        <translation type="unfinished"></translation>
+        <translation>월드, 모드, 설정을 다른 런처와 계속 공유해요. 바뀐 내용은 양쪽에 모두 표시돼요.</translation>
     </message>
     <message>
         <source>Share files instead of copying (saves space, both launchers see the same worlds)</source>
-        <translation type="unfinished"></translation>
+        <translation>복사 대신 파일 공유 (공간을 아끼고 두 런처에서 같은 월드를 봐요)</translation>
     </message>
 </context>
 <context>

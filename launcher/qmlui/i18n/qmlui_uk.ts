@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>Panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>Панорама</translation>
     </message>
     <message>
         <source>Blocks</source>
@@ -155,7 +155,7 @@
     </message>
     <message>
         <source>Animated</source>
-        <translation type="unfinished"></translation>
+        <translation>Анімація</translation>
     </message>
     <message>
         <source>Solid</source>
@@ -183,11 +183,11 @@
     </message>
     <message>
         <source>The slowly turning view from the Minecraft title screen. It pauses on other pages and stops while the window is hidden or a game is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Краєвид, що повільно обертається, з титульного екрана Minecraft. Призупиняється на інших екранах і зупиняється, поки вікно приховано або запущено гру.</translation>
     </message>
     <message>
         <source>A calm moving pattern in your theme colors. It pauses on other pages and stops while the window is hidden or a game is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Спокійний рухомий візерунок у кольорах вашої теми. Призупиняється на інших екранах і зупиняється, поки вікно приховано або запущено гру.</translation>
     </message>
     <message>
         <source>Blocks in your accent color, different for every instance.</source>
@@ -215,35 +215,35 @@
     </message>
     <message>
         <source>Aurora</source>
-        <translation type="unfinished"></translation>
+        <translation>Полярне сяйво</translation>
     </message>
     <message>
         <source>Starfield</source>
-        <translation type="unfinished"></translation>
+        <translation>Зоряне небо</translation>
     </message>
     <message>
         <source>Drifting clouds</source>
-        <translation type="unfinished"></translation>
+        <translation>Пливучі хмари</translation>
     </message>
     <message>
         <source>Soft glow</source>
-        <translation type="unfinished"></translation>
+        <translation>М&apos;яке сяйво</translation>
     </message>
     <message>
         <source>Falling blocks</source>
-        <translation type="unfinished"></translation>
+        <translation>Падаючі блоки</translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Швидкість</translation>
     </message>
     <message>
         <source>Still</source>
-        <translation type="unfinished"></translation>
+        <translation>Нерухомо</translation>
     </message>
     <message>
         <source>%1×</source>
-        <translation type="unfinished"></translation>
+        <translation>%1×</translation>
     </message>
     <message>
         <source>All</source>
@@ -295,15 +295,15 @@
     </message>
     <message>
         <source>Instance pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Зображення збірок</translation>
     </message>
     <message>
         <source>Show pictures on instance cards</source>
-        <translation type="unfinished"></translation>
+        <translation>Показувати зображення на картках збірок</translation>
     </message>
     <message>
         <source>Modpacks show their own picture from Modrinth or CurseForge; other instances show their newest screenshot.</source>
-        <translation type="unfinished"></translation>
+        <translation>Модпаки показують своє зображення з Modrinth або CurseForge, а інші збірки — свій останній скриншот.</translation>
     </message>
     <message>
         <source>Couldn&apos;t add that file.</source>
@@ -330,146 +330,146 @@
     <name>AppearancePanorama</name>
     <message>
         <source>Panorama added.</source>
-        <translation type="unfinished"></translation>
+        <translation>Панораму додано.</translation>
     </message>
     <message>
         <source>Looking for a panorama…</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук панорами…</translation>
     </message>
     <message>
         <source>Showing: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Показано: %1</translation>
     </message>
     <message>
         <source>No panorama found for %1 yet. Start it once so Minecraft is downloaded, or add your own below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Панорами для %1 ще немає. Запустіть збірку один раз, щоб завантажився Minecraft, або додайте свою нижче.</translation>
     </message>
     <message>
         <source>No panorama found yet. Start any instance once, or add your own below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Панорами ще немає. Запустіть будь-яку збірку один раз або додайте свою нижче.</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматично</translation>
     </message>
     <message>
         <source>Add a panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати панораму</translation>
     </message>
     <message>
         <source>Making the cube…</source>
-        <translation type="unfinished"></translation>
+        <translation>Створюємо куб…</translation>
     </message>
     <message>
         <source>Add or drop here</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати або перетягнути сюди</translation>
     </message>
     <message>
         <source>Works with a resource pack (.zip) that has a panorama, six pictures named panorama_0 to panorama_5, or one 360° picture twice as wide as it is tall.</source>
-        <translation type="unfinished"></translation>
+        <translation>Підійде ресурс-пак (.zip) із панорамою, шість зображень з іменами panorama_0–panorama_5 або кругова панорама 360° (ширина вдвічі більша за висоту).</translation>
     </message>
     <message>
         <source>Capture from my world</source>
-        <translation type="unfinished"></translation>
+        <translation>Зняти у своєму світі</translation>
     </message>
     <message>
         <source>Adds a small panorama mod to %1. In the game, press one key and it takes six pictures around you; the next time you open the launcher with this instance selected, they turn into your panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>Додає невеликий мод панорами до %1. У грі натисніть клавішу — і він зробить шість знімків навколо вас; наступного разу, коли ви відкриєте лаунчер із цією збіркою, вони стануть вашою панорамою.</translation>
     </message>
     <message>
         <source>Select an instance first, then come back here.</source>
-        <translation type="unfinished"></translation>
+        <translation>Спочатку виберіть збірку, потім поверніться сюди.</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished">Встановлено</translation>
+        <translation>Встановлено</translation>
     </message>
     <message>
         <source>Install panorama mod</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити мод панорами</translation>
     </message>
     <message>
         <source>Choose a panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати панораму</translation>
     </message>
     <message>
         <source>Panoramas (*.zip *.png *.jpg *.jpeg *.webp)</source>
-        <translation type="unfinished"></translation>
+        <translation>Панорами (*.zip *.png *.jpg *.jpeg *.webp)</translation>
     </message>
 </context>
 <context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваша панорама</translation>
     </message>
     <message>
         <source>Captured in this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Знято в цій збірці</translation>
     </message>
     <message>
         <source>From the resource pack “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>З ресурс-пака «%1»</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Minecraft</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft</translation>
     </message>
     <message>
         <source>Pick a resource pack, six face pictures or one 360° picture (twice as wide as it is tall).</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть ресурс-пак, шість зображень граней або одне кругове фото 360° (ширина вдвічі більша за висоту).</translation>
     </message>
     <message>
         <source>That resource pack has no panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>У цьому ресурс-паці немає панорами.</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the panorama.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зберегти панораму.</translation>
     </message>
     <message>
         <source>Pick a Minecraft instance first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Спочатку виберіть збірку Minecraft.</translation>
     </message>
     <message>
         <source>Panorama mods need a mod loader. Add Fabric to this instance (Instance → Version), then try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Модам панорами потрібен завантажувач модів. Додайте Fabric до цієї збірки (Збірка → Версія), потім спробуйте знову.</translation>
     </message>
     <message>
         <source>Looking for a panorama mod for %1 %2…</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук мода панорами для %1 %2…</translation>
     </message>
     <message>
         <source>No panorama mod works with %1 %2 yet. You can still add your own panorama above.</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоден мод панорами поки не працює з %1 %2. Втім, ви можете додати власну панораму вище.</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach Modrinth. Check your connection and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося підключитися до Modrinth. Перевірте з&apos;єднання та спробуйте знову.</translation>
     </message>
     <message>
         <source>The download failed. Try again in a moment.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося завантажити. Спробуйте знову за хвилину.</translation>
     </message>
     <message>
         <source>press the panorama key (Options → Controls → Panoramica)</source>
-        <translation type="unfinished"></translation>
+        <translation>натисніть клавішу панорами (Налаштування → Керування → Panoramica)</translation>
     </message>
     <message>
         <source>press F4 (you can change the key in Options → Controls)</source>
-        <translation type="unfinished"></translation>
+        <translation>натисніть F4 (клавішу можна змінити в меню Налаштування → Керування)</translation>
     </message>
     <message>
         <source>Panorama mod installed. Start the game, go to a nice spot, look straight ahead and %1. Keep still for a second while it takes six pictures. After you close the game, the panorama shows up here on its own.</source>
-        <translation type="unfinished"></translation>
+        <translation>Мод панорами встановлено. Запустіть гру, знайдіть гарне місце, подивіться прямо перед собою і %1. Постійте секунду нерухомо, поки робляться шість знімків. Після закриття гри панорама з&apos;явиться тут сама.</translation>
     </message>
     <message>
         <source>Installing %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановлення %1…</translation>
     </message>
 </context>
 <context>
@@ -585,82 +585,82 @@
     <name>ConfirmDialog</name>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Гаразд</translation>
     </message>
 </context>
 <context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
-        <translation type="unfinished">Скопіювати екземпляр</translation>
+        <translation>Скопіювати збірку</translation>
     </message>
     <message>
         <source>%1 (copy)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (копія)</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="unfinished">Значок</translation>
+        <translation>Іконка</translation>
     </message>
     <message>
         <source>Change icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінити іконку</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Назва</translation>
+        <translation>Назва</translation>
     </message>
     <message>
         <source>No group</source>
-        <translation type="unfinished">Без групи</translation>
+        <translation>Без групи</translation>
     </message>
     <message>
         <source>Bring along</source>
-        <translation type="unfinished"></translation>
+        <translation>Скопіювати разом</translation>
     </message>
     <message>
         <source>Worlds</source>
-        <translation type="unfinished">Світи</translation>
+        <translation>Світи</translation>
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">Моди</translation>
+        <translation>Моди</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished">Пакети ресурсів</translation>
+        <translation>Ресурс-паки</translation>
     </message>
     <message>
         <source>Shaders</source>
-        <translation type="unfinished">Шейдери</translation>
+        <translation>Шейдери</translation>
     </message>
     <message>
         <source>Game options</source>
-        <translation type="unfinished"></translation>
+        <translation>Налаштування гри</translation>
     </message>
     <message>
         <source>Server list</source>
-        <translation type="unfinished"></translation>
+        <translation>Список серверів</translation>
     </message>
     <message>
         <source>Screenshots</source>
-        <translation type="unfinished">Знімки екрана</translation>
+        <translation>Скриншоти</translation>
     </message>
     <message>
         <source>Play time</source>
-        <translation type="unfinished"></translation>
+        <translation>Час гри</translation>
     </message>
     <message>
         <source>Share files with the original instead of copying (saves disk space)</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати спільні файли з оригіналом замість копіювання (економить місце на диску)</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Скопіювати</translation>
     </message>
 </context>
 <context>
@@ -727,26 +727,26 @@
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished">Встановлення %1</translation>
+        <translation>Встановлення %1</translation>
     </message>
     <message>
         <source>“%1” is ready. %2</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» готова. %2</translation>
     </message>
     <message>
         <source>Pick at least one instance to import.</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть принаймні одну збірку для імпорту.</translation>
     </message>
     <message>
         <source>Importing instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Імпорт збірок</translation>
     </message>
     <message numerus="yes">
         <source>%n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n збірка</numerusform>
+            <numerusform>%n збірки</numerusform>
+            <numerusform>%n збірок</numerusform>
         </translation>
     </message>
 </context>
@@ -777,23 +777,23 @@
     <name>CreateImport</name>
     <message numerus="yes">
         <source>%n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n збірка</numerusform>
+            <numerusform>%n збірки</numerusform>
+            <numerusform>%n збірок</numerusform>
         </translation>
     </message>
     <message>
         <source>Looking for other launchers…</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук інших лаунчерів…</translation>
     </message>
     <message>
         <source>Each instance keeps its own name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Кожна збірка збереже свою назву.</translation>
     </message>
     <message>
         <source>Pick the instances to bring over.</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть збірки для перенесення.</translation>
     </message>
     <message>
         <source>Choose a file or paste a link.</source>
@@ -805,7 +805,7 @@
     </message>
     <message>
         <source>Choose a launcher or instance folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть папку лаунчера або збірки</translation>
     </message>
     <message>
         <source>Choose a modpack file</source>
@@ -825,7 +825,7 @@
     </message>
     <message>
         <source>Instances from CurseForge, Modrinth App, ATLauncher, MultiMC, Prism and the official Minecraft launcher on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Збірки з CurseForge, Modrinth App, ATLauncher, MultiMC, Prism та офіційного лаунчера Minecraft на цьому комп&apos;ютері.</translation>
     </message>
     <message>
         <source>Modrinth packs (.mrpack), CurseForge packs and instances exported from this or other launchers (.zip).</source>
@@ -833,11 +833,11 @@
     </message>
     <message>
         <source>File or link</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл або посилання</translation>
     </message>
     <message>
         <source>From another launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>З іншого лаунчера</translation>
     </message>
     <message>
         <source>Drop a file here</source>
@@ -1042,158 +1042,158 @@
     <name>DialogHost</name>
     <message>
         <source>Can&apos;t delete this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Цю збірку не можна видалити</translation>
     </message>
     <message>
         <source>“%1” and everything in it — worlds, mods, screenshots — will be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» і весь її вміст — світи, моди, скриншоти — буде переміщено до кошика.</translation>
     </message>
     <message>
         <source>These instances share files with it and may break: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ці збірки використовують з нею спільні файли і можуть перестати працювати: %1</translation>
     </message>
     <message>
         <source>Delete “%1”?</source>
-        <translation type="unfinished">Видалити «%1»?</translation>
+        <translation>Видалити «%1»?</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Видалити</translation>
+        <translation>Видалити</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>“%1” was moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» переміщено до кошика.</translation>
     </message>
     <message>
         <source>“%1” was deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» видалено.</translation>
     </message>
     <message>
         <source>You can change the account for every launch in the accounts panel.</source>
-        <translation type="unfinished"></translation>
+        <translation>Акаунт можна змінювати перед кожним запуском на панелі акаунтів.</translation>
     </message>
     <message>
         <source>Microsoft</source>
-        <translation type="unfinished">Microsoft</translation>
+        <translation>Microsoft</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Офлайн</translation>
     </message>
     <message>
         <source>Always use this account</source>
-        <translation type="unfinished"></translation>
+        <translation>Завжди використовувати цей акаунт</translation>
     </message>
     <message>
         <source>Player name</source>
-        <translation type="unfinished">Ім&apos;я гравця</translation>
+        <translation>Ім&apos;я гравця</translation>
     </message>
     <message>
         <source>Letters, digits and _ only, up to 16 characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише літери, цифри та символ _, до 16 знаків.</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Грати</translation>
+        <translation>Грати</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished">Обробка…</translation>
+        <translation>Виконується…</translation>
     </message>
 </context>
 <context>
     <name>ExportDialog</name>
     <message>
         <source>Export instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Експорт збірки</translation>
     </message>
     <message>
         <source>Export to</source>
-        <translation type="unfinished"></translation>
+        <translation>Експортувати до</translation>
     </message>
     <message>
         <source>Modrinth pack (*.mrpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Модпак Modrinth (*.mrpack)</translation>
     </message>
     <message>
         <source>Zip archive (*.zip)</source>
-        <translation type="unfinished"></translation>
+        <translation>ZIP-архів (*.zip)</translation>
     </message>
     <message>
         <source>Zip</source>
-        <translation type="unfinished"></translation>
+        <translation>ZIP</translation>
     </message>
     <message>
         <source>Modrinth</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrinth</translation>
     </message>
     <message>
         <source>CurseForge</source>
-        <translation type="unfinished"></translation>
+        <translation>CurseForge</translation>
     </message>
     <message>
         <source>The whole instance in one file. Import it in this or any Prism-based launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Уся збірка в одному файлі. Імпортуйте її в цей або будь-який інший лаунчер на базі Prism.</translation>
     </message>
     <message>
         <source>A .mrpack modpack: mods from Modrinth are linked, not copied, so the file stays small.</source>
-        <translation type="unfinished"></translation>
+        <translation>Модпак .mrpack: моди з Modrinth додаються посиланнями, а не копіюються, тому файл лишається компактним.</translation>
     </message>
     <message>
         <source>A CurseForge modpack zip: mods from CurseForge are linked, the rest is packed in.</source>
-        <translation type="unfinished"></translation>
+        <translation>ZIP-модпак CurseForge: моди з CurseForge додаються посиланнями, решта упаковується в архів.</translation>
     </message>
     <message>
         <source>Pack name (instance name)</source>
-        <translation type="unfinished"></translation>
+        <translation>Назва модпака (назва збірки)</translation>
     </message>
     <message>
         <source>Version, e.g. 1.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Версія, наприклад 1.0</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Автор</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Короткий опис</translation>
     </message>
     <message>
         <source>Mark disabled mods as optional</source>
-        <translation type="unfinished"></translation>
+        <translation>Позначити вимкнені моди як необов&apos;язкові</translation>
     </message>
     <message>
         <source>Recommended memory</source>
-        <translation type="unfinished"></translation>
+        <translation>Рекомендована пам&apos;ять</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 МБ</translation>
+        <translation>%1 МБ</translation>
     </message>
     <message>
         <source>Include</source>
-        <translation type="unfinished"></translation>
+        <translation>Включити</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="unfinished">Усі</translation>
+        <translation>Усі</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished">Немає</translation>
+        <translation>Нічого</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Export…</source>
-        <translation type="unfinished"></translation>
+        <translation>Експортувати…</translation>
     </message>
 </context>
 <context>
@@ -1242,734 +1242,734 @@
     <name>FriendRow</name>
     <message>
         <source>Waiting for them to accept your request</source>
-        <translation type="unfinished"></translation>
+        <translation>Очікує підтвердження заявки</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Не в мережі</translation>
     </message>
     <message>
         <source>Hosting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Хостить %1</translation>
     </message>
     <message>
         <source>Hosting a world</source>
-        <translation type="unfinished"></translation>
+        <translation>Хостить світ</translation>
     </message>
     <message>
         <source>Playing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Грає в %1</translation>
     </message>
     <message>
         <source>Playing</source>
-        <translation type="unfinished">У грі</translation>
+        <translation>У грі</translation>
     </message>
     <message>
         <source>Online</source>
-        <translation type="unfinished"></translation>
+        <translation>У мережі</translation>
     </message>
     <message>
         <source>Direct connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Пряме підключення</translation>
     </message>
     <message>
         <source>Connecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключення…</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach — ask your friend to host</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося підключитися — попросіть друга відкрити світ</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished">Спробувати знову</translation>
+        <translation>Спробувати знову</translation>
     </message>
     <message>
         <source>Invite</source>
-        <translation type="unfinished"></translation>
+        <translation>Запросити</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished">Більше</translation>
+        <translation>Більше</translation>
     </message>
     <message>
         <source>Copy friend code</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати код друга</translation>
     </message>
     <message>
         <source>Code copied</source>
-        <translation type="unfinished"></translation>
+        <translation>Код скопійовано</translation>
     </message>
     <message>
         <source>Cancel request</source>
-        <translation type="unfinished"></translation>
+        <translation>Скасувати заявку</translation>
     </message>
     <message>
         <source>Remove friend</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити з друзів</translation>
     </message>
 </context>
 <context>
     <name>FriendsCodeCard</name>
     <message>
         <source>That doesn&apos;t look like a friend code.</source>
-        <translation type="unfinished"></translation>
+        <translation>Це не схоже на код друга.</translation>
     </message>
     <message>
         <source>Your friend code</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваш код друга</translation>
     </message>
     <message>
         <source>Send it to a friend. When they add it, you&apos;ll get a request here.</source>
-        <translation type="unfinished"></translation>
+        <translation>Надішліть його другові. Коли він його додасть, тут з&apos;явиться заявка.</translation>
     </message>
     <message>
         <source>Getting your code…</source>
-        <translation type="unfinished"></translation>
+        <translation>Отримання вашого коду…</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати</translation>
     </message>
     <message>
         <source>Code copied</source>
-        <translation type="unfinished"></translation>
+        <translation>Код скопійовано</translation>
     </message>
     <message>
         <source>Copy invite link</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати посилання-запрошення</translation>
     </message>
     <message>
         <source>Invite link copied</source>
-        <translation type="unfinished"></translation>
+        <translation>Посилання-запрошення скопійовано</translation>
     </message>
     <message>
         <source>Name friends see</source>
-        <translation type="unfinished"></translation>
+        <translation>Ім&apos;я, яке бачать друзі</translation>
     </message>
     <message>
         <source>Your name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваше ім&apos;я</translation>
     </message>
     <message>
         <source>Add a friend</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати друга</translation>
     </message>
     <message>
         <source>Paste a friend code or invite link</source>
-        <translation type="unfinished"></translation>
+        <translation>Вставте код друга або посилання-запрошення</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати</translation>
     </message>
     <message>
         <source>The networking helper is missing from this install, so Friends can&apos;t work.</source>
-        <translation type="unfinished"></translation>
+        <translation>У цій установці відсутній мережевий компонент, тому розділ «Друзі» не працюватиме.</translation>
     </message>
     <message>
         <source>Starting…</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск…</translation>
     </message>
     <message>
         <source>Looking for the network…</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук мережі…</translation>
     </message>
     <message>
         <source>Online. Your network is strict: some friends may not be able to connect directly.</source>
-        <translation type="unfinished"></translation>
+        <translation>У мережі. У вас суворий NAT: деякі друзі не зможуть підключитися напряму.</translation>
     </message>
     <message>
         <source>Online. Couldn&apos;t check your network yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>У мережі. Тип вашої мережі поки не вдалося визначити.</translation>
     </message>
     <message>
         <source>Online. Your network allows direct connections.</source>
-        <translation type="unfinished"></translation>
+        <translation>У мережі. Ваша мережа дозволяє прямі підключення.</translation>
     </message>
 </context>
 <context>
     <name>FriendsHomeButton</name>
     <message>
         <source>Play with friends (%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Грати з друзями (%1)</translation>
     </message>
     <message>
         <source>Play with friends · %1 online</source>
-        <translation type="unfinished"></translation>
+        <translation>Грати з друзями · %1 у мережі</translation>
     </message>
     <message>
         <source>Play with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Грати з друзями</translation>
     </message>
     <message>
         <source>Play together without a server</source>
-        <translation type="unfinished"></translation>
+        <translation>Грайте разом без виділеного сервера</translation>
     </message>
 </context>
 <context>
     <name>FriendsHostCard</name>
     <message>
         <source>In your world</source>
-        <translation type="unfinished"></translation>
+        <translation>У вашому світі</translation>
     </message>
     <message>
         <source>Joining</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключається</translation>
     </message>
     <message>
         <source>Can&apos;t join</source>
-        <translation type="unfinished"></translation>
+        <translation>Не може підключитися</translation>
     </message>
     <message>
         <source>Invited</source>
-        <translation type="unfinished"></translation>
+        <translation>Запрошений</translation>
     </message>
     <message>
         <source>You&apos;re hosting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви хостите %1</translation>
     </message>
     <message>
         <source>Your world “%1” is open. Friends who joined can see it now.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваш світ «%1» відкрито для мережі. Підключені друзі вже бачать його.</translation>
     </message>
     <message>
         <source>Start the game, load a world, then press Esc → Open to LAN. Friends get it automatically.</source>
-        <translation type="unfinished"></translation>
+        <translation>Запустіть гру, завантажте світ і натисніть Esc → Відкрити для мережі. Друзі побачать його автоматично.</translation>
     </message>
     <message>
         <source>Game is running</source>
-        <translation type="unfinished"></translation>
+        <translation>Гра запущена</translation>
     </message>
     <message>
         <source>Start %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Запустити %1</translation>
     </message>
     <message>
         <source>Stop hosting</source>
-        <translation type="unfinished"></translation>
+        <translation>Припинити хостинг</translation>
     </message>
 </context>
 <context>
     <name>FriendsInviteCard</name>
     <message>
         <source>Playing with %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Гра з %1</translation>
     </message>
     <message>
         <source>%1 invites you to play</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 запрошує вас у гру</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n мод</numerusform>
+            <numerusform>%n моди</numerusform>
+            <numerusform>%n модів</numerusform>
         </translation>
     </message>
     <message>
         <source>Reconnecting to %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>Перепідключення до %1…</translation>
     </message>
     <message>
         <source>Waiting for %1 to open the world. In the game: Esc → Open to LAN.</source>
-        <translation type="unfinished"></translation>
+        <translation>Чекаємо, поки %1 відкриє світ для мережі. У грі: Esc → Відкрити для мережі.</translation>
     </message>
     <message>
         <source>Ready! Open Multiplayer in Minecraft — “%1” is in the LAN list. Or connect right away.</source>
-        <translation type="unfinished"></translation>
+        <translation>Готово! Відкрийте «Мережева гра» в Minecraft — «%1» уже у списку локальної мережі. Або підключіться просто зараз.</translation>
     </message>
     <message>
         <source>Join…</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключитися…</translation>
     </message>
     <message>
         <source>Decline</source>
-        <translation type="unfinished"></translation>
+        <translation>Відхилити</translation>
     </message>
     <message>
         <source>Connecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключення…</translation>
     </message>
     <message>
         <source>Instance to play with</source>
-        <translation type="unfinished"></translation>
+        <translation>Збірка для гри</translation>
     </message>
     <message>
         <source>Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключитися</translation>
     </message>
     <message>
         <source>Starting %1 and joining %2&apos;s world</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск %1 і підключення до світу %2</translation>
     </message>
     <message>
         <source>Couldn&apos;t start that instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося запустити цю збірку.</translation>
     </message>
     <message>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>Покинути</translation>
     </message>
     <message>
         <source>Getting the pack ready…</source>
-        <translation type="unfinished"></translation>
+        <translation>Підготовка модпака…</translation>
     </message>
 </context>
 <context>
     <name>FriendsJoinDialog</name>
     <message>
         <source>%1 (with %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (з %2)</translation>
     </message>
     <message>
         <source>Installing the pack… You can connect once it&apos;s ready.</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановлення модпака… Зможете підключитися, як тільки все буде готово.</translation>
     </message>
     <message>
         <source>The pack is ready. Press Connect when the world is open.</source>
-        <translation type="unfinished"></translation>
+        <translation>Модпак готовий. Натисніть «Підключитися», коли світ буде відкрито.</translation>
     </message>
     <message>
         <source>Join %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключитися до %1</translation>
     </message>
     <message>
         <source>%1 is playing %2%3.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 грає в %2%3.</translation>
     </message>
     <message>
         <source> on Minecraft %1</source>
-        <translation type="unfinished"></translation>
+        <translation> на Minecraft %1</translation>
     </message>
     <message>
         <source>Use %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Використати %1</translation>
     </message>
     <message numerus="yes">
         <source>Adds %n missing server mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Додасть %n відсутній серверний мод</numerusform>
+            <numerusform>Додасть %n відсутні серверні моди</numerusform>
+            <numerusform>Додасть %n відсутніх серверних модів</numerusform>
         </translation>
     </message>
     <message>
         <source>Has everything needed</source>
-        <translation type="unfinished"></translation>
+        <translation>Усе необхідне вже є</translation>
     </message>
     <message>
         <source>Same Minecraft version</source>
-        <translation type="unfinished"></translation>
+        <translation>Та сама версія Minecraft</translation>
     </message>
     <message>
         <source>Install the pack as a new instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити модпак як нову збірку</translation>
     </message>
     <message>
         <source>Gets the mods from your friend&apos;s pack. Choose how much below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантажує моди з модпака вашого друга. Виберіть потрібне нижче.</translation>
     </message>
     <message>
         <source>Join with an instance I pick</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключитися з обраною збіркою</translation>
     </message>
     <message>
         <source>Nothing gets installed. It needs the same Minecraft version and mods.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нічого не буде встановлено. Потрібні та сама версія Minecraft і ті самі моди.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключитися</translation>
     </message>
 </context>
 <context>
     <name>FriendsNotices</name>
     <message>
         <source>Both of your networks block direct connections. One of you can try another network, like a phone hotspot.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обидві ваші мережі блокують прямі підключення. Хтось із вас може спробувати іншу мережу, наприклад роздати інтернет із телефона.</translation>
     </message>
     <message>
         <source>A strict network is in the way. Try again, or one of you can switch networks (a phone hotspot works).</source>
-        <translation type="unfinished"></translation>
+        <translation>Заважає суворий NAT. Спробуйте ще раз або змініть мережу (підійде роздача з телефона).</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach them. Ask your friend to host instead, or try again in a minute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зв&apos;язатися. Попросіть друга натомість відкрити світ або спробуйте за хвилину.</translation>
     </message>
     <message>
         <source>Your friend</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваш друг</translation>
     </message>
     <message>
         <source>%1 wants to be friends</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 хоче додати вас у друзі</translation>
     </message>
     <message>
         <source>Friend request sent. It goes through when they&apos;re online.</source>
-        <translation type="unfinished"></translation>
+        <translation>Заявку в друзі надіслано. Вона дійде, коли той буде в мережі.</translation>
     </message>
     <message>
         <source>You and %1 are now friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви та %1 тепер друзі</translation>
     </message>
     <message>
         <source>%1 declined the friend request</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 відхилив заявку в друзі</translation>
     </message>
     <message>
         <source>%1 removed you from friends</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 видалив вас із друзів</translation>
     </message>
     <message>
         <source>%1 is already your friend</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 уже у вас у друзях</translation>
     </message>
     <message>
         <source>That doesn&apos;t look like a friend code.</source>
-        <translation type="unfinished"></translation>
+        <translation>Це не схоже на код друга.</translation>
     </message>
     <message>
         <source>That&apos;s your own code. Send it to a friend instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Це ваш власний код. Натомість надішліть його другові.</translation>
     </message>
     <message>
         <source>%1 invites you to play %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 запрошує вас грати в %2</translation>
     </message>
     <message>
         <source>%1 stopped the game session</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 завершив ігрову сесію</translation>
     </message>
     <message>
         <source>%1 is joining</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 підключається</translation>
     </message>
     <message>
         <source>%1 can&apos;t join right now</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 зараз не може підключитися</translation>
     </message>
     <message>
         <source>%1&apos;s world is open. Join from Multiplayer or press Connect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Світ %1 відкрито. Підключіться через «Мережева гра» або натисніть «Підключитися».</translation>
     </message>
     <message>
         <source>%1 joined your world</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 підключився до вашого світу</translation>
     </message>
     <message>
         <source>Lost the connection to %1. Reconnecting…</source>
-        <translation type="unfinished"></translation>
+        <translation>З&apos;єднання з %1 втрачено. Перепідключення…</translation>
     </message>
     <message>
         <source>%1: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1: %2</translation>
     </message>
 </context>
 <context>
     <name>FriendsPackOptions</name>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише серверні моди</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>Усе</translation>
     </message>
     <message>
         <source>Only what&apos;s needed to join. Your own client mods (shaders, minimaps, performance) stay as they are.</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише те, що потрібно для входу. Ваші клієнтські моди (шейдери, мінімапи, оптимізація) лишаться без змін.</translation>
     </message>
     <message>
         <source>The whole pack, including client-side mods like minimaps and shaders.</source>
-        <translation type="unfinished"></translation>
+        <translation>Увесь модпак, включно з клієнтськими модами на кшталт мінімап і шейдерів.</translation>
     </message>
     <message>
         <source>Mods (tap to leave one out)</source>
-        <translation type="unfinished"></translation>
+        <translation>Моди (натисніть, щоб виключити)</translation>
     </message>
 </context>
 <context>
     <name>FriendsPlayDialog</name>
     <message>
         <source>Invite sent. Start the game and open your world to LAN.</source>
-        <translation type="unfinished"></translation>
+        <translation>Запрошення надіслано. Запустіть гру та відкрийте світ для мережі.</translation>
     </message>
     <message>
         <source>Play together</source>
-        <translation type="unfinished"></translation>
+        <translation>Грати разом</translation>
     </message>
     <message>
         <source>1. What do you want to play?</source>
-        <translation type="unfinished"></translation>
+        <translation>1. У що ви хочете пограти?</translation>
     </message>
     <message>
         <source>2. What do friends get?</source>
-        <translation type="unfinished"></translation>
+        <translation>2. Що отримають друзі?</translation>
     </message>
     <message>
         <source>Checking the mods…</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевіряємо моди…</translation>
     </message>
     <message>
         <source>Pack sharing isn&apos;t available in this build yet, so friends join with an instance of their own (same Minecraft version and mods).</source>
-        <translation type="unfinished"></translation>
+        <translation>Поширення модпака поки недоступне в цій збірці лаунчера, тому друзі підключаються зі своєю збіркою (та сама версія Minecraft і моди).</translation>
     </message>
     <message>
         <source>3. Who&apos;s invited?</source>
-        <translation type="unfinished"></translation>
+        <translation>3. Кого запросити?</translation>
     </message>
     <message>
         <source>Add a friend first: send them your code.</source>
-        <translation type="unfinished"></translation>
+        <translation>Спочатку додайте друга: надішліть йому свій код.</translation>
     </message>
     <message>
         <source>None of your friends are connected right now. Invites need both of you online.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зараз жоден із ваших друзів не в мережі. Для запрошень потрібно, щоб ви були онлайн удвох.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message numerus="yes">
         <source>Invite %n friends</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Запросити %n друга</numerusform>
+            <numerusform>Запросити %n друзів</numerusform>
+            <numerusform>Запросити %n друзів</numerusform>
         </translation>
     </message>
     <message>
         <source>Send invite</source>
-        <translation type="unfinished"></translation>
+        <translation>Надіслати запрошення</translation>
     </message>
 </context>
 <context>
     <name>GalleryBridge</name>
     <message>
         <source>File not found: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл не знайдено: %1</translation>
     </message>
     <message>
         <source>The file is too big.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл завеликий.</translation>
     </message>
     <message>
         <source>Unsupported address: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Непідтримувана адреса: %1</translation>
     </message>
     <message>
         <source>The gallery list is damaged: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Список галереї пошкоджено: %1</translation>
     </message>
     <message>
         <source>The gallery list is empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Список галереї порожній.</translation>
     </message>
     <message>
         <source>The theme file is too big.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл теми завеликий.</translation>
     </message>
     <message>
         <source>The theme file is not valid JSON.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл теми не є коректним JSON.</translation>
     </message>
     <message>
         <source>“%1” must be a short text.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» має бути коротким текстом.</translation>
     </message>
     <message>
         <source>“dark” must be true or false.</source>
-        <translation type="unfinished"></translation>
+        <translation>«dark» має бути true або false.</translation>
     </message>
     <message>
         <source>Unknown setting “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Невідомий параметр «%1».</translation>
     </message>
     <message>
         <source>“%1” must be a group of settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» має бути групою параметрів.</translation>
     </message>
     <message>
         <source>“%1” must be a color like #1E2128.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» має бути кольором у форматі #1E2128.</translation>
     </message>
     <message>
         <source>“%1” has a wrong value.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» має некоректне значення.</translation>
     </message>
     <message>
         <source>“%1” must be a plain file name.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» має бути простою назвою файлу.</translation>
     </message>
     <message>
         <source>Couldn&apos;t download the theme: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося завантажити тему: %1</translation>
     </message>
     <message>
         <source>This theme can&apos;t be installed. %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Цю тему не можна встановити. %1</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the theme.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зберегти тему.</translation>
     </message>
     <message>
         <source>Couldn&apos;t download the background: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося завантажити фон: %1</translation>
     </message>
     <message>
         <source>This file isn&apos;t a picture the launcher can show.</source>
-        <translation type="unfinished"></translation>
+        <translation>Цей файл — не зображення, яке може показати лаунчер.</translation>
     </message>
     <message>
         <source>This kind of file can&apos;t be used as a background.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли такого типу не можна використовувати як фон.</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the background.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зберегти фон.</translation>
     </message>
 </context>
 <context>
     <name>GalleryCard</name>
     <message>
         <source>In use</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовується</translation>
     </message>
     <message>
         <source>Installed</source>
-        <translation type="unfinished">Встановлено</translation>
+        <translation>Встановлено</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished">від %1</translation>
+        <translation>від %1</translation>
     </message>
     <message>
         <source>1 download</source>
-        <translation type="unfinished"></translation>
+        <translation>1 завантаження</translation>
     </message>
     <message numerus="yes">
         <source>%n downloads</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n завантаження</numerusform>
+            <numerusform>%n завантаження</numerusform>
+            <numerusform>%n завантажень</numerusform>
         </translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">Встановлення…</translation>
+        <translation>Встановлення…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">Встановити</translation>
+        <translation>Встановити</translation>
     </message>
 </context>
 <context>
     <name>GalleryDetails</name>
     <message>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Тема</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation type="unfinished"></translation>
+        <translation>Відеофон</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation type="unfinished">Фон</translation>
+        <translation>Фон</translation>
     </message>
     <message>
         <source>by %1</source>
-        <translation type="unfinished">від %1</translation>
+        <translation>від %1</translation>
     </message>
     <message>
         <source>1 download</source>
-        <translation type="unfinished"></translation>
+        <translation>1 завантаження</translation>
     </message>
     <message numerus="yes">
         <source>%n downloads</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n завантаження</numerusform>
+            <numerusform>%n завантаження</numerusform>
+            <numerusform>%n завантажень</numerusform>
         </translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">Встановлення…</translation>
+        <translation>Встановлення…</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">Встановити</translation>
+        <translation>Встановити</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="unfinished">Застосувати</translation>
+        <translation>Застосувати</translation>
     </message>
     <message>
         <source>Use as background</source>
-        <translation type="unfinished"></translation>
+        <translation>Зробити фоном</translation>
     </message>
     <message>
         <source>This theme is in use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ця тема зараз використовується.</translation>
     </message>
     <message>
         <source>This is your background now.</source>
-        <translation type="unfinished"></translation>
+        <translation>Тепер це ваш фон.</translation>
     </message>
     <message>
         <source>Install again</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити заново</translation>
     </message>
 </context>
 <context>
     <name>GameLog</name>
     <message>
         <source>No file chosen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл не вибрано.</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the log to %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зберегти журнал у %1.</translation>
     </message>
 </context>
 <context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
-        <translation type="unfinished"></translation>
+        <translation>Сервери</translation>
     </message>
     <message>
         <source>Check again</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевірити знову</translation>
     </message>
     <message>
         <source>All %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Усі (%1)</translation>
     </message>
     <message>
         <source>Manage</source>
-        <translation type="unfinished">Керувати</translation>
+        <translation>Керувати</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключитися</translation>
     </message>
 </context>
 <context>
@@ -1996,7 +1996,7 @@
     </message>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">Моди</translation>
+        <translation>Моди</translation>
     </message>
     <message>
         <source>Install a mod loader for this instance first</source>
@@ -2044,231 +2044,231 @@
     </message>
     <message>
         <source>Updated %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Оновлено: %1</translation>
     </message>
     <message>
         <source>Couldn&apos;t update %1: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося оновити %1: %2</translation>
     </message>
 </context>
 <context>
     <name>InstanceActions</name>
     <message>
         <source>Copying %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювання %1</translation>
     </message>
     <message>
         <source>Copied as “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Скопійовано як «%1».</translation>
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">Цей екземпляр більше не існує.</translation>
+        <translation>Ця збірка більше не існує.</translation>
     </message>
     <message>
         <source>The game is running. Close it before deleting this instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Гра запущена. Закрийте її перед видаленням збірки.</translation>
     </message>
     <message>
         <source>Only Minecraft instances can be exported as modpacks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Експортувати як модпаки можна лише збірки Minecraft.</translation>
     </message>
     <message>
         <source>Snapshots are currently not supported by CurseForge modpacks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Модпаки CurseForge зараз не підтримують снапшоти.</translation>
     </message>
     <message>
         <source>Unable to export instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося експортувати збірку</translation>
     </message>
     <message>
         <source>Exporting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Експорт %1</translation>
     </message>
     <message>
         <source>Exported to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Експортовано до %1</translation>
     </message>
     <message>
         <source>Cancelled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Скасовано.</translation>
     </message>
 </context>
 <context>
     <name>JavaInstallDialog</name>
     <message>
         <source>Download Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантажити Java</translation>
     </message>
     <message>
         <source>Minecraft needs Java to run. Recommended versions fit this game; the newest build is picked for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Для запуску Minecraft потрібна Java. Рекомендовані версії підходять для цієї гри; для вас обрано найновіший білд.</translation>
     </message>
     <message>
         <source>fits</source>
-        <translation type="unfinished"></translation>
+        <translation>підходить</translation>
     </message>
     <message>
         <source>Loading the version list…</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження списку версій…</translation>
     </message>
     <message>
         <source>Pick a Java version on the left.</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть версію Java ліворуч.</translation>
     </message>
     <message>
         <source>Downloading Java. You can keep using the launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження Java. Можете далі користуватися лаунчером.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантажити</translation>
     </message>
 </context>
 <context>
     <name>JavaInstaller</name>
     <message>
         <source>Mojang</source>
-        <translation type="unfinished"></translation>
+        <translation>Mojang</translation>
     </message>
     <message>
         <source>Adoptium</source>
-        <translation type="unfinished"></translation>
+        <translation>Adoptium</translation>
     </message>
     <message>
         <source>Azul Zulu</source>
-        <translation type="unfinished"></translation>
+        <translation>Azul Zulu</translation>
     </message>
     <message>
         <source>IBM Semeru</source>
-        <translation type="unfinished"></translation>
+        <translation>IBM Semeru</translation>
     </message>
     <message>
         <source>No Java versions are currently available in the meta.</source>
-        <translation type="unfinished"></translation>
+        <translation>У метаданих зараз немає доступних версій Java.</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the Java version list: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося завантажити список версій Java: %1</translation>
     </message>
     <message>
         <source>This Java version is no longer available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ця версія Java більше недоступна.</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the builds: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося завантажити білди: %1</translation>
     </message>
     <message>
         <source>No builds of this Java for your computer (%1).</source>
-        <translation type="unfinished"></translation>
+        <translation>Немає білдів цієї Java для вашого комп&apos;ютера (%1).</translation>
     </message>
     <message>
         <source>Could not determine Java download type!</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося визначити тип завантаження Java!</translation>
     </message>
     <message>
         <source>Install Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити Java</translation>
     </message>
     <message>
         <source>Installing %1</source>
-        <translation type="unfinished">Встановлення %1</translation>
+        <translation>Встановлення %1</translation>
     </message>
     <message>
         <source>%1 is installed.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 встановлена.</translation>
     </message>
     <message>
         <source>Java download cancelled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження Java скасовано.</translation>
     </message>
     <message>
         <source>Java download failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Збій завантаження Java: %1</translation>
     </message>
 </context>
 <context>
     <name>LaunchCheck</name>
     <message>
         <source>Minecraft %1 needs Java %2 or newer</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft %1 потребує Java %2 або новішої</translation>
     </message>
     <message>
         <source>This instance is set to use Java %1, which is too old to start the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Для цієї збірки вибрано Java %1 — вона надто стара для запуску гри.</translation>
     </message>
     <message>
         <source>Choose Java</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати Java</translation>
     </message>
     <message>
         <source>This instance uses %1, so these won&apos;t load: %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ця збірка використовує %1, тому ці моди не завантажаться: %2.</translation>
     </message>
     <message>
         <source>Turn them off</source>
-        <translation type="unfinished"></translation>
+        <translation>Вимкнути їх</translation>
     </message>
     <message>
         <source>%1 is a %2 mod</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 — мод для %2</translation>
     </message>
     <message>
         <source>This instance uses %1, so it won&apos;t load.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ця збірка використовує %1, тому мод не завантажиться.</translation>
     </message>
     <message>
         <source>Turn it off</source>
-        <translation type="unfinished"></translation>
+        <translation>Вимкнути його</translation>
     </message>
     <message>
         <source>Files: %1. The game stops when a mod is there twice.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли: %1. Гра вилетить під час запуску, якщо один і той самий мод додано двічі.</translation>
     </message>
     <message>
         <source>Turn off the older copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Вимкнути старішу копію</translation>
     </message>
     <message>
         <source>Turn off the older copies</source>
-        <translation type="unfinished"></translation>
+        <translation>Вимкнути старіші копії</translation>
     </message>
     <message>
         <source>%1 needs %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 потребує %2</translation>
     </message>
     <message>
         <source>%1 isn&apos;t installed, so the game will stop while loading.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 не встановлено, тому гра вилетить під час завантаження.</translation>
     </message>
     <message>
         <source>Install %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити %1</translation>
     </message>
     <message>
         <source>This instance runs Minecraft %1. These won&apos;t load: %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ця збірка працює на Minecraft %1. Ці моди не завантажаться: %2.</translation>
     </message>
     <message>
         <source>Find versions for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Знайти версії для %1</translation>
     </message>
     <message>
         <source>%1 is made for Minecraft %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 створений для Minecraft %2</translation>
     </message>
     <message>
         <source>This instance runs Minecraft %1, so it won&apos;t load.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ця збірка працює на Minecraft %1, тому мод не завантажиться.</translation>
     </message>
     <message>
         <source>Find a version for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Знайти версію для %1</translation>
     </message>
 </context>
 <context>
@@ -2314,53 +2314,53 @@
     <name>LauncherImport</name>
     <message>
         <source>Can&apos;t tell which Minecraft version it uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося визначити версію Minecraft.</translation>
     </message>
     <message>
         <source>Can&apos;t tell which mod loader version it uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося визначити версію завантажувача модів.</translation>
     </message>
     <message>
         <source>Latest release</source>
-        <translation type="unfinished"></translation>
+        <translation>Останній реліз</translation>
     </message>
     <message>
         <source>Minecraft Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft Launcher</translation>
     </message>
     <message>
         <source>Couldn&apos;t create %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося створити %1</translation>
     </message>
     <message>
         <source>Couldn&apos;t copy %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося скопіювати %1</translation>
     </message>
     <message>
         <source>Prism / MultiMC</source>
-        <translation type="unfinished"></translation>
+        <translation>Prism / MultiMC</translation>
     </message>
 </context>
 <context>
     <name>LauncherImport::ForeignImportTask</name>
     <message>
         <source>Linking %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>Створення посилань: %1…</translation>
     </message>
     <message>
         <source>Copying %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювання %1…</translation>
     </message>
 </context>
 <context>
     <name>Main</name>
     <message>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>Примусово завершити</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>%1 didn&apos;t start: %2</source>
@@ -2449,39 +2449,39 @@
     <name>PackSettings</name>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 МБ</translation>
+        <translation>%1 МБ</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished">%1 ГБ</translation>
+        <translation>%1 ГБ</translation>
     </message>
     <message>
         <source>This modpack asked for more memory than this computer has, so it got %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Цей модпак запросив більше пам&apos;яті, ніж є на комп&apos;ютері, тому виділено %1.</translation>
     </message>
     <message>
         <source>This modpack set %1 of memory.</source>
-        <translation type="unfinished"></translation>
+        <translation>Цей модпак задав %1 пам&apos;яті.</translation>
     </message>
     <message>
         <source>Memory: %1 (set by the modpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Пам&apos;ять: %1 (задано модпаком)</translation>
     </message>
     <message>
         <source>It also added its own Java arguments.</source>
-        <translation type="unfinished"></translation>
+        <translation>Він також додав власні аргументи Java.</translation>
     </message>
     <message>
         <source>Java arguments: %1 (set by the modpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Аргументи Java: %1 (задано модпаком)</translation>
     </message>
     <message>
         <source>The file %1 doesn&apos;t exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл %1 не існує.</translation>
     </message>
     <message>
         <source>Couldn&apos;t replace %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося замінити %1.</translation>
     </message>
 </context>
 <context>
@@ -2700,15 +2700,15 @@
     </message>
     <message>
         <source>Sounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Звуки</translation>
     </message>
     <message>
         <source>Play sounds on clicks and launches</source>
-        <translation type="unfinished"></translation>
+        <translation>Відтворювати звуки при кліках і запусках</translation>
     </message>
     <message>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Гучність</translation>
     </message>
     <message>
         <source>Choose a background image</source>
@@ -2830,7 +2830,7 @@
     </message>
     <message>
         <source>You can leave this page: the install keeps going and its progress stays at the bottom of the window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Можете залишити цю сторінку: встановлення триватиме, а його прогрес буде видно внизу вікна.</translation>
     </message>
     <message>
         <source>Dismiss</source>
@@ -2845,66 +2845,66 @@
     </message>
     <message>
         <source>Play together without a server or any setup. Your computers connect directly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Грайте разом без сервера та складних налаштувань. Ваші комп&apos;ютери з&apos;єднуються напряму.</translation>
     </message>
     <message>
         <source>Play together</source>
-        <translation type="unfinished"></translation>
+        <translation>Грати разом</translation>
     </message>
     <message>
         <source>Friend requests</source>
-        <translation type="unfinished"></translation>
+        <translation>Заявки в друзі</translation>
     </message>
     <message>
         <source>Someone</source>
-        <translation type="unfinished"></translation>
+        <translation>Хтось</translation>
     </message>
     <message>
         <source>wants to be friends</source>
-        <translation type="unfinished"></translation>
+        <translation>хоче додати вас у друзі</translation>
     </message>
     <message>
         <source>Accept</source>
-        <translation type="unfinished"></translation>
+        <translation>Прийняти</translation>
     </message>
     <message>
         <source>Decline</source>
-        <translation type="unfinished"></translation>
+        <translation>Відхилити</translation>
     </message>
     <message>
         <source>Your friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваші друзі</translation>
     </message>
     <message>
         <source>%1 online</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 у мережі</translation>
     </message>
     <message>
         <source>No friends yet. Copy your code and send it to a friend, or paste theirs on the right.</source>
-        <translation type="unfinished"></translation>
+        <translation>Друзів поки немає. Скопіюйте свій код і надішліть його другові або вставте його код праворуч.</translation>
     </message>
 </context>
 <context>
     <name>PageGallery</name>
     <message>
         <source>“%1” applied</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» застосовано</translation>
     </message>
     <message>
         <source>“%1” is your background now</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» тепер ваш фон</translation>
     </message>
     <message>
         <source>Couldn&apos;t add “%1” to your backgrounds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося додати «%1» до ваших фонів.</translation>
     </message>
     <message>
         <source>“%1” installed. Press Apply to use it.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» встановлено. Натисніть «Застосувати», щоб використати її.</translation>
     </message>
     <message>
         <source>“%1” added to your backgrounds.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» додано до ваших фонів.</translation>
     </message>
     <message>
         <source>Back</source>
@@ -2912,107 +2912,107 @@
     </message>
     <message>
         <source>Gallery</source>
-        <translation type="unfinished"></translation>
+        <translation>Галерея</translation>
     </message>
     <message>
         <source>Themes</source>
-        <translation type="unfinished"></translation>
+        <translation>Теми</translation>
     </message>
     <message>
         <source>Backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Фони</translation>
     </message>
     <message>
         <source>Share yours</source>
-        <translation type="unfinished"></translation>
+        <translation>Поділитися своїм</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished">Оновити</translation>
+        <translation>Оновити</translation>
     </message>
     <message>
         <source>Search themes</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук тем</translation>
     </message>
     <message>
         <source>Search backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук фонів</translation>
     </message>
     <message>
         <source>Couldn&apos;t reach the online gallery, so you&apos;re seeing the examples that come with the launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зв&apos;язатися з онлайн-галереєю, тому ви бачите приклади, що входять до комплекту лаунчера.</translation>
     </message>
     <message>
         <source>Try again</source>
-        <translation type="unfinished">Спробувати знову</translation>
+        <translation>Спробувати знову</translation>
     </message>
     <message>
         <source>Loading the gallery…</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження галереї…</translation>
     </message>
     <message>
         <source>Couldn&apos;t load the gallery: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося завантажити галерею: %1</translation>
     </message>
     <message>
         <source>Nothing matches your search.</source>
-        <translation type="unfinished"></translation>
+        <translation>За вашим запитом нічого не знайдено.</translation>
     </message>
     <message>
         <source>No themes here yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Тут поки немає тем.</translation>
     </message>
     <message>
         <source>No backgrounds here yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Тут поки немає фонів.</translation>
     </message>
     <message>
         <source>Clear search</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити пошук</translation>
     </message>
     <message>
         <source>Share your theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Поділитися темою</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <source>The gallery is a public list on GitHub. Anyone can suggest a theme or a background there; once it&apos;s accepted, it shows up here for everyone.</source>
-        <translation type="unfinished"></translation>
+        <translation>Галерея — це відкритий список на GitHub. Кожен може запропонувати там тему чи фон; після схвалення вони з&apos;являться тут у всіх.</translation>
     </message>
     <message>
         <source>Open your themes folder and find your theme&apos;s .json file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрийте папку тем і знайдіть .json-файл вашої теми.</translation>
     </message>
     <message>
         <source>Open the gallery page on GitHub and follow the steps there to add your file and a short description.</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрийте сторінку галереї на GitHub і виконайте кроки, щоб додати свій файл і короткий опис.</translation>
     </message>
     <message>
         <source>Only share things you made yourself or are allowed to share.</source>
-        <translation type="unfinished"></translation>
+        <translation>Діліться лише тим, що зробили самі або на що маєте дозвіл.</translation>
     </message>
     <message>
         <source>Open themes folder</source>
-        <translation type="unfinished">Відкрити папку тем</translation>
+        <translation>Відкрити папку тем</translation>
     </message>
     <message>
         <source>Open gallery page</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити сторінку галереї</translation>
     </message>
     <message>
         <source>Gallery address</source>
-        <translation type="unfinished"></translation>
+        <translation>Адреса галереї</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation type="unfinished"></translation>
+        <translation>Застосувати</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="unfinished">Скинути</translation>
+        <translation>Скинути</translation>
     </message>
 </context>
 <context>
@@ -3070,7 +3070,7 @@
     </message>
     <message>
         <source>Servers</source>
-        <translation type="unfinished"></translation>
+        <translation>Сервери</translation>
     </message>
     <message>
         <source>Screenshots</source>
@@ -3082,7 +3082,7 @@
     </message>
     <message>
         <source>Game log</source>
-        <translation type="unfinished">Журнал гри</translation>
+        <translation>Журнал гри</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3137,11 +3137,11 @@
     </message>
     <message>
         <source>Installing…</source>
-        <translation type="unfinished">Встановлення…</translation>
+        <translation>Встановлення…</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Stop</source>
@@ -3180,187 +3180,187 @@
     <name>PageReceivePack</name>
     <message>
         <source>Using “%1” as it is</source>
-        <translation type="unfinished"></translation>
+        <translation>Використання «%1» без змін</translation>
     </message>
     <message>
         <source>“%1” is ready</source>
-        <translation type="unfinished">«%1» готовий</translation>
+        <translation>«%1» готова</translation>
     </message>
     <message numerus="yes">
         <source>Added %n item(s) to “%1”</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Додано %n елемент до «%1»</numerusform>
+            <numerusform>Додано %n елементи до «%1»</numerusform>
+            <numerusform>Додано %n елементів до «%1»</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n couldn&apos;t be downloaded</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n не вдалося завантажити</numerusform>
+            <numerusform>%n не вдалося завантажити</numerusform>
+            <numerusform>%n не вдалося завантажити</numerusform>
         </translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished">Назад</translation>
+        <translation>Назад</translation>
     </message>
     <message>
         <source>Shared pack</source>
-        <translation type="unfinished"></translation>
+        <translation>Спільний модпак</translation>
     </message>
     <message>
         <source>Open a shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити спільну збірку</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>no mod loader</source>
-        <translation type="unfinished"></translation>
+        <translation>без завантажувача модів</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n мод</numerusform>
+            <numerusform>%n моди</numerusform>
+            <numerusform>%n модів</numerusform>
         </translation>
     </message>
     <message>
         <source>Open another</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити інший</translation>
     </message>
     <message>
         <source>Paste the link a friend sent you, or open the .fashpack file. You&apos;ll see what&apos;s inside before anything is downloaded.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вставте посилання, яке надіслав друг, або відкрийте файл .fashpack. Ви побачите вміст до початку завантаження.</translation>
     </message>
     <message>
         <source>Paste a share link (fashion://pack/…)</source>
-        <translation type="unfinished"></translation>
+        <translation>Вставте посилання для доступу (fashion://pack/…)</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Відкрити</translation>
+        <translation>Відкрити</translation>
     </message>
     <message>
         <source>Open a .fashpack file</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити файл .fashpack</translation>
     </message>
     <message>
         <source>What to install</source>
-        <translation type="unfinished"></translation>
+        <translation>Що встановити</translation>
     </message>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише серверні моди</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>Усе</translation>
     </message>
     <message>
         <source>Your friend shared only the server-side mods — enough to join or host the same server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Друг поділився лише серверними модами — цього достатньо для гри на одному сервері.</translation>
     </message>
     <message>
         <source>Everything your friend uses, including client-only extras and packs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Усе, що використовує ваш друг, включно з клієнтськими доповненнями та ресурс-паками.</translation>
     </message>
     <message>
         <source>Just what&apos;s needed to play on the same server. Client-only extras like minimaps and shaders are skipped.</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише те, що потрібно для гри на одному сервері. Клієнтські доповнення, як-от мінімапи й шейдери, буде пропущено.</translation>
     </message>
     <message>
         <source>Ask your friend for these files — they aren&apos;t on Modrinth or CurseForge: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Попросіть друга надіслати ці файли — їх немає на Modrinth і CurseForge: %1</translation>
     </message>
     <message>
         <source>Where to put it</source>
-        <translation type="unfinished"></translation>
+        <translation>Куди встановити</translation>
     </message>
     <message>
         <source>Add to “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати до «%1»</translation>
     </message>
     <message>
         <source>Add to one of your instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати до однієї з ваших збірок</translation>
     </message>
     <message>
         <source>You already have a similar instance with all of these mods.</source>
-        <translation type="unfinished"></translation>
+        <translation>У вас уже є схожа збірка з усіма цими модами.</translation>
     </message>
     <message numerus="yes">
         <source>You already have a similar instance — use it and add %n missing mod(s). Your own mods stay.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>У вас уже є схожа збірка — використайте її та додайте %n відсутній мод. Ваші моди лишаться.</numerusform>
+            <numerusform>У вас уже є схожа збірка — використайте її та додайте %n відсутні моди. Ваші моди лишаться.</numerusform>
+            <numerusform>У вас уже є схожа збірка — використайте її та додайте %n відсутніх модів. Ваші моди лишаться.</numerusform>
         </translation>
     </message>
     <message>
         <source>Create a new instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити нову збірку</translation>
     </message>
     <message>
         <source>Minecraft %1%2 with these mods, kept apart from your other games.</source>
-        <translation type="unfinished"></translation>
+        <translation>Minecraft %1%2 з цими модами, окремо від ваших інших ігор.</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Назва</translation>
+        <translation>Назва</translation>
     </message>
     <message>
         <source>Use my own instance without changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Використати мою збірку без змін</translation>
     </message>
     <message>
         <source>Nothing is downloaded. Pick this if you already set it up yourself.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нічого не завантажується. Виберіть цей варіант, якщо вже все налаштували самі.</translation>
     </message>
     <message>
         <source>“%1” has some of these mods but runs a different Minecraft version or loader, so a new instance is safer.</source>
-        <translation type="unfinished"></translation>
+        <translation>У збірці «%1» є частина цих модів, але використовується інша версія Minecraft чи інший завантажувач, тому надійніше створити нову збірку.</translation>
     </message>
     <message>
         <source>Your instance stays exactly as it is.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваша збірка залишиться без змін.</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s) selected. Files come from Modrinth and CurseForge.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Вибрано %n елемент. Файли завантажуються з Modrinth і CurseForge.</numerusform>
+            <numerusform>Вибрано %n елементи. Файли завантажуються з Modrinth і CurseForge.</numerusform>
+            <numerusform>Вибрано %n елементів. Файли завантажуються з Modrinth і CurseForge.</numerusform>
         </translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished">Зупинити</translation>
+        <translation>Зупинити</translation>
     </message>
     <message>
         <source>Working…</source>
-        <translation type="unfinished">Обробка…</translation>
+        <translation>Виконується…</translation>
     </message>
     <message>
         <source>Use this instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Використати цю збірку</translation>
     </message>
     <message>
         <source>Create instance</source>
-        <translation type="unfinished">Створити екземпляр</translation>
+        <translation>Створити збірку</translation>
     </message>
     <message>
         <source>Add mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати моди</translation>
     </message>
     <message>
         <source>Open instance</source>
-        <translation type="unfinished">Відкрити екземпляр</translation>
+        <translation>Відкрити збірку</translation>
     </message>
 </context>
 <context>
@@ -3383,7 +3383,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Розширені</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3542,7 +3542,7 @@
     <name>PageSkins</name>
     <message>
         <source>Back</source>
-        <translation type="unfinished">Назад</translation>
+        <translation>Назад</translation>
     </message>
     <message>
         <source>Skins</source>
@@ -3550,115 +3550,115 @@
     </message>
     <message>
         <source>Turn your player around, collect skins and choose what you wear.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обертайте персонажа, збирайте колекцію скінів і обирайте свій образ.</translation>
     </message>
     <message>
         <source>Account</source>
-        <translation type="unfinished">Акаунт</translation>
+        <translation>Акаунт</translation>
     </message>
     <message>
         <source>%1 (offline)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (офлайн)</translation>
     </message>
     <message>
         <source>No skins yet. Drop a skin PNG here or get one by player name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Сківнів поки немає. Перетягніть сюди PNG-файл скіна або знайдіть його за ніком гравця.</translation>
     </message>
     <message>
         <source>Drag to turn · double-click to face front</source>
-        <translation type="unfinished"></translation>
+        <translation>Потягніть для повороту · подвійний клік поверне обличчям</translation>
     </message>
     <message>
         <source>Classic arms</source>
-        <translation type="unfinished"></translation>
+        <translation>Широкі руки (Classic)</translation>
     </message>
     <message>
         <source>Slim arms</source>
-        <translation type="unfinished"></translation>
+        <translation>Тонкі руки (Slim)</translation>
     </message>
     <message>
         <source>Cape</source>
-        <translation type="unfinished"></translation>
+        <translation>Плащ</translation>
     </message>
     <message>
         <source>No cape</source>
-        <translation type="unfinished"></translation>
+        <translation>Без плаща</translation>
     </message>
     <message>
         <source>This is an offline account, so the game can&apos;t download a skin for it — in game you&apos;ll look like Steve or Alex. You can still keep and preview skins here. To wear one in game, install a skin mod (for example CustomSkinLoader) and give it this skin file. Only people with the same mod will see it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Це офлайн-акаунт, тому гра не може завантажити для нього скін — у грі ви виглядатимете як Стів або Алекс. Але тут можна зберігати й переглядати скіни. Що носити скін у грі, встановіть мод на скіни (наприклад, CustomSkinLoader) і вкажіть йому цей файл скіна. Побачать його лише ті, у кого такий самий мод.</translation>
     </message>
     <message>
         <source>This Microsoft account can&apos;t change its skin right now. Sign in again in Accounts, and make sure it owns Minecraft.</source>
-        <translation type="unfinished"></translation>
+        <translation>Цей акаунт Microsoft зараз не може змінити скін. Увійдіть знову в розділі «Акаунти» та переконайтеся, що на ньому є Minecraft.</translation>
     </message>
     <message>
         <source>You&apos;re wearing this</source>
-        <translation type="unfinished"></translation>
+        <translation>Зараз надіто</translation>
     </message>
     <message>
         <source>Update cape</source>
-        <translation type="unfinished"></translation>
+        <translation>Оновити плащ</translation>
     </message>
     <message>
         <source>Use this skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Надіти цей скін</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished">Більше</translation>
+        <translation>Більше</translation>
     </message>
     <message>
         <source>Go back to the default skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Повернути стандартний скін</translation>
     </message>
     <message>
         <source>Player name, to copy their skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Нік гравця, щоб скопіювати його скін</translation>
     </message>
     <message>
         <source>Get skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Отримати скін</translation>
     </message>
     <message>
         <source>Add file</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати файл</translation>
     </message>
     <message>
         <source>Open skins folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити папку скінів</translation>
     </message>
     <message>
         <source>Wearing</source>
-        <translation type="unfinished"></translation>
+        <translation>Надіто</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished">Більше дій</translation>
+        <translation>Інші дії</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="unfinished">Перейменувати</translation>
+        <translation>Перейменувати</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Видалити</translation>
+        <translation>Видалити</translation>
     </message>
     <message>
         <source>Your skin library is empty. Drop PNG skins anywhere on this page, add a file, or type a player name above.</source>
-        <translation type="unfinished"></translation>
+        <translation>Бібліотека скінів порожня. Перетягніть PNG-скіни будь-куди на цю сторінку, додайте файл або введіть нік гравця вище.</translation>
     </message>
     <message>
         <source>Choose skin images</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати зображення скінів</translation>
     </message>
     <message>
         <source>Skin images (*.png)</source>
-        <translation type="unfinished"></translation>
+        <translation>Зображення скінів (*.png)</translation>
     </message>
     <message>
         <source>Drop to add to your skins</source>
-        <translation type="unfinished"></translation>
+        <translation>Відпустіть, щоб додати до скінів</translation>
     </message>
 </context>
 <context>
@@ -3711,35 +3711,35 @@
     <name>QObject</name>
     <message>
         <source>any version</source>
-        <translation type="unfinished"></translation>
+        <translation>будь-яка версія</translation>
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation type="unfinished"></translation>
+        <translation>від %1 до %2</translation>
     </message>
     <message>
         <source>%1 up to (not including) %2</source>
-        <translation type="unfinished"></translation>
+        <translation>від %1 до %2 (не включно)</translation>
     </message>
     <message>
         <source>%1 or newer</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 або новіша</translation>
     </message>
     <message>
         <source>newer than %1</source>
-        <translation type="unfinished"></translation>
+        <translation>новіша за %1</translation>
     </message>
     <message>
         <source>%1 or older</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 або старіша</translation>
     </message>
     <message>
         <source>older than %1</source>
-        <translation type="unfinished"></translation>
+        <translation>старіша за %1</translation>
     </message>
     <message>
         <source> or </source>
-        <translation type="unfinished"></translation>
+        <translation> або </translation>
     </message>
 </context>
 <context>
@@ -4081,15 +4081,15 @@
     </message>
     <message>
         <source>See what&apos;s new</source>
-        <translation type="unfinished"></translation>
+        <translation>Що нового</translation>
     </message>
     <message>
         <source>Mods aren&apos;t checked before playing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моди не перевіряються перед грою.</translation>
     </message>
     <message>
         <source>Turn checks on</source>
-        <translation type="unfinished"></translation>
+        <translation>Увімкнути перевірку</translation>
     </message>
     <message>
         <source>Nothing matches “%1”</source>
@@ -4115,7 +4115,7 @@
     <name>ResUpdatesDialog</name>
     <message numerus="yes">
         <source>%n update(s) available</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Доступне %n оновлення</numerusform>
             <numerusform>Доступні %n оновлення</numerusform>
             <numerusform>Доступно %n оновлень</numerusform>
@@ -4123,31 +4123,31 @@
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <source>See what changed before you update. Open a mod to read its changelog.</source>
-        <translation type="unfinished"></translation>
+        <translation>Перегляньте зміни перед оновленням. Відкрийте мод, щоб прочитати його список змін.</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Оновити</translation>
     </message>
     <message>
         <source>The author didn&apos;t write a changelog for this version.</source>
-        <translation type="unfinished"></translation>
+        <translation>Автор не додав списку змін для цієї версії.</translation>
     </message>
     <message>
         <source>Updating…</source>
-        <translation type="unfinished">Оновлення…</translation>
+        <translation>Оновлення…</translation>
     </message>
     <message>
         <source>Not now</source>
-        <translation type="unfinished"></translation>
+        <translation>Не зараз</translation>
     </message>
     <message>
         <source>Update all (%1)</source>
-        <translation type="unfinished">Оновити все (%1)</translation>
+        <translation>Оновити все (%1)</translation>
     </message>
 </context>
 <context>
@@ -4181,157 +4181,157 @@
     <name>ServerListModel</name>
     <message>
         <source>Couldn&apos;t save the server list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зберегти список серверів.</translation>
     </message>
     <message>
         <source>Type the server address, for example play.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation>Введіть адресу сервера, наприклад play.example.com</translation>
     </message>
     <message>
         <source>A server address can&apos;t contain spaces.</source>
-        <translation type="unfinished"></translation>
+        <translation>Адреса сервера не може містити пробілів.</translation>
     </message>
     <message>
         <source>The port after the colon must be between 1 and 65535.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порт після двокрапки має бути в межах від 1 до 65535.</translation>
     </message>
     <message>
         <source>Minecraft Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Сервер Minecraft</translation>
     </message>
     <message>
         <source>The server didn&apos;t answer in time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Сервер не відповів вчасно.</translation>
     </message>
     <message>
         <source>Couldn&apos;t find a server at this address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося знайти сервер за цією адресою.</translation>
     </message>
     <message>
         <source>The server is offline or not reachable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Сервер вимкнено або він недоступний.</translation>
     </message>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">Цей екземпляр більше не існує.</translation>
+        <translation>Ця збірка більше не існує.</translation>
     </message>
     <message>
         <source>The game is already running. Join the server from the in-game Multiplayer menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>Гра вже запущена. Підключіться до сервера через меню «Мережева гра» в самій грі.</translation>
     </message>
 </context>
 <context>
     <name>ServerStatus</name>
     <message>
         <source>Checking…</source>
-        <translation type="unfinished">Перевірка…</translation>
+        <translation>Перевірка…</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Не в мережі</translation>
     </message>
     <message>
         <source>Not checked</source>
-        <translation type="unfinished"></translation>
+        <translation>Не перевірявся</translation>
     </message>
     <message>
         <source>%1 / %2 players</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2 гравців</translation>
     </message>
     <message numerus="yes">
         <source>%n player(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n гравець</numerusform>
+            <numerusform>%n гравці</numerusform>
+            <numerusform>%n гравців</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 ms</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 мс</translation>
     </message>
     <message>
         <source>Online</source>
-        <translation type="unfinished"></translation>
+        <translation>У мережі</translation>
     </message>
 </context>
 <context>
     <name>SettingsAdvanced</name>
     <message>
         <source>Custom commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Власні команди</translation>
     </message>
     <message>
         <source>Run your own commands around the game. $INST_DIR, $INST_MC_DIR, $INST_JAVA and similar variables are filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускайте власні команди до і після гри. Підставляються змінні $INST_DIR, $INST_MC_DIR, $INST_JAVA та подібні.</translation>
     </message>
     <message>
         <source>Before launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Перед запуском</translation>
     </message>
     <message>
         <source>e.g. a backup script</source>
-        <translation type="unfinished"></translation>
+        <translation>наприклад, скрипт резервного копіювання</translation>
     </message>
     <message>
         <source>Wrapper</source>
-        <translation type="unfinished"></translation>
+        <translation>Обгортка</translation>
     </message>
     <message>
         <source>Starts Java through this program, like “prime-run”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускає Java через цю програму, наприклад «prime-run».</translation>
     </message>
     <message>
         <source>After exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Після виходу</translation>
     </message>
     <message>
         <source>Environment variables</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінні середовища</translation>
     </message>
     <message>
         <source>Extra variables for the game process, one NAME=value per line.</source>
-        <translation type="unfinished"></translation>
+        <translation>Додаткові змінні для процесу гри, по одному запису NAME=value на рядок.</translation>
     </message>
     <message>
         <source>Graphics</source>
-        <translation type="unfinished"></translation>
+        <translation>Графіка</translation>
     </message>
     <message>
         <source>Which graphics card and drivers the game uses.</source>
-        <translation type="unfinished"></translation>
+        <translation>Яку відеокарту та драйвери використовує гра.</translation>
     </message>
     <message>
         <source>Use the discrete graphics card</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати дискретну відеокарту</translation>
     </message>
     <message>
         <source>On laptops with two graphics cards, run the game on the faster one.</source>
-        <translation type="unfinished"></translation>
+        <translation>На ноутбуках із двома відеокартами запускати гру на швидшій.</translation>
     </message>
     <message>
         <source>Use Zink (OpenGL over Vulkan)</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати Zink (OpenGL поверх Vulkan)</translation>
     </message>
     <message>
         <source>Can help where the OpenGL driver is broken. Usually slower.</source>
-        <translation type="unfinished"></translation>
+        <translation>Може допомогти, якщо драйвер OpenGL зламаний. Зазвичай працює повільніше.</translation>
     </message>
     <message>
         <source>Old versions</source>
-        <translation type="unfinished">Старі версії</translation>
+        <translation>Старі версії</translation>
     </message>
     <message>
         <source>Fixes for Minecraft versions from before 1.6.</source>
-        <translation type="unfinished"></translation>
+        <translation>Виправлення для версій Minecraft до 1.6.</translation>
     </message>
     <message>
         <source>Fix skins, sounds and logins</source>
-        <translation type="unfinished"></translation>
+        <translation>Виправляти скіни, звуки та авторизацію</translation>
     </message>
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>Переспрямовує сервіси, які очікує стара гра, але які більше не існують.</translation>
     </message>
 </context>
 <context>
@@ -4703,236 +4703,236 @@
     <name>ShareDialog</name>
     <message>
         <source>Share “%1”</source>
-        <translation type="unfinished"></translation>
+        <translation>Поділитися «%1»</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <source>Friends paste the link in Fashion Launcher and get Minecraft %1%2 with the same mods, downloaded from Modrinth and CurseForge. Worlds and settings aren&apos;t sent.</source>
-        <translation type="unfinished"></translation>
+        <translation>Друзі вставляють посилання в Fashion Launcher і отримують Minecraft %1%2 з тими самими модами, завантаженими з Modrinth і CurseForge. Світи та налаштування не передаються.</translation>
     </message>
     <message>
         <source>Server-side mods only</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише серверні моди</translation>
     </message>
     <message>
         <source>Everything</source>
-        <translation type="unfinished"></translation>
+        <translation>Усе</translation>
     </message>
     <message>
         <source>All your mods, resource packs and shader packs — a full copy of how you play.</source>
-        <translation type="unfinished"></translation>
+        <translation>Усі ваші моди, ресурс-паки та шейдери — точна копія того, як ви граєте.</translation>
     </message>
     <message>
         <source>Only what a server needs, so friends can join or host it. Client-only extras like minimaps, shaders and resource packs stay with you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише те, що потрібно серверу, щоб друзі могли підключитися або відкрити світ. Клієнтські доповнення (мінімапи, шейдери, ресурс-паки) лишаться тільки у вас.</translation>
     </message>
     <message>
         <source>Looking your mods up on Modrinth…</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук ваших модів на Modrinth…</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s) will be shared.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Буде поширено %n елемент.</numerusform>
+            <numerusform>Буде поширено %n елементи.</numerusform>
+            <numerusform>Буде поширено %n елементів.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n of them can&apos;t be downloaded by others — send those files separately or untick them.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n із них інші не зможуть завантажити — надішліть ці файли окремо або зніміть позначки.</numerusform>
+            <numerusform>%n із них інші не зможуть завантажити — надішліть ці файли окремо або зніміть позначки.</numerusform>
+            <numerusform>%n із них інші не зможуть завантажити — надішліть ці файли окремо або зніміть позначки.</numerusform>
         </translation>
     </message>
     <message>
         <source>The link is long and some chats cut it off; the file is safer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Посилання довге, і в деяких чатах може обрізатися; файл надійніший.</translation>
     </message>
     <message>
         <source>Link copied</source>
-        <translation type="unfinished"></translation>
+        <translation>Посилання скопійовано</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберегти файл</translation>
     </message>
     <message>
         <source>Saved %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Збережено: %1</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати посилання</translation>
     </message>
     <message>
         <source>Share link copied — send it to your friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Посилання скопійовано — надішліть його друзям</translation>
     </message>
 </context>
 <context>
     <name>ShareModList</name>
     <message>
         <source>Mods</source>
-        <translation type="unfinished">Моди</translation>
+        <translation>Моди</translation>
     </message>
     <message>
         <source>Resource packs</source>
-        <translation type="unfinished">Пакети ресурсів</translation>
+        <translation>Ресурс-паки</translation>
     </message>
     <message>
         <source>Shader packs</source>
-        <translation type="unfinished"></translation>
+        <translation>Шейдери</translation>
     </message>
     <message>
         <source>Client only</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише клієнт</translation>
     </message>
     <message>
         <source>Server only</source>
-        <translation type="unfinished"></translation>
+        <translation>Лише сервер</translation>
     </message>
     <message>
         <source>Client and server</source>
-        <translation type="unfinished"></translation>
+        <translation>Клієнт і сервер</translation>
     </message>
     <message>
         <source>Not sure</source>
-        <translation type="unfinished"></translation>
+        <translation>Невідомо</translation>
     </message>
     <message>
         <source>Find a mod</source>
-        <translation type="unfinished"></translation>
+        <translation>Знайти мод</translation>
     </message>
     <message>
         <source>Tick all</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати всі</translation>
     </message>
     <message>
         <source>Checking your mods…</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевіряємо ваші моди…</translation>
     </message>
     <message>
         <source>Nothing matches “%1”</source>
-        <translation type="unfinished">Нічого не відповідає «%1»</translation>
+        <translation>Нічого не знайдено за запитом «%1»</translation>
     </message>
     <message>
         <source>No mods here — only the Minecraft version and loader will be shared.</source>
-        <translation type="unfinished"></translation>
+        <translation>Тут немає модів — буде поширено лише версію Minecraft і завантажувач.</translation>
     </message>
 </context>
 <context>
     <name>ShareModRow</name>
     <message>
         <source>Not on Modrinth or CurseForge — only the sender has this file</source>
-        <translation type="unfinished"></translation>
+        <translation>Немає на Modrinth і CurseForge — цей файл є тільки у відправника</translation>
     </message>
 </context>
 <context>
     <name>SharingBridge</name>
     <message>
         <source>Paste a share link first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Спочатку вставте посилання.</translation>
     </message>
     <message>
         <source>This doesn&apos;t look like a shared instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Це не схоже на спільну збірку.</translation>
     </message>
     <message>
         <source>This isn&apos;t a share link. Links start with fashion://pack/</source>
-        <translation type="unfinished"></translation>
+        <translation>Це не посилання на модпак. Такі посилання починаються з fashion://pack/</translation>
     </message>
     <message>
         <source>This link is broken or cut off. Ask for it again, or for the file instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Посилання пошкоджено або обрізано. Попросіть надіслати його знову або передати файл.</translation>
     </message>
     <message>
         <source>Save shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберегти спільну збірку</translation>
     </message>
     <message>
         <source>Fashion pack (*.fashpack)</source>
-        <translation type="unfinished"></translation>
+        <translation>Пакет Fashion (*.fashpack)</translation>
     </message>
     <message>
         <source>Couldn&apos;t save the file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося зберегти файл: %1</translation>
     </message>
     <message>
         <source>Open shared instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити спільну збірку</translation>
     </message>
     <message>
         <source>Fashion pack (*.fashpack);;All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Пакет Fashion (*.fashpack);;Усі файли (*)</translation>
     </message>
     <message>
         <source>Couldn&apos;t open “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося відкрити «%1».</translation>
     </message>
     <message>
         <source>Pick one of your instances.</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть одну з ваших збірок.</translation>
     </message>
     <message>
         <source>The pack doesn&apos;t say which Minecraft version it needs.</source>
-        <translation type="unfinished"></translation>
+        <translation>У модпаці не вказано, яка версія Minecraft йому потрібна.</translation>
     </message>
     <message>
         <source>The pack uses a mod loader this launcher doesn&apos;t know: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Модпак використовує завантажувач модів, невідомий цьому лаунчеру: %1</translation>
     </message>
     <message>
         <source>That instance no longer exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ця збірка більше не існує.</translation>
     </message>
     <message>
         <source>Close the game before adding mods to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрийте гру перед додаванням модів.</translation>
     </message>
     <message numerus="yes">
         <source>Looking up %n file(s)…</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Шукаємо %n файл…</numerusform>
+            <numerusform>Шукаємо %n файли…</numerusform>
+            <numerusform>Шукаємо %n файлів…</numerusform>
         </translation>
     </message>
     <message>
         <source>Shared pack</source>
-        <translation type="unfinished"></translation>
+        <translation>Спільний модпак</translation>
     </message>
     <message>
         <source>Creating “%1”…</source>
-        <translation type="unfinished"></translation>
+        <translation>Створення «%1»…</translation>
     </message>
     <message>
         <source>Creating the instance failed.</source>
-        <translation type="unfinished">Не вдалося створити екземпляр.</translation>
+        <translation>Не вдалося створити збірку.</translation>
     </message>
     <message>
         <source>Downloading mods</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження модів</translation>
     </message>
     <message>
         <source>%1 (the author doesn&apos;t allow automatic downloads)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (автор не дозволяє автоматичне завантаження)</translation>
     </message>
     <message numerus="yes">
         <source>Downloading %n file(s)…</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Завантажуємо %n файл…</numerusform>
+            <numerusform>Завантажуємо %n файли…</numerusform>
+            <numerusform>Завантажуємо %n файлів…</numerusform>
         </translation>
     </message>
     <message>
         <source>Stopped. Files downloaded so far were kept.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зупинено. Уже завантажені файли збережено.</translation>
     </message>
 </context>
 <context>
@@ -5006,111 +5006,111 @@
     <name>SkinsBridge</name>
     <message>
         <source>Download capes</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження плащів</translation>
     </message>
     <message>
         <source>Cape</source>
-        <translation type="unfinished"></translation>
+        <translation>Плащ</translation>
     </message>
     <message>
         <source>“%1” isn&apos;t a Minecraft skin. Skins are 64×64 (or old 64×32) PNG images.</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» — не скін Minecraft. Скіни — це PNG-зображення розміром 64×64 (або старі 64×32).</translation>
     </message>
     <message>
         <source>Couldn&apos;t add “%1”: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося додати «%1»: %2</translation>
     </message>
     <message numerus="yes">
         <source>Added %n skin(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Додано %n скін</numerusform>
+            <numerusform>Додано %n скіни</numerusform>
+            <numerusform>Додано %n скінів</numerusform>
         </translation>
     </message>
     <message>
         <source>Player names are 1–16 letters, digits or underscores.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нік гравця складається з 1–16 латинських літер, цифр або знаків підкреслення.</translation>
     </message>
     <message>
         <source>Download player skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантажити скін гравця</translation>
     </message>
     <message>
         <source>Looking up %1…</source>
-        <translation type="unfinished"></translation>
+        <translation>Шукаємо %1…</translation>
     </message>
     <message>
         <source>There&apos;s no Minecraft player called “%1”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Гравця Minecraft із ніком «%1» не існує.</translation>
     </message>
     <message>
         <source>%1 uses a default skin, so there&apos;s nothing to download.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 використовує стандартний скін, тому завантажувати нічого.</translation>
     </message>
     <message>
         <source>Couldn&apos;t get %1&apos;s skin. Check your internet connection and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося отримати скін %1. Перевірте інтернет-з&apos;єднання та спробуйте знову.</translation>
     </message>
     <message>
         <source>Added %1&apos;s skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Скіна гравця %1 додано</translation>
     </message>
     <message>
         <source>This is the skin you&apos;re wearing right now. Switch to another one first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Цей скін зараз надіто на вас. Спочатку виберіть інший.</translation>
     </message>
     <message>
         <source>Couldn&apos;t delete the skin file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося видалити файл скіна.</translation>
     </message>
     <message>
         <source>Use a name without / \ : * ? &quot; &lt; &gt; |</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовуйте назву без знаків / \ : * ? &quot; &lt; &gt; |</translation>
     </message>
     <message>
         <source>A skin called “%1” already exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>Скіна з назвою «%1» уже існує.</translation>
     </message>
     <message>
         <source>Only a Microsoft account that owns Minecraft can change its skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінювати скін може лише акаунт Microsoft, на якому є Minecraft.</translation>
     </message>
     <message>
         <source>The skin file is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл скіна відсутній.</translation>
     </message>
     <message>
         <source>Change skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінити скін</translation>
     </message>
     <message>
         <source>Changing your skin…</source>
-        <translation type="unfinished"></translation>
+        <translation>Зміна вашого скіна…</translation>
     </message>
     <message>
         <source>Couldn&apos;t change the skin. Sign in again in Accounts if this keeps happening.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося змінити скін. Якщо це повторюється, увійдіть знову в розділі «Акаунти».</translation>
     </message>
     <message>
         <source>Skin changed. You&apos;ll see it the next time you join a world.</source>
-        <translation type="unfinished"></translation>
+        <translation>Скіна змінено. Ви побачите його під час наступного входу у світ.</translation>
     </message>
     <message>
         <source>Reset skin</source>
-        <translation type="unfinished"></translation>
+        <translation>Скинути скін</translation>
     </message>
     <message>
         <source>Resetting your skin…</source>
-        <translation type="unfinished"></translation>
+        <translation>Скидання вашого скіна…</translation>
     </message>
     <message>
         <source>Back to the default skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Повернуто стандартний скін.</translation>
     </message>
     <message>
         <source>Couldn&apos;t reset the skin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося скинути скін.</translation>
     </message>
 </context>
 <context>
@@ -5124,183 +5124,183 @@
     <name>TabHistory</name>
     <message>
         <source>Restored. Your worlds and settings were not touched.</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновлено. Ваші світи та налаштування не було зачеплено.</translation>
     </message>
     <message>
         <source>No identical files to share yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Однакових файлів для об&apos;єднання поки немає</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation type="unfinished">%1 ГБ</translation>
+        <translation>%1 ГБ</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 МБ</translation>
+        <translation>%1 МБ</translation>
     </message>
     <message numerus="yes">
         <source>Saved %1 across %n instance(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Зекономлено %1 на %n збірці</numerusform>
+            <numerusform>Зекономлено %1 на %n збірках</numerusform>
+            <numerusform>Зекономлено %1 на %n збірках</numerusform>
         </translation>
     </message>
     <message>
         <source>Before restoring, today at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Перед відновленням, сьогодні о %1</translation>
     </message>
     <message>
         <source>Launched today at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск сьогодні о %1</translation>
     </message>
     <message>
         <source>Before restoring, yesterday at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Перед відновленням, учора о %1</translation>
     </message>
     <message>
         <source>Launched yesterday at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск учора о %1</translation>
     </message>
     <message>
         <source>Before restoring, %1 at %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Перед відновленням, %1 о %2</translation>
     </message>
     <message>
         <source>Launched %1 at %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск %1 о %2</translation>
     </message>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Unknown version</source>
-        <translation type="unfinished">Невідома версія</translation>
+        <translation>Невідома версія</translation>
     </message>
     <message numerus="yes">
         <source>+%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>+%n мод</numerusform>
+            <numerusform>+%n моди</numerusform>
+            <numerusform>+%n модів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>−%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>−%n мод</numerusform>
+            <numerusform>−%n моди</numerusform>
+            <numerusform>−%n модів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n updated</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n оновлено</numerusform>
+            <numerusform>%n оновлено</numerusform>
+            <numerusform>%n оновлено</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n pack(s) differ</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Відрізняється %n пак</numerusform>
+            <numerusform>Відрізняються %n паки</numerusform>
+            <numerusform>Відрізняється %n паків</numerusform>
         </translation>
     </message>
     <message>
         <source>other game version</source>
-        <translation type="unfinished"></translation>
+        <translation>інша версія гри</translation>
     </message>
     <message>
         <source>Same as now</source>
-        <translation type="unfinished"></translation>
+        <translation>Як зараз</translation>
     </message>
     <message>
         <source>Version history</source>
-        <translation type="unfinished"></translation>
+        <translation>Історія версій</translation>
     </message>
     <message>
         <source>The last %1 launches are remembered. You can go back to any of them; worlds and settings stay as they are.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберігаються останні %1 запусків. Можете повернутися до будь-якого з них; світи та налаштування лишаться недоторканими.</translation>
     </message>
     <message>
         <source>Share identical files between instances</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати спільні файли між збірками</translation>
     </message>
     <message>
         <source>A mod used in several instances takes disk space once. Deleting it in one instance never affects the others.</source>
-        <translation type="unfinished"></translation>
+        <translation>Мод, що використовується в кількох збірках, займає місце на диску лише раз. Видалення його з однієї збірки ніяк не вплине на інші.</translation>
     </message>
     <message numerus="yes">
         <source>%n mod(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n мод</numerusform>
+            <numerusform>%n моди</numerusform>
+            <numerusform>%n модів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n file(s) from this launch can&apos;t be brought back</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n файл із цього запуску не вдасться повернути</numerusform>
+            <numerusform>%n файли з цього запуску не вдасться повернути</numerusform>
+            <numerusform>%n файлів з цього запуску не вдасться повернути</numerusform>
         </translation>
     </message>
     <message>
         <source>Current</source>
-        <translation type="unfinished"></translation>
+        <translation>Поточна</translation>
     </message>
     <message>
         <source>Restore this version</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновити цю версію</translation>
     </message>
     <message>
         <source>Close the game first</source>
-        <translation type="unfinished"></translation>
+        <translation>Спочатку закрийте гру</translation>
     </message>
     <message>
         <source>Nothing here yet. Each time you play, the mods and game version are remembered so you can come back to them.</source>
-        <translation type="unfinished"></translation>
+        <translation>Тут поки нічого немає. Під час кожного запуску гри зберігаються моди та версія гри, щоб до них можна було повернутися.</translation>
     </message>
     <message>
         <source>Restore this version?</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновити цю версію?</translation>
     </message>
     <message>
         <source>Mods, resource packs, shader packs and the game version go back to how they were: %1 (%2). Worlds and settings are not touched. The current state is remembered first, so you can come back to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моди, ресурс-паки, шейдери та версія гри повернуться до попереднього стану: %1 (%2). Світи та налаштування не буде зачеплено. Спочатку збережеться поточний стан, щоб ви могли до нього повернутися.</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновити</translation>
     </message>
     <message>
         <source>Couldn&apos;t restore. Close the game and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося відновити. Закрийте гру та спробуйте знову.</translation>
     </message>
     <message>
         <source>Restored, except for some files</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновлено, крім деяких файлів</translation>
     </message>
     <message>
         <source>These files were no longer on this computer and couldn&apos;t be downloaded again. Add them yourself if you need them:</source>
-        <translation type="unfinished"></translation>
+        <translation>Цих файлів більше не було на цьому комп&apos;ютері, і завантажити їх знову не вдалося. Додайте їх самостійно, якщо вони потрібні:</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <source>Restoring…</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновлення…</translation>
     </message>
 </context>
 <context>
@@ -5334,139 +5334,139 @@
     <name>TabLog</name>
     <message>
         <source>Save game log</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберегти журнал гри</translation>
     </message>
     <message>
         <source>Log files (*.log *.txt)</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли журналів (*.log *.txt)</translation>
     </message>
     <message>
         <source>Log saved.</source>
-        <translation type="unfinished"></translation>
+        <translation>Журнал збережено.</translation>
     </message>
     <message>
         <source>Search the log</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук у журналі</translation>
     </message>
     <message>
         <source>Launcher</source>
-        <translation type="unfinished">Лаунчер</translation>
+        <translation>Лаунчер</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Інфо</translation>
     </message>
     <message>
         <source>Warnings</source>
-        <translation type="unfinished"></translation>
+        <translation>Попередження</translation>
     </message>
     <message>
         <source>Errors</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилки</translation>
     </message>
     <message>
         <source>Copy the log</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати журнал</translation>
     </message>
     <message>
         <source>Log copied.</source>
-        <translation type="unfinished"></translation>
+        <translation>Журнал скопійовано.</translation>
     </message>
     <message>
         <source>Save to a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберегти до файлу</translation>
     </message>
     <message>
         <source>Upload and copy link</source>
-        <translation type="unfinished">Вивантажити й скопіювати посилання</translation>
+        <translation>Вивантажити та скопіювати посилання</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити</translation>
     </message>
     <message>
         <source>No lines match the filter.</source>
-        <translation type="unfinished"></translation>
+        <translation>Немає рядків, що відповідають фільтру.</translation>
     </message>
     <message>
         <source>Waiting for the game to say something…</source>
-        <translation type="unfinished"></translation>
+        <translation>Чекаємо, поки гра щось скаже…</translation>
     </message>
     <message>
         <source>No game log yet. Play once and the output shows up here.</source>
-        <translation type="unfinished"></translation>
+        <translation>Журналу гри ще немає. Запустіть гру раз — і вивід з&apos;явиться тут.</translation>
     </message>
     <message>
         <source>Jump to the end</source>
-        <translation type="unfinished"></translation>
+        <translation>У кінець</translation>
     </message>
     <message>
         <source>Live output</source>
-        <translation type="unfinished"></translation>
+        <translation>Живий вивід</translation>
     </message>
     <message>
         <source>Output of the last launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Вивід останнього запуску</translation>
     </message>
     <message>
         <source>From %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Від %1</translation>
     </message>
     <message numerus="yes">
         <source>%n line(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n рядок</numerusform>
+            <numerusform>%n рядки</numerusform>
+            <numerusform>%n рядків</numerusform>
         </translation>
     </message>
     <message>
         <source>Auto-scroll</source>
-        <translation type="unfinished"></translation>
+        <translation>Автопрокрутка</translation>
     </message>
     <message>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>Примусово завершити</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Перезапустити</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Грати</translation>
+        <translation>Грати</translation>
     </message>
     <message>
         <source>Share the game log?</source>
-        <translation type="unfinished">Поділитися журналом гри?</translation>
+        <translation>Поділитися журналом гри?</translation>
     </message>
     <message>
         <source>“%1” will be uploaded to %2 and the link copied, so you can send it to someone who helps you. Folder paths with your user name and login tokens are hidden.</source>
-        <translation type="unfinished">«%1» буде вивантажено на %2, а посилання — скопійовано, щоб ви могли надіслати його тому, хто вам допомагає. Шляхи до папок із вашим іменем користувача та токени входу приховано.</translation>
+        <translation>«%1» буде вивантажено на %2, а посилання скопійовано, щоб ви могли надіслати його тому, хто вам допомагає. Шляхи до папок з вашим іменем користувача та токени входу приховано.</translation>
     </message>
     <message>
         <source>There is no game log yet. Play once first.</source>
-        <translation type="unfinished">Журналу гри ще немає. Спочатку зіграйте хоча б раз.</translation>
+        <translation>Журналу гри ще немає. Спочатку запустіть гру хоча б раз.</translation>
     </message>
     <message>
         <source>Link copied: %1</source>
-        <translation type="unfinished">Посилання скопійовано: %1</translation>
+        <translation>Посилання скопійовано: %1</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Open link</source>
-        <translation type="unfinished">Відкрити посилання</translation>
+        <translation>Відкрити посилання</translation>
     </message>
     <message>
         <source>Uploading…</source>
-        <translation type="unfinished">Вивантаження…</translation>
+        <translation>Вивантаження…</translation>
     </message>
 </context>
 <context>
@@ -5501,7 +5501,7 @@
     </message>
     <message>
         <source>Share instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Поділитися збіркою</translation>
     </message>
     <message>
         <source>Play offline</source>
@@ -5614,103 +5614,103 @@
     <name>TabServers</name>
     <message>
         <source>Checking servers…</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевіряємо сервери…</translation>
     </message>
     <message numerus="yes">
         <source>%n server(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n сервер</numerusform>
+            <numerusform>%n сервери</numerusform>
+            <numerusform>%n серверів</numerusform>
         </translation>
     </message>
     <message>
         <source>Check all</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевірити всі</translation>
     </message>
     <message>
         <source>Add server</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати сервер</translation>
     </message>
     <message>
         <source>Join</source>
-        <translation type="unfinished"></translation>
+        <translation>Підключитися</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="unfinished">Більше дій</translation>
+        <translation>Інші дії</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Редагувати</translation>
     </message>
     <message>
         <source>Check again</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевірити знову</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати адресу</translation>
     </message>
     <message>
         <source>Address copied</source>
-        <translation type="unfinished"></translation>
+        <translation>Адресу скопійовано</translation>
     </message>
     <message>
         <source>Move up</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити вгору</translation>
     </message>
     <message>
         <source>Move down</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити вниз</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">Видалити</translation>
+        <translation>Видалити</translation>
     </message>
     <message>
         <source>No servers yet. Add one with its address — it also shows up in the game&apos;s Multiplayer list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Серверів поки немає. Додайте сервер за адресою — він також з&apos;явиться в меню «Мережева гра» в самій грі.</translation>
     </message>
     <message>
         <source>Add a server</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати сервер</translation>
     </message>
     <message>
         <source>Edit server</source>
-        <translation type="unfinished"></translation>
+        <translation>Редагувати сервер</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="unfinished">Адреса</translation>
+        <translation>Адреса</translation>
     </message>
     <message>
         <source>play.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation>play.example.com</translation>
     </message>
     <message>
         <source>Name (optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>Назва (необов&apos;язково)</translation>
     </message>
     <message>
         <source>Minecraft Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Сервер Minecraft</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберегти</translation>
     </message>
     <message>
         <source>Remove “%1”?</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити «%1»?</translation>
     </message>
     <message>
         <source>It disappears from this instance&apos;s server list, in the launcher and in the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Він зникне зі списку серверів цієї збірки — і в лаунчері, і в грі.</translation>
     </message>
 </context>
 <context>
@@ -5808,140 +5808,140 @@
     <name>TaskIndicator</name>
     <message>
         <source>Done: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Готово: %1</translation>
     </message>
     <message>
         <source>Failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка: %1</translation>
     </message>
     <message numerus="yes">
         <source>%1 (+%n more)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 (і ще %n)</numerusform>
+            <numerusform>%1 (і ще %n)</numerusform>
+            <numerusform>%1 (і ще %n)</numerusform>
         </translation>
     </message>
     <message>
         <source>Running tasks</source>
-        <translation type="unfinished"></translation>
+        <translation>Активні завдання</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
 </context>
 <context>
     <name>ToolsBridge</name>
     <message>
         <source>This instance no longer exists.</source>
-        <translation type="unfinished">Цей екземпляр більше не існує.</translation>
+        <translation>Ця збірка більше не існує.</translation>
     </message>
     <message>
         <source>Couldn&apos;t write %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося записати %1.</translation>
     </message>
 </context>
 <context>
     <name>ToolsLaunchCheck</name>
     <message>
         <source>All fixed</source>
-        <translation type="unfinished"></translation>
+        <translation>Усе виправлено</translation>
     </message>
     <message numerus="yes">
         <source>Turned off %n file(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Вимкнено %n файл</numerusform>
+            <numerusform>Вимкнено %n файли</numerusform>
+            <numerusform>Вимкнено %n файлів</numerusform>
         </translation>
     </message>
     <message>
         <source>“%1” won&apos;t start like this</source>
-        <translation type="unfinished"></translation>
+        <translation>«%1» так не запуститься</translation>
     </message>
     <message numerus="yes">
         <source>%n problem(s) will stop the game while it loads.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n проблема зашкодить завантаженню гри.</numerusform>
+            <numerusform>%n проблеми зашкодять завантаженню гри.</numerusform>
+            <numerusform>%n проблем зашкодить завантаженню гри.</numerusform>
         </translation>
     </message>
     <message>
         <source>Check mods before playing</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевіряти моди перед грою</translation>
     </message>
     <message>
         <source>Won&apos;t check again. You can turn it back on in the Mods tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевірка більше не виконуватиметься. Можете знову увімкнути її на вкладці «Моди».</translation>
     </message>
     <message>
         <source>Play anyway</source>
-        <translation type="unfinished"></translation>
+        <translation>Все одно грати</translation>
     </message>
     <message>
         <source>Fix and play</source>
-        <translation type="unfinished"></translation>
+        <translation>Виправити та грати</translation>
     </message>
     <message>
         <source>Fix</source>
-        <translation type="unfinished"></translation>
+        <translation>Виправити</translation>
     </message>
 </context>
 <context>
     <name>ToolsLauncherList</name>
     <message>
         <source>Minecraft %1</source>
-        <translation type="unfinished">Minecraft %1</translation>
+        <translation>Minecraft %1</translation>
     </message>
     <message>
         <source>Looking…</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук…</translation>
     </message>
     <message>
         <source>In %1</source>
-        <translation type="unfinished"></translation>
+        <translation>У %1</translation>
     </message>
     <message numerus="yes">
         <source>%n instance(s) found</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Знайдено %n збірку</numerusform>
+            <numerusform>Знайдено %n збірки</numerusform>
+            <numerusform>Знайдено %n збірок</numerusform>
         </translation>
     </message>
     <message>
         <source>Look again</source>
-        <translation type="unfinished"></translation>
+        <translation>Шукати знову</translation>
     </message>
     <message>
         <source>Choose folder…</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати папку…</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="unfinished">Нічого не знайдено</translation>
+        <translation>Нічого не знайдено</translation>
     </message>
     <message>
         <source>No other launchers in their usual places. If yours keeps its files somewhere else, show us the folder.</source>
-        <translation type="unfinished"></translation>
+        <translation>Інших лаунчерів у звичних місцях немає. Якщо ваш зберігає файли деінде, вкажіть його папку.</translation>
     </message>
     <message>
         <source>Looking for other launchers…</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук інших лаунчерів…</translation>
     </message>
     <message>
         <source>Share files instead of copying</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати спільні файли замість копіювання</translation>
     </message>
     <message>
         <source>Worlds, mods and settings stay shared with the other launcher: changes show up in both.</source>
-        <translation type="unfinished"></translation>
+        <translation>Світи, моди та налаштування лишаться спільними з іншим лаунчером: зміни буде видно в обох.</translation>
     </message>
     <message>
         <source>Share files instead of copying (saves space, both launchers see the same worlds)</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати спільні файли замість копіювання (економить місце, обидва лаунчери бачать ті самі світи)</translation>
     </message>
 </context>
 <context>

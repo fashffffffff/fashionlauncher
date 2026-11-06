@@ -112,7 +112,7 @@ QVariantList LauncherBridge::languages() const
     QVariantList list;
     // Only fully translated languages are offered; add a code here once its qmlui_<code>.ts is complete
     // (launcher/qmlui/i18n/update.sh --report).
-    static const QStringList ready = { "en_US", "ru" };
+    static const QStringList ready = { "en_US", "ru", "es", "pt_BR", "de", "fr", "it", "pl", "uk", "tr", "zh", "ja", "ko", "cs", "id" };
     for (const auto& l : g_uiLanguages) {
         if (ready.contains(QString(l.key))) {
             list.append(QVariantMap{ { "key", l.key }, { "name", QString::fromUtf8(l.name) } });
