@@ -1,0 +1,35 @@
+{
+    "name": "Classic Grass",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#1C1A14",
+        "surface": "#272319",
+        "surfaceHi": "#352E20",
+        "line": "#4D4430",
+        "text": "#EFEBDD",
+        "textMuted": "#B3A98E",
+        "accent": "#6FBF3A",
+        "onAccent": "#0D1F03",
+        "danger": "#E5584A",
+        "success": "#7FD04A",
+        "scrim": "#1C1A14"
+    },
+    "shape": {
+        "radius": 2,
+        "slotRadius": 0
+    },
+    "background": {
+        "dim": 0.5,
+        "blur": 6,
+        "mode": "pattern"
+    },
+    "layout": {
+        "navPosition": "left",
+        "navStyle": "full",
+        "panelStyle": "solid",
+        "panelOpacity": 0.96,
+        "showHotbar": true,
+        "heroSize": 48
+    }
+}

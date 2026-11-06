@@ -1,0 +1,34 @@
+{
+    "name": "Amethyst Geode",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#16102A",
+        "surface": "#201838",
+        "surfaceHi": "#2E2250",
+        "line": "#43337A",
+        "text": "#EEE8FF",
+        "textMuted": "#ADA0D4",
+        "accent": "#B388FF",
+        "onAccent": "#1A0B3A",
+        "danger": "#FF6B9A",
+        "success": "#6FD3B0",
+        "scrim": "#16102A"
+    },
+    "shape": {
+        "radius": 18,
+        "slotRadius": 16
+    },
+    "background": {
+        "dim": 0.5,
+        "blur": 30
+    },
+    "layout": {
+        "navPosition": "left",
+        "navStyle": "full",
+        "panelStyle": "glass",
+        "panelOpacity": 0.6,
+        "showHotbar": true,
+        "heroSize": 56
+    }
+}

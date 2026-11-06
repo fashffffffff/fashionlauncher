@@ -1,0 +1,34 @@
+{
+    "name": "Ancient City",
+    "author": "FFPrism",
+    "dark": true,
+    "colors": {
+        "bg": "#0B1214",
+        "surface": "#121C1F",
+        "surfaceHi": "#1B2A2E",
+        "line": "#243C42",
+        "text": "#DCEBEC",
+        "textMuted": "#8BA6AA",
+        "accent": "#2FE0D0",
+        "onAccent": "#03201D",
+        "danger": "#FF6A6A",
+        "success": "#4FD08A",
+        "scrim": "#0B1214"
+    },
+    "shape": {
+        "radius": 8,
+        "slotRadius": 6
+    },
+    "background": {
+        "dim": 0.7,
+        "blur": 30
+    },
+    "layout": {
+        "navPosition": "left",
+        "navStyle": "compact",
+        "panelStyle": "outline",
+        "panelOpacity": 0.5,
+        "showHotbar": false,
+        "heroSize": 60
+    }
+}
