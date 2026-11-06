@@ -155,6 +155,7 @@ ApplicationWindow {
 
     AccountsPanel { id: accounts }
     CommandPalette { id: cmdPalette }
+    ToolsLaunchCheck {}   // pre-launch checks dialog + Tools notices
     Shortcut { sequences: ["Ctrl+K"]; onActivated: cmdPalette.opened ? cmdPalette.close() : cmdPalette.open() }
     Connections { target: Router; function onPaletteRequested() { cmdPalette.open() } }
 

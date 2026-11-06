@@ -562,3 +562,50 @@ void InstalledModel::updateAll()
         }
     });
 }
+
+QVariantList InstalledModel::updateList() const
+{
+    QVariantList out;
+    for (size_t i = 0; i < m_updates.size(); ++i) {
+        const auto& u = m_updates[i];
+        const bool modrinth = u.provider == ModPlatform::ResourceProvider::MODRINTH;
+        out << QVariantMap{ { "index", static_cast<int>(i) },
+                            { "name", u.name },
+                            { "oldVersion", u.oldVersion },
+                            { "newVersion", u.newVersion },
+                            { "changelog", u.changelog.trimmed() },
+                            { "changelogFormat", modrinth ? "markdown" : "html" },
+                            { "provider", modrinth ? "Modrinth" : "CurseForge" } };
+    }
+    return out;
+}
+
+void InstalledModel::updateOne(int index)
+{
+    if (index < 0 || index >= static_cast<int>(m_updates.size()) || !m_busy.isEmpty() || !m_folder) {
+        return;
+    }
+    if (m_instance && m_instance->isRunning()) {
+        emit message(tr("Close the game before updating"), true);
+        return;
+    }
+    const auto& u = m_updates[static_cast<size_t>(index)];
+    const QString name = u.name;
+    const QString oldHash = u.oldHash;
+    setBusy("updating");
+    runTask(u.download, [this, name, oldHash](bool ok, const QString& error) {
+        setBusy("");
+        if (ok) {
+            m_updates.erase(std::remove_if(m_updates.begin(), m_updates.end(), [&](const auto& x) { return x.oldHash == oldHash; }),
+                            m_updates.end());
+            // the updated file's row (and its "Update" badge) is replaced by the folder refresh below
+            emit updatesChanged();
+            emit message(tr("Updated %1").arg(name), false);
+        } else if (!error.isEmpty()) {
+            emit message(tr("Couldn't update %1: %2").arg(name, error), true);
+        }
+        if (m_folder) {
+            m_folder->update();
+        }
+    });
+}

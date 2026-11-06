@@ -88,6 +88,10 @@ class InstalledModel : public QSortFilterProxyModel {
     Q_INVOKABLE void reload();
     Q_INVOKABLE void checkUpdates();
     Q_INVOKABLE void updateAll();
+    /// Found updates for the "what's new" list: index, name, oldVersion, newVersion, changelog, changelogFormat ("markdown"|"html"), provider
+    Q_INVOKABLE QVariantList updateList() const;
+    /// Installs one update from updateList()
+    Q_INVOKABLE void updateOne(int index);
     Q_INVOKABLE void cancel();
 
    signals:

@@ -24,6 +24,9 @@
 #include "modplatform/modrinth/ModrinthAPI.h"
 #include "net/ApiRequest.h"
 #include "settings/SettingsObject.h"
+#include "tasks/SequentialTask.h"
+#include "../tools/LauncherImport.h"
+#include "../tools/ToolsBridge.h"
 
 namespace {
 struct LoaderInfo {
@@ -304,6 +307,9 @@ QString CreateBridge::formatCount(double n) const
 bool CreateBridge::createVanilla(const QString& mcVersion, const QString& loaderVersion, const QString& name, const QString& icon,
                                  const QString& group)
 {
+    if (!m_task) {
+        m_packSource.clear();
+    }
     auto mc = m_versions->find(mcVersion);
     if (!mc) {
         setError(tr("Pick a Minecraft version."));
@@ -346,6 +352,7 @@ bool CreateBridge::createModpack(int versionIndex, const QString& name, const QS
         }
     }
     auto* task = new InstanceImportTask(QUrl(ver.downloadUrl), true, nullptr, std::move(extra));
+    m_packSource = QUrl(ver.downloadUrl);
     return run(task, name, m_pack->name, m_packProvider == "modrinth" ? ver.version : QString(), iconKey, group);
 }
 
@@ -403,6 +410,7 @@ bool CreateBridge::createImport(const QString& source, const QString& name, cons
             extra.insert("pack_id", addonId);
             extra.insert("pack_version_id", fileId);
             const QString packName = data["displayName"].toString(QFileInfo(dl.fileName()).completeBaseName());
+            m_packSource = dl;
             run(new InstanceImportTask(dl, false, nullptr, std::move(extra)), name.isEmpty() ? packName : name, packName, QString(),
                 icon.isEmpty() ? QString("default") : icon, group);
         });
@@ -419,6 +427,7 @@ bool CreateBridge::createImport(const QString& source, const QString& name, cons
         input.append("/file");
         url = QUrl::fromUserInput(input);
     }
+    m_packSource = url;
     return run(new InstanceImportTask(url, false, nullptr), name, suggested, QString(), icon.isEmpty() ? QString("default") : icon, group);
 }
 
@@ -439,11 +448,15 @@ bool CreateBridge::run(InstanceTask* raw, const QString& name, const QString& or
     raw->setCopyTemplateDir(!templateDir.isEmpty() && QDir(templateDir).exists());
     APPLICATION->settings()->set("LastUsedGroupForNewInstance", group.trimmed());
 
-    m_createdId.clear();
     m_createdName = finalName;
+    return start(Task::Ptr(APPLICATION->instances()->wrapInstanceTask(raw)));
+}
+
+bool CreateBridge::start(const Task::Ptr& task)
+{
+    m_createdId.clear();
     m_status = tr("Preparing…");
     m_progress = -1;
-    Task::Ptr task(APPLICATION->instances()->wrapInstanceTask(raw));
     m_task = task;
 
     auto selectConn = std::make_shared<QMetaObject::Connection>();
@@ -466,12 +479,14 @@ bool CreateBridge::run(InstanceTask* raw, const QString& name, const QString& or
         const bool ok = t->wasSuccessful();
         const bool aborted = t->getState() == Task::State::AbortedByUser;
         const QString reason = t->failReason();
+        const QUrl packSource = std::exchange(m_packSource, QUrl());
         m_task.reset();
         m_status.clear();
         emit busyChanged();
         emit progressChanged();
         if (ok) {
             qInfo() << "[create] created instance" << m_createdId << m_createdName;
+            applyPackSettings(packSource);
             emit created(m_createdId, m_createdName);
         } else if (!aborted) {
             qWarning() << "[create] failed:" << reason;
@@ -512,4 +527,65 @@ void CreateBridge::finishAutoTest(bool ok)
     if (qEnvironmentVariableIntValue("FFPRISM_CREATE_QUIT")) {
         QCoreApplication::exit(ok ? 0 : 1);
     }
+}
+
+void CreateBridge::applyPackSettings(const QUrl& source)
+{
+    // fashion-launcher.json inside the modpack (docs/MODPACK_SETTINGS.md): the archive is either the picked
+    // file or the copy InstanceImportTask downloaded into the cache
+    if (source.isEmpty() || m_createdId.isEmpty()) {
+        return;
+    }
+    QString archive;
+    if (source.isLocalFile()) {
+        archive = source.toLocalFile();
+    } else {
+        archive = APPLICATION->metacache()->resolveEntry("general", source.host() + '/' + source.path())->getFullPath();
+    }
+    auto* inst = APPLICATION->instances()->getInstanceById(m_createdId);
+    const QString said = ToolsBridge::applyPackSettings(inst, archive);
+    if (!said.isEmpty()) {
+        ToolsBridge::announce(tr("“%1” is ready. %2").arg(m_createdName, said));
+    }
+}
+
+bool CreateBridge::createFromLaunchers(const QVariantList& keys, bool link, const QString& name, const QString& icon, const QString& group)
+{
+    if (m_task) {
+        return false;
+    }
+    m_packSource.clear();
+    auto* tools = ToolsBridge::instance();
+    QList<QVariantMap> entries;
+    for (const auto& key : keys) {
+        const auto e = tools ? tools->launcherEntry(key.toString()) : QVariantMap();
+        if (e.value("importable").toBool()) {
+            entries << e;
+        }
+    }
+    if (entries.isEmpty()) {
+        setError(tr("Pick at least one instance to import."));
+        return false;
+    }
+    const QString iconKey = icon.isEmpty() ? QString("default") : icon;
+    if (entries.size() == 1) {
+        const auto& e = entries.first();
+        return run(LauncherImport::makeTask(e, link), name, e.value("name").toString(), e.value("mc").toString(), iconKey, group);
+    }
+    // Several at once: one after another, each keeps its own name
+    clearError();
+    const QString templateDir = APPLICATION->settings()->get("TemplateDir").toString();
+    auto sequence = makeShared<SequentialTask>(tr("Importing instances"));
+    for (const auto& e : entries) {
+        auto* raw = LauncherImport::makeTask(e, link);
+        raw->setName(e.value("name").toString());
+        raw->setOriginalName(e.value("name").toString(), e.value("mc").toString());
+        raw->setGroup(group.trimmed());
+        raw->setIcon(iconKey);
+        raw->setCopyTemplateDir(!templateDir.isEmpty() && QDir(templateDir).exists());
+        sequence->addTask(Task::Ptr(APPLICATION->instances()->wrapInstanceTask(raw)));
+    }
+    APPLICATION->settings()->set("LastUsedGroupForNewInstance", group.trimmed());
+    m_createdName = tr("%n instance(s)", nullptr, static_cast<int>(entries.size()));
+    return start(sequence);
 }
