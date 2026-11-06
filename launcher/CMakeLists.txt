@@ -1313,6 +1313,7 @@ target_link_libraries(Launcher_logic
     Qt${QT_VERSION_MAJOR}::Qml
     Qt${QT_VERSION_MAJOR}::Quick
     Qt${QT_VERSION_MAJOR}::QuickControls2
+    Qt${QT_VERSION_MAJOR}::Quick3D
     Qt${QT_VERSION_MAJOR}::Multimedia
     ${Launcher_QT_DBUS}
     ${Launcher_QT_LIBS}

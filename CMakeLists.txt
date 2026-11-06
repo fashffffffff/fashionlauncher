@@ -316,6 +316,7 @@ if(Launcher_QT_VERSION_MAJOR EQUAL 6)
             Qml
             Quick
             QuickControls2
+            Quick3D
             Test
             Widgets
             Xml
