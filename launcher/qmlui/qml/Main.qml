@@ -18,7 +18,8 @@ ApplicationWindow {
         home: "PageHome.qml", instances: "PageInstances.qml", browse: "PageBrowse.qml",
         appearance: "PageAppearance.qml", settings: "PageSettings.qml",
         instance: "PageInstance.qml", create: "PageCreate.qml", version: "PageVersion.qml",
-        friends: "PageFriends.qml", skins: "PageSkins.qml", gallery: "PageGallery.qml"
+        friends: "PageFriends.qml", skins: "PageSkins.qml", gallery: "PageGallery.qml",
+        receive: "PageReceivePack.qml"
     })
 
     // Debug/automation entry (FFPRISM_PAGE): a section name, "create", "accounts", or "instance:<id>[:<tab>]"
@@ -26,6 +27,11 @@ ApplicationWindow {
         if (name === "accounts") accounts.open()
         else if (name === "palette") cmdPalette.open()
         else if (name.startsWith("version:")) Router.open("version", { instanceId: name.slice(8) })
+        else if (name.startsWith("receive:")) Router.open("receive", { file: name.slice(8) })
+        else if (name.startsWith("share:")) {
+            Router.openInstance(name.slice(6))
+            Qt.createComponent("ShareDialog.qml").createObject(win, { instanceId: name.slice(6), destroyOnClose: true }).open()
+        }
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
         else if (pageFiles[name]) Router.go(name)
     }

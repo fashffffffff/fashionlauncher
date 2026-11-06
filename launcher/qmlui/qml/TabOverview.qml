@@ -47,6 +47,10 @@ Item {
                 Action { iconName: "folder"; text: qsTr("Open folder"); onClicked: Launcher.openInstanceFolder(tab.instanceId) }
                 Action { iconName: "terminal"; text: qsTr("Game log"); onClicked: Launcher.showConsole(tab.instanceId) }
                 Action { iconName: "link"; text: qsTr("Share game log"); onClicked: shareConfirm.open() }
+                Action {
+                    iconName: "globe"; text: qsTr("Share instance")
+                    onClicked: Qt.createComponent("ShareDialog.qml").createObject(tab, { instanceId: tab.instanceId, destroyOnClose: true }).open()
+                }
                 Action { iconName: "play"; text: qsTr("Play offline"); onClicked: Launcher.launch(tab.instanceId, true) }
                 Action { iconName: "copy"; text: qsTr("Copy instance"); onClicked: Launcher.copyInstance(tab.instanceId) }
                 Action { iconName: "export"; text: qsTr("Export"); onClicked: Launcher.exportInstance(tab.instanceId) }
