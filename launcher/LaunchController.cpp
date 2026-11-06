@@ -59,8 +59,20 @@
 #include "launch/steps/TextPrint.h"
 #include "tasks/Task.h"
 #include "ui/dialogs/ChooseOfflineNameDialog.h"
+#include "LaunchPrompts.h"
+#include "DesktopServices.h"
+#include <QUrl>
 
 LaunchController::LaunchController() = default;
+
+LaunchPrompts* LaunchController::prompts() const
+{
+    // A classic instance window that started this launch keeps the classic dialogs.
+    if (qobject_cast<InstanceWindow*>(m_parentWidget)) {
+        return nullptr;
+    }
+    return APPLICATION->qmlPrompts();
+}
 
 void LaunchController::executeTask()
 {
@@ -69,7 +81,13 @@ void LaunchController::executeTask()
         return;
     }
 
-    if (!JavaCommon::checkJVMArgs(m_instance->settings()->get("JvmArgs").toString(), m_parentWidget)) {
+    if (auto* ui = prompts()) {
+        if (const auto problem = JavaCommon::jvmArgsProblem(m_instance->settings()->get("JvmArgs").toString()); !problem.isEmpty()) {
+            ui->ask(tr("JVM arguments warning"), problem, { tr("OK") }, "warning");
+            emitFailed(tr("Invalid Java arguments specified. Please fix this first."));
+            return;
+        }
+    } else if (!JavaCommon::checkJVMArgs(m_instance->settings()->get("JvmArgs").toString(), m_parentWidget)) {
         emitFailed(tr("Invalid Java arguments specified. Please fix this first."));
         return;
     }
@@ -77,10 +95,10 @@ void LaunchController::executeTask()
     login();
 }
 
-void LaunchController::decideAccount()
+bool LaunchController::decideAccount()
 {
     if (m_accountToUse) {
-        return;
+        return true;
     }
 
     // Select the account to use. If the instance has a specific account set, that will be used. Otherwise, the default account will be used
@@ -93,6 +111,17 @@ void LaunchController::decideAccount()
         m_accountToUse = accounts->at(instanceAccountIndex);
     }
 
+    auto* ui = prompts();
+    if (accounts->count() == 0 && ui) {
+        const int reply = ui->ask(tr("No Accounts"),
+                                  tr("In order to play Minecraft, you must add at least one account. "
+                                     "You can add either a Microsoft account or an offline account."),
+                                  { tr("Add an account"), tr("Cancel") });
+        if (reply == 0) {
+            ui->showSettings("accounts");
+        }
+        return false;
+    }
     if (accounts->count() == 0) {
         // Tell the user they need to add at least one account (Microsoft or offline) in order to play.
         auto reply = CustomMessageBox::selectable(m_parentWidget, tr("No Accounts"),
@@ -107,8 +136,20 @@ void LaunchController::decideAccount()
             APPLICATION->ShowGlobalSettings(m_parentWidget, "accounts");
         } else if (reply == QMessageBox::No) {
             // Do not open "profile select" dialog.
-            return;
+            return true;
         }
+    }
+
+    if (!m_accountToUse && accounts->count() > 0 && ui) {
+        bool useAsDefault = false;
+        m_accountToUse = ui->chooseAccount(tr("Which account would you like to use?"), &useAsDefault);
+        if (!m_accountToUse) {
+            return false;
+        }
+        if (useAsDefault) {
+            accounts->setDefaultAccount(m_accountToUse);
+        }
+        return true;
     }
 
     if (!m_accountToUse && accounts->count() > 0) {
@@ -126,6 +167,7 @@ void LaunchController::decideAccount()
             accounts->setDefaultAccount(m_accountToUse);
         }
     }
+    return true;
 }
 
 LaunchDecision LaunchController::decideLaunchMode()
@@ -156,7 +198,13 @@ LaunchDecision LaunchController::decideLaunchMode()
         state = AccountState::Working;
     }
 
-    if (state == AccountState::Working) {
+    if (state == AccountState::Working && prompts()) {
+        auto task = accountToCheck->currentTask();
+        if (task && !prompts()->waitFor(task.get(), tr("Signing in as %1").arg(accountToCheck->profileName()))) {
+            return LaunchDecision::Abort;
+        }
+        state = accountToCheck->accountState();
+    } else if (state == AccountState::Working) {
         // refresh is in progress, we need to wait for it to finish to proceed.
         ProgressDialog progDialog(m_parentWidget);
         progDialog.showSkipButton();
@@ -203,6 +251,12 @@ LaunchDecision LaunchController::decideLaunchMode()
 
 bool LaunchController::askPlayDemo() const
 {
+    if (auto* ui = prompts()) {
+        QString text = m_accountToUse ? tr("This account does not own Minecraft.\nYou need to purchase the game first to play the full version.")
+                                      : tr("No account was selected for launch.");
+        text += tr("\n\nDo you want to play the demo?");
+        return ui->ask(tr("Play demo?"), text, { tr("Play Demo"), tr("Cancel") }, "warning") == 0;
+    }
     QMessageBox box(m_parentWidget);
     box.setWindowTitle(tr("Play demo?"));
     QString text = m_accountToUse
@@ -252,6 +306,19 @@ QString LaunchController::askOfflineName(const QString& playerName, bool* ok)
     const QString lastOfflinePlayerName = APPLICATION->settings()->get("LastOfflinePlayerName").toString();
     QString usedname = lastOfflinePlayerName.isEmpty() ? playerName : lastOfflinePlayerName;
 
+    if (auto* ui = prompts()) {
+        bool accepted = false;
+        usedname = ui->askPlayerName(title, message.trimmed(), usedname, &accepted);
+        if (!accepted || usedname.isEmpty()) {
+            return {};
+        }
+        APPLICATION->settings()->set("LastOfflinePlayerName", usedname);
+        if (ok != nullptr) {
+            *ok = true;
+        }
+        return usedname;
+    }
+
     ChooseOfflineNameDialog dialog(message, m_parentWidget);
     dialog.setWindowTitle(title);
     dialog.setUsername(usedname);
@@ -270,7 +337,10 @@ QString LaunchController::askOfflineName(const QString& playerName, bool* ok)
 
 void LaunchController::login()
 {
-    decideAccount();
+    if (!decideAccount()) {
+        emitAborted();
+        return;
+    }
 
     LaunchDecision decision = decideLaunchMode();
     while (decision == LaunchDecision::Undecided) {
@@ -304,6 +374,18 @@ void LaunchController::login()
     if (m_accountToUse->accountType() != AccountType::Offline) {
         if (m_actualLaunchMode == LaunchMode::Normal && !m_accountToUse->hasProfile()) {
             // Now handle setting up a profile name here...
+            if (auto* ui = prompts()) {
+                // No QML profile setup yet: send the player to the official page and stop.
+                const int reply = ui->ask(tr("Choose your player name"),
+                                          tr("This Microsoft account owns Minecraft but has no player name yet. "
+                                             "Pick one on minecraft.net, then play again."),
+                                          { tr("Open minecraft.net"), tr("Cancel") });
+                if (reply == 0) {
+                    DesktopServices::openUrl(QUrl("https://www.minecraft.net/msaprofile/mygames/editprofile"));
+                }
+                emitAborted();
+                return;
+            }
             if (ProfileSetupDialog dialog(m_accountToUse, m_parentWidget); dialog.exec() != QDialog::Accepted) {
                 emitAborted();
                 return;
@@ -329,6 +411,15 @@ void LaunchController::login()
 
 bool LaunchController::reauthenticateAccount(const MinecraftAccountPtr& account, const QString& reason)
 {
+    if (auto* ui = prompts()) {
+        // Signing in again happens in the accounts panel; this launch stops here.
+        const int reply = ui->ask(tr("Account refresh failed"), tr("%1. Do you want to reauthenticate this account?").arg(reason),
+                                  { tr("Sign in again"), tr("Cancel") }, "warning");
+        if (reply == 0) {
+            ui->showSettings("accounts");
+        }
+        return false;
+    }
     auto button = QMessageBox::warning(
         m_parentWidget, tr("Account refresh failed"), tr("%1. Do you want to reauthenticate this account?").arg(reason),
         QMessageBox::StandardButton::Yes | QMessageBox::StandardButton::No, QMessageBox::StandardButton::Yes);
@@ -364,7 +455,8 @@ void LaunchController::launchInstance()
     Q_ASSERT(m_session.get() != nullptr);
 
     if (!m_instance->reloadSettings()) {
-        QMessageBox::critical(m_parentWidget, tr("Error!"), tr("Couldn't load the instance profile."));
+        if (!prompts())
+            QMessageBox::critical(m_parentWidget, tr("Error!"), tr("Couldn't load the instance profile."));
         emitFailed(tr("Couldn't load the instance profile."));
         return;
     }
@@ -420,12 +512,29 @@ void LaunchController::readyForLaunch()
     if (!m_profiler->check(&error)) {
         m_launcher->abort();
         emitFailed("Profiler startup failed!");
-        QMessageBox::critical(m_parentWidget, tr("Error!"), tr("Profiler check for %1 failed: %2").arg(m_profiler->name(), error));
+        if (auto* ui = prompts()) {
+            ui->ask(tr("Error!"), tr("Profiler check for %1 failed: %2").arg(m_profiler->name(), error), { tr("OK") }, "danger");
+        } else {
+            QMessageBox::critical(m_parentWidget, tr("Error!"), tr("Profiler check for %1 failed: %2").arg(m_profiler->name(), error));
+        }
         return;
     }
     BaseProfiler* profilerInstance = m_profiler->createProfiler(m_launcher->instance(), this);
 
     connect(profilerInstance, &BaseProfiler::readyToLaunch, this, [this](const QString& message) {
+        if (auto* ui = prompts()) {
+            const int reply = ui->ask(tr("Waiting."),
+                                      tr("The game launch is delayed until you press the "
+                                         "button. This is the right time to setup the profiler, as the "
+                                         "profiler server is running now.\n\n%1")
+                                          .arg(message),
+                                      { tr("&Launch").remove('&'), tr("Launch and disable profiler") });
+            if (reply == 1) {
+                m_launcher->instance()->settings()->set("Profiler", "");
+            }
+            m_launcher->proceed();
+            return;
+        }
         QMessageBox msg(m_parentWidget);
         msg.setText(tr("The game launch is delayed until you press the "
                        "button. This is the right time to setup the profiler, as the "
@@ -444,6 +553,12 @@ void LaunchController::readyForLaunch()
         m_launcher->proceed();
     });
     connect(profilerInstance, &BaseProfiler::abortLaunch, this, [this](const QString& message) {
+        if (auto* ui = prompts()) {
+            ui->ask(tr("Error"), tr("Couldn't start the profiler: %1").arg(message), { tr("OK") }, "danger");
+            m_launcher->abort();
+            emitFailed("Profiler startup failed!");
+            return;
+        }
         QMessageBox msg;
         msg.setText(tr("Couldn't start the profiler: %1").arg(message));
         msg.setWindowTitle(tr("Error"));
@@ -472,6 +587,12 @@ void LaunchController::onFailed(QString reason)
 
 void LaunchController::onProgressRequested(Task* task) const
 {
+    if (auto* ui = prompts()) {
+        // Shown on the instance's Play button in the QML window instead of a modal dialog.
+        ui->trackStep(m_instance, task);
+        m_launcher->proceed();
+        return;
+    }
     ProgressDialog progDialog(m_parentWidget);
     progDialog.showSkipButton();
     m_launcher->proceed();
@@ -485,6 +606,13 @@ bool LaunchController::abort()
     }
     if (!m_launcher->canAbort()) {
         return false;
+    }
+    if (auto* ui = prompts()) {
+        const int reply = ui->ask(tr("Kill Minecraft?"),
+                                  tr("This can cause the instance to get corrupted and should only be used if Minecraft "
+                                     "is frozen for some reason"),
+                                  { tr("Kill"), tr("Cancel") }, "danger");
+        return reply == 0 && m_launcher->abort();
     }
     auto response = CustomMessageBox::selectable(m_parentWidget, tr("Kill Minecraft?"),
                                                  tr("This can cause the instance to get corrupted and should only be used if Minecraft "

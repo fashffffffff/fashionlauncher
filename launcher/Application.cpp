@@ -51,6 +51,7 @@
 #include "ui/InstanceWindow.h"
 #include "ui/MainWindow.h"
 #include "qmlui/QmlShell.h"
+#include "LaunchPrompts.h"
 #include "ui/ToolTipFilter.h"
 #include "ui/ViewLogWindow.h"
 
@@ -1714,6 +1715,10 @@ void Application::controllerFinished()
 
 void Application::ShowGlobalSettings(class QWidget* parent, QString openPage)
 {
+    if (auto* prompts = qmlPrompts()) {
+        prompts->showSettings(openPage);
+        return;
+    }
     if (!m_globalSettingsProvider) {
         return;
     }
@@ -1746,6 +1751,19 @@ MainWindow* Application::showMainWindow(bool minimized)
     m_shell->show(minimized);
     m_openWindows++;
     return nullptr;
+}
+
+LaunchPrompts* Application::qmlPrompts()
+{
+    if (m_settings->get("UseClassicUI").toBool()) {
+        return nullptr;
+    }
+    if (!m_shell) {
+        // Unloaded for a game, closed, or not shown yet: the answer belongs in the QML window.
+        m_shellUnloadedForGame = false;
+        showMainWindow();
+    }
+    return m_shell ? m_shell->prompts() : nullptr;
 }
 
 void Application::unloadShellForGame()
@@ -1798,6 +1816,10 @@ ViewLogWindow* Application::showLogWindow()
 InstanceWindow* Application::showInstanceWindow(MinecraftInstance* instance, const QString& page)
 {
     if (!instance) {
+        return nullptr;
+    }
+    if (auto* prompts = qmlPrompts()) {
+        prompts->showInstance(instance, page);
         return nullptr;
     }
     auto id = instance->id();

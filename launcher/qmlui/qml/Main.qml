@@ -27,6 +27,12 @@ ApplicationWindow {
         else if (name === "palette") cmdPalette.open()
         else if (name.startsWith("version:")) Router.open("version", { instanceId: name.slice(8) })
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
+        else if (name.startsWith("dialog:")) { const d = name.split(":"); Launcher.dialogRequested(d[1], d[2]) }
+        else if (name.startsWith("launch:")) Launcher.launch(name.slice(7))
+        // Preview of a launch question (answers go nowhere): prompt:ask | prompt:account | prompt:name
+        else if (name.startsWith("prompt:")) Prompts.requested({ id: -1, kind: name.slice(7), title: "Preview", name: "Player",
+            text: "The Minecraft authentication servers are currently unavailable, launching in offline mode.",
+            buttons: [qsTr("Kill"), qsTr("Cancel")], tone: "danger" })
         else if (pageFiles[name]) Router.go(name)
     }
 
@@ -150,6 +156,9 @@ ApplicationWindow {
     Connections { target: Router; function onPaletteRequested() { cmdPalette.open() } }
 
     Onboarding { id: onboarding; anchors.fill: parent }
+
+    // Dialogs and launch questions (copy, export, delete, icon, account, player name, progress)
+    DialogHost { window: win }
 
     // Toasts
     Rectangle {

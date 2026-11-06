@@ -7,15 +7,14 @@
 
 #include "QObjectPtr.h"
 
-class MainWindow;
 class LaunchController;
+class Task;
 
 /**
  * Actions the QML shell can trigger: launching, killing, folders, settings.
  *
- * Features that have no QML screen yet (instance creation, import, export, instance editor)
- * fall back to the classic Prism dialogs. They are driven through a hidden classic MainWindow,
- * so they behave exactly like upstream until a QML replacement exists.
+ * Nothing here opens a classic window. Actions with a screen of their own (copy, export, delete,
+ * icon, game log, settings) are emitted as signals that Main.qml turns into QML dialogs or pages.
  */
 class LauncherBridge : public QObject {
     Q_OBJECT
@@ -75,7 +74,8 @@ class LauncherBridge : public QObject {
     Q_INVOKABLE void changeIcon(const QString& id);
 
     Q_INVOKABLE void openSettings(const QString& page = QString());
-    Q_INVOKABLE void openClassicWindow();
+    /// Follow a launch step's progress (e.g. downloads before the game starts) on the instance's Play button
+    void trackStep(const QString& id, Task* task);
     Q_INVOKABLE void openUrl(const QString& url) const;
 
    signals:
@@ -86,16 +86,20 @@ class LauncherBridge : public QObject {
     void languageChanged();
     void onboardingDoneChanged();
     void logShareChanged();
+    /// Open a QML dialog: kind is "copy", "export", "delete" or "icon"
+    void dialogRequested(const QString& kind, const QString& instanceId);
+    /// Open an instance page on a tab ("overview", "log", "settings", ...)
+    void instancePageRequested(const QString& instanceId, const QString& tab);
+    /// Open settings; "accounts" opens the accounts panel
+    void settingsRequested(const QString& page);
+    void createRequested();
 
    private:
     void trackController(const QString& id, LaunchController* controller);
     void setLaunch(const QString& id, const QVariantMap& state);
     void clearLaunch(const QString& id);
-    MainWindow* classic();
-    void runClassicAction(const QString& id, const char* slot);
 
     QVariantMap m_launches;
     QVariantMap m_logShare;
     shared_qobject_ptr<class NetJob> m_logJob;
-    QPointer<MainWindow> m_classic;
 };

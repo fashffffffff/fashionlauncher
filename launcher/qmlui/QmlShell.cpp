@@ -22,6 +22,9 @@
 #include "resources/ResourcesBridge.h"
 #include "settings/SettingsBridge.h"
 #include "worlds/WorldsModel.h"
+#include "dialogs/GameLog.h"
+#include "dialogs/InstanceActions.h"
+#include "dialogs/PromptsBridge.h"
 #include "gallery/GalleryBridge.h"
 #include "network/FriendsBridge.h"
 #include "servers/ServersBridge.h"
@@ -49,6 +52,8 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
         qmlRegisterType<WorldsModel>("FFPrism", 1, 0, "WorldsModel");
         // A private, separately sorted/filtered list (the shared `Instances` stays sorted by recent play)
         qmlRegisterType<InstancesModel>("FFPrism", 1, 0, "InstancesView");
+        // Live game output of one instance (`GameLog { instanceId: ... }`)
+        qmlRegisterType<GameLog>("FFPrism", 1, 0, "GameLog");
         typesRegistered = true;
     }
 
@@ -56,6 +61,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     m_instances = new InstancesModel(this);
     m_accounts = new AccountsModel(this);
     m_launcher = new LauncherBridge(this);
+    m_prompts = new PromptsBridge(m_launcher, this);
 
     m_engine = new QQmlApplicationEngine(this);
     loadTranslator();
@@ -67,6 +73,8 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Instances", m_instances);
     ctx->setContextProperty("Accounts", m_accounts);
     ctx->setContextProperty("Launcher", m_launcher);
+    ctx->setContextProperty("Prompts", m_prompts);
+    ctx->setContextProperty("InstanceActions", new InstanceActions(this));
     // Feature bridges: each one backs its own screens (see the class comments).
     ctx->setContextProperty("Settings", new SettingsBridge(this));
     ctx->setContextProperty("Creator", new CreateBridge(this));
@@ -79,6 +87,11 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Skins", new SkinsBridge(this));
     ctx->setContextProperty("Servers", new ServersBridge(this));
     ctx->setContextProperty("Gallery", new GalleryBridge(this));
+}
+
+LaunchPrompts* QmlShell::prompts() const
+{
+    return m_window ? m_prompts : nullptr;
 }
 
 QmlShell::~QmlShell()
