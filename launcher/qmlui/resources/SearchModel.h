@@ -1,0 +1,152 @@
+// SPDX-License-Identifier: GPL-3.0-only
+#pragma once
+
+#include <QAbstractListModel>
+#include <QHash>
+#include <QPointer>
+#include <QSet>
+#include <QTimer>
+
+#include "modplatform/ModIndex.h"
+#include "modplatform/ResourceAPI.h"
+#include "net/NetJob.h"
+#include "tasks/Task.h"
+
+class MinecraftInstance;
+class ResourceFolderModel;
+
+/**
+ * Search results from Modrinth or CurseForge for one instance and kind, for QML (type "SearchModel").
+ * Mods are filtered to the instance's Minecraft version and mod loader automatically.
+ * Also loads versions of a project and installs one (with required dependencies for mods),
+ * like the classic ResourceDownloadDialog but without dialogs.
+ */
+class SearchModel : public QAbstractListModel {
+    Q_OBJECT
+    Q_PROPERTY(QString instanceId READ instanceId WRITE setInstanceId NOTIFY instanceChanged)
+    Q_PROPERTY(QString kind READ kind WRITE setKind NOTIFY kindChanged)
+    /// "modrinth" | "curseforge"
+    Q_PROPERTY(QString platform READ platform WRITE setPlatform NOTIFY platformChanged)
+    Q_PROPERTY(QString query READ query WRITE setQuery NOTIFY queryChanged)
+    Q_PROPERTY(int sortIndex READ sortIndex WRITE setSortIndex NOTIFY sortIndexChanged)
+    Q_PROPERTY(QString category READ category WRITE setCategory NOTIFY categoryChanged)
+    Q_PROPERTY(QVariantList sortOptions READ sortOptions NOTIFY platformChanged)
+    Q_PROPERTY(QVariantList categories READ categories NOTIFY categoriesChanged)
+    Q_PROPERTY(bool busy READ busy NOTIFY busyChanged)
+    Q_PROPERTY(QString error READ error NOTIFY busyChanged)
+    Q_PROPERTY(bool canLoadMore READ canLoadMore NOTIFY busyChanged)
+    Q_PROPERTY(int count READ count NOTIFY countChanged)
+    Q_PROPERTY(QString gameVersion READ gameVersion NOTIFY instanceChanged)
+    Q_PROPERTY(QString loaderText READ loaderText NOTIFY instanceChanged)
+    Q_PROPERTY(bool hasModLoader READ hasModLoader NOTIFY instanceChanged)
+    /// Row whose details are shown (-1 = none); selecting loads its versions
+    Q_PROPERTY(int selectedRow READ selectedRow WRITE setSelectedRow NOTIFY selectedChanged)
+    Q_PROPERTY(QVariantMap selected READ selected NOTIFY selectedChanged)
+
+   public:
+    enum Roles {
+        ProjectIdRole = Qt::UserRole + 300,
+        TitleRole,
+        AuthorRole,
+        DownloadsRole,
+        SummaryRole,
+        IconUrlRole,
+        UrlRole,
+        StateRole,  // "" | "installing" | "installed"
+        ProgressRole,
+    };
+
+    explicit SearchModel(QObject* parent = nullptr);
+    ~SearchModel() override;
+
+    int rowCount(const QModelIndex& parent = {}) const override;
+    QVariant data(const QModelIndex& index, int role) const override;
+    QHash<int, QByteArray> roleNames() const override;
+
+    QString instanceId() const { return m_instanceId; }
+    void setInstanceId(const QString& id);
+    QString kind() const { return m_kind; }
+    void setKind(const QString& k);
+    QString platform() const { return m_platform; }
+    void setPlatform(const QString& p);
+    QString query() const { return m_query; }
+    void setQuery(const QString& q);
+    int sortIndex() const { return m_sortIndex; }
+    void setSortIndex(int i);
+    QString category() const { return m_category; }
+    void setCategory(const QString& c);
+    QVariantList sortOptions() const;
+    QVariantList categories() const { return m_categories; }
+    bool busy() const { return m_busy; }
+    QString error() const { return m_error; }
+    bool canLoadMore() const { return m_canLoadMore; }
+    int count() const { return static_cast<int>(m_packs.size()); }
+    QString gameVersion() const;
+    QString loaderText() const;
+    bool hasModLoader() const;
+    int selectedRow() const { return m_selectedRow; }
+    void setSelectedRow(int row);
+    QVariantMap selected() const;
+
+    Q_INVOKABLE void search();
+    Q_INVOKABLE void loadMore();
+    /** Installs a version of the project in row; versionIndex -1 picks the newest compatible one. */
+    Q_INVOKABLE void install(int row, int versionIndex = -1);
+    Q_INVOKABLE void openWebsite(int row) const;
+
+   signals:
+    void instanceChanged();
+    void kindChanged();
+    void platformChanged();
+    void queryChanged();
+    void sortIndexChanged();
+    void categoryChanged();
+    void categoriesChanged();
+    void busyChanged();
+    void countChanged();
+    void selectedChanged();
+    void message(const QString& text, bool isError);
+
+   private:
+    const ResourceAPI& api() const;
+    bool isFlame() const { return m_platform == "curseforge"; }
+    void scheduleSearch();
+    void runSearch(bool append);
+    void loadCategories();
+    void loadVersions(int row, std::function<void()> then = {});
+    void startInstall(const ModPlatform::IndexedPack::Ptr& pack, const ModPlatform::IndexedVersion& version);
+    void attachFolder();
+    void refreshInstalled();
+    QString stateOf(const QString& projectId) const;
+    void notifyProject(const QString& projectId);
+    int rowOf(const QString& projectId) const;
+
+    QString m_instanceId;
+    QString m_kind = "mods";
+    QString m_platform = "modrinth";
+    QString m_query;
+    int m_sortIndex = 0;
+    QString m_category;
+    QVariantList m_categories;
+    QPointer<MinecraftInstance> m_instance;
+    QPointer<ResourceFolderModel> m_folder;
+
+    QList<ModPlatform::IndexedPack::Ptr> m_packs;
+    QHash<QString, qint64> m_downloads;
+    int m_offset = 0;
+    bool m_busy = false;
+    bool m_canLoadMore = false;
+    QString m_error;
+    NetJob::Ptr m_searchJob;
+    Task::Ptr m_categoryJob;
+    int m_generation = 0;
+    QTimer m_searchTimer;
+
+    int m_selectedRow = -1;
+    QHash<QString, Task::Ptr> m_versionJobs;  // project id -> running versions request
+    QSet<QString> m_versionErrors;
+
+    QSet<QString> m_installedIds;              // project ids installed in the instance
+    QHash<QString, double> m_installing;       // project id -> progress (-1 = unknown)
+    QHash<QString, Task::Ptr> m_installTasks;  // project id -> running task chain
+};
