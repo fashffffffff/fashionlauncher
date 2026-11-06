@@ -44,7 +44,9 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 - QML mode never shows the classic setup wizard: `createSetupWizard` applies quiet defaults (language = system locale,
   auto Java). App icon: `setWindowIcon(logo())` at shell start, POST_BUILD copies .icns into the build-tree bundle,
   `FashionLauncher.icon` (Icon Composer) rebuilt from our art (compiled only with Xcode 26 actool).
-- UI languages: exactly 15 (en ru es pt_BR de fr it pl uk tr zh_CN ja ko cs id), `i18n/qmlui_<code>.ts`; script
+- UI languages: table of 15 in `LauncherBridge` (en ru es pt_BR de fr it pl uk tr zh_CN ja ko cs id), but
+  `languages()` offers only the `ready` list (en_US, ru) until a .ts is complete. Why: half-English UI looks broken.
+  `i18n/qmlui_<code>.ts`; script
   `launcher/qmlui/i18n/update.sh` re-runs lupdate for all and reports unfinished counts.
 
 ## Commands
@@ -78,6 +80,10 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   Release) is negligible next to Minecraft. Blur renders at 1/4 size to save memory.
 
 ## Current work + Next steps
+- 2026-11-06: all branches merged into try-all (builds, snapshots OK). Pending: Russian 747/1379 untranslated —
+  exported to `/Users/fash/projects/ffprism/translate-ru/ru_todo.json` for Gemini (Antigravity) → `ru_done.json`, apply with
+  `i18n/tsjson.py apply ru <file>`; other 13 languages in progress on branch qml-languages. Release dir `build-release`
+  re-pointed to binary `fashionlauncher`. Still classic: URL import and modpack-import sub-dialogs.
 - Rebranded to Fashion Launcher (binary `fashionlauncher`, app id `io.github.fashffffffff.FashionLauncher`; build
   output `build/fashionlauncher.app`; config `fashionlauncher.cfg` falls back to `prismlauncher.cfg`). Icon from
   Gemini in `program_info/` (source `fashion-icon-source.png`). MSA client ID and CurseForge key are still Prism's —
