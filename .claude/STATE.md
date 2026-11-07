@@ -97,8 +97,12 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 - Visual pass 1 (user: "do it, but with QUALITY"; gradients read as AI slop — never use decorative gradients, no
   glow circles): block buttons (`Style.blockDepth`, `Style.edge()`, face presses down), `Style.inkOn()` auto-contrast,
   stepped hard shadow on the Home title, hotbar slots as blocks, sidebar Create is a neutral block (Play is the only
-  loud button), instance cards without a cover show a staggered pattern of the instance icon. New default theme
-  `themes/fashion.json` (builtin:fashion).
+  loud button), instance cards without a cover show a staggered pattern of the instance icon.
+- Visual pass 2: display font Tektur (Unbounded read as "the font every AI picks"; Unbounded kept only for old themes),
+  house themes `fashion-dark.json` (default, `kDefaultTheme`) and `fashion.json` (light; accent #C42D70 so white ink
+  passes 4.5:1), sorted first in the list; selected hotbar item glows via MultiEffect shadow along its silhouette
+  (user: glow is fine if it looks like real glow, not a flat circle). Next: 12 Gemini wallpapers (anime + Minecraft)
+  generating into `/Users/fash/projects/ffprism/wallgen` → add to `qmlui/wallpapers/wallpapers.json`.
 - Skins fix: `SkinList::update` no longer forces the account's arm model/cape onto the existing entry — saving
   index.json re-triggers update via the folder watcher, so every local slim/cape change was instantly reverted.
 - Running side sessions (worktrees `/Users/fash/projects/ffprism/wt/<branch>`, from try-all): qml-share (pack
