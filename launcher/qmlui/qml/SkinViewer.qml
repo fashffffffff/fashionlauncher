@@ -85,8 +85,10 @@ Item {
             id: player
             visible: skinTex.loaded
             eulerRotation: Qt.vector3d(viewer.pitch, viewer.yaw, 0)
-            // breathing
-            y: Math.sin(viewer.t * 2) * 0.15
+            // Turn around the middle of the body (feet are at 0, head top at 32), not around the feet;
+            // a pivot is placed at the node's position, so lift it by the same amount. Plus breathing.
+            pivot: Qt.vector3d(0, 16, 0)
+            y: 16 + Math.sin(viewer.t * 2) * 0.15
 
             // Head turns at the neck
             Node {
