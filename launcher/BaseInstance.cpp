@@ -45,6 +45,7 @@
 #include <QUuid>
 
 #include "Application.h"
+#include "qmlui/stats/PlayStats.h"
 #include "Json.h"
 #include "launch/LaunchTask.h"
 #include "settings/Setting.h"
@@ -308,6 +309,7 @@ void BaseInstance::setMinecraftRunning(bool running)
         qint64 current = settings()->get("totalTimePlayed").toLongLong();
         settings()->set("totalTimePlayed", current + secondsPlayed);
         settings()->set("lastTimePlayed", secondsPlayed);
+        PlayStats::record(this, m_timeStarted, secondsPlayed);
 
         if (countTimePlayed()) {
             qint64 globalTotal = APPLICATION->playtimeSettings()->get("TotalPlayTime").toLongLong();

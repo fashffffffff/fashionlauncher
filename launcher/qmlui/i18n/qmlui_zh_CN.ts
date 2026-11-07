@@ -1226,6 +1226,18 @@
         <source>Last played %1</source>
         <translation>上次游玩于 %1</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1 分钟</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1 小时 %2 分钟</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 小时</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2074,6 +2086,87 @@
     <message>
         <source>Cancelled.</source>
         <translation>已取消。</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>本周</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>本月</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>总计</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>平均时长</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>当前连续</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n 天</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>最长连续</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>过去 12 个月</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>少</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>多</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>未游玩</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>正在读取旧的游戏日志…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>包含从旧游戏日志恢复的 %n 次会话。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>游玩最多的实例</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>还没有游玩记录。</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>版本与加载器</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>原版</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>已记录 %n 次会话。会话在游戏关闭时保存。</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3080,6 +3173,14 @@
     <message>
         <source>Instances</source>
         <translation>实例</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>所有实例</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>统计</translation>
     </message>
     <message>
         <source>Search instances</source>

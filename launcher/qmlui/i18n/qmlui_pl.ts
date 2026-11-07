@@ -1230,6 +1230,18 @@
         <source>Last played %1</source>
         <translation>Ostatnio grano %1</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1 min</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1 h %2 min</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2092,6 +2104,93 @@
     <message>
         <source>Cancelled.</source>
         <translation>Anulowano.</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>W tym tygodniu</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>W tym miesiącu</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Od początku</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>Średnia sesja</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>Obecna seria</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n dzień</numerusform>
+            <numerusform>%n dni</numerusform>
+            <numerusform>%n dni</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>Najdłuższa seria</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Ostatnie 12 miesięcy</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>Mniej</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Więcej</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>bez gry</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>Czytanie starych logów gry…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>Zawiera %n sesję odzyskaną ze starych logów gry.</numerusform>
+            <numerusform>Zawiera %n sesje odzyskane ze starych logów gry.</numerusform>
+            <numerusform>Zawiera %n sesji odzyskanych ze starych logów gry.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>Najczęściej grane instancje</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>Jeszcze nic nie zagrano.</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>Wersje i loadery</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>Vanilla</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>Zapisano %n sesję. Sesje są zapisywane po zamknięciu gry.</numerusform>
+            <numerusform>Zapisano %n sesje. Sesje są zapisywane po zamknięciu gry.</numerusform>
+            <numerusform>Zapisano %n sesji. Sesje są zapisywane po zamknięciu gry.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3098,6 +3197,14 @@
     <message>
         <source>Instances</source>
         <translation>Instancje</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Wszystkie instancje</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>Statystyki</translation>
     </message>
     <message>
         <source>Search instances</source>

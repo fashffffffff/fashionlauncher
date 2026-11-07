@@ -1226,6 +1226,18 @@
         <source>Last played %1</source>
         <translation>En son %1 oynandı</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1 dk</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1 sa %2 dk</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 sa</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2074,6 +2086,87 @@
     <message>
         <source>Cancelled.</source>
         <translation>İptal edildi.</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>Bu hafta</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Bu ay</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Toplam</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>Ortalama oturum</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>Mevcut seri</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n gün</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>En uzun seri</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Son 12 ay</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>Az</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Çok</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>oynanmadı</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>Eski oyun günlükleri okunuyor…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>Eski oyun günlüklerinden kurtarılan %n oturum dahil.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>En çok oynanan profiller</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>Henüz hiç oynanmadı.</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>Sürümler ve yükleyiciler</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>Vanilla</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>%n oturum kaydedildi. Oturumlar oyun kapandığında kaydedilir.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3080,6 +3173,14 @@
     <message>
         <source>Instances</source>
         <translation>Örnekler</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Tüm profiller</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>İstatistikler</translation>
     </message>
     <message>
         <source>Search instances</source>

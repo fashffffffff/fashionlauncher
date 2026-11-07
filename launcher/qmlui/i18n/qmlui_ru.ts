@@ -1230,6 +1230,18 @@
         <source>Last played %1</source>
         <translation>Последняя игра %1</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1 мин</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1 ч %2 мин</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 ч</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2092,6 +2104,93 @@
     <message>
         <source>Cancelled.</source>
         <translation>Отменено.</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>На этой неделе</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>В этом месяце</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>За всё время</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>Средняя сессия</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>Текущая серия</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n день</numerusform>
+            <numerusform>%n дня</numerusform>
+            <numerusform>%n дней</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>Самая длинная серия</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Последние 12 месяцев</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>Меньше</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Больше</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>не играли</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>Читаем старые логи игры…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>Включая %n сессию, восстановленную из старых логов игры.</numerusform>
+            <numerusform>Включая %n сессии, восстановленные из старых логов игры.</numerusform>
+            <numerusform>Включая %n сессий, восстановленных из старых логов игры.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>Больше всего играли</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>Пока ничего не сыграно.</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>Версии и загрузчики</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>Ванилла</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>Записана %n сессия. Сессии сохраняются, когда игра закрывается.</numerusform>
+            <numerusform>Записано %n сессии. Сессии сохраняются, когда игра закрывается.</numerusform>
+            <numerusform>Записано %n сессий. Сессии сохраняются, когда игра закрывается.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3098,6 +3197,14 @@
     <message>
         <source>Instances</source>
         <translation>Сборки</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Все сборки</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>Статистика</translation>
     </message>
     <message>
         <source>Search instances</source>

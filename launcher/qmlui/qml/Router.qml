@@ -7,6 +7,7 @@ import QtQuick
 QtObject {
     property string section: "home"
     property string selectedId: ""        // instance shown on Home
+    property string instancesTab: "grid"  // Instances page: "grid" | "stats"
     signal goRequested(string page)
     signal openRequested(string page, var params)
     signal backRequested()

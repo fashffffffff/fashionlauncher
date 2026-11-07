@@ -1230,6 +1230,18 @@
         <source>Last played %1</source>
         <translation>Naposledy hráno %1</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1 min</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1 h %2 min</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2092,6 +2104,93 @@
     <message>
         <source>Cancelled.</source>
         <translation>Zrušeno.</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>Tento týden</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tento měsíc</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Celkem</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>Průměrná relace</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>Aktuální série</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n den</numerusform>
+            <numerusform>%n dny</numerusform>
+            <numerusform>%n dní</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>Nejdelší série</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Posledních 12 měsíců</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>Méně</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Více</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>nehráno</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>Čtení starých logů hry…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>Zahrnuje %n relaci obnovenou ze starých logů hry.</numerusform>
+            <numerusform>Zahrnuje %n relace obnovené ze starých logů hry.</numerusform>
+            <numerusform>Zahrnuje %n relací obnovených ze starých logů hry.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>Nejhranější instance</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>Zatím nic nehráno.</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>Verze a loadery</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>Vanilla</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>Zaznamenána %n relace. Relace se ukládají po zavření hry.</numerusform>
+            <numerusform>Zaznamenány %n relace. Relace se ukládají po zavření hry.</numerusform>
+            <numerusform>Zaznamenáno %n relací. Relace se ukládají po zavření hry.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3098,6 +3197,14 @@
     <message>
         <source>Instances</source>
         <translation>Instance</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Všechny instance</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>Statistiky</translation>
     </message>
     <message>
         <source>Search instances</source>

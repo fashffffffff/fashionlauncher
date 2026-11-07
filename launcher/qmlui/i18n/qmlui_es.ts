@@ -1228,6 +1228,18 @@
         <source>Last played %1</source>
         <translation>Jugado por última vez el %1</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1 min</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1 h %2 min</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2083,6 +2095,90 @@
     <message>
         <source>Cancelled.</source>
         <translation>Cancelado.</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>Esta semana</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Este mes</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>En total</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>Sesión media</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>Racha actual</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n día</numerusform>
+            <numerusform>%n días</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>Racha más larga</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Últimos 12 meses</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>Menos</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Más</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>sin jugar</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>Leyendo registros antiguos del juego…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>Incluye %n sesión recuperada de registros antiguos del juego.</numerusform>
+            <numerusform>Incluye %n sesiones recuperadas de registros antiguos del juego.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>Instancias más jugadas</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>Aún no has jugado nada.</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>Versiones y loaders</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>Vanilla</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>%n sesión registrada. Las sesiones se guardan al cerrar el juego.</numerusform>
+            <numerusform>%n sesiones registradas. Las sesiones se guardan al cerrar el juego.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3089,6 +3185,14 @@
     <message>
         <source>Instances</source>
         <translation>Instancias</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Todas las instancias</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>Estadísticas</translation>
     </message>
     <message>
         <source>Search instances</source>

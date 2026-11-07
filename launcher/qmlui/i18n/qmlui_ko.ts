@@ -1226,6 +1226,18 @@
         <source>Last played %1</source>
         <translation>%1에 마지막으로 플레이</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1분</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1시간 %2분</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1시간</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2074,6 +2086,87 @@
     <message>
         <source>Cancelled.</source>
         <translation>취소했어요.</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>이번 주</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>이번 달</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>전체</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>평균 세션</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>현재 연속</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n일</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>최장 연속</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>최근 12개월</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>적음</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>많음</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>플레이 안 함</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>이전 게임 로그 읽는 중…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>이전 게임 로그에서 복구한 세션 %n개 포함.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>가장 많이 플레이한 인스턴스</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>아직 플레이 기록이 없습니다.</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>버전 및 로더</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>바닐라</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>세션 %n개 기록됨. 세션은 게임을 닫을 때 저장됩니다.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3080,6 +3173,14 @@
     <message>
         <source>Instances</source>
         <translation>인스턴스</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>모든 인스턴스</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>통계</translation>
     </message>
     <message>
         <source>Search instances</source>

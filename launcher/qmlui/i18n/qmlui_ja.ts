@@ -1226,6 +1226,18 @@
         <source>Last played %1</source>
         <translation>最終プレイ: %1</translation>
     </message>
+    <message>
+        <source>%1 min</source>
+        <translation>%1 分</translation>
+    </message>
+    <message>
+        <source>%1 h %2 min</source>
+        <translation>%1 時間 %2 分</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 時間</translation>
+    </message>
 </context>
 <context>
     <name>FontPicker</name>
@@ -2074,6 +2086,87 @@
     <message>
         <source>Cancelled.</source>
         <translation>キャンセルしました。</translation>
+    </message>
+</context>
+<context>
+    <name>InstancesStats</name>
+    <message>
+        <source>This week</source>
+        <translation>今週</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>今月</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>累計</translation>
+    </message>
+    <message>
+        <source>Average session</source>
+        <translation>平均プレイ時間</translation>
+    </message>
+    <message>
+        <source>Current streak</source>
+        <translation>現在の連続日数</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n 日</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Longest streak</source>
+        <translation>最長連続日数</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>過去 12 か月</translation>
+    </message>
+    <message>
+        <source>Less</source>
+        <translation>少</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>多</translation>
+    </message>
+    <message>
+        <source>no play</source>
+        <translation>プレイなし</translation>
+    </message>
+    <message>
+        <source>Reading old game logs…</source>
+        <translation>古いゲームログを読み込み中…</translation>
+    </message>
+    <message numerus="yes">
+        <source>Includes %n session(s) recovered from old game logs.</source>
+        <translation>
+            <numerusform>古いゲームログから復元した %n セッションを含みます。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Most played instances</source>
+        <translation>よく遊んだインスタンス</translation>
+    </message>
+    <message>
+        <source>Nothing played yet.</source>
+        <translation>まだプレイしていません。</translation>
+    </message>
+    <message>
+        <source>Versions and loaders</source>
+        <translation>バージョンとローダー</translation>
+    </message>
+    <message>
+        <source>Vanilla</source>
+        <translation>バニラ</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
+        <translation>
+            <numerusform>%n セッションを記録しました。セッションはゲーム終了時に保存されます。</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3080,6 +3173,14 @@
     <message>
         <source>Instances</source>
         <translation>インスタンス</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>すべてのインスタンス</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>統計</translation>
     </message>
     <message>
         <source>Search instances</source>

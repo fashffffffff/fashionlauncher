@@ -24,3 +24,10 @@ function versionLine(inst) {
     const v = inst.gameVersion ? "Minecraft " + inst.gameVersion : ""
     return inst.loader ? v + "  /  " + inst.loader : v
 }
+
+// "2 h 15 min" / "45 min" / "3 h" (no "played" suffix), for statistics.
+function duration(seconds) {
+    const h = Math.floor((seconds || 0) / 3600), m = Math.floor(((seconds || 0) % 3600) / 60)
+    if (h === 0) return qsTr("%1 min").arg(m)
+    return m > 0 ? qsTr("%1 h %2 min").arg(h).arg(m) : qsTr("%1 h").arg(h)
+}
