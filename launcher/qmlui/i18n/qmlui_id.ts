@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>Lanjutkan di %1</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>Lanjutkan: %1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>Mulai game dan langsung masuk ke %1</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>Mulai game langsung di dunia ini</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3074,6 +3093,10 @@
         <source>Back</source>
         <translation>Kembali</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Main dunia…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3132,6 +3155,10 @@
     <message>
         <source>Play</source>
         <translation>Main</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Main dunia…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -3712,6 +3739,33 @@
     <message>
         <source> or </source>
         <translation> atau </translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>Main dunia atau server</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Dunia</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>Server</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>Belum ada dunia atau server. Buat dunia atau tambahkan server di dalam game.</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>Versi Minecraft ini hanya bisa langsung masuk ke server, dan belum ada yang tersimpan. Tambahkan server di dalam game.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
     </message>
 </context>
 <context>

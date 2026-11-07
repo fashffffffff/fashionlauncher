@@ -263,7 +263,20 @@ Item {
                     }
                     ThemedMenu {
                         id: tileMenu
+                        // Quick Play needs a game version that supports it; checked when the menu opens
+                        property bool canQuickPlay: false
+                        onAboutToShow: {
+                            const s = QuickPlay.support(model.instanceId)
+                            canQuickPlay = s.world || s.server
+                        }
                         ThemedMenuItem { text: qsTr("Play"); iconName: "play"; onTriggered: Launcher.launch(model.instanceId) }
+                        ThemedMenuItem {
+                            text: qsTr("Play world…")
+                            iconName: "world"
+                            visible: tileMenu.canQuickPlay
+                            height: visible ? implicitHeight : 0
+                            onTriggered: Router.pickQuickPlay(model.instanceId)
+                        }
                         ThemedMenuItem { text: qsTr("Open"); iconName: "sliders"; onTriggered: Router.openInstance(model.instanceId) }
                         ThemedMenuItem { text: qsTr("Open folder"); iconName: "folder"; onTriggered: Launcher.openInstanceFolder(model.instanceId) }
                         ThemedMenuItem { text: qsTr("Copy instance"); iconName: "copy"; onTriggered: Launcher.copyInstance(model.instanceId) }

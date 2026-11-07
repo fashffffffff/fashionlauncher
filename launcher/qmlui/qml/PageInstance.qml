@@ -128,6 +128,14 @@ Item {
                         font.pixelSize: Style.fontLead
                     }
                 }
+                QuietButton {
+                    readonly property var quickPlay: { Launcher.launches; return QuickPlay.support(page.instanceId) }
+                    visible: quickPlay.world || quickPlay.server
+                    iconName: "world"
+                    tip: qsTr("Play world…")
+                    onClicked: Router.pickQuickPlay(page.instanceId)
+                }
+                ContinueButton { instanceId: page.instanceId; Layout.maximumWidth: Style.px(280) }
                 PlayButton { instanceId: page.instanceId; Layout.preferredWidth: Style.px(200) }
             }
         }

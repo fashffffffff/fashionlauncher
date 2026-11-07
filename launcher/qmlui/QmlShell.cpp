@@ -28,6 +28,7 @@
 #include "dialogs/PromptsBridge.h"
 #include "gallery/GalleryBridge.h"
 #include "network/FriendsBridge.h"
+#include "quickplay/QuickPlayBridge.h"
 #include "servers/ServersBridge.h"
 #include "sharing/SharingBridge.h"
 #include "skins/SkinsBridge.h"
@@ -91,6 +92,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Tools", new ToolsBridge(this));
     ctx->setContextProperty("Skins", new SkinsBridge(this));
     ctx->setContextProperty("Servers", new ServersBridge(this));
+    ctx->setContextProperty("QuickPlay", new QuickPlayBridge(m_launcher, this));
     ctx->setContextProperty("Gallery", new GalleryBridge(this));
     ctx->setContextProperty("Tasks", TaskCenter::instance());
 }

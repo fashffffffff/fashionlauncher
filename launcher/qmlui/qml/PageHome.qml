@@ -23,6 +23,10 @@ Item {
     }
     Component.onCompleted: { if (Instances.filter !== "") Instances.filter = ""; refresh(); forceActiveFocus() }
     Connections {
+        target: Router
+        function onSelectedIdChanged() { if (!page.current || page.current.instanceId !== Router.selectedId) page.refresh() }
+    }
+    Connections {
         target: Instances
         function onCountChanged() { page.refresh() }
         function onDataChanged() { page.refresh() }
@@ -131,6 +135,7 @@ Item {
         spacing: Style.px(10)
 
         PlayButton { instanceId: page.current ? page.current.instanceId : ""; Layout.preferredWidth: Style.px(220) }
+        ContinueButton { instanceId: page.current ? page.current.instanceId : ""; Layout.maximumWidth: Style.px(300) }
         QuietButton { iconName: "cube"; text: qsTr("Mods"); onClicked: Router.openInstance(page.current.instanceId, "mods") }
         QuietButton { iconName: "folder"; text: qsTr("Folder"); onClicked: Launcher.openInstanceFolder(page.current.instanceId) }
         QuietButton { iconName: "sliders"; text: qsTr("Manage"); onClicked: Router.openInstance(page.current.instanceId, "overview") }

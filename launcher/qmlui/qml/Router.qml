@@ -13,6 +13,7 @@ QtObject {
     signal toastRequested(string message, bool isError)
     signal accountsRequested()
     signal paletteRequested()
+    signal quickPlayRequested(string instanceId)
 
     function go(page) { goRequested(page) }
     function open(page, params) { openRequested(page, params || {}) }
@@ -20,5 +21,7 @@ QtObject {
     function toast(message, isError) { toastRequested(message, !!isError) }
     function openAccounts() { accountsRequested() }
     function openPalette() { paletteRequested() }
+    /// "Play world…" picker of an instance (Quick Play)
+    function pickQuickPlay(id) { quickPlayRequested(id) }
     function openInstance(id, tab) { open("instance", { instanceId: id, tab: tab || "overview" }) }
 }

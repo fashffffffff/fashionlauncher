@@ -78,6 +78,11 @@ Item {
         function onJavaDownloadRequested(instanceId) { host.raiseWindow(); javaDlg.openFor(instanceId) }
     }
     ExportDialog { id: exportDlg }
+    QuickPlayDialog { id: quickPlayDlg }
+    Connections {
+        target: Router
+        function onQuickPlayRequested(instanceId) { quickPlayDlg.openFor(instanceId) }
+    }
 
     // ---- generic question, also used for Prompts "ask"
     ConfirmDialog { id: confirm }

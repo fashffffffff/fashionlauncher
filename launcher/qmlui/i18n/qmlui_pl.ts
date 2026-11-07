@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>Kontynuuj na %1</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>Kontynuuj: %1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>Uruchom grę i od razu dołącz do %1</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>Uruchom grę od razu w tym świecie</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3092,6 +3111,10 @@
         <source>Back</source>
         <translation>Wstecz</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Graj w świecie…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3150,6 +3173,10 @@
     <message>
         <source>Play</source>
         <translation>Graj</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Graj w świecie…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -3740,6 +3767,33 @@
     <message>
         <source> or </source>
         <translation> lub </translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>Świat lub serwer</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Światy</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>Serwery</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>Nie ma jeszcze światów ani serwerów. Utwórz świat lub dodaj serwer w grze.</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>Ta wersja Minecrafta może od razu dołączać tylko do serwerów, a żaden nie jest jeszcze zapisany. Dodaj serwer w grze.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
     </message>
 </context>
 <context>

@@ -1,14 +1,18 @@
 // SPDX-License-Identifier: GPL-3.0-only
 #pragma once
 
+#include <QHash>
 #include <QObject>
 #include <QPointer>
 #include <QVariantMap>
 
 #include "QObjectPtr.h"
 
+#include <memory>
+
 class LaunchController;
 class Task;
+struct MinecraftTarget;
 
 /**
  * Actions the QML shell can trigger: launching, killing, folders, settings.
@@ -60,6 +64,9 @@ class LauncherBridge : public QObject {
     Q_INVOKABLE void finishOnboarding();
 
     Q_INVOKABLE bool launch(const QString& id, bool offline = false);
+    /// Launch once straight into a world or server (Quick Play); the instance's own settings stay untouched.
+    /// The target survives a launch held by pre-launch checks, so "Play anyway" still goes there.
+    bool launchTo(const QString& id, std::shared_ptr<MinecraftTarget> target);
     Q_INVOKABLE void kill(const QString& id);
     Q_INVOKABLE void openInstanceFolder(const QString& id) const;
     Q_INVOKABLE void openScreenshotsFolder(const QString& id) const;
@@ -106,6 +113,7 @@ class LauncherBridge : public QObject {
     void clearLaunch(const QString& id);
 
     QVariantMap m_launches;
+    QHash<QString, std::shared_ptr<MinecraftTarget>> m_pendingTargets;
     QVariantMap m_logShare;
     shared_qobject_ptr<class NetJob> m_logJob;
 };

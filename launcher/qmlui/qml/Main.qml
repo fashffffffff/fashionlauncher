@@ -33,6 +33,8 @@ ApplicationWindow {
             Qt.createComponent("ShareDialog.qml").createObject(win, { instanceId: name.slice(6), destroyOnClose: true }).open()
         }
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
+        else if (name.startsWith("home:")) { Router.selectedId = name.slice(5); Router.go("home") }
+        else if (name.startsWith("quickplay:")) Router.pickQuickPlay(name.slice(10))
         else if (name.startsWith("dialog:")) { const d = name.split(":"); Launcher.dialogRequested(d[1], d[2]) }
         else if (name === "java") Settings.downloadJava("")
         else if (name.startsWith("launch:")) Launcher.launch(name.slice(7))
