@@ -3354,6 +3354,10 @@
         <translation>ネットワーク</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>ストレージ</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>詳細設定</translation>
     </message>
@@ -4623,6 +4627,245 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>ワールド</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>Mod とパック</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>ゲームファイル</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>スクリーンショット</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>ログとキャッシュ</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>その他</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>未使用のゲームライブラリ</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>どのインスタンスも使っていない Minecraft のバージョン、ローダー、ライブラリ。必要になれば再ダウンロードされます。</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>未使用のゲームアセット</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>どのインスタンスも使っていない Minecraft バージョンのサウンドと翻訳。</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>ダウンロードキャッシュ</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>高速化のために保存している Modpack アーカイブ、アイコンなどのダウンロード。</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>古いログとクラッシュレポート</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>%n 日より古いもの（すべてのインスタンスとランチャー）。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>残りファイル</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>インスタンス内のバックアップ（.bak）と未完了の一時ファイル。</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>複数のインスタンスにある同じ Mod</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>共有ストアでディスク上に 1 つだけ保持します。何も削除されません。</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>古いスナップショット</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>各インスタンスの最新 5 件を超えるスナップショットと、もう不要なストアのファイル。</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>すべてのインスタンスのすべてのスクリーンショット。元に戻せません。</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>確認できません：「%1」のゲームバージョンが完全にダウンロードされていません。一度起動してから再スキャンしてください。</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>確認できません：アセットリスト「%1」がダウンロードされていません。それを使うインスタンスを一度起動してから再スキャンしてください。</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>%1 を解放しました。%n 個のファイルを削除できませんでした。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>%1 を解放しました</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>ディスク容量</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>%1 がこのコンピューターに保存しているもの。ここでワールドが削除されることはありません。</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>計測中…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>合計</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>再計測</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>空き容量を増やす</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>消去するものを選んでください。行を開くと削除されるファイルを確認できます。</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>ログを古いとみなす期間</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n 日</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>スクリーンショットも対象にする</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>オンにするまでオフです。スクリーンショットはあなたのもので、元に戻せません。</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>ファイルを隠す</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>%n 個のファイルを表示</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>なし</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…ほか %n 件</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>削除したものは元に戻せません。ゲームファイルは必要なときに再ダウンロードされます。</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>解放中…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>%1 を解放</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>解放できるものはありません</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>%n 個のファイル</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>削除したものは元に戻せません。</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>同じ Mod は削除せずにリンクします：何も失われません。</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>%1 を解放しますか？</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>削除</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>ファイルをリンク</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5067,6 +5310,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>スキンをリセットできませんでした。</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>先にゲームを終了してください：実行中のゲームのファイルは消去できません。</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>他のジョブの完了を待ってください：これらのフォルダーにダウンロード中の可能性があります。</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>ディスク容量を計測中</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>ディスク容量を解放中</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>フォルダーを計測中…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>未使用のゲームファイルを検索中…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>インスタンス間の Mod を比較中…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>同じファイルをストアにリンク中…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>古いスナップショットを削除中…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>ファイルを削除中…</translation>
     </message>
 </context>
 <context>

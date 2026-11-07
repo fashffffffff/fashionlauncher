@@ -3354,6 +3354,10 @@
         <translation>Ağ</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>Depolama</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Gelişmiş</translation>
     </message>
@@ -4623,6 +4627,245 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Dünyalar</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>Modlar ve paketler</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>Oyun dosyaları</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>Ekran görüntüleri</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>Günlükler ve önbellek</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Diğer</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>Kullanılmayan oyun kütüphaneleri</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>Hiçbir kurulumun kullanmadığı Minecraft sürümleri, yükleyiciler ve kütüphaneler. Bir kurulum ihtiyaç duyarsa yeniden indirilir.</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>Kullanılmayan oyun varlıkları</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>Hiçbir kurulumun kullanmadığı Minecraft sürümlerinin sesleri ve çevirileri.</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>İndirme önbelleği</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>Hız için saklanan mod paketi arşivleri, simgeler ve diğer indirmeler.</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>Eski günlükler ve çökme raporları</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>%n günden eski, tüm kurulumlardan ve başlatıcıdan.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>Artık dosyalar</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>Kurulumlardaki yedekler (.bak) ve yarım kalmış geçici dosyalar.</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>Birden çok kurulumdaki aynı modlar</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>Ortak depo sayesinde diskte tek kez tutulur. Hiçbir şey silinmez.</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>Eski anlık görüntüler</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>Her kurulumun son 5 anlık görüntüsünün ötesindekiler ve artık hiçbir şeyin ihtiyaç duymadığı depo dosyaları.</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>Tüm kurulumların tüm ekran görüntüleri. Geri getirilemezler.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>Kontrol edilemiyor: “%1” oyun sürümü tam indirilmemiş. Bir kez başlatın, sonra yeniden tarayın.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>Kontrol edilemiyor: “%1” varlık listesi indirilmemiş. Onu kullanan kurulumları bir kez başlatın, sonra yeniden tarayın.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>%1 boşaltıldı. %n dosya kaldırılamadı.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>%1 boşaltıldı</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>Disk alanı</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>%1 uygulamasının bu bilgisayarda tuttukları. Dünyalar burada asla kaldırılmaz.</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>Ölçülüyor…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>toplam</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>Yeniden ölç</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>Yer aç</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>Neyin temizleneceğini seçin. Hangi dosyaların gideceğini görmek için bir satırı açın.</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>Günlükler eski sayılır:</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n gün sonra</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>Ekran görüntülerini de öner</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>Siz açana kadar kapalı. Ekran görüntüleri sizindir ve geri getirilemez.</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>Dosyaları gizle</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>%n dosyayı göster</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>Hiçbir şey</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…ve %n tane daha</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>Kaldırılanlar geri getirilemez. Oyun dosyaları gerektiğinde yeniden indirilir.</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>Yer açılıyor…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>%1 yer aç</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>Açılacak yer yok</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>%n dosya</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>Kaldırılanlar geri getirilemez.</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>Aynı modlar silinmez, bağlanır: hiçbir şey kaybolmaz.</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>%1 yer açılsın mı?</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Kaldır</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>Dosyaları bağla</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5067,6 +5310,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>Skin sıfırlanamadı.</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>Önce oyunu kapatın: çalışan bir oyunun dosyaları temizlenemez.</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>Diğer işlerin bitmesini bekleyin: bu klasörlere indirme yapıyor olabilirler.</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>Disk alanı ölçülüyor</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>Disk alanı boşaltılıyor</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>Klasörler ölçülüyor…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>Kullanılmayan oyun dosyaları aranıyor…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>Kurulumlardaki modlar karşılaştırılıyor…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>Aynı dosyalar depoda bağlanıyor…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>Eski anlık görüntüler kaldırılıyor…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>Dosyalar kaldırılıyor…</translation>
     </message>
 </context>
 <context>

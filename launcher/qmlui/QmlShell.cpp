@@ -32,6 +32,7 @@
 #include "sharing/SharingBridge.h"
 #include "skins/SkinsBridge.h"
 #include "store/StoreBridge.h"
+#include "storage/StorageBridge.h"
 #include "tools/ToolsBridge.h"
 #include "qmlui/jobs/TaskCenter.h"
 #include "settings/SettingsObject.h"
@@ -88,6 +89,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Sharing", new SharingBridge(this));
     ctx->setContextProperty("Friends", new FriendsBridge(this));
     ctx->setContextProperty("Store", new StoreBridge(this));
+    ctx->setContextProperty("Storage", new StorageBridge(this));
     ctx->setContextProperty("Tools", new ToolsBridge(this));
     ctx->setContextProperty("Skins", new SkinsBridge(this));
     ctx->setContextProperty("Servers", new ServersBridge(this));

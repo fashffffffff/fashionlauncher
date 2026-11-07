@@ -3354,6 +3354,10 @@
         <translation>网络</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>存储</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>高级</translation>
     </message>
@@ -4623,6 +4627,245 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>世界</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>模组和资源包</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>游戏文件</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>截图</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>日志和缓存</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>其他</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>未使用的游戏库</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>没有任何实例使用的 Minecraft 版本、加载器和库。实例需要时会重新下载。</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>未使用的游戏资源</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>没有任何实例使用的 Minecraft 版本的声音和翻译。</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>下载缓存</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>为加快速度而保留的整合包压缩包、图标和其他下载内容。</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>旧日志和崩溃报告</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>超过 %n 天，来自所有实例和启动器。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>残留文件</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>实例中的备份（.bak）和未完成的临时文件。</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>多个实例中的相同模组</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>通过共享存储在磁盘上只保留一份。不会删除任何内容。</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>旧快照</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>每个实例最近 5 个之外的快照，以及不再被需要的存储文件。</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>所有实例的全部截图。删除后无法恢复。</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>无法检查：“%1”的游戏版本尚未完整下载。请先启动一次，然后重新扫描。</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>无法检查：资源列表“%1”尚未下载。请先启动一次使用它的实例，然后重新扫描。</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>已释放 %1。有 %n 个文件无法删除。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>已释放 %1</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>磁盘空间</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>%1 在这台电脑上保存的内容。这里永远不会删除世界。</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>正在计算…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>总计</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>重新计算</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>释放空间</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>选择要清理的内容。展开一行即可查看具体会删除哪些文件。</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>日志视为旧日志的时间</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n 天</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>同时提供截图</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>除非你开启，否则保持关闭。截图属于你，删除后无法恢复。</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>隐藏文件</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>显示 %n 个文件</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>无</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…以及另外 %n 个</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>删除的内容无法恢复。游戏文件会在需要时重新下载。</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>正在释放…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>释放 %1</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>没有可释放的空间</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>%n 个文件</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>删除的内容无法恢复。</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>相同的模组会被链接而不是删除：不会丢失任何内容。</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>释放 %1？</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>链接文件</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5067,6 +5310,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>无法重置皮肤。</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>请先关闭游戏：正在运行的游戏的文件无法清理。</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>请等待其他任务完成：它们可能正在向这些文件夹下载。</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>正在计算磁盘空间</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>正在释放磁盘空间</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>正在测量文件夹…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>正在查找未使用的游戏文件…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>正在比较各实例的模组…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>正在将相同文件链接到存储…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>正在删除旧快照…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>正在删除文件…</translation>
     </message>
 </context>
 <context>

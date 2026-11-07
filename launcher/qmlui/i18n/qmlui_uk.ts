@@ -3382,6 +3382,10 @@
         <translation>Мережа</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>Сховище</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Розширені</translation>
     </message>
@@ -4657,6 +4661,257 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 ГБ</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 МБ</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 КБ</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 Б</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Світи</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>Моди й паки</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>Файли гри</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>Знімки екрана</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>Логи й кеш</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Інше</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>Невикористані бібліотеки гри</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>Версії Minecraft, завантажувачі та бібліотеки, які не потрібні жодній збірці. Якщо знадобляться, завантажаться знову.</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>Невикористані ресурси гри</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>Звуки й переклади версій Minecraft, які не потрібні жодній збірці.</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>Кеш завантажень</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>Архіви модпаків, іконки та інші завантаження, збережені для швидкості.</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>Старі логи та звіти про збої</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>Старші за %n день, з усіх збірок і лаунчера.</numerusform>
+            <numerusform>Старші за %n дні, з усіх збірок і лаунчера.</numerusform>
+            <numerusform>Старші за %n днів, з усіх збірок і лаунчера.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>Залишки</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>Резервні копії (.bak) і недокачані тимчасові файли у збірках.</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>Однакові моди в кількох збірках</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>Зберігаються на диску один раз через спільне сховище. Нічого не видаляється.</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>Старі знімки</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>Знімки понад останні 5 у кожної збірки та файли сховища, які більше нікому не потрібні.</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>Усі знімки екрана всіх збірок. Повернути їх буде неможливо.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>Не перевірити: версію гри «%1» завантажено не повністю. Запустіть її один раз і перевірте знову.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>Не перевірити: список ресурсів «%1» не завантажено. Запустіть один раз збірки, які його використовують, і перевірте знову.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>Звільнено %1. Не вдалося видалити %n файл.</numerusform>
+            <numerusform>Звільнено %1. Не вдалося видалити %n файли.</numerusform>
+            <numerusform>Звільнено %1. Не вдалося видалити %n файлів.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>Звільнено %1</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>Місце на диску</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>Що %1 зберігає на цьому комп’ютері. Світи тут ніколи не видаляються.</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>Рахуємо…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>усього</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>Порахувати знову</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>Звільнити місце</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>Виберіть, що прибрати. Розгорніть рядок, щоб побачити, які саме файли буде видалено.</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>Лог вважається старим через</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n день</numerusform>
+            <numerusform>%n дні</numerusform>
+            <numerusform>%n днів</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>Пропонувати й знімки екрана</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>Вимкнено, доки ви самі не ввімкнете. Знімки екрана — ваші, повернути їх буде неможливо.</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>Сховати файли</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>Показати %n файл</numerusform>
+            <numerusform>Показати %n файли</numerusform>
+            <numerusform>Показати %n файлів</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>Порожньо</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…і ще %n</numerusform>
+            <numerusform>…і ще %n</numerusform>
+            <numerusform>…і ще %n</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>Видалене не повернути. Файли гри завантажаться знову, коли знадобляться.</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>Звільняємо…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>Звільнити %1</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>Нічого звільняти</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>%n файл</numerusform>
+            <numerusform>%n файли</numerusform>
+            <numerusform>%n файлів</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>Видалене не повернути.</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>Однакові моди зв’язуються, а не видаляються: нічого не втрачається.</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>Звільнити %1?</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Видалити</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>Зв’язати файли</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5111,6 +5366,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>Не вдалося скинути скін.</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>Спочатку закрийте гру: файли запущеної гри чистити не можна.</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>Дочекайтеся завершення інших завдань: вони можуть завантажувати файли в ці теки.</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>Підрахунок місця на диску</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>Звільнення місця на диску</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>Вимірюємо теки…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>Шукаємо непотрібні файли гри…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>Порівнюємо моди у збірках…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>Зв’язуємо однакові файли через сховище…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>Видаляємо старі знімки…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>Видаляємо файли…</translation>
     </message>
 </context>
 <context>

@@ -3354,6 +3354,10 @@
         <translation>Jaringan</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>Penyimpanan</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Lanjutan</translation>
     </message>
@@ -4623,6 +4627,245 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Dunia</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>Mod dan paket</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>File game</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>Tangkapan layar</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>Log dan cache</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Lainnya</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>Pustaka game yang tidak dipakai</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>Versi Minecraft, loader, dan pustaka yang tidak dipakai instans mana pun. Akan diunduh lagi jika sebuah instans membutuhkannya.</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>Aset game yang tidak dipakai</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>Suara dan terjemahan versi Minecraft yang tidak dipakai instans mana pun.</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>Cache unduhan</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>Arsip modpack, ikon, dan unduhan lain yang disimpan agar lebih cepat.</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>Log lama dan laporan crash</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>Lebih dari %n hari, dari semua instans dan launcher.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>File sisa</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>Cadangan (.bak) dan file sementara yang belum selesai di dalam instans.</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>Mod yang sama di beberapa instans</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>Disimpan sekali saja di disk lewat penyimpanan bersama. Tidak ada yang dihapus.</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>Snapshot lama</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>Snapshot di luar 5 terakhir tiap instans, dan file tersimpan yang tidak dibutuhkan lagi.</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>Semua tangkapan layar dari semua instans. Tidak bisa dikembalikan.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>Tidak bisa diperiksa: versi game “%1” belum terunduh penuh. Jalankan sekali, lalu pindai lagi.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>Tidak bisa diperiksa: daftar aset “%1” belum terunduh. Jalankan sekali instans yang memakainya, lalu pindai lagi.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>%1 dikosongkan. %n file tidak bisa dihapus.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>%1 dikosongkan</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>Ruang disk</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>Yang disimpan %1 di komputer ini. Dunia tidak pernah dihapus di sini.</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>Mengukur…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>total</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>Ukur lagi</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>Kosongkan ruang</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>Pilih yang ingin dibersihkan. Buka satu baris untuk melihat file mana saja yang akan dihapus.</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>Log dianggap lama setelah</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n hari</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>Tawarkan juga tangkapan layar</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>Mati sampai Anda menyalakannya. Tangkapan layar milik Anda dan tidak bisa dikembalikan.</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>Sembunyikan file</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>Tampilkan %n file</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>Tidak ada</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…dan %n lainnya</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>Yang dihapus tidak bisa dikembalikan. File game diunduh lagi saat dibutuhkan.</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>Mengosongkan…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>Kosongkan %1</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>Tidak ada yang bisa dikosongkan</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>%n file</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>Yang dihapus tidak bisa dikembalikan.</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>Mod yang sama ditautkan, bukan dihapus: tidak ada yang hilang.</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>Kosongkan %1?</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hapus</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>Tautkan file</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5067,6 +5310,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>Tidak bisa mereset skin.</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>Tutup game dulu: file game yang sedang berjalan tidak bisa dibersihkan.</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>Tunggu tugas lain selesai: mungkin sedang mengunduh ke folder ini.</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>Mengukur ruang disk</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>Mengosongkan ruang disk</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>Mengukur folder…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>Mencari file game yang tidak dipakai…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>Membandingkan mod antar instans…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>Menautkan file yang sama ke penyimpanan…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>Menghapus snapshot lama…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>Menghapus file…</translation>
     </message>
 </context>
 <context>

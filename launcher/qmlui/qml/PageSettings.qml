@@ -14,6 +14,7 @@ Item {
         { id: "java", icon: "cube", label: qsTr("Java and memory") },
         { id: "game", icon: "play", label: qsTr("Game") },
         { id: "network", icon: "globe", label: qsTr("Network") },
+        { id: "storage", icon: "folder", label: qsTr("Storage") },
         { id: "advanced", icon: "sliders", label: qsTr("Advanced") }
     ]
     readonly property var current: sections.find(s => s.id === section) || sections[0]
@@ -94,7 +95,7 @@ Item {
 
             Loader {
                 width: Math.min(scroll.availableWidth, Style.px(760))
-                sourceComponent: ({ launcher: launcherPane, java: javaPane, game: gamePane, network: networkPane, advanced: advancedPane })[page.current.id]
+                sourceComponent: ({ launcher: launcherPane, java: javaPane, game: gamePane, network: networkPane, storage: storagePane, advanced: advancedPane })[page.current.id]
             }
         }
     }
@@ -228,6 +229,16 @@ Item {
         ColumnLayout {
             spacing: Style.px(16)
             SettingsAdvanced {}
+            Item { implicitHeight: Style.px(16) }
+        }
+    }
+
+    // ---- Storage ----
+    Component {
+        id: storagePane
+        ColumnLayout {
+            spacing: Style.px(16)
+            SettingsStorage {}
             Item { implicitHeight: Style.px(16) }
         }
     }
