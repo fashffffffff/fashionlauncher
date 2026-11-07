@@ -23,6 +23,22 @@
       "tags": [
         "minecraft"
       ]
+    },
+    {
+      "id": "mangrove-dusk",
+      "title": "Mangrove dusk",
+      "file": "mangrove-dusk.jpg",
+      "tags": [
+        "minecraft"
+      ]
+    },
+    {
+      "id": "ocean-monument",
+      "title": "Ocean monument",
+      "file": "ocean-monument.jpg",
+      "tags": [
+        "minecraft"
+      ]
     }
   ]
 }
