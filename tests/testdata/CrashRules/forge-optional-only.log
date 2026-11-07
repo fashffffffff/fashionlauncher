@@ -1,0 +1,15 @@
+[28Feb2025 18:12:07.877] [main/WARN] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Unsupported installed optional dependencies:
+	Mod ID: 'jei', Requested by: 'appleskin', Expected range: '[15.0,)', Actual version: '11.6.0.1018'
+	Mod ID: 'cloth_config', Requested by: 'appleskin', Expected range: '[12,)', Actual version: '[MISSING]'
+[28Feb2025 18:13:10.002] [Render thread/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID 1a2b
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 2025-02-28 18:13:10
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:60) ~[forge-1.20.1-47.2.0-universal.jar%23192!/:?] {re:classloading}
+	at TRANSFORMER/create@0.5.1.f/com.simibubi.create.content.kinetics.KineticNetwork.update(KineticNetwork.java:88) ~[create-1.20.1-0.5.1.f.jar%23196!/:0.5.1.f] {re:classloading}
+	at TRANSFORMER/flywheel@0.6.10/com.jozufozu.flywheel.backend.Backend.refresh(Backend.java:40) ~[flywheel-forge-1.20.1-0.6.10.jar%23180!/:0.6.10] {re:mixin}
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23190!/:?] {re:classloading}

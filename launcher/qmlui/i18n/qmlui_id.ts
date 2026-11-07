@@ -664,6 +664,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>Ini tidak bisa dipasang otomatis.</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>Modrinth tidak punya mod dengan id “%1”. Cari di tab mod.</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>Instance sudah tidak ada.</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>File ini tidak punya alamat unduhan.</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>Pasang ulang %1</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>“%1” diunduh ulang.</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>Memasang ulang %1</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>Kenapa “%1” berhenti</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>“%1” berhenti tiba-tiba</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>Log menyebutkan penyebabnya secara langsung. Baris asalnya dikutip di bawah.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>Penyebab pastinya tidak bisa ditentukan. Di bawah ini bagian log tempat error dimulai — berguna bagi siapa pun yang memeriksanya.</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>%1 butuh %2, yang belum terpasang</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1 dibuat untuk versi Minecraft lain</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>%1 butuh versi lain dari %2</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1 menolak dimuat bersama %2</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1 terpasang lebih dari sekali</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>Sebuah mod terpasang lebih dari sekali</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>Game kehabisan memori</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java tidak bisa mendapatkan memori yang diberikan</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>Komputer kehabisan memori untuk Java</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>Versi ini hanya berjalan di Java %1</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>Dibutuhkan Java %1 atau lebih baru</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>Driver grafis tidak bisa menjalankan Minecraft</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>File %1 rusak</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>Dibutuhkan: %1.</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>versi apa pun</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>Dibutuhkan: %1. Terpasang: %2.</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>Pembuatnya menandai kombinasi ini sebagai tidak berfungsi, jadi mod loader berhenti. Hapus salah satunya atau cari pembaruan.</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>Simpan satu saja dari: %1.</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>Simpan satu salinan saja di folder mod.</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>Memori maksimum sekarang: %1 GB. Disarankan untuk instance ini di komputer ini: %2 GB.</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>Memori maksimum %1 GB — lebih dari yang bisa diberikan komputer ini atau Java 32-bit.</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>Tutup program lain, atau beri game lebih sedikit memori agar sistem tetap punya cukup.</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>Game dijalankan dengan Java %1.</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>Java yang dipakai untuk menjalankan game terlalu lama untuknya.</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>Pasang driver terbaru dari pembuat kartu grafis Anda. Di laptop dengan dua GPU, jalankan game di GPU terpisah.</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>File itu sudah tidak ada di folder mod.</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>Tidak bisa dibuka sebagai arsip — biasanya unduhan yang terputus.</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>Pasang %1</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>Buka mod</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>Naikkan ke %1 GB</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>Turunkan ke %1 GB</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>Gunakan Java %1</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>Unduh Java %1</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>Unduh ulang</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>Pindahkan ke Tempat Sampah</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>Memori maksimum sudah sama dengan atau di atas yang disarankan untuk komputer ini. Hapus beberapa mod berat atau tutup program lain.</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>Memori maksimum sekarang %1 GB.</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>Instance ini sekarang memakai Java %1.</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>Dipindahkan ke Tempat Sampah. Pasang ulang mod dari tab mod.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>Gagal memindahkan file.</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Disalin.</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>Dari log:</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Sedang diproses…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>Cari di mod</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>Cuplikan log</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>Mod yang disebut dalam error (%1)</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>Mod ini muncul di stack trace. Itu tidak berarti mereka penyebab crash: di modpack besar, mod yang disebut dalam error sering kali bukan biang masalahnya.</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>Tautan disalin: %1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>Log akan diunggah ke %1 dan tautannya disalin. Jalur folder berisi nama pengguna dan token login Anda disembunyikan.</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>Mengunggah…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>Unggah</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Salin</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>Buka log lengkap</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>Bagikan log</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Tutup</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -5305,6 +5575,10 @@
     <message>
         <source>Errors</source>
         <translation>Galat</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Kenapa crash?</translation>
     </message>
     <message>
         <source>Copy the log</source>

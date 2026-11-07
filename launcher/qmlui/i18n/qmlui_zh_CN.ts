@@ -664,6 +664,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>无法自动安装。</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>Modrinth 上没有 id 为“%1”的模组。请在模组标签页中搜索。</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>该实例已不存在。</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>此文件没有下载地址。</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>重新安装 %1</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>已重新下载“%1”。</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>正在重新安装 %1</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>“%1”为什么停止了</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>“%1”意外停止</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>日志直接写明了原因。出处的日志行引用如下。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>无法确定确切原因。下面是日志中错误开始的部分，可帮助排查的人。</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>%1 需要 %2，但未安装</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1 是为其他 Minecraft 版本制作的</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>%1 需要另一个版本的 %2</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1 拒绝与 %2 一同加载</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1 安装了不止一次</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>有模组安装了不止一次</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>游戏内存不足</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java 无法获得分配给它的内存</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>电脑没有足够内存供 Java 使用</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>此版本只能在 Java %1 上运行</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>需要 Java %1 或更高版本</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>显卡驱动无法运行 Minecraft</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>文件 %1 已损坏</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>需要：%1。</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>任意版本</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>需要：%1。已安装：%2。</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>作者已将此组合标记为不可用，因此模组加载器停止了。请移除其中一个，或查找更新。</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>只保留其中一个：%1。</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>模组文件夹中只保留一份。</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>当前最大内存：%1 GB。此实例在本机上的推荐值：%2 GB。</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>最大内存为 %1 GB——超出了这台电脑或 32 位 Java 能提供的量。</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>关闭其他程序，或给游戏分配更少内存，让系统留有足够空间。</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>游戏是用 Java %1 启动的。</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>启动游戏所用的 Java 版本太旧。</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>请从显卡厂商处安装最新驱动。在双显卡笔记本上，请用独立显卡运行游戏。</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>它已不在模组文件夹中。</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>无法作为压缩包打开——通常是下载中断导致。</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>安装 %1</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>打开模组</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>提高到 %1 GB</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>降低到 %1 GB</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>使用 Java %1</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>下载 Java %1</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>重新下载</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>移到废纸篓</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>最大内存已达到或超过本机的推荐值。请移除一些大型模组或关闭其他程序。</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>最大内存现在为 %1 GB。</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>此实例现在使用 Java %1。</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>已移到废纸篓。请在模组标签页中重新安装该模组。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>无法移动文件。</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>已复制。</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>日志原文：</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>处理中…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>在模组中搜索</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>日志片段</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>错误中提到的模组（%1）</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>它们出现在堆栈跟踪中。这并不代表是它们导致了崩溃：在大型整合包中，错误里提到的模组往往不是罪魁祸首。</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>链接已复制：%1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>日志将上传到 %1 并复制链接。包含你的用户名的文件夹路径和登录令牌会被隐藏。</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>正在上传…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>上传</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>打开完整日志</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>分享日志</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -5305,6 +5575,10 @@
     <message>
         <source>Errors</source>
         <translation>错误</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>为什么崩溃了？</translation>
     </message>
     <message>
         <source>Copy the log</source>

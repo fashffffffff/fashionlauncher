@@ -14,7 +14,9 @@ Button {
     readonly property color ink: danger ? Style.danger : Style.text
 
     implicitHeight: Style.px(40)
-    implicitWidth: text.length ? row.implicitWidth + Style.px(28) : implicitHeight
+    // From the parts' natural sizes, not row.implicitWidth: the label is clamped to the row's width, so a button
+    // laid out while hidden (width 0) would otherwise stay icon-sized.
+    implicitWidth: text.length ? (btnIcon.visible ? btnIcon.width + Style.px(8) : 0) + btnText.implicitWidth + Style.px(28) : implicitHeight
     padding: 0
     hoverEnabled: true
     focusPolicy: Qt.StrongFocus
@@ -41,7 +43,6 @@ Button {
         id: row
         spacing: Style.px(8)
         anchors.centerIn: parent
-        width: Math.min(implicitWidth, Math.max(0, parent.width - Style.px(16)))
         Icon {
             id: btnIcon
             visible: control.iconName.length > 0
@@ -59,7 +60,7 @@ Button {
             font.pixelSize: Style.fontBody
             font.weight: Font.Medium
             anchors.verticalCenter: parent.verticalCenter
-            width: Math.min(implicitWidth, Math.max(0, row.width - (btnIcon.visible ? btnIcon.width + row.spacing : 0)))
+            width: Math.min(implicitWidth, Math.max(0, control.availableWidth - Style.px(16) - (btnIcon.visible ? btnIcon.width + row.spacing : 0)))
             elide: Text.ElideRight
         }
       }

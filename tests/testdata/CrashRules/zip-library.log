@@ -1,0 +1,3 @@
+Caused by: java.util.zip.ZipException: invalid LOC header (bad signature)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:1036)
+	at org.example.Loader.read(/home/me/.local/share/PrismLauncher/libraries/com/google/guava/guava/31.1/guava-31.1-jre.jar)

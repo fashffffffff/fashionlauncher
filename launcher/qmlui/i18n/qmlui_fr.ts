@@ -664,6 +664,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>Impossible de l’installer automatiquement.</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>Modrinth n’a aucun mod avec l’identifiant « %1 ». Cherchez-le dans l’onglet des mods.</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>L’instance n’existe plus.</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>Ce fichier n’a pas d’adresse de téléchargement.</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>Réinstaller %1</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>« %1 » a été retéléchargé.</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>Réinstallation de %1</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>Pourquoi « %1 » s’est arrêtée</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>« %1 » s’est arrêtée de façon inattendue</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>Le journal indique directement la cause. Les lignes concernées sont citées ci-dessous.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>Impossible de déterminer la cause exacte. Voici la partie du journal où l’erreur commence : elle aidera la personne qui s’en occupera.</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>%1 a besoin de %2, qui n’est pas installé</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1 est conçu pour une autre version de Minecraft</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>%1 a besoin d’une autre version de %2</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1 refuse de se charger avec %2</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1 est installé plusieurs fois</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>Un mod est installé plusieurs fois</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>Le jeu a manqué de mémoire</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java n’a pas pu obtenir la mémoire attribuée</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>L’ordinateur a manqué de mémoire pour Java</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>Cette version ne fonctionne qu’avec Java %1</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>Java %1 ou plus récent est requis</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>Le pilote graphique ne peut pas faire tourner Minecraft</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>Le fichier %1 est endommagé</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>Requis : %1.</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>n’importe quelle version</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>Requis : %1. Installé : %2.</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>Son auteur a marqué cette combinaison comme incompatible, le chargeur de mods s’est donc arrêté. Retirez l’un des deux ou cherchez des mises à jour.</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>Gardez-en un seul : %1.</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>Gardez une seule copie dans le dossier des mods.</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>Mémoire max actuelle : %1 Go. Recommandé pour cette instance sur cet ordinateur : %2 Go.</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>La mémoire max est de %1 Go, plus que ce que cet ordinateur ou un Java 32 bits peut fournir.</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>Fermez d’autres programmes ou donnez moins de mémoire au jeu pour que le système en garde assez.</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>Le jeu a été lancé avec Java %1.</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>Le Java utilisé pour lancer le jeu est trop ancien.</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>Installez le dernier pilote du fabricant de votre carte graphique. Sur les portables à deux GPU, lancez le jeu sur le GPU dédié.</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>Il n’est plus dans le dossier des mods.</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>Il ne s’ouvre pas comme une archive, généralement un téléchargement interrompu.</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>Installer %1</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>Ouvrir les mods</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>Passer à %1 Go</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>Réduire à %1 Go</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>Utiliser Java %1</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>Télécharger Java %1</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>Retélécharger</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>Mettre à la corbeille</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>La mémoire max atteint déjà ou dépasse la valeur recommandée pour cet ordinateur. Retirez quelques mods lourds ou fermez d’autres programmes.</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>La mémoire max est maintenant de %1 Go.</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>Cette instance utilise maintenant Java %1.</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>Mis à la corbeille. Réinstallez le mod depuis l’onglet des mods.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>Impossible de déplacer le fichier.</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Copié.</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>Extrait du journal :</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>En cours…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>Chercher dans les mods</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>Extrait du journal</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>Mods mentionnés dans l’erreur (%1)</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>Ils apparaissent dans la trace de pile. Cela ne veut pas dire qu’ils ont causé le plantage : dans les gros modpacks, les mods cités dans une erreur ne sont souvent pas en cause.</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>Lien copié : %1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>Le journal sera envoyé sur %1 et le lien copié. Les chemins contenant votre nom d’utilisateur et les jetons de connexion sont masqués.</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>Envoi…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>Envoyer</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copier</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>Ouvrir le journal complet</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>Partager le journal</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Fermer</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -5334,6 +5604,10 @@
     <message>
         <source>Errors</source>
         <translation>Erreurs</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Pourquoi ça a planté ?</translation>
     </message>
     <message>
         <source>Copy the log</source>

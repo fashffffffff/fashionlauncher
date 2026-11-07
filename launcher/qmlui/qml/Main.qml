@@ -35,6 +35,8 @@ ApplicationWindow {
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
         else if (name.startsWith("dialog:")) { const d = name.split(":"); Launcher.dialogRequested(d[1], d[2]) }
         else if (name === "java") Settings.downloadJava("")
+        // Crash doctor on a log file: crash:<instanceId>:<path>
+        else if (name.startsWith("crash:")) { const c = name.split(":"); if (Doctor.analyzeFile(c[1], c.slice(2).join(":"))) Launcher.dialogRequested("crash", c[1]) }
         else if (name.startsWith("launch:")) Launcher.launch(name.slice(7))
         // Preview of a launch question (answers go nowhere): prompt:ask | prompt:account | prompt:name
         else if (name.startsWith("prompt:")) Prompts.requested({ id: -1, kind: name.slice(7), title: "Preview", name: "Player",

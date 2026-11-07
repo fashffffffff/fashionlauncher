@@ -1,0 +1,8 @@
+[28Feb2025 18:12:01.344] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--username, Player]
+[28Feb2025 18:12:07.877] [main/WARN] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Unsupported installed optional dependencies:
+	Mod ID: 'jei', Requested by: 'appleskin', Expected range: '[15.0,)', Actual version: '11.6.0.1018'
+[28Feb2025 18:12:07.878] [main/ERROR] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+	Mod ID: 'architectury', Requested by: 'roughlyenoughitems', Expected range: '[9.1.12,)', Actual version: '[MISSING]'
+	Mod ID: 'minecraft', Requested by: 'create', Expected range: '[1.20.1,1.20.2)', Actual version: '1.20.4'
+	Mod ID: 'java', Requested by: 'sodiumextras', Expected range: '[21,)', Actual version: '17.0.8'
+[28Feb2025 18:12:08.002] [main/INFO] [net.minecraftforge.fml.loading.ModLoader/LOADING]: Something else

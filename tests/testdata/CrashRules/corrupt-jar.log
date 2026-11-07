@@ -1,0 +1,3 @@
+[12:00:00] [main/ERROR]: Uncaught exception in thread "main"
+java.lang.RuntimeException: Error analyzing [/Users/me/Library/Application Support/PrismLauncher/instances/Pack/minecraft/mods/sodium-fabric-0.5.8+mc1.20.1.jar]: java.util.zip.ZipException: zip END header not found
+	at net.fabricmc.loader.impl.discovery.ModDiscoverer.discoverMods(ModDiscoverer.java:172)
