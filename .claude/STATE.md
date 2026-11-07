@@ -98,7 +98,7 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   glow circles): block buttons (`Style.blockDepth`, `Style.edge()`, face presses down), `Style.inkOn()` auto-contrast,
   stepped hard shadow on the Home title, hotbar slots as blocks, sidebar Create is a neutral block (Play is the only
   loud button), instance cards without a cover show a staggered pattern of the instance icon.
-- Visual pass 2: display font Tektur (Unbounded read as "the font every AI picks"; Unbounded kept only for old themes),
+- Visual pass 2: display font Dela Gothic One (user's pick; Unbounded read as "the font every AI picks"; Tektur and Unbounded stay selectable),
   house themes `fashion-dark.json` (default, `kDefaultTheme`) and `fashion.json` (light; accent #C42D70 so white ink
   passes 4.5:1), sorted first in the list; selected hotbar item glows via MultiEffect shadow along its silhouette
   (user: glow is fine if it looks like real glow, not a flat circle). Next: 12 Gemini wallpapers (anime + Minecraft)
