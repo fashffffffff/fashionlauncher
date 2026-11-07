@@ -26,6 +26,24 @@ QtObject {
     readonly property real radius: sh.radius
     readonly property real slotRadius: sh.slotRadius
     readonly property real slotSize: sh.slotSize
+    readonly property bool dark: Theme.dark
+    // Block language: important buttons are physical blocks with a visible lower face that press down.
+    // Themes can flatten it with "shape": { "blockDepth": 0 }.
+    readonly property real blockDepth: px(sh.blockDepth !== undefined ? sh.blockDepth : 5)
+    // The lower face of a block of colour c: same hue, much darker (like the shaded side of a Minecraft block)
+    function edge(c) { return Qt.darker(c, dark ? 1.9 : 1.35) }
+    // Relative luminance (WCAG) and the more readable of two inks on a fill
+    function lum(c) {
+        const q = Qt.lighter(c, 1.0)
+        const f = v => v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4)
+        return 0.2126 * f(q.r) + 0.7152 * f(q.g) + 0.0722 * f(q.b)
+    }
+    function contrast(a, b) { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05) }
+    // The theme's preferred ink, unless it is hard to read on this fill (user themes get this wrong)
+    function inkOn(fillColor, preferred) {
+        if (contrast(fillColor, preferred) >= 4.5) return preferred
+        return contrast(fillColor, "#FFFFFF") >= contrast(fillColor, "#111111") ? "#FFFFFF" : "#111111"
+    }
 
     readonly property string display: ty.display
     readonly property string ui: ty.ui

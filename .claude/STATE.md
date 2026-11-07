@@ -94,6 +94,11 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   must be replaced before any public release.
 - 2026-11-07: `main` = everything (all feature branches, 15 languages 100%, CI for Linux/Windows), pushed to
   github.com/fashffffffff/fashionlauncher. Build dirs were wiped; debug is re-configured from scratch in `build/`.
+- Visual pass 1 (user: "do it, but with QUALITY"; gradients read as AI slop — never use decorative gradients, no
+  glow circles): block buttons (`Style.blockDepth`, `Style.edge()`, face presses down), `Style.inkOn()` auto-contrast,
+  stepped hard shadow on the Home title, hotbar slots as blocks, sidebar Create is a neutral block (Play is the only
+  loud button), instance cards without a cover show a staggered pattern of the instance icon. New default theme
+  `themes/fashion.json` (builtin:fashion).
 - Skins fix: `SkinList::update` no longer forces the account's arm model/cape onto the existing entry — saving
   index.json re-triggers update via the folder watcher, so every local slim/cape change was instantly reverted.
 - Running side sessions (worktrees `/Users/fash/projects/ffprism/wt/<branch>`, from try-all): qml-share (pack

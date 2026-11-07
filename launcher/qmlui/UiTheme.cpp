@@ -21,7 +21,7 @@ namespace {
 const QString kBuiltinPrefix = QStringLiteral("builtin:");
 const QString kUserPrefix = QStringLiteral("user:");
 const QString kBuiltinDir = QStringLiteral(":/qmlui/themes");
-const QString kDefaultTheme = QStringLiteral("builtin:deepslate");
+const QString kDefaultTheme = QStringLiteral("builtin:fashion");
 const QString kPersonalFile = QStringLiteral("_personal.json");
 const QStringList kLayoutSections = { "shape", "type", "layout", "motion" };
 

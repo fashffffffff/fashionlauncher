@@ -161,12 +161,32 @@ Item {
                                 maskThresholdMin: 0.5
                                 maskSpreadAtMin: 1.0
                             }
+                            // No picture yet: a quiet pattern of the instance's own icon, staggered like bricks,
+                            // so every card keeps its own colours instead of a generic wash.
                             Rectangle {
+                                id: pattern
                                 anchors.fill: parent
-                                gradient: Gradient {
-                                    orientation: Gradient.Horizontal
-                                    GradientStop { position: 0; color: Style.mix(Style.surfaceHi, Style.accent, 0.35) }
-                                    GradientStop { position: 1; color: Style.mix(Style.surface, Style.accent, 0.12) }
+                                color: Style.surfaceHi
+                                visible: coverImg.status !== Image.Ready
+                                clip: true
+                                readonly property real cell: Style.px(30)
+                                readonly property real gap: Style.px(16)
+                                Repeater {
+                                    model: pattern.visible ? Math.ceil(pattern.width / (pattern.cell + pattern.gap) + 1) * 3 : 0
+                                    delegate: Image {
+                                        required property int index
+                                        readonly property int perRow: Math.ceil(pattern.width / (pattern.cell + pattern.gap) + 1)
+                                        readonly property int row: Math.floor(index / perRow)
+                                        readonly property int col: index % perRow
+                                        x: col * (pattern.cell + pattern.gap) - (row % 2 ? (pattern.cell + pattern.gap) / 2 : 0) + Style.px(8)
+                                        y: row * (pattern.cell + Style.px(6)) - Style.px(8)
+                                        width: pattern.cell
+                                        height: pattern.cell
+                                        source: model.icon
+                                        sourceSize: Qt.size(64, 64)
+                                        smooth: false
+                                        opacity: 0.32
+                                    }
                                 }
                             }
                             Image {

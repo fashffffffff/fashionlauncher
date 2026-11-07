@@ -10,7 +10,7 @@ PrimaryButton {
     iconName: phase === "running" ? "stop" : phase === "launching" ? "" : "play"
     progress: phase === "launching" ? state.progress : undefined
     fill: phase === "running" ? Style.surfaceHi : Style.accent
-    ink: phase === "running" ? Style.text : Style.onAccent
+    ink: phase === "running" ? Style.text : Style.inkOn(Style.accent, Style.onAccent)
     sound: phase === "" ? "launch" : "click"
     onClicked: {
         if (!instanceId) return

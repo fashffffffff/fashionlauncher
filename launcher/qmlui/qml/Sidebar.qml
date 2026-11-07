@@ -201,6 +201,9 @@ Rectangle {
             implicitHeight: Style.px(42)
             text: bar.compact ? "" : qsTr("Create instance")
             iconName: "plus"
+            // a neutral block: Play stays the only loud button on the screen
+            fill: Style.surfaceHi
+            ink: Style.text
             Accessible.name: qsTr("Create instance")
             onClicked: Router.open("create")
         }

@@ -52,18 +52,37 @@ Item {
             muted: true
             font.pixelSize: Style.fontLead
         }
-        Text {
+        // The instance name, set like a title screen: a hard stepped shadow (no blur), the way Minecraft draws text
+        Item {
             Layout.fillWidth: true
-            text: page.current ? page.current.name : ""
-            color: Style.text
-            font.family: Style.display
-            font.pixelSize: Style.fontHero
-            font.weight: Font.DemiBold
-            font.letterSpacing: -0.5
-            lineHeight: 1.05
-            wrapMode: Text.WordWrap
-            maximumLineCount: 2
-            elide: Text.ElideRight
+            implicitHeight: title.implicitHeight + titleShadow.step
+            Text {
+                id: titleShadow
+                readonly property real step: Math.max(2, Math.round(Style.fontHero / 16))
+                x: step; y: step
+                width: title.width
+                text: title.text
+                font: title.font
+                lineHeight: title.lineHeight
+                wrapMode: title.wrapMode
+                maximumLineCount: title.maximumLineCount
+                elide: title.elide
+                color: Style.dark ? Qt.rgba(0, 0, 0, 0.55) : Style.alpha(Style.accent, 0.28)
+            }
+            Text {
+                id: title
+                width: parent.width
+                text: page.current ? page.current.name : ""
+                color: Style.text
+                font.family: Style.display
+                font.pixelSize: Style.fontHero
+                font.weight: Font.DemiBold
+                font.letterSpacing: -0.5
+                lineHeight: 1.05
+                wrapMode: Text.WordWrap
+                maximumLineCount: 2
+                elide: Text.ElideRight
+            }
         }
         RowLayout {
             spacing: Style.px(28)

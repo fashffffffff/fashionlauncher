@@ -12,8 +12,13 @@ AbstractButton {
     property string tip
     onClicked: Sounds.play("click")
 
+    readonly property real depth: Math.round(Style.blockDepth * 0.8)
+    // the selected block stands up; the rest sit lower, showing less of their side
+    readonly property real lift: selected ? 0 : (hovered ? depth * 0.35 : depth * 0.6)
     width: Style.slotSize * Style.scale
-    height: width
+    height: width + depth
+    topPadding: lift
+    bottomPadding: depth - lift
     hoverEnabled: true
     focusPolicy: Qt.NoFocus
     Accessible.name: tip
@@ -21,13 +26,25 @@ AbstractButton {
     ToolTip.text: tip
     ToolTip.delay: 300
 
-    background: Rectangle {
-        radius: Style.slotRadius
-        color: slot.selected ? Style.alpha(Style.surfaceHi, 0.92)
-             : slot.hovered ? Style.alpha(Style.surfaceHi, 0.75) : Style.alpha(Style.surface, 0.7)
-        border.width: slot.selected ? 3 : 1
-        border.color: slot.selected ? Style.text : Style.alpha(Style.text, 0.1)
-        Behavior on color { ColorAnimation { duration: Style.dur(120) } }
+    background: Item {
+        Rectangle {
+            anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
+            height: parent.height - slot.depth
+            radius: Style.slotRadius
+            color: slot.selected ? Style.edge(Style.accent) : Style.alpha(Style.edge(Style.surfaceHi), 0.85)
+        }
+        Rectangle {
+            y: slot.lift
+            width: parent.width
+            height: parent.height - slot.depth
+            radius: Style.slotRadius
+            color: slot.selected ? Style.mix(Style.surfaceHi, Style.accent, 0.16)
+                 : slot.hovered ? Style.alpha(Style.surfaceHi, 0.9) : Style.alpha(Style.surface, 0.82)
+            border.width: slot.selected ? 2 : 1
+            border.color: slot.selected ? Style.accent : Style.alpha(Style.text, 0.1)
+            Behavior on y { NumberAnimation { duration: Style.dur(110); easing.type: Easing.OutCubic } }
+            Behavior on color { ColorAnimation { duration: Style.dur(120) } }
+        }
     }
     contentItem: Item {
         Image {
