@@ -1936,6 +1936,174 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>Instance sumber sudah tidak ada.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>Tidak bisa mencadangkan %1</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>Tidak bisa menulis %1</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Salin pengaturan game</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Pengaturan Minecraft sendiri: kontrol, video, suara. Mod dan dunia tidak berubah.</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>Belum ada yang tersimpan</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>%n tombol</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>sensitivitas %1%</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>jarak render %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>skala GUI otomatis</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>skala GUI %1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>FOV %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>shader: %1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>volume utama %1%</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>%n pengaturan</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>%n bagian skin ditampilkan</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>Tidak ada yang diubah: game sedang berjalan.</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>Tidak ada yang perlu diubah: pengaturannya sudah sama.</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>Pengaturan disalin ke “%1”.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>Pengaturan disalin ke %n instance.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Urungkan</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>Pengaturan sebelumnya sudah kembali.</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>Beberapa file tidak bisa dipulihkan. Cadangannya ada di sebelahnya (.bak).</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Dari</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Ke</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>“%1” belum punya pengaturan game. Mainkan sekali, atur sesukamu, lalu salin.</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>Kontrol</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Video</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>Suara</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>Obrolan dan aksesibilitas</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>Bahasa dan skin</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Lainnya</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>Tombol akan dikonversi antara format lama (1.12 dan sebelumnya) dan format baru.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>%n tombol tidak punya padanan di versi lain dan akan dilewati.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>Sedang berjalan, tidak akan diubah: %1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>File saat ini dicadangkan dulu, dan kamu bisa mengurungkannya tepat setelah menyalin.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Salin pengaturan</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2074,6 +2242,23 @@
     <message>
         <source>Cancelled.</source>
         <translation>Dibatalkan.</translation>
+    </message>
+</context>
+<context>
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Pilih instance</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Semua instance</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n instance</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3144,6 +3329,14 @@
     <message>
         <source>Copy instance</source>
         <translation>Salin instans</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>Salin pengaturan dari…</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>Terapkan pengaturan ini ke semua instance</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5450,6 +5643,10 @@
     <message>
         <source>Copy instance</source>
         <translation>Salin instans</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Pengaturan game</translation>
     </message>
     <message>
         <source>Export</source>

@@ -1950,6 +1950,184 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>Instance, ze které se kopíruje, už neexistuje.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>Nepodařilo se zálohovat %1</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>Nepodařilo se zapsat %1</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Přenést nastavení hry</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Nastavení samotného Minecraftu: ovládání, grafika, zvuk. Módy a světy zůstanou beze změny.</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>Zatím nic uloženo</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>%n klávesa</numerusform>
+            <numerusform>%n klávesy</numerusform>
+            <numerusform>%n kláves</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>citlivost %1 %</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>dohled %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>měřítko rozhraní automaticky</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>měřítko rozhraní %1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>FOV %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>shadery: %1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>celková hlasitost %1 %</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>%n nastavení</numerusform>
+            <numerusform>%n nastavení</numerusform>
+            <numerusform>%n nastavení</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>zobrazena %n část skinu</numerusform>
+            <numerusform>zobrazeny %n části skinu</numerusform>
+            <numerusform>zobrazeno %n částí skinu</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>Nic se nezměnilo: hra právě běží.</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>Není co měnit: nastavení už jsou stejná.</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>Nastavení přenesena do „%1“.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>Nastavení přenesena do %n instance.</numerusform>
+            <numerusform>Nastavení přenesena do %n instancí.</numerusform>
+            <numerusform>Nastavení přenesena do %n instancí.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Vrátit zpět</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>Předchozí nastavení jsou zpět.</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>Některé soubory se nepodařilo obnovit. Zálohy jsou vedle nich (.bak).</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Odkud</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Kam</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>„%1“ zatím nemá nastavení hry. Jednou si zahrajte, nastavte podle sebe a pak přeneste.</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>Ovládání</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Grafika</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>Zvuk</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>Chat a přístupnost</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>Jazyk a skin</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Ostatní</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>Přiřazení kláves se převedou mezi starým (1.12 a starší) a novým formátem.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>%n přiřazení nemá v jiné verzi obdobu a bude přeskočeno.</numerusform>
+            <numerusform>%n přiřazení nemají v jiné verzi obdobu a budou přeskočena.</numerusform>
+            <numerusform>%n přiřazení nemá v jiné verzi obdobu a budou přeskočena.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>Právě běží, nezmění se: %1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>Aktuální soubory se nejdřív zálohují a hned po přenosu to lze vrátit.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Přenést nastavení</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2092,6 +2270,25 @@
     <message>
         <source>Cancelled.</source>
         <translation>Zrušeno.</translation>
+    </message>
+</context>
+<context>
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Vyberte instanci</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Všechny instance</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n instance</numerusform>
+            <numerusform>%n instance</numerusform>
+            <numerusform>%n instancí</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3162,6 +3359,14 @@
     <message>
         <source>Copy instance</source>
         <translation>Kopírovat instanci</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>Přenést nastavení z…</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>Použít toto nastavení pro všechny instance</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5510,6 +5715,10 @@
     <message>
         <source>Copy instance</source>
         <translation>Kopírovat instanci</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Nastavení hry</translation>
     </message>
     <message>
         <source>Export</source>

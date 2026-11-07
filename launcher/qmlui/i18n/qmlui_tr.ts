@@ -1936,6 +1936,174 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>Kopyalanacak örnek artık yok.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>%1 yedeklenemedi</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>%1 yazılamadı</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Oyun ayarlarını aktar</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Minecraft&apos;ın kendi ayarları: kontroller, görüntü, ses. Modlar ve dünyalar olduğu gibi kalır.</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>Henüz kayıtlı bir şey yok</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>%n tuş</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>hassasiyet %%1</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>görüş mesafesi %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>arayüz ölçeği otomatik</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>arayüz ölçeği %1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>FOV %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>gölgelendiriciler: %1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>ana ses %%1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>%n ayar</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>%n kostüm parçası görünür</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>Hiçbir şey değişmedi: oyun çalışıyor.</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>Değiştirilecek bir şey yok: ayarlar zaten aynı.</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>Ayarlar “%1” örneğine aktarıldı.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>Ayarlar %n örneğe aktarıldı.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Geri al</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>Önceki ayarlar geri geldi.</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>Bazı dosyalar geri yüklenemedi. Yedekler yanlarında (.bak).</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Kaynak</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Hedef</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>“%1” örneğinin henüz oyun ayarı yok. Bir kez oyna, istediğin gibi ayarla, sonra aktar.</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>Kontroller</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Görüntü</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>Ses</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>Sohbet ve erişilebilirlik</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>Dil ve kostüm</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Diğer</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>Tuş atamaları eski (1.12 ve öncesi) ile yeni biçim arasında dönüştürülecek.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>%n tuş atamasının diğer sürümde karşılığı yok ve atlanacak.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>Şu anda çalışıyor, değişmeyecek: %1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>Mevcut dosyalar önce yedeklenir ve aktarımdan hemen sonra geri alabilirsin.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Ayarları aktar</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2074,6 +2242,23 @@
     <message>
         <source>Cancelled.</source>
         <translation>İptal edildi.</translation>
+    </message>
+</context>
+<context>
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Bir örnek seç</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Tüm örnekler</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n örnek</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3144,6 +3329,14 @@
     <message>
         <source>Copy instance</source>
         <translation>Örneği kopyala</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>Ayarları şuradan al…</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>Bu ayarları tüm örneklere uygula</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5450,6 +5643,10 @@
     <message>
         <source>Copy instance</source>
         <translation>Örneği kopyala</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Oyun ayarları</translation>
     </message>
     <message>
         <source>Export</source>

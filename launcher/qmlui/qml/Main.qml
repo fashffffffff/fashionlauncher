@@ -33,6 +33,8 @@ ApplicationWindow {
             Qt.createComponent("ShareDialog.qml").createObject(win, { instanceId: name.slice(6), destroyOnClose: true }).open()
         }
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
+        // Copy game settings: gameopts:<source>[:<target or *>]
+        else if (name.startsWith("gameopts:")) { const g = name.split(":"); Router.copyGameOptions({ source: g[1], target: g[2] || "" }) }
         else if (name.startsWith("dialog:")) { const d = name.split(":"); Launcher.dialogRequested(d[1], d[2]) }
         else if (name === "java") Settings.downloadJava("")
         else if (name.startsWith("launch:")) Launcher.launch(name.slice(7))
@@ -52,6 +54,7 @@ ApplicationWindow {
         function onOpenRequested(page, params) { stack.push(win.pageFiles[page], { params: params }) }
         function onBackRequested() { if (stack.depth > 1) stack.pop() }
         function onToastRequested(message, isError) { toastBox.show(message, isError) }
+        function onToastActionRequested(message, actionText, action) { toastBox.show(message, false, actionText, action) }
         function onAccountsRequested() { accounts.open() }
     }
     Connections {
@@ -182,10 +185,15 @@ ApplicationWindow {
     Rectangle {
         id: toastBox
         property bool isError: false
-        function show(message, error) { toastText.text = message; isError = error; opacity = 1; hideTimer.restart() }
+        property var action: null
+        function show(message, error, actionText, action) {
+            toastText.text = message; isError = error
+            toastAction.text = actionText || ""; toastBox.action = action || null
+            opacity = 1; hideTimer.restart()
+        }
         anchors { right: parent.right; bottom: parent.bottom; margins: Style.px(28) }
-        width: Math.min(Style.px(420), toastText.implicitWidth + Style.px(32))
-        height: toastText.implicitHeight + Style.px(24)
+        width: Math.min(Style.px(460), toastRow.implicitWidth + Style.px(32))
+        height: Math.max(toastText.implicitHeight, toastAction.visible ? toastAction.implicitHeight : 0) + Style.px(24)
         radius: Style.radius
         color: Style.surface
         border.width: 1
@@ -194,13 +202,26 @@ ApplicationWindow {
         visible: opacity > 0
         z: 100
         Behavior on opacity { NumberAnimation { duration: Style.dur(180) } }
-        Txt {
-            id: toastText
-            anchors { fill: parent; margins: Style.px(12); leftMargin: Style.px(16); rightMargin: Style.px(16) }
-            wrapMode: Text.WordWrap
-            elide: Text.ElideNone
-        }
-        Timer { id: hideTimer; interval: toastBox.isError ? 8000 : 3500; onTriggered: toastBox.opacity = 0 }
         TapHandler { onTapped: toastBox.opacity = 0 }
+        RowLayout {
+            id: toastRow
+            anchors { fill: parent; margins: Style.px(12); leftMargin: Style.px(16); rightMargin: toastAction.visible ? Style.px(8) : Style.px(16) }
+            spacing: Style.px(12)
+            Txt {
+                id: toastText
+                Layout.fillWidth: true
+                Layout.maximumWidth: Style.px(460) - Style.px(32) - (toastAction.visible ? toastAction.implicitWidth + Style.px(12) : 0)
+                wrapMode: Text.WordWrap
+                elide: Text.ElideNone
+            }
+            QuietButton {
+                id: toastAction
+                visible: text.length > 0
+                implicitHeight: Style.px(34)
+                iconName: "refresh"
+                onClicked: { const a = toastBox.action; toastBox.opacity = 0; toastBox.action = null; if (a) a() }
+            }
+        }
+        Timer { id: hideTimer; interval: toastBox.isError ? 8000 : toastBox.action ? 9000 : 3500; onTriggered: toastBox.opacity = 0 }
     }
 }

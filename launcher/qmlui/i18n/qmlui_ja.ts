@@ -1936,6 +1936,174 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>コピー元のインスタンスが見つかりません。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>%1 をバックアップできませんでした</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>%1 を書き込めませんでした</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>ゲーム設定をコピー</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Minecraft 本体の設定：操作、ビデオ、サウンド。Mod とワールドはそのままです。</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>まだ何も保存されていません</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>キー %n 個</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>感度 %1%</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>描画距離 %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>GUI サイズ 自動</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>GUI サイズ %1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>視野角 %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>シェーダー：%1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>マスター音量 %1%</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>設定 %n 件</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>スキンパーツ %n 個を表示</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>変更なし：ゲームが起動中です。</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>変更なし：設定はすでに同じです。</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>設定を「%1」にコピーしました。</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>設定を %n 個のインスタンスにコピーしました。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>元に戻す</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>以前の設定に戻しました。</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>一部のファイルを復元できませんでした。バックアップはその横にあります（.bak）。</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>コピー元</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>コピー先</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>「%1」にはまだゲーム設定がありません。一度プレイして好みに設定してからコピーしてください。</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>ビデオ</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>サウンド</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>チャットとアクセシビリティ</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>言語とスキン</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>その他</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>キー割り当ては旧形式（1.12 以前）と新形式の間で変換されます。</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>キー割り当て %n 個は別バージョンに対応がないためスキップされます。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>起動中のため変更されません：%1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>現在のファイルは先にバックアップされ、コピー直後に元に戻せます。</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>設定をコピー</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2074,6 +2242,23 @@
     <message>
         <source>Cancelled.</source>
         <translation>キャンセルしました。</translation>
+    </message>
+</context>
+<context>
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>インスタンスを選択</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>すべてのインスタンス</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n 個のインスタンス</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -3144,6 +3329,14 @@
     <message>
         <source>Copy instance</source>
         <translation>インスタンスをコピー</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>設定のコピー元を選択…</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>この設定をすべてのインスタンスに適用</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5450,6 +5643,10 @@
     <message>
         <source>Copy instance</source>
         <translation>インスタンスを複製</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>ゲーム設定</translation>
     </message>
     <message>
         <source>Export</source>
