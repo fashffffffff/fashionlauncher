@@ -1,0 +1,32 @@
+{
+    "name": "Fashion Dark",
+    "author": "Fashion Launcher",
+    "dark": true,
+    "colors": {
+        "bg": "#221A2B",
+        "surface": "#2D2338",
+        "surfaceHi": "#3B2E49",
+        "line": "#4D3D5C",
+        "text": "#F7EEF6",
+        "textMuted": "#B9A8C2",
+        "accent": "#F0549B",
+        "onAccent": "#2B0718",
+        "danger": "#FF6B6B",
+        "success": "#5CD6A0",
+        "scrim": "#221A2B"
+    },
+    "shape": {
+        "radius": 12,
+        "slotRadius": 10,
+        "blockDepth": 5
+    },
+    "background": {
+        "dim": 0.5,
+        "blur": 28
+    },
+    "layout": {
+        "panelStyle": "glass",
+        "panelOpacity": 0.72,
+        "heroSize": 60
+    }
+}

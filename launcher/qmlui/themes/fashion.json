@@ -1,19 +1,19 @@
 {
     "name": "Fashion",
     "author": "Fashion Launcher",
-    "dark": true,
+    "dark": false,
     "colors": {
-        "bg": "#221A2B",
-        "surface": "#2D2338",
-        "surfaceHi": "#3B2E49",
-        "line": "#4D3D5C",
-        "text": "#F7EEF6",
-        "textMuted": "#B9A8C2",
-        "accent": "#F0549B",
-        "onAccent": "#2B0718",
-        "danger": "#FF6B6B",
-        "success": "#5CD6A0",
-        "scrim": "#221A2B"
+        "bg": "#F6F1F7",
+        "surface": "#FFFFFF",
+        "surfaceHi": "#EFE5F0",
+        "line": "#DCCDDF",
+        "text": "#24172C",
+        "textMuted": "#57465F",
+        "accent": "#C42D70",
+        "onAccent": "#FFFFFF",
+        "danger": "#C8323C",
+        "success": "#23885A",
+        "scrim": "#F6F1F7"
     },
     "shape": {
         "radius": 12,
@@ -21,12 +21,12 @@
         "blockDepth": 5
     },
     "background": {
-        "dim": 0.5,
+        "dim": 0.42,
         "blur": 28
     },
     "layout": {
         "panelStyle": "glass",
-        "panelOpacity": 0.72,
+        "panelOpacity": 0.8,
         "heroSize": 60
     }
 }

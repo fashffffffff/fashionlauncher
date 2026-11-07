@@ -47,7 +47,7 @@ RowLayout {
                 ScrollBar.vertical: ScrollBar {}
                 // Bundled faces first, then everything installed on this computer
                 model: {
-                    const bundled = ["Unbounded", "Golos Text"]
+                    const bundled = ["Tektur", "Golos Text", "Unbounded"]
                     const all = bundled.concat(Qt.fontFamilies().filter(f => bundled.indexOf(f) < 0 && !f.startsWith(".")))
                     const q = filter.text.toLowerCase()
                     return q ? all.filter(f => f.toLowerCase().indexOf(q) >= 0) : all

@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Effects
 
 // One hotbar slot. Mirrors the in-game hotbar: a square cell, the selected one framed.
 AbstractButton {
@@ -56,6 +57,19 @@ AbstractButton {
             sourceSize: Qt.size(width * 2, height * 2)
             smooth: false   // keep pixel-art icons crisp
             scale: slot.selected ? 1.08 : 1
+            // The selected item glows along its own silhouette, like an enchanted item in the hotbar
+            layer.enabled: slot.selected
+            layer.effect: MultiEffect {
+                shadowEnabled: true
+                shadowColor: Qt.lighter(Style.accent, 1.25)
+                shadowBlur: 1.0
+                blurMax: 40
+                shadowScale: 1.22
+                shadowOpacity: Style.dark ? 1.0 : 0.75
+                shadowHorizontalOffset: 0
+                shadowVerticalOffset: 0
+                autoPaddingEnabled: true
+            }
             Behavior on scale { NumberAnimation { duration: Style.dur(140); easing.type: Easing.OutBack } }
         }
         Icon {

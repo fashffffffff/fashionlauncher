@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 #include "UiTheme.h"
+#include <algorithm>
 
 #include <QDir>
 #include <cmath>
@@ -21,7 +22,7 @@ namespace {
 const QString kBuiltinPrefix = QStringLiteral("builtin:");
 const QString kUserPrefix = QStringLiteral("user:");
 const QString kBuiltinDir = QStringLiteral(":/qmlui/themes");
-const QString kDefaultTheme = QStringLiteral("builtin:fashion");
+const QString kDefaultTheme = QStringLiteral("builtin:fashion-dark");
 const QString kPersonalFile = QStringLiteral("_personal.json");
 const QStringList kLayoutSections = { "shape", "type", "layout", "motion" };
 
@@ -281,6 +282,11 @@ void UiTheme::reloadThemes()
         }
     };
     addDir(kBuiltinDir, kBuiltinPrefix);
+    // The house themes lead the list: Fashion Dark (the default), then Fashion
+    std::stable_sort(list.begin(), list.end(), [](const QVariant& a, const QVariant& b) {
+        auto rank = [](const QString& id) { return id == "builtin:fashion-dark" ? 0 : id == "builtin:fashion" ? 1 : 2; };
+        return rank(a.toMap().value("id").toString()) < rank(b.toMap().value("id").toString());
+    });
     addDir(m_userDir, kUserPrefix);
     m_themes = list;
 

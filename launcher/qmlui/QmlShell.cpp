@@ -40,6 +40,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
 {
     static bool fontsLoaded = false;
     if (!fontsLoaded) {
+        QFontDatabase::addApplicationFont(":/qmlui/fonts/Tektur.ttf");
         QFontDatabase::addApplicationFont(":/qmlui/fonts/Unbounded.ttf");
         QFontDatabase::addApplicationFont(":/qmlui/fonts/GolosText.ttf");
         QFontDatabase::addApplicationFont(":/qmlui/fonts/PixelifySans.ttf");
