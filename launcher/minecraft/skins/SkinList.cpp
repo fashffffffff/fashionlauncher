@@ -112,10 +112,9 @@ bool SkinList::update()
                 newSkins << s;
                 needsSave = true;
             }
-        } else {
-            nskin->setCapeId(m_acct->accountData()->minecraftProfile.currentCape);
-            nskin->setModel(skin.variant.toUpper() == "SLIM" ? SkinModel::SLIM : SkinModel::CLASSIC);
         }
+        // An existing entry keeps what the user picked locally (arm model, cape). Forcing the account's values here
+        // undid every change, because saving index.json itself triggers this reload through the folder watcher.
     }
 
     auto folderContents = m_dir.entryInfoList();

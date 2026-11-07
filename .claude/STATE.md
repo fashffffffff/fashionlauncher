@@ -92,8 +92,10 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   output `build/fashionlauncher.app`; config `fashionlauncher.cfg` falls back to `prismlauncher.cfg`). Icon from
   Gemini in `program_info/` (source `fashion-icon-source.png`). MSA client ID and CurseForge key are still Prism's —
   must be replaced before any public release.
-- Branch `try-all` (local only): everything so far + stub bridges for the 7 running sessions. Not pushed; user hasn't
-  approved merging into main/pushing yet.
+- 2026-11-07: `main` = everything (all feature branches, 15 languages 100%, CI for Linux/Windows), pushed to
+  github.com/fashffffffff/fashionlauncher. Build dirs were wiped; debug is re-configured from scratch in `build/`.
+- Skins fix: `SkinList::update` no longer forces the account's arm model/cape onto the existing entry — saving
+  index.json re-triggers update via the folder watcher, so every local slim/cape change was instantly reverted.
 - Running side sessions (worktrees `/Users/fash/projects/ffprism/wt/<branch>`, from try-all): qml-share (pack
   manifests/links, API used by p2p), qml-p2p (Rust sidecar `tools/fashion-net`, friends, play together; host and
   joiner choose server-only vs all mods + exclusions, reuse matching instance), qml-store (hardlink store + 5

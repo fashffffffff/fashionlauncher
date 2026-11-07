@@ -14,6 +14,14 @@ Item {
 
     readonly property real armW: slim ? 3 : 4
     readonly property bool hasCape: capePath.length > 0 && capeTex.loaded
+    // Picking a cape turns the player around so you actually see it
+    // (not on the first load of the page, only when the user picks one)
+    property bool settled: false
+    Timer { interval: 1200; running: true; onTriggered: viewer.settled = true }
+    onSkinPathChanged: { settled = false; settleAgain.restart() }
+    Timer { id: settleAgain; interval: 600; onTriggered: viewer.settled = true }
+    onCapePathChanged: if (settled && capePath.length > 0 && Style.motion) showBack.start()
+    NumberAnimation { id: showBack; target: viewer; property: "yaw"; to: 155; duration: Style.dur(600); easing.type: Easing.InOutCubic }
 
     // Idle motion: one slow cycle drives breathing, arm sway and a lazy look around
     property real t: 0

@@ -3570,11 +3570,11 @@
     </message>
     <message>
         <source>Classic arms</source>
-        <translation>Широкие руки (Classic)</translation>
+        <translation>Широкие руки</translation>
     </message>
     <message>
         <source>Slim arms</source>
-        <translation>Тонкие руки (Slim)</translation>
+        <translation>Тонкие руки</translation>
     </message>
     <message>
         <source>Cape</source>

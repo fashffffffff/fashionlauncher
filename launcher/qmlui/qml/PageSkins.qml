@@ -60,7 +60,8 @@ Item {
 
             // Preview and what to do with the selected skin
             Rectangle {
-                Layout.preferredWidth: Math.max(Style.px(320), page.width * 0.36)
+                Layout.preferredWidth: Math.max(Style.px(340), page.width * 0.36)
+                Layout.maximumWidth: page.width * 0.5
                 Layout.fillHeight: true
                 radius: Style.radius + Style.px(4)
                 color: Style.panel(0)
@@ -92,18 +93,24 @@ Item {
                             visible: !!page.sel
                             anchors { bottom: parent.bottom; horizontalCenter: parent.horizontalCenter }
                             text: qsTr("Drag to turn · double-click to face front")
+                            width: Math.min(implicitWidth, parent.width)
+                            horizontalAlignment: Text.AlignHCenter
+                            wrapMode: Text.WordWrap
                             muted: true
                             font.pixelSize: Style.fontSmall
                             opacity: 0.7
                         }
                     }
 
-                    RowLayout {
+                    // Name on its own line, arm model below: long translations must not push the panel wider
+                    Flow {
                         visible: !!page.sel
                         Layout.fillWidth: true
                         spacing: Style.px(10)
                         Txt {
-                            Layout.fillWidth: true
+                            width: Math.min(implicitWidth, parent.width)
+                            height: Style.px(30)
+                            verticalAlignment: Text.AlignVCenter
                             text: page.sel ? page.sel.name : ""
                             font.pixelSize: Style.fontLead
                             font.weight: Font.DemiBold
