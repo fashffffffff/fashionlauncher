@@ -3390,6 +3390,10 @@
         <translation>Mody</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>Zpět</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>Balíčky zdrojů</translation>
     </message>
@@ -4460,12 +4464,20 @@
         <translation>%1 stažení</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>Instaluje se…</translation>
+        <source>Selected</source>
+        <translation>Vybráno</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>Instalovat</translation>
+        <source>Select</source>
+        <translation>Vybrat</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>Ve frontě</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>Instaluje se…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4604,6 +4616,38 @@
     <message>
         <source>Try again</source>
         <translation>Zkusit znovu</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — kliknutím odeberete</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>Odebrat %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>Vybrán %n</numerusform>
+            <numerusform>Vybrány %n</numerusform>
+            <numerusform>Vybráno %n</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>Ve frontě ještě %n</numerusform>
+            <numerusform>Ve frontě ještě %n</numerusform>
+            <numerusform>Ve frontě ještě %n</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Vymazat</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>Nainstalovat vybrané (%1)</translation>
     </message>
 </context>
 <context>
@@ -4882,6 +4926,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>Nelze nainstalovat „%1“: %2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>Nepodařilo se získat verze „%1“</translation>
     </message>
 </context>
 <context>
@@ -6586,13 +6634,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>Nahrát a zkopírovat odkaz</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>Nainstalováno</translation>
     </message>
 </context>
 <context>

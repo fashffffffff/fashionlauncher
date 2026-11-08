@@ -3354,6 +3354,10 @@
         <translation>Modlar</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>Geri</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>Kaynak paketleri</translation>
     </message>
@@ -4414,12 +4418,20 @@
         <translation>%1 indirme</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>Yükleniyor…</translation>
+        <source>Selected</source>
+        <translation>Seçildi</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>Yükle</translation>
+        <source>Select</source>
+        <translation>Seç</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>Sırada</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>Yükleniyor…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4558,6 +4570,34 @@
     <message>
         <source>Try again</source>
         <translation>Tekrar dene</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — kaldırmak için tıklayın</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>%1 öğesini kaldır</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>%n seçildi</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>Sırada %n tane daha</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Temizle</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>Seçilenleri kur (%1)</translation>
     </message>
 </context>
 <context>
@@ -4832,6 +4872,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>“%1” yüklenemedi: %2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>“%1” sürümleri alınamadı</translation>
     </message>
 </context>
 <context>
@@ -6496,13 +6540,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>Yükle ve bağlantıyı kopyala</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>Yüklü</translation>
     </message>
 </context>
 <context>

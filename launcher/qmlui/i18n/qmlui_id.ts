@@ -3354,6 +3354,10 @@
         <translation>Mod</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>Kembali</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>Paket sumber daya</translation>
     </message>
@@ -4414,12 +4418,20 @@
         <translation>%1 unduhan</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>Menginstal…</translation>
+        <source>Selected</source>
+        <translation>Dipilih</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>Instal</translation>
+        <source>Select</source>
+        <translation>Pilih</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>Dalam antrean</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>Menginstal…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4558,6 +4570,34 @@
     <message>
         <source>Try again</source>
         <translation>Coba lagi</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — klik untuk menghapus</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>Hapus %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>%n dipilih</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>%n lagi dalam antrean</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Bersihkan</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>Pasang yang dipilih (%1)</translation>
     </message>
 </context>
 <context>
@@ -4832,6 +4872,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>Gagal menginstal “%1”: %2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>Tidak dapat mengambil versi “%1”</translation>
     </message>
 </context>
 <context>
@@ -6496,13 +6540,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>Unggah dan salin tautan</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>Terinstal</translation>
     </message>
 </context>
 <context>

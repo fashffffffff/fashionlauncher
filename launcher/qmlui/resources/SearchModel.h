@@ -42,6 +42,11 @@ class SearchModel : public QAbstractListModel {
     /// Row whose details are shown (-1 = none); selecting loads its versions
     Q_PROPERTY(int selectedRow READ selectedRow WRITE setSelectedRow NOTIFY selectedChanged)
     Q_PROPERTY(QVariantMap selected READ selected NOTIFY selectedChanged)
+    /// Projects ticked for one batch install ({ projectId, title, iconUrl }), kept across searches
+    Q_PROPERTY(QVariantList picked READ picked NOTIFY pickedChanged)
+    Q_PROPERTY(int pickedCount READ pickedCount NOTIFY pickedChanged)
+    /// Projects still waiting in the batch queue (the one installing now not counted)
+    Q_PROPERTY(int queuedCount READ queuedCount NOTIFY pickedChanged)
 
    public:
     enum Roles {
@@ -54,6 +59,7 @@ class SearchModel : public QAbstractListModel {
         UrlRole,
         StateRole,  // "" | "installing" | "installed"
         ProgressRole,
+        PickedRole,
     };
 
     explicit SearchModel(QObject* parent = nullptr);
@@ -94,6 +100,16 @@ class SearchModel : public QAbstractListModel {
     Q_INVOKABLE void install(int row, int versionIndex = -1);
     Q_INVOKABLE void openWebsite(int row) const;
 
+    QVariantList picked() const;
+    int pickedCount() const { return static_cast<int>(m_picked.size()); }
+    int queuedCount() const { return static_cast<int>(m_queue.size()); }
+    /** Ticks / unticks the project in row for the batch install. */
+    Q_INVOKABLE void togglePick(int row);
+    Q_INVOKABLE void unpick(const QString& projectId);
+    Q_INVOKABLE void clearPicks();
+    /** Installs every ticked project, one after another (shared dependencies are fetched once). */
+    Q_INVOKABLE void installPicked();
+
    signals:
     void instanceChanged();
     void kindChanged();
@@ -105,6 +121,7 @@ class SearchModel : public QAbstractListModel {
     void busyChanged();
     void countChanged();
     void selectedChanged();
+    void pickedChanged();
     void message(const QString& text, bool isError);
 
    private:
@@ -114,6 +131,9 @@ class SearchModel : public QAbstractListModel {
     void runSearch(bool append);
     void loadCategories();
     void loadVersions(int row, std::function<void()> then = {});
+    void loadPackVersions(const ModPlatform::IndexedPack::Ptr& pack, std::function<void()> then, std::function<void()> failed = {});
+    void runQueue();
+    void queueStepDone(const QString& projectId);
     void startInstall(const ModPlatform::IndexedPack::Ptr& pack, const ModPlatform::IndexedVersion& version);
     void attachFolder();
     void refreshInstalled();
@@ -149,4 +169,8 @@ class SearchModel : public QAbstractListModel {
     QSet<QString> m_installedIds;              // project ids installed in the instance
     QHash<QString, double> m_installing;       // project id -> progress (-1 = unknown)
     QHash<QString, Task::Ptr> m_installTasks;  // project id -> running task chain
+
+    QList<ModPlatform::IndexedPack::Ptr> m_picked;  // ticked, in the order they were ticked
+    QList<ModPlatform::IndexedPack::Ptr> m_queue;   // batch install still to start
+    QString m_queueCurrent;                         // project id the batch is installing now
 };

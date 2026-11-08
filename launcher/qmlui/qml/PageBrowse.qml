@@ -8,6 +8,8 @@ Item {
     property var params: ({})
     property string instanceId: params.instanceId || ""
     property string kind: params.kind || "mods"
+    /// Pushed from an instance's Mods/Resource packs/Shaders tab: show Back, keep that kind
+    readonly property bool fromInstance: !!params.fromInstance
 
     // Instances to install into (rebuilt when the list changes)
     readonly property var instanceOptions: {
@@ -30,20 +32,37 @@ Item {
     Component.onDestruction: Instances.filter = ""
 
     ColumnLayout {
-        anchors { fill: parent; margins: Style.px(32) }
-        spacing: Style.px(18)
+        // Opened from an instance it's a full-size catalog: tighter margins, one header row
+        anchors { fill: parent; margins: page.fromInstance ? Style.px(20) : Style.px(32) }
+        spacing: Style.px(14)
 
+        // One header row: back, title, what to look for, where to install — the rest is results
         RowLayout {
             Layout.fillWidth: true
             spacing: Style.px(12)
+            QuietButton {
+                visible: page.fromInstance
+                iconName: "arrow-left"
+                text: qsTr("Back")
+                compact: true
+                onClicked: Router.back()
+            }
             Text {
-                text: qsTr("Browse mods")
+                text: page.fromInstance ? RF.findLabel(page.kind) : qsTr("Browse mods")
                 color: Style.text
                 font.family: Style.display
-                font.pixelSize: Style.px(32)
+                font.pixelSize: page.fromInstance ? Style.fontTitle : Style.px(32)
                 font.weight: Font.DemiBold
-                Layout.fillWidth: true
             }
+            ResSegmented {
+                visible: page.instanceOptions.length > 0 && !page.fromInstance
+                options: [{ value: "mods", label: qsTr("Mods") },
+                          { value: "resourcepacks", label: qsTr("Resource packs") },
+                          { value: "shaderpacks", label: qsTr("Shaders") }]
+                value: page.kind
+                onPicked: (v) => page.kind = v
+            }
+            Item { Layout.fillWidth: true }
             ResPicker {
                 visible: page.instanceOptions.length > 0
                 label: qsTr("Install into")
@@ -53,20 +72,11 @@ Item {
                 onPicked: (v) => { page.instanceId = v; Router.selectedId = v }
             }
             QuietButton {
-                visible: page.instanceId.length > 0
+                visible: page.instanceId.length > 0 && !page.fromInstance
                 text: qsTr("Open instance")
                 iconName: "chevron-right"
                 onClicked: Router.openInstance(page.instanceId, page.kind)
             }
-        }
-
-        ResSegmented {
-            visible: page.instanceOptions.length > 0
-            options: [{ value: "mods", label: qsTr("Mods") },
-                      { value: "resourcepacks", label: qsTr("Resource packs") },
-                      { value: "shaderpacks", label: qsTr("Shaders") }]
-            value: page.kind
-            onPicked: (v) => page.kind = v
         }
 
         Rectangle {
@@ -78,7 +88,7 @@ Item {
             border.color: Style.panelBorder
 
             ResFindView {
-                anchors { fill: parent; margins: Style.px(20) }
+                anchors { fill: parent; margins: Style.px(16) }
                 visible: page.instanceOptions.length > 0
                 instanceId: page.instanceId
                 kind: page.kind

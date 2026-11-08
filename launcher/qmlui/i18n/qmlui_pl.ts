@@ -3390,6 +3390,10 @@
         <translation>Mody</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>Wstecz</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>Pakiety zasobów</translation>
     </message>
@@ -4460,12 +4464,20 @@
         <translation>%1 pobrań</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>Instalowanie…</translation>
+        <source>Selected</source>
+        <translation>Wybrano</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>Zainstaluj</translation>
+        <source>Select</source>
+        <translation>Wybierz</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>W kolejce</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>Instalowanie…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4604,6 +4616,38 @@
     <message>
         <source>Try again</source>
         <translation>Spróbuj ponownie</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — kliknij, aby usunąć</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>Usuń %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>Wybrano %n</numerusform>
+            <numerusform>Wybrano %n</numerusform>
+            <numerusform>Wybrano %n</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>Jeszcze %n w kolejce</numerusform>
+            <numerusform>Jeszcze %n w kolejce</numerusform>
+            <numerusform>Jeszcze %n w kolejce</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Wyczyść</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>Zainstaluj wybrane (%1)</translation>
     </message>
 </context>
 <context>
@@ -4882,6 +4926,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>Nie udało się zainstalować „%1”: %2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>Nie udało się pobrać wersji „%1”</translation>
     </message>
 </context>
 <context>
@@ -6586,13 +6634,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>Prześlij i skopiuj link</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>Zainstalowane</translation>
     </message>
 </context>
 <context>

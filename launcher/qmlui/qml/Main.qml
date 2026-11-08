@@ -29,6 +29,7 @@ ApplicationWindow {
         else if (name === "palette") cmdPalette.open()
         else if (name.startsWith("version:")) Router.open("version", { instanceId: name.slice(8) })
         else if (name.startsWith("upgrade:")) { const u = name.split(":"); Router.open("upgrade", { instanceId: u[1], planMc: u[2] || "", autoApply: u[3] === "apply" }) }
+        else if (name.startsWith("find:")) { const f = name.split(":"); Router.open("browse", { instanceId: f[1], kind: f[2] || "mods", fromInstance: true }) }
         else if (name.startsWith("receive:")) Router.open("receive", { file: name.slice(8) })
         else if (name.startsWith("share:")) {
             Router.openInstance(name.slice(6))

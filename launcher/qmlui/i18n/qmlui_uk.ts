@@ -3390,6 +3390,10 @@
         <translation>Моди</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>Назад</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>Пакети ресурсів</translation>
     </message>
@@ -4460,12 +4464,20 @@
         <translation>%1 завантажень</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>Встановлення…</translation>
+        <source>Selected</source>
+        <translation>Вибрано</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>Встановити</translation>
+        <source>Select</source>
+        <translation>Вибрати</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>У черзі</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>Встановлення…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4604,6 +4616,38 @@
     <message>
         <source>Try again</source>
         <translation>Спробувати знову</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — натисніть, щоб прибрати</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>Прибрати %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>Вибрано %n</numerusform>
+            <numerusform>Вибрано %n</numerusform>
+            <numerusform>Вибрано %n</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>Ще %n у черзі</numerusform>
+            <numerusform>Ще %n у черзі</numerusform>
+            <numerusform>Ще %n у черзі</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Очистити</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>Встановити вибрані (%1)</translation>
     </message>
 </context>
 <context>
@@ -4882,6 +4926,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>Не вдалося встановити «%1»: %2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>Не вдалося отримати версії «%1»</translation>
     </message>
 </context>
 <context>
@@ -6586,13 +6634,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>Вивантажити й скопіювати посилання</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>Встановлено</translation>
     </message>
 </context>
 <context>

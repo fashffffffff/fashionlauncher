@@ -3354,6 +3354,10 @@
         <translation>Mod</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>戻る</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>リソースパック</translation>
     </message>
@@ -4414,12 +4418,20 @@
         <translation>%1 回ダウンロード</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>インストール中…</translation>
+        <source>Selected</source>
+        <translation>選択済み</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>インストール</translation>
+        <source>Select</source>
+        <translation>選択</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>待機中</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>インストール中…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4558,6 +4570,34 @@
     <message>
         <source>Try again</source>
         <translation>再試行</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — クリックで外す</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>%1 を外す</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>%n 件選択中</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>あと %n 件待機中</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>クリア</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>選択したものをインストール (%1)</translation>
     </message>
 </context>
 <context>
@@ -4832,6 +4872,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>“%1” をインストールできませんでした: %2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>「%1」のバージョンを取得できませんでした</translation>
     </message>
 </context>
 <context>
@@ -6496,13 +6540,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>アップロードしてリンクをコピー</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>インストール済み</translation>
     </message>
 </context>
 <context>

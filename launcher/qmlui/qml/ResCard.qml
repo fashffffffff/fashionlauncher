@@ -3,12 +3,12 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import "ResFmt.js" as RF
 
-// One search result: icon, title, author, downloads, summary and an Install button.
+// One search result: icon, title, author, downloads, summary and a Select toggle for the batch install.
 // Used as a delegate of SearchModel (reads the model roles).
 AbstractButton {
     id: card
     property bool current: false
-    signal installRequested()
+    signal pickToggled()
 
     implicitHeight: Style.px(96)
     hoverEnabled: true
@@ -76,18 +76,39 @@ AbstractButton {
             }
         }
 
-        // Install / progress / installed
+        // Pick for the batch install / queued / progress / installed
         Item {
-            Layout.preferredWidth: Style.px(124)
+            Layout.preferredWidth: Style.px(140)
             Layout.preferredHeight: Style.px(40)
+            QuietButton {
+                anchors.fill: parent
+                visible: model.state === ""
+                text: model.picked ? qsTr("Selected") : qsTr("Select")
+                iconName: model.picked ? "check" : "plus"
+                sound: ""
+                background: Rectangle {
+                    radius: Style.radius
+                    color: model.picked ? Style.alpha(Style.accent, parent.hovered ? 0.30 : 0.22)
+                         : parent.hovered ? Style.alpha(Style.text, 0.10) : Style.alpha(Style.surface, 0.72)
+                    border.width: parent.visualFocus || model.picked ? 2 : 1
+                    border.color: parent.visualFocus || model.picked ? Style.accent : Style.alpha(Style.text, 0.08)
+                }
+                onClicked: { Sounds.play("click"); card.pickToggled() }
+            }
+            Txt {
+                anchors.centerIn: parent
+                visible: model.state === "queued"
+                text: qsTr("In queue")
+                muted: true
+                font.weight: Font.DemiBold
+            }
             PrimaryButton {
                 anchors.fill: parent
-                visible: model.state !== "installed"
-                text: model.state === "installing" ? qsTr("Installing…") : qsTr("Install")
-                iconName: model.state === "installing" ? "" : "plus"
-                enabled: model.state === ""
-                progress: model.state === "installing" ? model.progress : undefined
-                onClicked: card.installRequested()
+                visible: model.state === "installing"
+                text: qsTr("Installing…")
+                enabled: false
+                opacity: 1
+                progress: model.progress
             }
             Row {
                 anchors.centerIn: parent

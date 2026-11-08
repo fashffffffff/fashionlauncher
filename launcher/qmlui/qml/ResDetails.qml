@@ -184,7 +184,7 @@ Rectangle {
             }
             PrimaryButton {
                 Layout.fillWidth: true
-                enabled: panel.info.state !== "installing" && versions.count > 0
+                enabled: panel.info.state !== "installing" && panel.info.state !== "queued" && versions.count > 0
                 text: panel.info.state === "installing" ? qsTr("Installing…")
                     : panel.info.state === "installed" ? qsTr("Install this version")
                     : qsTr("Install")

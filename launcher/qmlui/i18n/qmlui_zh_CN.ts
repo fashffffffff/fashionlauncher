@@ -3354,6 +3354,10 @@
         <translation>模组</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>资源包</translation>
     </message>
@@ -4414,12 +4418,20 @@
         <translation>%1 次下载</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>正在安装…</translation>
+        <source>Selected</source>
+        <translation>已选择</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>安装</translation>
+        <source>Select</source>
+        <translation>选择</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>排队中</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>正在安装…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4558,6 +4570,34 @@
     <message>
         <source>Try again</source>
         <translation>重试</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — 点击移除</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>移除 %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>已选择 %n 个</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>还有 %n 个在排队</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>清空</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>安装所选 (%1)</translation>
     </message>
 </context>
 <context>
@@ -4832,6 +4872,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>无法安装“%1”：%2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>无法获取“%1”的版本</translation>
     </message>
 </context>
 <context>
@@ -6496,13 +6540,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>上传并复制链接</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>已安装</translation>
     </message>
 </context>
 <context>

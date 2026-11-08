@@ -110,7 +110,7 @@ Item {
                         width: ListView.view.width - Style.px(10)
                         current: results.selectedRow === index
                         onClicked: results.selectedRow = (results.selectedRow === index ? -1 : index)
-                        onInstallRequested: results.install(index, -1)
+                        onPickToggled: results.togglePick(index)
                     }
                     footer: Item {
                         width: ListView.view.width
@@ -156,6 +156,82 @@ Item {
                 search: results
                 Layout.preferredWidth: Math.min(Style.px(380), view.width * 0.42)
                 Layout.fillHeight: true
+            }
+        }
+
+        // Ticked projects: a tray with one install button for all of them
+        Rectangle {
+            Layout.fillWidth: true
+            visible: results.pickedCount > 0 || results.queuedCount > 0
+            implicitHeight: trayRow.implicitHeight + Style.px(20)
+            radius: Style.radius
+            color: Style.panel(1)
+            border.width: 1
+            border.color: Style.panelBorder
+
+            RowLayout {
+                id: trayRow
+                anchors { fill: parent; leftMargin: Style.px(12); rightMargin: Style.px(10) }
+                spacing: Style.px(10)
+
+                // Icons of what is ticked; click one to untick it
+                ListView {
+                    id: trayList
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Style.px(36)
+                    visible: results.pickedCount > 0
+                    orientation: ListView.Horizontal
+                    spacing: Style.px(6)
+                    clip: true
+                    boundsBehavior: Flickable.StopAtBounds
+                    model: results.picked
+                    delegate: AbstractButton {
+                        required property var modelData
+                        width: Style.px(36); height: Style.px(36)
+                        hoverEnabled: true
+                        ToolTip.visible: hovered
+                        ToolTip.delay: 300
+                        ToolTip.text: qsTr("%1 — click to remove").arg(modelData.title)
+                        Accessible.name: qsTr("Remove %1").arg(modelData.title)
+                        onClicked: results.unpick(modelData.projectId)
+                        background: Rectangle {
+                            radius: Style.radius - 2
+                            color: Style.alpha(Style.text, 0.06)
+                            border.width: parent.hovered ? 2 : 0
+                            border.color: Style.danger
+                            clip: true
+                            Image {
+                                id: trayIcon
+                                anchors.fill: parent
+                                anchors.margins: 1
+                                source: modelData.iconUrl
+                                sourceSize: Qt.size(72, 72)
+                                fillMode: Image.PreserveAspectCrop
+                                asynchronous: true
+                                visible: status === Image.Ready
+                            }
+                            Icon { anchors.centerIn: parent; visible: !trayIcon.visible; name: "cube"; size: Style.px(16); color: Style.textMuted }
+                        }
+                    }
+                }
+                Txt {
+                    Layout.fillWidth: !trayList.visible
+                    muted: true
+                    text: results.pickedCount > 0 ? qsTr("%n selected", "", results.pickedCount)
+                        : qsTr("%n more in the queue", "", results.queuedCount)
+                }
+                QuietButton {
+                    visible: results.pickedCount > 0
+                    plain: true
+                    text: qsTr("Clear")
+                    onClicked: results.clearPicks()
+                }
+                PrimaryButton {
+                    visible: results.pickedCount > 0
+                    text: qsTr("Install selected (%1)").arg(results.pickedCount)
+                    iconName: "plus"
+                    onClicked: results.installPicked()
+                }
             }
         }
     }

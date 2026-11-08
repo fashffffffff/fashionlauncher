@@ -3354,6 +3354,10 @@
         <translation>모드</translation>
     </message>
     <message>
+        <source>Back</source>
+        <translation>뒤로</translation>
+    </message>
+    <message>
         <source>Resource packs</source>
         <translation>리소스 팩</translation>
     </message>
@@ -4414,12 +4418,20 @@
         <translation>다운로드 %1회</translation>
     </message>
     <message>
-        <source>Installing…</source>
-        <translation>설치 중…</translation>
+        <source>Selected</source>
+        <translation>선택됨</translation>
     </message>
     <message>
-        <source>Install</source>
-        <translation>설치</translation>
+        <source>Select</source>
+        <translation>선택</translation>
+    </message>
+    <message>
+        <source>In queue</source>
+        <translation>대기 중</translation>
+    </message>
+    <message>
+        <source>Installing…</source>
+        <translation>설치 중…</translation>
     </message>
     <message>
         <source>Installed</source>
@@ -4558,6 +4570,34 @@
     <message>
         <source>Try again</source>
         <translation>다시 시도</translation>
+    </message>
+    <message>
+        <source>%1 — click to remove</source>
+        <translation>%1 — 클릭하여 제거</translation>
+    </message>
+    <message>
+        <source>Remove %1</source>
+        <translation>%1 제거</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n selected</source>
+        <translation>
+            <numerusform>%n개 선택됨</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n more in the queue</source>
+        <translation>
+            <numerusform>대기 중 %n개 더</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>지우기</translation>
+    </message>
+    <message>
+        <source>Install selected (%1)</source>
+        <translation>선택한 항목 설치 (%1)</translation>
     </message>
 </context>
 <context>
@@ -4832,6 +4872,10 @@
     <message>
         <source>Could not install “%1”: %2</source>
         <translation>“%1”을(를) 설치할 수 없음: %2</translation>
+    </message>
+    <message>
+        <source>Could not get the versions of “%1”</source>
+        <translation>“%1”의 버전을 가져올 수 없습니다</translation>
     </message>
 </context>
 <context>
@@ -6496,13 +6540,6 @@
     <message>
         <source>Upload and copy link</source>
         <translation>업로드 및 링크 복사</translation>
-    </message>
-</context>
-<context>
-    <name>TabResources</name>
-    <message>
-        <source>Installed</source>
-        <translation>설치됨</translation>
     </message>
 </context>
 <context>

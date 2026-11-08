@@ -2,6 +2,8 @@
 #include "SearchModel.h"
 
 #include <QDesktopServices>
+#include <QTimer>
+#include <algorithm>
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -65,7 +67,7 @@ QHash<int, QByteArray> SearchModel::roleNames() const
     return {
         { ProjectIdRole, "projectId" }, { TitleRole, "title" }, { AuthorRole, "author" },
         { DownloadsRole, "downloads" }, { SummaryRole, "summary" }, { IconUrlRole, "iconUrl" },
-        { UrlRole, "url" },             { StateRole, "state" },  { ProgressRole, "progress" },
+        { UrlRole, "url" },             { StateRole, "state" },  { ProgressRole, "progress" }, { PickedRole, "picked" },
     };
 }
 
@@ -105,6 +107,8 @@ QVariant SearchModel::data(const QModelIndex& index, int role) const
             return stateOf(id);
         case ProgressRole:
             return m_installing.value(id, -1);
+        case PickedRole:
+            return std::any_of(m_picked.cbegin(), m_picked.cend(), [&id](const auto& p) { return p->addonId.toString() == id; });
         default:
             return {};
     }
@@ -119,6 +123,8 @@ void SearchModel::setInstanceId(const QString& id)
     }
     m_instanceId = id;
     m_instance = QmlResources::findInstance(id);
+    clearPicks();  // picks and the batch belong to the instance they were made for
+    m_queue.clear();
     attachFolder();
     emit instanceChanged();
     scheduleSearch();
@@ -131,6 +137,8 @@ void SearchModel::setKind(const QString& k)
     }
     m_kind = k;
     m_category.clear();
+    clearPicks();
+    m_queue.clear();
     attachFolder();
     emit kindChanged();
     emit categoryChanged();
@@ -454,10 +462,20 @@ QVariantMap SearchModel::selected() const
 
 void SearchModel::loadVersions(int row, std::function<void()> then)
 {
-    if (row < 0 || row >= m_packs.size() || !m_instance) {
+    if (row < 0 || row >= m_packs.size()) {
         return;
     }
-    auto pack = m_packs.at(row);
+    loadPackVersions(m_packs.at(row), std::move(then));
+}
+
+void SearchModel::loadPackVersions(const ModPlatform::IndexedPack::Ptr& pack, std::function<void()> then, std::function<void()> failed)
+{
+    if (!m_instance) {
+        if (failed) {
+            failed();
+        }
+        return;
+    }
     const QString id = pack->addonId.toString();
     if (pack->versionsLoaded) {
         if (then) {
@@ -465,7 +483,19 @@ void SearchModel::loadVersions(int row, std::function<void()> then)
         }
         return;
     }
-    if (m_versionJobs.contains(id)) {
+    if (auto running = m_versionJobs.value(id)) {
+        // Already being fetched (e.g. the details panel asked first): continue when it lands
+        if (then || failed) {
+            connect(running.get(), &Task::finished, this, [pack, then, failed] {
+                if (pack->versionsLoaded) {
+                    if (then) {
+                        then();
+                    }
+                } else if (failed) {
+                    failed();
+                }
+            });
+        }
         return;
     }
     m_versionErrors.remove(id);
@@ -490,13 +520,19 @@ void SearchModel::loadVersions(int row, std::function<void()> then)
             then();
         }
     };
-    cb.onFail = [self, id](const QString&, int) {
+    cb.onFail = [self, id, failed](const QString&, int) {
         if (self) {
             self->m_versionErrors.insert(id);
+            if (failed) {
+                failed();
+            }
         }
     };
     auto task = api().getProjectVersions(args, cb);
     if (!task) {
+        if (failed) {
+            failed();
+        }
         return;
     }
     m_versionJobs.insert(id, task);
@@ -549,6 +585,9 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
 {
     const QString id = pack->addonId.toString();
     if (!m_folder || !m_instance) {
+        m_installing.remove(id);
+        notifyProject(id);
+        queueStepDone(id);
         return;
     }
     const bool indexed = !APPLICATION->settings()->get("ModMetadataDisabled").toBool();
@@ -563,6 +602,7 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
             m_installing.remove(id);
             m_installTasks.remove(id);
             notifyProject(id);
+            queueStepDone(id);
             return;
         }
         auto tasks = makeShared<ConcurrentTask>(tr("Installing %1").arg(pack->name),
@@ -600,6 +640,7 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
                 folder->update();
             }
             notifyProject(id);
+            queueStepDone(id);
         });
         TaskCenter::instance()->track(tasks, tr("Installing %1").arg(pack->name), "resources", inst ? inst->id() : QString(),
                                       pack->logoUrl);
@@ -620,6 +661,7 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
         auto t = weak.lock();
         m_installTasks.remove(id);
         if (!t) {
+            queueStepDone(id);
             return;
         }
         // A failed lookup shouldn't block installing the mod itself.
@@ -627,6 +669,145 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
                  t->wasSuccessful() ? t->getExtraInfo() : QHash<QString, GetModDependenciesTask::PackDependencyExtraInfo>{});
     });
     depTask->start();
+}
+
+// ---- batch install ---------------------------------------------------------------------------
+
+QVariantList SearchModel::picked() const
+{
+    QVariantList out;
+    for (const auto& p : m_picked) {
+        out.append(QVariantMap{ { "projectId", p->addonId.toString() }, { "title", p->name }, { "iconUrl", p->logoUrl } });
+    }
+    return out;
+}
+
+void SearchModel::togglePick(int row)
+{
+    if (row < 0 || row >= m_packs.size()) {
+        return;
+    }
+    const auto pack = m_packs.at(row);
+    const QString id = pack->addonId.toString();
+    const auto it = std::find_if(m_picked.begin(), m_picked.end(), [&id](const auto& p) { return p->addonId.toString() == id; });
+    if (it != m_picked.end()) {
+        m_picked.erase(it);
+    } else if (stateOf(id).isEmpty()) {
+        m_picked.append(pack);
+    } else {
+        return;  // installed, installing or queued: nothing to tick
+    }
+    notifyProject(id);
+    emit pickedChanged();
+}
+
+void SearchModel::unpick(const QString& projectId)
+{
+    const auto it =
+        std::find_if(m_picked.begin(), m_picked.end(), [&projectId](const auto& p) { return p->addonId.toString() == projectId; });
+    if (it == m_picked.end()) {
+        return;
+    }
+    m_picked.erase(it);
+    notifyProject(projectId);
+    emit pickedChanged();
+}
+
+void SearchModel::clearPicks()
+{
+    if (m_picked.isEmpty()) {
+        return;
+    }
+    const auto old = m_picked;
+    m_picked.clear();
+    for (const auto& p : old) {
+        notifyProject(p->addonId.toString());
+    }
+    emit pickedChanged();
+}
+
+void SearchModel::installPicked()
+{
+    if (m_picked.isEmpty() || !m_instance || !m_folder) {
+        return;
+    }
+    const auto batch = m_picked;
+    m_picked.clear();
+    for (const auto& p : batch) {
+        if (stateOf(p->addonId.toString()).isEmpty()) {
+            m_queue.append(p);
+        }
+    }
+    for (const auto& p : batch) {
+        notifyProject(p->addonId.toString());
+    }
+    emit pickedChanged();
+    runQueue();
+}
+
+void SearchModel::runQueue()
+{
+    // One at a time: the next mod's dependency check then sees what the previous one brought in
+    if (!m_queueCurrent.isEmpty() || m_queue.isEmpty()) {
+        return;
+    }
+    if (!m_instance || !m_folder) {
+        m_queue.clear();
+        emit pickedChanged();
+        return;
+    }
+    const auto pack = m_queue.takeFirst();
+    const QString id = pack->addonId.toString();
+    m_queueCurrent = id;
+    m_installing.insert(id, -1);
+    notifyProject(id);
+    emit pickedChanged();
+    loadPackVersions(
+        pack,
+        [this, pack, id] {
+            m_installing.remove(id);
+            if (pack->versions.isEmpty()) {
+                emit message(tr("“%1” has no version for this instance").arg(pack->name), true);
+                notifyProject(id);
+                queueStepDone(id);
+                return;
+            }
+            startInstall(pack, pack->versions.first());
+        },
+        [this, pack, id] {
+            m_installing.remove(id);
+            emit message(tr("Could not get the versions of “%1”").arg(pack->name), true);
+            notifyProject(id);
+            queueStepDone(id);
+        });
+}
+
+void SearchModel::queueStepDone(const QString& projectId)
+{
+    if (projectId != m_queueCurrent) {
+        return;
+    }
+    m_queueCurrent.clear();
+    emit pickedChanged();
+    if (m_queue.isEmpty()) {
+        return;
+    }
+    if (!m_folder) {
+        runQueue();
+        return;
+    }
+    // Let the folder rescan finish first so installed dependencies are known to the next check
+    auto conn = std::make_shared<QMetaObject::Connection>();
+    *conn = connect(m_folder, &ResourceFolderModel::updateFinished, this, [this, conn] {
+        disconnect(*conn);
+        runQueue();
+    });
+    QTimer::singleShot(3000, this, [this, conn] {
+        if (*conn) {
+            disconnect(*conn);
+            runQueue();
+        }
+    });
 }
 
 void SearchModel::openWebsite(int row) const
@@ -687,6 +868,9 @@ QString SearchModel::stateOf(const QString& projectId) const
     if (m_installing.contains(projectId)) {
         return "installing";
     }
+    if (std::any_of(m_queue.cbegin(), m_queue.cend(), [&projectId](const auto& p) { return p->addonId.toString() == projectId; })) {
+        return "queued";
+    }
     return m_installedIds.contains(projectId) ? "installed" : QString();
 }
 
@@ -704,7 +888,7 @@ void SearchModel::notifyProject(const QString& projectId)
 {
     const int row = rowOf(projectId);
     if (row >= 0) {
-        emit dataChanged(index(row), index(row), { StateRole, ProgressRole });
+        emit dataChanged(index(row), index(row), { StateRole, ProgressRole, PickedRole });
         if (row == m_selectedRow) {
             emit selectedChanged();
         }
