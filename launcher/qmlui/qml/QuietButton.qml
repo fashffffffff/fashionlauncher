@@ -61,7 +61,7 @@ Button {
             font.pixelSize: Style.fontBody
             font.weight: Font.Medium
             anchors.verticalCenter: parent.verticalCenter
-            width: Math.min(implicitWidth, Math.max(0, row.width - (btnIcon.visible ? btnIcon.width + row.spacing : 0)))
+            width: Math.min(implicitWidth, Math.max(0, control.availableWidth - Style.px(16) - (btnIcon.visible ? btnIcon.width + row.spacing : 0)))
             elide: Text.ElideRight
         }
       }

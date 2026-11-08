@@ -1,0 +1,16 @@
+[14:02:11] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.15.11
+[14:02:12] [main/WARN]: Warnings were found!
+	 - Mod 'Some Mod' (somemod) 1.0 conflicts with any version of mod 'Other' (other), which is present with the following version: 2.0!
+		 - While this won't prevent you from starting the game, the developer(s) of 'Some Mod' (somemod) have found that this combination may cause issues.
+	 - Mod 'Lithium' (lithium) 0.11.2 recommends any version of mod 'Fabric API' (fabric-api), which is missing!
+[14:03:40] [Render thread/WARN]: Mixin apply failed sodium.mixins.json:features.render.MixinWorldRenderer -> net.minecraft.class_761: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException Critical injection failure: @Inject annotation on renderLayer could not find any targets matching 'renderLayer' in net.minecraft.class_761. Using refmap sodium-fabric-refmap.json [PREINJECT Applicator Phase -> sodium.mixins.json:features.render.MixinWorldRenderer from mod sodium -> Prepare Injections ->  -> handler$zzb000$sodium$onRender(...)]
+[14:03:40] [Render thread/ERROR]: Detected a conflict between mods 'sodium' and 'optifabric': both modify net.minecraft.class_761
+[14:03:41] [Render thread/ERROR]: Unreported exception thrown!
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_1937.method_8320(net.minecraft.class_2338)" because "this.field_4085" is null
+	at net.minecraft.class_761.handler$zzb000$sodium$onRender(class_761.java:4120) ~[client-intermediary.jar:?]
+	at net.minecraft.class_761.method_22710(class_761.java:1120) ~[client-intermediary.jar:?]
+	at net.minecraft.class_757.method_3188(class_757.java:1061) ~[client-intermediary.jar:?]
+	at net.optifabric.patcher.Hooks.render(Hooks.java:44) ~[optifabric-1.13.24.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1219) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+[14:03:41] [Render thread/INFO]: Stopping!

@@ -1,0 +1,5 @@
+[18:00:00] [Render thread/ERROR]: ########## GL ERROR ##########
+[18:00:00] [Render thread/ERROR]: @ Pre startup
+[18:00:00] [Render thread/ERROR]: 65542: WGL: The driver does not appear to support OpenGL.
+org.lwjgl.LWJGLException: Pixel format not accelerated
+	at org.lwjgl.opengl.WindowsPeerInfo.nChoosePixelFormat(Native Method)

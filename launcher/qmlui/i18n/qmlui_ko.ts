@@ -683,6 +683,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>자동으로 설치할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>Modrinth에 ID가 “%1”인 모드가 없습니다. 모드 탭에서 검색하세요.</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>인스턴스가 더 이상 없습니다.</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>이 파일에는 다운로드 주소가 없습니다.</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>%1 다시 설치</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>“%1”을(를) 다시 다운로드했습니다.</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>%1 다시 설치 중</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>“%1”이(가) 멈춘 이유</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>“%1”이(가) 예기치 않게 멈췄습니다</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>로그에 원인이 직접 적혀 있습니다. 해당 줄을 아래에 인용했습니다.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>정확한 원인을 알 수 없습니다. 아래는 오류가 시작되는 로그 부분으로, 살펴보는 사람에게 도움이 됩니다.</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>%1에 %2이(가) 필요하지만 설치되어 있지 않습니다</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1은(는) 다른 Minecraft 버전용입니다</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>%1에 다른 버전의 %2이(가) 필요합니다</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1은(는) %2와(과) 함께 로드되지 않습니다</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1이(가) 여러 번 설치되어 있습니다</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>모드가 여러 번 설치되어 있습니다</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>게임의 메모리가 부족합니다</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java가 할당된 메모리를 확보하지 못했습니다</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>컴퓨터에 Java용 메모리가 부족합니다</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>이 버전은 Java %1에서만 실행됩니다</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>Java %1 이상이 필요합니다</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>그래픽 드라이버가 Minecraft를 실행할 수 없습니다</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>파일 %1이(가) 손상되었습니다</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>필요: %1.</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>모든 버전</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>필요: %1. 설치됨: %2.</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>제작자가 이 조합을 작동하지 않는 것으로 표시해 모드 로더가 멈췄습니다. 둘 중 하나를 제거하거나 업데이트를 확인하세요.</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>다음 중 하나만 남기세요: %1.</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>모드 폴더에 사본을 하나만 남기세요.</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>현재 최대 메모리: %1 GB. 이 컴퓨터에서 이 인스턴스 권장값: %2 GB.</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>최대 메모리가 %1 GB로, 이 컴퓨터나 32비트 Java가 제공할 수 있는 양보다 많습니다.</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>다른 프로그램을 닫거나, 시스템에 충분히 남도록 게임 메모리를 줄이세요.</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>게임이 Java %1로 시작되었습니다.</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>게임을 시작한 Java가 너무 오래되었습니다.</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>그래픽 카드 제조사의 최신 드라이버를 설치하세요. GPU가 두 개인 노트북에서는 외장 GPU로 게임을 실행하세요.</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>더 이상 모드 폴더에 없습니다.</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>압축 파일로 열 수 없습니다. 보통 다운로드가 중간에 끊긴 경우입니다.</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>%1 설치</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>모드 열기</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>%1 GB로 늘리기</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>%1 GB로 줄이기</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>Java %1 사용</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>Java %1 다운로드</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>다시 다운로드</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>휴지통으로 이동</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>최대 메모리가 이미 이 컴퓨터의 권장값 이상입니다. 무거운 모드를 일부 제거하거나 다른 프로그램을 닫으세요.</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>최대 메모리가 이제 %1 GB입니다.</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>이 인스턴스는 이제 Java %1을(를) 사용합니다.</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>휴지통으로 옮겼습니다. 모드 탭에서 모드를 다시 설치하세요.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>파일을 옮기지 못했습니다.</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>복사했습니다.</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>로그 원문:</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>작업 중…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>모드에서 검색</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>로그 발췌</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>오류에 언급된 모드 (%1)</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>스택 트레이스에 나타나는 모드입니다. 이 모드가 크래시를 일으켰다는 뜻은 아닙니다. 큰 모드팩에서는 오류에 이름이 나온 모드가 원인이 아닌 경우가 많습니다.</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>링크 복사됨: %1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>로그가 %1에 업로드되고 링크가 복사됩니다. 사용자 이름이 포함된 폴더 경로와 로그인 토큰은 숨겨집니다.</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>업로드 중…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>업로드</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>전체 로그 열기</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>로그 공유</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>닫기</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -5941,6 +6211,10 @@
     <message>
         <source>Errors</source>
         <translation>오류</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>왜 크래시가 났나요?</translation>
     </message>
     <message>
         <source>Copy the log</source>

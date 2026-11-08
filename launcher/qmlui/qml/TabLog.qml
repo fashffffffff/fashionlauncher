@@ -188,6 +188,12 @@ Item {
                        : log.source === "file" ? qsTr("From %1").arg(log.fileName) : "")
                       + (log.totalLines ? "  ·  " + qsTr("%n line(s)", "", log.totalLines) : "")
             }
+            QuietButton {
+                text: qsTr("Why did it crash?")
+                enabled: log.totalLines > 0 && !tab.running
+                onClicked: if (Doctor.analyzeInstance(tab.instanceId)) Launcher.dialogRequested("crash", tab.instanceId)
+                           else Router.toast(qsTr("There is no game log yet. Play once first."), true)
+            }
             SettingsToggle { label: qsTr("Auto-scroll"); checked: tab.follow; onToggled: (on) => { tab.follow = on; if (on) lines.positionViewAtEnd() } }
             QuietButton {
                 visible: tab.running

@@ -683,6 +683,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>これは自動ではインストールできません。</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>Modrinth に ID「%1」の Mod はありません。Mod タブで検索してください。</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>インスタンスが存在しません。</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>このファイルにはダウンロード先がありません。</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>%1 を再インストール</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>「%1」を再ダウンロードしました。</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>%1 を再インストール中</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>「%1」が停止した理由</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>「%1」が予期せず停止しました</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>ログに原因が直接書かれています。該当する行を下に引用します。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>正確な原因は特定できませんでした。下はエラーが始まるログの部分です。調べる人の助けになります。</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>%1 には %2 が必要ですが、インストールされていません</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1 は別の Minecraft バージョン向けです</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>%1 には別のバージョンの %2 が必要です</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1 は %2 と一緒に読み込まれません</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1 が複数インストールされています</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>Mod が複数インストールされています</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>ゲームのメモリが不足しました</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java が割り当てられたメモリを確保できませんでした</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>Java に使えるメモリがコンピューターに足りません</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>このバージョンは Java %1 でのみ動作します</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>Java %1 以降が必要です</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>グラフィックドライバーで Minecraft を実行できません</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>ファイル %1 が破損しています</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>必要：%1。</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>任意のバージョン</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>必要：%1。インストール済み：%2。</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>作者がこの組み合わせを動作しないと指定しているため、Mod ローダーが停止しました。どちらかを削除するか、更新を確認してください。</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>次のうち 1 つだけ残してください：%1。</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>Mod フォルダーにはコピーを 1 つだけ残してください。</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>現在の最大メモリ：%1 GB。このコンピューターでのこのインスタンスの推奨値：%2 GB。</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>最大メモリは %1 GB で、このコンピューターや 32 ビット版 Java が確保できる量を超えています。</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>他のプログラムを閉じるか、システムに十分残るようゲームのメモリを減らしてください。</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>ゲームは Java %1 で起動されました。</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>ゲームの起動に使われた Java が古すぎます。</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>グラフィックカードのメーカーから最新のドライバーをインストールしてください。GPU が 2 つあるノート PC では、専用 GPU でゲームを実行してください。</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>Mod フォルダーにはもうありません。</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>アーカイブとして開けません。通常はダウンロードの中断が原因です。</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>%1 をインストール</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>Mod を開く</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>%1 GB に増やす</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>%1 GB に減らす</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>Java %1 を使う</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>Java %1 をダウンロード</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>再ダウンロード</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>ゴミ箱に入れる</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>最大メモリはすでにこのコンピューターの推奨値以上です。重い Mod をいくつか外すか、他のプログラムを閉じてください。</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>最大メモリを %1 GB にしました。</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>このインスタンスは Java %1 を使うようになりました。</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>ゴミ箱に移動しました。Mod タブから Mod を入れ直してください。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>ファイルを移動できませんでした。</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>コピーしました。</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>ログより：</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>処理中…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>Mod を検索</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>ログの抜粋</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>エラーに出てくる Mod（%1）</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>スタックトレースに出てくる Mod です。クラッシュの原因とは限りません。大きな Modpack では、エラーに名前が出る Mod が原因でないことがよくあります。</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>リンクをコピーしました：%1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>ログを %1 にアップロードし、リンクをコピーします。ユーザー名を含むフォルダーのパスとログイントークンは隠されます。</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>アップロード中…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>アップロード</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>ログ全体を開く</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>ログを共有</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -5941,6 +6211,10 @@
     <message>
         <source>Errors</source>
         <translation>エラー</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>クラッシュの原因は？</translation>
     </message>
     <message>
         <source>Copy the log</source>

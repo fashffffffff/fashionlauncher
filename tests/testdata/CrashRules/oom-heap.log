@@ -1,0 +1,4 @@
+[15:20:00] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3537)
+	at net.minecraft.class_2852.method_12345(class_2852.java:12) ~[client-intermediary.jar:?]

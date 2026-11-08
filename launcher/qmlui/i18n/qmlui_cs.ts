@@ -683,6 +683,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>Tohle nejde nainstalovat automaticky.</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>Na Modrinthu není žádný mod s id „%1“. Vyhledejte ho na kartě modů.</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>Instance už neexistuje.</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>Pro tento soubor není adresa ke stažení.</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>Přeinstalovat %1</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>„%1“ byl znovu stažen.</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>Přeinstalovávám %1</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>Proč se „%1“ zastavila</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>„%1“ se nečekaně zastavila</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>Log uvádí příčinu přímo. Řádky, ze kterých pochází, jsou citovány níže.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>Přesnou příčinu se nepodařilo určit. Níže je část logu, kde chyba začíná — pomůže tomu, kdo se na to podívá.</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>%1 potřebuje %2, který není nainstalovaný</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1 je určen pro jinou verzi Minecraftu</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>%1 potřebuje jinou verzi %2</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1 se odmítá načíst společně s %2</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1 je nainstalován vícekrát</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>Mod je nainstalován vícekrát</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>Hře došla paměť</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java nemohla získat přidělenou paměť</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>Počítači došla paměť pro Javu</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>Tato verze běží jen na Javě %1</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>Je potřeba Java %1 nebo novější</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>Grafický ovladač nedokáže spustit Minecraft</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>Soubor %1 je poškozený</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>Potřeba: %1.</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>jakákoli verze</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>Potřeba: %1. Nainstalováno: %2.</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>Autor označil tuto kombinaci jako nefunkční, proto se zavaděč modů zastavil. Odeberte jeden z nich nebo hledejte aktualizace.</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>Ponechte jen jeden z: %1.</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>Ponechte ve složce modů jen jednu kopii.</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>Maximální paměť teď: %1 GB. Doporučeno pro tuto instanci na tomto počítači: %2 GB.</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>Maximální paměť je %1 GB — víc, než tento počítač nebo 32bitová Java dokáže poskytnout.</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>Zavřete jiné programy nebo dejte hře méně paměti, aby systému zbylo dost.</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>Hra byla spuštěna s Javou %1.</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>Java, se kterou byla hra spuštěna, je na ni příliš stará.</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>Nainstalujte nejnovější ovladač od výrobce grafické karty. Na noteboocích se dvěma GPU spouštějte hru na dedikované.</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>Už není ve složce modů.</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>Nejde otevřít jako archiv — obvykle přerušené stahování.</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>Nainstalovat %1</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>Otevřít mody</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>Zvýšit na %1 GB</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>Snížit na %1 GB</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>Použít Javu %1</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>Stáhnout Javu %1</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>Stáhnout znovu</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>Přesunout do koše</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>Maximální paměť už je na doporučené hodnotě pro tento počítač nebo nad ní. Odeberte pár náročných modů nebo zavřete jiné programy.</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>Maximální paměť je teď %1 GB.</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>Tato instance teď používá Javu %1.</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>Přesunuto do koše. Nainstalujte mod znovu na kartě modů.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>Soubor se nepodařilo přesunout.</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Zkopírováno.</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>Z logu:</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Probíhá…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>Hledat v modech</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>Výňatek z logu</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>Mody zmíněné v chybě (%1)</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>Objevují se ve výpisu zásobníku. To neznamená, že pád způsobily: ve velkých modpacích mody uvedené v chybě často nejsou viníky.</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>Odkaz zkopírován: %1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>Log se nahraje na %1 a odkaz se zkopíruje. Cesty ke složkám s vaším uživatelským jménem a přihlašovací tokeny se skryjí.</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>Nahrávám…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>Nahrát</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovat</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>Otevřít celý log</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>Sdílet log</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Zavřít</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -6029,6 +6299,10 @@
     <message>
         <source>Errors</source>
         <translation>Chyby</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Proč to spadlo?</translation>
     </message>
     <message>
         <source>Copy the log</source>

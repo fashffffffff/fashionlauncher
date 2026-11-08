@@ -23,6 +23,7 @@
 #include "settings/SettingsBridge.h"
 #include "worlds/WorldsModel.h"
 #include "dialogs/GameLog.h"
+#include "doctor/CrashDoctor.h"
 #include "dialogs/InstanceActions.h"
 #include "dialogs/JavaInstaller.h"
 #include "dialogs/PromptsBridge.h"
@@ -101,6 +102,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Gallery", new GalleryBridge(this));
     ctx->setContextProperty("Tasks", TaskCenter::instance());
     ctx->setContextProperty("Stats", PlayStats::instance());
+    ctx->setContextProperty("Doctor", CrashDoctor::instance());
 }
 
 LaunchPrompts* QmlShell::prompts() const

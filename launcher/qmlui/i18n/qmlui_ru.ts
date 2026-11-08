@@ -683,6 +683,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>Это нельзя установить автоматически.</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>На Modrinth нет мода с идентификатором «%1». Найдите его во вкладке модов.</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>Сборка больше не существует.</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>Для этого файла нет адреса загрузки.</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>Переустановка %1</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>«%1» скачан заново.</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>Переустанавливаем %1</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>Почему «%1» остановилась</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>«%1» неожиданно остановилась</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>Причина прямо указана в логе. Строки, где это сказано, приведены ниже.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>Точную причину определить не удалось. Ниже — часть лога, где начинается ошибка: она поможет тому, кто будет разбираться.</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>Для %1 нужен %2, но он не установлен</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1 сделан для другой версии Minecraft</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>Для %1 нужна другая версия %2</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1 не загружается вместе с %2</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1 установлен несколько раз</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>Мод установлен несколько раз</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>Игре не хватило памяти</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java не смогла получить выделенную память</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>Компьютеру не хватило памяти для Java</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>Эта версия работает только на Java %1</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>Нужна Java %1 или новее</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>Графический драйвер не может запустить Minecraft</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>Файл %1 повреждён</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>Нужно: %1.</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>любая версия</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>Нужно: %1. Установлено: %2.</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>Автор мода отметил это сочетание как нерабочее, поэтому загрузчик модов остановился. Удалите один из них или поищите обновления.</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>Оставьте один из: %1.</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>Оставьте в папке модов только одну копию.</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>Сейчас максимум памяти: %1 ГБ. Рекомендуется для этой сборки на этом компьютере: %2 ГБ.</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>Максимум памяти — %1 ГБ: больше, чем может дать этот компьютер или 32-битная Java.</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>Закройте другие программы или выделите игре меньше памяти, чтобы системе хватало.</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>Игра была запущена на Java %1.</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>Java, на которой запускалась игра, слишком старая для неё.</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>Установите свежий драйвер с сайта производителя видеокарты. На ноутбуках с двумя видеокартами запускайте игру на дискретной.</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>Его уже нет в папке модов.</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>Его не удаётся открыть как архив — обычно это оборванная загрузка.</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>Установить %1</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>Открыть моды</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>Увеличить до %1 ГБ</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>Уменьшить до %1 ГБ</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>Использовать Java %1</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>Скачать Java %1</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>Скачать заново</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>Переместить в корзину</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>Максимум памяти уже не меньше рекомендуемого для этого компьютера. Уберите часть тяжёлых модов или закройте другие программы.</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>Теперь максимум памяти — %1 ГБ.</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>Теперь эта сборка использует Java %1.</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>Перемещено в корзину. Установите мод заново во вкладке модов.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>Не удалось переместить файл.</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Скопировано.</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>Из лога:</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Выполняется…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>Искать в модах</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>Фрагмент лога</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>Моды, упомянутые в ошибке (%1)</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>Они встречаются в трассировке стека. Это не значит, что краш вызвали они: в больших сборках моды из текста ошибки часто ни при чём.</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>Ссылка скопирована: %1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>Лог будет загружен на %1, а ссылка скопирована. Пути к папкам с вашим именем пользователя и токены входа скрываются.</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>Загружаем…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>Загрузить</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>Открыть весь лог</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>Поделиться логом</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -6029,6 +6299,10 @@
     <message>
         <source>Errors</source>
         <translation>Ошибки</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Почему вылетело?</translation>
     </message>
     <message>
         <source>Copy the log</source>

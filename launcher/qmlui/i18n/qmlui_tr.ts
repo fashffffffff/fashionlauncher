@@ -683,6 +683,276 @@
     </message>
 </context>
 <context>
+    <name>CrashDoctor</name>
+    <message>
+        <source>This can&apos;t be installed automatically.</source>
+        <translation>Bu otomatik olarak yüklenemez.</translation>
+    </message>
+    <message>
+        <source>Modrinth has no mod with the id “%1”. Search for it in the mods tab.</source>
+        <translation>Modrinth&apos;te “%1” kimlikli bir mod yok. Modlar sekmesinde arayın.</translation>
+    </message>
+    <message>
+        <source>The instance is gone.</source>
+        <translation>Kurulum artık yok.</translation>
+    </message>
+    <message>
+        <source>There is no download address for this file.</source>
+        <translation>Bu dosyanın indirme adresi yok.</translation>
+    </message>
+    <message>
+        <source>Reinstall %1</source>
+        <translation>%1 yeniden yükle</translation>
+    </message>
+    <message>
+        <source>Downloaded “%1” again.</source>
+        <translation>“%1” yeniden indirildi.</translation>
+    </message>
+    <message>
+        <source>Reinstalling %1</source>
+        <translation>%1 yeniden yükleniyor</translation>
+    </message>
+</context>
+<context>
+    <name>CrashDoctorDialog</name>
+    <message>
+        <source>Why “%1” stopped</source>
+        <translation>“%1” neden durdu</translation>
+    </message>
+    <message>
+        <source>“%1” stopped unexpectedly</source>
+        <translation>“%1” beklenmedik şekilde durdu</translation>
+    </message>
+    <message>
+        <source>The log names the cause directly. The lines it comes from are quoted below.</source>
+        <translation>Günlük nedeni doğrudan belirtiyor. İlgili satırlar aşağıda alıntılandı.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t determine the exact cause. Below is the part of the log where the error starts — it helps whoever looks into it.</source>
+        <translation>Kesin neden belirlenemedi. Aşağıda hatanın başladığı günlük bölümü var; inceleyen kişiye yardımcı olur.</translation>
+    </message>
+    <message>
+        <source>%1 needs %2, which isn&apos;t installed</source>
+        <translation>%1 için %2 gerekiyor ama yüklü değil</translation>
+    </message>
+    <message>
+        <source>%1 is made for a different Minecraft version</source>
+        <translation>%1 başka bir Minecraft sürümü için yapılmış</translation>
+    </message>
+    <message>
+        <source>%1 needs a different version of %2</source>
+        <translation>%1 için %2 modunun başka bir sürümü gerekiyor</translation>
+    </message>
+    <message>
+        <source>%1 refuses to load together with %2</source>
+        <translation>%1, %2 ile birlikte yüklenmiyor</translation>
+    </message>
+    <message>
+        <source>%1 is installed more than once</source>
+        <translation>%1 birden fazla kez yüklü</translation>
+    </message>
+    <message>
+        <source>A mod is installed more than once</source>
+        <translation>Bir mod birden fazla kez yüklü</translation>
+    </message>
+    <message>
+        <source>The game ran out of memory</source>
+        <translation>Oyunun belleği tükendi</translation>
+    </message>
+    <message>
+        <source>Java couldn&apos;t get the memory it was given</source>
+        <translation>Java kendisine ayrılan belleği alamadı</translation>
+    </message>
+    <message>
+        <source>The computer ran out of memory for Java</source>
+        <translation>Bilgisayarda Java için bellek kalmadı</translation>
+    </message>
+    <message>
+        <source>This version only runs on Java %1</source>
+        <translation>Bu sürüm yalnızca Java %1 ile çalışır</translation>
+    </message>
+    <message>
+        <source>Java %1 or newer is required</source>
+        <translation>Java %1 veya daha yenisi gerekli</translation>
+    </message>
+    <message>
+        <source>The graphics driver can&apos;t run Minecraft</source>
+        <translation>Ekran kartı sürücüsü Minecraft&apos;ı çalıştıramıyor</translation>
+    </message>
+    <message>
+        <source>The file %1 is damaged</source>
+        <translation>%1 dosyası bozuk</translation>
+    </message>
+    <message>
+        <source>Required: %1.</source>
+        <translation>Gereken: %1.</translation>
+    </message>
+    <message>
+        <source>any version</source>
+        <translation>herhangi bir sürüm</translation>
+    </message>
+    <message>
+        <source>Required: %1. Installed: %2.</source>
+        <translation>Gereken: %1. Yüklü: %2.</translation>
+    </message>
+    <message>
+        <source>Its author marked this combination as broken, so the mod loader stopped. Remove one of them or look for updates.</source>
+        <translation>Geliştiricisi bu birleşimi bozuk olarak işaretledi, bu yüzden mod yükleyici durdu. Birini kaldırın veya güncelleme arayın.</translation>
+    </message>
+    <message>
+        <source>Keep one of: %1.</source>
+        <translation>Yalnızca birini tutun: %1.</translation>
+    </message>
+    <message>
+        <source>Keep only one copy in the mods folder.</source>
+        <translation>Mod klasöründe yalnızca bir kopya bırakın.</translation>
+    </message>
+    <message>
+        <source>Max memory now: %1 GB. Recommended for this instance on this computer: %2 GB.</source>
+        <translation>Şu anki en fazla bellek: %1 GB. Bu bilgisayarda bu kurulum için önerilen: %2 GB.</translation>
+    </message>
+    <message>
+        <source>Max memory is %1 GB — more than this computer, or a 32-bit Java, can provide.</source>
+        <translation>En fazla bellek %1 GB; bu bilgisayarın veya 32 bit Java&apos;nın sağlayabileceğinden fazla.</translation>
+    </message>
+    <message>
+        <source>Close other programs, or give the game less memory so the system keeps enough.</source>
+        <translation>Diğer programları kapatın ya da sisteme yeterince kalması için oyuna daha az bellek verin.</translation>
+    </message>
+    <message>
+        <source>The game was started with Java %1.</source>
+        <translation>Oyun Java %1 ile başlatıldı.</translation>
+    </message>
+    <message>
+        <source>The Java the game was started with is too old for it.</source>
+        <translation>Oyunun başlatıldığı Java onun için çok eski.</translation>
+    </message>
+    <message>
+        <source>Install the latest driver from the maker of your graphics card. On laptops with two GPUs, run the game on the dedicated one.</source>
+        <translation>Ekran kartı üreticinizin en güncel sürücüsünü yükleyin. İki GPU&apos;lu dizüstülerde oyunu harici GPU&apos;da çalıştırın.</translation>
+    </message>
+    <message>
+        <source>It is no longer in the mods folder.</source>
+        <translation>Artık mod klasöründe değil.</translation>
+    </message>
+    <message>
+        <source>It can&apos;t be opened as an archive — usually a download that was cut off.</source>
+        <translation>Arşiv olarak açılamıyor; genellikle yarıda kesilmiş bir indirme.</translation>
+    </message>
+    <message>
+        <source>Install %1</source>
+        <translation>%1 yükle</translation>
+    </message>
+    <message>
+        <source>Open mods</source>
+        <translation>Modları aç</translation>
+    </message>
+    <message>
+        <source>Raise to %1 GB</source>
+        <translation>%1 GB&apos;a çıkar</translation>
+    </message>
+    <message>
+        <source>Lower to %1 GB</source>
+        <translation>%1 GB&apos;a düşür</translation>
+    </message>
+    <message>
+        <source>Use Java %1</source>
+        <translation>Java %1 kullan</translation>
+    </message>
+    <message>
+        <source>Download Java %1</source>
+        <translation>Java %1 indir</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation>Yeniden indir</translation>
+    </message>
+    <message>
+        <source>Move to Trash</source>
+        <translation>Çöp Kutusu&apos;na taşı</translation>
+    </message>
+    <message>
+        <source>Max memory is already at or above the amount recommended for this computer. Remove some heavy mods or close other programs.</source>
+        <translation>En fazla bellek zaten bu bilgisayar için önerilen değerde veya üzerinde. Bazı ağır modları kaldırın veya diğer programları kapatın.</translation>
+    </message>
+    <message>
+        <source>Max memory is now %1 GB.</source>
+        <translation>En fazla bellek artık %1 GB.</translation>
+    </message>
+    <message>
+        <source>This instance now uses Java %1.</source>
+        <translation>Bu kurulum artık Java %1 kullanıyor.</translation>
+    </message>
+    <message>
+        <source>Moved to the Trash. Install the mod again from the mods tab.</source>
+        <translation>Çöp Kutusu&apos;na taşındı. Modu modlar sekmesinden yeniden yükleyin.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t move the file.</source>
+        <translation>Dosya taşınamadı.</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Kopyalandı.</translation>
+    </message>
+    <message>
+        <source>From the log:</source>
+        <translation>Günlükten:</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Çalışıyor…</translation>
+    </message>
+    <message>
+        <source>Search in mods</source>
+        <translation>Modlarda ara</translation>
+    </message>
+    <message>
+        <source>Log excerpt</source>
+        <translation>Günlük alıntısı</translation>
+    </message>
+    <message>
+        <source>Mods mentioned in the error (%1)</source>
+        <translation>Hatada adı geçen modlar (%1)</translation>
+    </message>
+    <message>
+        <source>They appear in the stack trace. That does not mean they caused the crash: in big modpacks the mods named in an error are often not the ones at fault.</source>
+        <translation>Yığın izinde görünüyorlar. Bu, çökmeye onların neden olduğu anlamına gelmez: büyük mod paketlerinde hatada adı geçen modlar çoğu zaman suçlu değildir.</translation>
+    </message>
+    <message>
+        <source>Link copied: %1</source>
+        <translation>Bağlantı kopyalandı: %1</translation>
+    </message>
+    <message>
+        <source>The log will be uploaded to %1 and the link copied. Folder paths with your user name and login tokens are hidden.</source>
+        <translation>Günlük %1 sitesine yüklenecek ve bağlantı kopyalanacak. Kullanıcı adınızı içeren klasör yolları ve giriş belirteçleri gizlenir.</translation>
+    </message>
+    <message>
+        <source>Uploading…</source>
+        <translation>Yükleniyor…</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>Yükle</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopyala</translation>
+    </message>
+    <message>
+        <source>Open full log</source>
+        <translation>Tüm günlüğü aç</translation>
+    </message>
+    <message>
+        <source>Share log</source>
+        <translation>Günlüğü paylaş</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Kapat</translation>
+    </message>
+</context>
+<context>
     <name>CreateBridge</name>
     <message>
         <source>Pick a Minecraft version first.</source>
@@ -5941,6 +6211,10 @@
     <message>
         <source>Errors</source>
         <translation>Hatalar</translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Neden çöktü?</translation>
     </message>
     <message>
         <source>Copy the log</source>

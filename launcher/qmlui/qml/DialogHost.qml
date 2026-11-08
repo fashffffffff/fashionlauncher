@@ -18,6 +18,7 @@ Item {
             else if (kind === "export") exportDlg.openFor(instanceId)
             else if (kind === "delete") host.confirmDelete(instanceId)
             else if (kind === "icon") host.pickIcon(instanceId)
+            else if (kind === "crash") crashDlg.open()
         }
         function onInstancePageRequested(instanceId, tab) { host.raiseWindow(); Router.openInstance(instanceId, tab) }
         function onSettingsRequested(page) {
@@ -77,6 +78,13 @@ Item {
         target: Router
         function onGameOptionsRequested(params) { gameOptionsDlg.openFor(params) }
     }
+    // ---- crash doctor: after a game crash (also when the window was closed while playing), or from the log tab
+    CrashDoctorDialog { id: crashDlg }
+    Connections {
+        target: Doctor
+        function onCrashed(instanceId) { if (Doctor.takePending()) { host.raiseWindow(); crashDlg.open() } }
+    }
+    Component.onCompleted: if (Doctor.pendingInstance) Qt.callLater(() => { if (Doctor.takePending()) crashDlg.open() })
     JavaInstallDialog { id: javaDlg }
     Connections {
         target: Settings
