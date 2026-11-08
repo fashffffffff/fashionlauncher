@@ -110,6 +110,7 @@ Item {
                 }
                 ColumnLayout {
                     Layout.fillWidth: true
+                    Layout.minimumWidth: Style.px(120)
                     spacing: Style.px(4)
                     Text {
                         Layout.fillWidth: true
@@ -122,6 +123,9 @@ Item {
                         elide: Text.ElideRight
                     }
                     Txt {
+                        // fills and elides: at its full width it pushed Play off the card in narrow windows
+                        Layout.fillWidth: true
+                        elide: Text.ElideRight
                         text: [Fmt.versionLine(page.inst), page.inst ? Fmt.playTime(page.inst.playTime) : ""].filter(s => s).join("     ")
                         muted: !page.cover
                         color: page.cover ? Qt.rgba(1, 1, 1, 0.78) : Style.textMuted
@@ -135,8 +139,14 @@ Item {
                     tip: qsTr("Play world…")
                     onClicked: Router.pickQuickPlay(page.instanceId)
                 }
-                ContinueButton { instanceId: page.instanceId; Layout.maximumWidth: Style.px(280) }
-                PlayButton { instanceId: page.instanceId; Layout.preferredWidth: Style.px(200) }
+                // Continue gives way first (its label elides); Play keeps its size
+                ContinueButton {
+                    instanceId: page.instanceId
+                    Layout.maximumWidth: Style.px(280)
+                    // narrow window: just the icon, so Play keeps its full size
+                    iconOnly: header.width < Style.px(720)
+                }
+                PlayButton { instanceId: page.instanceId; Layout.preferredWidth: Style.px(200); Layout.minimumWidth: Style.px(160) }
             }
         }
 

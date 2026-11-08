@@ -21,7 +21,9 @@ Button {
     readonly property real sink: sunk ? depth * 0.8 : (hovered ? -Style.px(1) : 0)
 
     implicitHeight: Style.px(48) + depth
-    implicitWidth: Math.max(Style.px(160), row.implicitWidth + Style.px(40))
+    // From the label's full width, not the Row's: the Row follows the (possibly elided) label and would lock it short
+    implicitWidth: text.length === 0 ? Style.px(56)
+                 : Math.max(Style.px(160), (icon.visible ? icon.width + row.spacing : 0) + label.implicitWidth + Style.px(40))
     padding: 0
     // the content rides on the face
     topPadding: Math.max(0, sink)
@@ -86,6 +88,8 @@ Button {
                 anchors.verticalCenter: parent.verticalCenter
             }
             Text {
+                id: label
+                visible: control.text.length > 0
                 text: control.text
                 color: control.ink
                 // Long translations shrink a little before eliding instead of touching the edges

@@ -7,6 +7,8 @@ PrimaryButton {
     id: btn
     property string instanceId
     property var target: ({})
+    /// Icon only (the tooltip still says where it goes) — for rows that run out of room
+    property bool iconOnly: false
     readonly property bool busy: instanceId.length > 0 && Launcher.launches[instanceId] !== undefined
 
     function refresh() { target = instanceId ? QuickPlay.last(instanceId) : ({}) }
@@ -16,13 +18,14 @@ PrimaryButton {
     onBusyChanged: if (!busy) refresh()
 
     visible: !!target.kind && !busy
-    text: target.kind === "server" ? qsTr("Continue on %1").arg(target.name) : qsTr("Continue: %1").arg(target.name || "")
+    text: iconOnly ? "" : target.kind === "server" ? qsTr("Continue on %1").arg(target.name) : qsTr("Continue: %1").arg(target.name || "")
     iconName: target.kind === "server" ? "globe" : "world"
     fill: Style.surfaceHi
     sound: "launch"
     ToolTip.visible: hovered
     ToolTip.delay: 500
-    ToolTip.text: target.kind === "server" ? qsTr("Start the game and join %1 right away").arg(target.value)
+    ToolTip.text: iconOnly ? (target.kind === "server" ? qsTr("Continue on %1").arg(target.name) : qsTr("Continue: %1").arg(target.name || ""))
+                : target.kind === "server" ? qsTr("Start the game and join %1 right away").arg(target.value)
                                            : qsTr("Start the game straight in this world")
     onClicked: QuickPlay.play(instanceId, target.kind, target.value)
 }

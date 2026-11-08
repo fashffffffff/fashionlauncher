@@ -62,8 +62,13 @@ Item {
 
         // Toolbar
         RowLayout {
+            id: toolbar
             Layout.fillWidth: true
             spacing: Style.px(8)
+            // The secondary buttons fold to icons (labels become tooltips) when the labelled row wouldn't fit
+            readonly property bool compact: toolsRuler.implicitWidth + findBtn.implicitWidth
+                                            + (updateAllBtn.visible ? updateAllBtn.implicitWidth : 0)
+                                            + Style.px(200) + spacing * 6 > width
             Field {
                 id: search
                 iconName: "search"
@@ -73,9 +78,11 @@ Item {
                 Keys.onEscapePressed: text = ""
             }
             Item { Layout.fillWidth: true }
-            QuietButton { text: qsTr("Add files"); iconName: "plus"; onClicked: fileDialog.open() }
-            QuietButton { text: qsTr("Open folder"); iconName: "folder"; onClicked: installed.openFolder() }
+            QuietButton { compact: toolbar.compact; text: qsTr("Add files"); iconName: "plus"; onClicked: fileDialog.open() }
+            QuietButton { compact: toolbar.compact; text: qsTr("Open folder"); iconName: "folder"; onClicked: installed.openFolder() }
             QuietButton {
+                id: checkBtn
+                compact: toolbar.compact
                 visible: installed.totalCount > 0
                 enabled: installed.busy === ""
                 text: installed.busy === "checking" ? qsTr("Checking…") : qsTr("Check for updates")
@@ -83,6 +90,7 @@ Item {
                 onClicked: installed.checkUpdates()
             }
             PrimaryButton {
+                id: updateAllBtn
                 visible: installed.updateCount > 0 || installed.busy === "updating"
                 implicitHeight: Style.px(40)
                 implicitWidth: Style.px(150)
@@ -93,9 +101,10 @@ Item {
                 onClicked: updatesDialog.show()   // review versions and changelogs first
             }
             PrimaryButton {
+                id: findBtn
                 visible: installed.totalCount > 0
                 implicitHeight: Style.px(40)
-                implicitWidth: Math.max(Style.px(130), implicitContentWidth + Style.px(40))
+                Layout.minimumWidth: implicitWidth   // the way into the catalog never gets cut
                 text: RF.findLabel(view.kind)
                 iconName: "search"
                 onClicked: view.findRequested()
@@ -216,5 +225,16 @@ Item {
             font.pixelSize: Style.fontLead
             font.weight: Font.DemiBold
         }
+    }
+    // Invisible ruler with the labelled toolbar buttons (an invisible item reports no size, so it is transparent)
+    Row {
+        id: toolsRuler
+        x: -width - Style.px(100)
+        opacity: 0
+        enabled: false
+        spacing: toolbar.spacing
+        QuietButton { text: qsTr("Add files"); iconName: "plus" }
+        QuietButton { text: qsTr("Open folder"); iconName: "folder" }
+        QuietButton { visible: checkBtn.visible; text: checkBtn.text; iconName: "refresh" }
     }
 }
