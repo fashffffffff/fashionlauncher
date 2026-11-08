@@ -48,6 +48,8 @@ ApplicationWindow {
         else if (name.startsWith("prompt:")) Prompts.requested({ id: -1, kind: name.slice(7), title: "Preview", name: "Player",
             text: "The Minecraft authentication servers are currently unavailable, launching in offline mode.",
             buttons: [qsTr("Kill"), qsTr("Cancel")], tone: "danger" })
+        // Preview of the blocked-mods dialog with three fake entries
+        else if (name === "blocked") BlockedMods.preview()
         else if (pageFiles[name]) Router.go(name)
     }
 

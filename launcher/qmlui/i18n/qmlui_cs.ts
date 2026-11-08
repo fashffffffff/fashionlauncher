@@ -511,6 +511,73 @@
     </message>
 </context>
 <context>
+    <name>BlockedModsDialog</name>
+    <message>
+        <source>Some mods need a manual download</source>
+        <translation>Některé mody je třeba stáhnout ručně</translation>
+    </message>
+    <message>
+        <source>The makers of these mods don&apos;t allow launchers to download them. Open each page, download the file, and it is found here automatically as soon as it arrives in your Downloads folder — or pick the file yourself. Press Continue when everything is found.</source>
+        <translation>Tvůrci těchto modů nepovolují jejich stahování launchery. Otevřete každou stránku, stáhněte soubor — automaticky se tu najde, jakmile se objeví ve vaší složce stažených souborů — nebo soubor vyberte sami. Až bude všechno nalezeno, stiskněte Pokračovat.</translation>
+    </message>
+    <message>
+        <source>Found</source>
+        <translation>Nalezeno</translation>
+    </message>
+    <message>
+        <source>Waiting</source>
+        <translation>Čeká</translation>
+    </message>
+    <message>
+        <source>Found ✓</source>
+        <translation>Nalezeno ✓</translation>
+    </message>
+    <message>
+        <source>Hash: %1</source>
+        <translation>Hash: %1</translation>
+    </message>
+    <message>
+        <source>Open page</source>
+        <translation>Otevřít stránku</translation>
+    </message>
+    <message>
+        <source>Pick file…</source>
+        <translation>Vybrat soubor…</translation>
+    </message>
+    <message>
+        <source>%1 of %2 found</source>
+        <translation>Nalezeno %1 z %2</translation>
+    </message>
+    <message>
+        <source>Open all pages</source>
+        <translation>Otevřít všechny stránky</translation>
+    </message>
+    <message>
+        <source>Add folder…</source>
+        <translation>Přidat složku…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
+    </message>
+    <message>
+        <source>Continue without them</source>
+        <translation>Pokračovat bez nich</translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation>Pokračovat</translation>
+    </message>
+    <message>
+        <source>Choose the folder you downloaded the mods to</source>
+        <translation>Vyberte složku, do které jste mody stáhli</translation>
+    </message>
+    <message>
+        <source>Choose the downloaded file</source>
+        <translation>Vyberte stažený soubor</translation>
+    </message>
+</context>
+<context>
     <name>CommandPalette</name>
     <message>
         <source>Play %1</source>

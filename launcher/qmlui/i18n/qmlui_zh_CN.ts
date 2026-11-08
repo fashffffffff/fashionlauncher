@@ -511,6 +511,73 @@
     </message>
 </context>
 <context>
+    <name>BlockedModsDialog</name>
+    <message>
+        <source>Some mods need a manual download</source>
+        <translation>部分模组需要手动下载</translation>
+    </message>
+    <message>
+        <source>The makers of these mods don&apos;t allow launchers to download them. Open each page, download the file, and it is found here automatically as soon as it arrives in your Downloads folder — or pick the file yourself. Press Continue when everything is found.</source>
+        <translation>这些模组的作者不允许启动器下载它们。打开每个页面并下载文件——文件一到达你的下载文件夹就会在这里被自动识别——也可以自行选择文件。全部找到后请点击“继续”。</translation>
+    </message>
+    <message>
+        <source>Found</source>
+        <translation>已找到</translation>
+    </message>
+    <message>
+        <source>Waiting</source>
+        <translation>等待中</translation>
+    </message>
+    <message>
+        <source>Found ✓</source>
+        <translation>已找到 ✓</translation>
+    </message>
+    <message>
+        <source>Hash: %1</source>
+        <translation>哈希：%1</translation>
+    </message>
+    <message>
+        <source>Open page</source>
+        <translation>打开网页</translation>
+    </message>
+    <message>
+        <source>Pick file…</source>
+        <translation>选择文件…</translation>
+    </message>
+    <message>
+        <source>%1 of %2 found</source>
+        <translation>已找到 %1 个，共 %2 个</translation>
+    </message>
+    <message>
+        <source>Open all pages</source>
+        <translation>打开所有网页</translation>
+    </message>
+    <message>
+        <source>Add folder…</source>
+        <translation>添加文件夹…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <source>Continue without them</source>
+        <translation>跳过它们继续</translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation>继续</translation>
+    </message>
+    <message>
+        <source>Choose the folder you downloaded the mods to</source>
+        <translation>选择你下载模组的文件夹</translation>
+    </message>
+    <message>
+        <source>Choose the downloaded file</source>
+        <translation>选择下载的文件</translation>
+    </message>
+</context>
+<context>
     <name>CommandPalette</name>
     <message>
         <source>Play %1</source>

@@ -511,6 +511,73 @@
     </message>
 </context>
 <context>
+    <name>BlockedModsDialog</name>
+    <message>
+        <source>Some mods need a manual download</source>
+        <translation>一部のMODは手動でダウンロードする必要があります</translation>
+    </message>
+    <message>
+        <source>The makers of these mods don&apos;t allow launchers to download them. Open each page, download the file, and it is found here automatically as soon as it arrives in your Downloads folder — or pick the file yourself. Press Continue when everything is found.</source>
+        <translation>これらのMODの作者は、ランチャーによるダウンロードを許可していません。各ページを開いてファイルをダウンロードすると、ダウンロードフォルダに届き次第ここで自動的に見つかります。手動でファイルを選ぶこともできます。すべて見つかったら「続ける」を押してください。</translation>
+    </message>
+    <message>
+        <source>Found</source>
+        <translation>見つかりました</translation>
+    </message>
+    <message>
+        <source>Waiting</source>
+        <translation>待機中</translation>
+    </message>
+    <message>
+        <source>Found ✓</source>
+        <translation>見つかりました ✓</translation>
+    </message>
+    <message>
+        <source>Hash: %1</source>
+        <translation>ハッシュ: %1</translation>
+    </message>
+    <message>
+        <source>Open page</source>
+        <translation>ページを開く</translation>
+    </message>
+    <message>
+        <source>Pick file…</source>
+        <translation>ファイルを選択…</translation>
+    </message>
+    <message>
+        <source>%1 of %2 found</source>
+        <translation>%2 件中 %1 件見つかりました</translation>
+    </message>
+    <message>
+        <source>Open all pages</source>
+        <translation>すべてのページを開く</translation>
+    </message>
+    <message>
+        <source>Add folder…</source>
+        <translation>フォルダを追加…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <source>Continue without them</source>
+        <translation>スキップして続ける</translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation>続ける</translation>
+    </message>
+    <message>
+        <source>Choose the folder you downloaded the mods to</source>
+        <translation>MODをダウンロードしたフォルダを選択</translation>
+    </message>
+    <message>
+        <source>Choose the downloaded file</source>
+        <translation>ダウンロードしたファイルを選択</translation>
+    </message>
+</context>
+<context>
     <name>CommandPalette</name>
     <message>
         <source>Play %1</source>

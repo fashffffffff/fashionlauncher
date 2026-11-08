@@ -66,11 +66,13 @@ FriendsService::FriendsService(QObject* parent) : QObject(parent)
             return;
         }
         send({ { "cmd", "set_status" }, { "status", "playing" }, { "game", inst->name() } });
+        // No Qt::UniqueConnection here: it asserts with a functor slot, and the worst a duplicate
+        // connection can do is send the same "online" status twice.
         connect(inst, &BaseInstance::runningStatusChanged, this, [this](bool running) {
             if (!running) {
                 send({ { "cmd", "set_status" }, { "status", "online" } });
             }
-        }, Qt::UniqueConnection);
+        });
     });
     connect(QCoreApplication::instance(), &QCoreApplication::aboutToQuit, this, [this] {
         if (running()) {

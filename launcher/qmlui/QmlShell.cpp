@@ -18,6 +18,7 @@
 #include "LauncherBridge.h"
 #include "UiTheme.h"
 #include "backgrounds/BackgroundsBridge.h"
+#include "create/BlockedModsBridge.h"
 #include "create/CreateBridge.h"
 #include "resources/ResourcesBridge.h"
 #include "settings/SettingsBridge.h"
@@ -71,6 +72,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     m_accounts = new AccountsModel(this);
     m_launcher = new LauncherBridge(this);
     m_prompts = new PromptsBridge(m_launcher, this);
+    m_blockedMods = new BlockedModsBridge(this);
 
     m_engine = new QQmlApplicationEngine(this);
     loadTranslator();
@@ -83,6 +85,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Accounts", m_accounts);
     ctx->setContextProperty("Launcher", m_launcher);
     ctx->setContextProperty("Prompts", m_prompts);
+    ctx->setContextProperty("BlockedMods", m_blockedMods);
     ctx->setContextProperty("InstanceActions", new InstanceActions(this));
     ctx->setContextProperty("JavaInstaller", new JavaInstaller(this));
     // Feature bridges: each one backs its own screens (see the class comments).
@@ -108,6 +111,11 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
 LaunchPrompts* QmlShell::prompts() const
 {
     return m_window ? m_prompts : nullptr;
+}
+
+BlockedModsBridge* QmlShell::blockedMods() const
+{
+    return m_window ? m_blockedMods : nullptr;
 }
 
 QmlShell::~QmlShell()

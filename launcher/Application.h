@@ -195,6 +195,9 @@ class Application : public QApplication {
     /// The QML shell's answers to launch questions, or null when the classic interface is in use.
     /// Brings the QML window back if it was unloaded for a game.
     class LaunchPrompts* qmlPrompts();
+    /// The QML window's blocked-mods question during pack installs, or null in classic mode
+    /// (which opens its own dialog). Brings the QML window back if it was unloaded for a game.
+    class BlockedModsBridge* qmlBlockedMods();
 
     void updateIsRunning(bool running);
     bool updatesAreAllowed() const;

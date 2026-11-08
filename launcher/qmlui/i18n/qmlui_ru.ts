@@ -511,6 +511,73 @@
     </message>
 </context>
 <context>
+    <name>BlockedModsDialog</name>
+    <message>
+        <source>Some mods need a manual download</source>
+        <translation>Некоторые моды нужно скачать вручную</translation>
+    </message>
+    <message>
+        <source>The makers of these mods don&apos;t allow launchers to download them. Open each page, download the file, and it is found here automatically as soon as it arrives in your Downloads folder — or pick the file yourself. Press Continue when everything is found.</source>
+        <translation>Авторы этих модов не разрешают скачивать их лаунчером. Откройте каждую страницу и скачайте файл — он появится здесь автоматически, как только окажется в папке «Загрузки», — или выберите файл вручную. Когда всё будет найдено, нажмите «Продолжить».</translation>
+    </message>
+    <message>
+        <source>Found</source>
+        <translation>Найдено</translation>
+    </message>
+    <message>
+        <source>Waiting</source>
+        <translation>Ожидание</translation>
+    </message>
+    <message>
+        <source>Found ✓</source>
+        <translation>Найдено ✓</translation>
+    </message>
+    <message>
+        <source>Hash: %1</source>
+        <translation>Хеш: %1</translation>
+    </message>
+    <message>
+        <source>Open page</source>
+        <translation>Открыть страницу</translation>
+    </message>
+    <message>
+        <source>Pick file…</source>
+        <translation>Выбрать файл…</translation>
+    </message>
+    <message>
+        <source>%1 of %2 found</source>
+        <translation>Найдено %1 из %2</translation>
+    </message>
+    <message>
+        <source>Open all pages</source>
+        <translation>Открыть все страницы</translation>
+    </message>
+    <message>
+        <source>Add folder…</source>
+        <translation>Добавить папку…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+    <message>
+        <source>Continue without them</source>
+        <translation>Продолжить без них</translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation>Продолжить</translation>
+    </message>
+    <message>
+        <source>Choose the folder you downloaded the mods to</source>
+        <translation>Выберите папку, куда скачаны моды</translation>
+    </message>
+    <message>
+        <source>Choose the downloaded file</source>
+        <translation>Выберите скачанный файл</translation>
+    </message>
+</context>
+<context>
     <name>CommandPalette</name>
     <message>
         <source>Play %1</source>
