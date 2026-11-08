@@ -27,6 +27,7 @@ set(TEST_SOURCES
     XmlLogs_test.cpp
     Commandline_test.cpp
     CrashRules_test.cpp
+    Upgrade_test.cpp
 )
 
 # NOTE(@getchoo): Very funny way of aliasing the Qt generated `main` test functions to respective filenames
