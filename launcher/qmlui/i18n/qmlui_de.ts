@@ -511,6 +511,73 @@
     </message>
 </context>
 <context>
+    <name>BlockedModsDialog</name>
+    <message>
+        <source>Some mods need a manual download</source>
+        <translation>Einige Mods müssen manuell heruntergeladen werden</translation>
+    </message>
+    <message>
+        <source>The makers of these mods don&apos;t allow launchers to download them. Open each page, download the file, and it is found here automatically as soon as it arrives in your Downloads folder — or pick the file yourself. Press Continue when everything is found.</source>
+        <translation>Die Hersteller dieser Mods erlauben keinen Download durch Launcher. Öffne jede Seite, lade die Datei herunter — sie wird hier automatisch erkannt, sobald sie in deinem Download-Ordner ankommt — oder wähle die Datei selbst aus. Klicke auf Weiter, wenn alles gefunden ist.</translation>
+    </message>
+    <message>
+        <source>Found</source>
+        <translation>Gefunden</translation>
+    </message>
+    <message>
+        <source>Waiting</source>
+        <translation>Wartet</translation>
+    </message>
+    <message>
+        <source>Found ✓</source>
+        <translation>Gefunden ✓</translation>
+    </message>
+    <message>
+        <source>Hash: %1</source>
+        <translation>Hash: %1</translation>
+    </message>
+    <message>
+        <source>Open page</source>
+        <translation>Seite öffnen</translation>
+    </message>
+    <message>
+        <source>Pick file…</source>
+        <translation>Datei auswählen…</translation>
+    </message>
+    <message>
+        <source>%1 of %2 found</source>
+        <translation>%1 von %2 gefunden</translation>
+    </message>
+    <message>
+        <source>Open all pages</source>
+        <translation>Alle Seiten öffnen</translation>
+    </message>
+    <message>
+        <source>Add folder…</source>
+        <translation>Ordner hinzufügen…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
+    </message>
+    <message>
+        <source>Continue without them</source>
+        <translation>Ohne sie fortfahren</translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation>Weiter</translation>
+    </message>
+    <message>
+        <source>Choose the folder you downloaded the mods to</source>
+        <translation>Wähle den Ordner, in den du die Mods heruntergeladen hast</translation>
+    </message>
+    <message>
+        <source>Choose the downloaded file</source>
+        <translation>Wähle die heruntergeladene Datei</translation>
+    </message>
+</context>
+<context>
     <name>CommandPalette</name>
     <message>
         <source>Play %1</source>

@@ -511,6 +511,73 @@
     </message>
 </context>
 <context>
+    <name>BlockedModsDialog</name>
+    <message>
+        <source>Some mods need a manual download</source>
+        <translation>Bazı modlar elle indirilmeli</translation>
+    </message>
+    <message>
+        <source>The makers of these mods don&apos;t allow launchers to download them. Open each page, download the file, and it is found here automatically as soon as it arrives in your Downloads folder — or pick the file yourself. Press Continue when everything is found.</source>
+        <translation>Bu modların yapımcıları bunların başlatıcılar tarafından indirilmesine izin vermiyor. Her sayfayı açın, dosyayı indirin — İndirilenler klasörünüze geldiği anda burada otomatik olarak bulunur — ya da dosyayı kendiniz seçin. Her şey bulunduğunda Devam et düğmesine basın.</translation>
+    </message>
+    <message>
+        <source>Found</source>
+        <translation>Bulundu</translation>
+    </message>
+    <message>
+        <source>Waiting</source>
+        <translation>Bekliyor</translation>
+    </message>
+    <message>
+        <source>Found ✓</source>
+        <translation>Bulundu ✓</translation>
+    </message>
+    <message>
+        <source>Hash: %1</source>
+        <translation>Hash: %1</translation>
+    </message>
+    <message>
+        <source>Open page</source>
+        <translation>Sayfayı aç</translation>
+    </message>
+    <message>
+        <source>Pick file…</source>
+        <translation>Dosya seç…</translation>
+    </message>
+    <message>
+        <source>%1 of %2 found</source>
+        <translation>%1 / %2 bulundu</translation>
+    </message>
+    <message>
+        <source>Open all pages</source>
+        <translation>Tüm sayfaları aç</translation>
+    </message>
+    <message>
+        <source>Add folder…</source>
+        <translation>Klasör ekle…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>Continue without them</source>
+        <translation>Onlar olmadan devam et</translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation>Devam et</translation>
+    </message>
+    <message>
+        <source>Choose the folder you downloaded the mods to</source>
+        <translation>Modları indirdiğiniz klasörü seçin</translation>
+    </message>
+    <message>
+        <source>Choose the downloaded file</source>
+        <translation>İndirilen dosyayı seçin</translation>
+    </message>
+</context>
+<context>
     <name>CommandPalette</name>
     <message>
         <source>Play %1</source>
