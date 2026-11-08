@@ -6371,6 +6371,10 @@
         <translation>エクスポート</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>別のMinecraftバージョンへ移行…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>削除</translation>
     </message>
@@ -6798,6 +6802,356 @@
     <message>
         <source>My %1</source>
         <translation>マイ %1</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>このインスタンスはもう存在しません。</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>インスタンスを別のバージョンへ移す前に、ゲームを終了してください。</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>インスタンスをコピー中</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>コピーを作成できませんでした。</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>バージョンを切り替え中</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>Modを入れ替え中</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>仕上げ中</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — インスタンスアップグレード報告</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>アップグレードしたコピー元：%1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>変更前：Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>変更後：Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>作成日時：%1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>Mod：%1個。入れ替え %2個、無効化 %3個（新しいMinecraft用のバージョンなし）、無効化 %4個（不明なMod）、提案のインストール %5件。</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>元のインスタンスは変更されていません。</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>ワールドはそのままコピーされます。新しいMinecraftバージョンでワールドを開くと永久に変換され、旧バージョンでは開けなくなります。</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2)：無効化；代わりに提案をインストール：%3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2)：無効化 — Minecraft %3用のバージョンがありません</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2)：そのまま残す — バージョン不明（メタデータなし）</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>Minecraft %1への移行を準備中</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>このインスタンスはもう存在しません。</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>インスタンスを別のバージョンへ移す前に、ゲームを終了してください。</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>モッドローダーはMinecraft %1に対応していません。</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>アップグレードしたコピー「%1」を作成しました。</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>アップグレードはキャンセルされました。</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>「%1」をMinecraft %2へアップグレード中</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>ローダーなし</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>準備完了</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>バージョンなし</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>不明</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>戻る</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>別のMinecraftバージョンへ移行</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>このインスタンスの移行先のMinecraftバージョンを選んでください。</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>現在：Minecraft %1（%2）。ローダーは変わりません。</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>現在：Minecraft %1（ローダーなし）。</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>バージョンを検索</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>Minecraftのバージョンを検索</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>スナップショット</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>古いバージョン</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>バージョン一覧を再読み込み</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>おすすめ</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>バージョンを読み込み中…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>一覧を読み込めませんでした：%1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>「%1」に一致するバージョンはありません。</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>表示できるバージョンがありません。</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>再試行</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>このインスタンスの移行先のMinecraftバージョンを選んでください。その後、各Modの対応が確認されます。</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>Modを確認中…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>準備完了 %1 · バージョンなし %2 · 不明 %3</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>バージョンを変更</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>Minecraft %2の%1を確認できませんでした。</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1はMinecraft %2で利用できます。</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1はMinecraft %2では利用できません。別のバージョンを選んでください。</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>ワールドはそのままコピーされます。新しいMinecraftバージョンでワールドを開くと永久に変換され、旧バージョンでは開けなくなります。</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>すべて</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>準備完了</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>バージョンなし</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>不明</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>バージョン不明</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>提案：%1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>このインスタンスにはModがありません。Minecraftのバージョンとローダーだけが変更されます。</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>コピーの名前</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名前</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>新しいインスタンスの名前</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>「%1」という名前のコピーが新しいバージョンで作成されます。元のインスタンスはそのまま残ります。</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>元のインスタンスはそのまま残ります。</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>処理中…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>アップグレード コピー を作成</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>確認に失敗しました。</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>別のバージョンを選ぶ</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>開く</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>このインスタンスはもう存在しません。</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>先にMinecraftのバージョンを選んでください。</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>インストール済みのModを確認中…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>このインスタンスのModフォルダを開けませんでした。</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>ローダーを確認中…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>%1のバージョン一覧を読み込めませんでした：%2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>Modrinthに%n個のModについて問い合わせ中…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinthが応答しませんでした：%1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>%n個のModのハッシュを計算中…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>CurseForgeに%n個のModについて問い合わせ中…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>Modのアイコンを取得中…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>代替案を探しています…</translation>
     </message>
 </context>
 </TS>

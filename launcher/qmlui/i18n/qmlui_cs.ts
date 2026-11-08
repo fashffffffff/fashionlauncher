@@ -6461,6 +6461,10 @@
         <translation>Exportovat</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>Přejít na jinou verzi Minecraftu…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>Smazat</translation>
     </message>
@@ -6902,6 +6906,362 @@
     <message>
         <source>My %1</source>
         <translation>Můj %1</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Tento profil už neexistuje.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Před přechodem profilu na jinou verzi zavřete hru.</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>Kopírování profilu</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>Kopii se nepodařilo vytvořit.</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>Změna verze</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>Výměna modů</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>Dokončování</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — zpráva o aktualizaci profilu</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>Aktualizovaná kopie profilu: %1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>Z: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>Na: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>Vytvořeno: %1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>Modů: %1. Nahrazeno: %2. Vypnuto (chybí verze pro nový Minecraft): %3. Vypnuto (neznámý mod): %4. Nainstalováno návrhů: %5.</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>Původní profil nebyl změněn.</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Světy se kopírují tak, jak jsou. Otevření světa v novější verzi Minecraft ho trvale převede — ve starší verzi ho už nepůjde otevřít.</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2): vypnuto; místo něj nainstalován návrh: %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2): vypnuto — chybí verze pro Minecraft %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2): ponecháno — verze neznámá (bez metadat)</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>Příprava přechodu na Minecraft %1</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Tento profil už neexistuje.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Před přechodem profilu na jinou verzi zavřete hru.</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>Loader modů nepodporuje Minecraft %1.</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>Aktualizovaná kopie „%1“ byla vytvořena.</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>Aktualizace byla zrušena.</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>Aktualizuje se „%1“ na Minecraft %2</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>Bez loaderu modů</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>připraveno</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>chybí verze</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>neznámé</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Zpět</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>Přejít na jinou verzi Minecraftu</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>Vyberte verzi Minecraftu, na kterou tento profil přejít.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>Teď: Minecraft %1 s %2. Loader zůstává stejný.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>Teď: Minecraft %1 bez loaderu modů.</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>Hledat verze</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>Hledat verze Minecraftu</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>Snapshoty</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>Staré verze</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>Znovu načíst seznam verzí</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>Doporučená</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>Načítání verzí…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>Seznam se nepodařilo načíst: %1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>Žádné verze neodpovídají „%1“.</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>Žádné verze k zobrazení.</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>Zkusit znovu</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>Vyberte verzi Minecraftu, na kterou tento profil přejít. Potom se každý mod na ni zkontroluje.</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>Kontrola modů…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>%1 připraveno · %2 bez verze · %3 neznámé</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>Změnit verzi</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>%1 pro Minecraft %2 se nepodařilo zkontrolovat.</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1 je k dispozici pro Minecraft %2.</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1 není k dispozici pro Minecraft %2. Vyberte jinou verzi.</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Světy se kopírují tak, jak jsou. Otevření světa v novější verzi Minecraft ho trvale převede — ve starší verzi ho už nepůjde otevřít.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Všechny</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>Připraveno</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>Bez verze</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Neznámé</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>Verze neznámá</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>Návrh: %1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>Tento profil nemá mody. Změní se jen verze Minecraftu a loader.</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>Název kopie</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Název</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>Název nového profilu</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>Kopie pojmenovaná „%1“ se vytvoří s novou verzí; původní profil zůstane nedotčen.</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>Původní profil zůstane nedotčen.</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Pracuji…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>Vytvořit aktualizovanou kopii</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>Kontrola se nezdařila.</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>Vybrat jinou verzi</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>Otevřít</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Tento profil už neexistuje.</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>Nejprve vyberte verzi Minecraftu.</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>Prohlížení nainstalovaných modů…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>Nepodařilo se otevřít složku modů tohoto profilu.</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>Kontrola loaderu modů…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>Seznam verzí %1 se nepodařilo načíst: %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>Ptám se Modrinth na %n mod…</numerusform>
+            <numerusform>Ptám se Modrinth na %n mody…</numerusform>
+            <numerusform>Ptám se Modrinth na %n modů…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinth neodpověděl: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>Počítám hash %n modu…</numerusform>
+            <numerusform>Počítám hash %n modů…</numerusform>
+            <numerusform>Počítám hash %n modů…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>Ptám se CurseForge na %n mod…</numerusform>
+            <numerusform>Ptám se CurseForge na %n mody…</numerusform>
+            <numerusform>Ptám se CurseForge na %n modů…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>Stahování ikon modů…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>Hledání alternativ…</translation>
     </message>
 </context>
 </TS>

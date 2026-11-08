@@ -6461,6 +6461,10 @@
         <translation>Eksportuj</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>Przenieś na inną wersję Minecraft…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>Usuń</translation>
     </message>
@@ -6902,6 +6906,362 @@
     <message>
         <source>My %1</source>
         <translation>Mój %1</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Ten profil już nie istnieje.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Zamknij grę, zanim przeniesiesz profil na inną wersję.</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>Kopiowanie profilu</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>Nie udało się utworzyć kopii.</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>Zmiana wersji</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>Zastępowanie modów</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>Kończenie</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — raport aktualizacji profilu</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>Zaktualizowana kopia profilu: %1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>Z: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>Na: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>Utworzono: %1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>Mody: %1. Zastąpione: %2. Wyłączone (brak wersji dla nowego Minecrafta): %3. Wyłączone (nieznany mod): %4. Zainstalowane podpowiedzi: %5.</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>Oryginalny profil nie został zmieniony.</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Światy są kopiowane bez zmian. Otwarcie świata w nowszej wersji Minecraft konwertuje go na stałe — nie da się go potem otworzyć w starszej wersji.</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2): wyłączony; zamiast niego zainstalowano podpowiedź: %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2): wyłączony — brak wersji dla Minecraft %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2): pozostawiony — wersja nieznana (brak metadanych)</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>Przygotowanie przejścia na Minecraft %1</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Ten profil już nie istnieje.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Zamknij grę, zanim przeniesiesz profil na inną wersję.</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>Loader modów nie obsługuje Minecraft %1.</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>Utworzono zaktualizowaną kopię „%1”.</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>Aktualizacja została anulowana.</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>Aktualizowanie „%1” do Minecraft %2</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>Brak loadera modów</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>gotowe</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>brak wersji</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>nieznane</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Wstecz</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>Przenieś na inną wersję Minecraft</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>Wybierz wersję Minecraft, na którą przenieść ten profil.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>Teraz: Minecraft %1 z %2. Loader pozostaje ten sam.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>Teraz: Minecraft %1 bez loadera modów.</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>Szukaj wersji</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>Szukaj wersji Minecraft</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>Snapshoty</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>Stare wersje</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>Odśwież listę wersji</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>Zalecana</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>Wczytywanie wersji…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>Nie udało się wczytać listy: %1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>Brak wersji pasujących do „%1”.</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>Brak wersji do pokazania.</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>Spróbuj ponownie</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>Wybierz wersję Minecraft, na którą przenieść ten profil. Potem każdy mod zostanie z nią sprawdzony.</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>Sprawdzanie modów…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>%1 gotowe · %2 bez wersji · %3 nieznane</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>Wybierz inną wersję</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>Nie udało się sprawdzić %1 dla Minecraft %2.</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1 jest dostępny dla Minecraft %2.</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1 nie jest dostępny dla Minecraft %2. Wybierz inną wersję.</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Światy są kopiowane bez zmian. Otwarcie świata w nowszej wersji Minecraft konwertuje go na stałe — nie da się go potem otworzyć w starszej wersji.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Wszystkie</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>Gotowe</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>Bez wersji</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nieznane</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>Wersja nieznana</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>Podpowiedź: %1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>Ten profil nie ma modów. Zmienią się tylko wersja Minecraft i loader.</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>Nazwa kopii</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nazwa</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>Nazwa nowego profilu</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>Kopia o nazwie „%1” zostanie utworzona z nową wersją; oryginalny profil pozostanie nietknięty.</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>Oryginalny profil pozostaje nietknięty.</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Pracuję…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>Utwórz zaktualizowaną kopię</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>Sprawdzenie nie powiodło się.</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>Wybierz inną wersję</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>Otwórz</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Ten profil już nie istnieje.</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>Najpierw wybierz wersję Minecraft.</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>Przeglądanie zainstalowanych modów…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>Nie udało się otworzyć folderu modów tego profilu.</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>Sprawdzanie loadera modów…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>Nie udało się wczytać listy wersji %1: %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>Pytam Modrinth o %n mod…</numerusform>
+            <numerusform>Pytam Modrinth o %n mody…</numerusform>
+            <numerusform>Pytam Modrinth o %n modów…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinth nie odpowiedział: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>Hashowanie %n moda…</numerusform>
+            <numerusform>Hashowanie %n modów…</numerusform>
+            <numerusform>Hashowanie %n modów…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>Pytam CurseForge o %n mod…</numerusform>
+            <numerusform>Pytam CurseForge o %n mody…</numerusform>
+            <numerusform>Pytam CurseForge o %n modów…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>Pobieranie ikon modów…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>Szukanie alternatyw…</translation>
     </message>
 </context>
 </TS>

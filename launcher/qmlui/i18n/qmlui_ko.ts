@@ -6371,6 +6371,10 @@
         <translation>내보내기</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>다른 Minecraft 버전으로 이동…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>삭제</translation>
     </message>
@@ -6798,6 +6802,356 @@
     <message>
         <source>My %1</source>
         <translation>내 %1</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>이 인스턴스는 더 이상 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>인스턴스를 다른 버전으로 이동하기 전에 게임을 종료하세요.</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>인스턴스 복사 중</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>복사본을 만들 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>버전 변경 중</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>모드 교체 중</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>마무리 중</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — 인스턴스 업그레이드 보고서</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>업그레이드된 복사본 원본: %1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>이전: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>이후: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>생성: %1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>모드 %1개: 교체 %2개, 비활성화 %3개(새 Minecraft용 버전 없음), 비활성화 %4개(알 수 없는 모드), 제안 설치 %5개.</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>원본 인스턴스는 변경되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>월드는 그대로 복사됩니다. 더 새로운 Minecraft 버전에서 월드를 열면 영구적으로 변환되며 이후에는 이전 버전에서 열 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2): 비활성화; 대신 제안 설치됨: %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2): 비활성화 — Minecraft %3용 버전 없음</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2): 그대로 둠 — 버전 알 수 없음(메타데이터 없음)</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>Minecraft %1(으)로 이동 준비 중</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>이 인스턴스는 더 이상 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>인스턴스를 다른 버전으로 이동하기 전에 게임을 종료하세요.</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>모드 로더가 Minecraft %1을(를) 지원하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>업그레이드된 복사본 “%1”이(가) 생성되었습니다.</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>업그레이드가 취소되었습니다.</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>“%1”을(를) Minecraft %2(으)로 업그레이드하는 중</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>모드 로더 없음</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>준비됨</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>버전 없음</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>뒤로</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>다른 Minecraft 버전으로 이동</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>이 인스턴스를 이동할 Minecraft 버전을 선택하세요.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>현재: Minecraft %1 (%2). 로더는 그대로 유지됩니다.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>현재: Minecraft %1 (모드 로더 없음).</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>버전 검색</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>Minecraft 버전 검색</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>스냅샷</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>이전 버전</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>버전 목록 새로 고침</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>권장</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>버전 불러오는 중…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>목록을 불러올 수 없습니다: %1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>“%1”과(와) 일치하는 버전이 없습니다.</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>표시할 버전이 없습니다.</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>다시 시도</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>이 인스턴스를 이동할 Minecraft 버전을 선택하세요. 이후 각 모드의 호환성이 확인됩니다.</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>모드 확인 중…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>준비됨 %1 · 버전 없음 %2 · 알 수 없음 %3</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>버전 변경</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>Minecraft %2용 %1을(를) 확인할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1은(는) Minecraft %2에서 사용할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1은(는) Minecraft %2에서 사용할 수 없습니다. 다른 버전을 선택하세요.</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>월드는 그대로 복사됩니다. 더 새로운 Minecraft 버전에서 월드를 열면 영구적으로 변환되며 이후에는 이전 버전에서 열 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>전체</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>준비됨</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>버전 없음</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>버전 알 수 없음</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>제안: %1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>이 인스턴스에는 모드가 없습니다. Minecraft 버전과 로더만 변경됩니다.</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>복사본 이름</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>새 인스턴스의 이름</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>“%1”이라는 복사본이 새 버전으로 생성되며 원본 인스턴스는 그대로 유지됩니다.</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>원본 인스턴스는 그대로 유지됩니다.</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>작업 중…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>업그레이드된 복사본 만들기</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>확인에 실패했습니다.</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>다른 버전 선택</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>열기</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>이 인스턴스는 더 이상 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>먼저 Minecraft 버전을 선택하세요.</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>설치된 모드를 확인하는 중…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>이 인스턴스의 모드 폴더를 열 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>모드 로더 확인 중…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>%1의 버전 목록을 불러올 수 없습니다: %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>Modrinth에 %n개 모드 문의 중…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinth가 응답하지 않았습니다: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>%n개 모드 해시 계산 중…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>CurseForge에 %n개 모드 문의 중…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>모드 아이콘 가져오는 중…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>대안 찾는 중…</translation>
     </message>
 </context>
 </TS>

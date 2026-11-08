@@ -6371,6 +6371,10 @@
         <translation>Dışa aktar</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>Başka bir Minecraft sürümüne taşı…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>Sil</translation>
     </message>
@@ -6798,6 +6802,356 @@
     <message>
         <source>My %1</source>
         <translation>Benim %1</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Bu profil artık yok.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Profili başka bir sürüme taşımadan önce oyunu kapat.</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>Profil kopyalanıyor</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>Kopya oluşturulamadı.</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>Sürüm değiştiriliyor</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>Modlar değiştiriliyor</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>Tamalanıyor</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — profil yükseltme raporu</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>Yükseltilmiş kopya: %1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>Kaynak: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>Hedef: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>Oluşturuldu: %1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>Mod sayısı: %1. Değiştirilen: %2. Devre dışı (yeni Minecraft için sürüm yok): %3. Devre dışı (bilinmeyen mod): %4. Kurulan öneri: %5.</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>Özgün profil değiştirilmedi.</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Dünyalar olduğu gibi kopyalanır. Bir dünyayı daha yeni bir Minecraft sürümünde açmak onu kalıcı olarak dönüştürür — sonra eski sürümde açılamaz.</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2): devre dışı; yerine öneri kuruldu: %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2): devre dışı — Minecraft %3 için sürüm yok</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2): olduğu gibi bırakıldı — sürüm bilinmiyor (meta veri yok)</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>Minecraft %1&apos;e geçiş hazırlanıyor</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Bu profil artık yok.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Profili başka bir sürüme taşımadan önce oyunu kapat.</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>Mod yükleyicisi Minecraft %1&apos;i desteklemiyor.</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>Yükseltilmiş kopya “%1” oluşturuldu.</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>Yükseltme iptal edildi.</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>“%1”, Minecraft %2 sürümüne yükseltiliyor</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>Mod yükleyicisi yok</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>hazır</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>yok</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>bilinmiyor</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Geri</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>Başka bir Minecraft sürümüne taşı</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>Bu profilin taşınacağı Minecraft sürümünü seç.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>Şu an: Minecraft %1, %2 ile. Yükleyici aynı kalır.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>Şu an: Minecraft %1, mod yükleyicisi olmadan.</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>Sürüm ara</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>Minecraft sürümlerinde ara</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>Snapshot&apos;lar</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>Eski sürümler</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>Sürüm listesini yenile</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>Önerilen</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>Sürümler yükleniyor…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>Liste yüklenemedi: %1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>“%1” ile eşleşen sürüm yok.</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>Gösterilecek sürüm yok.</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>Tekrar dene</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>Bu profilin taşınacağı Minecraft sürümünü seç. Ardından her mod buna karşı denetlenir.</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>Modlar denetleniyor…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>%1 hazır · %2 sürümü yok · %3 bilinmiyor</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>Sürümü değiştir</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>%1, Minecraft %2 için denetlenemedi.</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1, Minecraft %2 için kullanılabilir.</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1, Minecraft %2 için kullanılabilir değil. Başka bir sürüm seç.</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Dünyalar olduğu gibi kopyalanır. Bir dünyayı daha yeni bir Minecraft sürümünde açmak onu kalıcı olarak dönüştürür — sonra eski sürümde açılamaz.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Tümü</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>Hazır</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>Sürümü yok</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Bilinmiyor</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>Sürüm bilinmiyor</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>Öneri: %1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>Bu profilde mod yok. Yalnızca Minecraft sürümü ve yükleyici değiştirilecek.</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>Kopyanın adı</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Ad</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>Yeni profilin adı</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>“%1” adlı bir kopya yeni sürümle oluşturulacak; özgün profile dokunulmaz.</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>Özgün profile dokunulmaz.</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Çalışılıyor…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>Yükseltilmiş kopya oluştur</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>Denetim başarısız oldu.</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>Başka sürüm seç</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>Aç</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Bu profil artık yok.</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>Önce bir Minecraft sürümü seç.</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>Kurulu modlara bakılıyor…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>Bu profilin mod klasörü açılamadı.</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>Mod yükleyicisi denetleniyor…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>%1 sürüm listesi yüklenemedi: %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>Modrinth&apos;e %n mod soruluyor…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinth yanıt vermedi: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>%n modun hash&apos;i hesaplanıyor…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>CurseForge&apos;a %n mod soruluyor…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>Mod simgeleri indiriliyor…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>Alternatifler aranıyor…</translation>
     </message>
 </context>
 </TS>
