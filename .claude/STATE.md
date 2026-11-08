@@ -118,6 +118,16 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   Release) is negligible next to Minecraft. Blur renders at 1/4 size to save memory.
 
 ## Current work + Next steps
+- 2026-11-08 (branch glm-mc-upgrade): "Move to another Minecraft version" (modded instances).
+  `qmlui/upgrade/` — `UpgradeLogic.h` (pure: classify/delta/defaultName/loader rules, tests
+  `tests/Upgrade_test.cpp`), `UpgradePlanTask` (Modrinth batched by hash + CurseForge per project,
+  loader availability check, icons, up to 2 Modrinth alternatives per missing mod), `UpgradeBridge`
+  (QML `Upgrade`: startPlan/apply; apply = InstanceCopyTask → LauncherBridge::changeVersion on the
+  copy → ResourceDownloadTask replacements → disable rest (*.disabled) → UPGRADE-REPORT.txt in the
+  copy; kind "upgrade" in TaskCenter). UI `UpgradeDialog.qml` (page), one action in TabOverview,
+  debug `FFPRISM_PAGE=upgrade:<id>[:<mc>[:apply]]`. Verified end-to-end on /tmp/devdata-up with a
+  fabric 1.20.1 test instance (sodium replaced, starlight disabled + ScalableLux suggestion).
+  Note: this worktree's shell runs under Rosetta — configure with -DCMAKE_OSX_ARCHITECTURES=arm64.
 - 2026-11-06 (Antigravity):
   - Русский перевод завершён на 100% (1379 из 1379 строк переведены, `qmlui_ru.qm` собран).
   - Устранён краш (SIGSEGV 139) на выходе из приложения в QmlShell/Application.
