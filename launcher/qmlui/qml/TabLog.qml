@@ -95,16 +95,12 @@ Item {
             Field {
                 id: search
                 Layout.fillWidth: true
-                Layout.maximumWidth: Style.px(320)
+                Layout.maximumWidth: Style.px(420)
                 iconName: "search"
                 placeholderText: qsTr("Search the log")
                 onTextChanged: log.query = text
                 Keys.onEscapePressed: text = ""
             }
-            Chip { text: qsTr("Launcher"); dot: Style.accent; checked: log.showLauncher; onToggled: log.showLauncher = checked }
-            Chip { text: qsTr("Info"); dot: Style.text; checked: log.showInfo; onToggled: log.showInfo = checked }
-            Chip { text: qsTr("Warnings"); dot: tab.warnColor; count: log.warningCount; checked: log.showWarnings; onToggled: log.showWarnings = checked }
-            Chip { text: qsTr("Errors"); dot: Style.danger; count: log.errorCount; checked: log.showErrors; onToggled: log.showErrors = checked }
             Item { Layout.fillWidth: true }
             QuietButton { iconName: "copy"; tip: qsTr("Copy the log"); onClicked: { log.copy(search.text.length > 0); Router.toast(qsTr("Log copied."), false) } }
             QuietButton {
@@ -114,6 +110,18 @@ Item {
             }
             QuietButton { iconName: "link"; tip: qsTr("Upload and copy link"); onClicked: shareConfirm.open() }
             QuietButton { iconName: "trash"; tip: qsTr("Clear"); enabled: log.totalLines > 0; onClicked: log.clear() }
+        }
+
+        // Level filters: their own line, wrapping in narrow windows
+        Flow {
+            id: chips
+            Layout.fillWidth: true
+            Layout.preferredHeight: implicitHeight
+            spacing: Style.px(8)
+            Chip { text: qsTr("Launcher"); dot: Style.accent; checked: log.showLauncher; onToggled: log.showLauncher = checked }
+            Chip { text: qsTr("Info"); dot: Style.text; checked: log.showInfo; onToggled: log.showInfo = checked }
+            Chip { text: qsTr("Warnings"); dot: tab.warnColor; count: log.warningCount; checked: log.showWarnings; onToggled: log.showWarnings = checked }
+            Chip { text: qsTr("Errors"); dot: Style.danger; count: log.errorCount; checked: log.showErrors; onToggled: log.showErrors = checked }
         }
 
         // The log itself
@@ -178,8 +186,11 @@ Item {
 
         // Status and game controls
         RowLayout {
+            id: footer
             Layout.fillWidth: true
             spacing: Style.px(8)
+            // Kill and Restart fold to icons (labels become tooltips) when the labelled row wouldn't fit
+            readonly property bool compact: footerRuler.implicitWidth + Style.px(140) > width
             Txt {
                 Layout.fillWidth: true
                 muted: true
@@ -189,18 +200,22 @@ Item {
                       + (log.totalLines ? "  ·  " + qsTr("%n line(s)", "", log.totalLines) : "")
             }
             QuietButton {
+                id: whyBtn
                 text: qsTr("Why did it crash?")
                 enabled: log.totalLines > 0 && !tab.running
                 onClicked: if (Doctor.analyzeInstance(tab.instanceId)) Launcher.dialogRequested("crash", tab.instanceId)
                            else Router.toast(qsTr("There is no game log yet. Play once first."), true)
             }
-            SettingsToggle { label: qsTr("Auto-scroll"); checked: tab.follow; onToggled: (on) => { tab.follow = on; if (on) lines.positionViewAtEnd() } }
+            SettingsToggle { id: autoScroll; label: qsTr("Auto-scroll"); checked: tab.follow; onToggled: (on) => { tab.follow = on; if (on) lines.positionViewAtEnd() } }
             QuietButton {
                 visible: tab.running
+                compact: footer.compact
                 iconName: "stop"; text: qsTr("Kill"); danger: true
                 onClicked: Launcher.kill(tab.instanceId)
             }
             QuietButton {
+                id: restartBtn
+                compact: footer.compact
                 iconName: "refresh"
                 text: tab.running ? qsTr("Restart") : qsTr("Play")
                 enabled: !tab.restartPending
@@ -210,6 +225,19 @@ Item {
                 }
             }
         }
+    }
+
+    // Invisible ruler with the labelled footer (an invisible item reports no size, so it is transparent instead)
+    Row {
+        id: footerRuler
+        x: -width - Style.px(100)
+        opacity: 0
+        enabled: false
+        spacing: footer.spacing
+        QuietButton { text: whyBtn.text }
+        Item { width: autoScroll.implicitWidth; height: 1 }
+        QuietButton { visible: tab.running; iconName: "stop"; text: qsTr("Kill") }
+        QuietButton { iconName: "refresh"; text: restartBtn.text }
     }
 
     // Upload: outward-facing, so say where it goes and ask first.

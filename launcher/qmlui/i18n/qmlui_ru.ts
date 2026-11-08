@@ -4574,12 +4574,52 @@
         <translation>Сортировка</translation>
     </message>
     <message>
-        <source>For Minecraft %1 with %2</source>
-        <translation>Для Minecraft %1 с %2</translation>
+        <source>Runs on</source>
+        <translation>Где работает</translation>
     </message>
     <message>
-        <source>For Minecraft %1</source>
-        <translation>Для Minecraft %1</translation>
+        <source>Any side</source>
+        <translation>Везде</translation>
+    </message>
+    <message>
+        <source>Client</source>
+        <translation>Клиент</translation>
+    </message>
+    <message>
+        <source>Server</source>
+        <translation>Сервер</translation>
+    </message>
+    <message>
+        <source>Minecraft</source>
+        <translation>Minecraft</translation>
+    </message>
+    <message>
+        <source>%1 (this instance)</source>
+        <translation>%1 (эта сборка)</translation>
+    </message>
+    <message>
+        <source>This instance</source>
+        <translation>Эта сборка</translation>
+    </message>
+    <message>
+        <source>Any version</source>
+        <translation>Любая версия</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>Загрузчик</translation>
+    </message>
+    <message>
+        <source>Any loader</source>
+        <translation>Любой загрузчик</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1 with %2.</source>
+        <translation>Показано больше, чем подходит этой сборке. Мод установится, только если у него есть версия и для Minecraft %1 с %2.</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1.</source>
+        <translation>Показано больше, чем подходит этой сборке. Мод установится, только если у него есть версия и для Minecraft %1.</translation>
     </message>
     <message>
         <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>

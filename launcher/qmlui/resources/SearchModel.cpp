@@ -12,6 +12,7 @@
 #include "ResourceCommon.h"
 #include "ResourceDownloadTask.h"
 #include "qmlui/jobs/TaskCenter.h"
+#include "qmlui/create/MetaVersionModel.h"
 #include "minecraft/MinecraftInstance.h"
 #include "minecraft/PackProfile.h"
 #include "minecraft/mod/ModFolderModel.h"
@@ -274,13 +275,32 @@ void SearchModel::runSearch(bool append)
     if (m_sortIndex >= 0 && m_sortIndex < methods.size()) {
         args.sorting = methods.at(m_sortIndex);
     }
+    // By default only what runs on this instance; the filters can widen or move that.
     if (type == ModPlatform::ResourceType::Mod) {
-        // Only show mods that run on this instance.
-        args.loaders = m_instance->getPackProfile()->getSupportedModLoaders();
-        const QString mc = gameVersion();
-        if (!mc.isEmpty()) {
-            args.versions = std::vector<Version>{ Version(mc) };
+        if (m_loaderFilter.isEmpty()) {
+            args.loaders = m_instance->getPackProfile()->getSupportedModLoaders();
+        } else if (m_loaderFilter != "any") {
+            static const QHash<QString, ModPlatform::ModLoaderType> loaders{
+                { "fabric", ModPlatform::Fabric }, { "quilt", ModPlatform::Quilt },
+                { "forge", ModPlatform::Forge },   { "neoforge", ModPlatform::NeoForge },
+            };
+            if (loaders.contains(m_loaderFilter)) {
+                args.loaders = ModPlatform::ModLoaderTypes(loaders.value(m_loaderFilter));
+            }
         }
+        if (m_mcFilter.isEmpty()) {
+            const QString mc = gameVersion();
+            if (!mc.isEmpty()) {
+                args.versions = std::vector<Version>{ Version(mc) };
+            }
+        }
+        if (!isFlame() && (m_side == "client" || m_side == "server")) {
+            args.side = ModPlatform::SideType(m_side == "client" ? ModPlatform::SideTypeValue::ClientSide
+                                                                 : ModPlatform::SideTypeValue::ServerSide);
+        }
+    }
+    if (!m_mcFilter.isEmpty() && m_mcFilter != "any") {
+        args.versions = std::vector<Version>{ Version(m_mcFilter) };
     }
     if (!m_category.isEmpty()) {
         args.categoryIds = QStringList{ m_category };
@@ -669,6 +689,53 @@ void SearchModel::startInstall(const ModPlatform::IndexedPack::Ptr& pack, const 
                  t->wasSuccessful() ? t->getExtraInfo() : QHash<QString, GetModDependenciesTask::PackDependencyExtraInfo>{});
     });
     depTask->start();
+}
+
+// ---- filters ---------------------------------------------------------------------------------
+
+void SearchModel::setSide(const QString& s)
+{
+    if (s == m_side) {
+        return;
+    }
+    m_side = s;
+    emit filtersChanged();
+    scheduleSearch();
+}
+
+void SearchModel::setMcFilter(const QString& v)
+{
+    if (v == m_mcFilter) {
+        return;
+    }
+    m_mcFilter = v;
+    emit filtersChanged();
+    scheduleSearch();
+}
+
+void SearchModel::setLoaderFilter(const QString& l)
+{
+    if (l == m_loaderFilter) {
+        return;
+    }
+    m_loaderFilter = l;
+    emit filtersChanged();
+    scheduleSearch();
+}
+
+QStringList SearchModel::mcVersionChoices() const
+{
+    if (!m_mcVersions) {
+        // Release versions only (the model hides snapshots and very old versions by default)
+        m_mcVersions = new MetaVersionModel(true, const_cast<SearchModel*>(this));
+        connect(m_mcVersions, &MetaVersionModel::countChanged, this, &SearchModel::mcVersionChoicesChanged);
+        m_mcVersions->setSource("net.minecraft");
+    }
+    QStringList out;
+    for (int i = 0; i < m_mcVersions->rowCount(); ++i) {
+        out << m_mcVersions->data(m_mcVersions->index(i), MetaVersionModel::VersionRole).toString();
+    }
+    return out;
 }
 
 // ---- batch install ---------------------------------------------------------------------------

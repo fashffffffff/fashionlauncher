@@ -4528,12 +4528,52 @@
         <translation>정렬</translation>
     </message>
     <message>
-        <source>For Minecraft %1 with %2</source>
-        <translation>Minecraft %1 (%2)용</translation>
+        <source>Runs on</source>
+        <translation>실행 위치</translation>
     </message>
     <message>
-        <source>For Minecraft %1</source>
-        <translation>Minecraft %1용</translation>
+        <source>Any side</source>
+        <translation>전체</translation>
+    </message>
+    <message>
+        <source>Client</source>
+        <translation>클라이언트</translation>
+    </message>
+    <message>
+        <source>Server</source>
+        <translation>서버</translation>
+    </message>
+    <message>
+        <source>Minecraft</source>
+        <translation>Minecraft</translation>
+    </message>
+    <message>
+        <source>%1 (this instance)</source>
+        <translation>%1 (이 인스턴스)</translation>
+    </message>
+    <message>
+        <source>This instance</source>
+        <translation>이 인스턴스</translation>
+    </message>
+    <message>
+        <source>Any version</source>
+        <translation>모든 버전</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>로더</translation>
+    </message>
+    <message>
+        <source>Any loader</source>
+        <translation>모든 로더</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1 with %2.</source>
+        <translation>이 인스턴스에 맞지 않는 항목도 표시됩니다. Minecraft %1 및 %2용 버전도 있는 모드만 설치됩니다.</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1.</source>
+        <translation>이 인스턴스에 맞지 않는 항목도 표시됩니다. Minecraft %1용 버전도 있는 모드만 설치됩니다.</translation>
     </message>
     <message>
         <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>

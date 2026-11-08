@@ -4528,12 +4528,52 @@
         <translation>排序</translation>
     </message>
     <message>
-        <source>For Minecraft %1 with %2</source>
-        <translation>适用于 Minecraft %1 搭配 %2</translation>
+        <source>Runs on</source>
+        <translation>运行端</translation>
     </message>
     <message>
-        <source>For Minecraft %1</source>
-        <translation>适用于 Minecraft %1</translation>
+        <source>Any side</source>
+        <translation>任意端</translation>
+    </message>
+    <message>
+        <source>Client</source>
+        <translation>客户端</translation>
+    </message>
+    <message>
+        <source>Server</source>
+        <translation>服务端</translation>
+    </message>
+    <message>
+        <source>Minecraft</source>
+        <translation>Minecraft</translation>
+    </message>
+    <message>
+        <source>%1 (this instance)</source>
+        <translation>%1(此实例)</translation>
+    </message>
+    <message>
+        <source>This instance</source>
+        <translation>此实例</translation>
+    </message>
+    <message>
+        <source>Any version</source>
+        <translation>任意版本</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>加载器</translation>
+    </message>
+    <message>
+        <source>Any loader</source>
+        <translation>任意加载器</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1 with %2.</source>
+        <translation>显示了超出此实例适用范围的结果。只有同时提供 Minecraft %1 与 %2 版本的模组才能安装。</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1.</source>
+        <translation>显示了超出此实例适用范围的结果。只有同时提供 Minecraft %1 版本的模组才能安装。</translation>
     </message>
     <message>
         <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>

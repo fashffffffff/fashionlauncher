@@ -42,6 +42,7 @@
 #include <QDebug>
 #include <QDir>
 #include <QStandardPaths>
+#include <QTimer>
 #include <variant>
 #include "Commandline.h"
 #include "MessageLevel.h"
@@ -99,6 +100,11 @@ void LaunchTask::onStepFinished()
     }
 
     auto step = m_steps[currentStep];
+    if (state == LaunchTask::Aborted) {
+        // Killed while this step was running: don't go on to the next one, even if it succeeded
+        finishStopped();
+        return;
+    }
     if (step->wasSuccessful()) {
         // end?
         if (currentStep == m_steps.size() - 1) {
@@ -111,6 +117,27 @@ void LaunchTask::onStepFinished()
     } else {
         finalizeSteps(false, step->failReason());
     }
+}
+
+void LaunchTask::stopNow(const shared_qobject_ptr<LaunchStep>& step)
+{
+    if (!isRunning()) {
+        return;
+    }
+    // Whatever the step still does later is ignored
+    disconnect(step.get(), &Task::finished, this, nullptr);
+    finishStopped();
+}
+
+void LaunchTask::finishStopped()
+{
+    // Stopped by the player: an abort, not a failure (no crash report for it)
+    for (auto step = currentStep; step >= 0; step--) {
+        m_steps[step]->finalize();
+    }
+    onLogLine(tr("The launch was stopped."), MessageLevel::Launcher);
+    m_instance->setRunning(false);
+    emitAborted();
 }
 
 void LaunchTask::finalizeSteps(bool successful, const QString& error)
@@ -164,10 +191,9 @@ bool LaunchTask::canAbort() const
         case LaunchTask::NotStarted:
             return true;
         case LaunchTask::Running:
-        case LaunchTask::Waiting: {
-            auto step = m_steps[currentStep];
-            return step->canAbort();
-        }
+        case LaunchTask::Waiting:
+            // Steps that can't be interrupted are stopped between steps (see abort())
+            return true;
     }
     return false;
 }
@@ -188,12 +214,23 @@ bool LaunchTask::abort()
         case LaunchTask::Waiting: {
             auto step = m_steps[currentStep];
             if (!step->canAbort()) {
-                return false;
-            }
-            if (step->abort()) {
+                // Pre-launch checks (Java, jar patching, assets) can't be interrupted, but no game runs yet:
+                // stop the launch right here instead of ignoring Kill.
                 state = LaunchTask::Aborted;
+                stopNow(step);
                 return true;
             }
+            if (!step->abort()) {
+                return false;
+            }
+            state = LaunchTask::Aborted;
+            // Some steps accept the abort but never report back (e.g. nothing to kill yet): don't hang on them.
+            QTimer::singleShot(3000, this, [this, step] {
+                if (isRunning() && currentStep >= 0 && currentStep < m_steps.size() && m_steps[currentStep] == step) {
+                    stopNow(step);
+                }
+            });
+            return true;
         }
         default:
             break;

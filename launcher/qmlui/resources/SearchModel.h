@@ -40,6 +40,13 @@ class SearchModel : public QAbstractListModel {
     Q_PROPERTY(QString loaderText READ loaderText NOTIFY instanceChanged)
     Q_PROPERTY(bool hasModLoader READ hasModLoader NOTIFY instanceChanged)
     /// Row whose details are shown (-1 = none); selecting loads its versions
+    /// Extra filters. side: "" | "client" | "server" (Modrinth only). mcFilter / loaderFilter: "" = the instance's,
+    /// "any", or a Minecraft version / loader id ("fabric", "neoforge", …)
+    Q_PROPERTY(QString side READ side WRITE setSide NOTIFY filtersChanged)
+    Q_PROPERTY(QString mcFilter READ mcFilter WRITE setMcFilter NOTIFY filtersChanged)
+    Q_PROPERTY(QString loaderFilter READ loaderFilter WRITE setLoaderFilter NOTIFY filtersChanged)
+    /// Release versions of Minecraft, newest first (loaded from metadata on first use)
+    Q_PROPERTY(QStringList mcVersionChoices READ mcVersionChoices NOTIFY mcVersionChoicesChanged)
     Q_PROPERTY(int selectedRow READ selectedRow WRITE setSelectedRow NOTIFY selectedChanged)
     Q_PROPERTY(QVariantMap selected READ selected NOTIFY selectedChanged)
     /// Projects ticked for one batch install ({ projectId, title, iconUrl }), kept across searches
@@ -90,6 +97,13 @@ class SearchModel : public QAbstractListModel {
     QString gameVersion() const;
     QString loaderText() const;
     bool hasModLoader() const;
+    QString side() const { return m_side; }
+    void setSide(const QString& s);
+    QString mcFilter() const { return m_mcFilter; }
+    void setMcFilter(const QString& v);
+    QString loaderFilter() const { return m_loaderFilter; }
+    void setLoaderFilter(const QString& l);
+    QStringList mcVersionChoices() const;
     int selectedRow() const { return m_selectedRow; }
     void setSelectedRow(int row);
     QVariantMap selected() const;
@@ -122,6 +136,8 @@ class SearchModel : public QAbstractListModel {
     void countChanged();
     void selectedChanged();
     void pickedChanged();
+    void filtersChanged();
+    void mcVersionChoicesChanged();
     void message(const QString& text, bool isError);
 
    private:
@@ -169,6 +185,11 @@ class SearchModel : public QAbstractListModel {
     QSet<QString> m_installedIds;              // project ids installed in the instance
     QHash<QString, double> m_installing;       // project id -> progress (-1 = unknown)
     QHash<QString, Task::Ptr> m_installTasks;  // project id -> running task chain
+
+    QString m_side;
+    QString m_mcFilter;
+    QString m_loaderFilter;
+    mutable class MetaVersionModel* m_mcVersions = nullptr;
 
     QList<ModPlatform::IndexedPack::Ptr> m_picked;  // ticked, in the order they were ticked
     QList<ModPlatform::IndexedPack::Ptr> m_queue;   // batch install still to start

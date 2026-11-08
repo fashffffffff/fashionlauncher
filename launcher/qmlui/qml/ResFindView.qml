@@ -48,7 +48,8 @@ Item {
                 Accessible.name: qsTr("Where to search")
             }
         }
-        RowLayout {
+        // Filters: wrap onto a second line in narrow windows instead of squeezing
+        Flow {
             Layout.fillWidth: true
             spacing: Style.px(8)
             ResPicker {
@@ -63,14 +64,42 @@ Item {
                 value: String(results.sortIndex)
                 onPicked: (v) => results.sortIndex = parseInt(v)
             }
-            Item { Layout.fillWidth: true }
-            // What the results are limited to
-            Txt {
-                visible: view.kind === "mods" && results.gameVersion.length > 0
-                muted: true
-                text: results.loaderText ? qsTr("For Minecraft %1 with %2").arg(results.gameVersion).arg(results.loaderText)
-                                         : qsTr("For Minecraft %1").arg(results.gameVersion)
+            ResPicker {
+                // CurseForge's API has no client/server filter
+                visible: view.kind === "mods" && results.platform === "modrinth"
+                label: qsTr("Runs on")
+                options: [{ value: "", label: qsTr("Any side") }, { value: "client", label: qsTr("Client") },
+                          { value: "server", label: qsTr("Server") }]
+                value: results.side
+                onPicked: (v) => results.side = v
             }
+            ResPicker {
+                label: qsTr("Minecraft")
+                options: [{ value: "", label: results.gameVersion ? qsTr("%1 (this instance)").arg(results.gameVersion) : qsTr("This instance") },
+                          { value: "any", label: qsTr("Any version") }]
+                         .concat(results.mcVersionChoices.filter(v => v !== results.gameVersion).map(v => ({ value: v, label: v })))
+                value: results.mcFilter
+                onPicked: (v) => results.mcFilter = v
+            }
+            ResPicker {
+                visible: view.kind === "mods"
+                label: qsTr("Loader")
+                options: [{ value: "", label: results.loaderText ? qsTr("%1 (this instance)").arg(results.loaderText) : qsTr("This instance") },
+                          { value: "any", label: qsTr("Any loader") },
+                          { value: "fabric", label: "Fabric" }, { value: "quilt", label: "Quilt" },
+                          { value: "forge", label: "Forge" }, { value: "neoforge", label: "NeoForge" }]
+                value: results.loaderFilter
+                onPicked: (v) => results.loaderFilter = v
+            }
+        }
+        // Browsing outside the instance's version or loader: say what can still be installed
+        Txt {
+            Layout.fillWidth: true
+            visible: view.kind === "mods" && (results.mcFilter !== "" || results.loaderFilter !== "") && results.gameVersion.length > 0
+            muted: true
+            wrapMode: Text.WordWrap
+            text: results.loaderText ? qsTr("Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1 with %2.").arg(results.gameVersion).arg(results.loaderText)
+                                     : qsTr("Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1.").arg(results.gameVersion)
         }
 
         Rectangle {

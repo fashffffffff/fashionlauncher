@@ -475,6 +475,12 @@ void LaunchController::launchInstance()
     connect(m_launcher, &LaunchTask::readyForLaunch, this, &LaunchController::readyForLaunch);
     connect(m_launcher, &LaunchTask::succeeded, this, &LaunchController::onSucceeded);
     connect(m_launcher, &LaunchTask::failed, this, &LaunchController::onFailed);
+    // Killed by the player: end quietly (no failure message)
+    connect(m_launcher, &LaunchTask::aborted, this, [this] {
+        if (isRunning()) {
+            emitAborted();
+        }
+    });
     connect(m_launcher, &LaunchTask::requestProgress, this, &LaunchController::onProgressRequested);
 
     // Prepend Online and Auth Status

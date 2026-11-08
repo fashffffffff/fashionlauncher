@@ -4551,12 +4551,52 @@
         <translation>Sortierung</translation>
     </message>
     <message>
-        <source>For Minecraft %1 with %2</source>
-        <translation>Für Minecraft %1 mit %2</translation>
+        <source>Runs on</source>
+        <translation>Läuft auf</translation>
     </message>
     <message>
-        <source>For Minecraft %1</source>
-        <translation>Für Minecraft %1</translation>
+        <source>Any side</source>
+        <translation>Beliebige Seite</translation>
+    </message>
+    <message>
+        <source>Client</source>
+        <translation>Client</translation>
+    </message>
+    <message>
+        <source>Server</source>
+        <translation>Server</translation>
+    </message>
+    <message>
+        <source>Minecraft</source>
+        <translation>Minecraft</translation>
+    </message>
+    <message>
+        <source>%1 (this instance)</source>
+        <translation>%1 (diese Instanz)</translation>
+    </message>
+    <message>
+        <source>This instance</source>
+        <translation>Diese Instanz</translation>
+    </message>
+    <message>
+        <source>Any version</source>
+        <translation>Beliebige Version</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>Loader</translation>
+    </message>
+    <message>
+        <source>Any loader</source>
+        <translation>Beliebiger Loader</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1 with %2.</source>
+        <translation>Es wird mehr angezeigt, als zu dieser Instanz passt. Ein Mod wird nur installiert, wenn es auch eine Version für Minecraft %1 mit %2 gibt.</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1.</source>
+        <translation>Es wird mehr angezeigt, als zu dieser Instanz passt. Ein Mod wird nur installiert, wenn es auch eine Version für Minecraft %1 gibt.</translation>
     </message>
     <message>
         <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>

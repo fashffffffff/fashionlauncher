@@ -4528,12 +4528,52 @@
         <translation>並び替え</translation>
     </message>
     <message>
-        <source>For Minecraft %1 with %2</source>
-        <translation>Minecraft %1 (%2) 用</translation>
+        <source>Runs on</source>
+        <translation>動作環境</translation>
     </message>
     <message>
-        <source>For Minecraft %1</source>
-        <translation>Minecraft %1 用</translation>
+        <source>Any side</source>
+        <translation>すべて</translation>
+    </message>
+    <message>
+        <source>Client</source>
+        <translation>クライアント</translation>
+    </message>
+    <message>
+        <source>Server</source>
+        <translation>サーバー</translation>
+    </message>
+    <message>
+        <source>Minecraft</source>
+        <translation>Minecraft</translation>
+    </message>
+    <message>
+        <source>%1 (this instance)</source>
+        <translation>%1(このインスタンス)</translation>
+    </message>
+    <message>
+        <source>This instance</source>
+        <translation>このインスタンス</translation>
+    </message>
+    <message>
+        <source>Any version</source>
+        <translation>すべてのバージョン</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>ローダー</translation>
+    </message>
+    <message>
+        <source>Any loader</source>
+        <translation>すべてのローダー</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1 with %2.</source>
+        <translation>このインスタンスに合わないものも表示しています。Minecraft %1 と %2 用のバージョンもある MOD だけがインストールできます。</translation>
+    </message>
+    <message>
+        <source>Showing more than fits this instance. A mod installs only if it also has a version for Minecraft %1.</source>
+        <translation>このインスタンスに合わないものも表示しています。Minecraft %1 用のバージョンもある MOD だけがインストールできます。</translation>
     </message>
     <message>
         <source>This instance has no mod loader, so mods won&apos;t run. Install Fabric, Quilt, Forge or NeoForge in the instance&apos;s version settings.</source>

@@ -113,6 +113,9 @@ class LaunchTask : public Task {
 
    private: /*methods */
     void finalizeSteps(bool successful, const QString& error);
+    /// Ends the launch now as stopped, ignoring whatever the current step does later
+    void stopNow(const shared_qobject_ptr<LaunchStep>& step);
+    void finishStopped();
 
    protected:
     bool parseXmlLogs(const QString& line, MessageLevel level);
