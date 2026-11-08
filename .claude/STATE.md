@@ -86,6 +86,13 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   Rule: only causes the log states (loader dependency resolution, OOM, Java class version, GLFW/OpenGL, corrupt jar in
   mods/); never mixin/conflict/stack-trace guesses — those show "unknown" + excerpt. Why: in big packs the mods named in
   an error are often not the culprits. Debug: `FFPRISM_PAGE=crash:<instanceId>:<log path>`.
+- Blocked CurseForge mods in the QML UI: when `UseClassicUI` is off, `FlameInstanceCreationTask` asks
+  `Application::qmlBlockedMods()` (null in classic mode — classic `BlockedModsDialog` untouched) and waits in an event
+  loop; `qmlui/create/BlockedModsBridge` (context property `BlockedMods`) watches DownloadsDir + CentralModsDir + folders
+  the user adds, matches files by hash/lax-name via pure `BlockedModsMatcher` (a port of the dialog matching; unit test
+  `tests/BlockedModsMatch_test.cpp`) → `BlockedModsDialog.qml` in DialogHost: Open page / Open all / Pick file / Add
+  folder, "Continue" enabled when `allFound`, "Continue without them" accepts with unmatched skipped by copyBlockedMods.
+  Debug: `FFPRISM_PAGE=blocked` opens it with 3 fake entries. Translated in all 15 languages.
 
 ## Commands
 - Build (Ninja, Debug, already configured in `build/`):
