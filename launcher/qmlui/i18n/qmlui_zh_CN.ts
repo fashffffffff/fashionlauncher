@@ -1948,6 +1948,174 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>要复制的来源实例已不存在。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>无法备份 %1</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>无法写入 %1</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>复制游戏设置</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Minecraft 自身的设置：控制、视频、声音。模组和世界保持不变。</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>尚未保存任何内容</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>%n 个按键</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>灵敏度 %1%</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>渲染距离 %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>界面尺寸自动</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>界面尺寸 %1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>视场角 %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>光影：%1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>主音量 %1%</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>%n 项设置</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>显示 %n 个皮肤部件</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>未做任何更改：游戏正在运行。</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>无需更改：设置已经相同。</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>设置已复制到“%1”。</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>设置已复制到 %n 个实例。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>撤销</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>已恢复之前的设置。</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>部分文件无法恢复。备份就在它们旁边（.bak）。</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>从</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>到</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>“%1”还没有游戏设置。先玩一次，按喜好调整后再复制。</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>控制</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>视频</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>声音</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>聊天与辅助功能</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>语言与皮肤</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>其他</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>按键绑定将在旧格式（1.12 及更早）和新格式之间转换。</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>%n 个按键绑定在另一版本中没有对应项，将被跳过。</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>正在运行，不会更改：%1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>会先备份当前文件，复制后可立即撤销。</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>复制设置</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2089,6 +2257,7 @@
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2166,6 +2335,21 @@
         <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
         <translation>
             <numerusform>已记录 %n 次会话。会话在游戏关闭时保存。</numerusform>
+=======
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>选择实例</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>所有实例</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n 个实例</numerusform>
+>>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -3245,6 +3429,14 @@
     <message>
         <source>Copy instance</source>
         <translation>复制实例</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>从…复制设置</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>将这些设置应用到所有实例</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5551,6 +5743,10 @@
     <message>
         <source>Copy instance</source>
         <translation>复制实例</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>游戏设置</translation>
     </message>
     <message>
         <source>Export</source>

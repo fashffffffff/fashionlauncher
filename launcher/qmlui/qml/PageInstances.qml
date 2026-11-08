@@ -282,6 +282,8 @@ Item {
                                 ThemedMenuItem { text: qsTr("Open"); iconName: "sliders"; onTriggered: Router.openInstance(model.instanceId) }
                                 ThemedMenuItem { text: qsTr("Open folder"); iconName: "folder"; onTriggered: Launcher.openInstanceFolder(model.instanceId) }
                                 ThemedMenuItem { text: qsTr("Copy instance"); iconName: "copy"; onTriggered: Launcher.copyInstance(model.instanceId) }
+                                ThemedMenuItem { text: qsTr("Copy settings from…"); iconName: "sliders"; onTriggered: Router.copyGameOptions({ target: model.instanceId }) }
+                                ThemedMenuItem { text: qsTr("Apply these settings to all instances"); iconName: "grid"; onTriggered: Router.copyGameOptions({ source: model.instanceId, target: "*" }) }
                                 ThemedMenuItem { text: qsTr("Delete"); iconName: "trash"; danger: true; onTriggered: Launcher.deleteInstance(model.instanceId) }
                             }
                         }

@@ -1948,6 +1948,174 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>복사할 원본 인스턴스가 더 이상 없습니다.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>%1을(를) 백업하지 못했습니다</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>%1을(를) 쓰지 못했습니다</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>게임 설정 복사</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Minecraft 자체 설정: 조작, 비디오, 소리. 모드와 월드는 그대로 유지됩니다.</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>아직 저장된 내용 없음</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>키 %n개</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>감도 %1%</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>렌더 거리 %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>GUI 크기 자동</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>GUI 크기 %1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>시야 %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>셰이더: %1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>주 음량 %1%</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>설정 %n개</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>스킨 부위 %n개 표시</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>변경 없음: 게임이 실행 중입니다.</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>변경할 것 없음: 설정이 이미 같습니다.</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>설정을 “%1”(으)로 복사했습니다.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>설정을 인스턴스 %n개에 복사했습니다.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>실행 취소</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>이전 설정으로 돌아갔습니다.</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>일부 파일을 복원하지 못했습니다. 백업은 바로 옆에 있습니다(.bak).</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>보낼 곳</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>받을 곳</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>“%1”에는 아직 게임 설정이 없습니다. 한 번 플레이하고 원하는 대로 설정한 뒤 복사하세요.</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>조작</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>비디오</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>소리</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>채팅 및 접근성</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>언어 및 스킨</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>기타</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>키 설정이 이전 형식(1.12 이하)과 새 형식 사이에서 변환됩니다.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>키 설정 %n개는 다른 버전에 대응하는 키가 없어 건너뜁니다.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>실행 중이라 변경되지 않음: %1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>현재 파일을 먼저 백업하며, 복사 직후 되돌릴 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>설정 복사</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2089,6 +2257,7 @@
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2166,6 +2335,21 @@
         <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
         <translation>
             <numerusform>세션 %n개 기록됨. 세션은 게임을 닫을 때 저장됩니다.</numerusform>
+=======
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>인스턴스 선택</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>모든 인스턴스</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>인스턴스 %n개</numerusform>
+>>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -3245,6 +3429,14 @@
     <message>
         <source>Copy instance</source>
         <translation>인스턴스 복사</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>설정 가져오기…</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>이 설정을 모든 인스턴스에 적용</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5551,6 +5743,10 @@
     <message>
         <source>Copy instance</source>
         <translation>인스턴스 복사</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>게임 설정</translation>
     </message>
     <message>
         <source>Export</source>

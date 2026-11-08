@@ -1962,6 +1962,184 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>Збірки, з якої копіюємо, більше немає.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>Не вдалося створити резервну копію %1</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>Не вдалося записати %1</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Перенести налаштування гри</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Налаштування самого Minecraft: керування, графіка, звук. Моди й світи не змінюються.</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>Поки нічого не збережено</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>%n клавіша</numerusform>
+            <numerusform>%n клавіші</numerusform>
+            <numerusform>%n клавіш</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>чутливість %1%</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>дальність прорисовки %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>інтерфейс: авто</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>інтерфейс ×%1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>огляд %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>шейдери: %1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>загальна гучність %1%</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>%n параметр</numerusform>
+            <numerusform>%n параметри</numerusform>
+            <numerusform>%n параметрів</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>показано %n частину скіна</numerusform>
+            <numerusform>показано %n частини скіна</numerusform>
+            <numerusform>показано %n частин скіна</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>Нічого не змінено: гра зараз запущена.</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>Нічого змінювати: налаштування вже однакові.</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>Налаштування перенесено в «%1».</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>Налаштування перенесено в %n збірку.</numerusform>
+            <numerusform>Налаштування перенесено в %n збірки.</numerusform>
+            <numerusform>Налаштування перенесено в %n збірок.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Скасувати</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>Попередні налаштування повернуто.</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>Частину файлів не вдалося повернути. Резервні копії лежать поруч (.bak).</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Звідки</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Куди</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>У «%1» ще немає налаштувань гри. Запустіть її, налаштуйте як подобається, а потім переносьте.</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>Керування</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Графіка</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>Звук</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>Чат і спеціальні можливості</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>Мова і скін</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Інше</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>Призначення клавіш буде перетворено між старим (1.12 і раніше) та новим форматом.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>%n клавішу нічим замінити в іншій версії, її буде пропущено.</numerusform>
+            <numerusform>%n клавіші нічим замінити в іншій версії, їх буде пропущено.</numerusform>
+            <numerusform>%n клавіш нічим замінити в іншій версії, їх буде пропущено.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>Зараз запущені й не зміняться: %1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>Спершу зберігається резервна копія поточних файлів, а одразу після перенесення його можна скасувати.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Перенести налаштування</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2107,6 +2285,7 @@
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2190,6 +2369,23 @@
             <numerusform>Записано %n сесію. Сесії зберігаються, коли гра закривається.</numerusform>
             <numerusform>Записано %n сесії. Сесії зберігаються, коли гра закривається.</numerusform>
             <numerusform>Записано %n сесій. Сесії зберігаються, коли гра закривається.</numerusform>
+=======
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Виберіть збірку</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Усі збірки</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n збірка</numerusform>
+            <numerusform>%n збірки</numerusform>
+            <numerusform>%n збірок</numerusform>
+>>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -3269,6 +3465,14 @@
     <message>
         <source>Copy instance</source>
         <translation>Скопіювати екземпляр</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>Взяти налаштування з…</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>Застосувати ці налаштування до всіх збірок</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5617,6 +5821,10 @@
     <message>
         <source>Copy instance</source>
         <translation>Скопіювати екземпляр</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Перенесення налаштувань</translation>
     </message>
     <message>
         <source>Export</source>

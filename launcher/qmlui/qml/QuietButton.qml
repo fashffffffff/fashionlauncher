@@ -14,7 +14,7 @@ Button {
     readonly property color ink: danger ? Style.danger : Style.text
 
     implicitHeight: Style.px(40)
-    implicitWidth: text.length ? row.implicitWidth + Style.px(28) : implicitHeight
+    implicitWidth: text.length ? contentItem.implicitWidth + Style.px(28) : implicitHeight
     padding: 0
     hoverEnabled: true
     focusPolicy: Qt.StrongFocus
@@ -34,14 +34,16 @@ Button {
         Behavior on color { ColorAnimation { duration: Style.dur(120) } }
     }
     contentItem: Item {
-      implicitWidth: row.implicitWidth
+      // from the children's own sizes: the Row's implicitWidth depends on btnText.width, which depends on the Row
+      implicitWidth: (btnIcon.visible ? btnIcon.width : 0) + (btnText.visible ? btnText.implicitWidth : 0)
+                     + (btnIcon.visible && btnText.visible ? row.spacing : 0)
       implicitHeight: row.implicitHeight
       clip: true
       Row {
         id: row
         spacing: Style.px(8)
         anchors.centerIn: parent
-        width: Math.min(implicitWidth, Math.max(0, parent.width - Style.px(16)))
+        width: Math.min(parent.implicitWidth, Math.max(0, parent.width - Style.px(16)))
         Icon {
             id: btnIcon
             visible: control.iconName.length > 0

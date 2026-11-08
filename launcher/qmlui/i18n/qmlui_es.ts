@@ -1955,6 +1955,179 @@
     </message>
 </context>
 <context>
+    <name>GameOptions</name>
+    <message>
+        <source>The instance to copy from is gone.</source>
+        <translation>La instancia de origen ya no existe.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t back up %1</source>
+        <translation>No se pudo hacer copia de seguridad de %1</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write %1</source>
+        <translation>No se pudo escribir %1</translation>
+    </message>
+</context>
+<context>
+    <name>GameOptionsDialog</name>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Copiar ajustes del juego</translation>
+    </message>
+    <message>
+        <source>Minecraft&apos;s own settings: controls, video, sound. Mods and worlds stay as they are.</source>
+        <translation>Los ajustes del propio Minecraft: controles, gráficos, sonido. Los mods y mundos no cambian.</translation>
+    </message>
+    <message>
+        <source>Nothing saved yet</source>
+        <translation>Aún no hay nada guardado</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n keybind(s)</source>
+        <translation>
+            <numerusform>%n tecla</numerusform>
+            <numerusform>%n teclas</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>sensitivity %1%</source>
+        <translation>sensibilidad %1%</translation>
+    </message>
+    <message>
+        <source>render distance %1</source>
+        <translation>distancia de renderizado %1</translation>
+    </message>
+    <message>
+        <source>GUI scale auto</source>
+        <translation>escala de interfaz automática</translation>
+    </message>
+    <message>
+        <source>GUI scale %1</source>
+        <translation>escala de interfaz %1</translation>
+    </message>
+    <message>
+        <source>FOV %1</source>
+        <translation>FOV %1</translation>
+    </message>
+    <message>
+        <source>shaders: %1</source>
+        <translation>shaders: %1</translation>
+    </message>
+    <message>
+        <source>master volume %1%</source>
+        <translation>volumen general %1%</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n setting(s)</source>
+        <translation>
+            <numerusform>%n ajuste</numerusform>
+            <numerusform>%n ajustes</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n skin part(s) shown</source>
+        <translation>
+            <numerusform>%n parte de la skin visible</numerusform>
+            <numerusform>%n partes de la skin visibles</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing was changed: the game is running.</source>
+        <translation>No se cambió nada: el juego está abierto.</translation>
+    </message>
+    <message>
+        <source>Nothing to change: the settings are already the same.</source>
+        <translation>Nada que cambiar: los ajustes ya son iguales.</translation>
+    </message>
+    <message>
+        <source>Settings copied to “%1”.</source>
+        <translation>Ajustes copiados a «%1».</translation>
+    </message>
+    <message numerus="yes">
+        <source>Settings copied to %n instance(s).</source>
+        <translation>
+            <numerusform>Ajustes copiados a %n instancia.</numerusform>
+            <numerusform>Ajustes copiados a %n instancias.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Deshacer</translation>
+    </message>
+    <message>
+        <source>Previous settings are back.</source>
+        <translation>Se han restaurado los ajustes anteriores.</translation>
+    </message>
+    <message>
+        <source>Some files couldn&apos;t be restored. Backups are next to them (.bak).</source>
+        <translation>Algunos archivos no se pudieron restaurar. Las copias de seguridad están junto a ellos (.bak).</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Desde</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Hacia</translation>
+    </message>
+    <message>
+        <source>“%1” has no game settings yet. Play it once, change what you like, then copy.</source>
+        <translation>«%1» aún no tiene ajustes del juego. Juega una vez, ajústalo a tu gusto y luego cópialos.</translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>Controles</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Gráficos</translation>
+    </message>
+    <message>
+        <source>Sound</source>
+        <translation>Sonido</translation>
+    </message>
+    <message>
+        <source>Chat and accessibility</source>
+        <translation>Chat y accesibilidad</translation>
+    </message>
+    <message>
+        <source>Language and skin</source>
+        <translation>Idioma y skin</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Otros</translation>
+    </message>
+    <message>
+        <source>Key bindings will be converted between the old (1.12 and earlier) and new format.</source>
+        <translation>Las teclas asignadas se convertirán entre el formato antiguo (1.12 y anteriores) y el nuevo.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n key binding(s) have no match in the other version and will be skipped.</source>
+        <translation>
+            <numerusform>%n tecla asignada no tiene equivalente en la otra versión y se omitirá.</numerusform>
+            <numerusform>%n teclas asignadas no tienen equivalente en la otra versión y se omitirán.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Running now, won&apos;t be changed: %1</source>
+        <translation>Abiertas ahora, no se cambiarán: %1</translation>
+    </message>
+    <message>
+        <source>The current files are backed up first, and you can undo right after copying.</source>
+        <translation>Primero se guarda una copia de los archivos actuales, y puedes deshacerlo justo después.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Copiar ajustes</translation>
+    </message>
+</context>
+<context>
     <name>HomeServers</name>
     <message>
         <source>Servers</source>
@@ -2098,6 +2271,7 @@
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2178,6 +2352,22 @@
         <translation>
             <numerusform>%n sesión registrada. Las sesiones se guardan al cerrar el juego.</numerusform>
             <numerusform>%n sesiones registradas. Las sesiones se guardan al cerrar el juego.</numerusform>
+=======
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Elige una instancia</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Todas las instancias</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n instancia</numerusform>
+            <numerusform>%n instancias</numerusform>
+>>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -3257,6 +3447,14 @@
     <message>
         <source>Copy instance</source>
         <translation>Copiar instancia</translation>
+    </message>
+    <message>
+        <source>Copy settings from…</source>
+        <translation>Copiar ajustes desde…</translation>
+    </message>
+    <message>
+        <source>Apply these settings to all instances</source>
+        <translation>Aplicar estos ajustes a todas las instancias</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -5584,6 +5782,10 @@
     <message>
         <source>Copy instance</source>
         <translation>Copiar instancia</translation>
+    </message>
+    <message>
+        <source>Copy game settings</source>
+        <translation>Ajustes del juego</translation>
     </message>
     <message>
         <source>Export</source>

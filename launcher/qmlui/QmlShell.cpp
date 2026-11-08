@@ -32,6 +32,7 @@
 #include "sharing/SharingBridge.h"
 #include "skins/SkinsBridge.h"
 #include "store/StoreBridge.h"
+#include "tools/GameOptions.h"
 #include "tools/ToolsBridge.h"
 #include "stats/PlayStats.h"
 #include "qmlui/jobs/TaskCenter.h"
@@ -90,6 +91,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Friends", new FriendsBridge(this));
     ctx->setContextProperty("Store", new StoreBridge(this));
     ctx->setContextProperty("Tools", new ToolsBridge(this));
+    ctx->setContextProperty("GameOptions", new GameOptions(this));
     ctx->setContextProperty("Skins", new SkinsBridge(this));
     ctx->setContextProperty("Servers", new ServersBridge(this));
     ctx->setContextProperty("Gallery", new GalleryBridge(this));

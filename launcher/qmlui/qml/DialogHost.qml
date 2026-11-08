@@ -72,6 +72,11 @@ Item {
     }
 
     CopyInstanceDialog { id: copyDlg }
+    GameOptionsDialog { id: gameOptionsDlg }
+    Connections {
+        target: Router
+        function onGameOptionsRequested(params) { gameOptionsDlg.openFor(params) }
+    }
     JavaInstallDialog { id: javaDlg }
     Connections {
         target: Settings
