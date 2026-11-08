@@ -67,6 +67,7 @@
 #include "minecraft/World.h"
 #include "minecraft/mod/tasks/LocalResourceParse.h"
 #include "net/ApiRequest.h"
+#include "qmlui/create/BlockedModsBridge.h"
 #include "ui/dialogs/UntrustedModsDialog.h"
 #include "ui/pages/modplatform/OptionalModDialog.h"
 
@@ -589,21 +590,35 @@ void FlameCreationTask::idResolverSucceeded()
     if (anyBlocked) {
         qWarning() << "Blocked mods found, displaying mod list";
 
-        BlockedModsDialog messageDialog(m_parent, tr("Blocked mods found"),
-                                        tr("The following files are not available for download in third party launchers.<br/>"
-                                           "You will need to manually download them and add them to the instance."),
-                                        blockedMods);
-
-        messageDialog.setModal(true);
-
-        if (messageDialog.exec() != 0) {
-            qDebug() << "Post dialog blocked mods list:" << blockedMods;
-            copyBlockedMods(blockedMods);
-            setupDownloadJob();
+        // In the QML shell the question is asked by BlockedModsDialog.qml (no classic window);
+        // it waits here exactly like the classic dialog's exec() below.
+        if (auto* bridge = APPLICATION->qmlBlockedMods()) {
+            if (bridge->askForMods(blockedMods)) {
+                qDebug() << "Post dialog blocked mods list:" << blockedMods;
+                copyBlockedMods(blockedMods);
+                setupDownloadJob();
+            } else {
+                m_modIdResolver.reset();
+                emitAborted();
+                return;
+            }
         } else {
-            m_modIdResolver.reset();
-            emitAborted();
-            return;
+            BlockedModsDialog messageDialog(m_parent, tr("Blocked mods found"),
+                                            tr("The following files are not available for download in third party launchers.<br/>"
+                                               "You will need to manually download them and add them to the instance."),
+                                            blockedMods);
+
+            messageDialog.setModal(true);
+
+            if (messageDialog.exec() != 0) {
+                qDebug() << "Post dialog blocked mods list:" << blockedMods;
+                copyBlockedMods(blockedMods);
+                setupDownloadJob();
+            } else {
+                m_modIdResolver.reset();
+                emitAborted();
+                return;
+            }
         }
     } else {
         setupDownloadJob();
