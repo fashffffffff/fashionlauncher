@@ -2546,7 +2546,23 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>인스턴스 선택</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>모든 인스턴스</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>인스턴스 %n개</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2624,21 +2640,6 @@
         <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
         <translation>
             <numerusform>세션 %n개 기록됨. 세션은 게임을 닫을 때 저장됩니다.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>인스턴스 선택</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>모든 인스턴스</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>인스턴스 %n개</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6213,10 +6214,6 @@
         <translation>오류</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>왜 크래시가 났나요?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>로그 복사</translation>
     </message>
@@ -6269,6 +6266,10 @@
         <translation>
             <numerusform>줄 %n개</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>왜 크래시가 났나요?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

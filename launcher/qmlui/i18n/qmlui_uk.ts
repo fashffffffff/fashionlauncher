@@ -2574,7 +2574,25 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Виберіть збірку</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Усі збірки</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n збірка</numerusform>
+            <numerusform>%n збірки</numerusform>
+            <numerusform>%n збірок</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2658,23 +2676,6 @@
             <numerusform>Записано %n сесію. Сесії зберігаються, коли гра закривається.</numerusform>
             <numerusform>Записано %n сесії. Сесії зберігаються, коли гра закривається.</numerusform>
             <numerusform>Записано %n сесій. Сесії зберігаються, коли гра закривається.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>Виберіть збірку</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>Усі збірки</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n збірка</numerusform>
-            <numerusform>%n збірки</numerusform>
-            <numerusform>%n збірок</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6301,10 +6302,6 @@
         <translation>Помилки</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>Чому вилетіло?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>Копіювати журнал</translation>
     </message>
@@ -6359,6 +6356,10 @@
             <numerusform>%n рядки</numerusform>
             <numerusform>%n рядків</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Чому вилетіло?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

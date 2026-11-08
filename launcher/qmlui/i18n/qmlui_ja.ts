@@ -2546,7 +2546,23 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>インスタンスを選択</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>すべてのインスタンス</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n 個のインスタンス</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2624,21 +2640,6 @@
         <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
         <translation>
             <numerusform>%n セッションを記録しました。セッションはゲーム終了時に保存されます。</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>インスタンスを選択</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>すべてのインスタンス</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n 個のインスタンス</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6213,10 +6214,6 @@
         <translation>エラー</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>クラッシュの原因は？</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>ログをコピー</translation>
     </message>
@@ -6269,6 +6266,10 @@
         <translation>
             <numerusform>%n 行</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>クラッシュの原因は？</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

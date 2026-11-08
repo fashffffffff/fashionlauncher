@@ -2546,7 +2546,23 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>选择实例</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>所有实例</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n 个实例</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2624,21 +2640,6 @@
         <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
         <translation>
             <numerusform>已记录 %n 次会话。会话在游戏关闭时保存。</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>选择实例</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>所有实例</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n 个实例</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6213,10 +6214,6 @@
         <translation>错误</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>为什么崩溃了？</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>复制日志</translation>
     </message>
@@ -6269,6 +6266,10 @@
         <translation>
             <numerusform>%n行</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>为什么崩溃了？</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

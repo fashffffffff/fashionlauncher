@@ -135,11 +135,29 @@ Item {
         spacing: Style.px(10)
 
         PlayButton { instanceId: page.current ? page.current.instanceId : ""; Layout.preferredWidth: Style.px(220) }
-        ContinueButton { instanceId: page.current ? page.current.instanceId : ""; Layout.maximumWidth: Style.px(300) }
-        QuietButton { iconName: "cube"; text: qsTr("Mods"); onClicked: Router.openInstance(page.current.instanceId, "mods") }
-        QuietButton { iconName: "folder"; text: qsTr("Folder"); onClicked: Launcher.openInstanceFolder(page.current.instanceId) }
-        QuietButton { iconName: "sliders"; text: qsTr("Manage"); onClicked: Router.openInstance(page.current.instanceId, "overview") }
-        FriendsHomeButton {}
+        ContinueButton { id: continueBtn; instanceId: page.current ? page.current.instanceId : ""; Layout.maximumWidth: Style.px(300) }
+        QuietButton { compact: actions.compact; iconName: "cube"; text: qsTr("Mods"); onClicked: Router.openInstance(page.current.instanceId, "mods") }
+        QuietButton { compact: actions.compact; iconName: "folder"; text: qsTr("Folder"); onClicked: Launcher.openInstanceFolder(page.current.instanceId) }
+        QuietButton { compact: actions.compact; iconName: "sliders"; text: qsTr("Manage"); onClicked: Router.openInstance(page.current.instanceId, "overview") }
+        FriendsHomeButton { id: friendsBtn; compact: actions.compact }
+
+        // The secondary buttons fold to icons (labels become tooltips) when the full row wouldn't fit
+        readonly property real labelled: Style.px(220) + spacing * 5
+                                         + (continueBtn.visible ? Math.min(Style.px(300), continueBtn.implicitWidth) : 0)
+                                         + measure.implicitWidth
+        readonly property bool compact: labelled > page.width - Style.px(96)
+    }
+    // Invisible ruler with the labelled buttons (an invisible item reports no size, so it is transparent instead)
+    Row {
+        id: measure
+        opacity: 0
+        enabled: false
+        x: -width - Style.px(100)
+        spacing: actions.spacing
+        QuietButton { iconName: "cube"; text: qsTr("Mods") }
+        QuietButton { iconName: "folder"; text: qsTr("Folder") }
+        QuietButton { iconName: "sliders"; text: qsTr("Manage") }
+        QuietButton { iconName: "user"; text: friendsBtn.text }
     }
 
     // Servers of this instance (status, quick join), above the actions on the right

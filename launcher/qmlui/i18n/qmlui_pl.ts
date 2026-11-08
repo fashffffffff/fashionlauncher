@@ -2574,7 +2574,25 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Wybierz profil</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Wszystkie profile</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n profil</numerusform>
+            <numerusform>%n profile</numerusform>
+            <numerusform>%n profili</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2658,23 +2676,6 @@
             <numerusform>Zapisano %n sesję. Sesje są zapisywane po zamknięciu gry.</numerusform>
             <numerusform>Zapisano %n sesje. Sesje są zapisywane po zamknięciu gry.</numerusform>
             <numerusform>Zapisano %n sesji. Sesje są zapisywane po zamknięciu gry.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>Wybierz profil</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>Wszystkie profile</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n profil</numerusform>
-            <numerusform>%n profile</numerusform>
-            <numerusform>%n profili</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6301,10 +6302,6 @@
         <translation>Błędy</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>Dlaczego gra się wysypała?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>Kopiuj log</translation>
     </message>
@@ -6359,6 +6356,10 @@
             <numerusform>%n linie</numerusform>
             <numerusform>%n linii</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Dlaczego gra się wysypała?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

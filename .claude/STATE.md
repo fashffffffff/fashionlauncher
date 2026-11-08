@@ -49,6 +49,44 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
   `i18n/qmlui_<code>.ts`; script
   `launcher/qmlui/i18n/update.sh` re-runs lupdate for all and reports unfinished counts.
 
+- 2026-11-08: merged into main: play stats, game settings transfer, Quick Play Continue, Storage cleanup, crash
+  doctor (translations re-merged by script from each branch; 1592 strings, 15 langs complete).
+- Play statistics: `qmlui/stats/PlayStats` (QML `Stats`, singleton). `BaseInstance::setMinecraftRunning(false)` calls
+  `PlayStats::record` (only when RecordGameTime is on, sessions >= 30 s) -> `<data>/stats/sessions.jsonl`. One-time
+  backfill from `logs/YYYY-MM-DD-N.log.gz` + `latest.log` (first/last `[HH:mm:ss]`), marker `stats/backfill.done`.
+  `summary(firstDayOfWeek)` mixes in Prism's per-instance totals (authoritative for totals/top instances). UI:
+  `InstancesStats.qml`, tab on PageInstances via `Router.instancesTab` ("grid"|"stats"); snapshot page `stats`.
+- Game settings transfer: `tools/GameOptions` (QML `GameOptions`: summary/plan/apply/undo) merges options.txt (+optionsof,
+  optionsshaders with '=', sodium-options.json) by category; converts keys LWJGL2↔GLFW across 1.13, lang case (1.11),
+  graphicsMode (1.16), mainHand quotes (1.19); target MC version from PackProfile, else its DataVersion. New target
+  file gets the source's `version:` so the game's DataFixers upgrade it. Backups `<file>.bak-<date>` (3 kept).
+  UI `GameOptionsDialog` + `InstanceChooser`, opened via `Router.copyGameOptions({source,target})`; toast with button
+  `Router.toastAction(msg, label, fn)`. Snapshot: `FFPRISM_PAGE=gameopts:<src>[:<target|*>]`.
+- Worktrees: libraries/libnbtplusplus submodule is empty — copy it from /Users/fash/projects/ffprism/PrismLauncher before configuring.
+- Quick Play "Continue" (branch qml-quickplay): `qmlui/quickplay/QuickPlayBridge` (QML `QuickPlay`: support/last/
+  worlds/servers/play). World = trait `feature:is_quick_play_singleplayer` (1.20+), server = any non-legacy version
+  (old ones get --server/--port). Traits read from cached `meta/net.minecraft/<v>.json` while components still
+  resolve (async). Last target = newest of level.dat LastPlayed (World needs `loadMetadata()`), last "Connecting to"
+  in logs/latest.log, instance setting `QmlLastQuickPlay`. One-shot target: `LauncherBridge::launchTo` (kept across
+  pre-launch hold). UI: `ContinueButton` (Home, instance header), `QuickPlayDialog` via `Router.pickQuickPlay`.
+  Snapshot pages `home:<id>`, `quickplay:<id>`.
+- QuietButton: implicitWidth from its parts (labels collapsed to 0 after 64b9ccec7, fixed on merge); `compact` folds a
+  button to its icon with the label as tooltip — Home folds the secondary actions when the row doesn't fit.
+- New worktrees need `git submodule update --init` before configuring.
+- Free up disk space: `qmlui/storage/StorageScan` (worker logic, rules in its header: unused libraries/assets from
+  resolved launch profiles, cache/ except qmlui + top-level files, old logs, leftovers, dedupe via ContentStore,
+  extra snapshots + store gc, screenshots opt-in; never saves/ or symlinks; hard-link-aware sizes) +
+  `StorageBridge` (QML `Storage`, jobs in TaskCenter, dev env FFPRISM_STORAGE_LIST / FFPRISM_STORAGE_CLEAN).
+  UI `SettingsStorage.qml` = Settings → Storage; `FFPRISM_PAGE=settings:storage`. meta/ never cleaned (offline
+  instances need it). Done on branch qml-cleanup (commit e84a2018b), tested on devdata with backup/restore, 15 langs.
+  Note: devdata's fake instances (bogus loader versions) make libraries/assets show "can't check" — by design.
+- Crash doctor: `qmlui/doctor/CrashRules` (pure matcher, tests `tests/CrashRules_test.cpp` + `tests/testdata/CrashRules/`,
+  run `build/LauncherTests CrashRules_test`) + `CrashDoctor` singleton (QML `Doctor`, hooks `Application::launchStarted`,
+  pending crash survives the shell being unloaded) + `CrashDoctorDialog.qml` (DialogHost, kind "crash"; TabLog button).
+  Rule: only causes the log states (loader dependency resolution, OOM, Java class version, GLFW/OpenGL, corrupt jar in
+  mods/); never mixin/conflict/stack-trace guesses — those show "unknown" + excerpt. Why: in big packs the mods named in
+  an error are often not the culprits. Debug: `FFPRISM_PAGE=crash:<instanceId>:<log path>`.
+
 ## Commands
 - Build (Ninja, Debug, already configured in `build/`):
   `JAVA_HOME=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home cmake --build build`
@@ -121,5 +159,5 @@ owning Minecraft via a Microsoft account (like the FreesmLauncher fork).
 ## Gotchas
 - `anyAccountIsValid()` really means "some MS account owns Minecraft" — don't use it to mean "has accounts".
 - Multiple Claude sessions may share this checkout: don't switch branches/stash; keep to your own files.
-- QML: don't name custom props like FINAL base props (`flat`, Canvas `top`) — the component fails to load.
+- QML: don't name custom props like FINAL base props (`flat`, Canvas `top`, AbstractButton `icon`) — the component fails to load.
 - zsh: unquoted `--include=*.cpp` globs fail ("no matches found") — quote them.

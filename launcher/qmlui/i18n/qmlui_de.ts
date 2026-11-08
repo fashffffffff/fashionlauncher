@@ -2560,7 +2560,24 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Instanz wählen</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Alle Instanzen</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n Instanz</numerusform>
+            <numerusform>%n Instanzen</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2641,22 +2658,6 @@
         <translation>
             <numerusform>%n Sitzung aufgezeichnet. Sitzungen werden beim Schließen des Spiels gespeichert.</numerusform>
             <numerusform>%n Sitzungen aufgezeichnet. Sitzungen werden beim Schließen des Spiels gespeichert.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>Instanz wählen</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>Alle Instanzen</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n Instanz</numerusform>
-            <numerusform>%n Instanzen</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6257,10 +6258,6 @@
         <translation>Fehler</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>Warum ist es abgestürzt?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>Log kopieren</translation>
     </message>
@@ -6314,6 +6311,10 @@
             <numerusform>%n Zeile</numerusform>
             <numerusform>%n Zeilen</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Warum ist es abgestürzt?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

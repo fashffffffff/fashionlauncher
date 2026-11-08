@@ -2546,7 +2546,23 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Bir örnek seç</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Tüm örnekler</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n örnek</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2624,21 +2640,6 @@
         <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
         <translation>
             <numerusform>%n oturum kaydedildi. Oturumlar oyun kapandığında kaydedilir.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>Bir örnek seç</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>Tüm örnekler</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n örnek</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6213,10 +6214,6 @@
         <translation>Hatalar</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>Neden çöktü?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>Günlüğü kopyala</translation>
     </message>
@@ -6269,6 +6266,10 @@
         <translation>
             <numerusform>%n satır</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Neden çöktü?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

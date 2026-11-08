@@ -2574,7 +2574,25 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Выберите сборку</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Все сборки</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n сборка</numerusform>
+            <numerusform>%n сборки</numerusform>
+            <numerusform>%n сборок</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2658,23 +2676,6 @@
             <numerusform>Записана %n сессия. Сессии сохраняются, когда игра закрывается.</numerusform>
             <numerusform>Записано %n сессии. Сессии сохраняются, когда игра закрывается.</numerusform>
             <numerusform>Записано %n сессий. Сессии сохраняются, когда игра закрывается.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>Выберите сборку</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>Все сборки</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n сборка</numerusform>
-            <numerusform>%n сборки</numerusform>
-            <numerusform>%n сборок</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6301,10 +6302,6 @@
         <translation>Ошибки</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>Почему вылетело?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>Скопировать журнал</translation>
     </message>
@@ -6359,6 +6356,10 @@
             <numerusform>%n строки</numerusform>
             <numerusform>%n строк</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Почему вылетело?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

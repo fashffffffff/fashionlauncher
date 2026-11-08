@@ -8,19 +8,21 @@ Button {
     property string tip
     property bool danger: false
     property bool plain: false
+    /// Show only the icon (the label becomes the tooltip) — for rows that run out of room
+    property bool compact: false
     /// UI sound on click ("" = none)
     property string sound: "click"
     onClicked: if (sound.length) Sounds.play(sound)
     readonly property color ink: danger ? Style.danger : Style.text
 
     implicitHeight: Style.px(40)
-    implicitWidth: text.length ? contentItem.implicitWidth + Style.px(28) : implicitHeight
+    implicitWidth: text.length && !compact ? contentItem.implicitWidth + Style.px(28) : implicitHeight
     padding: 0
     hoverEnabled: true
     focusPolicy: Qt.StrongFocus
 
-    ToolTip.visible: (tip.length > 0 || (btnText.truncated && control.text.length > 0)) && hovered
-    ToolTip.text: tip.length > 0 ? tip : control.text
+    ToolTip.visible: (tip.length > 0 || control.compact || (btnText.truncated && control.text.length > 0)) && hovered
+    ToolTip.text: control.compact && control.text.length ? control.text : tip.length > 0 ? tip : control.text
     ToolTip.delay: 500
     Accessible.name: text.length ? text : tip
 
@@ -54,7 +56,7 @@ Button {
         }
         Text {
             id: btnText
-            visible: control.text.length > 0
+            visible: control.text.length > 0 && !control.compact
             text: control.text
             color: control.ink
             font.family: Style.ui

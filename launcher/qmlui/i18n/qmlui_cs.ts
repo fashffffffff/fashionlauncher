@@ -2574,7 +2574,25 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Vyberte instanci</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Všechny instance</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n instance</numerusform>
+            <numerusform>%n instance</numerusform>
+            <numerusform>%n instancí</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2658,23 +2676,6 @@
             <numerusform>Zaznamenána %n relace. Relace se ukládají po zavření hry.</numerusform>
             <numerusform>Zaznamenány %n relace. Relace se ukládají po zavření hry.</numerusform>
             <numerusform>Zaznamenáno %n relací. Relace se ukládají po zavření hry.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>Vyberte instanci</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>Všechny instance</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n instance</numerusform>
-            <numerusform>%n instance</numerusform>
-            <numerusform>%n instancí</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6301,10 +6302,6 @@
         <translation>Chyby</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>Proč to spadlo?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>Zkopírovat log</translation>
     </message>
@@ -6359,6 +6356,10 @@
             <numerusform>%n řádky</numerusform>
             <numerusform>%n řádků</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Proč to spadlo?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>

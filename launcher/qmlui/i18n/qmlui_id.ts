@@ -2546,7 +2546,23 @@
     </message>
 </context>
 <context>
-<<<<<<< HEAD
+    <name>InstanceChooser</name>
+    <message>
+        <source>Choose an instance</source>
+        <translation>Pilih instance</translation>
+    </message>
+    <message>
+        <source>All instances</source>
+        <translation>Semua instance</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n instance(s)</source>
+        <translation>
+            <numerusform>%n instance</numerusform>
+        </translation>
+    </message>
+</context>
+<context>
     <name>InstancesStats</name>
     <message>
         <source>This week</source>
@@ -2624,21 +2640,6 @@
         <source>%n session(s) recorded. Sessions are saved when the game closes.</source>
         <translation>
             <numerusform>%n sesi tercatat. Sesi disimpan saat game ditutup.</numerusform>
-=======
-    <name>InstanceChooser</name>
-    <message>
-        <source>Choose an instance</source>
-        <translation>Pilih instance</translation>
-    </message>
-    <message>
-        <source>All instances</source>
-        <translation>Semua instance</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n instance(s)</source>
-        <translation>
-            <numerusform>%n instance</numerusform>
->>>>>>> qml-settings-sync
         </translation>
     </message>
 </context>
@@ -6213,10 +6214,6 @@
         <translation>Galat</translation>
     </message>
     <message>
-        <source>Why did it crash?</source>
-        <translation>Kenapa crash?</translation>
-    </message>
-    <message>
         <source>Copy the log</source>
         <translation>Salin log</translation>
     </message>
@@ -6269,6 +6266,10 @@
         <translation>
             <numerusform>%n baris</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Why did it crash?</source>
+        <translation>Kenapa crash?</translation>
     </message>
     <message>
         <source>Auto-scroll</source>
