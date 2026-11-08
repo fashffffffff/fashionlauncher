@@ -107,6 +107,11 @@ void BlockedModsMatchTest::moveOnlyFromDownloads()
     QVERIFY(matchByHash(inDownloads, "aa", "/home/u/Downloads/m.jar", "/home/u/Downloads", true));
     QVERIFY(inDownloads[0].move);
 
+    // a sibling folder whose name only starts the same is not the downloads folder
+    QList<BlockedMod> sibling{ mod("m.jar", "aa") };
+    QVERIFY(matchByHash(sibling, "aa", "/home/u/Downloads2/m.jar", "/home/u/Downloads", true));
+    QVERIFY(!sibling[0].move);
+
     QList<BlockedMod> elsewhere{ mod("m.jar", "aa") };
     QVERIFY(matchByHash(elsewhere, "aa", "/tmp/m.jar", "/home/u/Downloads", true));
     QVERIFY(!elsewhere[0].move);

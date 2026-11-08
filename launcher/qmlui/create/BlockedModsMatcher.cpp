@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 #include "BlockedModsMatcher.h"
 
+#include <QDir>
 #include <QFileInfo>
 #include <algorithm>
 
@@ -34,7 +35,16 @@ void markFound(BlockedMod& mod, const QString& path, const QString& downloadDir,
     mod.matched = true;
     mod.localPath = path;
     if (moveFromDownloads) {
-        mod.move = QFileInfo(path).absoluteFilePath().startsWith(downloadDir);
+        // Both sides made absolute the same way (on Windows that adds the drive letter), and only files
+        // inside the folder count, not ones in a sibling like "Downloads2".
+        const Qt::CaseSensitivity cs =
+#ifdef Q_OS_WIN
+            Qt::CaseInsensitive;
+#else
+            Qt::CaseSensitive;
+#endif
+        mod.move = !downloadDir.isEmpty() &&
+                   QFileInfo(path).absoluteFilePath().startsWith(QDir(downloadDir).absolutePath() + '/', cs);
     }
 }
 }  // namespace
