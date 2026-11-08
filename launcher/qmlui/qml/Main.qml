@@ -18,6 +18,7 @@ ApplicationWindow {
         home: "PageHome.qml", instances: "PageInstances.qml", browse: "PageBrowse.qml",
         appearance: "PageAppearance.qml", settings: "PageSettings.qml",
         instance: "PageInstance.qml", create: "PageCreate.qml", version: "PageVersion.qml",
+        upgrade: "UpgradeDialog.qml",
         friends: "PageFriends.qml", skins: "PageSkins.qml", gallery: "PageGallery.qml",
         receive: "PageReceivePack.qml"
     })
@@ -27,6 +28,7 @@ ApplicationWindow {
         if (name === "accounts") accounts.open()
         else if (name === "palette") cmdPalette.open()
         else if (name.startsWith("version:")) Router.open("version", { instanceId: name.slice(8) })
+        else if (name.startsWith("upgrade:")) { const u = name.split(":"); Router.open("upgrade", { instanceId: u[1], planMc: u[2] || "", autoApply: u[3] === "apply" }) }
         else if (name.startsWith("receive:")) Router.open("receive", { file: name.slice(8) })
         else if (name.startsWith("share:")) {
             Router.openInstance(name.slice(6))

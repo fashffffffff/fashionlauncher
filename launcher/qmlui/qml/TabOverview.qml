@@ -55,6 +55,7 @@ Item {
                 Action { iconName: "copy"; text: qsTr("Copy instance"); onClicked: Launcher.copyInstance(tab.instanceId) }
                 Action { iconName: "sliders"; text: qsTr("Copy game settings"); onClicked: Router.copyGameOptions({ source: tab.instanceId }) }
                 Action { iconName: "export"; text: qsTr("Export"); onClicked: Launcher.exportInstance(tab.instanceId) }
+                Action { iconName: "cube"; text: qsTr("Move to another Minecraft version…"); onClicked: Router.open("upgrade", { instanceId: tab.instanceId }) }
                 Action { iconName: "trash"; text: qsTr("Delete"); danger: true; onClicked: Launcher.deleteInstance(tab.instanceId) }
             }
 
