@@ -541,7 +541,8 @@ void UpgradeBridge::apply(const QVariantMap& plan, const QString& newName, const
             emit applyChanged();
         }
     });
-    connect(task, &Task::finished, this, [this, t = std::shared_ptr<UpgradeApplyTask>(task)] {
+    // TaskCenter's Task::Ptr owns the task (deleteLater); the lambda only borrows it.
+    connect(task, &Task::finished, this, [this, t = task] {
         const bool ok = t->wasSuccessful();
         const QString name = t->m_newName;
         const QString newId = t->newInstanceId();
@@ -552,7 +553,6 @@ void UpgradeBridge::apply(const QVariantMap& plan, const QString& newName, const
         emit applyFinished(ok, ok ? tr("Upgraded copy “%1” created.").arg(name)
                                   : (error.isEmpty() ? tr("The upgrade was cancelled.") : error),
                            ok ? name : QString(), ok ? newId : QString());
-        t->deleteLater();
     });
     TaskCenter::instance()->track(Task::Ptr(task), tr("Upgrading “%1” to Minecraft %2").arg(orig->name(), targetMc), "upgrade", instanceId,
                                   orig->iconKey());
