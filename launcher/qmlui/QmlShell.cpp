@@ -39,6 +39,7 @@
 #include "storage/StorageBridge.h"
 #include "tools/ToolsBridge.h"
 #include "stats/PlayStats.h"
+#include "upgrade/UpgradeBridge.h"
 #include "qmlui/jobs/TaskCenter.h"
 #include "settings/SettingsObject.h"
 
@@ -99,6 +100,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Storage", new StorageBridge(this));
     ctx->setContextProperty("Tools", new ToolsBridge(this));
     ctx->setContextProperty("GameOptions", new GameOptions(this));
+    ctx->setContextProperty("Upgrade", new UpgradeBridge(m_launcher, this));
     ctx->setContextProperty("Skins", new SkinsBridge(this));
     ctx->setContextProperty("Servers", new ServersBridge(this));
     ctx->setContextProperty("QuickPlay", new QuickPlayBridge(m_launcher, this));

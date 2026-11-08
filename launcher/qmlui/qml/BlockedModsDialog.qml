@@ -9,7 +9,7 @@ import QtQuick.Dialogs
 ModalCard {
     id: dlg
     dismissable: false
-    width: Math.min(parent ? parent.width - Style.px(48) : 640, Style.px(640))
+    width: Math.min(parent ? parent.width - Style.px(48) : 720, Style.px(720))
     height: Math.min(parent ? parent.height - Style.px(48) : 660, Math.max(Style.px(430), implicitHeight))
 
     property int pickIndex: -1
@@ -91,19 +91,23 @@ ModalCard {
         muted: true
     }
 
+    // Two rows so the buttons never push the card wider than the window
     RowLayout {
         Layout.fillWidth: true
         spacing: Style.px(8)
         QuietButton { text: qsTr("Open all pages"); onClicked: BlockedMods.openAll() }
         QuietButton { iconName: "folder"; text: qsTr("Add folder…"); onClicked: folderDialog.open() }
         Item { Layout.fillWidth: true }
+    }
+    RowLayout {
+        Layout.fillWidth: true
+        spacing: Style.px(8)
         QuietButton { text: qsTr("Cancel"); onClicked: BlockedMods.cancel() }
+        Item { Layout.fillWidth: true }
         QuietButton { text: qsTr("Continue without them"); onClicked: BlockedMods.confirm() }
         PrimaryButton {
             text: qsTr("Continue")
             enabled: BlockedMods.allFound
-            // the block face alone doesn't read as disabled — dim it until every mod is found
-            opacity: enabled ? 1 : 0.4
             onClicked: BlockedMods.confirm()
         }
     }

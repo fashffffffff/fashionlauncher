@@ -6528,6 +6528,10 @@
         <translation>Экспорт</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>Перейти на другую версию Minecraft…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>Удалить</translation>
     </message>
@@ -6969,6 +6973,362 @@
     <message>
         <source>My %1</source>
         <translation>Моя %1</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Эта сборка больше не существует.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Закройте игру, прежде чем переносить сборку на другую версию.</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>Копирование сборки</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>Не удалось создать копию.</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>Смена версии</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>Замена модов</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>Завершение</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — отчёт об обновлении сборки</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>Обновлённая копия сборки: %1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>Было: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>Стало: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>Создано: %1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>Модов: %1. Заменено: %2. Отключено (нет версии для новой Minecraft): %3. Отключено (неизвестный мод): %4. Установлено подсказок: %5.</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>Исходная сборка не изменялась.</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Миры скопированы как есть. Если открыть мир в более новой версии Minecraft, он будет преобразован навсегда — в старой версии он больше не откроется.</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2): отключён; вместо него установлена подсказка: %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2): отключён — нет версии для Minecraft %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2): оставлен как есть — версия неизвестна (нет метаданных)</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>Подготовка перехода на Minecraft %1</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Эта сборка больше не существует.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Закройте игру, прежде чем переносить сборку на другую версию.</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>Загрузчик модов не поддерживает Minecraft %1.</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>Создана обновлённая копия «%1».</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>Обновление отменено.</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>Обновление «%1» до Minecraft %2</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>Без загрузчика модов</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>готов</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>нет версии</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>неизвестен</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Назад</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>Перейти на другую версию Minecraft</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>Выберите версию Minecraft, на которую нужно перевести сборку.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>Сейчас: Minecraft %1 с %2. Загрузчик останется прежним.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>Сейчас: Minecraft %1 без загрузчика модов.</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>Поиск версий</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>Поиск версий Minecraft</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>Снапшоты</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>Старые версии</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>Обновить список версий</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>Рекомендуется</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>Загрузка версий…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>Не удалось загрузить список: %1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>Нет версий по запросу «%1».</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>Нет версий для показа.</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>Попробовать снова</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>Выберите версию Minecraft, на которую перевести сборку. Затем каждый мод будет проверен на совместимость с ней.</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>Проверка модов…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>%1 готовы · %2 без версии · %3 неизвестны</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>Выбрать другую версию</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>Не удалось проверить %1 для Minecraft %2.</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1 доступен для Minecraft %2.</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1 недоступен для Minecraft %2. Выберите другую версию.</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Миры копируются как есть. Если открыть мир в более новой версии Minecraft, он будет преобразован навсегда — в старой версии он больше не откроется.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Все</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>Готовы</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>Нет версии</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Неизвестны</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>Версия неизвестна</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>Подсказка: %1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>В этой сборке нет модов. Изменятся только версия Minecraft и загрузчик.</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>Название копии</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Название</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>Название новой сборки</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>Копия «%1» будет создана с новой версией; исходная сборка останется нетронутой.</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>Исходная сборка останется нетронутой.</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Работаем…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>Создать обновлённую копию</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>Проверка не удалась.</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>Выбрать другую версию</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>Открыть</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Эта сборка больше не существует.</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>Сначала выберите версию Minecraft.</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>Просмотр установленных модов…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>Не удалось открыть папку модов этой сборки.</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>Проверка загрузчика модов…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>Не удалось загрузить список версий %1: %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>Спрашиваем Modrinth об %n моде…</numerusform>
+            <numerusform>Спрашиваем Modrinth о %n модах…</numerusform>
+            <numerusform>Спрашиваем Modrinth о %n модах…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinth не ответил: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>Хеширование %n мода…</numerusform>
+            <numerusform>Хеширование %n модов…</numerusform>
+            <numerusform>Хеширование %n модов…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>Спрашиваем CurseForge об %n моде…</numerusform>
+            <numerusform>Спрашиваем CurseForge о %n модах…</numerusform>
+            <numerusform>Спрашиваем CurseForge о %n модах…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>Загрузка значков модов…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>Поиск альтернатив…</translation>
     </message>
 </context>
 </TS>

@@ -15,6 +15,8 @@ Button {
     onClicked: if (sound.length) Sounds.play(sound)
 
     readonly property real depth: enabled ? Style.blockDepth : Style.blockDepth * 0.4
+    // the block face alone does not read as disabled
+    opacity: enabled ? 1 : 0.45
     readonly property bool sunk: control.down || control.checked
     readonly property real sink: sunk ? depth * 0.8 : (hovered ? -Style.px(1) : 0)
 

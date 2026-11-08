@@ -6438,6 +6438,10 @@
         <translation>Ekspor</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>Pindah ke versi Minecraft lain…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>Hapus</translation>
     </message>
@@ -6865,6 +6869,356 @@
     <message>
         <source>My %1</source>
         <translation>%1 Saya</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Profil ini sudah tidak ada.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Tutup permainan sebelum memindahkan profil ke versi lain.</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>Menyalin profil</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>Salinan tidak berhasil dibuat.</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>Mengganti versi</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>Mengganti mod</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>Menyelesaikan</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — laporan peningkatan profil</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>Salinan yang ditingkatkan dari: %1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>Dari: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>Ke: Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>Dibuat: %1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>Mod: %1. %2 diganti, %3 dimatikan (tidak ada versi untuk Minecraft baru), %4 dimatikan (mod tidak dikenal), %5 saran dipasang.</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>Profil asli tidak diubah.</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Dunia disalin apa adanya. Membuka dunia di versi Minecraft yang lebih baru mengubahnya secara permanen — dunia itu tidak bisa lagi dibuka di versi lama.</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2): dimatikan; saran dipasang sebagai gantinya: %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2): dimatikan — tidak ada versi untuk Minecraft %3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2): dibiarkan — versi tidak diketahui (tanpa metadata)</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>Bersiap pindah ke Minecraft %1</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Profil ini sudah tidak ada.</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>Tutup permainan sebelum memindahkan profil ke versi lain.</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>Pemuat mod tidak mendukung Minecraft %1.</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>Salinan yang ditingkatkan “%1” dibuat.</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>Peningkatan dibatalkan.</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>Meningkatkan “%1” ke Minecraft %2</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>Tanpa pemuat mod</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>siap</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>tidak ada</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>tidak diketahui</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Kembali</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>Pindah ke versi Minecraft lain</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>Pilih versi Minecraft untuk memindahkan profil ini.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>Sekarang: Minecraft %1 dengan %2. Pemuat tetap sama.</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>Sekarang: Minecraft %1 tanpa pemuat mod.</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>Cari versi</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>Cari versi Minecraft</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>Snapshot</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>Versi lama</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>Muat ulang daftar versi</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>Disarankan</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>Memuat versi…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>Daftar tidak dapat dimuat: %1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>Tidak ada versi yang cocok dengan “%1”.</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>Tidak ada versi untuk ditampilkan.</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>Coba lagi</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>Pilih versi Minecraft untuk memindahkan profil ini. Setelah itu setiap mod diperiksa terhadapnya.</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>Memeriksa mod…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Batal</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>%1 siap · %2 tanpa versi · %3 tidak diketahui</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>Ganti versi</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>%1 untuk Minecraft %2 tidak dapat diperiksa.</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1 tersedia untuk Minecraft %2.</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1 tidak tersedia untuk Minecraft %2. Pilih versi lain.</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>Dunia disalin apa adanya. Membuka dunia di versi Minecraft yang lebih baru mengubahnya secara permanen — dunia itu tidak bisa lagi dibuka di versi lama.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Semua</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>Siap</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>Tanpa versi</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Tidak diketahui</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>Versi tidak diketahui</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>Saran: %1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>Profil ini tidak punya mod. Hanya versi Minecraft dan pemuatnya yang akan diubah.</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>Nama salinan</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nama</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>Nama profil baru</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>Salinan bernama “%1” akan dibuat dengan versi baru; profil asli tetap utuh.</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>Profil asli tetap utuh.</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>Bekerja…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>Buat salinan yang ditingkatkan</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>Pemeriksaan gagal.</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>Pilih versi lain</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>Buka</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>Profil ini sudah tidak ada.</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>Pilih dulu versi Minecraft.</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>Menelaah mod yang terpasang…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>Folder mod profil ini tidak bisa dibuka.</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>Memeriksa pemuat mod…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>Daftar versi %1 tidak dapat dimuat: %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>Menanyakan %n mod ke Modrinth…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinth tidak menjawab: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>Menghitung hash %n mod…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>Menanyakan %n mod ke CurseForge…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>Mengambil ikon mod…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>Mencari alternatif…</translation>
     </message>
 </context>
 </TS>

@@ -6438,6 +6438,10 @@
         <translation>导出</translation>
     </message>
     <message>
+        <source>Move to another Minecraft version…</source>
+        <translation>迁移到其他 Minecraft 版本…</translation>
+    </message>
+    <message>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
@@ -6865,6 +6869,356 @@
     <message>
         <source>My %1</source>
         <translation>我的 %1</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeApplyTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>该实例已不存在。</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>移动实例到其他版本之前，请先关闭游戏。</translation>
+    </message>
+    <message>
+        <source>Copying the instance</source>
+        <translation>正在复制实例</translation>
+    </message>
+    <message>
+        <source>The copy could not be created.</source>
+        <translation>无法创建副本。</translation>
+    </message>
+    <message>
+        <source>Switching the version</source>
+        <translation>正在切换版本</translation>
+    </message>
+    <message>
+        <source>Replacing mods</source>
+        <translation>正在替换模组</translation>
+    </message>
+    <message>
+        <source>Finishing up</source>
+        <translation>即将完成</translation>
+    </message>
+    <message>
+        <source>Fashion Launcher — instance upgrade report</source>
+        <translation>Fashion Launcher — 实例升级报告</translation>
+    </message>
+    <message>
+        <source>Upgraded copy of: %1</source>
+        <translation>升级副本来源：%1</translation>
+    </message>
+    <message>
+        <source>From: Minecraft %1%2</source>
+        <translation>原版本：Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>To: Minecraft %1%2</source>
+        <translation>新版本：Minecraft %1%2</translation>
+    </message>
+    <message>
+        <source>Created: %1</source>
+        <translation>创建时间：%1</translation>
+    </message>
+    <message>
+        <source>%1 mod(s): %2 replaced, %3 disabled (no version for the new Minecraft), %4 disabled (unknown mod), %5 suggestion(s) installed</source>
+        <translation>模组共 %1 个：替换 %2 个，禁用 %3 个（新版本 Minecraft 没有对应版本），禁用 %4 个（未知模组），安装建议 %5 个。</translation>
+    </message>
+    <message>
+        <source>The original instance was not changed.</source>
+        <translation>原实例未被改动。</translation>
+    </message>
+    <message>
+        <source>Worlds were copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>世界按原样复制。在较新的 Minecraft 版本中打开世界会将其永久转换——之后无法再在旧版本中打开。</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled; suggestion installed instead: %3</source>
+        <translation>- %1 (%2)：已禁用；改为安装建议：%3</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): disabled — no version for Minecraft %3</source>
+        <translation>- %1 (%2)：已禁用 — Minecraft %3 没有对应版本</translation>
+    </message>
+    <message>
+        <source>- %1 (%2): left out — version unknown (no metadata)</source>
+        <translation>- %1 (%2)：保持原样 — 版本未知（无元数据）</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeBridge</name>
+    <message>
+        <source>Planning the move to Minecraft %1</source>
+        <translation>正在准备迁移到 Minecraft %1</translation>
+    </message>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>该实例已不存在。</translation>
+    </message>
+    <message>
+        <source>Close the game before moving it to another version.</source>
+        <translation>移动实例到其他版本之前，请先关闭游戏。</translation>
+    </message>
+    <message>
+        <source>The mod loader does not support Minecraft %1.</source>
+        <translation>模组加载器不支持 Minecraft %1。</translation>
+    </message>
+    <message>
+        <source>Upgraded copy “%1” created.</source>
+        <translation>已创建升级副本“%1”。</translation>
+    </message>
+    <message>
+        <source>The upgrade was cancelled.</source>
+        <translation>升级已取消。</translation>
+    </message>
+    <message>
+        <source>Upgrading “%1” to Minecraft %2</source>
+        <translation>正在将“%1”升级到 Minecraft %2</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradeDialog</name>
+    <message>
+        <source>No mod loader</source>
+        <translation>无模组加载器</translation>
+    </message>
+    <message>
+        <source>ready</source>
+        <translation>就绪</translation>
+    </message>
+    <message>
+        <source>missing</source>
+        <translation>缺版本</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>未知</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
+        <source>Move to another Minecraft version</source>
+        <translation>迁移到其他 Minecraft 版本</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to.</source>
+        <translation>选择要将此实例迁移到的 Minecraft 版本。</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 with %2. The loader stays the same.</source>
+        <translation>当前：Minecraft %1（%2）。加载器保持不变。</translation>
+    </message>
+    <message>
+        <source>Now: Minecraft %1 without a mod loader.</source>
+        <translation>当前：Minecraft %1（无模组加载器）。</translation>
+    </message>
+    <message>
+        <source>Search versions</source>
+        <translation>搜索版本</translation>
+    </message>
+    <message>
+        <source>Search Minecraft versions</source>
+        <translation>搜索 Minecraft 版本</translation>
+    </message>
+    <message>
+        <source>Snapshots</source>
+        <translation>快照</translation>
+    </message>
+    <message>
+        <source>Old versions</source>
+        <translation>旧版本</translation>
+    </message>
+    <message>
+        <source>Reload the version list</source>
+        <translation>重新加载版本列表</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>推荐</translation>
+    </message>
+    <message>
+        <source>Loading versions…</source>
+        <translation>正在加载版本…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the list: %1</source>
+        <translation>无法加载列表：%1</translation>
+    </message>
+    <message>
+        <source>No versions match “%1”.</source>
+        <translation>没有匹配“%1”的版本。</translation>
+    </message>
+    <message>
+        <source>No versions to show.</source>
+        <translation>没有可显示的版本。</translation>
+    </message>
+    <message>
+        <source>Try again</source>
+        <translation>重试</translation>
+    </message>
+    <message>
+        <source>Pick the Minecraft version to move this instance to. Every mod is then checked against it.</source>
+        <translation>选择要将此实例迁移到的 Minecraft 版本。之后会对照该版本检查每个模组。</translation>
+    </message>
+    <message>
+        <source>Checking the mods…</source>
+        <translation>正在检查模组…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <source>%1 ready · %2 missing · %3 unknown</source>
+        <translation>%1 就绪 · %2 缺版本 · %3 未知</translation>
+    </message>
+    <message>
+        <source>Change version</source>
+        <translation>更改版本</translation>
+    </message>
+    <message>
+        <source>%1 for Minecraft %2 could not be checked.</source>
+        <translation>无法检查 Minecraft %2 的 %1。</translation>
+    </message>
+    <message>
+        <source>%1 is available for Minecraft %2.</source>
+        <translation>%1 可用于 Minecraft %2。</translation>
+    </message>
+    <message>
+        <source>%1 is not available for Minecraft %2. Pick another version.</source>
+        <translation>%1 不适用于 Minecraft %2。请选择其他版本。</translation>
+    </message>
+    <message>
+        <source>Worlds are copied as they are. Opening a world in a newer Minecraft version converts it permanently — it cannot be opened in the older version afterwards.</source>
+        <translation>世界按原样复制。在较新的 Minecraft 版本中打开世界会将其永久转换——之后无法再在旧版本中打开。</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>全部</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>就绪</translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation>缺版本</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>未知</translation>
+    </message>
+    <message>
+        <source>Unknown version</source>
+        <translation>版本未知</translation>
+    </message>
+    <message>
+        <source>Suggestion: %1 — %2</source>
+        <translation>建议：%1 — %2</translation>
+    </message>
+    <message>
+        <source>This instance has no mods. Only its Minecraft version and loader will be changed.</source>
+        <translation>此实例没有模组。只会更改 Minecraft 版本和加载器。</translation>
+    </message>
+    <message>
+        <source>Name of the copy</source>
+        <translation>副本名称</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <source>Name of the new instance</source>
+        <translation>新实例的名称</translation>
+    </message>
+    <message>
+        <source>A copy named “%1” is created with the new version; the original instance stays untouched.</source>
+        <translation>将创建名为“%1”的副本并使用新版本；原实例保持不变。</translation>
+    </message>
+    <message>
+        <source>The original instance stays untouched.</source>
+        <translation>原实例保持不变。</translation>
+    </message>
+    <message>
+        <source>Working…</source>
+        <translation>正在处理…</translation>
+    </message>
+    <message>
+        <source>Create upgraded copy</source>
+        <translation>创建升级副本</translation>
+    </message>
+    <message>
+        <source>The check failed.</source>
+        <translation>检查失败。</translation>
+    </message>
+    <message>
+        <source>Pick another version</source>
+        <translation>选择其他版本</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>打开</translation>
+    </message>
+</context>
+<context>
+    <name>UpgradePlanTask</name>
+    <message>
+        <source>This instance no longer exists.</source>
+        <translation>该实例已不存在。</translation>
+    </message>
+    <message>
+        <source>Pick a Minecraft version first.</source>
+        <translation>请先选择 Minecraft 版本。</translation>
+    </message>
+    <message>
+        <source>Looking at the installed mods…</source>
+        <translation>正在查看已安装的模组…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t open the mods folder of this instance.</source>
+        <translation>无法打开此实例的模组文件夹。</translation>
+    </message>
+    <message>
+        <source>Checking the mod loader…</source>
+        <translation>正在检查模组加载器…</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t load the %1 version list: %2</source>
+        <translation>无法加载 %1 的版本列表：%2</translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking Modrinth about %n mod(s)…</source>
+        <translation>
+            <numerusform>正在向 Modrinth 查询 %n 个模组…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Modrinth did not answer: %1</source>
+        <translation>Modrinth 未响应：%1</translation>
+    </message>
+    <message numerus="yes">
+        <source>Hashing %n mod(s)…</source>
+        <translation>
+            <numerusform>正在计算 %n 个模组的哈希…</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>Asking CurseForge about %n mod(s)…</source>
+        <translation>
+            <numerusform>正在向 CurseForge 查询 %n 个模组…</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Fetching mod icons…</source>
+        <translation>正在获取模组图标…</translation>
+    </message>
+    <message>
+        <source>Looking for alternatives…</source>
+        <translation>正在寻找替代品…</translation>
     </message>
 </context>
 </TS>
