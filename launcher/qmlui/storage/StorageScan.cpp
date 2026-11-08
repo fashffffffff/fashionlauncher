@@ -34,12 +34,6 @@ bool under(const QString& path, const QString& dir)
     return !dir.isEmpty() && path.startsWith(dir + '/');
 }
 
-QString canon(const QString& path)
-{
-    const QString c = QFileInfo(path).canonicalFilePath();
-    return c.isEmpty() ? QDir::cleanPath(QFileInfo(path).absoluteFilePath()) : c;
-}
-
 // Regular files below dir, never through symlinks.
 void walk(const QString& dir, QList<Walked>& out, QSet<QString>& seenPaths)
 {
@@ -199,7 +193,7 @@ Result scan(const Input& in, const Progress& progress)
             usage[cat] += w.file.size;
             r.total += w.file.size;
         }
-        for (const QString& id : { "worlds", "mods", "game", "java", "screenshots", "logs", "other" }) {
+        for (const char* id : { "worlds", "mods", "game", "java", "screenshots", "logs", "other" }) {
             r.usage.append({ id, usage.value(id) });
         }
     }

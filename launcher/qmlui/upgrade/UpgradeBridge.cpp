@@ -320,7 +320,9 @@ class UpgradeApplyTask : public Task {
                 text += tr("- %1 (%2): left out — version unknown (no metadata)").arg(row.name, row.fileName) + "\n";
             }
         }
-        FS::write(FS::PathCombine(copy->instanceRoot(), "UPGRADE-REPORT.txt"), text.toUtf8());
+        if (!FS::write(FS::PathCombine(copy->instanceRoot(), "UPGRADE-REPORT.txt"), text.toUtf8())) {
+            qWarning() << "Could not write the upgrade report into" << copy->instanceRoot();
+        }
     }
 
     struct Request m_req;

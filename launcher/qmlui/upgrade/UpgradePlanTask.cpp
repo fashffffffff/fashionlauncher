@@ -356,7 +356,7 @@ void UpgradePlanTask::queryModrinth()
         hashing->addTask(hasher);
     }
     setSub(hashing);
-    onSubFinished(hashing, [this, askModrinth](bool, const QString&) { askModrinth(); });
+    onSubFinished(hashing, [askModrinth](bool, const QString&) { askModrinth(); });
     hashing->start();
 }
 
