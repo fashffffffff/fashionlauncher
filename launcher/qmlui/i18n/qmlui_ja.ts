@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>%1 で続きをプレイ</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>続きをプレイ: %1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>ゲームを起動して %1 にすぐ参加</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>このワールドでゲームを直接起動</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3351,6 +3370,10 @@
         <source>Back</source>
         <translation>戻る</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>ワールドをプレイ…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3417,6 +3440,10 @@
     <message>
         <source>Play</source>
         <translation>プレイ</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>ワールドをプレイ…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -4005,6 +4032,33 @@
     <message>
         <source> or </source>
         <translation> または </translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>ワールドまたはサーバーをプレイ</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>ワールド</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>サーバー</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>ワールドもサーバーもまだありません。ゲーム内でワールドを作成するか、サーバーを追加してください。</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>このバージョンの Minecraft はサーバーへの直接参加のみ対応していますが、保存済みのサーバーがありません。ゲーム内でサーバーを追加してください。</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
     </message>
 </context>
 <context>

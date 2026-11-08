@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>继续：%1 服务器</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>继续：%1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>启动游戏并直接加入 %1</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>启动游戏并直接进入这个世界</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3351,6 +3370,10 @@
         <source>Back</source>
         <translation>返回</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>进入世界…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3417,6 +3440,10 @@
     <message>
         <source>Play</source>
         <translation>启动</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>进入世界…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -4005,6 +4032,33 @@
     <message>
         <source> or </source>
         <translation>或</translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>进入世界或服务器</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>世界</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>服务器</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>还没有世界或服务器。请先在游戏中创建世界或添加服务器。</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>此 Minecraft 版本只能直接加入服务器，但还没有保存的服务器。请先在游戏中添加服务器。</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
     </message>
 </context>
 <context>

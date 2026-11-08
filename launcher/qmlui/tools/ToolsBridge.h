@@ -31,6 +31,7 @@ class ToolsBridge : public QObject {
     explicit ToolsBridge(QObject* parent = nullptr);
     ~ToolsBridge() override;
     static ToolsBridge* instance() { return s_instance; }
+    bool allowedOnce(const QString& id) const { return m_allowOnce.contains(id); }
 
     bool checksEnabled() const;
     void setChecksEnabled(bool on);

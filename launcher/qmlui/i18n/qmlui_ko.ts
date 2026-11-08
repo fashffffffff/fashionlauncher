@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>%1에서 이어하기</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>이어하기: %1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>게임을 시작하고 바로 %1에 접속</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>이 월드에서 바로 게임 시작</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3351,6 +3370,10 @@
         <source>Back</source>
         <translation>뒤로</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>월드 플레이…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3417,6 +3440,10 @@
     <message>
         <source>Play</source>
         <translation>플레이</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>월드 플레이…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -4005,6 +4032,33 @@
     <message>
         <source> or </source>
         <translation> 또는 </translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>월드 또는 서버 플레이</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>월드</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>서버</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>아직 월드나 서버가 없습니다. 게임에서 월드를 만들거나 서버를 추가하세요.</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>이 Minecraft 버전은 서버에만 바로 접속할 수 있는데, 저장된 서버가 없습니다. 게임에서 서버를 추가하세요.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
     </message>
 </context>
 <context>

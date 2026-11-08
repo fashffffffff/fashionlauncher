@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>Pokračovat na %1</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>Pokračovat: %1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>Spustit hru a rovnou se připojit na %1</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>Spustit hru rovnou v tomto světě</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3387,6 +3406,10 @@
         <source>Back</source>
         <translation>Zpět</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Hrát svět…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3453,6 +3476,10 @@
     <message>
         <source>Play</source>
         <translation>Hrát</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Hrát svět…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -4051,6 +4078,33 @@
     <message>
         <source> or </source>
         <translation> nebo </translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>Hrát svět nebo server</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Světy</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>Servery</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>Zatím tu nejsou žádné světy ani servery. Vytvořte svět nebo přidejte server ve hře.</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>Tato verze Minecraftu se umí rovnou připojit jen na servery a žádný zatím není uložený. Přidejte server ve hře.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>

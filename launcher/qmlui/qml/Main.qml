@@ -35,6 +35,8 @@ ApplicationWindow {
         else if (name.startsWith("instance:")) { const p = name.split(":"); Router.openInstance(p[1], p[2]) }
         // Copy game settings: gameopts:<source>[:<target or *>]
         else if (name.startsWith("gameopts:")) { const g = name.split(":"); Router.copyGameOptions({ source: g[1], target: g[2] || "" }) }
+        else if (name.startsWith("home:")) { Router.selectedId = name.slice(5); Router.go("home") }
+        else if (name.startsWith("quickplay:")) Router.pickQuickPlay(name.slice(10))
         else if (name.startsWith("dialog:")) { const d = name.split(":"); Launcher.dialogRequested(d[1], d[2]) }
         else if (name === "stats") { Router.instancesTab = "stats"; Router.go("instances") }
         else if (name === "java") Settings.downloadJava("")

@@ -13,6 +13,7 @@
 #include "minecraft/World.h"
 #include "minecraft/WorldList.h"
 #include "minecraft/launch/MinecraftTarget.h"
+#include "qmlui/quickplay/QuickPlayBridge.h"
 #include "tasks/Task.h"
 
 WorldsModel::WorldsModel(QObject* parent) : QIdentityProxyModel(parent)
@@ -90,7 +91,11 @@ void WorldsModel::play(int row)
 {
     const World* world = worldAt(row);
     if (world && m_instance) {
-        APPLICATION->launch(m_instance, LaunchMode::Normal, std::make_shared<MinecraftTarget>(MinecraftTarget::parse(world->folderName(), true)));
+        if (auto* quickPlay = QuickPlayBridge::instance()) {
+            quickPlay->play(m_instance->id(), "world", world->folderName());
+        } else {
+            APPLICATION->launch(m_instance, LaunchMode::Normal, std::make_shared<MinecraftTarget>(MinecraftTarget::parse(world->folderName(), true)));
+        }
     }
 }
 

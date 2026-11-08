@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>Продовжити на %1</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>Продовжити: %1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>Запустити гру й одразу зайти на %1</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>Запустити гру одразу в цьому світі</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3387,6 +3406,10 @@
         <source>Back</source>
         <translation>Назад</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Грати у світі…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3453,6 +3476,10 @@
     <message>
         <source>Play</source>
         <translation>Грати</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Грати у світі…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -4051,6 +4078,33 @@
     <message>
         <source> or </source>
         <translation> або </translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>Світ або сервер</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Світи</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>Сервери</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>Поки немає ні світів, ні серверів. Створіть світ або додайте сервер у грі.</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>Ця версія Minecraft може одразу заходити лише на сервери, а збережених поки немає. Додайте сервер у грі.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
     </message>
 </context>
 <context>

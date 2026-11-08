@@ -589,6 +589,25 @@
     </message>
 </context>
 <context>
+    <name>ContinueButton</name>
+    <message>
+        <source>Continue on %1</source>
+        <translation>%1 üzerinde devam et</translation>
+    </message>
+    <message>
+        <source>Continue: %1</source>
+        <translation>Devam et: %1</translation>
+    </message>
+    <message>
+        <source>Start the game and join %1 right away</source>
+        <translation>Oyunu başlat ve hemen %1 sunucusuna katıl</translation>
+    </message>
+    <message>
+        <source>Start the game straight in this world</source>
+        <translation>Oyunu doğrudan bu dünyada başlat</translation>
+    </message>
+</context>
+<context>
     <name>CopyInstanceDialog</name>
     <message>
         <source>Copy instance</source>
@@ -3351,6 +3370,10 @@
         <source>Back</source>
         <translation>Geri</translation>
     </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Dünyada oyna…</translation>
+    </message>
 </context>
 <context>
     <name>PageInstances</name>
@@ -3417,6 +3440,10 @@
     <message>
         <source>Play</source>
         <translation>Oyna</translation>
+    </message>
+    <message>
+        <source>Play world…</source>
+        <translation>Dünyada oyna…</translation>
     </message>
     <message>
         <source>Open</source>
@@ -4005,6 +4032,33 @@
     <message>
         <source> or </source>
         <translation> veya </translation>
+    </message>
+</context>
+<context>
+    <name>QuickPlayDialog</name>
+    <message>
+        <source>Play world or server</source>
+        <translation>Dünya veya sunucu</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Dünyalar</translation>
+    </message>
+    <message>
+        <source>Servers</source>
+        <translation>Sunucular</translation>
+    </message>
+    <message>
+        <source>No worlds or servers yet. Create a world or add a server in the game first.</source>
+        <translation>Henüz dünya veya sunucu yok. Oyunda bir dünya oluşturun ya da sunucu ekleyin.</translation>
+    </message>
+    <message>
+        <source>This Minecraft version can only join servers directly, and none is saved yet. Add a server in the game first.</source>
+        <translation>Bu Minecraft sürümü yalnızca sunuculara doğrudan katılabilir ve henüz kayıtlı sunucu yok. Oyunda bir sunucu ekleyin.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
     </message>
 </context>
 <context>

@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-only
 #include "LauncherBridge.h"
 
+#include "minecraft/launch/MinecraftTarget.h"
+
 #include <QDir>
 #include <QHash>
 #include <QTimer>
@@ -182,12 +184,38 @@ bool LauncherBridge::launch(const QString& id, bool offline)
     if (!inst) {
         return false;
     }
+    auto* tools = ToolsBridge::instance();
+    // A one-shot Quick Play target only carries over into the "Play anyway" re-run of a held launch;
+    // a plain Play click forgets it.
+    std::shared_ptr<MinecraftTarget> target;
+    if (tools && tools->allowedOnce(id)) {
+        target = m_pendingTargets.value(id);
+    }
+    m_pendingTargets.remove(id);
     // Pre-launch checks: certain problems pause the launch and ask the user first
-    if (auto* tools = ToolsBridge::instance(); tools && tools->holdLaunch(id, offline)) {
+    if (tools && tools->holdLaunch(id, offline)) {
+        if (target) {
+            m_pendingTargets.insert(id, target);
+        }
         return false;
     }
     StoreBridge::beforeLaunch(inst);
-    return APPLICATION->launch(inst, offline ? LaunchMode::Offline : LaunchMode::Normal);
+    return APPLICATION->launch(inst, offline ? LaunchMode::Offline : LaunchMode::Normal, target);
+}
+
+bool LauncherBridge::launchTo(const QString& id, std::shared_ptr<MinecraftTarget> target)
+{
+    auto* inst = findInstance(id);
+    if (!inst) {
+        return false;
+    }
+    m_pendingTargets.remove(id);
+    if (auto* tools = ToolsBridge::instance(); tools && tools->holdLaunch(id, false)) {
+        m_pendingTargets.insert(id, std::move(target));
+        return false;
+    }
+    StoreBridge::beforeLaunch(inst);
+    return APPLICATION->launch(inst, LaunchMode::Normal, std::move(target));
 }
 
 void LauncherBridge::kill(const QString& id)

@@ -19,6 +19,7 @@
 #include "InstanceList.h"
 #include "minecraft/MinecraftInstance.h"
 #include "minecraft/launch/MinecraftTarget.h"
+#include "qmlui/quickplay/QuickPlayBridge.h"
 #include "ui/pages/instance/McClient.h"
 #include "ui/pages/instance/McResolver.h"
 
@@ -468,6 +469,10 @@ bool ServerListModel::join(int row)
     if (inst->isRunning()) {
         emit failed(tr("The game is already running. Join the server from the in-game Multiplayer menu."));
         return false;
+    }
+    // Through Quick Play: pre-launch checks run and Home remembers this server for "Continue"
+    if (auto* quickPlay = QuickPlayBridge::instance()) {
+        return quickPlay->play(m_instanceId, "server", m_servers[row].address);
     }
     auto target = std::make_shared<MinecraftTarget>(MinecraftTarget::parse(m_servers[row].address, false));
     return APPLICATION->launch(inst, LaunchMode::Normal, target);
