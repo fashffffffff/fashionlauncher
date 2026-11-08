@@ -144,7 +144,7 @@ Item {
                     instanceId: page.instanceId
                     Layout.maximumWidth: Style.px(280)
                     // narrow window: just the icon, so Play keeps its full size
-                    iconOnly: header.width < Style.px(720)
+                    iconOnly: header.width < Style.px(820)
                 }
                 PlayButton { instanceId: page.instanceId; Layout.preferredWidth: Style.px(200); Layout.minimumWidth: Style.px(160) }
             }

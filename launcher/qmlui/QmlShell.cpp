@@ -161,7 +161,9 @@ bool QmlShell::load()
     }
     const auto geo = APPLICATION->settings()->get("QmlShellGeometry").toList();
     if (geo.size() == 4 && geo[2].toInt() > 400 && geo[3].toInt() > 300) {
-        m_window->setGeometry(geo[0].toInt(), geo[1].toInt(), geo[2].toInt(), geo[3].toInt());
+        // never restore smaller than the window's minimum (older versions allowed less)
+        m_window->setGeometry(geo[0].toInt(), geo[1].toInt(), std::max(geo[2].toInt(), m_window->minimumWidth()),
+                              std::max(geo[3].toInt(), m_window->minimumHeight()));
     }
     m_window->installEventFilter(this);
 

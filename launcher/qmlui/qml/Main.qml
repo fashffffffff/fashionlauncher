@@ -7,8 +7,8 @@ ApplicationWindow {
     id: win
     width: 1240
     height: 760
-    minimumWidth: 980
-    minimumHeight: 620
+    minimumWidth: 1180   // every page checked to fit at this size
+    minimumHeight: 700
     visible: false
     title: Launcher.appName
     color: Style.bg

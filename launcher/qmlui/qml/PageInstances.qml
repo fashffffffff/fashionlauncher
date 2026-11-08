@@ -31,13 +31,16 @@ Item {
                 options: [{ value: "grid", label: qsTr("All instances") }, { value: "stats", label: qsTr("Statistics") }]
                 onPicked: (v) => Router.instancesTab = v
             }
-            Item { Layout.fillWidth: true }
+            Item { Layout.fillWidth: true; Layout.minimumWidth: 0 }
             Field {
                 id: search
                 visible: Router.instancesTab !== "stats"
                 iconName: "search"
                 placeholderText: qsTr("Search instances")
-                Layout.preferredWidth: Style.px(280)
+                // gives way first, so the header never pushes the grid wider than the page
+                Layout.fillWidth: true
+                Layout.minimumWidth: Style.px(140)
+                Layout.maximumWidth: Style.px(280)
                 Keys.onEscapePressed: text = ""
             }
             PrimaryButton {
