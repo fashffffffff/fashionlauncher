@@ -96,6 +96,13 @@ Item {
         target: Router
         function onQuickPlayRequested(instanceId) { quickPlayDlg.openFor(instanceId) }
     }
+    // ---- blocked mods of a CurseForge pack (manual download), see BlockedModsBridge
+    BlockedModsDialog { id: blockedDlg }
+    Connections {
+        target: BlockedMods
+        function onRequested() { host.raiseWindow(); blockedDlg.open() }
+        function onFinished() { blockedDlg.close() }
+    }
 
     // ---- generic question, also used for Prompts "ask"
     ConfirmDialog { id: confirm }
