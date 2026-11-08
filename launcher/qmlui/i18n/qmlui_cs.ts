@@ -3720,6 +3720,10 @@
         <translation>Síť</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>Úložiště</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Pokročilé</translation>
     </message>
@@ -5022,6 +5026,257 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Světy</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>Mody a balíčky</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>Herní soubory</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>Snímky obrazovky</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>Logy a mezipaměť</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Ostatní</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>Nepoužívané knihovny hry</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>Verze Minecraftu, loadery a knihovny, které žádná instance nepoužívá. Pokud je instance bude potřebovat, stáhnou se znovu.</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>Nepoužívané herní prostředky</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>Zvuky a překlady verzí Minecraftu, které žádná instance nepoužívá.</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>Mezipaměť stahování</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>Archivy modpacků, ikony a další stažené soubory uchovávané pro rychlost.</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>Staré logy a hlášení o pádech</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>Starší než %n den, ze všech instancí a launcheru.</numerusform>
+            <numerusform>Starší než %n dny, ze všech instancí a launcheru.</numerusform>
+            <numerusform>Starší než %n dní, ze všech instancí a launcheru.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>Zbytky</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>Zálohy (.bak) a nedokončené dočasné soubory v instancích.</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>Stejné mody ve více instancích</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>Díky sdílenému úložišti uložené na disku jen jednou. Nic se nemaže.</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>Staré snímky stavu</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>Snímky stavu nad posledních 5 u každé instance a uložené soubory, které už nic nepotřebuje.</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>Všechny snímky obrazovky všech instancí. Nepůjde je obnovit.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>Nelze ověřit: verze hry „%1“ není stažená celá. Jednou ji spusťte a zkontrolujte znovu.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>Nelze ověřit: seznam prostředků „%1“ není stažený. Jednou spusťte instance, které ho používají, a zkontrolujte znovu.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>Uvolněno %1. %n soubor nešlo odstranit.</numerusform>
+            <numerusform>Uvolněno %1. %n soubory nešlo odstranit.</numerusform>
+            <numerusform>Uvolněno %1. %n souborů nešlo odstranit.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>Uvolněno %1</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>Místo na disku</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>Co %1 ukládá v tomto počítači. Světy se zde nikdy neodstraňují.</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>Měření…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>celkem</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>Změřit znovu</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>Uvolnit místo</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>Vyberte, co vyčistit. Rozbalte řádek a uvidíte přesně, které soubory zmizí.</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>Logy jsou staré po</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n dni</numerusform>
+            <numerusform>%n dnech</numerusform>
+            <numerusform>%n dnech</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>Nabízet i snímky obrazovky</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>Vypnuto, dokud to nezapnete. Snímky obrazovky jsou vaše a nepůjde je obnovit.</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>Skrýt soubory</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>Zobrazit %n soubor</numerusform>
+            <numerusform>Zobrazit %n soubory</numerusform>
+            <numerusform>Zobrazit %n souborů</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>Nic</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…a %n další</numerusform>
+            <numerusform>…a %n další</numerusform>
+            <numerusform>…a %n dalších</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>Odstraněné nelze obnovit. Herní soubory se v případě potřeby stáhnou znovu.</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>Uvolňování…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>Uvolnit %1</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>Není co uvolnit</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>%n soubor</numerusform>
+            <numerusform>%n soubory</numerusform>
+            <numerusform>%n souborů</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>Odstraněné nelze obnovit.</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>Stejné mody se propojí, nesmažou: nic se neztratí.</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>Uvolnit %1?</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odstranit</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>Propojit soubory</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5476,6 +5731,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>Skin se nepodařilo resetovat.</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>Nejdřív zavřete hru: soubory běžící hry nelze čistit.</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>Počkejte, až skončí ostatní úlohy: mohou stahovat do těchto složek.</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>Měření místa na disku</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>Uvolňování místa na disku</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>Měření složek…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>Hledání nepoužívaných herních souborů…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>Porovnávání modů napříč instancemi…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>Propojování stejných souborů v úložišti…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>Odstraňování starých snímků stavu…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>Odstraňování souborů…</translation>
     </message>
 </context>
 <context>

@@ -3720,6 +3720,10 @@
         <translation>Sieć</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>Miejsce na dysku</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Zaawansowane</translation>
     </message>
@@ -5022,6 +5026,257 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>Światy</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>Mody i paczki</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>Pliki gry</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>Zrzuty ekranu</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>Logi i pamięć podręczna</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Inne</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>Nieużywane biblioteki gry</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>Wersje Minecrafta, loadery i biblioteki, których nie używa żadna instancja. Zostaną pobrane ponownie, jeśli instancja ich potrzebuje.</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>Nieużywane zasoby gry</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>Dźwięki i tłumaczenia wersji Minecrafta, których nie używa żadna instancja.</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>Pamięć podręczna pobrań</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>Archiwa modpacków, ikony i inne pobrania trzymane dla szybkości.</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>Stare logi i raporty awarii</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>Starsze niż %n dzień, ze wszystkich instancji i launchera.</numerusform>
+            <numerusform>Starsze niż %n dni, ze wszystkich instancji i launchera.</numerusform>
+            <numerusform>Starsze niż %n dni, ze wszystkich instancji i launchera.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>Pozostałości</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>Kopie zapasowe (.bak) i niedokończone pliki tymczasowe w instancjach.</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>Identyczne mody w kilku instancjach</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>Przechowywane na dysku raz dzięki wspólnemu magazynowi. Nic nie jest usuwane.</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>Stare migawki</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>Migawki ponad 5 ostatnich każdej instancji oraz pliki w magazynie, których nic już nie potrzebuje.</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>Wszystkie zrzuty ekranu ze wszystkich instancji. Nie da się ich odzyskać.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>Nie można sprawdzić: wersja gry „%1” nie jest w pełni pobrana. Uruchom ją raz i sprawdź ponownie.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>Nie można sprawdzić: lista zasobów „%1” nie jest pobrana. Uruchom raz instancje, które jej używają, i sprawdź ponownie.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>Zwolniono %1. Nie udało się usunąć %n pliku.</numerusform>
+            <numerusform>Zwolniono %1. Nie udało się usunąć %n plików.</numerusform>
+            <numerusform>Zwolniono %1. Nie udało się usunąć %n plików.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>Zwolniono %1</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>Miejsce na dysku</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>Co %1 przechowuje na tym komputerze. Światy nigdy nie są tu usuwane.</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>Mierzenie…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>łącznie</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>Zmierz ponownie</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>Zwolnij miejsce</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>Wybierz, co wyczyścić. Rozwiń wiersz, aby zobaczyć dokładnie, które pliki znikną.</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>Logi są stare po</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n dniu</numerusform>
+            <numerusform>%n dniach</numerusform>
+            <numerusform>%n dniach</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>Proponuj też zrzuty ekranu</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>Wyłączone, dopóki tego nie włączysz. Zrzuty są twoje i nie da się ich odzyskać.</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>Ukryj pliki</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>Pokaż %n plik</numerusform>
+            <numerusform>Pokaż %n pliki</numerusform>
+            <numerusform>Pokaż %n plików</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>Nic</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…i jeszcze %n</numerusform>
+            <numerusform>…i jeszcze %n</numerusform>
+            <numerusform>…i jeszcze %n</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>Usuniętego nie da się odzyskać. Pliki gry zostaną pobrane ponownie, gdy będą potrzebne.</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>Zwalnianie…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>Zwolnij %1</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>Nie ma czego zwalniać</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>%n plik</numerusform>
+            <numerusform>%n pliki</numerusform>
+            <numerusform>%n plików</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>Usuniętego nie da się odzyskać.</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>Identyczne mody są łączone, a nie usuwane: nic nie ginie.</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>Zwolnić %1?</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Usuń</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>Połącz pliki</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5476,6 +5731,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>Nie udało się zresetować skina.</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>Najpierw zamknij grę: plików uruchomionej gry nie można czyścić.</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>Poczekaj, aż inne zadania się skończą: mogą pobierać do tych folderów.</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>Mierzenie miejsca na dysku</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>Zwalnianie miejsca na dysku</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>Mierzenie folderów…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>Szukanie nieużywanych plików gry…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>Porównywanie modów w instancjach…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>Łączenie identycznych plików w magazynie…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>Usuwanie starych migawek…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>Usuwanie plików…</translation>
     </message>
 </context>
 <context>

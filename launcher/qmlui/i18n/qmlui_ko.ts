@@ -3674,6 +3674,10 @@
         <translation>네트워크</translation>
     </message>
     <message>
+        <source>Storage</source>
+        <translation>저장 공간</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>고급</translation>
     </message>
@@ -4970,6 +4974,245 @@
     </message>
 </context>
 <context>
+    <name>SettingsStorage</name>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>Worlds</source>
+        <translation>월드</translation>
+    </message>
+    <message>
+        <source>Mods and packs</source>
+        <translation>모드와 팩</translation>
+    </message>
+    <message>
+        <source>Game files</source>
+        <translation>게임 파일</translation>
+    </message>
+    <message>
+        <source>Java</source>
+        <translation>Java</translation>
+    </message>
+    <message>
+        <source>Screenshots</source>
+        <translation>스크린샷</translation>
+    </message>
+    <message>
+        <source>Logs and cache</source>
+        <translation>로그와 캐시</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>기타</translation>
+    </message>
+    <message>
+        <source>Unused game libraries</source>
+        <translation>사용하지 않는 게임 라이브러리</translation>
+    </message>
+    <message>
+        <source>Minecraft versions, loaders and libraries that no instance uses. They are downloaded again if an instance needs them.</source>
+        <translation>어떤 인스턴스도 사용하지 않는 Minecraft 버전, 로더, 라이브러리입니다. 인스턴스에 필요하면 다시 다운로드됩니다.</translation>
+    </message>
+    <message>
+        <source>Unused game assets</source>
+        <translation>사용하지 않는 게임 에셋</translation>
+    </message>
+    <message>
+        <source>Sounds and translations of Minecraft versions that no instance uses.</source>
+        <translation>어떤 인스턴스도 사용하지 않는 Minecraft 버전의 소리와 번역입니다.</translation>
+    </message>
+    <message>
+        <source>Download cache</source>
+        <translation>다운로드 캐시</translation>
+    </message>
+    <message>
+        <source>Modpack archives, icons and other downloads kept to speed things up.</source>
+        <translation>속도를 위해 보관하는 모드팩 압축 파일, 아이콘 및 기타 다운로드입니다.</translation>
+    </message>
+    <message>
+        <source>Old logs and crash reports</source>
+        <translation>오래된 로그와 충돌 보고서</translation>
+    </message>
+    <message numerus="yes">
+        <source>Older than %n day(s), from every instance and the launcher.</source>
+        <translation>
+            <numerusform>%n일보다 오래된 것, 모든 인스턴스와 런처에서.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Leftover files</source>
+        <translation>남은 파일</translation>
+    </message>
+    <message>
+        <source>Backups (.bak) and unfinished temporary files inside instances.</source>
+        <translation>인스턴스 안의 백업(.bak)과 완료되지 않은 임시 파일입니다.</translation>
+    </message>
+    <message>
+        <source>Identical mods in several instances</source>
+        <translation>여러 인스턴스에 있는 같은 모드</translation>
+    </message>
+    <message>
+        <source>Kept once on disk through the shared store. Nothing is deleted.</source>
+        <translation>공유 저장소를 통해 디스크에 한 번만 보관합니다. 아무것도 삭제되지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Old snapshots</source>
+        <translation>오래된 스냅샷</translation>
+    </message>
+    <message>
+        <source>Snapshots beyond the last 5 of each instance, and stored files nothing needs any more.</source>
+        <translation>각 인스턴스의 최근 5개를 넘는 스냅샷과 더 이상 필요 없는 저장소 파일입니다.</translation>
+    </message>
+    <message>
+        <source>Every screenshot of every instance. They can&apos;t be brought back.</source>
+        <translation>모든 인스턴스의 모든 스크린샷입니다. 되돌릴 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game version of “%1” isn&apos;t fully downloaded. Start it once, then scan again.</source>
+        <translation>확인할 수 없음: ‘%1’의 게임 버전이 완전히 다운로드되지 않았습니다. 한 번 실행한 뒤 다시 검사하세요.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t check: the game asset list “%1” isn&apos;t downloaded. Start the instances that use it once, then scan again.</source>
+        <translation>확인할 수 없음: 에셋 목록 ‘%1’이 다운로드되지 않았습니다. 이를 사용하는 인스턴스를 한 번 실행한 뒤 다시 검사하세요.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Freed %1. %n file(s) couldn&apos;t be removed.</source>
+        <translation>
+            <numerusform>%1 확보됨. 파일 %n개를 삭제하지 못했습니다.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Freed %1</source>
+        <translation>%1 확보됨</translation>
+    </message>
+    <message>
+        <source>Disk space</source>
+        <translation>디스크 공간</translation>
+    </message>
+    <message>
+        <source>What %1 keeps on this computer. Worlds are never removed here.</source>
+        <translation>%1이(가) 이 컴퓨터에 보관하는 항목입니다. 월드는 여기서 절대 삭제되지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Measuring…</source>
+        <translation>측정 중…</translation>
+    </message>
+    <message>
+        <source>in total</source>
+        <translation>합계</translation>
+    </message>
+    <message>
+        <source>Measure again</source>
+        <translation>다시 측정</translation>
+    </message>
+    <message>
+        <source>Free up space</source>
+        <translation>공간 확보</translation>
+    </message>
+    <message>
+        <source>Pick what to clear. Open a line to see exactly which files go.</source>
+        <translation>정리할 항목을 고르세요. 줄을 펼치면 어떤 파일이 삭제되는지 정확히 볼 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Logs count as old after</source>
+        <translation>로그를 오래된 것으로 보는 기간</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n일</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Also offer screenshots</source>
+        <translation>스크린샷도 제안</translation>
+    </message>
+    <message>
+        <source>Off unless you turn it on. Screenshots are yours and can&apos;t be brought back.</source>
+        <translation>직접 켜기 전까지 꺼져 있습니다. 스크린샷은 사용자의 것이며 되돌릴 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Hide files</source>
+        <translation>파일 숨기기</translation>
+    </message>
+    <message numerus="yes">
+        <source>Show %n file(s)</source>
+        <translation>
+            <numerusform>파일 %n개 보기</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Nothing</source>
+        <translation>없음</translation>
+    </message>
+    <message numerus="yes">
+        <source>…and %n more</source>
+        <translation>
+            <numerusform>…외 %n개</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back. Game files are downloaded again when needed.</source>
+        <translation>삭제한 항목은 되돌릴 수 없습니다. 게임 파일은 필요할 때 다시 다운로드됩니다.</translation>
+    </message>
+    <message>
+        <source>Freeing up…</source>
+        <translation>확보 중…</translation>
+    </message>
+    <message>
+        <source>Free up %1</source>
+        <translation>%1 확보</translation>
+    </message>
+    <message>
+        <source>Nothing to free up</source>
+        <translation>확보할 공간 없음</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s)</source>
+        <translation>
+            <numerusform>파일 %n개</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Removed files can&apos;t be brought back.</source>
+        <translation>삭제한 항목은 되돌릴 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Identical mods are linked, not deleted: nothing is lost.</source>
+        <translation>같은 모드는 삭제하지 않고 연결합니다: 잃는 것은 없습니다.</translation>
+    </message>
+    <message>
+        <source>Free up %1?</source>
+        <translation>%1을(를) 확보할까요?</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>삭제</translation>
+    </message>
+    <message>
+        <source>Link files</source>
+        <translation>파일 연결</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+</context>
+<context>
     <name>SettingsWindow</name>
     <message>
         <source>Game window</source>
@@ -5414,6 +5657,52 @@
     <message>
         <source>Couldn&apos;t reset the skin.</source>
         <translation>스킨을 초기화하지 못했어요.</translation>
+    </message>
+</context>
+<context>
+    <name>StorageBridge</name>
+    <message>
+        <source>Close the game first: files of a running game can&apos;t be cleaned up.</source>
+        <translation>먼저 게임을 종료하세요: 실행 중인 게임의 파일은 정리할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Wait until other jobs finish: they may be downloading into these folders.</source>
+        <translation>다른 작업이 끝날 때까지 기다리세요: 이 폴더에 다운로드 중일 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Measuring disk space</source>
+        <translation>디스크 공간 측정 중</translation>
+    </message>
+    <message>
+        <source>Freeing up disk space</source>
+        <translation>디스크 공간 확보 중</translation>
+    </message>
+</context>
+<context>
+    <name>StorageScan</name>
+    <message>
+        <source>Measuring folders…</source>
+        <translation>폴더 측정 중…</translation>
+    </message>
+    <message>
+        <source>Looking for unused game files…</source>
+        <translation>사용하지 않는 게임 파일 찾는 중…</translation>
+    </message>
+    <message>
+        <source>Comparing mods across instances…</source>
+        <translation>인스턴스 간 모드 비교 중…</translation>
+    </message>
+    <message>
+        <source>Linking identical files into the store…</source>
+        <translation>같은 파일을 저장소에 연결하는 중…</translation>
+    </message>
+    <message>
+        <source>Removing old snapshots…</source>
+        <translation>오래된 스냅샷 삭제 중…</translation>
+    </message>
+    <message>
+        <source>Removing files…</source>
+        <translation>파일 삭제 중…</translation>
     </message>
 </context>
 <context>

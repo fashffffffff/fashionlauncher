@@ -39,6 +39,7 @@ ApplicationWindow {
         else if (name.startsWith("quickplay:")) Router.pickQuickPlay(name.slice(10))
         else if (name.startsWith("dialog:")) { const d = name.split(":"); Launcher.dialogRequested(d[1], d[2]) }
         else if (name === "stats") { Router.instancesTab = "stats"; Router.go("instances") }
+        else if (name.startsWith("settings:")) Router.open("settings", { section: name.slice(9) })
         else if (name === "java") Settings.downloadJava("")
         else if (name.startsWith("launch:")) Launcher.launch(name.slice(7))
         // Preview of a launch question (answers go nowhere): prompt:ask | prompt:account | prompt:name
