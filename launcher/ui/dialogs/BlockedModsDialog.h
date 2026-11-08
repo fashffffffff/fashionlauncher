@@ -39,7 +39,7 @@ struct BlockedMod {
     QString name;
     QString websiteUrl;
     QString hash;
-    bool matched;
+    bool matched = false;
     QString localPath;
     QString targetFolder;
     bool disabled = false;

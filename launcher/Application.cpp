@@ -1795,6 +1795,19 @@ LaunchPrompts* Application::qmlPrompts()
     return m_shell ? m_shell->prompts() : nullptr;
 }
 
+BlockedModsBridge* Application::qmlBlockedMods()
+{
+    if (m_settings->get("UseClassicUI").toBool()) {
+        return nullptr;
+    }
+    if (!m_shell) {
+        // Unloaded for a game, closed, or not shown yet: the answer belongs in the QML window.
+        m_shellUnloadedForGame = false;
+        showMainWindow();
+    }
+    return m_shell ? m_shell->blockedMods() : nullptr;
+}
+
 void Application::unloadShellForGame()
 {
     if (m_shell && m_shell->window()) {
