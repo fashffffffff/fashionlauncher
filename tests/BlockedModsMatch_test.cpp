@@ -4,6 +4,7 @@
 
 #include <QTest>
 
+#include <QDir>
 #include "qmlui/create/BlockedModsMatcher.h"
 
 using namespace BlockedModsMatcher;
@@ -103,22 +104,26 @@ void BlockedModsMatchTest::sameNameDifferentHash()
 
 void BlockedModsMatchTest::moveOnlyFromDownloads()
 {
+    // Real absolute paths of this system (a drive letter on Windows), as the launcher sees them
+    const QString base = QDir(QDir::tempPath()).absolutePath();
+    const QString dl = base + "/Downloads";
+
     QList<BlockedMod> inDownloads{ mod("m.jar", "aa") };
-    QVERIFY(matchByHash(inDownloads, "aa", "/home/u/Downloads/m.jar", "/home/u/Downloads", true));
+    QVERIFY(matchByHash(inDownloads, "aa", dl + "/m.jar", dl, true));
     QVERIFY(inDownloads[0].move);
 
     // a sibling folder whose name only starts the same is not the downloads folder
     QList<BlockedMod> sibling{ mod("m.jar", "aa") };
-    QVERIFY(matchByHash(sibling, "aa", "/home/u/Downloads2/m.jar", "/home/u/Downloads", true));
+    QVERIFY(matchByHash(sibling, "aa", base + "/Downloads2/m.jar", dl, true));
     QVERIFY(!sibling[0].move);
 
     QList<BlockedMod> elsewhere{ mod("m.jar", "aa") };
-    QVERIFY(matchByHash(elsewhere, "aa", "/tmp/m.jar", "/home/u/Downloads", true));
+    QVERIFY(matchByHash(elsewhere, "aa", base + "/other/m.jar", dl, true));
     QVERIFY(!elsewhere[0].move);
 
     // and the whole thing is off unless the setting asked for it
     QList<BlockedMod> noMove{ mod("m.jar", "aa") };
-    QVERIFY(matchByHash(noMove, "aa", "/home/u/Downloads/m.jar", "/home/u/Downloads", false));
+    QVERIFY(matchByHash(noMove, "aa", dl + "/m.jar", dl, false));
     QVERIFY(!noMove[0].move);
 }
 
