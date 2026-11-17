@@ -204,7 +204,10 @@ int concurrentDownloads()
 
 SharingBridge::SharingBridge(QObject* parent) : QObject(parent)
 {
-    APPLICATION->settings()->registerSetting("QmlShareIncludeClient", false);
+    // the shell (and this bridge) is recreated after a game unloads it: register once
+    if (!APPLICATION->settings()->contains("QmlShareIncludeClient")) {
+        APPLICATION->settings()->registerSetting("QmlShareIncludeClient", false);
+    }
     loadCache();
     if (!qEnvironmentVariableIsEmpty("FFPRISM_SHARE")) {
         QTimer::singleShot(2500, this, &SharingBridge::runAutoTest);

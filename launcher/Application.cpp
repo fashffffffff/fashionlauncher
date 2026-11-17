@@ -2039,6 +2039,7 @@ QString Application::getJarPath(const QString& jarFile)
 #endif
         FS::PathCombine(m_rootPath, "jars"), FS::PathCombine(applicationDirPath(), "jars"),
 #if defined(Q_OS_MACOS)
+        FS::PathCombine(applicationDirPath(), "../../..", "jars"),    // a dev build: build/<app>.app/Contents/MacOS -> build/jars
         FS::PathCombine(applicationDirPath(), "../../../..", "jars")  // from inside build dir, for debuging
 #else
         FS::PathCombine(applicationDirPath(), "..", "jars")  // from inside build dir, for debuging

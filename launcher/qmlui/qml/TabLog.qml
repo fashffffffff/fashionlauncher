@@ -9,7 +9,10 @@ Item {
     id: tab
     property string instanceId
     property var instance
+    /// The Auto-scroll switch: changed only by the player
     property bool follow: true
+    /// Whether the view sits at the bottom. Scrolling up pauses following without touching the switch.
+    property bool pinned: true
     property bool restartPending: false
     readonly property var launch: Launcher.launches[instanceId]
     readonly property bool running: !!(instance && instance.running) || !!launch
@@ -144,9 +147,10 @@ Item {
                 cacheBuffer: 2000
                 ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
                 // Follow new lines while at the bottom; scrolling up pauses it.
-                onCountChanged: if (tab.follow) Qt.callLater(positionViewAtEnd)
-                onMovementEnded: tab.follow = atYEnd
-                onFlickEnded: tab.follow = atYEnd
+                // wrapped lines change the content height after layout, so "at the end" allows some slack
+                readonly property bool nearEnd: contentHeight <= height || contentY + height >= contentHeight - Style.px(48)
+                onCountChanged: if (tab.follow && tab.pinned) Qt.callLater(positionViewAtEnd)
+                onMovementEnded: tab.pinned = nearEnd
                 delegate: TextEdit {
                     width: lines.width - Style.px(12)
                     text: model.line
@@ -176,11 +180,11 @@ Item {
             }
 
             QuietButton {
-                visible: !tab.follow && lines.count > 0
+                visible: tab.follow && !tab.pinned && lines.count > 0
                 anchors { right: parent.right; bottom: parent.bottom; margins: Style.px(14) }
                 iconName: "arrow-left"
                 text: qsTr("Jump to the end")
-                onClicked: { tab.follow = true; lines.positionViewAtEnd() }
+                onClicked: { tab.pinned = true; lines.positionViewAtEnd() }
             }
         }
 
@@ -206,7 +210,7 @@ Item {
                 onClicked: if (Doctor.analyzeInstance(tab.instanceId)) Launcher.dialogRequested("crash", tab.instanceId)
                            else Router.toast(qsTr("There is no game log yet. Play once first."), true)
             }
-            SettingsToggle { id: autoScroll; label: qsTr("Auto-scroll"); checked: tab.follow; onToggled: (on) => { tab.follow = on; if (on) lines.positionViewAtEnd() } }
+            SettingsToggle { id: autoScroll; label: qsTr("Auto-scroll"); checked: tab.follow; onToggled: (on) => { tab.follow = on; if (on) { tab.pinned = true; lines.positionViewAtEnd() } } }
             QuietButton {
                 visible: tab.running
                 compact: footer.compact

@@ -124,6 +124,12 @@ void SearchModel::setInstanceId(const QString& id)
     }
     m_instanceId = id;
     m_instance = QmlResources::findInstance(id);
+    if (!m_mcVersions) {
+        // Release versions for the Minecraft filter; queued so the list never changes during a QML read
+        m_mcVersions = new MetaVersionModel(true, this);
+        connect(m_mcVersions, &MetaVersionModel::countChanged, this, &SearchModel::mcVersionChoicesChanged, Qt::QueuedConnection);
+        m_mcVersions->setSource("net.minecraft");
+    }
     clearPicks();  // picks and the batch belong to the instance they were made for
     m_queue.clear();
     attachFolder();
@@ -725,13 +731,10 @@ void SearchModel::setLoaderFilter(const QString& l)
 
 QStringList SearchModel::mcVersionChoices() const
 {
-    if (!m_mcVersions) {
-        // Release versions only (the model hides snapshots and very old versions by default)
-        m_mcVersions = new MetaVersionModel(true, const_cast<SearchModel*>(this));
-        connect(m_mcVersions, &MetaVersionModel::countChanged, this, &SearchModel::mcVersionChoicesChanged);
-        m_mcVersions->setSource("net.minecraft");
-    }
     QStringList out;
+    if (!m_mcVersions) {
+        return out;  // created with the first instance (setInstanceId), never while QML reads this
+    }
     for (int i = 0; i < m_mcVersions->rowCount(); ++i) {
         out << m_mcVersions->data(m_mcVersions->index(i), MetaVersionModel::VersionRole).toString();
     }

@@ -25,6 +25,8 @@ struct AuthSession {
     QString user_type;
     // the actual launch mode for this session
     LaunchMode launchMode;
+    /// An offline (non-Microsoft) account: it plays offline but still downloads the game, Java and libraries
+    bool offlineAccount = false;
 };
 
 using AuthSessionPtr = std::shared_ptr<AuthSession>;

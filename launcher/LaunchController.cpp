@@ -370,6 +370,7 @@ void LaunchController::login()
     m_session = std::make_shared<AuthSession>();
     m_session->launchMode = m_actualLaunchMode;
     m_accountToUse->fillSession(m_session);
+    m_session->offlineAccount = m_accountToUse->accountType() == AccountType::Offline;
 
     if (m_accountToUse->accountType() != AccountType::Offline) {
         if (m_actualLaunchMode == LaunchMode::Normal && !m_accountToUse->hasProfile()) {

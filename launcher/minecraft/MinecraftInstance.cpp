@@ -36,6 +36,7 @@
  */
 
 #include "MinecraftInstance.h"
+#include <QNetworkInformation>
 #include "Application.h"
 #include "BuildConfig.h"
 #include "Json.h"
@@ -1188,9 +1189,20 @@ LaunchTask* MinecraftInstance::createLaunchTask(AuthSessionPtr session, Minecraf
         process->appendStep(step);
     }
 
+    // Offline accounts play without Microsoft, but a fresh instance still needs the game, its libraries and
+    // Java: download them whenever the network is there (no network: launch what is already downloaded).
+    bool fetchFiles = session->launchMode != LaunchMode::Offline;
+    if (!fetchFiles && session->offlineAccount) {
+        fetchFiles = !QNetworkInformation::loadDefaultBackend() || !QNetworkInformation::instance() ||
+                     QNetworkInformation::instance()->reachability() != QNetworkInformation::Reachability::Disconnected;
+    }
+
+    qDebug() << "Launch: online launch" << (session->launchMode != LaunchMode::Offline) << "offline account" << session->offlineAccount
+             << "-> download game files" << fetchFiles;
+
     // load meta
     {
-        auto mode = session->launchMode != LaunchMode::Offline ? Net::Mode::Online : Net::Mode::Offline;
+        auto mode = fetchFiles ? Net::Mode::Online : Net::Mode::Offline;
         process->appendStep(makeShared<TaskStepWrapper>(pptr, makeShared<MinecraftLoadAndCheck>(this, mode)));
     }
 
@@ -1209,9 +1221,11 @@ LaunchTask* MinecraftInstance::createLaunchTask(AuthSessionPtr session, Minecraf
         process->appendStep(step);
     }
 
-    // if we aren't in offline mode
-    if (session->launchMode != LaunchMode::Offline) {
-        process->appendStep(makeShared<ClaimAccount>(pptr, session));
+    // if we aren't in offline mode (or an offline account can download)
+    if (fetchFiles) {
+        if (session->launchMode != LaunchMode::Offline) {
+            process->appendStep(makeShared<ClaimAccount>(pptr, session));
+        }
         for (auto t : createUpdateTask()) {
             process->appendStep(makeShared<TaskStepWrapper>(pptr, t));
         }
