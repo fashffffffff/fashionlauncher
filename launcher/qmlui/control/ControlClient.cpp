@@ -111,7 +111,14 @@ class Link {
             args << "-d" << m_dataDir;
         }
         err(QString("Starting %1…").arg(BuildConfig.LAUNCHER_DISPLAYNAME));
-        if (!QProcess::startDetached(QCoreApplication::applicationFilePath(), args)) {
+        // Detached and silent: its log must not end up in our stdout (the MCP channel) or the terminal
+        QProcess launcher;
+        launcher.setProgram(QCoreApplication::applicationFilePath());
+        launcher.setArguments(args);
+        launcher.setStandardInputFile(QProcess::nullDevice());
+        launcher.setStandardOutputFile(QProcess::nullDevice());
+        launcher.setStandardErrorFile(QProcess::nullDevice());
+        if (!launcher.startDetached()) {
             m_error = "Could not start the launcher";
             return false;
         }
