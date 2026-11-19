@@ -398,6 +398,45 @@
     </message>
 </context>
 <context>
+    <name>AssistantsBridge</name>
+    <message>
+        <source>Claude Code was not found on this computer.</source>
+        <translation>在这台电脑上没有找到 Claude Code。</translation>
+    </message>
+    <message>
+        <source>Claude Code said: %1</source>
+        <translation>Claude Code 返回：%1</translation>
+    </message>
+    <message>
+        <source>an error</source>
+        <translation>出错了</translation>
+    </message>
+    <message>
+        <source>Already connected to Claude Code.</source>
+        <translation>已连接到 Claude Code。</translation>
+    </message>
+    <message>
+        <source>Connected to Claude Code. Start a new Claude Code session to use it.</source>
+        <translation>已连接到 Claude Code。开启新的 Claude Code 会话即可使用。</translation>
+    </message>
+    <message>
+        <source>Connected. Restart %1 to use it.</source>
+        <translation>已连接。重启 %1 即可使用。</translation>
+    </message>
+    <message>
+        <source>The settings file could not be changed.</source>
+        <translation>无法修改设置文件。</translation>
+    </message>
+    <message>
+        <source>Disconnected from Claude Code.</source>
+        <translation>已与 Claude Code 断开连接。</translation>
+    </message>
+    <message>
+        <source>Disconnected.</source>
+        <translation>已断开连接。</translation>
+    </message>
+</context>
+<context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
@@ -672,6 +711,13 @@
     <message>
         <source>Start the game straight in this world</source>
         <translation>启动游戏并直接进入这个世界</translation>
+    </message>
+</context>
+<context>
+    <name>ControlServer</name>
+    <message>
+        <source>Installing %1</source>
+        <translation>正在安装“%1”</translation>
     </message>
 </context>
 <context>
@@ -4020,6 +4066,10 @@
         <translation>存储</translation>
     </message>
     <message>
+        <source>AI assistants</source>
+        <translation>AI 助手</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>高级</translation>
     </message>
@@ -4378,6 +4428,22 @@
     <message>
         <source> or </source>
         <translation>或</translation>
+    </message>
+    <message>
+        <source>Delete “%1”?</source>
+        <translation>删除“%1”？</translation>
+    </message>
+    <message>
+        <source>An AI assistant asked to delete this instance with all its worlds, mods and settings. It goes to the trash where possible.</source>
+        <translation>AI 助手请求删除此实例及其所有世界、模组和设置。可能的话会移到废纸篓。</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <source>Keep it</source>
+        <translation>保留</translation>
     </message>
 </context>
 <context>
@@ -5071,6 +5137,61 @@
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
         <translation>重定向旧版游戏依赖但已不复存在的服务。</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsAssistants</name>
+    <message>
+        <source>AI assistants</source>
+        <translation>AI 助手</translation>
+    </message>
+    <message>
+        <source>Let an AI assistant manage the launcher for you: create instances, find and install mods, start the game, read logs and explain crashes. It works on this computer only. Account passwords and tokens are never shared, and deleting an instance always asks you here first.</source>
+        <translation>让 AI 助手替你管理启动器：创建实例、查找并安装模组、启动游戏、查看日志并解释崩溃原因。一切只在这台电脑上进行。账号密码和令牌绝不会共享，删除实例前总会先在这里询问你。</translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation>已连接</translation>
+    </message>
+    <message>
+        <source>Found on this computer</source>
+        <translation>已在这台电脑上找到</translation>
+    </message>
+    <message>
+        <source>Not found on this computer</source>
+        <translation>未在这台电脑上找到</translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation>断开连接</translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation>连接</translation>
+    </message>
+    <message>
+        <source>Other AI apps</source>
+        <translation>其他 AI 应用</translation>
+    </message>
+    <message>
+        <source>Any app that supports MCP servers (Cursor, Windsurf, LM Studio and others): add this to its MCP settings.</source>
+        <translation>任何支持 MCP 服务器的应用（Cursor、Windsurf、LM Studio 等）：将此内容添加到它的 MCP 设置中。</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>复制设置</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>已复制。</translation>
+    </message>
+    <message>
+        <source>Copy terminal command</source>
+        <translation>复制终端命令</translation>
+    </message>
+    <message>
+        <source>For scripts and agents without MCP: the same commands, answers in JSON</source>
+        <translation>适用于不支持 MCP 的脚本和代理：相同的命令，以 JSON 返回结果</translation>
     </message>
 </context>
 <context>

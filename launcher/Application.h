@@ -171,6 +171,8 @@ class Application : public QApplication {
 
     /// the data path the application is using
     const QString& dataRoot() { return m_dataPath; }
+    /// Whether the data folder came from -d or the *_DATA_DIR variable
+    bool dataDirOverridden() const { return m_dataDirOverridden; }
 
     /// the java installed path the application is using
     QString javaPath();
@@ -229,7 +231,8 @@ class Application : public QApplication {
                 std::shared_ptr<MinecraftTarget> targetToJoin = nullptr,
                 shared_qobject_ptr<MinecraftAccount> accountToUse = nullptr,
                 const QString& offlineName = QString());
-    bool kill(BaseInstance* instance);
+    /// Stop a running game; ask = show the "Kill Minecraft?" question first
+    bool kill(BaseInstance* instance, bool ask = true);
     static void closeCurrentWindow();
 
    private slots:
@@ -276,6 +279,8 @@ class Application : public QApplication {
 
     QString m_rootPath;
     QString m_dataPath;
+    bool m_dataDirOverridden = false;
+    class ControlServer* m_control = nullptr;
     Status m_status = Application::StartingUp;
     Capabilities m_capabilities;
     bool m_portable = false;

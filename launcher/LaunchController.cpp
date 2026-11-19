@@ -606,6 +606,14 @@ void LaunchController::onProgressRequested(Task* task) const
     progDialog.execWithTask(task);
 }
 
+bool LaunchController::abortWithoutAsking()
+{
+    if (!m_launcher) {
+        return true;
+    }
+    return m_launcher->canAbort() && m_launcher->abort();
+}
+
 bool LaunchController::abort()
 {
     if (!m_launcher) {

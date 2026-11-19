@@ -398,6 +398,45 @@
     </message>
 </context>
 <context>
+    <name>AssistantsBridge</name>
+    <message>
+        <source>Claude Code was not found on this computer.</source>
+        <translation>Claude Code se na tomto počítači nenašel.</translation>
+    </message>
+    <message>
+        <source>Claude Code said: %1</source>
+        <translation>Claude Code hlásí: %1</translation>
+    </message>
+    <message>
+        <source>an error</source>
+        <translation>chyba</translation>
+    </message>
+    <message>
+        <source>Already connected to Claude Code.</source>
+        <translation>Už je připojeno ke Claude Code.</translation>
+    </message>
+    <message>
+        <source>Connected to Claude Code. Start a new Claude Code session to use it.</source>
+        <translation>Připojeno ke Claude Code. Otevřete novou relaci Claude Code, abyste ho mohli použít.</translation>
+    </message>
+    <message>
+        <source>Connected. Restart %1 to use it.</source>
+        <translation>Připojeno. Restartujte %1, abyste ho mohli použít.</translation>
+    </message>
+    <message>
+        <source>The settings file could not be changed.</source>
+        <translation>Soubor nastavení se nepodařilo změnit.</translation>
+    </message>
+    <message>
+        <source>Disconnected from Claude Code.</source>
+        <translation>Odpojeno od Claude Code.</translation>
+    </message>
+    <message>
+        <source>Disconnected.</source>
+        <translation>Odpojeno.</translation>
+    </message>
+</context>
+<context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
@@ -672,6 +711,13 @@
     <message>
         <source>Start the game straight in this world</source>
         <translation>Spustit hru rovnou v tomto světě</translation>
+    </message>
+</context>
+<context>
+    <name>ControlServer</name>
+    <message>
+        <source>Installing %1</source>
+        <translation>Instaluje se „%1“</translation>
     </message>
 </context>
 <context>
@@ -4066,6 +4112,10 @@
         <translation>Úložiště</translation>
     </message>
     <message>
+        <source>AI assistants</source>
+        <translation>AI asistenti</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Pokročilé</translation>
     </message>
@@ -4424,6 +4474,22 @@
     <message>
         <source> or </source>
         <translation> nebo </translation>
+    </message>
+    <message>
+        <source>Delete “%1”?</source>
+        <translation>Smazat „%1“?</translation>
+    </message>
+    <message>
+        <source>An AI assistant asked to delete this instance with all its worlds, mods and settings. It goes to the trash where possible.</source>
+        <translation>AI asistent žádá o smazání této instance se všemi světy, mody a nastavením. Pokud to jde, skončí v koši.</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Smazat</translation>
+    </message>
+    <message>
+        <source>Keep it</source>
+        <translation>Ponechat</translation>
     </message>
 </context>
 <context>
@@ -5127,6 +5193,61 @@
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
         <translation>Přesměrovává služby, které stará hra očekává, ale už neexistují.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsAssistants</name>
+    <message>
+        <source>AI assistants</source>
+        <translation>AI asistenti</translation>
+    </message>
+    <message>
+        <source>Let an AI assistant manage the launcher for you: create instances, find and install mods, start the game, read logs and explain crashes. It works on this computer only. Account passwords and tokens are never shared, and deleting an instance always asks you here first.</source>
+        <translation>Nechte launcher spravovat AI asistenta: vytvářet instance, hledat a instalovat mody, spouštět hru, číst logy a vysvětlovat pády. Vše zůstává na tomto počítači. Hesla a tokeny se nikdy nesdílejí a smazání instance se vždy nejdřív potvrzuje zde.</translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation>Připojeno</translation>
+    </message>
+    <message>
+        <source>Found on this computer</source>
+        <translation>Nalezeno na tomto počítači</translation>
+    </message>
+    <message>
+        <source>Not found on this computer</source>
+        <translation>Na tomto počítači nenalezeno</translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation>Odpojit</translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation>Připojit</translation>
+    </message>
+    <message>
+        <source>Other AI apps</source>
+        <translation>Další AI aplikace</translation>
+    </message>
+    <message>
+        <source>Any app that supports MCP servers (Cursor, Windsurf, LM Studio and others): add this to its MCP settings.</source>
+        <translation>Pro jakoukoli aplikaci s podporou MCP serverů (Cursor, Windsurf, LM Studio a další): přidejte toto do jejího nastavení MCP.</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Kopírovat nastavení</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Zkopírováno.</translation>
+    </message>
+    <message>
+        <source>Copy terminal command</source>
+        <translation>Kopírovat příkaz terminálu</translation>
+    </message>
+    <message>
+        <source>For scripts and agents without MCP: the same commands, answers in JSON</source>
+        <translation>Pro skripty a agenty bez MCP: stejné příkazy, odpovědi v JSON</translation>
     </message>
 </context>
 <context>

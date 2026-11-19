@@ -398,6 +398,45 @@
     </message>
 </context>
 <context>
+    <name>AssistantsBridge</name>
+    <message>
+        <source>Claude Code was not found on this computer.</source>
+        <translation>このコンピューターに Claude Code が見つかりません。</translation>
+    </message>
+    <message>
+        <source>Claude Code said: %1</source>
+        <translation>Claude Code の応答：%1</translation>
+    </message>
+    <message>
+        <source>an error</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>Already connected to Claude Code.</source>
+        <translation>すでに Claude Code に接続されています。</translation>
+    </message>
+    <message>
+        <source>Connected to Claude Code. Start a new Claude Code session to use it.</source>
+        <translation>Claude Code に接続しました。新しい Claude Code セッションを開くと使えます。</translation>
+    </message>
+    <message>
+        <source>Connected. Restart %1 to use it.</source>
+        <translation>接続しました。%1 を再起動すると使えます。</translation>
+    </message>
+    <message>
+        <source>The settings file could not be changed.</source>
+        <translation>設定ファイルを変更できませんでした。</translation>
+    </message>
+    <message>
+        <source>Disconnected from Claude Code.</source>
+        <translation>Claude Code との接続を解除しました。</translation>
+    </message>
+    <message>
+        <source>Disconnected.</source>
+        <translation>接続を解除しました。</translation>
+    </message>
+</context>
+<context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
@@ -672,6 +711,13 @@
     <message>
         <source>Start the game straight in this world</source>
         <translation>このワールドでゲームを直接起動</translation>
+    </message>
+</context>
+<context>
+    <name>ControlServer</name>
+    <message>
+        <source>Installing %1</source>
+        <translation>「%1」をインストール中</translation>
     </message>
 </context>
 <context>
@@ -4020,6 +4066,10 @@
         <translation>ストレージ</translation>
     </message>
     <message>
+        <source>AI assistants</source>
+        <translation>AI アシスタント</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>詳細設定</translation>
     </message>
@@ -4378,6 +4428,22 @@
     <message>
         <source> or </source>
         <translation> または </translation>
+    </message>
+    <message>
+        <source>Delete “%1”?</source>
+        <translation>「%1」を削除しますか？</translation>
+    </message>
+    <message>
+        <source>An AI assistant asked to delete this instance with all its worlds, mods and settings. It goes to the trash where possible.</source>
+        <translation>AI アシスタントが、このインスタンスをすべてのワールド・MOD・設定ごと削除するよう求めています。可能な場合はゴミ箱に移動します。</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>削除</translation>
+    </message>
+    <message>
+        <source>Keep it</source>
+        <translation>残す</translation>
     </message>
 </context>
 <context>
@@ -5071,6 +5137,61 @@
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
         <translation>古いゲームが参照する、すでに存在しないサービスをリダイレクトします。</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsAssistants</name>
+    <message>
+        <source>AI assistants</source>
+        <translation>AI アシスタント</translation>
+    </message>
+    <message>
+        <source>Let an AI assistant manage the launcher for you: create instances, find and install mods, start the game, read logs and explain crashes. It works on this computer only. Account passwords and tokens are never shared, and deleting an instance always asks you here first.</source>
+        <translation>AI アシスタントにランチャーを任せましょう。インスタンスの作成、MOD の検索とインストール、ゲームの起動、ログの確認、クラッシュの説明ができます。すべてこのコンピューター内で完結します。パスワードやトークンが共有されることはなく、インスタンスの削除は必ずここで確認されます。</translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation>接続済み</translation>
+    </message>
+    <message>
+        <source>Found on this computer</source>
+        <translation>このコンピューターで見つかりました</translation>
+    </message>
+    <message>
+        <source>Not found on this computer</source>
+        <translation>このコンピューターに見つかりません</translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation>接続解除</translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation>接続</translation>
+    </message>
+    <message>
+        <source>Other AI apps</source>
+        <translation>その他の AI アプリ</translation>
+    </message>
+    <message>
+        <source>Any app that supports MCP servers (Cursor, Windsurf, LM Studio and others): add this to its MCP settings.</source>
+        <translation>MCP サーバーに対応したアプリ（Cursor、Windsurf、LM Studio など）では、これを MCP 設定に追加してください。</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>設定をコピー</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>コピーしました。</translation>
+    </message>
+    <message>
+        <source>Copy terminal command</source>
+        <translation>ターミナルコマンドをコピー</translation>
+    </message>
+    <message>
+        <source>For scripts and agents without MCP: the same commands, answers in JSON</source>
+        <translation>MCP 非対応のスクリプトやエージェント向け：同じコマンドで、結果は JSON</translation>
     </message>
 </context>
 <context>

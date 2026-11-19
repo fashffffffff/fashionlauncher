@@ -72,6 +72,8 @@ class LaunchController : public Task {
     QString id() const { return m_instance->id(); }
 
     bool abort() override;
+    /// Abort without the "Kill Minecraft?" question (remote control)
+    bool abortWithoutAsking();
 
    private:
     void login();

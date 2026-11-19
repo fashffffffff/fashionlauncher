@@ -129,6 +129,7 @@
 #include <DesktopServices.h>
 #include <FileSystem.h>
 #include <LocalPeer.h>
+#include "qmlui/control/ControlServer.h"
 
 #include <stdlib.h>
 #include "SysInfo.h"
@@ -449,6 +450,7 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
         return;
     }
     m_dataPath = dataPath;
+    m_dataDirOverridden = !dirParam.isEmpty() || !dataDirEnv.isEmpty();
 
     /*
      * Establish the mechanism for communication with an already running PrismLauncher that uses the same data path.
@@ -1413,6 +1415,11 @@ bool Application::event(QEvent* event)
 void Application::performMainStartupAction()
 {
     m_status = Application::Initialized;
+    // Remote control for AI agents and scripts (fashionlauncher ctl / mcp); local socket, this OS user only
+    if (!m_control) {
+        m_control = new ControlServer(this);
+        m_control->start();
+    }
     if (!m_instanceIdToLaunch.isEmpty()) {
         auto* inst = instances()->getInstanceById(m_instanceIdToLaunch);
         if (inst) {
@@ -1645,7 +1652,7 @@ bool Application::launch(MinecraftInstance* instance,
     return false;
 }
 
-bool Application::kill(BaseInstance* instance)
+bool Application::kill(BaseInstance* instance, bool ask)
 {
     if (!instance->isRunning()) {
         qWarning() << "Attempted to kill instance" << instance->id() << ", which isn't running.";
@@ -1657,7 +1664,7 @@ bool Application::kill(BaseInstance* instance)
     auto& controller = extras.controller;
     locker.unlock();
     if (controller) {
-        return controller->abort();
+        return ask ? controller->abort() : controller->abortWithoutAsking();
     }
     return true;
 }

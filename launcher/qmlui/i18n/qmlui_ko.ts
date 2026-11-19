@@ -398,6 +398,45 @@
     </message>
 </context>
 <context>
+    <name>AssistantsBridge</name>
+    <message>
+        <source>Claude Code was not found on this computer.</source>
+        <translation>이 컴퓨터에서 Claude Code를 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Claude Code said: %1</source>
+        <translation>Claude Code 응답: %1</translation>
+    </message>
+    <message>
+        <source>an error</source>
+        <translation>오류</translation>
+    </message>
+    <message>
+        <source>Already connected to Claude Code.</source>
+        <translation>이미 Claude Code에 연결되어 있습니다.</translation>
+    </message>
+    <message>
+        <source>Connected to Claude Code. Start a new Claude Code session to use it.</source>
+        <translation>Claude Code에 연결했습니다. 새 Claude Code 세션을 열면 사용할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Connected. Restart %1 to use it.</source>
+        <translation>연결했습니다. %1을(를) 다시 시작하면 사용할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>The settings file could not be changed.</source>
+        <translation>설정 파일을 변경할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Disconnected from Claude Code.</source>
+        <translation>Claude Code와의 연결을 해제했습니다.</translation>
+    </message>
+    <message>
+        <source>Disconnected.</source>
+        <translation>연결을 해제했습니다.</translation>
+    </message>
+</context>
+<context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
@@ -672,6 +711,13 @@
     <message>
         <source>Start the game straight in this world</source>
         <translation>이 월드에서 바로 게임 시작</translation>
+    </message>
+</context>
+<context>
+    <name>ControlServer</name>
+    <message>
+        <source>Installing %1</source>
+        <translation>“%1” 설치 중</translation>
     </message>
 </context>
 <context>
@@ -4020,6 +4066,10 @@
         <translation>저장 공간</translation>
     </message>
     <message>
+        <source>AI assistants</source>
+        <translation>AI 도우미</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>고급</translation>
     </message>
@@ -4378,6 +4428,22 @@
     <message>
         <source> or </source>
         <translation> 또는 </translation>
+    </message>
+    <message>
+        <source>Delete “%1”?</source>
+        <translation>“%1”을(를) 삭제할까요?</translation>
+    </message>
+    <message>
+        <source>An AI assistant asked to delete this instance with all its worlds, mods and settings. It goes to the trash where possible.</source>
+        <translation>AI 도우미가 이 인스턴스를 모든 월드, 모드, 설정과 함께 삭제하려고 합니다. 가능하면 휴지통으로 이동합니다.</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>삭제</translation>
+    </message>
+    <message>
+        <source>Keep it</source>
+        <translation>유지</translation>
     </message>
 </context>
 <context>
@@ -5071,6 +5137,61 @@
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
         <translation>구버전 게임이 찾지만 이제는 없어진 서비스를 다른 곳으로 연결해요.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsAssistants</name>
+    <message>
+        <source>AI assistants</source>
+        <translation>AI 도우미</translation>
+    </message>
+    <message>
+        <source>Let an AI assistant manage the launcher for you: create instances, find and install mods, start the game, read logs and explain crashes. It works on this computer only. Account passwords and tokens are never shared, and deleting an instance always asks you here first.</source>
+        <translation>AI 도우미에게 런처 관리를 맡기세요. 인스턴스 만들기, 모드 찾기와 설치, 게임 실행, 로그 읽기, 충돌 원인 설명을 할 수 있습니다. 모든 작업은 이 컴퓨터에서만 이루어집니다. 비밀번호와 토큰은 절대 공유되지 않으며, 인스턴스 삭제는 항상 여기서 먼저 확인합니다.</translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation>연결됨</translation>
+    </message>
+    <message>
+        <source>Found on this computer</source>
+        <translation>이 컴퓨터에서 찾음</translation>
+    </message>
+    <message>
+        <source>Not found on this computer</source>
+        <translation>이 컴퓨터에서 찾을 수 없음</translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation>연결 해제</translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation>연결</translation>
+    </message>
+    <message>
+        <source>Other AI apps</source>
+        <translation>다른 AI 앱</translation>
+    </message>
+    <message>
+        <source>Any app that supports MCP servers (Cursor, Windsurf, LM Studio and others): add this to its MCP settings.</source>
+        <translation>MCP 서버를 지원하는 앱(Cursor, Windsurf, LM Studio 등): 이 내용을 해당 앱의 MCP 설정에 추가하세요.</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>설정 복사</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>복사했습니다.</translation>
+    </message>
+    <message>
+        <source>Copy terminal command</source>
+        <translation>터미널 명령 복사</translation>
+    </message>
+    <message>
+        <source>For scripts and agents without MCP: the same commands, answers in JSON</source>
+        <translation>MCP를 지원하지 않는 스크립트와 에이전트용: 같은 명령, JSON 응답</translation>
     </message>
 </context>
 <context>

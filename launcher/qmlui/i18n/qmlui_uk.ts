@@ -398,6 +398,45 @@
     </message>
 </context>
 <context>
+    <name>AssistantsBridge</name>
+    <message>
+        <source>Claude Code was not found on this computer.</source>
+        <translation>Claude Code не знайдено на цьому комп’ютері.</translation>
+    </message>
+    <message>
+        <source>Claude Code said: %1</source>
+        <translation>Claude Code відповів: %1</translation>
+    </message>
+    <message>
+        <source>an error</source>
+        <translation>помилка</translation>
+    </message>
+    <message>
+        <source>Already connected to Claude Code.</source>
+        <translation>Уже підключено до Claude Code.</translation>
+    </message>
+    <message>
+        <source>Connected to Claude Code. Start a new Claude Code session to use it.</source>
+        <translation>Підключено до Claude Code. Відкрийте нову сесію Claude Code, щоб ним користуватися.</translation>
+    </message>
+    <message>
+        <source>Connected. Restart %1 to use it.</source>
+        <translation>Підключено. Перезапустіть %1, щоб ним користуватися.</translation>
+    </message>
+    <message>
+        <source>The settings file could not be changed.</source>
+        <translation>Не вдалося змінити файл налаштувань.</translation>
+    </message>
+    <message>
+        <source>Disconnected from Claude Code.</source>
+        <translation>Відключено від Claude Code.</translation>
+    </message>
+    <message>
+        <source>Disconnected.</source>
+        <translation>Відключено.</translation>
+    </message>
+</context>
+<context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
@@ -672,6 +711,13 @@
     <message>
         <source>Start the game straight in this world</source>
         <translation>Запустити гру одразу в цьому світі</translation>
+    </message>
+</context>
+<context>
+    <name>ControlServer</name>
+    <message>
+        <source>Installing %1</source>
+        <translation>Встановлення «%1»</translation>
     </message>
 </context>
 <context>
@@ -4066,6 +4112,10 @@
         <translation>Сховище</translation>
     </message>
     <message>
+        <source>AI assistants</source>
+        <translation>ШІ-помічники</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Розширені</translation>
     </message>
@@ -4424,6 +4474,22 @@
     <message>
         <source> or </source>
         <translation> або </translation>
+    </message>
+    <message>
+        <source>Delete “%1”?</source>
+        <translation>Видалити «%1»?</translation>
+    </message>
+    <message>
+        <source>An AI assistant asked to delete this instance with all its worlds, mods and settings. It goes to the trash where possible.</source>
+        <translation>ШІ-помічник просить видалити цю збірку разом з усіма світами, модами й налаштуваннями. За можливості вона потрапить у Кошик.</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Видалити</translation>
+    </message>
+    <message>
+        <source>Keep it</source>
+        <translation>Залишити</translation>
     </message>
 </context>
 <context>
@@ -5127,6 +5193,61 @@
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
         <translation>Переспрямовує сервіси, які очікує стара гра, але які більше не існують.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsAssistants</name>
+    <message>
+        <source>AI assistants</source>
+        <translation>ШІ-помічники</translation>
+    </message>
+    <message>
+        <source>Let an AI assistant manage the launcher for you: create instances, find and install mods, start the game, read logs and explain crashes. It works on this computer only. Account passwords and tokens are never shared, and deleting an instance always asks you here first.</source>
+        <translation>Довірте лаунчер ШІ-помічнику: він може створювати збірки, шукати й ставити моди, запускати гру, читати журнали й пояснювати вильоти. Усе працює лише на цьому комп’ютері. Паролі й токени облікових записів помічник не отримує, а видалення збірки завжди спершу підтверджується тут.</translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation>Підключено</translation>
+    </message>
+    <message>
+        <source>Found on this computer</source>
+        <translation>Знайдено на цьому комп’ютері</translation>
+    </message>
+    <message>
+        <source>Not found on this computer</source>
+        <translation>Не знайдено на цьому комп’ютері</translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation>Відключити</translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation>Підключити</translation>
+    </message>
+    <message>
+        <source>Other AI apps</source>
+        <translation>Інші ШІ-застосунки</translation>
+    </message>
+    <message>
+        <source>Any app that supports MCP servers (Cursor, Windsurf, LM Studio and others): add this to its MCP settings.</source>
+        <translation>Для будь-якого застосунку з підтримкою MCP-серверів (Cursor, Windsurf, LM Studio та інші): додайте це в його налаштування MCP.</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Скопіювати налаштування</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Скопійовано.</translation>
+    </message>
+    <message>
+        <source>Copy terminal command</source>
+        <translation>Скопіювати команду</translation>
+    </message>
+    <message>
+        <source>For scripts and agents without MCP: the same commands, answers in JSON</source>
+        <translation>Для скриптів і агентів без MCP: ті самі команди, відповіді в JSON</translation>
     </message>
 </context>
 <context>

@@ -15,6 +15,7 @@ Item {
         { id: "game", icon: "play", label: qsTr("Game") },
         { id: "network", icon: "globe", label: qsTr("Network") },
         { id: "storage", icon: "folder", label: qsTr("Storage") },
+        { id: "assistants", icon: "terminal", label: qsTr("AI assistants") },
         { id: "advanced", icon: "sliders", label: qsTr("Advanced") }
     ]
     readonly property var current: sections.find(s => s.id === section) || sections[0]
@@ -95,7 +96,7 @@ Item {
 
             Loader {
                 width: Math.min(scroll.availableWidth, Style.px(760))
-                sourceComponent: ({ launcher: launcherPane, java: javaPane, game: gamePane, network: networkPane, storage: storagePane, advanced: advancedPane })[page.current.id]
+                sourceComponent: ({ launcher: launcherPane, java: javaPane, game: gamePane, network: networkPane, storage: storagePane, assistants: assistantsPane, advanced: advancedPane })[page.current.id]
             }
         }
     }
@@ -229,6 +230,16 @@ Item {
         ColumnLayout {
             spacing: Style.px(16)
             SettingsAdvanced {}
+            Item { implicitHeight: Style.px(16) }
+        }
+    }
+
+    // ---- AI assistants ----
+    Component {
+        id: assistantsPane
+        ColumnLayout {
+            spacing: Style.px(16)
+            SettingsAssistants {}
             Item { implicitHeight: Style.px(16) }
         }
     }

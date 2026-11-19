@@ -36,6 +36,7 @@
 #include <iostream>
 
 #include "Application.h"
+#include "qmlui/control/ControlClient.h"
 
 #if defined Q_OS_WIN32
 #include "console/WindowsConsole.h"
@@ -47,6 +48,11 @@ int main(int argc, char* argv[])
     // used on Windows to attach the standard IO streams
     console::WindowsConsoleGuard _consoleGuard;
 #endif
+
+    // `fashionlauncher ctl …` / `fashionlauncher mcp`: remote control of the running launcher, no window
+    if (ControlClient::wanted(argc, argv)) {
+        return ControlClient::run(argc, argv);
+    }
 
     // initialize Qt
     Application app(argc, argv);

@@ -398,6 +398,45 @@
     </message>
 </context>
 <context>
+    <name>AssistantsBridge</name>
+    <message>
+        <source>Claude Code was not found on this computer.</source>
+        <translation>Claude Code tidak ditemukan di komputer ini.</translation>
+    </message>
+    <message>
+        <source>Claude Code said: %1</source>
+        <translation>Claude Code menjawab: %1</translation>
+    </message>
+    <message>
+        <source>an error</source>
+        <translation>sebuah kesalahan</translation>
+    </message>
+    <message>
+        <source>Already connected to Claude Code.</source>
+        <translation>Sudah terhubung ke Claude Code.</translation>
+    </message>
+    <message>
+        <source>Connected to Claude Code. Start a new Claude Code session to use it.</source>
+        <translation>Terhubung ke Claude Code. Buka sesi Claude Code baru untuk memakainya.</translation>
+    </message>
+    <message>
+        <source>Connected. Restart %1 to use it.</source>
+        <translation>Terhubung. Mulai ulang %1 untuk memakainya.</translation>
+    </message>
+    <message>
+        <source>The settings file could not be changed.</source>
+        <translation>File pengaturan tidak dapat diubah.</translation>
+    </message>
+    <message>
+        <source>Disconnected from Claude Code.</source>
+        <translation>Terputus dari Claude Code.</translation>
+    </message>
+    <message>
+        <source>Disconnected.</source>
+        <translation>Terputus.</translation>
+    </message>
+</context>
+<context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
@@ -672,6 +711,13 @@
     <message>
         <source>Start the game straight in this world</source>
         <translation>Mulai game langsung di dunia ini</translation>
+    </message>
+</context>
+<context>
+    <name>ControlServer</name>
+    <message>
+        <source>Installing %1</source>
+        <translation>Memasang “%1”</translation>
     </message>
 </context>
 <context>
@@ -4020,6 +4066,10 @@
         <translation>Penyimpanan</translation>
     </message>
     <message>
+        <source>AI assistants</source>
+        <translation>Asisten AI</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Lanjutan</translation>
     </message>
@@ -4378,6 +4428,22 @@
     <message>
         <source> or </source>
         <translation> atau </translation>
+    </message>
+    <message>
+        <source>Delete “%1”?</source>
+        <translation>Hapus “%1”?</translation>
+    </message>
+    <message>
+        <source>An AI assistant asked to delete this instance with all its worlds, mods and settings. It goes to the trash where possible.</source>
+        <translation>Asisten AI meminta menghapus instans ini beserta semua dunia, mod, dan pengaturannya. Jika bisa, instans dipindahkan ke tempat sampah.</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Hapus</translation>
+    </message>
+    <message>
+        <source>Keep it</source>
+        <translation>Simpan</translation>
     </message>
 </context>
 <context>
@@ -5071,6 +5137,61 @@
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
         <translation>Mengalihkan layanan yang dibutuhkan game lama tapi sudah tidak ada.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsAssistants</name>
+    <message>
+        <source>AI assistants</source>
+        <translation>Asisten AI</translation>
+    </message>
+    <message>
+        <source>Let an AI assistant manage the launcher for you: create instances, find and install mods, start the game, read logs and explain crashes. It works on this computer only. Account passwords and tokens are never shared, and deleting an instance always asks you here first.</source>
+        <translation>Biarkan asisten AI mengelola launcher untuk Anda: membuat instans, mencari dan memasang mod, menjalankan game, membaca log, dan menjelaskan crash. Semuanya hanya di komputer ini. Kata sandi dan token tidak pernah dibagikan, dan menghapus instans selalu ditanyakan di sini terlebih dahulu.</translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation>Terhubung</translation>
+    </message>
+    <message>
+        <source>Found on this computer</source>
+        <translation>Ditemukan di komputer ini</translation>
+    </message>
+    <message>
+        <source>Not found on this computer</source>
+        <translation>Tidak ditemukan di komputer ini</translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation>Putuskan</translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation>Hubungkan</translation>
+    </message>
+    <message>
+        <source>Other AI apps</source>
+        <translation>Aplikasi AI lain</translation>
+    </message>
+    <message>
+        <source>Any app that supports MCP servers (Cursor, Windsurf, LM Studio and others): add this to its MCP settings.</source>
+        <translation>Aplikasi apa pun yang mendukung server MCP (Cursor, Windsurf, LM Studio, dan lainnya): tambahkan ini ke pengaturan MCP-nya.</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Salin pengaturan</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Disalin.</translation>
+    </message>
+    <message>
+        <source>Copy terminal command</source>
+        <translation>Salin perintah terminal</translation>
+    </message>
+    <message>
+        <source>For scripts and agents without MCP: the same commands, answers in JSON</source>
+        <translation>Untuk skrip dan agen tanpa MCP: perintah yang sama, jawaban dalam JSON</translation>
     </message>
 </context>
 <context>

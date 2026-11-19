@@ -123,6 +123,10 @@ class SearchModel : public QAbstractListModel {
     Q_INVOKABLE void clearPicks();
     /** Installs every ticked project, one after another (shared dependencies are fetched once). */
     Q_INVOKABLE void installPicked();
+    /// Row of a project in the current results, -1 if absent
+    Q_INVOKABLE int rowOfProject(const QString& projectId) const { return rowOf(projectId); }
+    /// "" | "queued" | "installing" | "installed"
+    Q_INVOKABLE QString projectState(const QString& projectId) const { return stateOf(projectId); }
 
    signals:
     void instanceChanged();

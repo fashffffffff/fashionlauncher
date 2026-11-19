@@ -398,6 +398,45 @@
     </message>
 </context>
 <context>
+    <name>AssistantsBridge</name>
+    <message>
+        <source>Claude Code was not found on this computer.</source>
+        <translation>Claude Code wurde auf diesem Computer nicht gefunden.</translation>
+    </message>
+    <message>
+        <source>Claude Code said: %1</source>
+        <translation>Claude Code meldet: %1</translation>
+    </message>
+    <message>
+        <source>an error</source>
+        <translation>ein Fehler</translation>
+    </message>
+    <message>
+        <source>Already connected to Claude Code.</source>
+        <translation>Bereits mit Claude Code verbunden.</translation>
+    </message>
+    <message>
+        <source>Connected to Claude Code. Start a new Claude Code session to use it.</source>
+        <translation>Mit Claude Code verbunden. Starte eine neue Claude-Code-Sitzung, um es zu nutzen.</translation>
+    </message>
+    <message>
+        <source>Connected. Restart %1 to use it.</source>
+        <translation>Verbunden. Starte %1 neu, um es zu nutzen.</translation>
+    </message>
+    <message>
+        <source>The settings file could not be changed.</source>
+        <translation>Die Einstellungsdatei konnte nicht geändert werden.</translation>
+    </message>
+    <message>
+        <source>Disconnected from Claude Code.</source>
+        <translation>Von Claude Code getrennt.</translation>
+    </message>
+    <message>
+        <source>Disconnected.</source>
+        <translation>Getrennt.</translation>
+    </message>
+</context>
+<context>
     <name>BackgroundsBridge</name>
     <message>
         <source>Your panorama</source>
@@ -672,6 +711,13 @@
     <message>
         <source>Start the game straight in this world</source>
         <translation>Spiel direkt in dieser Welt starten</translation>
+    </message>
+</context>
+<context>
+    <name>ControlServer</name>
+    <message>
+        <source>Installing %1</source>
+        <translation>„%1“ wird installiert</translation>
     </message>
 </context>
 <context>
@@ -4043,6 +4089,10 @@
         <translation>Speicherplatz</translation>
     </message>
     <message>
+        <source>AI assistants</source>
+        <translation>KI-Assistenten</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>Erweitert</translation>
     </message>
@@ -4401,6 +4451,22 @@
     <message>
         <source> or </source>
         <translation> oder </translation>
+    </message>
+    <message>
+        <source>Delete “%1”?</source>
+        <translation>„%1“ löschen?</translation>
+    </message>
+    <message>
+        <source>An AI assistant asked to delete this instance with all its worlds, mods and settings. It goes to the trash where possible.</source>
+        <translation>Ein KI-Assistent möchte diese Instanz mit allen Welten, Mods und Einstellungen löschen. Sie landet nach Möglichkeit im Papierkorb.</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Löschen</translation>
+    </message>
+    <message>
+        <source>Keep it</source>
+        <translation>Behalten</translation>
     </message>
 </context>
 <context>
@@ -5099,6 +5165,61 @@
     <message>
         <source>Redirects services the old game expects but that no longer exist.</source>
         <translation>Leitet Dienste um, die das alte Spiel erwartet, die es aber nicht mehr gibt.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsAssistants</name>
+    <message>
+        <source>AI assistants</source>
+        <translation>KI-Assistenten</translation>
+    </message>
+    <message>
+        <source>Let an AI assistant manage the launcher for you: create instances, find and install mods, start the game, read logs and explain crashes. It works on this computer only. Account passwords and tokens are never shared, and deleting an instance always asks you here first.</source>
+        <translation>Lass einen KI-Assistenten den Launcher für dich verwalten: Instanzen erstellen, Mods finden und installieren, das Spiel starten, Logs lesen und Abstürze erklären. Alles bleibt auf diesem Computer. Passwörter und Tokens werden nie weitergegeben, und das Löschen einer Instanz wird immer zuerst hier bestätigt.</translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation>Verbunden</translation>
+    </message>
+    <message>
+        <source>Found on this computer</source>
+        <translation>Auf diesem Computer gefunden</translation>
+    </message>
+    <message>
+        <source>Not found on this computer</source>
+        <translation>Auf diesem Computer nicht gefunden</translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation>Trennen</translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation>Verbinden</translation>
+    </message>
+    <message>
+        <source>Other AI apps</source>
+        <translation>Andere KI-Apps</translation>
+    </message>
+    <message>
+        <source>Any app that supports MCP servers (Cursor, Windsurf, LM Studio and others): add this to its MCP settings.</source>
+        <translation>Für jede App mit MCP-Servern (Cursor, Windsurf, LM Studio und andere): füge dies in ihre MCP-Einstellungen ein.</translation>
+    </message>
+    <message>
+        <source>Copy settings</source>
+        <translation>Einstellungen kopieren</translation>
+    </message>
+    <message>
+        <source>Copied.</source>
+        <translation>Kopiert.</translation>
+    </message>
+    <message>
+        <source>Copy terminal command</source>
+        <translation>Terminal-Befehl kopieren</translation>
+    </message>
+    <message>
+        <source>For scripts and agents without MCP: the same commands, answers in JSON</source>
+        <translation>Für Skripte und Agenten ohne MCP: dieselben Befehle, Antworten als JSON</translation>
     </message>
 </context>
 <context>

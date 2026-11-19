@@ -37,6 +37,7 @@
 #include "store/StoreBridge.h"
 #include "tools/GameOptions.h"
 #include "storage/StorageBridge.h"
+#include "control/AssistantsBridge.h"
 #include "tools/ToolsBridge.h"
 #include "stats/PlayStats.h"
 #include "upgrade/UpgradeBridge.h"
@@ -98,6 +99,7 @@ QmlShell::QmlShell(QObject* parent) : QObject(parent)
     ctx->setContextProperty("Friends", new FriendsBridge(this));
     ctx->setContextProperty("Store", new StoreBridge(this));
     ctx->setContextProperty("Storage", new StorageBridge(this));
+    ctx->setContextProperty("Assistants", new AssistantsBridge(this));
     ctx->setContextProperty("Tools", new ToolsBridge(this));
     ctx->setContextProperty("GameOptions", new GameOptions(this));
     ctx->setContextProperty("Upgrade", new UpgradeBridge(m_launcher, this));
